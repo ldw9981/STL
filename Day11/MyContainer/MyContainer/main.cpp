@@ -195,37 +195,22 @@ int RStringLength(char* str)
 	return 1 + RStringLength(str + 1);
 }
 
-void ToBinary(int n)
+
+void ToBinaryUINT(unsigned int n,int i)
 {
-	/*
-	int size = sizeof(n)*8;
-	int bit = 0x40000000;
-	for (int count = 0; count < size-1; count++)
-	{
-		int value = int(n & bit);
-		if (value != 0)
-		{
-			cout << "1";
-		}
-		else
-		{
-			cout << "0";
-		}
-		
-		bit = bit >> 1;
-	}
-	*/
+	unsigned int data = (unsigned int)n;
+	unsigned int bit = 0x00000001 << i;
+	if (i < 0)
+		return;
 
-	string Binary;
-	while (n >= 1)
-	{
-		int mod = n % 2;
-		n = n / 2;
-		Binary.append(to_string(mod));
+	if (data & bit)
+		cout << "1";	
+	else
+		cout << "0";
 
-		ReversePrint(Binary);
-	}
+	ToBinaryUINT(n, i - 1);
 }
+
 
 void RToBinary(int n)
 {
@@ -258,71 +243,41 @@ int RFactorial(int n)
 	return n * RFactorial(n - 1);
 }
 
-int Search(int *Data, int Size, int target)
-{
-	for (int i = 0; i < Size; i++)
-	{
-		if (Data[i] == target)
-			return i;
-	}
-	return -1;
-}
-
-int RSearch(int *Data, int Size, int target)
-{
-	if (Size == 0)
-		return -1;
-
-	if (Data[Size - 1] == target)
-	{
-		return Size - 1;
-	}
-	return RSearch(Data, Size - 1, target);
-}
-
-int RSearch2(int* Data, int begin, int end, int vlaue)
-{
-	return 0;
-}
-
-int RSearch3(int* Data, int begin, int end, int value)
+int BSearch(int* Data, int begin, int end, int value)
 {
 	if (begin > end)
 	{
 		return -1;
 	}
-	else
+	int middle = (begin + end) / 2;
+	if (Data[middle] == value)
 	{
-		int middle = (begin + end) / 2;
-		if (Data[middle] == value)
-		{
-			return middle;
-		}
-		int index = RSearch3(Data, begin, middle - 1, value);
-		else
-		{
-
-		}
-
+		return middle;
 	}
-
-	return 0;
+	else if (Data[middle] > value)
+	{
+		return BSearch(Data, begin, middle - 1, value);
+	}
+	return BSearch(Data, middle + 1, end, value);
 }
 
 
 void TestSearch()
 {
 	int Data[] = { 1,2,3,4,5,6,7,8,9,10 };
-
+	cout << BSearch(Data,0,9,3) << endl;
 }
 
 
 int main()
 {
-//	ToBinary(10);
+//	ToBinaryUINT((unsigned int)-9,32);
 //	cout << RFactorial(3);
-	
-
+	TestList();
+	TestVector();
+	TestReverseString();
+	TestQueue();
+	TestSearch();
 	
 	return 0;
 }
