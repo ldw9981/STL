@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <conio.h>
+#include <sstream>
+#include <vector>
 
 using namespace std;
 
@@ -163,25 +165,84 @@ bool CheckCollisionDetect( D3DXVECTOR2& PosP1, D3DXVECTOR2& PosP2, D3DXVECTOR2& 
 
 	// 수선의길이를 구하여 반지름보다 크면 충돌 아님.    
 	float ShadowLength = P1ToCircleLength * Angle;					// |A| * cos@ = 그림자길이
-	float result = sqrt(P1ToCircleLength*P1ToCircleLength - ShadowLength* ShadowLength);	
-	if ( result > RadiusC) 
+	float resultHeightLength = sqrt(P1ToCircleLength*P1ToCircleLength - ShadowLength* ShadowLength);	
+	if ( resultHeightLength > RadiusC) 
+		return false;
+
+	// 관통된 길이.
+	float resultPiercedLength = sqrt(RadiusCSQ - resultHeightLength* resultHeightLength);
+	if (LineLength < (ShadowLength - resultPiercedLength))   // 직선의 길이가 원 관통하지 않는다.
 		return false;
 
 	return true;
 }
 
 
-
+void Parse(const string& InputLine,const string& delimiters,vector<string>& wordVector)
+{
+	stringstream stringStream(InputLine);
+	std::string line;
+	
+	while (std::getline(stringStream, line))
+	{
+		std::size_t prev = 0, pos;
+		while ((pos = line.find_first_of(delimiters.c_str(), prev)) != std::string::npos)
+		{
+			if (pos > prev)
+				wordVector.push_back(line.substr(prev, pos - prev));
+			prev = pos + 1;
+		}
+		if (prev < line.length())
+			wordVector.push_back(line.substr(prev, std::string::npos));
+	}
+}
 
 int main()
 {
-	D3DXVECTOR2 posP1(0.0f,0.0f);
-	D3DXVECTOR2 posP2(10.0f,0.0f);
 
-	D3DXVECTOR2 posC1(5.0f, -4.9f);
+	D3DXVECTOR2 posP1(0.0f, 0.0f);
+	D3DXVECTOR2 posP2(10.0f, 10.0f);
+	D3DXVECTOR2 posC1(5.0f, 5.0f);
 	float RadiusC1 = 5.0f;
+	vector<string> wordVector;
+	string inputLine;
 	bool result;
-	result = CheckCollisionDetect(posP1, posP2, posC1, RadiusC1);
+	for (size_t i = 0; i < 2; i++)
+	{
+		cout << endl << "입력" << endl;
 
+		wordVector.clear();
+		getline(cin, inputLine);
+		Parse(inputLine, " ,[]", wordVector);
+		posP1.x = (float)atoi(wordVector[0].c_str());
+		posP1.y = (float)atoi(wordVector[1].c_str());
+
+		wordVector.clear();
+		getline(cin, inputLine);
+		Parse(inputLine, " ,[]", wordVector);
+		posP2.x = (float)atoi(wordVector[0].c_str());
+		posP2.y = (float)atoi(wordVector[1].c_str());
+
+		wordVector.clear();
+		getline(cin, inputLine);
+		Parse(inputLine, " ,[]", wordVector);
+		posC1.x = (float)atoi(wordVector[0].c_str());
+		posC1.y = (float)atoi(wordVector[1].c_str());
+		RadiusC1 = (float)atoi(wordVector[2].c_str());
+
+		cout << endl << "출력" << endl;
+		result = CheckCollisionDetect(posP1, posP2, posC1, RadiusC1);
+		if (result)
+		{
+			cout << "충돌" << endl;
+		}
+		else
+		{
+			cout << "충돌x" << endl;
+		}
+	}
+
+
+	while (_getch() != 0);
 	return 0;
 }
