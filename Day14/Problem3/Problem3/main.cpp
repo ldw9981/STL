@@ -160,8 +160,10 @@ bool CheckCollisionDetect( D3DXVECTOR2& PosP1, D3DXVECTOR2& PosP2, D3DXVECTOR2& 
 	D3DXVec2Normalize(&CircleDirection, &vecP1ToCircle);
 
 	float Angle = D3DXVec2Dot(&CircleDirection, &LineDirection);	// DotResult = |a|*|b|* cos@ , 길이는 모두 1이므로 결과는 cos@ 
+	/*
 	if (Angle < 0)
 		return false;
+	*/
 
 	// 수선의길이를 구하여 반지름보다 크면 충돌 아님.    
 	float ShadowLength = P1ToCircleLength * Angle;					// |A| * cos@ = 그림자길이
@@ -169,10 +171,13 @@ bool CheckCollisionDetect( D3DXVECTOR2& PosP1, D3DXVECTOR2& PosP2, D3DXVECTOR2& 
 	if ( resultHeightLength > RadiusC) 
 		return false;
 
+	/*
 	// 관통된 길이.
 	float resultPiercedLength = sqrt(RadiusCSQ - resultHeightLength* resultHeightLength);
 	if (LineLength < (ShadowLength - resultPiercedLength))   // 직선의 길이가 원 관통하지 않는다.
 		return false;
+
+	*/
 
 	return true;
 }
