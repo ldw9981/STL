@@ -3,8 +3,6 @@
 #include <conio.h>
 
 using namespace std;
-float EPSILON = 0.001f;
-
 
 
 class D3DXVECTOR2
@@ -136,6 +134,7 @@ D3DXVECTOR2 *D3DXVec2Normalize(D3DXVECTOR2 *pOut)
 	}
 }
 
+// https://www.falstad.com/dotproduct/ 내적 시뮬레이션
 bool CheckCollisionDetect( D3DXVECTOR2& PosP1, D3DXVECTOR2& PosP2, D3DXVECTOR2& PosC, const float& RadiusC)
 {
 	// 두점이 원 내부에 있는지 검사
@@ -158,102 +157,17 @@ bool CheckCollisionDetect( D3DXVECTOR2& PosP1, D3DXVECTOR2& PosP2, D3DXVECTOR2& 
 	D3DXVECTOR2 CircleDirection;
 	D3DXVec2Normalize(&CircleDirection, &vecP1ToCircle);
 
-	float DotResult = D3DXVec2Dot(&CircleDirection, &LineDirection);
-	if (DotResult < 0)
+	float Angle = D3DXVec2Dot(&CircleDirection, &LineDirection);	// DotResult = |a|*|b|* cos@ , 길이는 모두 1이므로 결과는 cos@ 
+	if (Angle < 0)
 		return false;
 
-	// 수선의길이를 구하여 반지름보다 크면 충돌 아님.     (*LenghSq를 구하면 SQRT 제거가능)
-	float P1ToResultLength = LineLength * (DotResult*DotResult);
-	float result = sqrt(P1ToCircleLength*P1ToCircleLength - P1ToResultLength* P1ToResultLength);	
-	if (fabs(result - RadiusC) > EPSILON)
+	// 수선의길이를 구하여 반지름보다 크면 충돌 아님.    
+	float ShadowLength = P1ToCircleLength * Angle;					// |A| * cos@ = 그림자길이
+	float result = sqrt(P1ToCircleLength*P1ToCircleLength - ShadowLength* ShadowLength);	
+	if ( result > RadiusC) 
 		return false;
 
 	return true;
-}
-
-int intersection(float x, float y, float r, float a, float b, float c, float d, float xy[][2])
-{
-	float m, n;
-
-	// A,B1,C 원과 직선으로부터 얻어지는 2차방정식의 계수들
-	// D: 판별식
-	// X,Y: 교점의 좌표
-	float A, B1, C, D;
-	float X, Y;
-
-	// A,B1,C,D게산
-	if (c != a)
-	{
-		// m, n계산
-		m = (d - b) / (c - a);
-		n = (b*c - a * d) / (c - a);
-
-		A = m * m + 1;
-		B1 = (m*n - m * y - x);
-		C = (x*x + y * y - r * r + n * n - 2 * n*y);
-		D = B1 * B1 - A * C;
-
-		if (D < 0)
-			return 0;
-		else if (D == 0)
-		{
-			X = -B1 / A;
-			Y = m * X + n;
-			xy[0][0] = X;
-			xy[0][1] = Y;
-			return 1;
-		}
-		else
-		{
-			X = -(B1 + sqrt(D)) / A;
-			Y = m * X + n;
-			xy[0][0] = X;
-			xy[0][1] = Y;
-
-			X = -(B1 - sqrt(D)) / A;
-			Y = m * X + n;
-			xy[1][0] = X;
-			xy[1][1] = Y;
-			return 2;
-		}
-	}
-	else
-	{
-		// a == c 인 경우는 수직선이므로
-		// 근을 가지려면 a >= (x-r) && a <=(x+r) )
-		// (a-x)*(a-x)
-		// 1. 근이 없는 경우
-		// a < (x-r) || a > (x+r)
-
-		// 근이 없음
-		if (a < (x - r) || a >(x + r))
-			return 0;
-		// 하나의 중근
-		else if (a == (x - r) || a == (x + r))
-		{
-			X = a;
-			Y = y;
-			xy[0][0] = X;
-			xy[0][1] = Y;
-
-			return 1;
-		}
-		// 두개의 근
-		else
-		{
-			// x = a를 대입하여 Y에 대하여 풀면
-			X = a;
-			Y = y + sqrt(r*r - (a - x)*(a - x));
-			xy[0][0] = X;
-			xy[0][1] = Y;
-
-			Y = y - sqrt(r*r - (a - x)*(a - x));
-			xy[1][0] = X;
-			xy[1][1] = Y;
-
-			return 2;
-		}
-	}
 }
 
 
@@ -261,26 +175,13 @@ int intersection(float x, float y, float r, float a, float b, float c, float d, 
 
 int main()
 {
-
-	float xy[2][2];
 	D3DXVECTOR2 posP1(0.0f,0.0f);
 	D3DXVECTOR2 posP2(10.0f,0.0f);
 
-	D3DXVECTOR2 posC1(5.0f, 5.0f);
+	D3DXVECTOR2 posC1(5.0f, -4.9f);
 	float RadiusC1 = 5.0f;
-
-	D3DXVECTOR2 posC2(20.0f, 20.0f);
-	float RadiusC2 = 1.0f;
-
-
 	bool result;
-	
 	result = CheckCollisionDetect(posP1, posP2, posC1, RadiusC1);
-	result = CheckCollisionDetect(posP1, posP2, posC2, RadiusC2);
-	
 
-	int a;
-	a = intersection(posC1.x, posC1.y, RadiusC1, posP1.x, posP1.y, posP2.x, posP2.y, xy);
-	a = intersection(posC2.x, posC2.y, RadiusC2, posP1.x, posP1.y, posP2.x, posP2.y, xy);
 	return 0;
 }
