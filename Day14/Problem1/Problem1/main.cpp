@@ -3,21 +3,40 @@
 #include <vector>
 #include <string>
 #include <conio.h>
+#include <sstream>
 
 using namespace std;
+
+void Parse(const string& InputLine, const string& delimiters, vector<string>& wordVector)
+{
+	stringstream stringStream(InputLine);
+	std::string line;
+
+	while (std::getline(stringStream, line))
+	{
+		std::size_t prev = 0, pos;
+		while ((pos = line.find_first_of(delimiters.c_str(), prev)) != std::string::npos)
+		{
+			if (pos > prev)
+				wordVector.push_back(line.substr(prev, pos - prev));
+			prev = pos + 1;
+		}
+		if (prev < line.length())
+			wordVector.push_back(line.substr(prev, std::string::npos));
+	}
+}
+
 int main()
 {
-	vector<int> numbers;
-	int count;
+	string inputLine;
+	vector<string> wordVector;
 	
-	cin >> count;
-	for (int i = 0; i < count; i++)
-	{
-		int value;
-		cin >> value;
-		numbers.push_back(value);
-	}
+	cout << "입력" << endl;
+	getline(cin, inputLine);
+	Parse(inputLine, ",", wordVector);
 
+	cout << "출력" << endl;
+	int count = wordVector.size();	
 	int countPrint = 0;	
 	for (int i = 0; i < count; i++)
 	{
@@ -38,7 +57,7 @@ int main()
 				{
 					line.append(",");
 				}
-				line.append(to_string(numbers[bitShift]));
+				line.append(wordVector[bitShift]);
 			}
 		}
 
