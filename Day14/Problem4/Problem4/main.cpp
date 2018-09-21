@@ -78,6 +78,72 @@ void Sort(vector<int>& Array)
 	}
 }
 
+int SortQuickPivot(vector<int>& Array,int BeginIndex,int EndIndex)
+{
+	int LeftIndex=BeginIndex;
+	int RightIndex=EndIndex-1;	
+	
+	while(LeftIndex != RightIndex)
+	{
+		if (Array[LeftIndex] > Array[EndIndex])
+		{
+			swap(Array[LeftIndex], Array[RightIndex]);
+			RightIndex--;
+		}
+		else
+		{
+			LeftIndex++;
+		}	
+	}
+
+	if (Array[LeftIndex] > Array[EndIndex])
+	{
+		swap(Array[LeftIndex], Array[EndIndex]);
+	}
+
+	
+	PrintArray(Array);
+	for (size_t i = 0; i < Array.size(); i++)
+	{
+		if (i == LeftIndex)
+		{
+			cout << 'P';
+		}
+		else if (i == BeginIndex)
+		{
+			cout << 'B';
+		}
+		else if (i == EndIndex)
+		{
+			cout << 'E';
+		}
+		else
+		{
+			cout << '_';
+		}
+	}
+	cout << endl;
+	/*
+	if (selectionIndex != endIndex)
+	{
+		swap(Array[endIndex], Array[selectionIndex]);
+	}
+	*/
+	return LeftIndex;
+}
+
+void SortQuick(vector<int>& Array,int begin,int end )
+{
+	if (begin >= end)
+		return;
+
+	int PivotIndex = SortQuickPivot(Array, begin,end);
+	// 여기까지 피봇위치를 중심으로 왼쪽은 피봇값보다 작은것들  오른쪽은 큰것들로 구분이 되어있어야한다.(완벽한정렬이 아님)
+	SortQuick(Array, begin, PivotIndex - 1);
+	SortQuick(Array, PivotIndex + 1, end);
+}
+
+
 
 vector<int> solution(vector<int> array,const vector<Command>& commands)
 {
@@ -103,6 +169,9 @@ int main()
 	string inputLine;
 	vector<string> wordVector;
 
+
+	
+
 	// DAta
 	wordVector.clear();
 	getline(cin, inputLine);
@@ -111,6 +180,9 @@ int main()
 	{
 		Data.push_back(atoi(wordVector[i].c_str()));
 	}
+
+	PrintArray(Data);
+	SortQuick(Data, 0, Data.size() - 1);
 
 	//Command
 	wordVector.clear();
