@@ -60,8 +60,8 @@ void Sort(vector<int>& Array)
 {
 	for (size_t i = 0; i < Array.size(); i++)
 	{		
-		int endIndex = Array.size() - i -1;
-		int selectionIndex = endIndex;
+		size_t endIndex = Array.size() - i -1;
+		size_t selectionIndex = endIndex;
 		for (int j = 0; j < endIndex; j++)
 		{
 			if (Array[j] > Array[selectionIndex])
@@ -78,61 +78,60 @@ void Sort(vector<int>& Array)
 	}
 }
 
-int SortQuickPivot(vector<int>& Array,int BeginIndex,int EndIndex)
-{
-	int LeftIndex=BeginIndex;
-	int RightIndex=EndIndex-1;	
-	
-	while(LeftIndex != RightIndex)
+int SortQuickPivot(vector<int>& Array, int BeginIndex, int EndIndex)
+{	
+	int LeftIndex = BeginIndex;
+	int RightIndex = EndIndex;
+	while (LeftIndex > RightIndex)
 	{
-		if (Array[LeftIndex] > Array[EndIndex])
-		{
-			swap(Array[LeftIndex], Array[RightIndex]);
-			RightIndex--;
-		}
-		else
+		if (Array[LeftIndex] < Array[EndIndex])
 		{
 			LeftIndex++;
-		}	
+			continue;
+		}
+		if (Array[RightIndex] >= Array[EndIndex])
+		{
+			RightIndex--;
+			continue;
+		}
+
+		swap(Array[LeftIndex], Array[RightIndex]);
+		LeftIndex++;
+		RightIndex++;
 	}
 
-	if (Array[LeftIndex] > Array[EndIndex])
-	{
-		swap(Array[LeftIndex], Array[EndIndex]);
-	}
+	if (Array[RightIndex] != Array[EndIndex])
+		swap(Array[RightIndex], Array[EndIndex]);
 
-	
-	PrintArray(Array);
-	for (size_t i = 0; i < Array.size(); i++)
-	{
-		if (i == LeftIndex)
-		{
-			cout << 'P';
-		}
-		else if (i == BeginIndex)
-		{
-			cout << 'B';
-		}
-		else if (i == EndIndex)
-		{
-			cout << 'E';
-		}
-		else
-		{
-			cout << '_';
-		}
-	}
-	cout << endl;
+	return RightIndex;
+
 	/*
-	if (selectionIndex != endIndex)
+	int LeftIndex = BeginIndex;
+	int RightIndex = EndIndex;
+	while (LeftIndex != RightIndex)
 	{
-		swap(Array[endIndex], Array[selectionIndex]);
-	}
+		if(Array[LeftIndex] < Array[EndIndex])
+		{
+			LeftIndex++;
+			continue;
+		}
+		if (Array[RightIndex] >= Array[EndIndex])
+		{
+			RightIndex--;
+			continue;
+		}
+		
+		swap(Array[LeftIndex], Array[RightIndex]);
+	}	
+
+	if (Array[RightIndex] != Array[EndIndex])
+		swap(Array[RightIndex], Array[EndIndex]);
+
+	return RightIndex;	
 	*/
-	return LeftIndex;
 }
 
-void SortQuick(vector<int>& Array,int begin,int end )
+void SortQuick(vector<int>& Array, int begin, int end )
 {
 	if (begin >= end)
 		return;
@@ -181,8 +180,8 @@ int main()
 		Data.push_back(atoi(wordVector[i].c_str()));
 	}
 
-	PrintArray(Data);
-	SortQuick(Data, 0, Data.size() - 1);
+	//PrintArray(Data);
+	SortQuick(Data, 0, (int)Data.size() - 1);
 
 	//Command
 	wordVector.clear();
