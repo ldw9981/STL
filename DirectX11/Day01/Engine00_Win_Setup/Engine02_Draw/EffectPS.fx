@@ -1,5 +1,5 @@
-// Á¤Á¡ ½¦ÀÌ´õ
-float4 main(float input : POSITION) : SV_TARGET
+// ÇÈ¼¿ ¼ÎÀÌ´õ(½¦ÀÌ´õ/¼ÎÀÌ´õ).
+float4 main(float4 input : POSITION) : SV_TARGET
 {
-	return float4(1.0f,1.0f,0.0f,1.0f);
+	return float4(1.0f, 0.0f, 0.0f, 1.0f);
 }

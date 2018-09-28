@@ -142,9 +142,6 @@ bool DXApp::Init()
 	if (InitDirect3D() == false)
 		return false;
 
-	if (InitScene() == false)
-		return false;
-
 	return true;
 }
 

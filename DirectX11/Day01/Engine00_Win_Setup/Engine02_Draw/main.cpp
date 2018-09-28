@@ -7,8 +7,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	if (engine.Init() == false)
 		return -1;
-	
-
 
 	return engine.Run();
 }
