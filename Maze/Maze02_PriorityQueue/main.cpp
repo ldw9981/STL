@@ -14,15 +14,15 @@ enum EMAZETYPE { PATH, WALL, VISITED, BACK, EXIT };
 using namespace std;
 
 int Maze[MAX][MAX] = {
-	{0, 1, 1, 0, 0, 0, 1, 1, 1, 0},
-	{0, 0, 0, 1, 0, 0, 1, 1, 0, 0},
-	{1, 0, 1, 0, 1, 1, 1, 0, 1, 0},
-	{1, 0, 1, 0, 1, 1, 1, 0, 1, 0},
+	{0, 0, 0, 0, 0, 0, 1, 1, 1, 0},
+	{0, 0, 0, 0, 0, 0, 1, 1, 0, 0},
+	{1, 0, 1, 0, 0, 0, 1, 0, 1, 0},
+	{1, 0, 1, 0, 0, 0, 1, 0, 1, 0},
 	{1, 0, 1, 0, 0, 0, 0, 1, 1, 0},
-	{0, 0, 1, 0, 0, 1, 0, 0, 1, 0},
-	{0, 0, 1, 0, 0, 1, 0, 1, 1, 0},
-	{1, 0, 1, 0, 1, 1, 1, 1, 1, 0},
-	{1, 0, 0, 0, 1, 1, 0, 0, 0, 0},
+	{0, 0, 1, 0, 0, 0, 0, 0, 1, 0},
+	{0, 0, 1, 0, 0, 0, 0, 1, 1, 0},
+	{1, 0, 1, 0, 0, 0, 1, 1, 1, 0},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	{1, 0, 0, 0, 0, 0, 1, 1, 1, 0}
 };
 void pause()
@@ -60,7 +60,7 @@ public:
 typedef priority_queue<Position, vector<Position>, std::function<bool(Position, Position)>> MazeQueue;
 
 Position g_Start(0, 0,0);
-Position g_Goal(MAX-1,MAX-1,0);
+Position g_Goal(5,5);
 Position g_Result;
 
 
