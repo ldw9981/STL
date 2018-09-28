@@ -34,24 +34,26 @@ void pause()
 class Position
 {
 public:
-	Position(int InitX = 0, int InitY = 0,int InitData=0)
+	Position(int InitX = 0, int InitY = 0,int InitLevel=0,int InitWeight=0)
 	{
 		x = InitX;
 		y = InitY;
-		data = InitData;
+		level = InitLevel;
+		weight = InitWeight;
 	}
 
 	int x;
 	int y;
 
-	int data;
+	int level;
+	int weight;
 
-	static bool Less(const Position& a,const Position& b) {
-		return a.data < b.data;
+	static bool Comp(const Position& a,const Position& b) {
+		int absA = abs(a.level + a.weight);
+		int absB = abs(b.level + b.weight);
+		return  absA > absB;
 	}
-	static bool Greater(const Position& a, const Position& b) {
-		return a.data > b.data;
-	}
+
 
 };
 
@@ -114,6 +116,32 @@ bool CheckMazeValue(const Position& Target, int CheckValue)
 	return false;
 }
 
+int GetWeight(const Position& TargetPosition)
+{
+	int weight = 0;
+
+	weight += max(TargetPosition.x, g_Goal.x) - min(TargetPosition.x, g_Goal.x);
+	weight += max(TargetPosition.y, g_Goal.y) - min(TargetPosition.y, g_Goal.y);
+	/*
+	int lastX = max(TargetPosition.x, g_Goal.x);
+	int lastY = max(TargetPosition.y, g_Goal.y);
+
+	int startX;
+	for (startX = min(TargetPosition.x, g_Goal.x) ; startX <= lastX; startX++)
+	{
+		if (Maze[TargetPosition.y][startX] == PATH)
+			weight++;
+	}
+
+	for (int startY = min(TargetPosition.y, g_Goal.y); startY <= lastY; startY++)
+	{
+		if (Maze[startY][startX] == PATH)
+			weight++;
+	}
+	*/
+
+	return -weight * 10;	
+}
 
 
 
@@ -195,7 +223,8 @@ bool StepTo(MazeQueue& BFSPositions,Position& CurrentPosition)
 			newLevel *= -1;
 
 			SetMazeValue(DirectionPosition, newLevel);
-			DirectionPosition.data = newLevel;
+			DirectionPosition.level = newLevel;
+			DirectionPosition.weight = GetWeight(DirectionPosition);	// ¸ñÀûÁö
 			BFSPositions.push(DirectionPosition);			
 			PrintMaze(CurrentPosition);
 		}
@@ -241,7 +270,7 @@ bool StepTo(MazeQueue& BFSPositions,Position& CurrentPosition)
 
 bool SearchMazeQueue(Position CurrentPosition)
 {
-	MazeQueue BFSPositions(Position::Greater); // BreadthFirstSearch
+	MazeQueue BFSPositions(Position::Comp); // BreadthFirstSearch
 	int Level = -10;
 	SetMazeValue(CurrentPosition, Level);
 	StepTo(BFSPositions, CurrentPosition);
