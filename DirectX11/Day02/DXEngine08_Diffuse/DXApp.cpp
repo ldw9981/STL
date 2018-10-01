@@ -1,7 +1,7 @@
 #include "DXApp.h"
 #include <fstream>
 
-using namespace std;
+using namespace std;;
 
 // 글로벌 변수.
 DXApp* pApp = NULL;
@@ -10,7 +10,7 @@ DXApp* pApp = NULL;
 LRESULT CALLBACK WinProc(HWND hwnd, UINT msg,
 	WPARAM wParam, LPARAM lParam)
 {
-	if (pApp != NULL) pApp->MSGProc(hwnd, msg, wParam, lParam);
+	if (pApp != NULL) return pApp->MSGProc(hwnd, msg, wParam, lParam);
 	else return DefWindowProc(hwnd, msg, wParam, lParam);
 }
 
@@ -21,7 +21,7 @@ DXApp::DXApp(HINSTANCE hinstance)
 	this->hinstance = hinstance;
 	clientWidth = 800;
 	clientHeight = 600;
-	applicationName = L"DXEngine08_Diffuse";
+	applicationName = L"Engine08 - Diffuse";
 	wndStyle = WS_OVERLAPPEDWINDOW;
 
 	pApp = this;
@@ -58,10 +58,11 @@ DXApp::~DXApp()
 	Memory::SafeRelease(cBuffer);
 	Memory::SafeRelease(pTexture);
 	Memory::SafeRelease(pSamplerState);
-	Memory::SafeRelease(lightBuffer);
 
 	Memory::SafeDeleteArray(vertices);
 	Memory::SafeDeleteArray(indices);
+
+	Memory::SafeRelease(lightBuffer);
 }
 
 // 메시지 처리 루프.
@@ -112,6 +113,7 @@ bool DXApp::Init()
 	if (InitTransformation() == false) 
 		return false;
 
+	// 라이트 버퍼 초기화.
 	if (InitLightCB() == false)
 		return false;
 
@@ -310,8 +312,7 @@ bool DXApp::InitScene()
 	pDeviceContext->PSSetShader(pixelShader, NULL, NULL);
 
 	// 정점 데이터(배열) 생성.
-	/*
-	Vertex vertices[] = 
+	/*Vertex vertices[] = 
 	{
 		Vertex( XMFLOAT3(-0.5f, 0.5f, 0.5f), 
 		XMFLOAT4(1.0f, 0.0f, 0.0f, 1.0f), XMFLOAT2(0.0f, 0.0f) ),
@@ -324,11 +325,12 @@ bool DXApp::InitScene()
 
 		Vertex( XMFLOAT3(-0.5f, -0.5f, 0.5f), 
 		XMFLOAT4(0.0f, 0.0f, 1.0f, 1.0f),  XMFLOAT2(0.0f, 1.0f))
-	};
-	*/
+	};*/
 
 	// 정점 개수 저장.
 	//nVertices = ARRAYSIZE(vertices);
+
+	// 모델 로드.
 	if (LoadModel("cube.txt") == false)
 		return false;
 
@@ -361,13 +363,11 @@ bool DXApp::InitScene()
 	pDeviceContext->IASetVertexBuffers(0, 1, &vertexBuffer, &stride, &offset);
 
 	// 인덱스 버퍼 설정.
-	/*
-	DWORD indices[] = 
+	/*DWORD indices[] = 
 	{
 		0, 1, 2,
 		0, 2, 3
-	};
-	*/
+	};*/
 
 	// 인덱스 개수 저장.
 	//nIndices = ARRAYSIZE(indices);
@@ -398,9 +398,9 @@ bool DXApp::InitScene()
 	// 입력 레이아웃.
 	D3D11_INPUT_ELEMENT_DESC layout[] = 
 	{
-		{ "POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0 },		
-		{ "TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT	, 0, 12, D3D11_INPUT_PER_VERTEX_DATA, 0 },
-		{ "NORMAL"	, 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 20, D3D11_INPUT_PER_VERTEX_DATA, 0 },
+		{ "POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0 },
+		{ "TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT, 0, 12, D3D11_INPUT_PER_VERTEX_DATA, 0 },
+		{ "NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 20, D3D11_INPUT_PER_VERTEX_DATA, 0 },
 	};
 
 	// 입력 레이아웃 생성.
@@ -429,6 +429,64 @@ bool DXApp::InitScene()
 
 	// 뷰포트 설정.
 	pDeviceContext->RSSetViewports(1, &viewport);
+
+	return true;
+}
+
+bool DXApp::LoadModel(const char * fileName)
+{
+	// 파일 읽기.
+	ifstream fin;
+	fin.open(fileName);
+
+	// 제대로 열렸는지 확인.
+	if (fin.fail())
+		return false;
+
+	char input;					// 파일에서 읽은 문자 저장.
+	fin.get(input);
+	while (input != ':')
+	{
+		fin.get(input);
+	}
+
+	fin >> nVertices;			// 텍스트 파일에 저장된 정점 개수 저장.
+	nIndices = nVertices;		// 인덱스 개수는 정점 개수와 동일하게 설정.
+
+	// 배열 공간 확보.
+	vertices = new Vertex[nVertices];
+	indices = new DWORD[nIndices];
+
+	// 파일 포인터 이동.
+	fin.get(input);
+	while (input != ':')
+	{
+		fin.get(input);
+	}
+
+	// 두 줄 건너 뛰기.
+	fin.get(input);
+	fin.get(input);
+
+	// 배열 데이터 설정.
+	for (int ix = 0; ix < nVertices; ++ix)
+	{	
+		float x, y, z, u, v, nx, ny, nz;			// 추출할 변수 선언.
+		fin >> x >> y >> z;
+		fin >> u >> v;
+		fin >> nx >> ny >> nz;
+
+		// 정점 데이터 설정.
+		vertices[ix].position = XMFLOAT3(x, y, z);
+		vertices[ix].texCoord = XMFLOAT2(u, v);
+		vertices[ix].normal = XMFLOAT3(nx, ny, nz);
+
+		// 인덱스 정보 설정.
+		indices[ix] = ix;
+	}
+
+	// 파일 닫기.
+	fin.close();
 
 	return true;
 }
@@ -495,7 +553,7 @@ bool DXApp::InitTexture()
 	if (FAILED(hr))
 	{
 		MessageBox(NULL, L"텍스처 로드 실패", L"오류", MB_OK);
-		return false;
+		return false;	
 	}
 
 	// 샘플러 스테이트.
@@ -525,57 +583,12 @@ bool DXApp::InitTexture()
 	return true;
 }
 
-bool DXApp::LoadModel(const char * fileName)
-{
-	//파일읽기
-	ifstream fin;
-	fin.open(fileName);
-	if (fin.fail())
-		return false;
-
-	char input; // 파일에서 읽은문자 저장
-	fin.get(input);
-	while (input != ':')
-	{
-		fin.get(input);
-	}
-	fin >> nVertices;		//버텍스 개수
-	nIndices = nVertices;	//인덱스 개수
-	   
-	//배열 공간 확보
-	vertices = new Vertex[nVertices];
-	indices = new DWORD[nIndices];
-	fin.get(input);
-	while (input != ':')
-	{
-		fin.get(input);
-	}
-
-	for (int ix = 0; ix < nVertices; ++ix)
-	{
-		float x, y, z, u, v, nx, ny, nz;
-		fin >> x >> y >> z;
-		fin >> u >> v;
-		fin >> nx >> ny >> nz;
-
-		vertices[ix].position = XMFLOAT3(x, y, z);
-		vertices[ix].texCoord = XMFLOAT2(u,v);
-		vertices[ix].normal = XMFLOAT3(nx, ny, nz);
-
-		indices[ix] = ix;
-	}
-
-	// 파일닫기
-	fin.close();
-	return true;
-}
-
 bool DXApp::InitLightCB()
 {
-	// 라이트 상수 버퍼용 구조체 설정
+	// 라이트 상수 버퍼용 구조체 설정.
 	CBLight cbLight;
 	ZeroMemory(&cbLight, sizeof(cbLight));
-	cbLight.lightPosition = XMVectorSet(-500.0f, 500.0f, -500.0f,1.0f);
+	cbLight.lightPosition = XMVectorSet(-500.0f, 500.0f, -500.0f, 1.0f);
 
 	D3D11_BUFFER_DESC cbDesc;
 	ZeroMemory(&cbDesc, sizeof(cbDesc));
@@ -586,17 +599,19 @@ bool DXApp::InitLightCB()
 	cbDesc.Usage = D3D11_USAGE_DEFAULT;
 
 	D3D11_SUBRESOURCE_DATA cbData;
-	ZeroMemory(&cbData,sizeof(cbData));
+	ZeroMemory(&cbData, sizeof(cbData));
 	cbData.pSysMem = &cbLight;
 
-	//
+	// 상수 버퍼 생성.
 	HRESULT hr = pDevice->CreateBuffer(&cbDesc, &cbData, &lightBuffer);
 	if (FAILED(hr))
 	{
-		MessageBox(NULL, L"라이트 상수 버퍼 생성", L"오류", MB_OK);
+		MessageBox(NULL, L"라이트 버퍼 생성 실패", L"오류", MB_OK);
 		return false;
 	}
 
+	// 바인딩.
 	pDeviceContext->VSSetConstantBuffers(1, 1, &lightBuffer);
+
 	return true;
 }

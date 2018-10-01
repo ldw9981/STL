@@ -2,8 +2,9 @@
 struct ps_input
 {
 	float4 pos : SV_POSITION;
+	//float4 color : COLOR;
 	float2 texCoord : TEXCOORD0;
-	float3 normal:NORMAL;
+	float3 normal : NORMAL;
 };
 
 // 텍스처 정보.

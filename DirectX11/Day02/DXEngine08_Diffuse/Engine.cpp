@@ -8,6 +8,7 @@ Engine::Engine(HINSTANCE hinstance)
 
 Engine::~Engine()
 {
+
 }
 
 bool Engine::Init()
@@ -26,7 +27,8 @@ void Engine::Update()
 void Engine::Render()
 {
 	// 색상 설정.
-	float color[4] = { 0.0f, 0.5f, 0.5f, 1.0f };
+	/*float color[4] = { 0.0f, 0.5f, 0.5f, 1.0f };*/
+	float color[4] = { 0.0f, 0.0f, 0.0f, 1.0f };
 
 	// 화면 칠하기.
 	pDeviceContext->ClearRenderTargetView(pRenderTargetView, color);

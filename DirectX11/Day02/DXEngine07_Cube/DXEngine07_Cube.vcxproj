@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{25767F3F-2369-435E-8CF8-C089482436B8}</ProjectGuid>
+    <ProjectGuid>{41B45B1C-0A54-4D6C-926F-57C2F3C81ABF}</ProjectGuid>
     <RootNamespace>DXEngine00WinSetup</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -134,9 +134,6 @@
     <FxCompile Include="EffectVS.fx">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
     </FxCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\DXEngine08_Diffuse\DXEngine08_Diffuse.vcxproj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

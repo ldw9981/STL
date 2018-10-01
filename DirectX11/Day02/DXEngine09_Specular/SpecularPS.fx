@@ -3,10 +3,11 @@ struct ps_input
 {
 	float4 pos : SV_POSITION;
 	float2 texCoord : TEXCOORD0;
-	float3 normal:NORMAL;
-	float4 diffuse:TEXCOORD1;
+	float3 normal : NORMAL;
+	float3 diffuse : TEXCOORD1;
+
 	float4 viewDir : TEXCOORD2;
-	float4 reflection : TEXCOORD3;
+	float3 reflection : TEXCOORD3;
 };
 
 // 텍스처 정보.
@@ -17,30 +18,30 @@ SamplerState objSampler;
 float4 main(ps_input input) : SV_TARGET
 {
 	// 텍스처 샘플링 (색상 정보 추출).
-
 	float4 texColor = objTexture.Sample(
 		objSampler, input.texCoord);
-/*
-	// 텍스처 색상 반환.
-	return texColor;
-	*/
 
-	// 0~1 클램프
+	// Diffuse 색상 추출.
 	float3 diffuse = saturate(input.diffuse);
-	
-	// 스펙큘러
-	float3 reflection = normalize(input.reflection).xyz;
-	float3 viewDir = normalize(input.viewDir).xyz;
+
+	// 스페큘러 계산.
+	float3 reflection = normalize(input.reflection);
+	float3 viewDir = normalize(input.viewDir.xyz);
 	float3 specular = 0;
+
 	if (diffuse.x > 0)
 	{
-		// 내적 뷰벡터,반사벡터
-		specular = dot(reflection, -viewDir);
+		// 내적 (뷰 벡터, 반사벡터).
+		specular = dot(-viewDir, reflection);
+		// 0-1 고정.
 		specular = saturate(specular);
-		specular = pow(specular, 20.0f); // 스펙큘러 파워 상수로 뺄수도 있다.
+		// 정반사 영역 줄이고 빛 증폭시키기.
+		specular = pow(specular, 10.0f);
 	}
 
-	float3 finalColor = texColor.rgb * diffuse + specular;
+	// 최종 색상.
+	float3 finalColor = texColor.rgb * diffuse;
 
-	return float4(finalColor, 1.0f);
+	//return float4(finalColor, 1);
+	return float4(specular, 1);
 }

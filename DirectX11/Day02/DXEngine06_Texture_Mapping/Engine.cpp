@@ -8,6 +8,7 @@ Engine::Engine(HINSTANCE hinstance)
 
 Engine::~Engine()
 {
+
 }
 
 bool Engine::Init()
