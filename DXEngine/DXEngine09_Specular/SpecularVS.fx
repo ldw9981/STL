@@ -25,7 +25,6 @@ struct vs_input
 struct vs_output
 {
 	float4 pos : SV_POSITION;
-	//float4 color : COLOR;
 	float2 texCoord : TEXCOORD0;
 	float3 normal : NORMAL;
 	float3 diffuse : TEXCOORD1;
@@ -59,8 +58,8 @@ vs_output main(vs_input input)
 	output.viewDir = viewDir;
 
 	// 반사벡터 구하기 R = L +  2n(-L·n).
-	//float3 reflection = reflect(lightDir.xyz, worldNormal);
-	float3 reflection = lightDir + 2.0f * worldNormal * dot(-lightDir, worldNormal);
+	float3 reflection = reflect(lightDir.xyz, worldNormal);
+	//float3 reflection = lightDir + 2.0f * worldNormal * dot(-lightDir, worldNormal);
 
 	output.reflection = reflection;
 

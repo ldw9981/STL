@@ -48,6 +48,7 @@ vs_output main(vs_input input)
 
 	// 내적.
 	float3 diffuse = dot(-lightDir.xyz, worldNormal);
+	/*diffuse = -lightDir.x * worldNormal.x + -lightDir.y * worldNormal.y + -lightDir.z * worldNormal.z;*/
 
 	// 난반사광 반환.
 	/*output.diffuse = diffuse;*/

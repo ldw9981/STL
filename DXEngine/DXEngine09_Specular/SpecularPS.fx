@@ -32,15 +32,15 @@ float4 main(ps_input input) : SV_TARGET
 	if (diffuse.x > 0)
 	{
 		// 내적 (뷰 벡터, 반사벡터).
-		specular = dot(-viewDir, reflection);
+		specular = dot(reflection, -viewDir);
 		// 0-1 고정.
 		specular = saturate(specular);
 		// 정반사 영역 줄이고 빛 증폭시키기.
-		specular = pow(specular, 10.0f);
+		specular = pow(specular, 20.0f);
 	}
 
 	// 최종 색상.
-	float3 finalColor = texColor.rgb * diffuse;
+	float3 finalColor = texColor.rgb * diffuse + specular;
 
 	//return float4(finalColor, 1);
 	return float4(specular, 1);
