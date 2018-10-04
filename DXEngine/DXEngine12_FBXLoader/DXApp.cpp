@@ -323,7 +323,7 @@ bool DXApp::InitScene()
 	// 모델 로드.
 	/*if (LoadModel("cube.txt") == false)
 		return false;*/
-	hr = LoadFBX("sphere.fbx", &vertices, &indices);
+	hr = LoadFBX("HeroTPP.fbx", &vertices, &indices);
 	if (FAILED(hr))
 	{
 		MessageBox(NULL, L"FBX 로드 실패", L"오류", MB_OK);
@@ -497,6 +497,16 @@ bool DXApp::InitTransformation()
 	// 월드 변환 행렬 설정.
 	worldMatrix = XMMatrixIdentity();
 
+	// 회전.
+	XMMATRIX rotationX
+		= XMMatrixRotationX(XMConvertToRadians(-90.0f));
+	XMMATRIX rotationY
+		= XMMatrixRotationY(XMConvertToRadians(180.0f));
+	XMMATRIX rotation = rotationX * rotationY;
+	// 이동.
+	XMMATRIX translation = XMMatrixTranslation(0.0f, -90.0f, 0.0f);
+	worldMatrix = rotation * translation;
+
 	// 카메라 정보 설정.
 	cameraPos = XMVectorSet(0.0f, 0.0f, -200.0f, 1.0f);
 	cameraTarget = XMVectorSet(0.0f, 0.0f, 0.0f, 1.0f);
@@ -551,7 +561,7 @@ bool DXApp::InitTexture()
 {
 	// 텍스처 파일 로드.
 	HRESULT hr = D3DX11CreateShaderResourceViewFromFile(
-		pDevice, L"dx.jpg", NULL, NULL, &pTexture, NULL);
+		pDevice, L"T_Chr_FPS_D.png", NULL, NULL, &pTexture, NULL);
 	if (FAILED(hr))
 	{
 		MessageBox(NULL, L"텍스처 로드 실패", L"오류", MB_OK);

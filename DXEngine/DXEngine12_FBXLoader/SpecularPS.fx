@@ -43,8 +43,7 @@ float4 main(ps_input input) : SV_TARGET
 	float3 ambient = float3(0.1f, 0.1f, 0.1f);
 
 	// 최종 색상.
-	float3 finalColor = diffuse + specular + ambient;
-	
+	float3 finalColor = texColor * diffuse + specular + ambient;
 
 	//return float4(finalColor, 1);
 	return float4(finalColor, 1);
