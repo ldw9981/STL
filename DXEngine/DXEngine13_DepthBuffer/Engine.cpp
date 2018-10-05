@@ -41,7 +41,7 @@ void Engine::Render()
 	pDeviceContext->DrawIndexed(nIndices, 0, 0);
 
 	// 스왑체인 교체.
-	pSwapChain->Present(0, 0);
+	pSwapChain->Present(1, 0);
 }
 
 float rotY = 0.01f;		// 회전 각도 저장용.

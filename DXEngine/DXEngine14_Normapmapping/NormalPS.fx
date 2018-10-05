@@ -40,6 +40,8 @@ float4 main(ps_input input) : SV_TARGET
 
 	// 난반사광 구하기.
 	float3 diffuse = saturate(dot(worldNormal, -lightDir));
+	// 하프 램버트(Half Lambert).
+	//diffuse = pow(diffuse * 0.5f + 0.5f, 2.0f);
 
 	// 디퓨즈맵 읽기.
 	float4 albedo = diffuseMap.Sample(texSampler, input.texCoord);		
@@ -59,6 +61,9 @@ float4 main(ps_input input) : SV_TARGET
 		specular = saturate(specular);
 		specular = pow(specular, 20.0f);
 	}
+
+	// 앰비언트 라이트.
+	float3 ambient = float3(0.1f, 0.1f, 0.1f);
 
 	// 최종 색상 반환.
 	return float4(diffuse + specular, 1);

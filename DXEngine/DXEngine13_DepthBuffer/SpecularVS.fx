@@ -51,6 +51,7 @@ vs_output main(vs_input input)
 
 	// ³»Àû.
 	float3 diffuse = dot(-lightDir.xyz, worldNormal);
+	diffuse = pow(diffuse * 0.5f + 0.5f, 2.0f);
 
 	// ºä º¤ÅÍ ±¸ÇÏ±â.
 	float4 viewDir = normalize(output.pos - worldCameraPosition);
