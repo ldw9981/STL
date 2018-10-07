@@ -31,8 +31,10 @@ float4 main(ps_input input) : SV_TARGET
 	);
 
 	// 월드 노멀 값 구하기.
-	float3 worldNormal 
-		= normalize( mul(tangentNormal, transpose(TBN)) );
+	//float3 worldNormal = normalize(mul(tangentNormal, transpose(TBN)));	 // 틀린	
+	//float3 worldNormal = normalize( mul(tangentNormal, TBN) );			// 아래와같은결과
+	float3 worldNormal = (tangentNormal.x * input.T) + (tangentNormal.y * input.B) + (tangentNormal.z * input.N);
+	worldNormal = normalize(worldNormal);
 	//float3 worldNormal = tangentNormal * transpose(TBN);
 
 	// 라이트 벡터.
