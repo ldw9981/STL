@@ -34,13 +34,4 @@ private:
 };
 
 
-struct Texture
-{
-public:
-	Texture() { ZeroMemory(this, sizeof(Texture)); }
-	~Texture() { Memory::SafeRelease(textureResource); }
 
-	LPCWSTR fileName;
-	ID3D11ShaderResourceView* textureResource = NULL;
-
-};
