@@ -32,7 +32,7 @@ float4 main(ps_input input) : SV_TARGET
 
 	// 월드 노멀 값 구하기.
 	float3 worldNormal 
-		= normalize( mul(tangentNormal, transpose(TBN)) );
+		= normalize( mul(tangentNormal, TBN) );
 	//float3 worldNormal = tangentNormal * transpose(TBN);
 
 	// 라이트 벡터.

@@ -98,17 +98,16 @@ bool DXApp::Init()
 	// Direct3D 초기화.
 	if (InitDirect3D() == false)
 		return false;
-	
+
 	// 타이머 초기화.
 	gameTimer.StartTime();
 
 	// 장면 초기화.
-	if (InitScene() == false) 
+	if (InitScene() == false)
 		return false;
 
 	// 공간 변환 행렬 초기화.
-	if (InitTransformation() == false) 
-		return false;
+	//if (InitTransformation() == false) return false;
 
 	// 라이트 버퍼 초기화.
 	if (InitLightCB() == false)
@@ -117,7 +116,7 @@ bool DXApp::Init()
 	return true;
 }
 
-LRESULT DXApp::MSGProc(HWND hwnd, UINT msg, 
+LRESULT DXApp::MSGProc(HWND hwnd, UINT msg,
 	WPARAM wParam, LPARAM lParam)
 {
 	// 메시지 처리.
@@ -330,21 +329,59 @@ bool DXApp::InitScene()
 
 void DXApp::InitMeshInfo()
 {
-	//모델
-	LPCSTR fbxNameTPP = "Resources//Models//HeroTPP.fbx";
-	// 텍스처 이름
-	Texture tppDiffuseMap;
-	tppDiffuseMap.fileName = L"Resources//Textures//T_Chr_FPS_D.png";
-	// 모델
-	Mesh tppDiffuse(fbxNameTPP, L"Shaders//DiffuseVS.fx", L"Shaders//DiffusePS.fx");
+	// 모델(FBX) 이름.
+	LPCSTR fbxNameTPP
+		= "Resources//Models//HeroTPP.fbx";
+	LPCSTR fbxNameBox
+		= "Resources//Models//SK_CharM_Cardboard.fbx";
+	LPCSTR fbxNameSphere
+		= "Resources//Models//sphere.fbx";
 
-	// 텍스처
+	// 텍스처 이름.
+	Texture tppDiffuseMap;
+	tppDiffuseMap.fileName
+		= L"Resources//Textures//T_Chr_FPS_D.png";
+
+	Texture tppNormalMap;
+	tppNormalMap.fileName
+		= L"Resources//Textures//T_Chr_FPS_N.png";
+
+	Texture cubeMap;
+	cubeMap.fileName
+		= L"Resources//Textures//LancellottiChapel.dds";
+
+
+	// 모델(Mesh).
+	Mesh tppDiffuse(
+		fbxNameTPP,
+		L"Shaders//DiffuseVS.fx",
+		L"Shaders//DiffusePS.fx"
+	);
+	// 텍스처 추가.
 	tppDiffuse.AddTexture(tppDiffuseMap);
 	tppDiffuse.SetPosition(XMFLOAT3(0.0f, -90.0f, 0.0f));
 	tppDiffuse.SetRotation(XMFLOAT3(-90.0f, 180.0f, 0.0f));
 
-	// 메시 배열에 추가
+	// 메시 배열에 추가.
 	meshes.push_back(tppDiffuse);
+
+	Mesh tppNormal(
+		fbxNameTPP,
+		L"Shaders//NormalVS.fx",
+		L"Shaders//NormalPS.fx");
+	tppNormal.AddTexture(tppDiffuseMap);
+	tppNormal.AddTexture(tppNormalMap);
+	tppNormal.SetPosition(XMFLOAT3(-150.0f, -90.0f, 0.0f));
+	tppNormal.SetRotation(XMFLOAT3(-90.0f, 180.0f, 0.0f));
+	meshes.push_back(tppNormal);
+
+	Mesh sphere(
+		fbxNameSphere,
+		L"Shaders//CubeVS.fx",
+		L"Shaders//CubePS.fx");
+	sphere.AddTexture(cubeMap);
+	sphere.SetPosition(XMFLOAT3(150.0f, 0.0f, 0.0f));
+	meshes.push_back(sphere);
 }
 
 bool DXApp::CompileShader(Mesh * mesh)
@@ -370,7 +407,7 @@ bool DXApp::InitVertexBuffer(Mesh * mesh)
 	if (FAILED(hr)) return false;
 
 	// 정점 버퍼 생성.
-	if (!mesh->CreateVertexBuffer(pDevice)) 
+	if (!mesh->CreateVertexBuffer(pDevice))
 		return false;
 
 	return true;
@@ -383,7 +420,7 @@ void DXApp::BindVertexBuffer(Mesh * mesh)
 
 bool DXApp::InitIndexBuffer(Mesh * mesh)
 {
-	if (!mesh->CreateIndexBuffer(pDevice)) 
+	if (!mesh->CreateIndexBuffer(pDevice))
 		return false;
 
 	return true;
@@ -423,7 +460,7 @@ bool DXApp::InitTransformation()
 	worldMatrix = rotation * translation;
 
 	// 카메라 정보 설정.
-	cameraPos = XMVectorSet(0.0f, 0.0f, -200.0f, 1.0f);
+	cameraPos = XMVectorSet(0.0f, 0.0f, -5.0f, 1.0f);
 	cameraTarget = XMVectorSet(0.0f, 0.0f, 0.0f, 1.0f);
 	cameraUp = XMVectorSet(0.0f, 1.0f, 0.0f, 1.0f);
 
@@ -486,11 +523,9 @@ bool DXApp::InitTransformation(Mesh * mesh)
 		projectionMatrix
 	);
 
-
 	InitWVPBuffer(mesh);
 
-	pDeviceContext->VSSetConstantBuffers(0,1,&cBuffer);
-
+	pDeviceContext->VSSetConstantBuffers(0, 1, &cBuffer);
 
 	return true;
 }
@@ -507,7 +542,7 @@ void DXApp::InitWorldMatrix(Mesh * mesh)
 void DXApp::InitViewMatrix()
 {
 	// 카메라 정보 설정.
-	cameraPos = XMVectorSet(0.0f, 0.0f, -5.0f, 1.0f);
+	cameraPos = XMVectorSet(0.0f, 0.0f, -200.0f, 1.0f);
 	cameraTarget = XMVectorSet(0.0f, 0.0f, 0.0f, 1.0f);
 	cameraUp = XMVectorSet(0.0f, 1.0f, 0.0f, 1.0f);
 
@@ -546,7 +581,7 @@ bool DXApp::InitWVPBuffer(Mesh * mesh)
 	}
 
 	// WVP용 상수버퍼 바인딩.
-	pDeviceContext->VSSetConstantBuffers(0, 1, &cBuffer);
+	//pDeviceContext->VSSetConstantBuffers(0, 1, &cBuffer);
 
 	return true;
 }
@@ -559,7 +594,7 @@ void DXApp::UpdateWVPBuffer(Mesh * mesh)
 	// WVP 행렬 값 저장.
 	mesh->SetWVPMatrices(
 		worldMatrix,
-		viewMatrix, 
+		viewMatrix,
 		projectionMatrix
 	);
 
