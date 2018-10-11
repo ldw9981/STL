@@ -21,7 +21,7 @@ DXApp::DXApp(HINSTANCE hinstance)
 	this->hinstance = hinstance;
 	clientWidth = 1600;
 	clientHeight = 960;
-	applicationName = L"Engine18 - EngineUpdate";
+	applicationName = L"Engine18 - Engine Framework";
 	wndStyle = WS_OVERLAPPEDWINDOW;
 
 	pApp = this;
@@ -30,13 +30,6 @@ DXApp::DXApp(HINSTANCE hinstance)
 	pDeviceContext = NULL;
 	pSwapChain = NULL;
 	pRenderTargetView = NULL;
-
-	vertexBuffer = NULL;
-	vertexShader = NULL;
-	pixelShader = NULL;
-	vertexShaderBuffer = NULL;
-	pixelShaderBuffer = NULL;
-	vertexInputLayout = NULL;
 }
 
 DXApp::~DXApp()
@@ -47,25 +40,17 @@ DXApp::~DXApp()
 	Memory::SafeRelease(pRenderTargetView);
 	Memory::SafeRelease(pSwapChain);
 
-	Memory::SafeRelease(vertexBuffer);
-	Memory::SafeRelease(vertexShader);
-	Memory::SafeRelease(pixelShader);
-	Memory::SafeRelease(vertexShaderBuffer);
-	Memory::SafeRelease(pixelShaderBuffer);
-	Memory::SafeRelease(vertexInputLayout);
-
-	Memory::SafeRelease(indexBuffer);
 	Memory::SafeRelease(cBuffer);
-	Memory::SafeRelease(pTexture);
-	Memory::SafeRelease(pSamplerState);
-
-	/*Memory::SafeDeleteArray(vertices);
-	Memory::SafeDeleteArray(indices);*/
 
 	Memory::SafeRelease(lightBuffer);
 
 	Memory::SafeRelease(depthStencilView);
 	Memory::SafeRelease(depthStencilBuffer);
+
+	for (int ix = 0; ix < meshes.size(); ++ix)
+	{
+		meshes[ix].Release();
+	}
 }
 
 // 메시지 처리 루프.
@@ -127,10 +112,6 @@ bool DXApp::Init()
 
 	// 라이트 버퍼 초기화.
 	if (InitLightCB() == false)
-		return false;
-
-	// 텍스처 초기화.
-	if (InitTexture() == false)
 		return false;
 
 	return true;
@@ -313,232 +294,117 @@ bool DXApp::InitDepthStencilBuffer()
 
 bool DXApp::InitScene()
 {
-	// 셰이더 컴파일.
-	HRESULT hr;
+	// 메쉬 정보 설정.
+	InitMeshInfo();
 
-	// 정점 셰이더 컴파일해서 정점 셰이더 버퍼에 저장.
-	hr = D3DX11CompileFromFile(L"CubeVS.fx", NULL, NULL,
-		"main", "vs_4_0", NULL, NULL, NULL,
-		&vertexShaderBuffer, NULL, NULL);
-
-	if (FAILED(hr))
+	for (int ix = 0; ix < meshes.size(); ++ix)
 	{
-		MessageBox(hwnd, L"정점 셰이더 컴파일 실패.", L"오류.", MB_OK);
-		return false;
+		Mesh* mesh = &meshes[ix];
+
+		if (!CompileShader(mesh)) return false;
+
+		if (!InitVertexBuffer(mesh)) return false;
+
+		if (!InitIndexBuffer(mesh)) return false;
+
+		if (!InitInputLayout(mesh)) return false;
+
+		// 정점을 이어서 그릴 방식 설정.
+		pDeviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+
+		if (!mesh->LoadTextures(pDevice)) return false;
+
+		if (!mesh->CreateSamplerState(pDevice)) return false;
+
+		InitTransformation(mesh);
+
+		InitLightCB();
+
+		BindLightCB();
 	}
 
-	// 정점 셰이더 생성.
-	hr = pDevice->CreateVertexShader(vertexShaderBuffer->GetBufferPointer(),
-		vertexShaderBuffer->GetBufferSize(), NULL, &vertexShader);
-
-	if (FAILED(hr))
-	{
-		MessageBox(hwnd, L"정점 셰이더 생성 실패.", L"오류.", MB_OK);
-		return false;
-	}
-
-	// 정점 셰이더 단계에 바인딩(설정, 연결)binding.
-	pDeviceContext->VSSetShader(vertexShader, NULL, NULL);
-
-	// 픽셀 셰이더 컴파일.
-	hr = D3DX11CompileFromFile(L"CubePS.fx", NULL, NULL,
-		"main", "ps_4_0", NULL, NULL, NULL, &pixelShaderBuffer,
-		NULL, NULL);
-
-	if (FAILED(hr))
-	{
-		MessageBox(hwnd, L"픽셀 셰이더 컴파일 실패.", L"오류.", MB_OK);
-		return false;
-	}
-
-	// 픽셀 셰이더 생성.
-	hr = pDevice->CreatePixelShader(
-		pixelShaderBuffer->GetBufferPointer(),
-		pixelShaderBuffer->GetBufferSize(), NULL, &pixelShader);
-
-	if (FAILED(hr))
-	{
-		MessageBox(hwnd, L"픽셀 셰이더 생성 실패.", L"오류.", MB_OK);
-		return false;
-	}
-
-	// 픽셀 셰이더 설정.
-	pDeviceContext->PSSetShader(pixelShader, NULL, NULL);
-
-	// 모델 로드.
-	/*if (LoadModel("cube.txt") == false)
-		return false;*/
-	hr = LoadFBX("sphere.fbx", &vertices, &indices);
-	if (FAILED(hr))
-	{
-		MessageBox(NULL, L"FBX 로드 실패", L"오류", MB_OK);
-		return false;
-	}
-
-	// 정점/인덱스 개수 설정.
-	nVertices = vertices.size();
-	nIndices = indices.size();
-
-	D3D11_BUFFER_DESC vbDesc;
-	ZeroMemory(&vbDesc, sizeof(D3D11_BUFFER_DESC));
-	// sizeof(vertices) / sizeof(Vertex).
-	vbDesc.ByteWidth = sizeof(Vertex) * nVertices;
-	vbDesc.CPUAccessFlags = 0;
-	vbDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
-	vbDesc.MiscFlags = 0;
-	vbDesc.Usage = D3D11_USAGE_DEFAULT;
-
-	// 배열 데이터 할당.
-	D3D11_SUBRESOURCE_DATA vbData;
-	ZeroMemory(&vbData, sizeof(vbData));
-	vbData.pSysMem = &vertices[0];
-
-	// 정점 버퍼 생성.
-	hr = pDevice->CreateBuffer(&vbDesc, &vbData, &vertexBuffer);
-	if (FAILED(hr))
-	{
-		MessageBox(hwnd, L"정점 버퍼 생성 실패.", L"오류.", MB_OK);
-		return false;
-	}
-
-	UINT stride = sizeof(Vertex);
-	UINT offset = 0;
-
-	// 정점 버퍼 바인딩.
-	pDeviceContext->IASetVertexBuffers(0, 1, &vertexBuffer, &stride, &offset);
-
-	D3D11_BUFFER_DESC ibDesc;
-	ZeroMemory(&ibDesc, sizeof(D3D11_BUFFER_DESC));
-	ibDesc.ByteWidth = sizeof(DWORD) * nIndices;
-	ibDesc.BindFlags = D3D11_BIND_INDEX_BUFFER;
-	ibDesc.CPUAccessFlags = 0;
-	ibDesc.MiscFlags = 0;
-	ibDesc.Usage = D3D11_USAGE_DEFAULT;
-
-	D3D11_SUBRESOURCE_DATA ibData;
-	ZeroMemory(&ibData, sizeof(D3D11_SUBRESOURCE_DATA));
-	ibData.pSysMem = &indices[0];
-
-	// 인덱스 버퍼 생성.
-	hr = pDevice->CreateBuffer(&ibDesc, &ibData, &indexBuffer);
-	if (FAILED(hr))
-	{
-		MessageBox(hwnd, L"인덱스 버퍼 생성 실패.", L"오류.", MB_OK);
-		return false;
-	}
-
-	// 인덱스 버퍼 바인딩(binding).
-	pDeviceContext->IASetIndexBuffer(indexBuffer, DXGI_FORMAT_R32_UINT, 0);
-
-	// 입력 레이아웃.
-	D3D11_INPUT_ELEMENT_DESC layout[] = 
-	{
-		{ "POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0 },
-		{ "TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT, 0, 12, D3D11_INPUT_PER_VERTEX_DATA, 0 },
-		{ "NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 20, D3D11_INPUT_PER_VERTEX_DATA, 0 },
-		{ "TANGENT", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 32, D3D11_INPUT_PER_VERTEX_DATA, 0 },
-		{ "BINORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 44, D3D11_INPUT_PER_VERTEX_DATA, 0 },
-	};
-
-	// 입력 레이아웃 생성.
-	hr = pDevice->CreateInputLayout(layout, ARRAYSIZE(layout),
-		vertexShaderBuffer->GetBufferPointer(), vertexShaderBuffer->GetBufferSize(), &vertexInputLayout);
-
-	if (FAILED(hr))
-	{
-		MessageBox(hwnd, L"입력 레이아웃 생성 실패.", L"오류.", MB_OK);
-		return false;
-	}
-
-	// 입력 레이아웃 바인딩.
-	pDeviceContext->IASetInputLayout(vertexInputLayout);
-
-	// 정점을 이어서 그릴 방식 설정.
-	pDeviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
-
-	// 뷰포트 설정.
-	D3D11_VIEWPORT viewport;
-	ZeroMemory(&viewport, sizeof(D3D11_VIEWPORT));
-	viewport.TopLeftX = 0;
-	viewport.TopLeftY = 0;
-	viewport.Width = clientWidth;
-	viewport.Height = clientHeight;
-	viewport.MinDepth = 0.0f;
-	viewport.MaxDepth = 1.0f;
-
-	// 뷰포트 설정.
-	pDeviceContext->RSSetViewports(1, &viewport);
+	SetViewport();
 
 	return true;
 }
 
-bool DXApp::LoadModel(const char * fileName)
+void DXApp::InitMeshInfo()
 {
-	// 파일 읽기.
-	ifstream fin;
-	fin.open(fileName);
+	//모델
+	LPCSTR fbxNameTPP = "Resources//Models//HeroTPP.fbx";
+	// 텍스처 이름
+	Texture tppDiffuseMap;
+	tppDiffuseMap.fileName = L"Resources//Textures//T_Chr_FPS_D.png";
+	// 모델
+	Mesh tppDiffuse(fbxNameTPP, L"Shaders//DiffuseVS.fx", L"Shaders//DiffusePS.fx");
 
-	// 제대로 열렸는지 확인.
-	if (fin.fail())
+	// 텍스처
+	tppDiffuse.AddTexture(tppDiffuseMap);
+	tppDiffuse.SetPosition(XMFLOAT3(0.0f, -90.0f, 0.0f));
+	tppDiffuse.SetRotation(XMFLOAT3(-90.0f, 180.0f, 0.0f));
+
+	// 메시 배열에 추가
+	meshes.push_back(tppDiffuse);
+}
+
+bool DXApp::CompileShader(Mesh * mesh)
+{
+	if (!mesh->CompileShaders(pDevice)) return false;
+	return true;
+}
+
+void DXApp::BindShader(Mesh * mesh)
+{
+	mesh->BindShaders(pDeviceContext);
+}
+
+bool DXApp::InitVertexBuffer(Mesh * mesh)
+{
+	// 정점 정보를 FBX로부터 로드.
+	HRESULT hr;
+	hr = FBXLoader::LoadFBX(
+		mesh->GetFBXName(),
+		mesh->GetVertexArray(),
+		mesh->GetIndexArray()
+	);
+	if (FAILED(hr)) return false;
+
+	// 정점 버퍼 생성.
+	if (!mesh->CreateVertexBuffer(pDevice)) 
 		return false;
 
-	char input;					// 파일에서 읽은 문자 저장.
-	fin.get(input);
-	while (input != ':')
-	{
-		fin.get(input);
-	}
+	return true;
+}
 
-	fin >> nVertices;			// 텍스트 파일에 저장된 정점 개수 저장.
-	nIndices = nVertices;		// 인덱스 개수는 정점 개수와 동일하게 설정.
+void DXApp::BindVertexBuffer(Mesh * mesh)
+{
+	mesh->BindVertexBuffer(pDeviceContext);
+}
 
-	// 배열 공간 확보.
-	/*vertices = new Vertex[nVertices];
-	indices = new DWORD[nIndices];*/
-
-	// 파일 포인터 이동.
-	fin.get(input);
-	while (input != ':')
-	{
-		fin.get(input);
-	}
-
-	// 두 줄 건너 뛰기.
-	fin.get(input);
-	fin.get(input);
-
-	// 배열 데이터 설정.
-	for (int ix = 0; ix < nVertices; ++ix)
-	{	
-		float x, y, z, u, v, nx, ny, nz;			// 추출할 변수 선언.
-		fin >> x >> y >> z;
-		fin >> u >> v;
-		fin >> nx >> ny >> nz;
-
-		// 정점 데이터 설정.
-		Vertex vertex(
-			XMFLOAT3(x, y, z), 
-			XMFLOAT2(u, v), 
-			XMFLOAT3(nx, ny, nz));
-
-		vertices.push_back(vertex);
-
-		// 인덱스 정보 설정.
-		indices.push_back(ix);
-
-		//// 정점 데이터 설정.
-		//vertices[ix].position = XMFLOAT3(x, y, z);
-		//vertices[ix].texCoord = XMFLOAT2(u, v);
-		//vertices[ix].normal = XMFLOAT3(nx, ny, nz);
-
-		//// 인덱스 정보 설정.
-		//indices[ix] = ix;
-	}
-
-	// 파일 닫기.
-	fin.close();
+bool DXApp::InitIndexBuffer(Mesh * mesh)
+{
+	if (!mesh->CreateIndexBuffer(pDevice)) 
+		return false;
 
 	return true;
+}
+
+void DXApp::BindIndexBuffer(Mesh * mesh)
+{
+	mesh->BindIndexBuffer(pDeviceContext);
+}
+
+bool DXApp::InitInputLayout(Mesh * mesh)
+{
+	if (!mesh->CreateInputLayout(pDevice))
+		return false;
+
+	return true;
+}
+
+void DXApp::BindInputLayout(Mesh * mesh)
+{
+	mesh->BindInputLayout(pDeviceContext);
 }
 
 bool DXApp::InitTransformation()
@@ -557,7 +423,7 @@ bool DXApp::InitTransformation()
 	worldMatrix = rotation * translation;
 
 	// 카메라 정보 설정.
-	cameraPos = XMVectorSet(0.0f, 0.0f, -150.0f, 1.0f);
+	cameraPos = XMVectorSet(0.0f, 0.0f, -200.0f, 1.0f);
 	cameraTarget = XMVectorSet(0.0f, 0.0f, 0.0f, 1.0f);
 	cameraUp = XMVectorSet(0.0f, 1.0f, 0.0f, 1.0f);
 
@@ -606,54 +472,99 @@ bool DXApp::InitTransformation()
 	return true;
 }
 
-bool DXApp::InitTexture()
+bool DXApp::InitTransformation(Mesh * mesh)
 {
-	// 텍스처 파일 로드.
-	HRESULT hr = D3DX11CreateShaderResourceViewFromFile(
-		pDevice, L"SaintPetersBasilica.dds", NULL, NULL, &pTexture, NULL);
-	if (FAILED(hr))
-	{
-		MessageBox(NULL, L"텍스처 로드 실패", L"오류", MB_OK);
-		return false;	
-	}
+	// WVP 행렬 초기화.
+	InitWorldMatrix(mesh);
+	InitViewMatrix();
+	InitProjectionMatrix();
 
-	// 텍스처 파일 로드.
-	hr = D3DX11CreateShaderResourceViewFromFile(
-		pDevice, L"T_Chr_FPS_N.png", NULL, NULL, &pNormalTexture, NULL);
-	if (FAILED(hr))
-	{
-		MessageBox(NULL, L"텍스처 로드 실패", L"오류", MB_OK);
-		return false;
-	}
+	// 행렬 설정.
+	mesh->SetWVPMatrices(
+		worldMatrix,
+		viewMatrix,
+		projectionMatrix
+	);
 
-	// 샘플러 스테이트.
-	D3D11_SAMPLER_DESC samplerDesc;
-	ZeroMemory(&samplerDesc, sizeof(samplerDesc));
-	samplerDesc.Filter = D3D11_FILTER_MIN_MAG_MIP_LINEAR;
-	samplerDesc.AddressU = D3D11_TEXTURE_ADDRESS_WRAP;
-	samplerDesc.AddressV = D3D11_TEXTURE_ADDRESS_WRAP;
-	samplerDesc.AddressW = D3D11_TEXTURE_ADDRESS_WRAP;
-	samplerDesc.MinLOD = 0;
-	samplerDesc.MaxLOD = D3D11_FLOAT32_MAX;
 
-	// 샘플러 스테이트 생성.
-	hr = pDevice->CreateSamplerState(&samplerDesc, &pSamplerState);
-	if (FAILED(hr))
-	{
-		MessageBox(NULL, L"샘플러 스테이트 생성 실패", L"오류", MB_OK);
-		return false;
-	}
+	InitWVPBuffer(mesh);
 
-	// 텍스처 바인딩.
-	pDeviceContext->PSSetShaderResources(0, 1, &pTexture);
+	pDeviceContext->VSSetConstantBuffers(0,1,&cBuffer);
 
-	// 텍스처 바인딩.
-	pDeviceContext->PSSetShaderResources(1, 1, &pNormalTexture);
 
-	// 샘플러 스테이트 바인딩.
-	pDeviceContext->PSSetSamplers(0, 1, &pSamplerState);
-	
 	return true;
+}
+
+void DXApp::InitWorldMatrix(Mesh * mesh)
+{
+	worldMatrix = XMMatrixIdentity();
+	worldMatrix =
+		mesh->GetScaleMatrix()
+		* mesh->GetRotationMatrix()
+		* mesh->GetTranslationMatrix();
+}
+
+void DXApp::InitViewMatrix()
+{
+	// 카메라 정보 설정.
+	cameraPos = XMVectorSet(0.0f, 0.0f, -5.0f, 1.0f);
+	cameraTarget = XMVectorSet(0.0f, 0.0f, 0.0f, 1.0f);
+	cameraUp = XMVectorSet(0.0f, 1.0f, 0.0f, 1.0f);
+
+	// 뷰 변환 행렬 설정.
+	viewMatrix = XMMatrixLookAtLH(cameraPos, cameraTarget, cameraUp);
+}
+
+void DXApp::InitProjectionMatrix()
+{
+	float fovY = XMConvertToRadians(75.0f);
+
+	projectionMatrix = XMMatrixPerspectiveFovLH(fovY, (float)clientWidth / (float)clientHeight, 1.0f, 1000.0f);
+}
+
+bool DXApp::InitWVPBuffer(Mesh * mesh)
+{
+	// 버퍼 설정.
+	D3D11_BUFFER_DESC cbDesc;
+	ZeroMemory(&cbDesc, sizeof(cbDesc));
+	cbDesc.ByteWidth = sizeof(CBPerObject);
+	cbDesc.BindFlags = D3D11_BIND_CONSTANT_BUFFER;
+	cbDesc.CPUAccessFlags = 0;
+	cbDesc.MiscFlags = 0;
+	cbDesc.Usage = D3D11_USAGE_DEFAULT;
+
+	D3D11_SUBRESOURCE_DATA cbData;
+	ZeroMemory(&cbData, sizeof(cbData));
+	cbData.pSysMem = &mesh->GetWVPMatrices();
+
+	// 버퍼 생성.
+	HRESULT hr = pDevice->CreateBuffer(&cbDesc, &cbData, &cBuffer);
+	if (FAILED(hr))
+	{
+		MessageBox(NULL, L"상수 버퍼 생성 실패.", L"오류", MB_OK);
+		return false;
+	}
+
+	// WVP용 상수버퍼 바인딩.
+	pDeviceContext->VSSetConstantBuffers(0, 1, &cBuffer);
+
+	return true;
+}
+
+void DXApp::UpdateWVPBuffer(Mesh * mesh)
+{
+	// 행렬 값 갱신.
+	InitWorldMatrix(mesh);
+
+	// WVP 행렬 값 저장.
+	mesh->SetWVPMatrices(
+		worldMatrix,
+		viewMatrix, 
+		projectionMatrix
+	);
+
+	// 갱신된 행렬 값으로 바인딩된 버퍼 업데이트.
+	pDeviceContext->UpdateSubresource(cBuffer, 0, 0, &mesh->GetWVPMatrices(), 0, 0);
 }
 
 bool DXApp::InitLightCB()
@@ -690,6 +601,28 @@ bool DXApp::InitLightCB()
 	return true;
 }
 
+void DXApp::UpdateLightCB(Mesh * mesh)
+{
+	pDeviceContext->UpdateSubresource(lightBuffer, 0, 0, &mesh->GetLightInfo(), 0, 0);
+}
 
+void DXApp::BindLightCB()
+{
+	pDeviceContext->VSSetConstantBuffers(1, 1, &lightBuffer);
+}
 
+void DXApp::SetViewport()
+{
+	// 뷰포트 설정.
+	D3D11_VIEWPORT viewport;
+	ZeroMemory(&viewport, sizeof(D3D11_VIEWPORT));
+	viewport.TopLeftX = 0;
+	viewport.TopLeftY = 0;
+	viewport.Width = clientWidth;
+	viewport.Height = clientHeight;
+	viewport.MinDepth = 0.0f;
+	viewport.MaxDepth = 1.0f;
 
+	// 뷰포트 설정.
+	pDeviceContext->RSSetViewports(1, &viewport);
+}

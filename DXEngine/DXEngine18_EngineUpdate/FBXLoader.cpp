@@ -2,6 +2,8 @@
 
 namespace FBXLoader
 {
+	FbxManager* fbxManager;
+
 	HRESULT LoadFBX(const char * fileName, std::vector<Vertex>* pOutVertices, std::vector<DWORD>* pOutIndices)
 	{
 		// fbxManager가 생성되지 않았으면 생성.

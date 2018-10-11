@@ -21,7 +21,7 @@ bool Engine::Init()
 
 void Engine::Update(double deltaTime)
 {
-	//RotateObject(deltaTime);				// 물체 회전.
+	RotateObject(deltaTime);				// 물체 회전.
 }
 
 void Engine::Render()
@@ -38,10 +38,34 @@ void Engine::Render()
 
 	// 정점 그리기. (Draw Call. 드로우 콜).
 	//pDeviceContext->Draw(nVertices, 0);
-	pDeviceContext->DrawIndexed(nIndices, 0, 0);
+	//pDeviceContext->DrawIndexed(nIndices, 0, 0);
+	DrawMesh();
 
 	// 스왑체인 교체.
 	pSwapChain->Present(1, 0);
+}
+
+void Engine::DrawMesh()
+{
+	for (int ix = 0; ix < meshes.size(); ++ix)
+	{
+		Mesh* mesh = &meshes[ix];
+
+		BindShader(mesh);
+		BindVertexBuffer(mesh);
+		BindIndexBuffer(mesh);
+		BindInputLayout(mesh);
+
+		pDeviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+
+		mesh->BindTextures(pDeviceContext);
+		mesh->BindSamplerState(pDeviceContext);
+
+		UpdateWVPBuffer(mesh);
+
+		UpdateLightCB(mesh);
+		mesh->DrawMesh(pDeviceContext);
+	}
 }
 
 float rotY = 0.01f;		// 회전 각도 저장용.

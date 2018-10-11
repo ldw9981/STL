@@ -82,40 +82,40 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="EffectVS.fx">
+    <FxCompile Include="Shaders\CubePS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="EffectPS.fx">
+    <FxCompile Include="Shaders\CubeVS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="DiffuseVS.fx">
+    <FxCompile Include="Shaders\DiffusePS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="DiffusePS.fx">
+    <FxCompile Include="Shaders\DiffuseVS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="SpecularVS.fx">
+    <FxCompile Include="Shaders\EffectPS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="SpecularPS.fx">
+    <FxCompile Include="Shaders\EffectVS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="NormalVS.fx">
+    <FxCompile Include="Shaders\NormalPS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="NormalPS.fx">
+    <FxCompile Include="Shaders\NormalVS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="ToonVS.fx">
+    <FxCompile Include="Shaders\SpecularPS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="ToonPS.fx">
+    <FxCompile Include="Shaders\SpecularVS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="CubeVS.fx">
+    <FxCompile Include="Shaders\ToonPS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
-    <FxCompile Include="CubePS.fx">
+    <FxCompile Include="Shaders\ToonVS.fx">
       <Filter>Shaders</Filter>
     </FxCompile>
   </ItemGroup>

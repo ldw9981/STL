@@ -1,20 +1,18 @@
 #include "PixelShader.h"
 
-
-
 PixelShader::PixelShader()
 {
 }
 
-PixelShader::PixelShader(LPCWSTR initFileName) :Shader(initFileName)
+PixelShader::PixelShader(LPCWSTR fileName)
+	: Shader(fileName)
 {
 	profile = "ps_5_0";
 }
 
-PixelShader::PixelShader(LPCWSTR initFileName, LPCSTR initEntry, LPCSTR initProfile)
-	: Shader(initFileName, initEntry, initProfile)
+PixelShader::PixelShader(LPCWSTR fileName, LPCSTR entry, LPCSTR profile)
+	: Shader(fileName, entry, profile)
 {
-
 }
 
 
@@ -24,25 +22,40 @@ PixelShader::~PixelShader()
 
 bool PixelShader::CompileShader()
 {
-	if (!ShaderUtil::CompileShader(fileName, entryPoint, profile, &shaderBuffer))
+	if (!ShaderUtil::CompileShader(
+		fileName, 
+		entryPoint, 
+		profile, 
+		&shaderBuffer))
 	{
 		return false;
 	}
+
 	return true;
 }
 
 bool PixelShader::CreateShader(ID3D11Device * device)
 {
-	if(!ShaderUtil::CreatePixelShader(device, shaderBuffer->GetBufferPointer(), shaderBuffer->GetBufferSize(), NULL, &pixelShader))
+	if (!ShaderUtil::CreatePixelShader(
+		device, 
+		shaderBuffer->GetBufferPointer(), 
+		shaderBuffer->GetBufferSize(), 
+		NULL, 
+		&pixelShader))
 	{
 		return false;
 	}
+
 	return true;
 }
 
 void PixelShader::BindShader(ID3D11DeviceContext * deviceContext)
 {
-	ShaderUtil::BindPixelShader(deviceContext, pixelShader, NULL, NULL);
+	ShaderUtil::BindPixelShader(
+		deviceContext, 
+		pixelShader, 
+		NULL, 
+		NULL);
 }
 
 void PixelShader::Release()
@@ -70,7 +83,8 @@ bool PixelShader::CreateSamplerState(ID3D11Device * device)
 		MessageBox(NULL, L"샘플러 스테이트 생성 실패", L"오류", MB_OK);
 		return false;
 	}
-	return false;
+
+	return true;
 }
 
 void PixelShader::BindSamplerState(ID3D11DeviceContext * deviceContext)
@@ -78,27 +92,34 @@ void PixelShader::BindSamplerState(ID3D11DeviceContext * deviceContext)
 	deviceContext->PSSetSamplers(0, 1, &samplerState);
 }
 
-void PixelShader::LoadTextures(ID3D11Device * device)
+bool PixelShader::LoadTextures(ID3D11Device * device)
 {
-	for (size_t i = 0; i < textures.size(); i++)
+	for (int ix = 0; ix < textures.size(); ++ix)
 	{
 		// 텍스처 파일 로드.
 		HRESULT hr = D3DX11CreateShaderResourceViewFromFile(
-				device,textures[i].fileName, NULL, NULL, &textures[i].textureResource, NULL);
+			device, 
+			textures[ix].fileName, 
+			NULL, 
+			NULL, 
+			&textures[ix].textureResource, 
+			NULL);
 		if (FAILED(hr))
 		{
 			MessageBox(NULL, L"텍스처 로드 실패", L"오류", MB_OK);
-			return;
+			return false;
 		}
 	}
-	
+
+	return true;
 }
 
 void PixelShader::BindTextures(ID3D11DeviceContext * deviceContext)
 {
 	int size = textures.size();
-	for (size_t i = 0; i < size; i++)
+	for (int ix = 0; ix < size; ++ix)
 	{
-		deviceContext->PSSetShaderResources(i, 1, &textures[i].textureResource);
+		deviceContext->PSSetShaderResources(
+			ix, 1, &textures[ix].textureResource);
 	}
 }

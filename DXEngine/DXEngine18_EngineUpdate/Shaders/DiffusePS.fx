@@ -23,7 +23,7 @@ float4 main(ps_input input) : SV_TARGET
 	// Diffuse 색상 추출.
 	float3 diffuse = saturate(input.diffuse);
 
-	float3 finalColor = diffuse;
+	float3 finalColor = texColor.rgb * diffuse;
 
 	// 텍스처 색상 반환.
 	//return texColor;

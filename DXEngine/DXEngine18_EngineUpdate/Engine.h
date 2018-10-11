@@ -10,6 +10,7 @@ public:
 	bool Init() override;
 	void Update(double deltaTime) override;
 	void Render() override;
+	void DrawMesh();
 
 	void RotateObject(double deltaTime);			// 물체 회전 함수.
 };

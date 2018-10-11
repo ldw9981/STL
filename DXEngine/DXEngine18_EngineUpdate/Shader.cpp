@@ -1,22 +1,20 @@
 #include "Shader.h"
 
-
-
 Shader::Shader()
 {
 }
 
-Shader::Shader(LPCWSTR initFileName)
+Shader::Shader(LPCWSTR fileName)
 {
-	fileName = initFileName;
+	this->fileName = fileName;
 	entryPoint = "main";
 }
 
-Shader::Shader(LPCWSTR initFileName, LPCSTR initEntry, LPCSTR initProfile)
+Shader::Shader(LPCWSTR fileName, LPCSTR entry, LPCSTR profile)
 {
-	fileName = initFileName;
-	entryPoint = initEntry;
-	profile = initProfile;
+	this->fileName = fileName;
+	this->entryPoint = entry;
+	this->profile = profile;
 }
 
 

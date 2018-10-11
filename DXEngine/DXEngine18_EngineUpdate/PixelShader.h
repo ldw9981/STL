@@ -1,14 +1,14 @@
 #pragma once
+
 #include "Shader.h"
 #include <vector>
-class PixelShader :
-	public Shader
+
+class PixelShader : public Shader
 {
 public:
 	PixelShader();
-	PixelShader(LPCWSTR initFileName);
-	PixelShader(LPCWSTR initFileName, LPCSTR initEntry, LPCSTR initProfile);
-
+	PixelShader(LPCWSTR fileName);
+	PixelShader(LPCWSTR fileName, LPCSTR entry, LPCSTR profile);
 	~PixelShader();
 
 	virtual bool CompileShader() override;
@@ -17,21 +17,22 @@ public:
 	virtual void Release() override;
 
 	bool CreateSamplerState(ID3D11Device* device);
-	void BindSamplerState(ID3D11DeviceContext* deviceContext);
-	void LoadTextures(ID3D11Device* device);
+	void BindSamplerState(
+		ID3D11DeviceContext* deviceContext);
+
+	bool LoadTextures(ID3D11Device* device);
 	void BindTextures(ID3D11DeviceContext* deviceContext);
 
-	//
-	ID3D11PixelShader* GetPixelShader() const { return pixelShader;  }
-	std::vector<Texture> GetTextureArray() const { return textures;  }
-	void AddTexture(Texture newTexture) { textures.push_back(newTexture); }
+	// Getter / Setter.
+	ID3D11PixelShader* GetPixelShader() const { return pixelShader; }
+	std::vector<Texture> GetTextureArray() const { return textures; }
+	void AddTexture(Texture newTexture) {  textures.push_back(newTexture);  }
+	ID3D11SamplerState* GetSamplerState() const { return samplerState; }
+
 private:
+
 	ID3D11PixelShader* pixelShader;
-	ID3D11SamplerState* samplerState;
-
-	//texture
+	// ≈ÿΩ∫√≥.
 	std::vector<Texture> textures;
+	ID3D11SamplerState* samplerState;
 };
-
-
-
