@@ -37,6 +37,16 @@ public:
 		float MoveSpeed = 300;
 	UFUNCTION()
 	void OnBeginOverlap(AActor* OverlappedActor, AActor* OtherActor);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TSubclassOf<AActor> Rocket;
+
+	UFUNCTION(BlueprintImplementableEvent)	// C++에서 BP에서 구현된 함수 호출
+	void BlueprintTest();
+	
+	UFUNCTION(BlueprintImplementableEvent)	// 기본구현은 C++ 구현   BP에서 오버라이딩 (재정의가능)
+	void BlueprintNative();
+	virtual void BlueprintNative_Implementation();
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

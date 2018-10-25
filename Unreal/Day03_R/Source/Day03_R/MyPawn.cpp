@@ -62,11 +62,20 @@ AMyPawn::AMyPawn()
 	Camera->SetupAttachment(SpringArm);
 
 	Movement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("Movement"));
+
+	// 1. 블루 프린트 에셋으로 생성하는 경우 사용
+	static ConstructorHelpers::FClassFinder<AMyRocket> BP_Rocket(TEXT("Blueprint'/Game/Blueprints/BP_MyRocket.BP_MyRocket_C'"));
+	if (BP_Rocket.Succeeded())
+	{
+		Rocket = BP_Rocket.Class;
+		UE_LOG(LogClass, Warning, TEXT("Load BP Class"));
+	}
 }
 
 void AMyPawn::OnBeginOverlap(AActor * OverlappedActor, AActor * OtherActor)
 {
 }
+
 
 // Called when the game starts or when spawned
 void AMyPawn::BeginPlay()
@@ -129,6 +138,15 @@ void AMyPawn::Boost(float Value)
 void AMyPawn::Fire()
 {
 //	FActorSpawnParameters F;
-	GetWorld()->SpawnActor<AMyRocket>(Arrow->GetComponentLocation(), Arrow->GetComponentRotation());
+
+	// C++ class 로 바로 생성하는경우
+//	GetWorld()->SpawnActor<AMyRocket>(Arrow->GetComponentLocation(), Arrow->GetComponentRotation()); 
+
+	// 변로수 생성
+	GetWorld()->SpawnActor<AMyRocket>(Rocket,Arrow->GetComponentLocation(), Arrow->GetComponentRotation()); // C++ class
 }
 
+void AMyPawn::BlueprintNative_Implementation()
+{
+	UE_LOG(LogClass, Warning, TEXT("C++ Implementaion"));
+}
