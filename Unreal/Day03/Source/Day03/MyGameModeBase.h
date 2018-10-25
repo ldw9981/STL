@@ -13,8 +13,9 @@ UCLASS()
 class DAY03_API AMyGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-
+public:
 	AMyGameModeBase();
+	
 	
 	
 };

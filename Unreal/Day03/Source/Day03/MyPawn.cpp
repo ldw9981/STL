@@ -1,7 +1,6 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #include "MyPawn.h"
-//#include "Runtime/Engine/Classes/Components/BoxComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/ArrowComponent.h"
@@ -9,32 +8,47 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "ConstructorHelpers.h"
+#include "Engine/World.h" //GetWorld
+#include "Kismet/GameplayStatics.h" //Static(Global) Utiltiy
 #include "Components/InputComponent.h"
-#include "Kismet/GameplayStatics.h" //Global Utility
-#include "Engine/World.h"
+#include "MyRocket.h"
+
+
 
 // Sets default values
 AMyPawn::AMyPawn()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	
+
 	Box = CreateDefaultSubobject<UBoxComponent>(TEXT("Box"));
 	RootComponent = Box;
 
-	Body = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("몸체"));
+	Body = CreateAbstractDefaultSubobject<UStaticMeshComponent>(TEXT("Body"));
 	Body->SetupAttachment(RootComponent);
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> SM_P38(TEXT("StaticMesh'/Game/P38/Meshes/SM_P38_Body.SM_P38_Body'"));
-	if (SM_P38.Succeeded())
-	{
-		Body->SetStaticMesh(SM_P38.Object);
-	}
-
-	Left = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("왼쪽"));
+	Left = CreateAbstractDefaultSubobject<UStaticMeshComponent>(TEXT("Left"));
 	Left->SetupAttachment(Body);
-	Right = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("오른쪽"));
+
+	Right = CreateAbstractDefaultSubobject<UStaticMeshComponent>(TEXT("Right"));
 	Right->SetupAttachment(Body);
+
+	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
+	SpringArm->SetupAttachment(RootComponent);
+
+	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+	Camera->SetupAttachment(SpringArm);
+
+	Arrow = CreateDefaultSubobject<UArrowComponent>(TEXT("Arrow"));
+	Arrow->SetupAttachment(RootComponent);
+
+	Movement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("Movement"));
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> SM_Body(TEXT("StaticMesh'/Game/P38/Meshes/SM_P38_Body.SM_P38_Body'"));
+	if (SM_Body.Succeeded())
+	{
+		Body->SetStaticMesh(SM_Body.Object);
+	}
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> SM_Propeller(TEXT("StaticMesh'/Game/P38/Meshes/SM_P38_Propeller.SM_P38_Propeller'"));
 	if (SM_Propeller.Succeeded())
@@ -42,29 +56,31 @@ AMyPawn::AMyPawn()
 		Left->SetStaticMesh(SM_Propeller.Object);
 		Right->SetStaticMesh(SM_Propeller.Object);
 	}
-	Left->SetRelativeLocation(FVector(37, 21, 0));
-	Right->SetRelativeLocation(FVector(37, -21, 0));
 
-	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
-	SpringArm->SetupAttachment(RootComponent);
+	Arrow->SetRelativeLocation(FVector(100, 0, 0));
+
+	Right->SetRelativeLocation(FVector(37, 21, 0));
+	Left->SetRelativeLocation(FVector(37, -21, 0));
+
+	Movement->MaxSpeed = MoveSpeed;
+
 	SpringArm->bEnableCameraLag = true;
 	SpringArm->bEnableCameraRotationLag = true;
 
-	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
-	Camera->SetupAttachment(SpringArm);
-	
-	Arrow = CreateDefaultSubobject<UArrowComponent>(TEXT("Arrow"));
-	Arrow->SetupAttachment(RootComponent);
-	Arrow->SetRelativeLocation(FVector(100,0, 0));
+	Box->SetBoxExtent(FVector(29, 8, 8));
+//	Box->SetGenerateOverlapEvents(true);
 
-	Movement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("Movement"));
 }
 
 // Called when the game starts or when spawned
 void AMyPawn::BeginPlay()
 {
 	Super::BeginPlay();
-	
+}
+
+void AMyPawn::RotatePropeller(UStaticMeshComponent* Propeller, float Speed)
+{
+	Propeller->AddLocalRotation(FRotator(0, 0, Speed * UGameplayStatics::GetWorldDeltaSeconds(GetWorld())));
 }
 
 // Called every frame
@@ -72,23 +88,23 @@ void AMyPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	RotatePropeller(Left, 1080);
-	RotatePropeller(Right, 1080);
+	RotatePropeller(Left, RotateSpeed);
+	RotatePropeller(Right, RotateSpeed);
 }
 
-void AMyPawn::RotatePropeller(UStaticMeshComponent* Propeller,float Speed)
-{
-	Propeller->AddRelativeRotation(FRotator(0, 0, Speed * UGameplayStatics::GetWorldDeltaSeconds(GetWorld())));
-}
+
 
 // Called to bind functionality to input
 void AMyPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &AMyPawn::Fire);
-	PlayerInputComponent->BindAxis(TEXT("MoveForward"),  this, &AMyPawn::Pitch);
-	PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AMyPawn::Roll);
+
 	PlayerInputComponent->BindAxis(TEXT("Boost"), this, &AMyPawn::Boost);
+	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &AMyPawn::MoveForward);
+	PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AMyPawn::MoveRight);
+
+	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &AMyPawn::Fire);
+
 }
 
 void AMyPawn::Boost(float Value)
@@ -99,23 +115,36 @@ void AMyPawn::Boost(float Value)
 	}
 }
 
+void AMyPawn::MoveForward(float Value)
+{
+	if (Value != 0.0f)
+	{
+		AddActorLocalRotation(FRotator(60 * Value * UGameplayStatics::GetWorldDeltaSeconds(GetWorld()),
+			0,
+			0)
+		);
+	}
+}
+
+void AMyPawn::MoveRight(float Value)
+{
+	if (Value != 0.0f)
+	{
+		AddActorLocalRotation(FRotator(0, 0,
+			60 * Value * UGameplayStatics::GetWorldDeltaSeconds(GetWorld()))
+		);
+	}
+
+}
+
 void AMyPawn::Fire()
 {
-
-}
-void AMyPawn::Pitch(float Value)
-{
-	if (Value != 0.0f)
-	{
-		AddActorLocalRotation(FRotator(Value, 0, 0));
-	}
-
+//	FActorSpawnParameters F;
+	
+	GetWorld()->SpawnActor<AMyRocket>(Arrow->GetComponentLocation(),
+		Arrow->GetComponentRotation());
 }
 
-void AMyPawn::Roll(float Value)
+void AMyPawn::OnBeginOverlap(AActor * OverlappedActor, AActor * OtherActor)
 {
-	if (Value != 0.0f)
-	{
-		AddActorLocalRotation(FRotator(0, 0, Value));
-	}
 }

@@ -1,10 +1,11 @@
-Ôªø// Fill out your copyright notice in the Description page of Project Settings.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "MyPawn.generated.h"
+
 
 UCLASS()
 class DAY03_API AMyPawn : public APawn
@@ -14,39 +15,58 @@ class DAY03_API AMyPawn : public APawn
 public:
 	// Sets default values for this pawn's properties
 	AMyPawn();
-	void Fire();
-	void Pitch(float Value);
-	void Roll(float Value);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	void RotatePropeller(UStaticMeshComponent * Propeller, float Speed);
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	void RotatePropeller(UStaticMeshComponent * Propeller, float Speed);
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	void Boost(float Value);
 
-	//Ïù¥Í±¥ Î™∏Ï≤¥ÏûÖÎãàÎã§.
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
-	class UStaticMeshComponent* Body;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
-	class UStaticMeshComponent* Left;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
-	class UStaticMeshComponent* Right;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
-	class USpringArmComponent* SpringArm;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
-	class UCameraComponent* Camera;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
-	class UFloatingPawnMovement* Movement;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
-	class UArrowComponent* Arrow;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
+	void MoveForward(float Value);
+
+	void MoveRight(float Value);
+
+	void Fire();
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	class UBoxComponent* Box;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	class UStaticMeshComponent* Body;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	class UStaticMeshComponent* Left;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	class UStaticMeshComponent* Right;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	class UArrowComponent* Arrow;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	class USpringArmComponent* SpringArm;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	class UCameraComponent* Camera;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	class UFloatingPawnMovement* Movement;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float RotateSpeed = 1080;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float MoveSpeed = 600.0f;
+
+	UFUNCTION() //Delegate∂Û∞Ì ≤¿ 
+	void OnBeginOverlap(AActor* OverlappedActor, AActor* OtherActor); 
 };
