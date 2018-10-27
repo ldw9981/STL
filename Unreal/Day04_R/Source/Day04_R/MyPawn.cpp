@@ -11,6 +11,7 @@
 #include "ConstructorHelpers.h"
 #include "Engine/World.h"
 #include "Kismet/GameplayStatics.h"
+#include "Engine/GameEngine.h"
 #include "MyRocket.h"
 
 // Sets default values
@@ -111,7 +112,9 @@ void AMyPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	PlayerInputComponent->BindAxis(TEXT("Roll"), this, &AMyPawn::Roll);
 	PlayerInputComponent->BindAxis(TEXT("Pitch"), this, &AMyPawn::Pitch);
+	PlayerInputComponent->BindAxis(TEXT("Boost"), this, &AMyPawn::Boost);
 	PlayerInputComponent->BindAction(TEXT("Fire"),IE_Pressed, this, &AMyPawn::Fire);
+
 }
 
 void AMyPawn::RotatePropeller(UStaticMeshComponent * Propeller, float Value)
@@ -137,8 +140,28 @@ void AMyPawn::Pitch(float Value)
 	}
 }
 
+void AMyPawn::Boost(float Value)
+{
+	if (Value != 0.0f)
+	{
+		float deltaTime = UGameplayStatics::GetWorldDeltaSeconds(GetWorld());
+		AddMovementInput(GetActorForwardVector(), Value*100.0f*deltaTime);
+	}
+}
+
 void AMyPawn::Fire()
 {
+	//#include "Engine/GameEngine.h"
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Some debug message!"));
+
+	SpawnFireParticle();
+	SpawnRocket();			// 블루프린트에서 재정의 가능한 함수를 정의하고 호출하는방법
+}
+
+void AMyPawn::SpawnRocket_Implementation()
+{
+	UE_LOG(LogClass, Warning, TEXT("C++ SpawnRocket_Implementation"));
 	// 생성에대한 추가정보 세팅
 	FActorSpawnParameters F;
 	F.Owner = this;
@@ -147,11 +170,11 @@ void AMyPawn::Fire()
 	if (Rocket == nullptr)
 	{
 		//UE_LOG(LogClass, Warning, TEXT("Rocket == nullptr"));		
-		GetWorld()->SpawnActor<AMyRocket>(Arrow->GetComponentLocation(),Arrow->GetComponentRotation(), F);
+		GetWorld()->SpawnActor<AMyRocket>(Arrow->GetComponentLocation(), Arrow->GetComponentRotation(), F);
 	}
 	else
 	{
 		//UE_LOG(LogClass, Warning, TEXT("Rocket != nullptr"));
-		GetWorld()->SpawnActor<AMyRocket>(Rocket, Arrow->GetComponentLocation(),Arrow->GetComponentRotation(), F);
+		GetWorld()->SpawnActor<AMyRocket>(Rocket, Arrow->GetComponentLocation(), Arrow->GetComponentRotation(), F);
 	}
 }

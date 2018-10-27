@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -33,7 +33,19 @@ public:
 
 	void Pitch(float Value);
 
-	void Fire();
+	void Boost(float Value);
+
+	void Fire();	
+	
+	// C++에서 멤버함수를 구현하지 않고 블루프인트에서 정의한다. (정의하지않하도 런타임 에러는 발생하지 않는다.)
+	UFUNCTION(BlueprintImplementableEvent)
+	void SpawnFireParticle();
+
+	// C++에서 멤버함수를 구현하고 블루프린트에서 사용하거나 재 정의한다.
+	UFUNCTION(BlueprintNativeEvent)
+	void SpawnRocket();							
+	virtual void SpawnRocket_Implementation();
+	//////////////////////////////////////////
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
 	class UStaticMeshComponent* Body;
