@@ -88,6 +88,16 @@ AMyPawn::AMyPawn()
 	{
 		UE_LOG(LogClass, Warning, TEXT("Player %s"), *Actor->GetName());
 	}
+
+	/*	
+	// 블루프린트 에셋으로 로딩
+	static ConstructorHelpers::FClassFinder<AMyRocket> BP_Rocket(TEXT("Blueprint'/Game/Blueprints/BP_MyRocket.BP_MyRocket_C'"));
+	if (BP_Rocket.Succeeded())
+	{
+		Rocket = BP_Rocket.Class;
+		UE_LOG(LogClass, Warning, TEXT("Load BP Class"));
+	}
+	*/
 }
 
 // Called when the game starts or when spawned
