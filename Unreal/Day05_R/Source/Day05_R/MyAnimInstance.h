@@ -23,4 +23,9 @@ public:
 	float ForwardValue;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	float RightValue;
+
+	float TimeRotate=0.3f;
+	float AnglePrev;
+	float AngleTarget;
+	float TimePrev;
 };
