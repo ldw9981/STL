@@ -19,4 +19,8 @@ public:
 	bool bIsSpeed;	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	float Angle;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float ForwardValue;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float RightValue;
 };

@@ -8,6 +8,9 @@ void UMyAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 	AMyCharacter* Pawn = Cast<AMyCharacter>(TryGetPawnOwner());
 	if (Pawn && Pawn->IsValidLowLevel())
 	{
+		ForwardValue = Pawn->ForwardValue;
+		RightValue = Pawn->RightValue;
+
 		bIsSpeed = Pawn->GetCharacterMovement()->Velocity.Size() > 0 ? true : false;
 
 		//Forward 1

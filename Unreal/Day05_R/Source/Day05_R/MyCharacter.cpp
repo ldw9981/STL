@@ -12,6 +12,10 @@
 #include "Animation/AnimationAsset.h"
 #include "Animation/AnimInstance.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Kismet/GameplayStatics.h"
+#include "Engine/World.h"
+
+
 // Sets default values
 AMyCharacter::AMyCharacter()
 {
@@ -78,6 +82,18 @@ void AMyCharacter::Forward(float Value)
 	FVector vector = rotator.RotateVector(FVector(1.0f, 0.0f, 0.0f));
 	AddMovementInput(vector, Value);
 	*/
+	float deltaTime = UGameplayStatics::GetWorldDeltaSeconds(GetWorld());
+
+	if (Value > 0.0f)
+	{
+		Value *= deltaTime * ForwardSpeed;
+	}
+	else
+	{
+		Value *= deltaTime * BackSpeed;
+	}
+
+	
 
 	FRotator ViewRotation = FRotator(0,Camera->GetComponentRotation().Yaw,0);
 //	FRotator ViewRotation = FRotator(0,GetControlRotation().Yaw, 0);
@@ -90,6 +106,17 @@ void AMyCharacter::Right(float Value)
 	RightValue = Value;
 	if (Value == 0.0f)
 		return;
+
+	float deltaTime = UGameplayStatics::GetWorldDeltaSeconds(GetWorld());
+	if (ForwardValue >= 0.0f)
+	{
+		Value *= deltaTime * ForwardSpeed;
+	}
+	else
+	{
+		Value *= deltaTime * BackSpeed;
+	}
+	
 	/*
 	// Pitch축 벡터를 카메라 Yaw회전량 만큼 회전 
 	FRotator rotator = Camera->GetComponentRotation();

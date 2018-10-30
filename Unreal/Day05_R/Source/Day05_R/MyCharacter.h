@@ -40,6 +40,10 @@ public:
 	class UCameraComponent* Camera;
 		
 	float ForwardValue;
-
 	float RightValue;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float BackSpeed = 20.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float ForwardSpeed = 100.0f;
 };
