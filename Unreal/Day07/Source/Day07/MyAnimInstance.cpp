@@ -2,6 +2,10 @@
 
 #include "MyAnimInstance.h"
 #include "MyCharacter.h"
+#include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/KismetMathLibrary.h"
+#include "Kismet/GameplayStatics.h"
+#include "Engine/World.h"
 
 void UMyAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 {
@@ -12,19 +16,34 @@ void UMyAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 
 	ForwardValue = MyCharacter->ForwardValue;
 	RightValue = MyCharacter->RightValue;
-	ExistSpeed = MyCharacter->GetVelocity().Size() > 0 ? true : false;
+	ExistSpeed = MyCharacter->GetCharacterMovement()->Velocity.Size() > 0 ? true : false;
 
-	if (ForwardValue == 1.0f)
+	float Calculate = 0.0f;
+	if (MyCharacter->ForwardValue == 1)
 	{
-		Angle = RightValue * 45.0f;
+		Calculate = 45 * MyCharacter->RightValue;
 	}
-	else if (ForwardValue == 0.0f)
+	else if (MyCharacter->ForwardValue == 0)
 	{
-		Angle = 90.0f * RightValue;
+		Calculate = 90 * MyCharacter->RightValue;
 	}
 	else
 	{
-		Angle = RightValue * -45.0f;
+		Calculate = -45 * MyCharacter->RightValue;
 	}
 
+	if (Calculate != AngleTarget)
+	{
+		AnglePrev = Angle;
+		AngleTarget = Calculate;
+		TimePrev = UGameplayStatics::GetTimeSeconds(GetWorld());
+	}
+
+	if (Angle != AngleTarget)
+	{
+		float TimeCurr = UGameplayStatics::GetTimeSeconds(GetWorld());
+		float v = UKismetMathLibrary::FMin((TimeCurr - TimePrev), TimeRotate) / TimeRotate;
+		Angle = UKismetMathLibrary::Lerp(AnglePrev, AngleTarget, v);
+		//UE_LOG(LogClass, Warning, TEXT("Owner %f %f %f %f"), AnglePrev, AngleTarget, v);
+	}
 }

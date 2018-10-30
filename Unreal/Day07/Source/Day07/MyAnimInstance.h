@@ -26,5 +26,8 @@ public:
 	
 	virtual void NativeUpdateAnimation(float DeltaSeconds) override;
 	
-
+	float TimeRotate = 0.3f;
+	float AnglePrev=0.0f;
+	float AngleTarget=0.0f;
+	float TimePrev=0.0f;
 };
