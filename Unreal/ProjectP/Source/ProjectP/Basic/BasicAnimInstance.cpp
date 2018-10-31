@@ -12,6 +12,6 @@ void UBasicAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 	if (Pawn && Pawn->IsValidLowLevel())
 	{
 		Speed = Pawn->GetCharacterMovement()->Velocity.Size();
-		Direction = CalculateDirection(Pawn->GetCharacterMovement()->Velocity, Pawn->GetControlRotation());
+		Direction = CalculateDirection(Pawn->GetCharacterMovement()->Velocity, FRotator(0.0f,Pawn->GetControlRotation().Yaw,0.0f));
 	}
 }
