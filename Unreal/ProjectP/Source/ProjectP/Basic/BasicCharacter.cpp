@@ -65,6 +65,7 @@ void ABasicCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	PlayerInputComponent->BindAction(TEXT("Sprint"), IE_Pressed, this, &ABasicCharacter::Sprint);
 	PlayerInputComponent->BindAction(TEXT("Sprint"), IE_Released, this, &ABasicCharacter::UnSprint);
 	PlayerInputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &ABasicCharacter::DoCrouch);
+	PlayerInputComponent->BindAction(TEXT("IronSights"), IE_Pressed, this, &ABasicCharacter::ToggleIronSights);
 }
 void ABasicCharacter::MoveForward(float Value)
 {
@@ -149,4 +150,9 @@ FRotator ABasicCharacter::GetAimOffset()
 	return AimRotLS;
 	*/
 	return ActorToWorld().InverseTransformVectorNoScale(GetBaseAimRotation().Vector()).Rotation();
+}
+
+void ABasicCharacter::ToggleIronSights()
+{
+	bIronSights = !bIronSights;
 }

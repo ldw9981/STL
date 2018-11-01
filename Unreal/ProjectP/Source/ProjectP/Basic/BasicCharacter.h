@@ -27,16 +27,15 @@ public:
 
 	//float WalkSpeed = 150;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float RunSpeed = 400;
+	float RunSpeed = 400;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float CrouchSpeed = 150;
+	float CrouchSpeed = 150;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float SprintSpeed = 600;
+	float SprintSpeed = 600;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float CapsuleCrouchHalfHeight = 44.0f;
-
-
-
+	float CapsuleCrouchHalfHeight = 44.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	bool bIronSights=false;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -60,4 +59,6 @@ public:
 	void SetSprint();
 	void SetRun();
 	FRotator GetAimOffset();
+
+	void ToggleIronSights();
 };

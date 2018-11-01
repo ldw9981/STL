@@ -28,4 +28,6 @@ public:
 	float AimPitch=0.0f;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
 	float AimYaw=0.0f;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
+	bool bIronSights = false;
 };

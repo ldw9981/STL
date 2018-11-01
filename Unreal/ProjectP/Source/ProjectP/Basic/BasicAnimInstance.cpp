@@ -20,7 +20,7 @@ void UBasicAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		FRotator AimRotator = Pawn->GetAimOffset();
 		AimPitch = AimRotator.Pitch;
 		AimYaw = AimRotator.Yaw;
-
-		UE_LOG(LogClass, Warning, TEXT("AimPitch:%f AimYaw:%f"), AimPitch, AimYaw);
+		bIronSights = Pawn->bIronSights;
+		//UE_LOG(LogClass, Warning, TEXT("AimPitch:%f AimYaw:%f"), AimPitch, AimYaw);
 	}
 }
