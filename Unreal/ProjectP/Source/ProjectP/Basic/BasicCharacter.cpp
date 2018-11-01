@@ -51,6 +51,8 @@ void ABasicCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
+	UE_LOG(LogClass, Warning, TEXT("JumpZVelocity:%f AimYaw:%f"), GetCharacterMovement()->Velocity.Z, 0.0f);
+	
 }
 
 // Called to bind functionality to input
@@ -66,6 +68,7 @@ void ABasicCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	PlayerInputComponent->BindAction(TEXT("Sprint"), IE_Released, this, &ABasicCharacter::UnSprint);
 	PlayerInputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &ABasicCharacter::DoCrouch);
 	PlayerInputComponent->BindAction(TEXT("IronSights"), IE_Pressed, this, &ABasicCharacter::ToggleIronSights);
+	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ABasicCharacter::DoJump);
 }
 void ABasicCharacter::MoveForward(float Value)
 {
@@ -155,4 +158,13 @@ FRotator ABasicCharacter::GetAimOffset()
 void ABasicCharacter::ToggleIronSights()
 {
 	bIronSights = !bIronSights;
+}
+
+void ABasicCharacter::DoJump()
+{
+	Jump();
+//	GetCharacterMovement()
+
+
+	//GetCharacterMovement()->JumpZVelocity
 }

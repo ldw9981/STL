@@ -61,4 +61,5 @@ public:
 	FRotator GetAimOffset();
 
 	void ToggleIronSights();
+	void DoJump();
 };

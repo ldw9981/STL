@@ -21,6 +21,6 @@ void UBasicAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		AimPitch = AimRotator.Pitch;
 		AimYaw = AimRotator.Yaw;
 		bIronSights = Pawn->bIronSights;
-		//UE_LOG(LogClass, Warning, TEXT("AimPitch:%f AimYaw:%f"), AimPitch, AimYaw);
+		JumpVelocityZ = Pawn->GetCharacterMovement()->Velocity.Z;
 	}
 }
