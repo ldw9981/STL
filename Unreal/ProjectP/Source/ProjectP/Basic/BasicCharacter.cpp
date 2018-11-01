@@ -144,9 +144,9 @@ FRotator ABasicCharacter::GetAimOffset()
 {
 	/*
 	FVector AimDirWS = GetBaseAimRotation().Vector();
-	FVector AimDirLS = ActorToWorld().InverseTransformPositionNoScale(AimDirWS);
+	FVector AimDirLS = ActorToWorld().InverseTransformVectorNoScale(AimDirWS);
 	FRotator AimRotLS = AimDirLS.Rotation();
 	return AimRotLS;
 	*/
-	return ActorToWorld().InverseTransformPositionNoScale(GetBaseAimRotation().Vector()).Rotation();
+	return ActorToWorld().InverseTransformVectorNoScale(GetBaseAimRotation().Vector()).Rotation();
 }
