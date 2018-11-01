@@ -13,5 +13,14 @@ void UBasicAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 	{
 		Speed = Pawn->GetCharacterMovement()->Velocity.Size();
 		Direction = CalculateDirection(Pawn->GetCharacterMovement()->Velocity, FRotator(0.0f,Pawn->GetControlRotation().Yaw,0.0f));
+		bIsSprint = Pawn->bIsSprint;
+		bIsCrouched = Pawn->bIsCrouched;
+
+
+		FRotator AimRotator = Pawn->GetAimOffset();
+		AimPitch = AimRotator.Pitch;
+		AimYaw = AimRotator.Yaw;
+
+		UE_LOG(LogClass, Warning, TEXT("AimPitch:%f AimYaw:%f"), AimPitch, AimYaw);
 	}
 }

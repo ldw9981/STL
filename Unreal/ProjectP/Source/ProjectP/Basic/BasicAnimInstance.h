@@ -16,8 +16,16 @@ class PROJECTP_API UBasicAnimInstance : public UAnimInstance
 public:	
 
 	virtual void NativeUpdateAnimation(float DeltaSeconds) override;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Info")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
 	float Direction;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Info")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
 	float Speed;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
+	bool bIsSprint = false;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
+	bool bIsCrouched = false;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
+	float AimPitch=0.0f;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
+	float AimYaw=0.0f;
 };
