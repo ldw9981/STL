@@ -11,18 +11,21 @@ AMyHUD::AMyHUD()
 void AMyHUD::BeginPlay()
 {
 	Super::BeginPlay();
+
 	FStreamableManager Loader;
-	FStringAssetReference HudTextreString(TEXT("Texture2D'/Game/Weapons/crosshair.crosshair'"));
-	Crosshair = Loader.LoadSynchronous<UTexture2D>(HudTextreString);
+	FStringAssetReference HudTextureString(TEXT("Texture2D'/Game/Weapons/crosshair.crosshair'"));
+	Crosshair = Loader.LoadSynchronous<UTexture2D>(HudTextureString);
 }
 
 void AMyHUD::DrawHUD()
 {
 	Super::DrawHUD();
+
 	if (Crosshair)
 	{
-		DrawTextureSimple(Crosshair, 
-			(Canvas->SizeX / 2) - Crosshair->GetSizeX()/2, 
-			(Canvas->SizeY / 2) - Crosshair->GetSizeY() / 2);
+		DrawTextureSimple(Crosshair,
+			(Canvas->SizeX / 2) - (Crosshair->GetSizeX() / 2),
+			(Canvas->SizeY / 2) - (Crosshair->GetSizeY() / 2)
+		);
 	}
 }

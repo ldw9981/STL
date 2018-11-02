@@ -39,6 +39,10 @@ ABasicCharacter::ABasicCharacter()
 	Weapon = CreateDefaultSubobject<UWeaponComponent>(TEXT("Weapon"));
 	Weapon->SetupAttachment(GetMesh(),TEXT("RHandWeapon"));
 
+	//앉을때 눈 높이 갑자기 이동 막기
+	CapsuleCrouchHalfHeight = GetCharacterMovement()->CrouchedHalfHeight;
+	GetCharacterMovement()->CrouchedHalfHeight = GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight();
+
 	NormalSpringPosition = SpringArm->GetRelativeTransform().GetLocation();
 	CrouchSpringPosition = SpringArm->GetRelativeTransform().GetLocation() - FVector(0, 0, 44);
 
@@ -190,22 +194,30 @@ void ABasicCharacter::OnFire()
 	if (!bIsFire)
 		return;
 
-	// 총알 발사 계산
+	//총알 발사 계산
+	//UE_LOG(LogClass, Warning, TEXT("OnFire"));
+	//카메라 위치랑 회전 구하기
 	FVector CameraLocation;
 	FRotator CameraRotation;
 	UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetPlayerViewPoint(CameraLocation, CameraRotation);
 
-	int SizeX, SizeY;
+	//화면 사이즈 구하기
+	int SizeX;
+	int SizeY;
 	UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetViewportSize(SizeX, SizeY);
-	
-	FVector CrosshairWorldLocation, CrosshairWorldDirection;
-	UGameplayStatics::GetPlayerController(GetWorld(), 0)->DeprojectScreenPositionToWorld(SizeX/2,SizeY/2, CrosshairWorldLocation, CrosshairWorldDirection);
 
+	//화면상 2D 표적점을 3D 좌표 변환
+	FVector CrosshairWorldPosition;
+	FVector CrosshairWorldDirection;
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->DeprojectScreenPositionToWorld(SizeX / 2, SizeY / 2, CrosshairWorldPosition, CrosshairWorldDirection);
+
+	//광선 시작점과 끝 구하기
 	FVector TraceStart = CameraLocation;
-	FVector TraceEnd = CameraLocation + (CrosshairWorldDirection*900000.0f);
+	FVector TraceEnd = CameraLocation + (CrosshairWorldDirection * 900000.0f);
 
-	// 컬리전 속성 오브젝트 타입 확인해야함.
-	TArray<TEnumAsByte<ETraceTypeQuery>> ObjectTypes;
+	//enum class EObjectType
+	//vector<ObjectType> objectType;
+	TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
 	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldDynamic));
 	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldStatic));
 	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_Pawn));
@@ -215,9 +227,10 @@ void ABasicCharacter::OnFire()
 
 	FHitResult OutHit;
 
-	UKismetSystemLibrary::LineTraceSingle(GetWorld(),
-		TraceStart, 
-		TraceEnd, 
+	UKismetSystemLibrary::LineTraceSingleForObjects(
+		GetWorld(),
+		TraceStart,
+		TraceEnd,
 		ObjectTypes,
 		true,
 		IgnoreActors,
@@ -226,9 +239,14 @@ void ABasicCharacter::OnFire()
 		true,
 		FLinearColor::Red,
 		FLinearColor::Green,
-		3.0f);
+		3.0f
+	);
 
-	// 연사구현
+	//연사 구현
 	FTimerHandle FireTimerHandle;
-	GetWorldTimerManager().SetTimer(FireTimerHandle,this,&ABasicCharacter::OnFire, 0.1f);
+	GetWorldTimerManager().SetTimer(FireTimerHandle,
+		this,
+		&ABasicCharacter::OnFire,
+		0.1f
+	);
 }
