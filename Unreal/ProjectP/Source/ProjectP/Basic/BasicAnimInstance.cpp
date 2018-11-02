@@ -20,7 +20,10 @@ void UBasicAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		FRotator AimRotator = Pawn->GetAimOffset();
 		AimPitch = AimRotator.Pitch;
 		AimYaw = AimRotator.Yaw;
-		bIronSights = Pawn->bIronSights;
+		bIronSight = Pawn->bIronSight;
+		bIsFalling = Pawn->GetCharacterMovement()->IsFalling();
 		JumpVelocityZ = Pawn->GetCharacterMovement()->Velocity.Z;
+
+		//UE_LOG(LogClass, Warning, TEXT("%d %d JumpVelocityZ %f"), bIsFalling, Pawn->GetCharacterMovement()->IsFlying(), JumpVelocityZ);
 	}
 }

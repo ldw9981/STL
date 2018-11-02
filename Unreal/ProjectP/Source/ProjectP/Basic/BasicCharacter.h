@@ -18,9 +18,11 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	class USpringArmComponent* SpringArm;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-		class UCameraComponent* Camera;
+	class UCameraComponent* Camera;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-		class UWeaponComponent* Weapon;
+	class UWeaponComponent* Weapon;
+
+
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 		bool bIsSprint = false;
@@ -35,7 +37,18 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float CapsuleCrouchHalfHeight = 44.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-	bool bIronSights=false;
+	bool bIronSight=false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	FVector NormalSpringPosition;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	FVector CrouchSpringPosition;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	bool bIsFire = false;
+
+	float CurrentZ;
+
+	FVector NormalSpringArm;
+	FVector CurrentSpringArm;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -60,6 +73,13 @@ public:
 	void SetRun();
 	FRotator GetAimOffset();
 
-	void ToggleIronSights();
+	void DoIronSight();
 	void DoJump();
+
+	UFUNCTION()
+	void StartFire();
+	UFUNCTION()
+	void StopFire();
+	UFUNCTION()
+	void OnFire();
 };

@@ -29,7 +29,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
 	float AimYaw=0.0f;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
-	bool bIronSights = false;
+	bool bIronSight = false;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
 	float JumpVelocityZ = 0.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	bool bIsFalling = false;
 };
