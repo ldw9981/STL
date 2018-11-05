@@ -110,7 +110,7 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 		else
 		{
 			CurrentHP -= DamageAmount;
-			SetLifeSpan(5.0f); // 네트워크 주의
+			
 		}
 	}
 	else if (DamageEvent.IsOfType(FDamageEvent::ClassID))			// 일반데미지
@@ -125,6 +125,8 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 		// 애니를 안쓸경우 처리방법중 하나
 		GetMesh()->SetSimulatePhysics(true);
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		//SetLifeSpan(10.0f);  //네트워크주의
+		//관전자폰 세팅
 		*/
 		
 		// 죽는 애니를 쓴다.
@@ -366,12 +368,18 @@ void ABasicCharacter::OnFire()
 
 		// 범위 데미지 (수류탄)
 		/*
-		UGameplayStatics::ApplyRadialDamage(GetWorld(), Weapon->GetDamage(), OutHit.ImpactPoint,500.0f, UBulletDamageType::StaticClass(),
-			IgnoreActors,
-			this,
-			GetController(),
-			
-			);
+		//범위 공격
+		//UGameplayStatics::ApplyRadialDamage(GetWorld(),
+		//	Weapon->GetDamage(),
+		//	OutHit.ImpactPoint,
+		//	500.0f,
+		//	UBulletDamageType::StaticClass(),
+		//	IgnoreActors,
+		//	this,
+		//	GetController(),
+		//	true,
+		//	ECollisionChannel::ECC_Visibility
+		//);
 		*/
 
 		// 점 데미지 방향성을 갖는다.
