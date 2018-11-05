@@ -23,7 +23,7 @@ void ABasicPlayerCameraManager::UpdateCamera(float DeltaTime)
 	FVector TargetPosition = Pawn->bIsCrouched ? Pawn->CrouchSpringPosition : Pawn->NormalSpringPosition;
 	CurrentSpringArm = FMath::VInterpTo(CurrentSpringArm, TargetPosition, DeltaTime, 15.0f);
 	Pawn->SpringArm->SetRelativeLocation(CurrentSpringArm);
-	UE_LOG(LogClass, Warning, TEXT("%f %f %f"), CurrentSpringArm.X, CurrentSpringArm.Y, CurrentSpringArm.Z);
+	//UE_LOG(LogClass, Warning, TEXT("%f %f %f"), CurrentSpringArm.X, CurrentSpringArm.Y, CurrentSpringArm.Z);
 
 	float TargetFOV = Pawn->bIronSight ? IronSightFOV : NormalFOV;
 	DefaultFOV = FMath::FInterpTo(DefaultFOV, TargetFOV, DeltaTime, 15.0f);

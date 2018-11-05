@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "BasicCharacter.generated.h"
 
+
 UCLASS()
 class PROJECTP_API ABasicCharacter : public ACharacter
 {
@@ -21,12 +22,20 @@ public:
 	class UCameraComponent* Camera;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	class UWeaponComponent* Weapon;
-
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Effect")
+	class UParticleSystem* MuzzleFlash;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Effect")
+	class UParticleSystem* HitEffect;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Effect")
+	class UParticleSystem* BloodEffect;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Effect")
+	class USoundBase* FireSound;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Effect")
+	class UMaterialInstance* BulletDecal;
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		bool bIsSprint = false;
-
+	bool bIsSprint = false;
 	//float WalkSpeed = 150;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float RunSpeed = 400;
@@ -49,6 +58,13 @@ public:
 
 	FVector NormalSpringArm;
 	FVector CurrentSpringArm;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	float CurrentHP;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	float MaxHP = 100;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	class UAnimMontage* DeadAnimation;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -59,6 +75,18 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	/**
+	 * Apply damage to this actor.
+	 * @see https://www.unrealengine.com/blog/damage-in-ue4
+	 * @param DamageAmount		How much damage to apply
+	 * @param DamageEvent		Data package that fully describes the damage received.
+	 * @param EventInstigator	The Controller responsible for the damage.
+	 * @param DamageCauser		The Actor that directly caused the damage (e.g. the projectile that exploded, the rock that landed on you)
+	 * @return					The amount of damage actually applied.
+	 */
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+
 
 	void MoveForward(float Value);
 	void MoveRight(float Value);
@@ -82,4 +110,6 @@ public:
 	void StopFire();
 	UFUNCTION()
 	void OnFire();
+	UFUNCTION()
+	void Reload();
 };
