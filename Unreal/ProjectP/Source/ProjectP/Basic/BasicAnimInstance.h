@@ -34,4 +34,9 @@ public:
 	float JumpVelocityZ = 0.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	bool bIsFalling = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	bool bIsReload = false;
+
+	UFUNCTION()
+	void AnimNotify_ReloadComplete(UAnimNotify* Notify);	// "AnimNotify_" PREFIX사용해야함
 };

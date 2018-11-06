@@ -130,7 +130,9 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 		*/
 		
 		// 죽는 애니를 쓴다.
-		PlayAnimMontage(DeadAnimation);
+		//PlayAnimMontage(DeadAnimation);
+		FString DeadMontage = FString::Printf(TEXT("Death_%d"), FMath::RandRange(1, 3));
+		PlayAnimMontage(DeadAnimation,1.0f,FName(*DeadMontage));
 	}
 
 	return DamageAmount;
@@ -417,6 +419,7 @@ void ABasicCharacter::OnFire()
 
 void ABasicCharacter::Reload()
 {
+	/*
 	if (Weapon->ReloadComplete())
 	{
 		UE_LOG(LogClass, Warning, TEXT("ChangeMegazine!"));
@@ -425,4 +428,7 @@ void ABasicCharacter::Reload()
 	{
 		UE_LOG(LogClass, Warning, TEXT("Not enough bullet!"));
 	}
+	*/
+	//PlayAnimMontage(ReloadAnimation);
+	bIsReload = true;
 }

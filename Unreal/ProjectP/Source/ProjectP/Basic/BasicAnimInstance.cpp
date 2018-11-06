@@ -3,6 +3,7 @@
 #include "BasicAnimInstance.h"
 #include "Basic/BasicCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "WeaponComponent.h"
 
 void UBasicAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 {
@@ -23,7 +24,25 @@ void UBasicAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		bIronSight = Pawn->bIronSight;
 		bIsFalling = Pawn->GetCharacterMovement()->IsFalling();
 		JumpVelocityZ = Pawn->GetCharacterMovement()->Velocity.Z;
-
+		bIsReload = Pawn->bIsReload;
+		if (bIsReload)
+		{
+			if (!Montage_IsPlaying(Pawn->ReloadAnimation))
+			{
+				Montage_Play(Pawn->ReloadAnimation);
+			}
+		}
 		//UE_LOG(LogClass, Warning, TEXT("%d %d JumpVelocityZ %f"), bIsFalling, Pawn->GetCharacterMovement()->IsFlying(), JumpVelocityZ);
+	}
+}
+
+void UBasicAnimInstance::AnimNotify_ReloadComplete(UAnimNotify * Notify)
+{
+	ABasicCharacter* Pawn = Cast<ABasicCharacter>(TryGetPawnOwner());
+	if (Pawn && Pawn->IsValidLowLevel())
+	{
+		Pawn->Weapon->ReloadComplete();
+		bIsReload = false;
+		Pawn->bIsReload = false;
 	}
 }

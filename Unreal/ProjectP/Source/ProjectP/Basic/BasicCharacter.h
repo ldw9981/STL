@@ -38,11 +38,11 @@ public:
 	bool bIsSprint = false;
 	//float WalkSpeed = 150;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-	float RunSpeed = 400;
+	float RunSpeed = 500;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float CrouchSpeed = 150;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-	float SprintSpeed = 600;
+	float SprintSpeed = 700;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float CapsuleCrouchHalfHeight = 44.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
@@ -63,8 +63,13 @@ public:
 	float CurrentHP;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float MaxHP = 100;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	bool bIsReload = false;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
 	class UAnimMontage* DeadAnimation;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	class UAnimMontage* ReloadAnimation;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
