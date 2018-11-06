@@ -135,9 +135,6 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 		// 애니를 안쓸경우 처리방법중 하나
 		GetMesh()->SetSimulatePhysics(true);
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		
-		
-		
 		//SetLifeSpan(10.0f);  //네트워크주의
 		//관전자폰 세팅
 		// 죽는 애니를 쓴다.
