@@ -27,8 +27,11 @@ AZombieCharacter::AZombieCharacter()
 	GetMesh()->SetRelativeLocation(FVector(0, 0, -GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight()));
 	GetMesh()->SetRelativeRotation(FRotator(0, -90, 0));
 
-	static ConstructorHelpers::FClassFinder<AAIController> BP_ZombieAIController(TEXT("Blueprint'/Game/Blueprints/Zombie/BP_ZombieAIController.BP_ZombieAIController'"));
-	AIControllerClass = AZombieAIController::StaticClass();
+	static ConstructorHelpers::FClassFinder<AAIController> BP_ZombieAIController(TEXT("Blueprint'/Game/Blueprints/Zombie/BP_ZombieAIController.BP_ZombieAIController_C'"));
+	if (BP_ZombieAIController.Succeeded())
+	{
+		AIControllerClass = BP_ZombieAIController.Class;
+	}
 }
 
 // Called when the game starts or when spawned
