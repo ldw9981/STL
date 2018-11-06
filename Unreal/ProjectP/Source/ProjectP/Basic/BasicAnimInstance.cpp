@@ -25,13 +25,37 @@ void UBasicAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		bIsFalling = Pawn->GetCharacterMovement()->IsFalling();
 		JumpVelocityZ = Pawn->GetCharacterMovement()->Velocity.Z;
 		bIsReload = Pawn->bIsReload;
+		bIsFire = Pawn->bIsFire;
+		bLeftLean = Pawn->bLeftLean;
+		bRightLean = Pawn->bRightLean;
+
+		float TargetAngle = 0.0f;
 		if (bIsReload)
 		{
 			if (!Montage_IsPlaying(Pawn->ReloadAnimation))
 			{
+				// 몽타주이벤트 테스트
+				//OnMontageBlendingOut.AddDynamic
 				Montage_Play(Pawn->ReloadAnimation);
 			}
 		}
+
+		
+		if (bLeftLean)
+		{
+			TargetAngle = -Pawn->LeanAngle;
+		}
+		else if (bRightLean)
+		{
+			TargetAngle = Pawn->LeanAngle;
+		}
+		else if (bLeftLean && bRightLean)
+		{
+			TargetAngle = 0;
+		}
+
+		CurrentAngle = FMath::FInterpTo(CurrentAngle, TargetAngle, DeltaSeconds, 20.0f);
+
 		//UE_LOG(LogClass, Warning, TEXT("%d %d JumpVelocityZ %f"), bIsFalling, Pawn->GetCharacterMovement()->IsFlying(), JumpVelocityZ);
 	}
 }

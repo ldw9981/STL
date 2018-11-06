@@ -88,11 +88,21 @@ void ABasicCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ABasicCharacter::StartFire);
 	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Released, this, &ABasicCharacter::StopFire);
 	PlayerInputComponent->BindAction(TEXT("Reload"), IE_Pressed, this, &ABasicCharacter::Reload);
+
+	PlayerInputComponent->BindAction(TEXT("LeftLean"), IE_Pressed, this, &ABasicCharacter::StartLeftLean);
+	PlayerInputComponent->BindAction(TEXT("LeftLean"), IE_Released, this, &ABasicCharacter::StopLeftLean);
+
+	PlayerInputComponent->BindAction(TEXT("RightLean"), IE_Pressed, this, &ABasicCharacter::StartRightLean);
+	PlayerInputComponent->BindAction(TEXT("RightLean"), IE_Released, this, &ABasicCharacter::StopRightLean);
+
 }
 
 // DamageAmount 0이면 호출되지않음
 float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
+	if (CurrentHP <= 0)
+		return 0;
+
 	if (DamageEvent.IsOfType(FRadialDamageEvent::ClassID))	//범위 데미지
 	{
 		UE_LOG(LogClass, Warning, TEXT("TakeDamage FRadialDamageEvent: %f"), DamageAmount);
@@ -121,18 +131,20 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 	if (CurrentHP <= 0)
 	{
 		CurrentHP = 0;
-		/*
+		
 		// 애니를 안쓸경우 처리방법중 하나
 		GetMesh()->SetSimulatePhysics(true);
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		
+		
+		
 		//SetLifeSpan(10.0f);  //네트워크주의
 		//관전자폰 세팅
-		*/
-		
 		// 죽는 애니를 쓴다.
 		//PlayAnimMontage(DeadAnimation);
 		FString DeadMontage = FString::Printf(TEXT("Death_%d"), FMath::RandRange(1, 3));
 		PlayAnimMontage(DeadAnimation,1.0f,FName(*DeadMontage));
+		//애니상태는 동기화가 어렵다.
 	}
 
 	return DamageAmount;
@@ -235,6 +247,9 @@ void ABasicCharacter::DoJump()
 
 void ABasicCharacter::StartFire()
 {
+	if (bIsReload)
+		return;
+
 	bIsFire = true;
 	OnFire();
 }
@@ -257,7 +272,11 @@ void ABasicCharacter::OnFire()
 	}
 
 	if (!Weapon->DecreaseMagazine())
+	{
+		bIsFire = false;
 		return;
+	}
+		
 	
 	// Muzzle Flash
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleFlash,
@@ -432,3 +451,25 @@ void ABasicCharacter::Reload()
 	//PlayAnimMontage(ReloadAnimation);
 	bIsReload = true;
 }
+
+void ABasicCharacter::StartLeftLean()
+{
+	bLeftLean = true;
+}
+
+void ABasicCharacter::StopLeftLean()
+{
+	bLeftLean = false;
+}
+
+void ABasicCharacter::StartRightLean()
+{
+	bRightLean = true;
+}
+
+void ABasicCharacter::StopRightLean()
+{
+	bRightLean = false;
+}
+
+

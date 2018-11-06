@@ -53,11 +53,12 @@ public:
 	FVector CrouchSpringPosition;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	bool bIsFire = false;
-
-	float CurrentZ;
-
-	FVector NormalSpringArm;
-	FVector CurrentSpringArm;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	bool bLeftLean = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	bool bRightLean = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	float LeanAngle=30.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float CurrentHP;
@@ -65,11 +66,14 @@ public:
 	float MaxHP = 100;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	bool bIsReload = false;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
 	class UAnimMontage* DeadAnimation;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
 	class UAnimMontage* ReloadAnimation;
+	float CurrentZ;
+	FVector NormalSpringArm;
+	FVector CurrentSpringArm;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -117,4 +121,13 @@ public:
 	void OnFire();
 	UFUNCTION()
 	void Reload();
+
+	UFUNCTION()
+	void StartLeftLean();
+	UFUNCTION()
+	void StopLeftLean();
+	UFUNCTION()
+	void StartRightLean();
+	UFUNCTION()
+	void StopRightLean();
 };

@@ -36,6 +36,16 @@ public:
 	bool bIsFalling = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	bool bIsReload = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	bool bIsFire = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	bool bLeftLean = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	bool bRightLean = false;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	//float TargetAngle = 0;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	float CurrentAngle = 0;
 
 	UFUNCTION()
 	void AnimNotify_ReloadComplete(UAnimNotify* Notify);	// "AnimNotify_" PREFIX사용해야함
