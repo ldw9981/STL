@@ -77,7 +77,7 @@ void AZombieCharacter::OnSeePawn(APawn * Pawn)
 {
 	UE_LOG(LogClass, Warning, TEXT("OnSeePawn"));
 	AZombieAIController* AIC = Cast<AZombieAIController>(GetController());
-	if (AIC && AIC->BBComponent && CurrentState == EZombieState::Normal)
+	if (AIC && AIC->BBComponent )
 	{
 		SetState(EZombieState::Chase);
 		AIC->BBComponent->SetValueAsObject(FName(TEXT("ChaseTargetActor")),Pawn);
@@ -117,7 +117,7 @@ void AZombieCharacter::SetState(EZombieState NewState)
 	AZombieAIController* AIC = Cast<AZombieAIController>(GetController());
 	if (AIC && AIC->BBComponent)
 	{
-		CurrentState = EZombieState::Chase;
+		CurrentState = NewState;
 		AIC->BBComponent->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)CurrentState);
 	}
 }
