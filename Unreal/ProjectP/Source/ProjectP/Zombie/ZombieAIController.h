@@ -15,6 +15,14 @@ class PROJECTP_API AZombieAIController : public AAIController
 	GENERATED_BODY()
 	
 public:
+	
+	AZombieAIController();
 	virtual void Possess(APawn* InPawn) override;
 	virtual void UnPossess() override;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
+		class UBehaviorTreeComponent* BTComponent;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
+		class UBlackboardComponent* BBComponent;
+
 };
