@@ -96,7 +96,7 @@ public:
 	 */
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
-
+	bool IsDead();
 	void MoveForward(float Value);
 	void MoveRight(float Value);
 	void LookUp(float Value);

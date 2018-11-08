@@ -25,30 +25,23 @@ public:
 	AZombieCharacter();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float CurrentHP;
+	float CurrentHP;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float MaxHP = 100;
-
+	float MaxHP = 100;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float WalkSpeed = 100;
+	float WalkSpeed = 100;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float RunSpeed = 500;
-
+	float RunSpeed = 500;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float Attack = 30;
+	float Attack = 30;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float AttackRange = 100;
-
+	float AttackRange = 100;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		EZombieState CurrentState = EZombieState::Normal;
-
+	EZombieState CurrentState = EZombieState::Normal;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
-		class UBehaviorTree* BehaviorTree;
+	class UBehaviorTree* BehaviorTree;	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-		class UPawnSensingComponent* PawnSensing;
-
-
-
+	class UPawnSensingComponent* PawnSensing;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -59,22 +52,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	
-
-
-	/**
- * Apply damage to this actor.
- * @see https://www.unrealengine.com/blog/damage-in-ue4
- * @param DamageAmount		How much damage to apply
- * @param DamageEvent		Data package that fully describes the damage received.
- * @param EventInstigator	The Controller responsible for the damage.
- * @param DamageCauser		The Actor that directly caused the damage (e.g. the projectile that exploded, the rock that landed on you)
- * @return					The amount of damage actually applied.
- */
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
-
-
+	
 	UFUNCTION()
 	void OnSeePawn(APawn* Pawn);
 	UFUNCTION()

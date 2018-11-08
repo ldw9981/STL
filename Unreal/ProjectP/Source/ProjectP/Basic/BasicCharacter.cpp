@@ -126,6 +126,7 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 	else if (DamageEvent.IsOfType(FDamageEvent::ClassID))			// 일반데미지
 	{
 		UE_LOG(LogClass, Warning, TEXT("TakeDamage FDamageEvent: %f"), DamageAmount);
+		CurrentHP -= DamageAmount;
 	}
 
 	if (CurrentHP <= 0)
@@ -145,6 +146,13 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 	}
 
 	return DamageAmount;
+}
+bool ABasicCharacter::IsDead()
+{
+	if (CurrentHP <= 0)
+		return true;
+
+	return false;
 }
 void ABasicCharacter::MoveForward(float Value)
 {

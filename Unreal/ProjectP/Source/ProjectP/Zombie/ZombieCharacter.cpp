@@ -22,7 +22,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Zombie/ZombieAIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
-
+#include "Basic/BasicCharacter.h"
 
 // Sets default values
 AZombieCharacter::AZombieCharacter()
@@ -52,6 +52,7 @@ void AZombieCharacter::BeginPlay()
 	Super::BeginPlay();	
 	PawnSensing->OnSeePawn.AddDynamic(this, &AZombieCharacter::OnSeePawn);
 	PawnSensing->OnHearNoise.AddDynamic(this, &AZombieCharacter::OnHearNoise);
+	CurrentHP = MaxHP;
 }
 
 // Called every frame
@@ -70,14 +71,56 @@ void AZombieCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 float AZombieCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
-	return 0.0f;
+	if (CurrentHP <= 0)
+		return 0;
+
+	if (DamageEvent.IsOfType(FRadialDamageEvent::ClassID))	//범위 데미지
+	{
+		UE_LOG(LogClass, Warning, TEXT("TakeDamage FRadialDamageEvent: %f"), DamageAmount);
+	}
+	else if (DamageEvent.IsOfType(FPointDamageEvent::ClassID))	//점 데미지
+	{
+		FPointDamageEvent* PointDamageEvent = (FPointDamageEvent*)(&DamageEvent);
+		UE_LOG(LogClass, Warning, TEXT("TakeDamage FPointDamageEvent: %f %s"), DamageAmount, *(PointDamageEvent->HitInfo.BoneName.ToString()));
+
+
+		if (PointDamageEvent->HitInfo.BoneName.Compare(TEXT("head")) == 0)
+		{
+			CurrentHP = 0;
+		}
+		else
+		{
+			CurrentHP -= DamageAmount;
+
+		}
+	}
+	else if (DamageEvent.IsOfType(FDamageEvent::ClassID))			// 일반데미지
+	{
+		UE_LOG(LogClass, Warning, TEXT("TakeDamage FDamageEvent: %f"), DamageAmount);
+		CurrentHP -= DamageAmount;
+	}
+
+	if (CurrentHP <= 0)
+	{
+		CurrentHP = 0;
+		SetState(EZombieState::Dead);		
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		SetLifeSpan(10.0f);
+	}
+
+	return DamageAmount;
 }
 
 void AZombieCharacter::OnSeePawn(APawn * Pawn)
-{
-	UE_LOG(LogClass, Warning, TEXT("OnSeePawn"));
+{	
+	ABasicCharacter* Player = Cast<ABasicCharacter>(Pawn);
+	if ( (Player && !Player->IsDead()) == false )
+	{
+		return;
+	}
+
 	AZombieAIController* AIC = Cast<AZombieAIController>(GetController());
-	if (AIC && AIC->BBComponent )
+	if (AIC && AIC->BBComponent  && CurrentState == EZombieState::Normal )
 	{
 		SetState(EZombieState::Chase);
 		AIC->BBComponent->SetValueAsObject(FName(TEXT("ChaseTargetActor")),Pawn);
