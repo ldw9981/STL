@@ -1,0 +1,396 @@
+p_zendar|Zendar Şehri
+p_town_1|Cantwaraburh Şehri
+p_town_2|Cippanhamm Şehri
+p_town_3|Eidynburh Şehri
+p_town_4|Ribe Şehri
+p_town_5|Tunsberg Şehri
+p_town_6|Dun Breatann Şehri
+p_town_7|Dubh Linn Şehri
+p_town_8|Cirren Ceaster Şehri
+p_town_9|Caer Dyf Şehri
+p_town_10|Jorvik Şehri
+p_town_11|Dorestad Şehri
+p_town_12|Lundenwic Şehri
+p_town_13|Ynys Mon Şehri
+p_town_14|Dunwic Şehri
+p_town_15|Scuin Şehri
+p_town_16|Witan Ceaster Şehri
+p_town_17|Bosvenegh Şehri
+p_town_18|Ceall Cainnigh Şehri
+p_town_19|Cell Rigmonaid Şehri
+p_town_20|Rath Celtair Şehri
+p_town_21|Maistiu Şehri
+p_town_22|Caer Meguaidd Şehri
+p_town_23|Tomtun Şehri
+p_town_24|Caiseal Şehri
+p_town_25|Aileach Şehri
+p_town_26|Brycheiniog Şehri
+p_town_27|Bebbanburh Şehri
+p_town_28|Cruaghan Şehri
+p_town_29|Temair Şehri
+p_castle_1|Caer Ligualid Kalesi
+p_castle_2|Mame Ceaster Kalesi
+p_castle_3|Donne Ceaster Kalesi
+p_castle_4|Middelsburh Kalesi
+p_castle_5|Denisesburna Kalesi
+p_castle_6|Ad Gefrin Kalesi
+p_castle_7|Din Baer Kalesi
+p_castle_8|Wicstun Kalesi
+p_castle_9|Snotingaham Kalesi
+p_castle_10|Lincylene Kalesi
+p_castle_11|Ham Tune Kalesi
+p_castle_12|Hreapandun Kalesi
+p_castle_13|Oxenaforda Kalesi
+p_castle_14|Colne Ceaster Kalesi
+p_castle_15|Gegnesburh Kalesi
+p_castle_16|Stanford Kalesi
+p_castle_17|Norwic Kalesi
+p_castle_18|Haegelisdun Kalesi
+p_castle_19|Rendlaesham Kalesi
+p_castle_20|Grantebrycge Kalesi
+p_castle_21|Hrofae Ceaster Kalesi
+p_castle_22|Dornwara Ceaster Kalesi
+p_castle_23|Searoburh Kalesi
+p_castle_24|Dorce Kalesi
+p_castle_25|Wiltun Kalesi
+p_castle_26|Ham Tun Kalesi
+p_castle_27|Badon Kalesi
+p_castle_28|Escan Ceaster Kalesi
+p_castle_29|Towan Blystra Kalesi
+p_castle_30|Din Tagell Kalesi
+p_castle_31|Cathures Kalesi
+p_castle_32|Cuil nam Kalesi
+p_castle_33|Caer Caradawg Kalesi
+p_castle_34|Gobhann Kalesi
+p_castle_35|Dun Duim Kalesi
+p_castle_36|Dun Foither Kalesi
+p_castle_37|Dun Taruo Kalesi
+p_castle_38|Dun Averte Kalesi
+p_castle_39|Dun Onlaigh Kalesi
+p_castle_40|Art Muirchol Kalesi
+p_castle_41|Din Bych Kalesi
+p_castle_42|Dinas Bran Kalesi
+p_castle_43|Din Arth Kalesi
+p_castle_44|Din Erth Kalesi
+p_castle_45|Caer Seniont Kalesi
+p_castle_46|Caer Sws Kalesi
+p_castle_47|Meigen Cil Ceincoed Kalesi
+p_castle_48|Caer Went Kalesi
+p_castle_49|Skyfa Kalesi
+p_castle_50|Vebjorg Kalesi
+p_castle_51|Huhelstath Kalesi
+p_castle_52|Heidabyr Kalesi
+p_castle_53|Skiringssalr Kalesi
+p_castle_54|Hordaland Kalesi
+p_castle_55|Agdir Kalesi
+p_castle_56|Rogaland Kalesi
+p_castle_57|Caer Reghed Kalesi
+p_castle_58|Dun Baitte Kalesi
+p_castle_59|Ynys Manaw Kalesi
+p_castle_60|Bjarnaroy Kalesi
+p_castle_61|Orkneyjar Kalesi
+p_castle_62|Veisafjordr Kalesi
+p_castle_63|Kennemer Kalesi
+p_castle_64|Vles Inge Kalesi
+p_castle_65|Dun Sebuirge Kalesi
+p_castle_66|Magh Rath Kalesi
+p_castle_67|Magh Cobha Kalesi
+p_castle_68|Druim Mor Kalesi
+p_castle_69|Rath Clochair Kalesi
+p_castle_70|Fir Fearnmhaigh Kalesi
+p_castle_71|Ard Macha Kalesi
+p_castle_72|Mag Dumai Kalesi
+p_castle_73|Ath Mor Kalesi
+p_castle_74|Ard Eachadha Kalesi
+p_castle_75|Ard Breacain Kalesi
+p_castle_76|Lagore Crannoc Kalesi
+p_castle_77|Cathair Chomain Kalesi
+p_castle_78|Luighne Connacht Kalesi
+p_castle_79|Fiachrach Aidne Kalesi
+p_castle_80|Ath Berchna Kalesi
+p_castle_81|Grian Airbh Kalesi
+p_castle_82|Les Mor Kalesi
+p_castle_83|Ciarraighe Luachra Kalesi
+p_castle_84|Muscraighe Kalesi
+p_castle_85|Dun Na Mbarc Kalesi
+p_castle_86|Cell Dara Kalesi
+p_castle_87|Liamhain Kalesi
+p_castle_88|Dun Bolg Kalesi
+p_castle_89|Ros Mhic Treoin Kalesi
+p_castle_90|Mairg Laigen Kalesi
+p_village_1|Ligualid Ham Köyü
+p_village_2|Mame Ham Köyü
+p_village_3|Donne Ham Köyü
+p_village_4|Middels Ham Köyü
+p_village_5|Denises Ham Köyü
+p_village_6|Ad Gefrin Ham Köyü
+p_village_7|Baer Ham Köyü
+p_village_8|Wics Ham Köyü
+p_village_9|Snotingaham South Köyü
+p_village_10|Lincylene Ham Köyü
+p_village_11|Ham Köyü
+p_village_12|Hreapan Ham Köyü
+p_village_13|Oxena Ham Köyü
+p_village_14|Colne Ham Köyü
+p_village_15|Gegnes Ham Köyü
+p_village_16|Stan Ham Köyü
+p_village_17|Nor Ham Köyü
+p_village_18|Haegelis Ham Köyü
+p_village_19|Rendlaesham Köyü
+p_village_20|Grante Ham Köyü
+p_village_21|Hrofae Ham Köyü
+p_village_22|Dornwara Ham Köyü
+p_village_23|Searo Ham Köyü
+p_village_24|Dorce Ham Köyü
+p_village_25|Wil Ham Köyü
+p_village_26|Ham Ham Köyü
+p_village_27|Badon Ham Köyü
+p_village_28|Escan Ham Köyü
+p_village_29|Tref Towan Köyü
+p_village_30|Tref Tagell Köyü
+p_village_31|Tref Cathures Köyü
+p_village_32|Tref Cuil Köyü
+p_village_33|Tref Caradawg Köyü
+p_village_34|Tref Gob Köyü
+p_village_35|Bal Duim Köyü
+p_village_36|Bal Foither Köyü
+p_village_37|Bal Tauro Köyü
+p_village_38|Bal Averte Köyü
+p_village_39|Bal Onlaigh Köyü
+p_village_40|Bal Muirchol Köyü
+p_village_41|Tref Bych Köyü
+p_village_42|Tref Bran Köyü
+p_village_43|Tref Arth Köyü
+p_village_44|Tref Erth Köyü
+p_village_45|Tref Seniont Köyü
+p_village_46|Tref Sws Köyü
+p_village_47|Tref Ceincoed Köyü
+p_village_48|Tref Went Köyü
+p_village_49|Skyfa By Köyü
+p_village_50|Vebjorg By Köyü
+p_village_51|Huhelstath By Köyü
+p_village_52|Heida By Köyü
+p_village_53|Skiringssalr By Köyü
+p_village_54|Horda By Köyü
+p_village_55|Agdir By Köyü
+p_village_56|Rogaland By Köyü
+p_village_57|Tref Reghed Köyü
+p_village_58|Bal Baitte Köyü
+p_village_59|Tref Manaw Köyü
+p_village_60|Bjarnaroy By Köyü
+p_village_61|Orkneyjar By Köyü
+p_village_62|Veisa By Köyü
+p_village_63|Kennemer Terp Köyü
+p_village_64|Vles Inge Terp Köyü
+p_village_65|Bal Sebuirge Köyü
+p_village_66|Bal Magh Köyü
+p_village_67|Bal Magh Cobha Köyü
+p_village_68|Bal Mor Köyü
+p_village_69|Bal Clochair Köyü
+p_village_70|Bal Fearnmhaigh Köyü
+p_village_71|Bal Macha Köyü
+p_village_72|Bal Dumai Köyü
+p_village_73|Bal Mor Köyü
+p_village_74|Bal Eachadha Köyü
+p_village_75|Bal Breacain Köyü
+p_village_76|Bal Crannoc Köyü
+p_village_77|Bal Chomain Köyü
+p_village_78|Bal Luighne Köyü
+p_village_79|Bal Fiachrach Aidne Köyü
+p_village_80|Bal Berchna Köyü
+p_village_81|Bal Grian Airbh Köyü
+p_village_82|Bal Les Mor Köyü
+p_village_83|Bal Ciarraighe Luachra Köyü
+p_village_84|Bal Muscraighe Köyü
+p_village_85|Bal Na Mbarc Köyü
+p_village_86|Bal Dara Köyü
+p_village_87|Bal Liamhain Köyü
+p_village_88|Bal Bolg Köyü
+p_village_89|Bal Ros Mhic Treoin Köyü
+p_village_90|Bal Mairg Laigen Köyü
+p_village_91|Bal Tara Köyü
+p_village_92|Cantwara Ham Kuzeyi
+p_village_93|Cantwara Ham Güneyi
+p_village_94|Cippan Ham Doğusu
+p_village_95|Cippan Ham Batısı
+p_village_96|Eidyn Ham Doğusu
+p_village_97|Eidyn Ham Batısı
+p_village_98|Ribe By Kuzeyi
+p_village_99|Ribe By Güneyi
+p_village_100|Tuns By Doğusu
+p_village_101|Tuns By Batısı
+p_village_102|Tref Breatann Doğusu
+p_village_103|Tref Breatann West
+p_village_104|Dubh Linn By Kuzeyi
+p_village_105|Dubh Linn By Güneyi
+p_village_106|Tref Dyf Doğusu
+p_village_107|Tref Dyf Batısı
+p_village_108|Eofer Ham Batısı
+p_village_109|Eofer Ham Batısı
+p_village_110|Dore Hem Doğusu
+p_village_111|Dore Hem Batısı
+p_village_112|Lunden Ham Kuzeyi
+p_village_113|Lunden Ham Güneyi
+p_village_114|Tref Mon Doğusu
+p_village_115|Tref Mon Batısı
+p_village_116|Dun Ham Kuzeyi
+p_village_117|Dun Ham Güneyi
+p_village_118|Bal Scuin Doğusu
+p_village_119|Bal Scuin Batısı
+p_village_120|Witan Ham Kuzeyi
+p_village_121|Witan Ham Güneyi
+p_village_122|Tref Bodmine Doğusu
+p_village_123|Tref Bodmine Batısı
+p_village_124|Bal Cainnighn Kuzeyi
+p_village_125|Bal Cainnighn Güneyi
+p_village_126|Bal Rigmonaid Kuzeyi
+p_village_127|Bal Rigmonaid Güneyi
+p_village_128|Bal Celtair Doğusu
+p_village_129|Bal Celtair Batısı
+p_village_130|Bal Maistiu Doğusu
+p_village_131|Bal Maistiu Batısı
+p_village_132|Tref Meguaidd Doğusu
+p_village_133|Tref Meguaidd Batısı
+p_village_134|Tom Ham Kuzeyi
+p_village_135|Tref Meguaidd Batısı
+p_village_136|Bal Caiseal Doğusu
+p_village_137|Bal Caiseal Batısı
+p_village_138|Bal Aileach Doğusu
+p_village_139|Bal Aileach Batısı
+p_village_140|Tref Brycheiniog Doğusu
+p_village_141|Tref Brycheiniog Batısı
+p_village_142|Bebban Ham Kuzeyi
+p_village_143|Bebban Ham Güneyi
+p_village_144|Bal Cruaghan Doğusu
+p_village_145|Bal Cruaghan Batısı
+p_village_146|Bal Temair Kuzeyi
+p_village_147|Bal Temair Güneyi
+p_village_148|Cirren Ham Doğusu
+p_village_149|Cirren Ham Batısı
+p_village_150|Doccinga köyü
+p_salt_mine|Tuz Madeni
+p_four_ways_inn|Dört Yol Hanı
+p_test_scene|test scene
+p_battlefields|battlefields
+p_frisa_beach|Friese Sahili
+p_farmland|Ulf's Çiftliği
+p_boar_grove|Yaban Domuzu Korusu
+p_readingum|Readingum
+p_aescesdun|Aescesdun
+p_mega_danishrmy|Büyük Yaz Ordusu
+p_battle_stones|Stone Row
+p_farmland_special|Çiftlik Alanı
+p_roman_fort|Roma Kalesi
+p_troll_bridge|Trol Köprüsü
+p_circle_mystic1|Circle Mystic
+p_celidon_forest|Antik Taşlar
+p_hidden_valley|Garip Harabeler
+p_quarry1|Maden Ocağı
+p_quarry2|Maden Ocağı
+p_quarry3|Maden Ocağı
+p_quarry4|Maden Ocağı
+p_saltmine1|Tuz Madeni
+p_saltmine2|Tuz Madeni
+p_saltmine3|Tuz Madeni
+p_saltmine4|Tuz Madeni
+p_lumbercamp1|Kereste Kampı
+p_lumbercamp2|Kereste Kampı
+p_lumbercamp3|Kereste Kampı
+p_lumbercamp4|Kereste Kampı
+p_farmsteadsp1|Çiftlik
+p_farmsteadsp2|Çiftlik
+p_farmsteadsp3|Çiftlik
+p_farmsteadsp4|Çiftlik
+p_farmsteadsp5|Çiftlik
+p_farmsteadsp6|Çiftlik
+p_farmsteadsp7|Çiftlik
+p_farmsteadsp8|Çiftlik
+p_farmsteadsp9|Çiftlik
+p_hadrian_wall1|Hadrian Kalesi
+p_bjorn_camp|Bjorn Kampı
+p_snotingaham_siege|Kuşatma altındaki Snotingaham
+p_odin_cave|Odin'in Mağarası
+p_stonemonumento|stonemonumento
+p_forestbattle|Orman Savaşı
+p_the_thing|Meclis
+p_dhorak_keep|Dhorak Keep
+p_training_ground|Talim Alanı
+p_training_ground_1|Talim alanı
+p_training_ground_2|Talim Köyü
+p_training_ground_3|Talim alanı
+p_training_ground_4|Talim Gölü
+p_training_ground_5|Talim kampı
+p_monasterio1|Ad Candida Casam
+p_monasterio2|Willibrord
+p_monasterio3|Dommoc
+p_monasterio4|Lindisfarne
+p_monasterio5|Aporcrosan
+p_monasterio6|Petrus
+p_monasterio7|Apurnethige
+p_monasterio8|Llanteulyddog
+p_monasterio9|Ynys Enlli
+p_monasterio10|Eveshomme
+p_monasterio11|Inderawuda
+p_monasterio12|Hagustaldes
+p_monasterio13|Briudun
+p_monasterio14|Gudlac
+p_monasterio15|Wochingas
+p_monasterio16|Clofesho
+p_monasterio17|Waerburh
+p_monasterio18|Derhurst
+p_monasterio19|Ythan
+p_monasterio20|Petrockstow
+p_monasterio21|Medeshamstede
+p_monasterio22|Cocheham
+p_monasterio23|Patricius
+p_monasterio24|Daire Calgaich
+p_monasterio25|Finian
+p_monasterio26|Raithean
+p_monasterio27|Carthach
+p_monasterio28|Scelic Mhichi
+p_monasterio29|Gleann Da Loch
+p_yourlair|Benim Sığınağım
+p_thiaderd_lair|Thiaderd'ın Sığınağı
+p_destroy1|Thiaderd'ın Sığınağı, Yıkılmış
+p_destroy2|Sven'in Sığınağı, Yıkılmış
+p_destroy3|Aescesdun Savaşalanı
+p_followers_camp|Müritlerin kampı
+p_ferry_1a|Vapur limanı
+p_ferry_2a|Vapur limanı
+p_ferry_3a|Vapur limanı
+p_ferry_4a|Vapur limanı
+p_ferry_1b|Vapur limanı
+p_ferry_2b|Vapur limanı
+p_ferry_3b|Vapur limanı
+p_ferry_4b|Vapur limanı
+p_looter_spawn_point|Sığınakları
+p_looter_spawn_point2|Sığınakları
+p_looter_spawn_point3|Sığınakları
+p_steppe_bandit_spawn_point|Kampları
+p_taiga_bandit_spawn_point|their longphort
+p_forest_bandit_spawn_point|Mağaraları
+p_forest_bandit_spawn_point2|Mağaraları
+p_forest_bandit_spawn_point4|Mağaraları
+p_mountain_bandit_spawn_point|Mağaraları
+p_mountain_bandit_spawn_point3|Mağaraları
+p_sea_raider_spawn_point_1|their longphort
+p_sea_raider_spawn_point_2|their longphort
+p_sea_raider_spawn_point_3|their longphort
+p_desert_bandit_spawn_point|kampları
+p_frank_looters_sp_1|Mağaraları
+p_frank_looters_sp_2|Mağaraları
+p_pagan_spawn_1|kırsal yöre halkı
+p_pagan_spawn_2|kırsal yöre halkı
+p_pagan_spawn_3|kırsal yöre halkı
+p_pagan_spawn_4|kırsal yöre halkı
+p_ship_raider_spawn_point_1|İskeleleri
+p_ship_raider_spawn_point_2|their longphort
+p_ship_raider_spawn_point_3|İskeleleri
+p_ship_raider_spawn_point_4|their longphort
+p_ship_raider_spawn_point_5|their longphort
+p_ship_raider_spawn_point_6|İskeleleri
+p_landing_point|Çıkarma limanı
+p_the_fleet|Donanma
+p_transporter|Taşıyıcı
+p_troop_camp_1|Takım kampı
+p_troop_camp_2|Takım Kampı

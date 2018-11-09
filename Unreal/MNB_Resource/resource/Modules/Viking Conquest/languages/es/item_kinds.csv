@@ -1,0 +1,2502 @@
+itm_no_item|OBJETO NO VÁLIDO
+itm_no_item_pl|OBJETO NO VÁLIDO
+itm_tutorial_spear|Lanza	
+itm_tutorial_spear_pl|Lanza
+itm_tutorial_club|Porra
+itm_tutorial_club_pl|Porra
+itm_tutorial_battle_axe|Hacha larga de batalla
+itm_tutorial_battle_axe_pl|Hacha larga de batalla
+itm_tutorial_arrows|Flechas
+itm_tutorial_arrows_pl|Flechas
+itm_tutorial_bolts|Virotes
+itm_tutorial_bolts_pl|Virotes
+itm_tutorial_short_bow|Arco largo
+itm_tutorial_short_bow_pl|Arco largo
+itm_tutorial_crossbow|Ballesta
+itm_tutorial_crossbow_pl|Ballesta
+itm_tutorial_throwing_daggers|Jabalinas
+itm_tutorial_throwing_daggers_pl|Jabalinas
+itm_tutorial_saddle_horse|Silla de pony
+itm_tutorial_saddle_horse_pl|Silla de pony
+itm_tutorial_shield|Escudo circular
+itm_tutorial_shield_pl|Escudo circular
+itm_tutorial_staff_no_attack|Bastón
+itm_tutorial_staff_no_attack_pl|Bastón
+itm_tutorial_staff|Bastón
+itm_tutorial_staff_pl|Bastón
+itm_tutorial_sword|Espada común
+itm_tutorial_sword_pl|Espada común
+itm_tutorial_axe|Hacha
+itm_tutorial_axe_pl|Hacha
+itm_tutorial_dagger|Seax
+itm_tutorial_dagger_pl|Seax
+itm_horse_meat|Carne de caballo
+itm_horse_meat_pl|Carne de caballo
+itm_practice_sword|Espada común
+itm_practice_sword_pl|Espada común
+itm_heavy_practice_sword|Espada gaélica de campeón
+itm_heavy_practice_sword_pl|Espada gaélica de campeón
+itm_practice_dagger|Seax
+itm_practice_dagger_pl|Seax
+itm_practice_axe|Hacha
+itm_practice_axe_pl|Hacha
+itm_arena_axe|Hacha	corta
+itm_arena_axe_pl|Hacha corta
+itm_arena_sword|Espada común
+itm_arena_sword_pl|Espada común
+itm_arena_sword_two_handed|Espada gaélica de campeón
+itm_arena_sword_two_handed_pl|Espada gaélica de campeón
+itm_arena_lance|Lanza
+itm_arena_lance_pl|Lanza
+itm_practice_staff|Bastón
+itm_practice_staff_pl|Bastón
+itm_practice_lance|Lanza
+itm_practice_lance_pl|Lanza
+itm_practice_shield|Escudo de práctica
+itm_practice_shield_pl|Escudo de práctica
+itm_practice_bow|Arco largo
+itm_practice_bow_pl|Arco largo
+itm_practice_crossbow|Honda
+itm_practice_crossbow_pl|Honda
+itm_practice_javelin|Jabalinas
+itm_practice_javelin_pl|Jabalinas
+itm_practice_javelin_melee|Jabalina
+itm_practice_javelin_melee_pl|Jabalina
+itm_practice_throwing_daggers|Jabalinas
+itm_practice_throwing_daggers_pl|Jabalinas
+itm_practice_throwing_daggers_100_amount|Jabalinas
+itm_practice_throwing_daggers_100_amount_pl|Jabalinas
+itm_practice_horse|Silla de pony
+itm_practice_horse_pl|Silla de pony
+itm_practice_arrows|Flechas
+itm_practice_arrows_pl|Flechas
+itm_practice_bolts|Piedras para honda
+itm_practice_bolts_pl|Piedras para honda
+itm_practice_arrows_10_amount|Flechas
+itm_practice_arrows_10_amount_pl|Flechas
+itm_practice_arrows_100_amount|Flechas
+itm_practice_arrows_100_amount_pl|Flechas
+itm_practice_bolts_9_amount|Vitores de prácticas
+itm_practice_bolts_9_amount_pl|Vitores de prácticas
+itm_practice_boots|Botas
+itm_practice_boots_pl|Botas
+itm_red_tourney_armor|Túnica roja
+itm_red_tourney_armor_pl|Túnica roja
+itm_blue_tourney_armor|Túnica azul
+itm_blue_tourney_armor_pl|Túnica azul
+itm_green_tourney_armor|Túnica verde
+itm_green_tourney_armor_pl|Túnica verde
+itm_gold_tourney_armor|Túnica blanca
+itm_gold_tourney_armor_pl|Túnica blanca
+itm_red_tourney_helmet|Gorro
+itm_red_tourney_helmet_pl|Gorro
+itm_blue_tourney_helmet|Gorro
+itm_blue_tourney_helmet_pl|Gorro
+itm_green_tourney_helmet|Gorro
+itm_green_tourney_helmet_pl|Gorro
+itm_gold_tourney_helmet|Gorro
+itm_gold_tourney_helmet_pl|Gorro
+itm_arena_shield_red|Escudo circular ligero
+itm_arena_shield_red_pl|Escudo circular ligero
+itm_arena_shield_blue|Escudo circular ligero
+itm_arena_shield_blue_pl|Escudo circular ligero
+itm_arena_shield_green|Escudo circular ligero
+itm_arena_shield_green_pl|Escudo circular ligero
+itm_arena_shield_yellow|Escudo circular	ligero
+itm_arena_shield_yellow_pl|Escudo circular ligero
+itm_arena_armor_white|Túnica blanca
+itm_arena_armor_white_pl|Túnica blanca
+itm_arena_armor_red|Túnica roja
+itm_arena_armor_red_pl|Túnica roja
+itm_arena_armor_blue|Túnica azul
+itm_arena_armor_blue_pl|Túnica azul
+itm_arena_armor_green|Túnica verde
+itm_arena_armor_green_pl|Túnica verde
+itm_arena_armor_yellow|Túnica amarilla
+itm_arena_armor_yellow_pl|Túnica amarilla
+itm_arena_tunic_white|Túnica blanca
+itm_arena_tunic_white_pl|Túnica blanca
+itm_arena_tunic_red|Túnica roja
+itm_arena_tunic_red_pl|Túnica roja
+itm_arena_tunic_blue|Túnica azul
+itm_arena_tunic_blue_pl|Túnica azul
+itm_arena_tunic_green|Túnica verde
+itm_arena_tunic_green_pl|Túnica verde
+itm_arena_tunic_yellow|Túnica amarilla
+itm_arena_tunic_yellow_pl|Túnica amarilla
+itm_arena_helmet_red|Yelmo con nasal
+itm_arena_helmet_red_pl|Yelmo con nasal
+itm_arena_helmet_blue|Yelmo con nasal
+itm_arena_helmet_blue_pl|Yelmo con nasal
+itm_arena_helmet_green|Yelmo con nasal
+itm_arena_helmet_green_pl|Yelmo con nasal
+itm_arena_helmet_yellow|Yelmo con nasal
+itm_arena_helmet_yellow_pl|Yelmo con nasal
+itm_steppe_helmet_white|Yelmo con nasal
+itm_steppe_helmet_white_pl|Yelmo con nasal
+itm_steppe_helmet_red|Yelmo con nasal
+itm_steppe_helmet_red_pl|Yelmo con nasal
+itm_steppe_helmet_blue|Yelmo con nasal
+itm_steppe_helmet_blue_pl|Yelmo con nasal
+itm_steppe_helmet_green|Yelmo con nasal
+itm_steppe_helmet_green_pl|Yelmo con nasal
+itm_steppe_helmet_yellow|Yelmo con nasal
+itm_steppe_helmet_yellow_pl|Yelmo con nasal
+itm_tourney_helm_white|Yelmo con nasal
+itm_tourney_helm_white_pl|Yelmo con nasal
+itm_tourney_helm_red|Yelmo con nasal
+itm_tourney_helm_red_pl|Yelmo con nasal
+itm_tourney_helm_blue|Yelmo con nasal
+itm_tourney_helm_blue_pl|Yelmo con nasal
+itm_tourney_helm_green|Yelmo con nasal
+itm_tourney_helm_green_pl|Yelmo con nasal
+itm_tourney_helm_yellow|Yelmo con nasal
+itm_tourney_helm_yellow_pl|Yelmo con nasal
+itm_arena_turban_red|Gorro
+itm_arena_turban_red_pl|Gorro
+itm_arena_turban_blue|Gorro
+itm_arena_turban_blue_pl|Gorro
+itm_arena_turban_green|Gorro
+itm_arena_turban_green_pl|Gorro
+itm_arena_turban_yellow|Gorro
+itm_arena_turban_yellow_pl|Gorro
+itm_book_tactics|Historia de las Guerras del Peloponeso, de Tucídides
+itm_book_tactics_pl|Historia de las Guerras del Peloponeso, de Tucídides
+itm_book_persuasion|Rhetorica ad Herennium
+itm_book_persuasion_pl|Rhetorica ad Herennium
+itm_book_leadership|La Vida de Alejandro Magno
+itm_book_leadership_pl|La Vida de Alejandro Magno
+itm_book_intelligence|Paedeia
+itm_book_intelligence_pl|Paedeia
+itm_book_trade|Oeconomica, de Aristóteles
+itm_book_trade_pl|Oeconomica, de Aristóteles
+itm_book_weapon_mastery|La República de los Lacedemonios, de Jenofonte
+itm_book_weapon_mastery_pl|La República de los Lacedemonios, de Jenofonte
+itm_book_engineering|De architectura, de Vitruvio
+itm_book_engineering_pl|De architectura, de Vitruvio
+itm_book_wound_treatment_reference|De Materia Medica, de Dioscórides
+itm_book_wound_treatment_reference_pl|De Materia Medica, de Dioscórides
+itm_book_training_reference|Epitoma Rei Militaris
+itm_book_training_reference_pl|Epitoma Rei Militaris
+itm_book_surgery_reference|Synopsis de Aelius Galenus
+itm_book_surgery_reference_pl|Synopsis de Aelius Galenus
+itm_relic|El Cathach de Colum Cille
+itm_relic_pl|El Cathach de Colum Cille
+itm_mead|Hidromiel
+itm_mead_pl|Hidromiel
+itm_salt|Sal
+itm_salt_pl|Sal
+itm_tar|Brea
+itm_tar_pl|Brea
+itm_jewelry|Joyería
+itm_jewelry_pl|Joyería
+itm_raw_flax|Haz de lino
+itm_raw_flax_pl|Haz de lino
+itm_linen|Lino
+itm_linen_pl|Lino
+itm_wool|Lana
+itm_wool_pl|Lana
+itm_vc_wool_cloth|Tela de lana
+itm_vc_wool_cloth_pl|Tela de lana
+itm_amber|Ámbar
+itm_amber_pl|Ámbar
+itm_ivory|Marfil de morsa
+itm_ivory_pl|Marfil de morsa
+itm_silver|Plata
+itm_silver_pl|Plata
+itm_iron|Hierro
+itm_iron_pl|Hierro
+itm_stone|Piedra
+itm_stone_pl|Piedra
+itm_tools|Herramientas
+itm_tools_pl|Herramientas
+itm_vc_raw_leather|Cueros
+itm_vc_raw_leather_pl|Cueros
+itm_timber|Madera
+itm_timber_pl|Madera
+itm_soapstone|Esteatita
+itm_soapstone_pl|Esteatita
+itm_vc_furs|Pieles
+itm_vc_furs_pl|Pieles
+itm_wine|Vino
+itm_wine_pl|Vino
+itm_ale|Cerveza
+itm_ale_pl|Cerveza
+itm_smoked_fish|Pescado ahumado
+itm_smoked_fish_pl|Pescado ahumado
+itm_cheese|Queso
+itm_cheese_pl|Queso
+itm_vc_honey|Miel
+itm_vc_honey_pl|Miel
+itm_sausages|Salchichas
+itm_sausages_pl|Salchichas
+itm_cabbages|Verduras
+itm_cabbages_pl|Verduras
+itm_dried_meat|Carne seca
+itm_dried_meat_pl|Carne seca
+itm_apples|Fruta
+itm_apples_pl|Fruta
+itm_barley|Cebada
+itm_barley_pl|Cebada
+itm_venison|Carne de jabalí
+itm_venison_pl|Carne de jabalí
+itm_grain|Trigo
+itm_grain_pl|Trigo
+itm_cattle_meat|Carne
+itm_cattle_meat_pl|Carne
+itm_bread|Pan
+itm_bread_pl|Pan
+itm_chicken|Pollo
+itm_chicken_pl|Pollo
+itm_pork|Carne de cerdo
+itm_pork_pl|Carne de cerdo
+itm_butter|Manteca
+itm_butter_pl|Manteca
+itm_siege_supply|Suministros
+itm_siege_supply_pl|Suministros
+itm_quest_wine|Vino
+itm_quest_wine_pl|Vino
+itm_quest_ale|Cerveza
+itm_quest_ale_pl|Cerveza
+itm_common_horse|Caballo
+itm_common_horse_pl|Caballo
+itm_common_horse2|Caballo
+itm_common_horse2_pl|Caballo
+itm_common_pony|Pony
+itm_common_pony_pl|Pony
+itm_common_pony2|Pony
+itm_common_pony2_pl|Pony
+itm_wild_horse|Caballo
+itm_wild_horse_pl|Caballo
+itm_wild_horse2|Caballo
+itm_wild_horse2_pl|Caballo
+itm_wild_pony|Pony
+itm_wild_pony_pl|Pony
+itm_wild_pony2|Pony
+itm_wild_pony2_pl|Pony
+itm_cow1|Vaca
+itm_cow1_pl|Vaca
+itm_cow2|Vaca
+itm_cow2_pl|Vaca
+itm_arrows|Flechas
+itm_arrows_pl|Flechas
+itm_khergit_arrows|Flecha perforante
+itm_khergit_arrows_pl|Flecha perforante
+itm_barbed_arrows|Flecha barbada
+itm_barbed_arrows_pl|Flecha barbada
+itm_bodkin_arrows|Flecha bodkin
+itm_bodkin_arrows_pl|Flecha bodkin
+itm_bolts|Virotes
+itm_bolts_pl|Virotes
+itm_bolts2|Virotes perforantes
+itm_bolts2_pl|Virotes perforantes
+itm_bolts3|Virotes barbados
+itm_bolts3_pl|Virotes barbados
+itm_bolts4|Virotes bodkin
+itm_bolts4_pl|Virotes bodkin
+itm_pilgrim_disguise|Disfraz de peregrino
+itm_pilgrim_disguise_pl|Disfraz de peregrino
+itm_pilgrim_hood|Capucha de peregrino
+itm_pilgrim_hood_pl|Capucha de peregrino
+itm_leather_gloves|Guantes de cuero
+itm_leather_gloves_pl|Guantes de cuero
+itm_carbatinae_1|Zapatos de cuero
+itm_carbatinae_1_pl|Zapatos de cuero
+itm_carbatinae_2|Botas altas
+itm_carbatinae_2_pl|Botas altas
+itm_carbatinae_3|Zapatos de cuero
+itm_carbatinae_3_pl|Zapatos de cuero
+itm_carbatinae_4|Zapatos de cuero
+itm_carbatinae_4_pl|Zapatos de cuero
+itm_carbatinae_5|Botas altas
+itm_carbatinae_5_pl|Botas altas
+itm_carbatinae_6|Zapatos de cuero
+itm_carbatinae_6_pl|Zapatos de cuero
+itm_carbatinae_7|Botas altas
+itm_carbatinae_7_pl|Botas altas
+itm_carbatinae_8|Zapatos de cuero
+itm_carbatinae_8_pl|Zapatos de cuero
+itm_carbatinae_9|Botas altas
+itm_carbatinae_9_pl|Botas altas
+itm_carbatinae_10|Zapatos de cuero
+itm_carbatinae_10_pl|Zapatos de cuero
+itm_carbatinae_vc1|Botines
+itm_carbatinae_vc1_pl|Botines
+itm_carbatinae_vc2|Botines
+itm_carbatinae_vc2_pl|Botines
+itm_carbatinae_vc3|Botines
+itm_carbatinae_vc3_pl|Botines
+itm_carbatinae_vc4|Botas altas de calidad
+itm_carbatinae_vc4_pl|Botas altas de calidad
+itm_carbatinae_vc5|Botines
+itm_carbatinae_vc5_pl|Botines
+itm_carbatinae_vc6|Botines
+itm_carbatinae_vc6_pl|Botines
+itm_carbatinae_1s|Zapatos de cuero
+itm_carbatinae_1s_pl|Zapatos de cuero
+itm_carbatinae_2s|Botas altas
+itm_carbatinae_2s_pl|Botas altas
+itm_carbatinae_3s|Botas altas
+itm_carbatinae_3s_pl|Botas altas
+itm_carbatinae_4s|Calzado de piel cruda
+itm_carbatinae_4s_pl|Calzado de piel cruda
+itm_carbatinae_5s|Calzado de piel cruda
+itm_carbatinae_5s_pl|Calzado de piel cruda
+itm_carbatinae_6s|Botines
+itm_carbatinae_6s_pl|Botines
+itm_carbatinae_vc1s|Botas altas de calidad
+itm_carbatinae_vc1s_pl|Botas altas de calidad
+itm_carbatinae_vc2s|Botines
+itm_carbatinae_vc2s_pl|Botines
+itm_carbatinae_vc3s|Botas altas de calidad
+itm_carbatinae_vc3s_pl|Botas altas de calidad
+itm_carbatinae_vc4s|Botas altas
+itm_carbatinae_vc4s_pl|Botas altas
+itm_carbatinae_1v|Botines
+itm_carbatinae_1v_pl|Botines
+itm_carbatinae_2v|Botas altas
+itm_carbatinae_2v_pl|Botas altas
+itm_carbatinae_3v|Botas altas
+itm_carbatinae_3v_pl|Botas altas
+itm_carbatinae_4v|Botas altas de calidad
+itm_carbatinae_4v_pl|Botas altas de calidad
+itm_carbatinae_5v|Calzado de piel cruda
+itm_carbatinae_5v_pl|Calzado de piel cruda
+itm_carbatinae_6v|Botas altas
+itm_carbatinae_6v_pl|Botas altas
+itm_carbatinae_vc1v|Botines
+itm_carbatinae_vc1v_pl|Botines
+itm_carbatinae_vc2v|Botas altas de calidad
+itm_carbatinae_vc2v_pl|Botas altas de calidad
+itm_carbatinae_11q|Zapatos de cuero
+itm_carbatinae_11q_pl|Zapatos de cuero
+itm_carbatinae_12q|Zapatos de cuero
+itm_carbatinae_12q_pl|Zapatos de cuero
+itm_carbatinae_11qs|Botas altas de calidad
+itm_carbatinae_11qs_pl|Botas altas de calidad
+itm_carbatinae_12qs|Botas altas de calidad
+itm_carbatinae_12qs_pl|Botas altas de calidad
+itm_carbatinae_13qs|Botas altas de calidad
+itm_carbatinae_13qs_pl|Botas altas de calidad
+itm_carbatinae_14qs|Botas altas de calidad
+itm_carbatinae_14qs_pl|Botas altas de calidad
+itm_carbatinae_14qv|Botas altas de calidad
+itm_carbatinae_14qv_pl|Botas altas de calidad
+itm_bare_foot_man|Calzado de pobre
+itm_bare_foot_man_pl|Calzado de pobre
+itm_just_man_boots_medium|Calzado de piel cruda
+itm_just_man_boots_medium_pl|Calzado de piel cruda
+itm_just_man_boots_light|Botines ligeros
+itm_just_man_boots_light_pl|Botines ligeros
+itm_just_man_shoes|Zapatos de cuero
+itm_just_man_shoes_pl|Zapatos de cuero
+itm_just_man_boots_dark|Botines ligeros
+itm_just_man_boots_dark_pl|Botines ligeros
+itm_gaelshoes_1|Zapatos gaélicos
+itm_gaelshoes_1_pl|Zapatos gaélicos
+itm_gaelshoes_2|Zapatos gaélicos
+itm_gaelshoes_2_pl|Zapatos gaélicos
+itm_gaelshoes_3|Zapatos gaélicos
+itm_gaelshoes_3_pl|Zapatos gaélicos
+itm_womenshoes_1|Zapatos sencillos
+itm_womenshoes_1_pl|Zapatos sencillos
+itm_womenshoes_2|Botines sencillos
+itm_womenshoes_2_pl|Botines sencillos
+itm_womenshoes_3|Zapatos sencillos
+itm_womenshoes_3_pl|Zapatos sencillos
+itm_womenshoes_4|Botines sencillos
+itm_womenshoes_4_pl|Botines sencillos
+itm_womenshoes_5|Botas sencillas
+itm_womenshoes_5_pl|Botas sencillas
+itm_womenshoes_6|Botines sencillos
+itm_womenshoes_6_pl|Botines sencillos
+itm_womenshoes_7|Zapatos sencillos
+itm_womenshoes_7_pl|Zapatos sencillos
+itm_womenshoes_8|Zapatos sencillos
+itm_womenshoes_8_pl|Zapatos sencillos
+itm_long_tunic1|Armadura ligera frisia
+itm_long_tunic1_pl|Armadura ligera frisia
+itm_nobleman_outfit|Armadura ligera sajona
+itm_nobleman_outfit_pl|Armadura ligera sajona
+itm_troll_tunic|Túnica de trol
+itm_troll_tunic_pl|Túnica de trol
+itm_priest1|Hábito de sacerdote
+itm_priest1_pl|Hábito de sacerdote
+itm_priest2|Hábito de sacerdote
+itm_priest2_pl|Hábito de sacerdote
+itm_robe|Hábito de monje
+itm_robe_pl|Hábito de monje
+itm_robe2|Hábito de monje
+itm_robe2_pl|Hábito de monje
+itm_robe3|Hábito de monje
+itm_robe3_pl|Hábito de monje
+itm_robe4|Hábito de monje
+itm_robe4_pl|Hábito de monje
+itm_robe5|Hábito de monje
+itm_robe5_pl|Hábito de monje
+itm_robe6|Hábito de monje
+itm_robe6_pl|Hábito de monje
+itm_robe7|Hábito de monje
+itm_robe7_pl|Hábito de monje
+itm_robe8|Hábito de monje
+itm_robe8_pl|Hábito de monje
+itm_robe9|Hábito de monje
+itm_robe9_pl|Hábito de monje
+itm_robe10|Hábito de monje
+itm_robe10_pl|Hábito de monje
+itm_ptunic_1|Túnica simple de anglo
+itm_ptunic_1_pl|Túnica simple de anglo
+itm_ptunic_2|Armadura ligera de anglo
+itm_ptunic_2_pl|Armadura ligera de anglo
+itm_ptunic_3|Túnica de anglo
+itm_ptunic_3_pl|Túnica de anglo
+itm_ptunic_4|Túnica de anglo
+itm_ptunic_4_pl|Túnica de anglo
+itm_ptunic_5|Túnica simple de anglo
+itm_ptunic_5_pl|Túnica simple de anglo
+itm_ptunic_6|Túnica de anglo
+itm_ptunic_6_pl|Túnica de anglo
+itm_ptunic_7|Túnica de anglo acolchada
+itm_ptunic_7_pl|Túnica de anglo acolchada
+itm_ptunic_8|Túnica de anglo acolchada
+itm_ptunic_8_pl|Túnica de anglo acolchada
+itm_ptunic_9|Armadura ligera de anglo
+itm_ptunic_9_pl|Armadura ligera de anglo
+itm_ptunic_10|Túnica de anglo
+itm_ptunic_10_pl|Túnica de anglo
+itm_ptunic_11|Túnica de anglo
+itm_ptunic_11_pl|Túnica de anglo
+itm_ptunic_12|Armadura ligera de anglo
+itm_ptunic_12_pl|Armadura ligera de anglo
+itm_btunic_1|Capa
+itm_btunic_1_pl|Capa
+itm_btunic_2|Pantalones
+itm_btunic_2_pl|Pantalones
+itm_btunic_3|Túnica nórdica
+itm_btunic_3_pl|Túnica nórdica
+itm_btunic_4|Túnica nórdica
+itm_btunic_4_pl|Túnica nórdica
+itm_btunic_5|Túnica nórdica
+itm_btunic_5_pl|Túnica nórdica
+itm_btunic_6|Túnica nórdica
+itm_btunic_6_pl|Túnica nórdica
+itm_btunic_7|Túnica nórdica
+itm_btunic_7_pl|Túnica nórdica
+itm_btunic_8|Túnica nórdica simple
+itm_btunic_8_pl|Túnica nórdica simple
+itm_btunic_9|Túnica nórdica simple
+itm_btunic_9_pl|Túnica nórdica simple
+itm_btunic_10|Túnica nórdica simple
+itm_btunic_10_pl|Túnica nórdica simple
+itm_btunic_11|Túnica nórdica
+itm_btunic_11_pl|Túnica nórdica
+itm_btunic_12|Armadura ligera nórdica
+itm_btunic_12_pl|Armadura ligera nórdica
+itm_btunic_13|Túnica nórdica
+itm_btunic_13_pl|Túnica nórdica
+itm_btunic_14|Túnica nórdica
+itm_btunic_14_pl|Túnica nórdica
+itm_btunic_15|Armadura ligera nórdica
+itm_btunic_15_pl|Armadura ligera nórdica
+itm_btunic_16|Armadura ligera nórdica
+itm_btunic_16_pl|Armadura ligera nórdica
+itm_hoodtunic_01|Túnica
+itm_hoodtunic_01_pl|Túnica
+itm_hoodtunic_02|Túnica
+itm_hoodtunic_02_pl|Túnica
+itm_hoodtunic_03|Túnica
+itm_hoodtunic_03_pl|Túnica
+itm_hoodtunic_04|Túnica
+itm_hoodtunic_04_pl|Túnica
+itm_hoodtunic_05|Túnica
+itm_hoodtunic_05_pl|Túnica
+itm_hoodtunic_06|Túnica
+itm_hoodtunic_06_pl|Túnica
+itm_hoodtunic_07|Túnica
+itm_hoodtunic_07_pl|Túnica
+itm_hoodtunic_08|Capucha
+itm_hoodtunic_08_pl|Capucha
+itm_bl_tunic01|Pantalones
+itm_bl_tunic01_pl|Pantalones
+itm_bl_tunic02|Armadura ligera sajona
+itm_bl_tunic02_pl|Armadura ligera sajona
+itm_bl_tunic03|Armadura ligera sajona
+itm_bl_tunic03_pl|Armadura ligera sajona
+itm_bl_tunic04|Túnica sajona simple
+itm_bl_tunic04_pl|Túnica sajona simple
+itm_bl_tunic05|Túnica sajona simple
+itm_bl_tunic05_pl|Túnica sajona simple
+itm_bl_tunic06|Túnica sajona 
+itm_bl_tunic06_pl|Túnica sajona
+itm_bl_tunic07|Túnica sajona 
+itm_bl_tunic07_pl|Túnica sajona 
+itm_bl_tunic08|Túnica sajona acolchada
+itm_bl_tunic08_pl|Túnica sajona acolchada
+itm_bl_tunic09|Armadura sajona ligera
+itm_bl_tunic09_pl|Armadura sajona ligera
+itm_bl_tunic10|Túnica sajona
+itm_bl_tunic10_pl|Túnica sajona
+itm_bl_tunic11|Túnica sajona
+itm_bl_tunic11_pl|Túnica sajona
+itm_bl_tunic12|Túnica sajona
+itm_bl_tunic12_pl|Túnica sajona
+itm_red_cloak|Túnica sajona
+itm_red_cloak_pl|Túnica sajona
+itm_yellow_cloak|Túnica frisia de élite
+itm_yellow_cloak_pl|Túnica frisia de élite
+itm_green_cloak|Armadura picta ligera
+itm_green_cloak_pl|Armadura picta ligera
+itm_blue_cloak|Túnica
+itm_blue_cloak_pl|Túnica
+itm_leather_cloak|Túnica
+itm_leather_cloak_pl|Túnica
+itm_yellow2_cloak|Túnica simpla de anglo
+itm_yellow2_cloak_pl|Túnica simpla de anglo
+itm_briton_tunic1|Capa
+itm_briton_tunic1_pl|Capa
+itm_briton_tunic2|Pantalones
+itm_briton_tunic2_pl|Pantalones
+itm_briton_tunic3|Túnica britona
+itm_briton_tunic3_pl|Túnica britona
+itm_briton_tunic4|Túnica britona simple
+itm_briton_tunic4_pl|Túnica britona simple
+itm_briton_tunic5|Túnica britona simple
+itm_briton_tunic5_pl|Túnica britona simple
+itm_briton_tunic6|Túnica britona simple
+itm_briton_tunic6_pl|Túnica britona simple
+itm_briton_tunic7|Túnica britona
+itm_briton_tunic7_pl|Túnica britona
+itm_briton_tunic8|Armadura britona ligera
+itm_briton_tunic8_pl|Armadura britona ligera
+itm_briton_tunic9|Túnica britona
+itm_briton_tunic9_pl|Túnica britona
+itm_briton_tunic10|Túnica britona
+itm_briton_tunic10_pl|Túnica britona
+itm_briton_tunic11|Túnica britona
+itm_briton_tunic11_pl|Túnica britona
+itm_briton_tunic12|Túnica britona
+itm_briton_tunic12_pl|Túnica britona
+itm_briton_tunic13|Túnica britona
+itm_briton_tunic13_pl|Túnica britona
+itm_briton_tunic14|Túnica britona
+itm_briton_tunic14_pl|Túnica britona
+itm_briton_tunic15|Túnica picta
+itm_briton_tunic15_pl|Túnica picta
+itm_briton_tunic16|Túnica picta
+itm_briton_tunic16_pl|Túnica picta
+itm_briton_tunic17|Túnica picta
+itm_briton_tunic17_pl|Túnica picta
+itm_briton_tunic18|Túnica picta
+itm_briton_tunic18_pl|Túnica picta
+itm_briton_tunic19|Armadura picta ligera
+itm_briton_tunic19_pl|Armadura picta ligera
+itm_briton_tunic20|Túnica gaélica con capucha
+itm_briton_tunic20_pl|Túnica gaélica con capucha
+itm_briton_tunic21|Túnica gaélica con capucha
+itm_briton_tunic21_pl|Túnica gaélica con capucha
+itm_briton_tunic22|Túnica gaélica con capucha
+itm_briton_tunic22_pl|Túnica gaélica con capucha
+itm_briton_tunic23|Túnica gaélica con capucha
+itm_briton_tunic23_pl|Túnica gaélica con capucha
+itm_briton_tunic24|Túnica gaélica
+itm_briton_tunic24_pl|Túnica gaélica
+itm_briton_tunic25|Túnica gaélica
+itm_briton_tunic25_pl|Túnica gaélica
+itm_briton_tunic26|Túnica gaélica
+itm_briton_tunic26_pl|Túnica gaélica
+itm_briton_tunic27|Túnica gaélica
+itm_briton_tunic27_pl|Túnica gaélica
+itm_briton_tunic28|Túnica gaélica
+itm_briton_tunic28_pl|Túnica gaélica
+itm_celta_capa1|Túnica gaélica
+itm_celta_capa1_pl|Túnica gaélica
+itm_celta_capa2|Capa gaélica larga
+itm_celta_capa2_pl|Capa gaélica larga
+itm_celta_capa3|Pantalones gaélicos
+itm_celta_capa3_pl|Pantalones gaélicos
+itm_celta_capa4|Pantalones gaélicos
+itm_celta_capa4_pl|Pantalones gaélicos
+itm_brat1|Capa gaélica de lujo
+itm_brat1_pl|Capa gaélica de lujo
+itm_brat2|Capa gaélica de lujo
+itm_brat2_pl|Capa gaélica de lujo
+itm_brat3|Armadura gaélica ligera
+itm_brat3_pl|Armadura gaélica ligera
+itm_brat4|Armadura gaélica ligera
+itm_brat4_pl|Armadura gaélica ligera
+itm_gael_tunic_01|Túnica picta
+itm_gael_tunic_01_pl|Túnica picta
+itm_gael_tunic_02|Túnica picta
+itm_gael_tunic_02_pl|Túnica picta
+itm_gael_tunic_03|Túnica de anglo
+itm_gael_tunic_03_pl|Túnica de anglo
+itm_gael_tunic_04|Túnica de anglo
+itm_gael_tunic_04_pl|Túnica de anglo
+itm_gael_tunic_05|Túnica gaélica con capucha
+itm_gael_tunic_05_pl|Túnica gaélica con capucha
+itm_gael_tunic_06|Túnica gaélica con capucha
+itm_gael_tunic_06_pl|Túnica gaélica con capucha
+itm_gael_tunic_07|Túnica gaélica
+itm_gael_tunic_07_pl|Túnica gaélica
+itm_gael_tunic_08|Túnica gaélica con capucha
+itm_gael_tunic_08_pl|Túnica gaélica con capucha
+itm_gael_hoodtunic_09|Túnica gaélica con capucha
+itm_gael_hoodtunic_09_pl|Túnica gaélica con capucha
+itm_gael_hoodtunic_10|Túnica gaélica con capucha
+itm_gael_hoodtunic_10_pl|Túnica gaélica con capucha
+itm_gael_hoodtunic_11|Túnica gaélica con capucha
+itm_gael_hoodtunic_11_pl|Túnica gaélica con capucha
+itm_gael_hoodtunic_12|Túnica gaélica con capucha
+itm_gael_hoodtunic_12_pl|Armadura ligera gaélica
+itm_picts_tunic_09|Pantalones nórdicos
+itm_picts_tunic_09_pl|Pantalones nórdicos
+itm_picts_tunic_10|Pantalones nórdicos
+itm_picts_tunic_10_pl|Pantalones nórdicos
+itm_picts_tunic_11|Capa nórdica
+itm_picts_tunic_11_pl|Capa nórdica
+itm_picts_tunic_12|Amradura ligera britana
+itm_picts_tunic_12_pl|Amradura ligera britana
+itm_picts_tunic_13|Túnica britona
+itm_picts_tunic_13_pl|Túnica britona
+itm_picts_tunic_14|Pantalones
+itm_picts_tunic_14_pl|Pantalones
+itm_picts_tunic_15|Pantalones
+itm_picts_tunic_15_pl|Pantalones
+itm_picts_tunic_16|Pantalones frisios
+itm_picts_tunic_16_pl|Pantalones frisios
+itm_pictish_painted1|Picto desnudo
+itm_pictish_painted1_pl|Picto desnudo
+itm_pictish_painted2|Picto desnudo
+itm_pictish_painted2_pl|Picto desnudo
+itm_pictish_painted3|Picto desnudo
+itm_pictish_painted3_pl|Picto desnudo
+itm_pictish_painted4|Picto desnudo
+itm_pictish_painted4_pl|Picto desnudo
+itm_picts_hoodtunic_01|Capa picta
+itm_picts_hoodtunic_01_pl|Capa picta
+itm_picts_hoodtunic_02|Capa picta
+itm_picts_hoodtunic_02_pl|Capa picta
+itm_picts_hoodtunic_03|Capucha picta
+itm_picts_hoodtunic_03_pl|Capucha picta
+itm_picts_hoodtunic_04|Capucha picta
+itm_picts_hoodtunic_04_pl|Capucha picta
+itm_picts_hoodtunic_05|Capucha picta
+itm_picts_hoodtunic_05_pl|Capucha picta
+itm_picts_hoodtunic_06|Capucha picta
+itm_picts_hoodtunic_06_pl|Capucha picta
+itm_picts_hoodtunic_07|Capucha picta
+itm_picts_hoodtunic_07_pl|Capucha picta
+itm_picts_hoodtunic_11|Túnica picta con capa
+itm_picts_hoodtunic_11_pl|Túnica picta con capa
+itm_picts_hoodtunic_12|Túnica picta con capa
+itm_picts_hoodtunic_12_pl|Túnica picta con capa
+itm_picts_hoodtunic_13|Túnica picta con capa
+itm_picts_hoodtunic_13_pl|Túnica picta con capa
+itm_picts_hoodtunic_14|Túnica picta con capucha
+itm_picts_hoodtunic_14_pl|Túnica picta con capucha
+itm_picts_hoodtunic_15|Túnica picta con capucha
+itm_picts_hoodtunic_15_pl|Túnica picta con capucha
+itm_picts_hoodtunic_16|Túnica picta con capucha
+itm_picts_hoodtunic_16_pl|Túnica picta con capucha
+itm_picts_hoodtunic_17|Túnica picta con capucha
+itm_picts_hoodtunic_17_pl|Túnica picta con capucha
+itm_picts_hoodtunic_18|Armadura ligera picta
+itm_picts_hoodtunic_18_pl|Armadura ligera picta
+itm_linen_tunic|Túnica picta
+itm_linen_tunic_pl|Túnica picta
+itm_woman_saxon1|Vestido sajón
+itm_woman_saxon1_pl|Vestido sajón
+itm_woman_saxon2|Vestido sajón
+itm_woman_saxon2_pl|Vestido sajón
+itm_woman_saxon3|Vestido sajón
+itm_woman_saxon3_pl|Vestido sajón
+itm_woman_saxon4|Vestido sajón
+itm_woman_saxon4_pl|Vestido sajón
+itm_woman_saxon5|Vestido sajón
+itm_woman_saxon5_pl|Vestido sajón
+itm_woman_saxon6|Vestido sajón
+itm_woman_saxon6_pl|Vestido sajón
+itm_woman_saxon7|Vestido sajón
+itm_woman_saxon7_pl|Vestido sajón
+itm_woman_saxon8|Vestido sajón
+itm_woman_saxon8_pl|Vestido sajón
+itm_woman_saxon9|Vestido sajón
+itm_woman_saxon9_pl|Vestido sajón
+itm_woman_saxon10|Vestido sajón
+itm_woman_saxon10_pl|Vestido sajón
+itm_woman_saxon11|Vestido sajón
+itm_woman_saxon11_pl|Vestido sajón
+itm_richwoman_saxon1|Vestido sajón de lujo
+itm_richwoman_saxon1_pl|Vestido sajón de lujo
+itm_richwoman_saxon2|Vestido sajón de lujo
+itm_richwoman_saxon2_pl|Vestido sajón de lujo
+itm_richwoman_saxon3|Vestido sajón de lujo
+itm_richwoman_saxon3_pl|Vestido sajón de lujo
+itm_richwoman_saxon4|Vestido sajón de lujo
+itm_richwoman_saxon4_pl|Vestido sajón de lujo
+itm_richwoman_saxon5|Vestido sajón de lujo
+itm_richwoman_saxon5_pl|Vestido sajón de lujo
+itm_richwoman_saxon6|Vestido sajón de lujo
+itm_richwoman_saxon6_pl|Vestido sajón de lujo
+itm_richwoman_saxon7|Vestido sajón de lujo
+itm_richwoman_saxon7_pl|Vestido sajón de lujo
+itm_richwoman_saxon8|Vestido sajón de lujo
+itm_richwoman_saxon8_pl|Vestido sajón de lujo
+itm_richwoman_saxon9|Vestido sajón de lujo
+itm_richwoman_saxon9_pl|Vestido sajón de lujo
+itm_queenwoman_saxon|Vestido sajón real
+itm_queenwoman_saxon_pl|Vestido sajón real
+itm_queenpict_long_tunic|Vestido de lujo
+itm_queenpict_long_tunic_pl|Vestido de lujo
+itm_pict_richlong_tunic1|Vestido de lujo
+itm_pict_richlong_tunic1_pl|Vestido de lujo
+itm_pict_richlong_tunic2|Vestido de lujo
+itm_pict_richlong_tunic2_pl|Vestido de lujo
+itm_pict_richlong_tunic3|Vestido de lujo
+itm_pict_richlong_tunic3_pl|Vestido de lujo
+itm_pict_long_tunic1|Vestido femenino
+itm_pict_long_tunic1_pl|Vestido femenino
+itm_pict_long_tunic2|Vestido femenino
+itm_pict_long_tunic2_pl|Vestido femenino
+itm_pict_long_tunic3|Vestido femenino
+itm_pict_long_tunic3_pl|Vestido femenino
+itm_pict_long_tunic4|Vestido femenino
+itm_pict_long_tunic4_pl|Vestido femenino
+itm_pict_long_tunic5|Vestido femenino
+itm_pict_long_tunic5_pl|Vestido femenino
+itm_pict_long_tunic6|Vestido femenino
+itm_pict_long_tunic6_pl|Vestido femenino
+itm_woman_norse1|Vestido nórdico
+itm_woman_norse1_pl|Vestido nórdico
+itm_woman_norse2|Vestido nórdico
+itm_woman_norse2_pl|Vestido nórdico
+itm_woman_norse3|Vestido nórdico
+itm_woman_norse3_pl|Vestido nórdico
+itm_woman_norse4|Vestido nórdico
+itm_woman_norse4_pl|Vestido nórdico
+itm_woman_norse5|Vestido nórdico
+itm_woman_norse5_pl|Vestido nórdico
+itm_woman_norse6|Vestido nórdico
+itm_woman_norse6_pl|Vestido nórdico
+itm_richwoman_norse1|Vestido nórdico de lujo
+itm_richwoman_norse1_pl|Vestido nórdico de lujo
+itm_richwoman_norse2|Vestido nórdico de lujo
+itm_richwoman_norse2_pl|Vestido nórdico de lujo
+itm_richwoman_norse3|Vestido nórdico de lujo
+itm_richwoman_norse3_pl|Vestido nórdico de lujo
+itm_richwoman_norse4|Vestido nórdico de lujo
+itm_richwoman_norse4_pl|Vestido nórdico de lujo
+itm_btunic_1woman|Túnica
+itm_btunic_1woman_pl|Túnica
+itm_btunic_2woman|Armadura ligera de anglo
+itm_btunic_2woman_pl|Armadura ligera de anglo
+itm_btunic_3woman|Túnica frisia
+itm_btunic_3woman_pl|Túnica frisia
+itm_btunic_4woman|Túnica frisia
+itm_btunic_4woman_pl|Túnica frisia
+itm_btunic_5woman|Túnica frisia
+itm_btunic_5woman_pl|Túnica frisia
+itm_btunic_6woman|Túnica frisia
+itm_btunic_6woman_pl|Túnica frisia
+itm_btunic_7woman|Túnica de anglo
+itm_btunic_7woman_pl|Túnica de anglo
+itm_btunic_8woman|Túnica simple
+itm_btunic_8woman_pl|Túnica simple
+itm_ptunic_1woman|Túnica simple
+itm_ptunic_1woman_pl|Túnica simple
+itm_ptunic_2woman|Túnica simple
+itm_ptunic_2woman_pl|Túnica simple
+itm_ptunic_3woman|Túnica simple
+itm_ptunic_3woman_pl|Túnica simple
+itm_ptunic_4woman|Túnica simple
+itm_ptunic_4woman_pl|Túnica simple
+itm_ptunic_5woman|Túnica simple
+itm_ptunic_5woman_pl|Túnica simple
+itm_ptunic_6woman|Túnica simple
+itm_ptunic_6woman_pl|Túnica simple
+itm_ptunic_7woman|Túnica simple
+itm_ptunic_7woman_pl|Túnica simple
+itm_gaeltunic_1woman|Túnica frisia
+itm_gaeltunic_1woman_pl|Túnica frisia
+itm_gaeltunic_2woman|Túnica frisia
+itm_gaeltunic_2woman_pl|Túnica frisia
+itm_gaeltunic_3woman|Túnica frisia
+itm_gaeltunic_3woman_pl|Túnica frisia
+itm_gaeltunic_4woman|Armadura ligera frisia
+itm_gaeltunic_4woman_pl|Armadura ligera frisia
+itm_gaeltunic_5woman|Túnica frisia
+itm_gaeltunic_5woman_pl|Túnica frisia
+itm_gaeltunic_6woman|Túnica frisia
+itm_gaeltunic_6woman_pl|Túnica frisia
+itm_gaeltunic_7woman|Túnica frisia
+itm_gaeltunic_7woman_pl|Túnica frisia
+itm_gaeltunic_8woman|Túnica frisia
+itm_gaeltunic_8woman_pl|Túnica frisia
+itm_britontunic_1woman|Piel de oso
+itm_britontunic_1woman_pl|Piel de oso
+itm_britontunic_2woman|Piel de oso
+itm_britontunic_2woman_pl|Piel de oso
+itm_britontunic_3woman|Piel de oso
+itm_britontunic_3woman_pl|Piel de oso
+itm_britontunic_4woman|Piel de oso
+itm_britontunic_4woman_pl|Piel de oso
+itm_britontunic_5woman|Piel de lobo
+itm_britontunic_5woman_pl|Piel de lobo
+itm_britontunic_6woman|Piel de lobo
+itm_britontunic_6woman_pl|Piel de lobo
+itm_britontunic_7woman|Piel de lobo
+itm_britontunic_7woman_pl|Piel de lobo
+itm_britontunic_8woman|Piel de lobo
+itm_britontunic_8woman_pl|Piel de lobo
+itm_veil_a|Velo
+itm_veil_a_pl|Velo
+itm_veil_b|Velo
+itm_veil_b_pl|Velo
+itm_veil_c|Velo
+itm_veil_c_pl|Velo
+itm_veil_d|Velo
+itm_veil_d_pl|Velo
+itm_veil_e|Velo
+itm_veil_e_pl|Velo
+itm_veil_f|Velo
+itm_veil_f_pl|Velo
+itm_elite_veil_1|Velo de dama
+itm_elite_veil_1_pl|Velo de dama
+itm_elite_veil_2|Velo de dama
+itm_elite_veil_2_pl|Velo de dama
+itm_elite_veil_3|Velo de dama
+itm_elite_veil_3_pl|Velo de dama
+itm_elite_veil_4|Velo de dama
+itm_elite_veil_4_pl|Velo de dama
+itm_common_veil_a|Velo
+itm_common_veil_a_pl|Velo
+itm_common_veil_b|Velo
+itm_common_veil_b_pl|Velo
+itm_common_veil_c|Velo
+itm_common_veil_c_pl|Velo
+itm_common_veil_d|Velo
+itm_common_veil_d_pl|Velo
+itm_common_veil_e|Velo
+itm_common_veil_e_pl|Velo
+itm_common_veil_f|Velo
+itm_common_veil_f_pl|Velo
+itm_elite_veil_5|Velo de dama
+itm_elite_veil_5_pl|Velo de dama
+itm_elite_veil_6|Velo de dama
+itm_elite_veil_6_pl|Velo de dama
+itm_elite_veil_7|Velo de dama
+itm_elite_veil_7_pl|Velo de dama
+itm_elite_veil_8|Velo de dama
+itm_elite_veil_8_pl|Velo de dama
+itm_gambeson1|Gambesón sajón
+itm_gambeson1_pl|Gambesón sajón
+itm_gambeson2|Gambesón sajón
+itm_gambeson2_pl|Gambesón sajón
+itm_gambeson3|Gambesón sajón
+itm_gambeson3_pl|Gambesón sajón
+itm_gambeson4|Gambesón nórdico
+itm_gambeson4_pl|Gambesón nórdico
+itm_gambeson5|Gambesón nórdico
+itm_gambeson5_pl|Gambesón nórdico
+itm_gambeson6|Gambesón sajón
+itm_gambeson6_pl|Gambesón sajón
+itm_gambeson7|Gambesón sajón
+itm_gambeson7_pl|Gambesón sajón
+itm_gambeson8|Gambesón nórdico
+itm_gambeson8_pl|Gambesón nórdico
+itm_gambeson9|Gambesón sajón
+itm_gambeson9_pl|Gambesón sajón
+itm_gambeson10|Gambesón anglo
+itm_gambeson10_pl|Gambesón anglo
+itm_gambeson11|Gambesón anglo
+itm_gambeson11_pl|Gambesón anglo
+itm_gambeson12|Gambesón britano
+itm_gambeson12_pl|Gambesón britano
+itm_gambeson13|Gambesón nórdico
+itm_gambeson13_pl|Gambesón nórdico
+itm_gambeson14|Gambesón nórdico
+itm_gambeson14_pl|Gambesón nórdico
+itm_gambeson15|Gambesón sajón largo
+itm_gambeson15_pl|Gambesón sajón largo
+itm_gambeson16|Gambesón britano
+itm_gambeson16_pl|Gambesón britano
+itm_gambeson17|Gambesón anglo
+itm_gambeson17_pl|Gambesón anglo
+itm_gambeson18|Gambesón sajón largo
+itm_gambeson18_pl|Gambesón sajón largo
+itm_gambeson19|Gambesón frisio
+itm_gambeson19_pl|Gambesón frisio
+itm_gambeson20|Gambesón frisio
+itm_gambeson20_pl|Gambesón frisio
+itm_gambeson21|Gambesón común
+itm_gambeson21_pl|Gambesón común
+itm_gambeson22|Gambesón común
+itm_gambeson22_pl|Gambesón común
+itm_gambeson23|Gambesón común
+itm_gambeson23_pl|Gambesón común
+itm_gambeson24|Gambesón común
+itm_gambeson24_pl|Gambesón común
+itm_gambeson1gael|Gambesón picto
+itm_gambeson1gael_pl|Gambesón picto
+itm_gambeson2gael|Gambesón picto
+itm_gambeson2gael_pl|Gambesón picto
+itm_gambeson3gael|Gambesón picto
+itm_gambeson3gael_pl|Gambesón picto
+itm_gambeson4gael|Gambesón picto
+itm_gambeson4gael_pl|Gambesón picto
+itm_gambeson5gael|Gambesón picto
+itm_gambeson5gael_pl|Gambesón picto
+itm_gambeson6gael|Gambesón picto
+itm_gambeson6gael_pl|Gambesón picto
+itm_gambeson7gael|Gambesón picto
+itm_gambeson7gael_pl|Gambesón picto
+itm_gambeson8gael|Gambesón picto
+itm_gambeson8gael_pl|Gambesón picto
+itm_gambeson9gael|Gambesón gaélico
+itm_gambeson9gael_pl|Gambesón gaélico
+itm_gambeson10gael|Gambesón gaélico
+itm_gambeson10gael_pl|Gambesón gaélico
+itm_gambeson11gael|Gambesón gaélico
+itm_gambeson11gael_pl|Gambesón gaélico
+itm_gambeson12gael|Gambesón gaélico
+itm_gambeson12gael_pl|Gambesón gaélico
+itm_gambeson13gael|Gambesón gaélico
+itm_gambeson13gael_pl|Gambesón gaélico
+itm_gambeson14gael|Gambesón gaélico
+itm_gambeson14gael_pl|Gambesón gaélico
+itm_gambeson15gael|Gambesón gaélico
+itm_gambeson15gael_pl|Gambesón gaélico
+itm_gambeson16gael|Gambesón gaélico
+itm_gambeson16gael_pl|Gambesón gaélico
+itm_gambeson1cloak|Gambesón picto
+itm_gambeson1cloak_pl|Gambesón picto
+itm_gambeson2cloak|Gambesón picto
+itm_gambeson2cloak_pl|Gambesón picto
+itm_gambeson5cloak|Gambesón gaélico
+itm_gambeson5cloak_pl|Gambesón gaélico
+itm_gambeson6cloak|Gambesón gaélico
+itm_gambeson6cloak_pl|Gambesón gaélico
+itm_gambeson3cloak|Gambesón frisio
+itm_gambeson3cloak_pl|Gambesón frisio
+itm_gambeson4cloak|Gambesón frisio
+itm_gambeson4cloak_pl|Gambesón frisio
+itm_gambeson25|Gambesón largo nórdico
+itm_gambeson25_pl|Gambesón largo nórdico
+itm_gambeson26|Gambesón largo anglo
+itm_gambeson26_pl|Gambesón largo anglo
+itm_gambeson27|Gambesón largo nórdico
+itm_gambeson27_pl|Gambesón largo nórdico
+itm_gambeson28|Gambesón	anglo
+itm_gambeson28_pl|Gambesón anglo
+itm_gambeson29|Gambesón largo nórdico
+itm_gambeson29_pl|Gambesón largo nórdico
+itm_gambeson30|Gambesón largo común
+itm_gambeson30_pl|Gambesón largo común
+itm_gambeson31|Gambesón largo común
+itm_gambeson31_pl|Gambesón largo común
+itm_gambeson32|Gambesón sajón largo
+itm_gambeson32_pl|Gambesón sajón largo
+itm_gambeson33|Gambesón largo frisio
+itm_gambeson33_pl|Gambesón largo frisio
+itm_gambeson34|Gambesón largo anglo
+itm_gambeson34_pl|Gambesón largo anglo
+itm_gambeson35|Gambesón nórdico
+itm_gambeson35_pl|Gambesón nórdico
+itm_gambeson36|Gambesón largo britano
+itm_gambeson36_pl|Gambesón largo britano
+itm_gambeson37|Gambesón britano
+itm_gambeson37_pl|Gambesón britano
+itm_gambeson38|Gambesón largo britano
+itm_gambeson38_pl|Gambesón largo britano
+itm_gambeson39|Gambesón largo anglo
+itm_gambeson39_pl|Gambesón largo anglo
+itm_gambeson40|Gambesón largo britano
+itm_gambeson40_pl|Gambesón largo britano
+itm_gambeson41|Gambesón largo britano
+itm_gambeson41_pl|Gambesón largo britano
+itm_gambeson42|Gambesón britano
+itm_gambeson42_pl|Gambesón britano
+itm_gambeson43|Gambesón largo nórdico
+itm_gambeson43_pl|Gambesón largo nórdico
+itm_gambeson44|Gambesón largo frisio
+itm_gambeson44_pl|Gambesón largo frisio
+itm_gambeson45|Gambesón anglo
+itm_gambeson45_pl|Gambesón anglo
+itm_gambeson46|Gambesón largo frisio
+itm_gambeson46_pl|Gambesón largo frisio
+itm_gambeson47|Gambesón largo común
+itm_gambeson47_pl|Gambesón largo común
+itm_gambeson48|Gambesón largo común
+itm_gambeson48_pl|Gambesón largo común
+itm_mail_shirt|Byrnie frisio
+itm_mail_shirt_pl|Byrnie frisio
+itm_mail_shirt_1|Byrnie común
+itm_mail_shirt_1_pl|Byrnie común
+itm_mail_shirt_2|Lorica picta
+itm_mail_shirt_2_pl|Lorica picta
+itm_mail_shirt_3|Byrnie común
+itm_mail_shirt_3_pl|Byrnie común
+itm_mail_shirt_6|Lorica picta
+itm_mail_shirt_6_pl|Lorica picta
+itm_mail_shirt_7|Lorica picta
+itm_mail_shirt_7_pl|Lorica picta
+itm_mail_shirt_8|Lorica picta con capa
+itm_mail_shirt_8_pl|Lorica picta con capa
+itm_mail_shirt_9|Lorica picta con capa
+itm_mail_shirt_9_pl|Lorica picta con capa
+itm_mail_shirt_10|Byrnie britano de élite
+itm_mail_shirt_10_pl|Byrnie britano de élite
+itm_mail_shirt_11|Byrnie britano de élite
+itm_mail_shirt_11_pl|Byrnie britano de élite
+itm_mail_shirt_11_2|Byrnie frisia
+itm_mail_shirt_11_2_pl|Byrnie frisia
+itm_mail_shirt_11_3|Lorica picta
+itm_mail_shirt_11_3_pl|Lorica picta
+itm_mail_shirt_12|Byrnie común
+itm_mail_shirt_12_pl|Byrnie común
+itm_mail_shirt_13|Byrnie común
+itm_mail_shirt_13_pl|Byrnie común
+itm_mail_shirt_4|Byrnie frisia
+itm_mail_shirt_4_pl|Byrnie frisia
+itm_mail_shirt_5|Lorica picta
+itm_mail_shirt_5_pl|Lorica picta
+itm_mail_shirt_5_1|Byrnie britona de élite
+itm_mail_shirt_5_1_pl|Byrnie britona de élite
+itm_mail_shirt_5_2|Halsberg sajona de élite
+itm_mail_shirt_5_2_pl|Halsberg sajona de élite
+itm_mail_shirt_12_1|Halsberg común
+itm_mail_shirt_12_1_pl|Halsberg común
+itm_mail_shirt_12_2|Halsberg común
+itm_mail_shirt_12_2_pl|Halsberg común
+itm_mail_shirt_12_3|Halsberg común
+itm_mail_shirt_12_3_pl|Halsberg común
+itm_mail_shirt_12_4|Halsberg común
+itm_mail_shirt_12_4_pl|Halsberg común
+itm_mail_shirt_13_1|Halsberg sajona de élite
+itm_mail_shirt_13_1_pl|Halsberg sajona de élite
+itm_mail_shirt_13_2|Halsberg sajona
+itm_mail_shirt_13_2_pl|Halsberg sajona
+itm_mail_shirt_13_3|Halsberg sajona
+itm_mail_shirt_13_3_pl|Halsberg sajona
+itm_mail_shirt_13_4|Lorica sajona de élite
+itm_mail_shirt_13_4_pl|Lorica sajona de élite
+itm_byrnie|Halsberg común
+itm_byrnie_pl|Halsberg común
+itm_byrnie2|Lorica frisia
+itm_byrnie2_pl|Lorica frisia
+itm_byrnie3|Halsberg común
+itm_byrnie3_pl|Halsberg común
+itm_byrnie4|Byrnie britona
+itm_byrnie4_pl|Byrnie britona
+itm_byrnie5|Halsberg sajona
+itm_byrnie5_pl|Halsberg sajona
+itm_byrnie6|Byrnie britona
+itm_byrnie6_pl|Byrnie britona
+itm_byrnie7|Lorica frisia de élite
+itm_byrnie7_pl|Lorica frisia de élite
+itm_byrnie8|Halsberg frisio de élite
+itm_byrnie8_pl|Halsberg frisio de élite
+itm_byrnie9|Lorica gaélica
+itm_byrnie9_pl|Lorica gaélica
+itm_byrnie10|Lorica gaélica
+itm_byrnie10_pl|Lorica gaélica
+itm_byrnie11|Lorica gaélica con capucha
+itm_byrnie11_pl|Lorica gaélica con capucha
+itm_byrnie12|Lorica gaélica con capucha
+itm_byrnie12_pl|Lorica gaélica con capucha
+itm_byrnie13|Byrnie britana
+itm_byrnie13_pl|Byrnie britana
+itm_byrnie14|Byrnie britana
+itm_byrnie14_pl|Byrnie britana
+itm_byrnie15|Byrnie britana con capucha
+itm_byrnie15_pl|Byrnie britana con capucha
+itm_byrnie16|Hringserks nórdicos
+itm_byrnie16_pl|Hringserks nórdicos
+itm_byrnie17|Hringserks nórdicos
+itm_byrnie17_pl|Hringserks nórdicos
+itm_byrnie18|Hringserks nórdicos
+itm_byrnie18_pl|Hringserks nórdicos
+itm_byrnie19|Hringserks nórdicos
+itm_byrnie19_pl|Hringserks nórdicos
+itm_byrnie20|Halsberg frisio
+itm_byrnie20_pl|Halsberg frisio
+itm_byrnie21|Lorica sajona
+itm_byrnie21_pl|Lorica sajona
+itm_byrnie22|Halsberg sajona
+itm_byrnie22_pl|Halsberg sajona
+itm_byrnie23|Halsberg anglo
+itm_byrnie23_pl|Halsberg anglo
+itm_byrnie24|Halsberg anglo
+itm_byrnie24_pl|Halsberg anglo
+itm_byrnie25|Halsberg anglo
+itm_byrnie25_pl|Halsberg anglo
+itm_byrnie26|Halsberg anglo
+itm_byrnie26_pl|Halsberg anglo
+itm_byrnie27|Halsberg anglo con capucha
+itm_byrnie27_pl|Halsberg anglo con capucha
+itm_byrnie28|Halsberg anglo con piel
+itm_byrnie28_pl|Halsberg anglo con piel
+itm_byrnie29|Halsberg anglo con capucha
+itm_byrnie29_pl|Halsberg anglo con capucha
+itm_byrnie30|Halsberg anglo con piel
+itm_byrnie30_pl|Halsberg anglo con piel
+itm_byrnie31|Hringserks nórdicos con capucha
+itm_byrnie31_pl|Hringserks nórdicos con capucha
+itm_byrnie32|Hringserks nórdicos
+itm_byrnie32_pl|Hringserks nórdicos
+itm_byrnie33|Hringserks nórdicos con piel
+itm_byrnie33_pl|Hringserks nórdicos con piel
+itm_byrnie34|Hringserks nórdicos con piel
+itm_byrnie34_pl|Hringserks nórdicos con piel
+itm_byrnie35|Halsberg frisio
+itm_byrnie35_pl|Halsberg frisio
+itm_byrnie36|Lorica gaélica
+itm_byrnie36_pl|Lorica gaélica
+itm_byrnie37|Lorica gaélica
+itm_byrnie37_pl|Lorica gaélica
+itm_byrnie38|Lorica gaélica
+itm_byrnie38_pl|Lorica gaélica
+itm_orm_byrnie|Lorica de Orm
+itm_orm_byrnie_pl|Lorica de Orm
+itm_lamellar_armor|Cota de escamas
+itm_lamellar_armor_pl|Cota de escamas
+itm_burlap_tunic|Túnica de arpillera
+itm_burlap_tunic_pl|Túnica de arpillera
+itm_hood_01|Capucha
+itm_hood_01_pl|Capucha
+itm_hood_02|Capucha
+itm_hood_02_pl|Capucha
+itm_phrygian1|Frigio
+itm_phrygian1_pl|Frigio
+itm_phrygian2|Frigio
+itm_phrygian2_pl|Frigio
+itm_phrygian3|Frigio
+itm_phrygian3_pl|Frigio
+itm_phrygian4|Frigio
+itm_phrygian4_pl|Frigio
+itm_phrygian5|Frigio
+itm_phrygian5_pl|Frigio
+itm_phrygian6|Frigio
+itm_phrygian6_pl|Frigio
+itm_phrygian7|Frigio de lujo
+itm_phrygian7_pl|Frigio de lujo
+itm_phrygian8|Frigio de lujo
+itm_phrygian8_pl|Frigio de lujo
+itm_phrygian9|Frigio de lujo
+itm_phrygian9_pl|Frigio de lujo
+itm_phrygian10|Frigio de lujo
+itm_phrygian10_pl|Frigio de lujo
+itm_phrygian11|Frigio de lujo
+itm_phrygian11_pl|Frigio de lujo
+itm_phrygian12|Frigio de lujo
+itm_phrygian12_pl|Frigio de lujo
+itm_phrygian13|Frigio de lujo
+itm_phrygian13_pl|Frigio de lujo
+itm_phrygian14|Frigio bordado
+itm_phrygian14_pl|Frigio bordado
+itm_phrygian15|Frigio bordado
+itm_phrygian15_pl|Frigio bordado
+itm_phrygian16|Frigio bordado
+itm_phrygian16_pl|Frigio bordado
+itm_phrygian17|Frigio bordado
+itm_phrygian17_pl|Frigio bordado
+itm_briton_helm|Yelmo simple
+itm_briton_helm_pl|Yelmo simple
+itm_briton_helm2|Yelmo simple
+itm_briton_helm2_pl|Yelmo simple
+itm_briton_helm3|Yelmo simple antiguo
+itm_briton_helm3_pl|Yelmo simple antiguo
+itm_briton_helm4|Yelmo simple antiguo
+itm_briton_helm4_pl|Yelmo simple antiguo
+itm_briton_helm5|Yelmo simple con cuero
+itm_briton_helm5_pl|Yelmo simple con cuero
+itm_briton_helm6|Yelmo simple con cuero
+itm_briton_helm6_pl|Yelmo simple con cuero
+itm_briton_helm7|Yelmo simple antiguo con cuero
+itm_briton_helm7_pl|Yelmo simple antiguo con cuero
+itm_briton_helm8|Yelmo simple antiguo con cuero
+itm_briton_helm8_pl|Yelmo simple antiguo con cuero
+itm_briton_helm9|Yelmo completo
+itm_briton_helm9_pl|Yelmo completo
+itm_briton_helm10|Yelmo completo
+itm_briton_helm10_pl|Yelmo completo
+itm_briton_helm11|Yelmo completo antiguo
+itm_briton_helm11_pl|Yelmo completo antiguo
+itm_briton_helm12|Yelmo completo antiguo
+itm_briton_helm12_pl|Yelmo completo antiguo
+itm_briton_helm13|Yelmo completo
+itm_briton_helm13_pl|Yelmo completo
+itm_briton_helm14|Yelmo completo
+itm_briton_helm14_pl|Yelmo completo
+itm_briton_helm15|Yelmo completo
+itm_briton_helm15_pl|Yelmo completo
+itm_briton_helm16|Yelmo completo antiguo
+itm_briton_helm16_pl|Yelmo completo antiguo
+itm_briton_helm17|Yelmo completo antiguo
+itm_briton_helm17_pl|Yelmo completo antiguo
+itm_briton_helm18|Yelmo completo antiguo
+itm_briton_helm18_pl|Yelmo completo antiguo
+itm_briton_helm19|Yelmo con nasal
+itm_briton_helm19_pl|Yelmo con nasal
+itm_briton_helm20|Yelmo con nasal
+itm_briton_helm20_pl|Yelmo con nasal
+itm_briton_helm21|Yelmo con nasal
+itm_briton_helm21_pl|Yelmo con nasal
+itm_briton_helm22|Yelmo con nasal antiguo
+itm_briton_helm22_pl|Yelmo con nasal antiguo
+itm_briton_helm23|Yelmo con nasal antiguo
+itm_briton_helm23_pl|Yelmo con nasal antiguo
+itm_briton_helm24|Yelmo con nasal antiguo
+itm_briton_helm24_pl|Yelmo con nasal antiguo
+itm_briton_helm25|Yelmo con cuero
+itm_briton_helm25_pl|Yelmo con cuero
+itm_briton_helm26|Yelmo con cuero
+itm_briton_helm26_pl|Yelmo con cuero
+itm_briton_helm27|Yelmo con cuero
+itm_briton_helm27_pl|Yelmo con cuero
+itm_briton_helm28|Yelmo con cuero antiguo
+itm_briton_helm28_pl|Yelmo con cuero antiguo
+itm_briton_helm29|Yelmo con cuero antiguo
+itm_briton_helm29_pl|Yelmo con cuero antiguo
+itm_briton_helm30|Yelmo con cuero antiguo
+itm_briton_helm30_pl|Yelmo con cuero antiguo
+itm_briton_helm31|Yelmo con aventail
+itm_briton_helm31_pl|Yelmo con aventail
+itm_briton_helm32|Yelmo con aventail
+itm_briton_helm32_pl|Yelmo con aventail
+itm_briton_helm33|Yelmo con aventail
+itm_briton_helm33_pl|Yelmo con aventail
+itm_briton_helm34|Yelmo con aventail
+itm_briton_helm34_pl|Yelmo con aventail
+itm_briton_helm35|Yelmo completo
+itm_briton_helm35_pl|Yelmo completo
+itm_briton_helm36|Yelmo completo
+itm_briton_helm36_pl|Yelmo completo
+itm_briton_helm37|Yelmo completo
+itm_briton_helm37_pl|Yelmo completo
+itm_briton_helm38|Yelmo completo antiguo
+itm_briton_helm38_pl|Yelmo completo antiguo
+itm_briton_helm39|Yelmo completo antiguo
+itm_briton_helm39_pl|Yelmo completo antiguo
+itm_briton_helm40|Yelmo completo antiguo
+itm_briton_helm40_pl|Yelmo completo antiguo
+itm_spangenhelm_1|Yelmo simple
+itm_spangenhelm_1_pl|Yelmo simple
+itm_spangenhelm_2|Yelmo simple
+itm_spangenhelm_2_pl|Yelmo simple
+itm_spangenhelm_3|Yelmo simple antiguo
+itm_spangenhelm_3_pl|Yelmo simple antiguo
+itm_spangenhelm_4|Yelmo simple antiguo
+itm_spangenhelm_4_pl|Yelmo simple antiguo
+itm_spangenhelm_5|Yelmo simple con aventail
+itm_spangenhelm_5_pl|Yelmo simple con aventail
+itm_spangenhelm_6|Yelmo simple con aventail
+itm_spangenhelm_6_pl|Yelmo simple con aventail
+itm_spangenhelm_7|Yelmo simple antiguo con cuero
+itm_spangenhelm_7_pl|Yelmo simple antiguo con cuero
+itm_spangenhelm_8|Yelmo anglosajón antiguo
+itm_spangenhelm_8_pl|Yelmo anglosajón antiguo
+itm_spangenhelm_9|Yelmo completo
+itm_spangenhelm_9_pl|Yelmo completo
+itm_spangenhelm_10|Yelmo completo
+itm_spangenhelm_10_pl|Yelmo completo
+itm_spangenhelm_11|Yelmo anglosajón antiguo
+itm_spangenhelm_11_pl|Yelmo anglosajón antiguo
+itm_spangenhelm_12|Yelmo anglosajón antiguo
+itm_spangenhelm_12_pl|Yelmo anglosajón antiguo
+itm_spangenhelm_13|Yelmo completo
+itm_spangenhelm_13_pl|Yelmo completo
+itm_spangenhelm_14|Yelmo completo
+itm_spangenhelm_14_pl|Yelmo completo
+itm_spangenhelm_15|Yelmo completo
+itm_spangenhelm_15_pl|Yelmo completo
+itm_spangenhelm_16|Yelmo anglosajón de élite
+itm_spangenhelm_16_pl|Yelmo anglosajón de élite
+itm_spangenhelm_17|Yelmo anglosajón de élite
+itm_spangenhelm_17_pl|Yelmo anglosajón de élite
+itm_spangenhelm_18|Yelmo sajón
+itm_spangenhelm_18_pl|Yelmo sajón
+itm_spangenhelm_19|Yelmo con nasal
+itm_spangenhelm_19_pl|Yelmo con nasal
+itm_spangenhelm_20|Yelmo con nasal
+itm_spangenhelm_20_pl|Yelmo con nasal
+itm_spangenhelm_21|Yelmo con nasal
+itm_spangenhelm_21_pl|Yelmo con nasal
+itm_spangenhelm_22|Yelmo con nasal
+itm_spangenhelm_22_pl|Yelmo con nasal 
+itm_spangenhelm_23|Yelmo antiguo
+itm_spangenhelm_23_pl|Yelmo antiguo
+itm_spangenhelm_24|Yelmo antiguo con nasal
+itm_spangenhelm_24_pl|Yelmo antiguo con nasal
+itm_spangenhelm_25|Yelmo con cuero
+itm_spangenhelm_25_pl|Yelmo con cuero
+itm_spangenhelm_26|Yelmo con cuero
+itm_spangenhelm_26_pl|Yelmo con cuero
+itm_spangenhelm_27|Yelmo con cuero
+itm_spangenhelm_27_pl|Yelmo con cuero
+itm_spangenhelm_28|Yelmo antiguo con cuero
+itm_spangenhelm_28_pl|Yelmo antiguo con cuero
+itm_spangenhelm_29|Yelmo antiguo con cuero
+itm_spangenhelm_29_pl|Yelmo antiguo con cuero
+itm_spangenhelm_30|Yelmo sajón con cuero
+itm_spangenhelm_30_pl|Yelmo sajón con cuero
+itm_spangenhelm_31|Yelmo con aventail
+itm_spangenhelm_31_pl|Yelmo con aventail
+itm_spangenhelm_32|Yelmo con aventail
+itm_spangenhelm_32_pl|Yelmo con aventail
+itm_spangenhelm_33|Yelmo antiguo con aventail
+itm_spangenhelm_33_pl|Yelmo antiguo con aventail
+itm_spangenhelm_34|Yelmo antiguo con aventail
+itm_spangenhelm_34_pl|Yelmo antiguo con aventail
+itm_spangenhelm_35|Yelmo completo
+itm_spangenhelm_35_pl|Yelmo completo
+itm_spangenhelm_36|Yelmo completo
+itm_spangenhelm_36_pl|Yelmo completo
+itm_spangenhelm_37|Yelmo completo
+itm_spangenhelm_37_pl|Yelmo completo
+itm_spangenhelm_38|Yelmo completo antiguo
+itm_spangenhelm_38_pl|Yelmo completo antiguo
+itm_spangenhelm_39|Yelmo anglosajón de noble
+itm_spangenhelm_39_pl|Yelmo anglosajón de noble
+itm_spangenhelm_40|Yelmo anglosajón de noble
+itm_spangenhelm_40_pl|Yelmo anglosajón de noble
+itm_vikingold_helm|Yelmo nórdico antiguo
+itm_vikingold_helm_pl|Yelmo nórdico antiguo
+itm_vikingold_helm2|Yelmo nórdico antiguo
+itm_vikingold_helm2_pl|Yelmo nórdico antiguo
+itm_vikingold_helm3|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm3_pl|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm4|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm4_pl|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm5|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm5_pl|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm6|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm6_pl|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm7|Yelmo antiguo
+itm_vikingold_helm7_pl|Yelmo antiguo
+itm_vikingold_helm8|Yelmo antiguo
+itm_vikingold_helm8_pl|Yelmo antiguo
+itm_vikingold_helm9|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm9_pl|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm10|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm10_pl|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm11|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm11_pl|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm12|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm12_pl|Yelmo nórdico antiguo con nasal
+itm_vikingold_helm13|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm13_pl|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm14|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm14_pl|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm15|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm15_pl|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm16|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm16_pl|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm17|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm17_pl|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm18|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm18_pl|Yelmo nórdico antiguo con aventail
+itm_vikingold_helm19|Yelmo nórdico antiguo completo
+itm_vikingold_helm19_pl|Yelmo nórdico antiguo completo
+itm_vikingold_helm20|Yelmo nórdico antiguo completo
+itm_vikingold_helm20_pl|Yelmo nórdico antiguo completo
+itm_vikingold_helm21|Yelmo nórdico antiguo completo
+itm_vikingold_helm21_pl|Yelmo nórdico antiguo completo
+itm_vikingold_helm22|Yelmo nórdico antiguo completo
+itm_vikingold_helm22_pl|Yelmo nórdico antiguo completo
+itm_vikingold_helm23|Yelmo nórdico antiguo completo
+itm_vikingold_helm23_pl|Yelmo nórdico antiguo completo
+itm_vikingold_helm24|Yelmo nórdico antiguo completo
+itm_vikingold_helm24_pl|Yelmo nórdico antiguo completo
+itm_viking_helm|Yelmo nórdico simple
+itm_viking_helm_pl|Yelmo nórdico simple
+itm_viking_helm2|Yelmo nórdico simple
+itm_viking_helm2_pl|Yelmo nórdico simple
+itm_viking_helm3|Yelmo nórdico con nasal
+itm_viking_helm3_pl|Yelmo nórdico con nasal
+itm_viking_helm4|Yelmo nórdico con nasal
+itm_viking_helm4_pl|Yelmo nórdico con nasal
+itm_viking_helm5|Yelmo nórdico con nasal
+itm_viking_helm5_pl|Yelmo nórdico con nasal
+itm_viking_helm6|Yelmo nórdico con nasal
+itm_viking_helm6_pl|Yelmo nórdico con nasal
+itm_viking_helm7|Yelmo nórdico
+itm_viking_helm7_pl|Yelmo nórdico
+itm_viking_helm8|Yelmo nórdico
+itm_viking_helm8_pl|Yelmo nórdico
+itm_viking_helm9|Yelmo nórdico con nasal
+itm_viking_helm9_pl|Yelmo nórdico con nasal
+itm_viking_helm10|Yelmo nórdico con nasal
+itm_viking_helm10_pl|Yelmo nórdico con nasal
+itm_viking_helm11|Yelmo nórdico con nasal
+itm_viking_helm11_pl|Yelmo nórdico con nasal
+itm_viking_helm12|Yelmo nórdico con nasal
+itm_viking_helm12_pl|Yelmo nórdico con nasal
+itm_viking_helm13|Yelmo nórdico con aventail
+itm_viking_helm13_pl|Yelmo nórdico con aventail
+itm_viking_helm14|Yelmo nórdico con aventail
+itm_viking_helm14_pl|Yelmo nórdico con aventail
+itm_viking_helm15|Yelmo nórdico con nasal
+itm_viking_helm15_pl|Yelmo nórdico con nasal
+itm_viking_helm16|Yelmo nórdico con nasal
+itm_viking_helm16_pl|Yelmo nórdico con nasal
+itm_viking_helm17|Yelmo nórdico con nasal
+itm_viking_helm17_pl|Yelmo nórdico con nasal
+itm_viking_helm18|Yelmo nórdico con nasal
+itm_viking_helm18_pl|Yelmo nórdico con nasal
+itm_viking_helm19|Yelmo nórdico completo
+itm_viking_helm19_pl|Yelmo nórdico completo
+itm_viking_helm20|Yelmo nórdico completo
+itm_viking_helm20_pl|Yelmo nórdico completo
+itm_viking_helm21|Yelmo nórdico completo
+itm_viking_helm21_pl|Yelmo nórdico completo
+itm_viking_helm22|Yelmo nórdico completo
+itm_viking_helm22_pl|Yelmo nórdico completo
+itm_viking_helm23|Yelmo nórdico completo
+itm_viking_helm23_pl|Yelmo nórdico completo
+itm_viking_helm24|Yelmo nórdico completo
+itm_viking_helm24_pl|Yelmo nórdico completo
+itm_vikingold_elitehelm1|Yelmo nórdico antiguo
+itm_vikingold_elitehelm1_pl|Yelmo nórdico antiguo
+itm_vikingold_elitehelm2|Yelmo nórdico antiguo
+itm_vikingold_elitehelm2_pl|Yelmo nórdico antiguo
+itm_vikingold_elitehelm3|Yelmo nórdico antiguo
+itm_vikingold_elitehelm3_pl|Yelmo nórdico antiguo
+itm_vikingold_elitehelm4|Yelmo nórdico antiguo con cuero
+itm_vikingold_elitehelm4_pl|Yelmo nórdico antiguo con cuero
+itm_vikingold_elitehelm5|Yelmo nórdico antiguo con cuero
+itm_vikingold_elitehelm5_pl|Yelmo nórdico antiguo con cuero
+itm_vikingold_elitehelm6|Yelmo nórdico antiguo con aventail
+itm_vikingold_elitehelm6_pl|Yelmo nórdico antiguo con aventail
+itm_vikingold_elitehelm7|Yelmo nórdico antiguo con aventail
+itm_vikingold_elitehelm7_pl|Yelmo nórdico antiguo con aventail
+itm_vikingold_elitehelm8|Yelmo nórdico de lujo
+itm_vikingold_elitehelm8_pl|Yelmo nórdico de lujo
+itm_vikingold_elitehelm9|Yelmo nórdico de lujo
+itm_vikingold_elitehelm9_pl|Yelmo nórdico de lujo
+itm_viking_elitehelm1|Yelmo nórdico
+itm_viking_elitehelm1_pl|Yelmo nórdico
+itm_viking_elitehelm2|Yelmo nórdico
+itm_viking_elitehelm2_pl|Yelmo nórdico
+itm_viking_elitehelm3|Yelmo nórdico con cuero
+itm_viking_elitehelm3_pl|Yelmo nórdico con cuero
+itm_viking_elitehelm4|Yelmo nórdico
+itm_viking_elitehelm4_pl|Yelmo nórdico
+itm_viking_elitehelm5|Yelmo nórdico con cuero
+itm_viking_elitehelm5_pl|Yelmo nórdico con cuero
+itm_viking_elitehelm6|Yelmo nórdico con cuero
+itm_viking_elitehelm6_pl|Yelmo nórdico con cuero
+itm_viking_elitehelm7|Yelmo nórdico con aventail
+itm_viking_elitehelm7_pl|Yelmo nórdico con aventail
+itm_viking_elitehelm8|Yelmo nórdico con aventail
+itm_viking_elitehelm8_pl|Yelmo nórdico con aventail
+itm_viking_elitehelm9|Yelmo nórdico con aventail
+itm_viking_elitehelm9_pl|Yelmo nórdico con aventail
+itm_viking_noblehelm1|Yelmo nórdico de élite
+itm_viking_noblehelm1_pl|Yelmo nórdico de élite
+itm_viking_noblehelm2|Yelmo nórdico de élite con cuero
+itm_viking_noblehelm2_pl|Yelmo nórdico de élite con cuero
+itm_viking_noblehelm3|Yelmo nórdico de élite con aventail
+itm_viking_noblehelm3_pl|Yelmo nórdico de élite con aventail
+itm_angle_helmet1|Yelmo de noble
+itm_angle_helmet1_pl|Yelmo de noble
+itm_angle_helmet2|Yelmo con cuero
+itm_angle_helmet2_pl|Yelmo con cuero
+itm_angle_helmet3|Yelmo antiguo con aventail
+itm_angle_helmet3_pl|Yelmo antiguo con aventail
+itm_angle_helmet4|Yelmo con aventail
+itm_angle_helmet4_pl|Yelmo con aventail
+itm_angle_helmet5|Yelmo completo antiguo
+itm_angle_helmet5_pl|Yelmo completo antiguo
+itm_angle_helmet6|Yelmo completo
+itm_angle_helmet6_pl|Yelmo completo
+itm_elf_helmet|Yelmo élfico
+itm_elf_helmet_pl|Yelmo élfico
+itm_noble_helm_smith|Yelmo de noble
+itm_noble_helm_smith_pl|Yelmo de noble
+itm_hersir_helm|Yelmo de Hersir
+itm_hersir_helm_pl|Yelmo de Hersir
+itm_crown1|Corona
+itm_crown1_pl|Corona
+itm_sarranid_horseman_helmet|Sin cabeza
+itm_sarranid_horseman_helmet_pl|Sin cabeza
+itm_saco_enlacabeza|Saco
+itm_saco_enlacabeza_pl|Saco
+itm_wooden_stick|Palo de madera
+itm_wooden_stick_pl|Palo de madera
+itm_club_hard|Porra
+itm_club_hard_pl|Porra
+itm_club_troll|Hacha de trol
+itm_club_troll_pl|Hacha de trol
+itm_knife|Cuchillo de caza
+itm_knife_pl|Cuchillo de caza
+itm_knife2|Cuchillo de caza
+itm_knife2_pl|Cuchillo de caza
+itm_knife3|Cuchillo de caza
+itm_knife3_pl|Cuchillo de caza
+itm_knife4|Cuchillo de caza
+itm_knife4_pl|Cuchillo de caza
+itm_knife5|Cuchillo de caza
+itm_knife5_pl|Cuchillo de caza
+itm_longseax1|Broadseax
+itm_longseax1_pl|Broadseax
+itm_longseax2|Broadseax
+itm_longseax2_pl|Broadseax
+itm_longseax3|Broadseax
+itm_longseax3_pl|Broadseax
+itm_longseax4|Broadseax
+itm_longseax4_pl|Broadseax
+itm_longseax5|Broadseax
+itm_longseax5_pl|Broadseax
+itm_longseax6|Langseax
+itm_longseax6_pl|Langseax
+itm_longseax7|Langseax
+itm_longseax7_pl|Langseax
+itm_longseax8|Langseax
+itm_longseax8_pl|Langseax
+itm_longseax9|Langseax
+itm_longseax9_pl|Langseax
+itm_longseax10|Langseax
+itm_longseax10_pl|Langseax
+itm_seax_1|Seax
+itm_seax_1_pl|Seax
+itm_seax_2|Seax
+itm_seax_2_pl|Seax
+itm_seax_3|Seax
+itm_seax_3_pl|Seax
+itm_seax_4|Seax
+itm_seax_4_pl|Seax
+itm_seax_5|Seax
+itm_seax_5_pl|Seax
+itm_ragnar_seax|Seax de Ragnar
+itm_ragnar_seax_pl|Seax de Ragnar
+itm_elf_seax|Seax élfico
+itm_elf_seax_pl|Seax élfico
+itm_spatha|Espada
+itm_spatha_pl|Espada
+itm_spatha_2|Espada
+itm_spatha_2_pl|Espada
+itm_spatha_3|Espada
+itm_spatha_3_pl|Espada
+itm_spatha_4|Espada
+itm_spatha_4_pl|Espada
+itm_spatha_5|Espada
+itm_spatha_5_pl|Espada
+itm_spatha_6|Espada
+itm_spatha_6_pl|Espada
+itm_spatha_7|Espada
+itm_spatha_7_pl|Espada
+itm_spatha_8|Espada
+itm_spatha_8_pl|Espada
+itm_sword|Espada
+itm_sword_pl|Espada
+itm_sword_2|Espada
+itm_sword_2_pl|Espada
+itm_sword_3|Espada
+itm_sword_3_pl|Espada
+itm_sword_4|Espada
+itm_sword_4_pl|Espada
+itm_sword_5|Espada corta
+itm_sword_5_pl|Espada corta
+itm_sword_6|Espada corta
+itm_sword_6_pl|Espada corta
+itm_sword_7|Espada corta
+itm_sword_7_pl|Espada corta
+itm_sword_8|Espada corta
+itm_sword_8_pl|Espada corta
+itm_new_sword1|Espada corta
+itm_new_sword1_pl|Espada corta
+itm_new_sword2|Espada corta
+itm_new_sword2_pl|Espada corta
+itm_new_sword3|Espada corta
+itm_new_sword3_pl|Espada corta
+itm_new_sword4|Espada corta
+itm_new_sword4_pl|Espada corta
+itm_new_sword5|Espada corta
+itm_new_sword5_pl|Espada corta
+itm_new_sword6|Espada corta
+itm_new_sword6_pl|Espada corta
+itm_noble_sword|Espada de lujo
+itm_noble_sword_pl|Espada de lujo
+itm_noble_sword_2|Espada Ulfberth 
+itm_noble_sword_2_pl|Espada Ulfberth
+itm_noble_sword_3|Espada Ulfberth falsa
+itm_noble_sword_3_pl|Espada Ulfberth falsa
+itm_noble_sword_4|Espada de lujo
+itm_noble_sword_4_pl|Espada de lujo
+itm_noble_sword_5|Espada Ulfberth 
+itm_noble_sword_5_pl|Espada Ulfberth 
+itm_noble_sword_6|Espada Ulfberth falsa
+itm_noble_sword_6_pl|Espada Ulfberth falsa
+itm_old_swordv|Espada britana
+itm_old_swordv_pl|Espada britana
+itm_old_swordv2|Espada britana
+itm_old_swordv2_pl|Espada britana
+itm_old_swordv3|Espada britana
+itm_old_swordv3_pl|Espada britana
+itm_old_swordv4|Espada britana
+itm_old_swordv4_pl|Espada britana
+itm_old_swordv5|Espada britana
+itm_old_swordv5_pl|Espada britana
+itm_old_swordv6|Espada britana
+itm_old_swordv6_pl|Espada britana
+itm_old_swordv7|Espada britana
+itm_old_swordv7_pl|Espada britana
+itm_noble_sword_7|Espada britana de lujo
+itm_noble_sword_7_pl|Espada britana de lujo
+itm_noble_sword_8|Espada britana de lujo
+itm_noble_sword_8_pl|Espada britana de lujo
+itm_noble_sword_9|Espada britana de lujo
+itm_noble_sword_9_pl|Espada britana de lujo
+itm_noble_sword_10|Espada britana de lujo
+itm_noble_sword_10_pl|Espada britana de lujo
+itm_noble_sword_11|Espada britana de lujo
+itm_noble_sword_11_pl|Espada britana de lujo
+itm_noble_sword_12|Espada britana de lujo
+itm_noble_sword_12_pl|Espada britana de lujo
+itm_noble_sword_13|Espada britana de lujo
+itm_noble_sword_13_pl|Espada britana de lujo
+itm_noble_swordv|Espada Ulfberth falsa
+itm_noble_swordv_pl|Espada Ulfberth falsa
+itm_noble_swordv3|Espada Ulfberth falsa
+itm_noble_swordv3_pl|Espada Ulfberth falsa
+itm_noble_swordv4|Espada Ulfbert
+itm_noble_swordv4_pl|Espada Ulfberth
+itm_noble_swordv5|Espada
+itm_noble_swordv5_pl|Espada
+itm_noble_swordv6|Espada
+itm_noble_swordv6_pl|Espada
+itm_noble_swordv7|Espada de lujo
+itm_noble_swordv7_pl|Espada de lujo
+itm_irish_long_sword1|Espada larga de noble gaélico
+itm_irish_long_sword1_pl|Espada larga de noble gaélico
+itm_irish_long_sword2|Espada larga de noble gaélico
+itm_irish_long_sword2_pl|Espada larga de noble gaélico
+itm_irish_long_sword3|Espada larga gaélica
+itm_irish_long_sword3_pl|Espada larga gaélica
+itm_irish_long_sword4|Espada larga gaélica
+itm_irish_long_sword4_pl|Espada larga gaélica
+itm_irish_long_sword5|Espada larga gaélica
+itm_irish_long_sword5_pl|Espada larga gaélica
+itm_irish_long_sword6|Espada larga gaélica
+itm_irish_long_sword6_pl|Espada larga gaélica
+itm_irish_long_sword7|Espada larga gaélica
+itm_irish_long_sword7_pl|Espada larga gaélica
+itm_irish_long_sword8|Espada larga gaélica
+itm_irish_long_sword8_pl|Espada larga gaélica
+itm_irish_short_sword1|Espada corta gaélica
+itm_irish_short_sword1_pl|Espada corta gaélica
+itm_irish_short_sword2|Espada corta gaélica
+itm_irish_short_sword2_pl|Espada corta gaélica
+itm_irish_short_sword3|Espada corta gaélica
+itm_irish_short_sword3_pl|Espada corta gaélica
+itm_championsword1|Espada gaélica de campeón
+itm_championsword1_pl|Espada gaélica de campeón
+itm_championsword2|Espada gaélica de campeón
+itm_championsword2_pl|Espada gaélica de campeón
+itm_widow_maker|Hacedor de viudas
+itm_widow_maker_pl|Hacedor de viudas
+itm_suttonhoosword2|Espada de rey bandido
+itm_suttonhoosword2_pl|Espada de rey bandido
+itm_siren_song|Laufi
+itm_siren_song_pl|Laufi
+itm_sword_of_war|Espada de Olvir
+itm_sword_of_war_pl|Espada de Olvir
+itm_sword_premium1|Nad
+itm_sword_premium1_pl|Nad
+itm_sword_premium2|Draguandil
+itm_sword_premium2_pl|Draguandil
+itm_sword_premium3|Blynjubitr
+itm_sword_premium3_pl|Blynjubitr
+itm_hatchet|Hacha
+itm_hatchet_pl|Hacha
+itm_axe|Hacha
+itm_axe_pl|Hacha
+itm_axe_2|Hacha corta
+itm_axe_2_pl|Hacha corta
+itm_hand_axe|Hacha corta
+itm_hand_axe_pl|Hacha corta
+itm_axe_3|Hacha larga
+itm_axe_3_pl|Hacha larga
+itm_axe_4|Hacha larga
+itm_axe_4_pl|Hacha larga
+itm_one_handed_war_axe_a|Hacha corta de batalla
+itm_one_handed_war_axe_a_pl|Hacha corta de batalla
+itm_one_handed_war_axe_b|Hacha corta de batalla
+itm_one_handed_war_axe_b_pl|Hacha corta de batalla
+itm_one_handed_war_axe_c|Hacha corta de batalla
+itm_one_handed_war_axe_c_pl|Hacha corta de batalla
+itm_one_handed_war_axe_d|Hacha corta de batalla
+itm_one_handed_war_axe_d_pl|Hacha corta de batalla
+itm_one_handed_war_axe_e|Hacha larga de batalla
+itm_one_handed_war_axe_e_pl|Hacha larga de batalla
+itm_one_handed_war_axe_f|Hacha larga de batalla
+itm_one_handed_war_axe_f_pl|Hacha larga de batalla
+itm_axe_5|Hacha de mano larga
+itm_axe_5_pl|Hacha de mano larga
+itm_axe_6|Hacha de mano
+itm_axe_6_pl|Hacha de mano
+itm_axe_7|Hacha de mano corta
+itm_axe_7_pl|Hacha de mano corta
+itm_axe_8|Hacha de mano corta
+itm_axe_8_pl|Hacha de mano corta
+itm_axe_9|Hacha de mano
+itm_axe_9_pl|Hacha de mano
+itm_axe_10|Gran hacha de mano
+itm_axe_10_pl|Gran hacha de mano
+itm_pictish_hatchet|Hacha gaélica
+itm_pictish_hatchet_pl|Hacha gaélica
+itm_pictish_hatchet2|Hacha gaélica
+itm_pictish_hatchet2_pl|Hacha gaélica
+itm_pictish_hatchet3|Hacha larga gaélica
+itm_pictish_hatchet3_pl|Hacha larga gaélica
+itm_pictish_hatchet4|Hacha larga gaélica
+itm_pictish_hatchet4_pl|Hacha larga gaélica
+itm_pictish_hatchet5|Hacha picta
+itm_pictish_hatchet5_pl|Hacha picta
+itm_pictish_hatchet6|Hacha picta
+itm_pictish_hatchet6_pl|Hacha picta
+itm_pictish_hatchet7|Hacha picta
+itm_pictish_hatchet7_pl|Hacha picta
+itm_pictish_hatchet8|Hacha corta picta
+itm_pictish_hatchet8_pl|Hacha corta picta
+itm_pictish_hatchet9|Gran hacha picta
+itm_pictish_hatchet9_pl|Gran hacha picta
+itm_pictish_hatchet10|Gran hacha picta
+itm_pictish_hatchet10_pl|Gran hacha picta
+itm_pictish_hatchet11|Hachuela gaélica
+itm_pictish_hatchet11_pl|Hachuela gaélica
+itm_pictish_hatchet12|Hachuela gaélica
+itm_pictish_hatchet12_pl|Hachuela gaélica
+itm_pictish_hatchet13|Hachuela corta gaélica
+itm_pictish_hatchet13_pl|Hachuela corta gaélica
+itm_pictish_hatchet14|Hachuela corta gaélica
+itm_pictish_hatchet14_pl|Hachuela corta gaélica
+itm_pictish_hatchet15|Hachuela larga gaélica
+itm_pictish_hatchet15_pl|Hachuela larga gaélica
+itm_pictish_hatchet16|Hachuela larga gaélica
+itm_pictish_hatchet16_pl|Hachuela larga gaélica
+itm_pictish_hatchet17|Hacha de noble gaélico
+itm_pictish_hatchet17_pl|Hacha de noble gaélico
+itm_pictish_hatchet18|Hacha de noble gaélico
+itm_pictish_hatchet18_pl|Hacha de noble gaélico
+itm_long_axe_b|Hacha de leñador
+itm_long_axe_b_pl|Hacha de leñador
+itm_frankish_axe|Hacha franca
+itm_frankish_axe_pl|Hacha franca
+itm_staff|Bastón
+itm_staff_pl|Bastón
+itm_quarter_staff|Bastón corto
+itm_quarter_staff_pl|Bastón corto
+itm_pitch_fork|Horca
+itm_pitch_fork_pl|Horca
+itm_battle_fork|Cayado de pastor
+itm_battle_fork_pl|Cayado de pastor
+itm_light_spear1|Lanza ligera
+itm_light_spear1_pl|Lanza ligera
+itm_light_spear2|Lanza ligera
+itm_light_spear2_pl|Lanza ligera
+itm_light_spear3|Lanza ligera
+itm_light_spear3_pl|Lanza ligera
+itm_light_spear4|Lanza ligera
+itm_light_spear4_pl|Lanza ligera
+itm_war_spear1|Lanza de guerra
+itm_war_spear1_pl|Lanza de guerra
+itm_war_spear2|Lanza de guerra
+itm_war_spear2_pl|Lanza de guerra
+itm_war_spear3|Lanza de guerra
+itm_war_spear3_pl|Lanza de guerra
+itm_heavy_spear1|Lanza pesada
+itm_heavy_spear1_pl|Lanza pesada
+itm_heavy_spear2|Lanza pesada
+itm_heavy_spear2_pl|Lanza pesada
+itm_heavy_spear3|Lanza pesada
+itm_heavy_spear3_pl|Lanza pesada
+itm_long_light_spear1|Lanza ligera larga
+itm_long_light_spear1_pl|Lanza ligera larga
+itm_long_light_spear2|Lanza ligera larga
+itm_long_light_spear2_pl|Lanza ligera larga
+itm_long_war_spear1|Lanza de guerra larga
+itm_long_war_spear1_pl|Lanza de guerra larga
+itm_long_war_spear2|Lanza de guerra larga
+itm_long_war_spear2_pl|Lanza de guerra larga
+itm_long_heavy_spear1|Lanza pesada larga
+itm_long_heavy_spear1_pl|Lanza pesada larga
+itm_long_heavy_spear2|Lanza pesada larga
+itm_long_heavy_spear2_pl|Lanza pesada larga
+itm_new_mace|Rayo
+itm_new_mace_pl|Rayo
+itm_premium_spear1|Gungnir
+itm_premium_spear1_pl|Gungnir
+itm_standard|Estandarte militar
+itm_standard_pl|Estandarte militar
+itm_standard_dragon|Estandarte de dragón
+itm_standard_dragon_pl|Estandarte de dragón
+itm_horn|Cuerno
+itm_horn_pl|Cuerno
+itm_horn_multi|Cuerno
+itm_horn_multi_pl|Cuerno
+itm_wooden_shield|Escudo circular
+itm_wooden_shield_pl|Escudo circular
+itm_viking_shield_round_06|Escudo circular
+itm_viking_shield_round_06_pl|Escudo circular
+itm_viking_shield_round_07|Escudo circular
+itm_viking_shield_round_07_pl|Escudo circular
+itm_viking_shield_round_10|Escudo circular
+itm_viking_shield_round_10_pl|Escudo circular
+itm_viking_shield_round_11|Escudo circular
+itm_viking_shield_round_11_pl|Escudo circular
+itm_viking_shield_round_08|Escudo circular
+itm_viking_shield_round_08_pl|Escudo circular
+itm_viking_shield_round_09|Escudo circular
+itm_viking_shield_round_09_pl|Escudo circular
+itm_viking_shield_round_12|Escudo circular
+itm_viking_shield_round_12_pl|Escudo circular
+itm_viking_shield_round_13|Escudo circular
+itm_viking_shield_round_13_pl|Escudo circular
+itm_viking_shield_round_01|Escudo de piel cruda
+itm_viking_shield_round_01_pl|Escudo de piel cruda
+itm_viking_shield_round_02|Escudo de piel cruda
+itm_viking_shield_round_02_pl|Escudo de piel cruda
+itm_viking_shield_round_03|Escudo de piel cruda
+itm_viking_shield_round_03_pl|Escudo de piel cruda
+itm_viking_shield_round_14|Escudo de piel cruda
+itm_viking_shield_round_14_pl|Escudo de piel cruda
+itm_viking_shield_round_15|Escudo de piel cruda
+itm_viking_shield_round_15_pl|Escudo de piel cruda
+itm_viking_shield_round_04|Escudo circular de piel cruda
+itm_viking_shield_round_04_pl|Escudo circular de piel cruda
+itm_viking_shield_round_05|Escudo circular de piel cruda
+itm_viking_shield_round_05_pl|Escudo circular de piel cruda
+itm_viking_shield_round_16|Escudo circular de piel cruda
+itm_viking_shield_round_16_pl|Escudo circular de piel cruda
+itm_viking_shield_round_17|Escudo circular de piel cruda
+itm_viking_shield_round_17_pl|Escudo circular de piel cruda
+itm_viking_shield_round_18|Escudo circular de piel cruda
+itm_viking_shield_round_18_pl|Escudo circular de piel cruda
+itm_viking_shield_round_19|Escudo circular de piel cruda
+itm_viking_shield_round_19_pl|Escudo circular de piel cruda
+itm_viking_shield_round_20|Escudo circular de piel cruda
+itm_viking_shield_round_20_pl|Escudo circular de piel cruda
+itm_viking_shield_round_21|Escudo circular de piel cruda
+itm_viking_shield_round_21_pl|Escudo circular de piel cruda
+itm_shield_1|Escudo lenticular
+itm_shield_1_pl|Escudo lenticular
+itm_shield_2|Escudo lenticular
+itm_shield_2_pl|Escudo lenticular
+itm_shield_3|Escudo lenticular
+itm_shield_3_pl|Escudo lenticular
+itm_shield_4|Escudo lenticular
+itm_shield_4_pl|Escudo lenticular
+itm_shield_5|Escudo lenticular
+itm_shield_5_pl|Escudo lenticular
+itm_shield_6|Escudo lenticular
+itm_shield_6_pl|Escudo lenticular
+itm_shield_6_2|Escudo lenticular
+itm_shield_6_2_pl|Escudo lenticular
+itm_shield_7|Escudo berserkr
+itm_shield_7_pl|Escudo berserkr
+itm_shield_8|Escudo berserkr
+itm_shield_8_pl|Escudo berserkr
+itm_shield_9|Escudo berserkr
+itm_shield_9_pl|Escudo berserkr
+itm_shield_10|Escudo circular
+itm_shield_10_pl|Escudo circular
+itm_shield_11|Escudo de piel cruda
+itm_shield_11_pl|Escudo de piel cruda
+itm_shield_12|Escudo svear
+itm_shield_12_pl|Escudo svear
+itm_shield_13|Escudo circular
+itm_shield_13_pl|Escudo circular
+itm_shield_14|Escudo circular
+itm_shield_14_pl|Escudo circular
+itm_shield_15|Escudo de piel cruda
+itm_shield_15_pl|Escudo de piel cruda
+itm_shield_16|Escudo de piel cruda
+itm_shield_16_pl|Escudo de piel cruda
+itm_shield_17|Escudo circular
+itm_shield_17_pl|Escudo circular
+itm_shield_18|Escudo circular
+itm_shield_18_pl|Escudo circular
+itm_shield_19|Escudo danés
+itm_shield_19_pl|Escudo danés
+itm_shield_20|Escudo Northmathr
+itm_shield_20_pl|Escudo Northmathr
+itm_shield_21|Escudo circular
+itm_shield_21_pl|Escudo circular
+itm_gael_bigroundshield_01|Escudo gaélico circular
+itm_gael_bigroundshield_01_pl|Escudo gaélico circular
+itm_gael_bigroundshield_02|Escudo gaélico circular
+itm_gael_bigroundshield_02_pl|Escudo gaélico circular
+itm_gael_bigroundshield_03|Escudo gaélico circular
+itm_gael_bigroundshield_03_pl|Escudo gaélico circular
+itm_gael_bigroundshield_04|Escudo gaélico circular
+itm_gael_bigroundshield_04_pl|Escudo gaélico circular
+itm_gael_bigroundshield_05|Escudo gaélico circular
+itm_gael_bigroundshield_05_pl|Escudo gaélico circular
+itm_gael_bigroundshield_06|Escudo gaélico circular
+itm_gael_bigroundshield_06_pl|Escudo gaélico circular
+itm_gael_bigroundshield_07|Escudo gaélico circular
+itm_gael_bigroundshield_07_pl|Escudo gaélico circular
+itm_elf_shield|Escudo élfico
+itm_elf_shield_pl|Escudo élfico
+itm_tab_shield_round_c|Escudo lenticular pintado
+itm_tab_shield_round_c_pl|Escudo lenticular pintado
+itm_tab_shield_round_01_device|Escudo circular pintado
+itm_tab_shield_round_01_device_pl|Escudo circular pintado
+itm_tab_shield_round_01_nodevice|Escudo circular pintado
+itm_tab_shield_round_01_nodevice_pl|Escudo circular pintado
+itm_tab_shield_round_02_device|Escudo circular pintado
+itm_tab_shield_round_02_device_pl|Escudo circular pintado
+itm_tab_shield_round_02_nodevice|Escudo circular pintado
+itm_tab_shield_round_02_nodevice_pl|Escudo circular pintado
+itm_tab_shield_round_03_device|Escudo circular pintado
+itm_tab_shield_round_03_device_pl|Escudo circular pintado
+itm_tab_shield_round_03_nodevice|Escudo circular pintado
+itm_tab_shield_round_03_nodevice_pl|Escudo circular pintado
+itm_tab_shield_round_04_device|Escudo circular pintado
+itm_tab_shield_round_04_device_pl|Escudo circular pintado
+itm_tab_shield_round_04_nodevice|Escudo circular pintado
+itm_tab_shield_round_04_nodevice_pl|Escudo circular pintado
+itm_tab_shield_round_05_device|Escudo lenticular pintado
+itm_tab_shield_round_05_device_pl|Escudo lenticular pintado
+itm_tab_shield_round_05_nodevice|Escudo lenticular pintado
+itm_tab_shield_round_05_nodevice_pl|Escudo lenticular pintado
+itm_tab_shield_round_06_device|Escudo lenticular pintado
+itm_tab_shield_round_06_device_pl|Escudo lenticular pintado
+itm_tab_shield_round_06_nodevice|Escudo lenticular pintado
+itm_tab_shield_round_06_nodevice_pl|Escudo lenticular pintado
+itm_tab_shield_round_07_device|Escudo circular pintado
+itm_tab_shield_round_07_device_pl|Escudo circular pintado
+itm_tab_shield_round_07_nodevice|Escudo circular pintado
+itm_tab_shield_round_07_nodevice_pl|Escudo circular pintado
+itm_tab_shield_round_08_device|Escudo lenticular pintado
+itm_tab_shield_round_08_device_pl|Escudo lenticular pintado
+itm_tab_shield_round_08_nodevice|Escudo lenticular pintado
+itm_tab_shield_round_08_nodevice_pl|Escudo lenticular pintado
+itm_tab_shield_round_09_device|Escudo circular pintado
+itm_tab_shield_round_09_device_pl|Escudo circular pintado
+itm_tab_shield_round_09_nodevice|Escudo circular pintado
+itm_tab_shield_round_09_nodevice_pl|Escudo circular pintado
+itm_tab_shield_round_10_device|Escudo lenticular pintado
+itm_tab_shield_round_10_device_pl|Escudo lenticular pintado
+itm_tab_shield_round_10_nodevice|Escudo lenticular pintado
+itm_tab_shield_round_10_nodevice_pl|Escudo lenticular pintado
+itm_tab_shield_round_11_device|Escudo lenticular pintado
+itm_tab_shield_round_11_device_pl|Escudo lenticular pintado
+itm_tab_shield_round_11_nodevice|Escudo lenticular pintado
+itm_tab_shield_round_11_nodevice_pl|Escudo lenticular pintado
+itm_tab_shield_round_12_device|Escudo circular pintado
+itm_tab_shield_round_12_device_pl|Escudo circular pintado
+itm_tab_shield_round_12_nodevice|Escudo circular pintado
+itm_tab_shield_round_12_nodevice_pl|Escudo circular pintado
+itm_tab_shield_small_round_c|Escudo circular pequeño
+itm_tab_shield_small_round_c_pl|Escudo circular pequeño
+itm_small_roundsh1|Escudo circular pequeño
+itm_small_roundsh1_pl|Escudo circular pequeño
+itm_small_roundsh2|Escudo circular pequeño
+itm_small_roundsh2_pl|Escudo circular pequeño
+itm_small_roundsh3|Escudo circular pequeño
+itm_small_roundsh3_pl|Escudo circular pequeño
+itm_small_roundsh4|Escudo circular pequeño
+itm_small_roundsh4_pl|Escudo circular pequeño
+itm_small_roundsh5|Escudo circular pequeño
+itm_small_roundsh5_pl|Escudo circular pequeño
+itm_small_roundsh6|Escudo circular pequeño
+itm_small_roundsh6_pl|Escudo circular pequeño
+itm_h_shield1|Escudo en H
+itm_h_shield1_pl|Escudo en H
+itm_h_shield2|Escudo en H
+itm_h_shield2_pl|Escudo en H
+itm_h_shield3|Escudo en H
+itm_h_shield3_pl|Escudo en H
+itm_h_shield4|Escudo en H
+itm_h_shield4_pl|Escudo en H
+itm_h_shield5|Escudo en H
+itm_h_shield5_pl|Escudo en H
+itm_h_shield6|Escudo en H
+itm_h_shield6_pl|Escudo en H
+itm_squaresh_1|Escudo cuadrado
+itm_squaresh_1_pl|Escudo cuadrado
+itm_squaresh_2|Escudo cuadrado
+itm_squaresh_2_pl|Escudo cuadrado
+itm_squaresh_3|Escudo cuadrado
+itm_squaresh_3_pl|Escudo cuadrado
+itm_squaresh_4|Escudo cuadrado
+itm_squaresh_4_pl|Escudo cuadrado
+itm_squaresh_5|Escudo cuadrado
+itm_squaresh_5_pl|Escudo cuadrado
+itm_squaresh_6|Escudo cuadrado
+itm_squaresh_6_pl|Escudo cuadrado
+itm_darts|Jabalinas sencillas
+itm_darts_pl|Jabalinas sencillas
+itm_darts_melee|Jabalinas sencillas
+itm_darts_melee_pl|Jabalinas sencillas
+itm_javelin|Jabalinas
+itm_javelin_pl|Jabalinas
+itm_javelin_melee|Jabalina
+itm_javelin_melee_pl|Jabalina
+itm_javelin_skirmishes|Jabalinas de escaramuzador
+itm_javelin_skirmishes_pl|Jabalinas de escaramuzador
+itm_javelin_skirmishes_melee|Jabalina de escaramuzador
+itm_javelin_skirmishes_melee_pl|Jabalina de escaramuzador
+itm_javelin_skirmishesel|Jabalinas pesadas
+itm_javelin_skirmishesel_pl|Jabalinas pesadas
+itm_javelin_skirmishesel_melee|Jabalinas pesadas
+itm_javelin_skirmishesel_melee_pl|Jabalinas pesadas
+itm_javelin_jinetes|Jabalinas ecuestres
+itm_javelin_jinetes_pl|Jabalinas ecuestres
+itm_javelin_jinetes_melee|Jabalina ecuestre
+itm_javelin_jinetes_melee_pl|Jabalina ecuestre
+itm_throwing_spears|Lanzas arrojadizas
+itm_throwing_spears_pl|Lanzas arrojadizas
+itm_throwing_spear_melee|Lanza arrojadiza
+itm_throwing_spear_melee_pl|Lanza arrojadiza
+itm_throwing_spears2|Lanzas arrojadizas
+itm_throwing_spears2_pl|Lanzas arrojadizas
+itm_throwing_spear2_melee|Lanza arrojadiza
+itm_throwing_spear2_melee_pl|Lanza arrojadiza
+itm_stones|Piedras
+itm_stones_pl|Piedras
+itm_long_bow|Arco largo
+itm_long_bow_pl|Arco largo
+itm_long_bow2|Arco largo de élite
+itm_long_bow2_pl|Arco largo de élite
+itm_long_bow3|Arco largo renombrado
+itm_long_bow3_pl|Arco largo renombrado
+itm_hunting_crossbow|Ballesta picta
+itm_hunting_crossbow_pl|Ballesta picta
+itm_strong_bow|Cazador oscuro
+itm_strong_bow_pl|Cazador oscuro
+itm_war_bow|Deslumbrante
+itm_war_bow_pl|Deslumbrante
+itm_sling_rock1|Piedras de honda
+itm_sling_rock1_pl|Piedras de honda
+itm_sling_lead|Glande de plomo
+itm_sling_lead_pl|Glande de plomo
+itm_sling|Honda
+itm_sling_pl|Honda
+itm_sling2|Honda
+itm_sling2_pl|Honda
+itm_sling3|Honda
+itm_sling3_pl|Honda
+itm_sling_militar|Honda militar
+itm_sling_militar_pl|Honda militar
+itm_fustibalus1|Fustíbalo
+itm_fustibalus1_pl|Fustíbalo
+itm_fustibalus2|Fustíbalo
+itm_fustibalus2_pl|Fustíbalo
+itm_fustibalus_military|Fustíbalo de asedio
+itm_fustibalus_military_pl|Fustíbalo de asedio
+itm_torch|Antorchas
+itm_torch_pl|Antorchas
+itm_lyre|Lira
+itm_lyre_pl|Lira
+itm_lute|Laúd
+itm_lute_pl|Laúd
+itm_instruments_end|Instruments End
+itm_instruments_end_pl|Instruments End
+itm_court_dress|Vestido cortesano
+itm_court_dress_pl|Vestido cortesano
+itm_stones_siege|Piedras de asedio
+itm_stones_siege_pl|Piedras de asedio
+itm_trophy_a|Trofeo de batalla
+itm_trophy_a_pl|Trofeo de batalla
+itm_trophy_b|Trofeo de guerra
+itm_trophy_b_pl|Trofeo de guerra
+itm_trophy_c|Trofeo épico
+itm_trophy_c_pl|Trofeo épico
+itm_iniauhorn|Cuerno Iniau
+itm_iniauhorn_pl|Cuerno Iniau
+itm_tunic_with_green_cape|Túnica
+itm_tunic_with_green_cape_pl|Túnica
+itm_keys|Manojo de llaves
+itm_keys_pl|Manojo de llaves
+itm_bride_dress|Vestido de novia
+itm_bride_dress_pl|Vestido de novia
+itm_bride_crown|Corona de flores
+itm_bride_crown_pl|Corona de flores
+itm_bride_shoes|Zapatos de novia
+itm_bride_shoes_pl|Zapatos de novia
+itm_practice_bow_2|Arco largo
+itm_practice_bow_2_pl|Arco largo
+itm_practice_arrows_2|Flechas
+itm_practice_arrows_2_pl|Flechas
+itm_steel_bolts|Piedras de asedio
+itm_steel_bolts_pl|Piedras de asedio
+itm_heraldic_mail_with_tunic_b|Camisa
+itm_heraldic_mail_with_tunic_b_pl|Camisa
+itm_heraldic_mail_with_tabard|Camisa
+itm_heraldic_mail_with_tabard_pl|Camisa
+itm_thors_helmet|Yelmo de Thor
+itm_thors_helmet_pl|Yelmo de Thor
+itm_thors_armor|Armadura de Thor
+itm_thors_armor_pl|Armadura de Thor
+itm_thors_boots|Botas de Thor
+itm_thors_boots_pl|Botas de Thor
+itm_thors_hammer|Martillo de Thor
+itm_thors_hammer_pl|Martillo de Thor
+itm_deadly_bow|Arco mortífero
+itm_deadly_bow_pl|Arco mortífero
+itm_deadly_arrows|Flechas mortíferas
+itm_deadly_arrows_pl|Flechas mortíferas
+itm_honey|Miel
+itm_honey_pl|Miel
+itm_raw_leather|Cueros
+itm_raw_leather_pl|Cueros
+itm_furs|Pieles
+itm_furs_pl|Pieles
+itm_wool_cloth|Tela de lana
+itm_wool_cloth_pl|Tela de lana
+itm_oil|Aceite
+itm_oil_pl|Aceite
+itm_velvet|Terciopelo
+itm_velvet_pl|Terciopelo
+itm_work_axe|Hacha
+itm_work_axe_pl|Hacha
+itm_work_pickaxe|Zapapico
+itm_work_pickaxe_pl|Zapapico
+itm_work_pitchfork|Horca
+itm_work_pitchfork_pl|Horca
+itm_work_basket|Cesta
+itm_work_basket_pl|Cesta
+itm_torch2|Antorcha
+itm_torch2_pl|Antorcha
+itm_animal_boar|Jabalí
+itm_animal_boar_pl|Jabalí
+itm_animal_pig|Cerdo
+itm_animal_pig_pl|Cerdo
+itm_animal_piglet|Cochinillo
+itm_animal_piglet_pl|Cochinillo
+itm_animal_sheep|Oveja
+itm_animal_sheep_pl|Oveja
+itm_animal_sheep_b|Oveja
+itm_animal_sheep_b_pl|Oveja
+itm_animal_dog|Perro
+itm_animal_dog_pl|Perro
+itm_dog_companion_horse|Perro
+itm_dog_companion_horse_pl|Perro
+itm_magic_broom|Escoba
+itm_magic_broom_pl|Escoba
+itm_stones_mp|Piedras
+itm_stones_mp_pl|Piedras
+itm_invisible_armor|Kejserens nye Klaeder
+itm_invisible_armor_pl|Kejserens nye Klaeder
+itm_dog_bite|Mordisco
+itm_dog_bite_pl|Mordisco
+itm_addon_mail4|Byrnie de oso
+itm_addon_mail4_pl|Byrnie de oso
+itm_addon_mail5|Byrnie de lobo
+itm_addon_mail5_pl|Byrnie de lobo
+itm_addon_mail6|Lorica de oso
+itm_addon_mail6_pl|Lorica de oso
+itm_addon_mail7|Lorica de lobo
+itm_addon_mail7_pl|Lorica de lobo
+itm_lamellar_armor2|Lorica de escamas
+itm_lamellar_armor2_pl|Lorica de escamas
+itm_trophy_norse|Trofeo de Konungr nórdico
+itm_trophy_norse_pl|Trofeo de Konungr nórdico
+itm_trophy_cymry|Trofeo Vrenhin Lloegr
+itm_trophy_cymry_pl|Trofeo Vrenhin Lloegr
+itm_trophy_irish|Trofeo Ard Ruire
+itm_trophy_irish_pl|Trofeo Ard Ruire
+itm_trophy_saxon|Trofeo de brytenwalda
+itm_trophy_saxon_pl|Trofeo de brytenwalda
+itm_bonus_tunic_1|Túnica de emisario
+itm_bonus_tunic_1_pl|Túnica de emisario
+itm_bonus_tunic_2|Túnica de ealdorman
+itm_bonus_tunic_2_pl|Túnica de ealdorman
+itm_bonus_tunic_3|Túnica de mercader
+itm_bonus_tunic_3_pl|Túnica de mercader
+itm_bonus_dress_1|Vestido rico picto
+itm_bonus_dress_1_pl|Vestido rico picto
+itm_bonus_dress_2|Vestido real sajón
+itm_bonus_dress_2_pl|Vestido real sajón
+itm_bonus_dress_3|Vestido de noble nórdico
+itm_bonus_dress_3_pl|Vestido de noble nórdico
+itm_thors_javelins|Jabalinas de Thor
+itm_thors_javelins_pl|Jabalinas de Thor
+itm_decap_head|Sin cabeza.
+itm_decap_head_pl|Sin cabeza.
+itm_work_axe_mp|Hacha
+itm_work_axe_mp_pl|Hacha
+itm_pickaxe_mp|Zapapico
+itm_pickaxe_mp_pl|Zapapico
+itm_seax_1_mp|Viejo seax
+itm_seax_1_mp_pl|Viejo seax
+itm_spear_1_mp|Vieja lanza
+itm_spear_1_mp_pl|Vieja lanza
+itm_crossbow_mp|Ballesta picta
+itm_crossbow_mp_pl|Ballesta picta
+itm_bolts_mp|Virotes
+itm_bolts_mp_pl|Virotes
+itm_items_end|Items End
+itm_items_end_pl|Items End
+itm_noswing_club_troll|Hacha de trol
+itm_noswing_club_troll_pl|Hacha de trol
+itm_noswing_knife|Cuchillo de caza
+itm_noswing_knife_pl|Cuchillo de caza
+itm_noswing_knife2|Cuchillo de caza
+itm_noswing_knife2_pl|Cuchillo de caza
+itm_noswing_knife3|Cuchillo de caza
+itm_noswing_knife3_pl|Cuchillo de caza
+itm_noswing_knife4|Cuchillo de caza
+itm_noswing_knife4_pl|Cuchillo de caza
+itm_noswing_knife5|Cuchillo de caza
+itm_noswing_knife5_pl|Cuchillo de caza
+itm_noswing_longseax1|Broadseax
+itm_noswing_longseax1_pl|Broadseax
+itm_noswing_longseax2|Broadseax
+itm_noswing_longseax2_pl|Broadseax
+itm_noswing_longseax3|Broadseax
+itm_noswing_longseax3_pl|Broadseax
+itm_noswing_longseax4|Broadseax
+itm_noswing_longseax4_pl|Broadseax
+itm_noswing_longseax5|Broadseax
+itm_noswing_longseax5_pl|Broadseax
+itm_noswing_longseax6|Langseax
+itm_noswing_longseax6_pl|Langseax
+itm_noswing_longseax7|Langseax
+itm_noswing_longseax7_pl|Langseax
+itm_noswing_longseax8|Langseax
+itm_noswing_longseax8_pl|Langseax
+itm_noswing_longseax9|Langseax
+itm_noswing_longseax9_pl|Langseax
+itm_noswing_longseax10|Langseax
+itm_noswing_longseax10_pl|Langseax
+itm_noswing_seax_1|Seax
+itm_noswing_seax_1_pl|Seax
+itm_noswing_seax_2|Seax
+itm_noswing_seax_2_pl|Seax
+itm_noswing_seax_3|Seax
+itm_noswing_seax_3_pl|Seax
+itm_noswing_seax_4|Seax
+itm_noswing_seax_4_pl|Seax
+itm_noswing_seax_5|Seax
+itm_noswing_seax_5_pl|Seax
+itm_noswing_ragnar_seax|Langseax de Ragnar
+itm_noswing_ragnar_seax_pl|Langseax de Ragnar
+itm_noswing_elf_seax|Langseax élfico
+itm_noswing_elf_seax_pl|Langsax élfico
+itm_noswing_spatha|Espada
+itm_noswing_spatha_pl|Espada
+itm_noswing_spatha_2|Espada
+itm_noswing_spatha_2_pl|Espada
+itm_noswing_spatha_3|Espada
+itm_noswing_spatha_3_pl|Espada
+itm_noswing_spatha_4|Espada
+itm_noswing_spatha_4_pl|Espada
+itm_noswing_spatha_5|Espada
+itm_noswing_spatha_5_pl|Espada
+itm_noswing_spatha_6|Espada
+itm_noswing_spatha_6_pl|Espada
+itm_noswing_spatha_7|Espada
+itm_noswing_spatha_7_pl|Espada
+itm_noswing_spatha_8|Espada
+itm_noswing_spatha_8_pl|Espada
+itm_noswing_sword|Espada
+itm_noswing_sword_pl|Espada
+itm_noswing_sword_2|Espada
+itm_noswing_sword_2_pl|Espada
+itm_noswing_sword_3|Espada
+itm_noswing_sword_3_pl|Espada
+itm_noswing_sword_4|Espada
+itm_noswing_sword_4_pl|Espada
+itm_noswing_sword_5|Espada corta
+itm_noswing_sword_5_pl|Espada corta
+itm_noswing_sword_6|Espada corta
+itm_noswing_sword_6_pl|Espada corta
+itm_noswing_sword_7|Espada corta
+itm_noswing_sword_7_pl|Espada corta
+itm_noswing_sword_8|Espada corta
+itm_noswing_sword_8_pl|Espada corta
+itm_noswing_new_sword1|Espada corta
+itm_noswing_new_sword1_pl|Espada corta
+itm_noswing_new_sword2|Espada corta
+itm_noswing_new_sword2_pl|Espada corta
+itm_noswing_new_sword3|Espada corta
+itm_noswing_new_sword3_pl|Espada corta
+itm_noswing_new_sword4|Espada corta
+itm_noswing_new_sword4_pl|Espada corta
+itm_noswing_new_sword5|Espada corta
+itm_noswing_new_sword5_pl|Espada corta
+itm_noswing_new_sword6|Espada corta
+itm_noswing_new_sword6_pl|Espada corta
+itm_noswing_noble_sword|Espada de lujo
+itm_noswing_noble_sword_pl|Espada de lujo
+itm_noswing_noble_sword_2|Espada Ulfberth
+itm_noswing_noble_sword_2_pl|Espada Ulfberth
+itm_noswing_noble_sword_3|Espada Ulfberth falsa
+itm_noswing_noble_sword_3_pl|Espada Ulfberth falsa
+itm_noswing_noble_sword_4|Espada de lujo
+itm_noswing_noble_sword_4_pl|Espada de lujo
+itm_noswing_noble_sword_5|Espada Ulfberth
+itm_noswing_noble_sword_5_pl|Espada Ulfberth
+itm_noswing_noble_sword_6|Espada Ulfberth falsa
+itm_noswing_noble_sword_6_pl|Espada Ulfberth falsa
+itm_noswing_old_swordv|Espada britana
+itm_noswing_old_swordv_pl|Espada britana
+itm_noswing_old_swordv2|Espada britana
+itm_noswing_old_swordv2_pl|Espada britana
+itm_noswing_old_swordv3|Espada britana
+itm_noswing_old_swordv3_pl|Espada britana
+itm_noswing_old_swordv4|Espada britana
+itm_noswing_old_swordv4_pl|Espada britana
+itm_noswing_old_swordv5|Espada britana
+itm_noswing_old_swordv5_pl|Espada britana
+itm_noswing_old_swordv6|Espada britana
+itm_noswing_old_swordv6_pl|Espada britana
+itm_noswing_old_swordv7|Espada britana
+itm_noswing_old_swordv7_pl|Espada britana
+itm_noswing_noble_sword_7|Espada britana de lujo
+itm_noswing_noble_sword_7_pl|Espada britana de lujo
+itm_noswing_noble_sword_8|Espada britana de lujo
+itm_noswing_noble_sword_8_pl|Espada britana de lujo
+itm_noswing_noble_sword_9|Espada britana de lujo
+itm_noswing_noble_sword_9_pl|Espada britana de lujo
+itm_noswing_noble_sword_10|Espada britana de lujo
+itm_noswing_noble_sword_10_pl|Espada britana de lujo
+itm_noswing_noble_sword_11|Espada britana de lujo
+itm_noswing_noble_sword_11_pl|Espada britana de lujo
+itm_noswing_noble_sword_12|Espada britana de lujo
+itm_noswing_noble_sword_12_pl|Espada britana de lujo
+itm_noswing_noble_sword_13|Espada britana de lujo
+itm_noswing_noble_sword_13_pl|Espada britana de lujo
+itm_noswing_noble_swordv|Espada Ulfberth falsa
+itm_noswing_noble_swordv_pl|Espada Ulfberth falsa
+itm_noswing_noble_swordv3|Espada Ulfberth falsa
+itm_noswing_noble_swordv3_pl|Espada Ulfberth falsa
+itm_noswing_noble_swordv4|Espada Ulfberth
+itm_noswing_noble_swordv4_pl|Espada Ulfberth
+itm_noswing_noble_swordv5|Espada
+itm_noswing_noble_swordv5_pl|Espada
+itm_noswing_noble_swordv6|Espada
+itm_noswing_noble_swordv6_pl|Espada
+itm_noswing_noble_swordv7|Espada de noble
+itm_noswing_noble_swordv7_pl|Espada de noble
+itm_noswing_irish_long_sword1|Espada larga de noble gaélico
+itm_noswing_irish_long_sword1_pl|Espada larga de noble gaélico
+itm_noswing_irish_long_sword2|Espada larga de noble gaélico
+itm_noswing_irish_long_sword2_pl|Espada larga de noble gaélico
+itm_noswing_irish_long_sword3|Espada larga gaélica
+itm_noswing_irish_long_sword3_pl|Espada larga gaélica
+itm_noswing_irish_long_sword4|Espada larga gaélica
+itm_noswing_irish_long_sword4_pl|Espada larga gaélica
+itm_noswing_irish_long_sword5|Espada larga gaélica
+itm_noswing_irish_long_sword5_pl|Espada larga gaélica
+itm_noswing_irish_long_sword6|Espada larga gaélica
+itm_noswing_irish_long_sword6_pl|Espada larga gaélica
+itm_noswing_irish_long_sword7|Espada larga gaélica
+itm_noswing_irish_long_sword7_pl|Espada larga gaélica
+itm_noswing_irish_long_sword8|Espada larga gaélica
+itm_noswing_irish_long_sword8_pl|Espada larga gaélica
+itm_noswing_irish_short_sword1|Espada corta gaélica
+itm_noswing_irish_short_sword1_pl|Espada corta gaélica
+itm_noswing_irish_short_sword2|Espada corta gaélica
+itm_noswing_irish_short_sword2_pl|Espada corta gaélica
+itm_noswing_irish_short_sword3|Espada corta gaélica
+itm_noswing_irish_short_sword3_pl|Espada corta gaélica
+itm_noswing_championsword1|Espada gaélica de campeón
+itm_noswing_championsword1_pl|Espada gaélica de campeón
+itm_noswing_championsword2|Espada gaélica de campeón
+itm_noswing_championsword2_pl|Espada gaélica de campeón
+itm_noswing_widow_maker|Hacedor de viudas
+itm_noswing_widow_maker_pl|Hacedor de viudas
+itm_noswing_suttonhoosword2|Espada de rey bandido
+itm_noswing_suttonhoosword2_pl|Espada de rey bandido
+itm_noswing_siren_song|Laufi
+itm_noswing_siren_song_pl|Laufi
+itm_noswing_sword_of_war|Espada de Olvir
+itm_noswing_sword_of_war_pl|Espada de Olvir
+itm_noswing_sword_premium1|Nad
+itm_noswing_sword_premium1_pl|Nad
+itm_noswing_sword_premium2|Draguandil
+itm_noswing_sword_premium2_pl|Draguandil
+itm_noswing_sword_premium3|Blynjubitr
+itm_noswing_sword_premium3_pl|Blynjubitr
+itm_noswing_one_handed_war_axe_a|Hacha corta de batalla
+itm_noswing_one_handed_war_axe_a_pl|Hacha corta de batalla
+itm_noswing_one_handed_war_axe_b|Hacha corta de batalla
+itm_noswing_one_handed_war_axe_b_pl|Hacha corta de batalla
+itm_noswing_one_handed_war_axe_c|Hacha corta de batalla
+itm_noswing_one_handed_war_axe_c_pl|Hacha corta de batalla
+itm_noswing_one_handed_war_axe_d|Hacha corta de batalla
+itm_noswing_one_handed_war_axe_d_pl|Hacha corta de batalla
+itm_noswing_one_handed_war_axe_e|Hacha larga de batalla
+itm_noswing_one_handed_war_axe_e_pl|Hacha larga de batalla
+itm_noswing_one_handed_war_axe_f|Hacha larga de batalla
+itm_noswing_one_handed_war_axe_f_pl|Hacha larga	de batalla
+itm_noswing_frankish_axe|Hacha de guerra franca
+itm_noswing_frankish_axe_pl|Hacha de guerra franca
+itm_noswing_staff|Bastón
+itm_noswing_staff_pl|Bastón
+itm_noswing_quarter_staff|Bastón corto
+itm_noswing_quarter_staff_pl|Bastón corto
+itm_noswing_pitch_fork|Horca
+itm_noswing_pitch_fork_pl|Horca
+itm_noswing_battle_fork|Cayado de pastor
+itm_noswing_battle_fork_pl|Cayado de pastor
+itm_noswing_light_spear1|Lanza ligera
+itm_noswing_light_spear1_pl|Lanza ligera
+itm_noswing_light_spear2|Lanza ligera
+itm_noswing_light_spear2_pl|Lanza ligera
+itm_noswing_light_spear3|Lanza ligera
+itm_noswing_light_spear3_pl|Lanza ligera
+itm_noswing_light_spear4|Lanza ligera
+itm_noswing_light_spear4_pl|Lanza ligera
+itm_noswing_war_spear1|Lanza de guerra
+itm_noswing_war_spear1_pl|Lanza de guerra
+itm_noswing_war_spear2|Lanza de guerra
+itm_noswing_war_spear2_pl|Lanza de guerra
+itm_noswing_war_spear3|Lanza de guerra
+itm_noswing_war_spear3_pl|Lanza de guerra
+itm_noswing_heavy_spear1|Lanza pesada
+itm_noswing_heavy_spear1_pl|Lanza pesada
+itm_noswing_heavy_spear2|Lanza pesada
+itm_noswing_heavy_spear2_pl|Lanza pesada
+itm_noswing_heavy_spear3|Lanza pesada
+itm_noswing_heavy_spear3_pl|Lanza pesada
+itm_noswing_long_light_spear1|Lanza larga ligera
+itm_noswing_long_light_spear1_pl|Lanza larga ligera
+itm_noswing_long_light_spear2|Lanza larga ligera
+itm_noswing_long_light_spear2_pl|Lanza larga ligera
+itm_noswing_long_war_spear1|Lanza larga de guerra
+itm_noswing_long_war_spear1_pl|Lanza larga de guerra
+itm_noswing_long_war_spear2|Lanza larga de guerra
+itm_noswing_long_war_spear2_pl|Lanza larga de guerra
+itm_noswing_long_heavy_spear1|Lanza larga pesada
+itm_noswing_long_heavy_spear1_pl|Lanza larga pesada
+itm_noswing_long_heavy_spear2|Lanza larga pesada
+itm_noswing_long_heavy_spear2_pl|Lanza larga pesada
+itm_noswing_new_mace|Rayo
+itm_noswing_new_mace_pl|Rayo
+itm_noswing_premium_spear1|Gungnir
+itm_noswing_premium_spear1_pl|Gungnir
+itm_noswing_standard|Estandarte militar
+itm_noswing_standard_pl|Estandarte militar
+itm_noswing_standard_dragon|Estandarte de dragón
+itm_noswing_standard_dragon_pl|Estandarte de dragón
+itm_noswing_darts_melee|Jabalinas sencillas
+itm_noswing_darts_melee_pl|Jabalinas sencillas
+itm_noswing_javelin_melee|Jabalina
+itm_noswing_javelin_melee_pl|Jabalina
+itm_noswing_javelin_skirmishes_melee|Jabalina de escaramuzador
+itm_noswing_javelin_skirmishes_melee_pl|Jabalina de escaramuzador
+itm_noswing_javelin_skirmishesel_melee|Jabalina pesada
+itm_noswing_javelin_skirmishesel_melee_pl|Jabalina pesada
+itm_noswing_javelin_jinetes_melee|Jabalina ecuestre
+itm_noswing_javelin_jinetes_melee_pl|Jabalina ecuestre
+itm_noswing_throwing_spear_melee|Lanza arrojadiza
+itm_noswing_throwing_spear_melee_pl|Lanza arrojadiza
+itm_noswing_throwing_spear2_melee|Lanza arrojadiza
+itm_noswing_throwing_spear2_melee_pl|Lanza arrojadiza
+itm_noswing_torch|Antorchas
+itm_noswing_torch_pl|Antorchas
+itm_noswing_work_pitchfork|Horca
+itm_noswing_work_pitchfork_pl|Horca
+itm_noswing_dog_bite|Mordisco
+itm_noswing_dog_bite_pl|Mordisco
+itm_noswing_seax_1_mp|Viejo seax
+itm_noswing_seax_1_mp_pl|Viejo seax
+itm_noswing_spear_1_mp|Vieja lanza
+itm_noswing_spear_1_mp_pl|Vieja lanza

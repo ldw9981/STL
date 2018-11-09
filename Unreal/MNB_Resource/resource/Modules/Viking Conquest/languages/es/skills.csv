@@ -1,0 +1,84 @@
+skl_trade|Comerciar
+skl_trade_desc|Cada nivel en esta habilidad reduce la penalización al comercio en 5%%. (Habilidad de hueste)
+skl_leadership|Liderazgo
+skl_leadership_desc|Cada punto aumenta en 5 el número máximo de tropas que puedes liderar, incrementa la moral de la hueste y reduce el salario de las tropas. (Habilidad de liderazgo)
+skl_prisoner_management|Gestión de prisioneros
+skl_prisoner_management_desc|Cada nivel de esta habilidad aumenta el número máximo de prisioneros a %d. (Habilidad de liderazgo)
+skl_reserved_1|Habilidad reservada 1
+skl_reserved_1_desc|Esta es una habilidad reservada.
+skl_reserved_2|Habilidad reservada 2
+skl_reserved_2_desc|Esta es una habilidad reservada.
+skl_reserved_3|Habilidad reservada 3
+skl_reserved_3_desc|Esta es una habilidad reservada.
+skl_reserved_4|Habilidad reservada 4
+skl_reserved_4_desc|Esta es una habilidad reservada.
+skl_persuasion|Persuasión
+skl_persuasion_desc|Esta habilidad ayuda a que otros acepten tu punto de vista. También reduce el mínimo nivel necesario de relación para que los PNJs hagan lo que quieras. (Habilidad personal)
+skl_engineer|Ingeniería
+skl_engineer_desc|Esta habilidad te permite construir maquinaria de asedio y mejorar el feudo de un modo más eficiente. (Habilidad de hueste)
+skl_first_aid|Primeros auxilios
+skl_first_aid_desc|Los héroes recuperan 5 %% por nivel de habilidad en puntos de golpe perdidos durante la misión. (Habilidad de hueste)
+skl_surgery|Cirugía
+skl_surgery_desc|Cada punto en esta habilidad otorga una posibilidad del 4 %% de que, al recibir una herida mortal un miembro de la hueste, éste resulte herido antes que muerto. (Habilidad de hueste)
+skl_wound_treatment|Tratar heridas
+skl_wound_treatment_desc|La velocidad de curación de la hueste se incrementa en un 20 %% por nivel en esta habilidad. Además, cada punto aumenta en un 5 %% la probabilidad de que las heridas graves sanen mejor. (Habilidad de hueste)
+skl_inventory_management|Gestión de inventario
+skl_inventory_management_desc|Aumenta la capacidad del inventario en +6 por cada nivel de habilidad. (Habilidad de liderazgo)
+skl_spotting|Otear
+skl_spotting_desc|El alcance de vista de la hueste aumenta en un 10%% por nivel de habilidad. (Habilidad de hueste)
+skl_pathfinding|Explorar
+skl_pathfinding_desc|La velocidad en el mapa de la hueste aumenta un 3%% por nivel de habilidad. (Habilidad de hueste)
+skl_tactics|Táctica
+skl_tactics_desc|Cada dos niveles de esta habilidad aumenta en 1 la ventaja de inicio en batalla. (Habilidad de hueste)
+skl_tracking|Rastreo
+skl_tracking_desc|Cada rastreo aporta más información.(Habilidad de hueste)
+skl_trainer|Instruir
+skl_trainer_desc|Todos los días, cada héroe que cuente con esta habilidad otorga experiencia al resto de miembros de la comitiva cuyo nivel sea inferior al suyo. La experiencia adquirida progresa de este modo: {0,4,10,16,23,30}. (Habilidad personal)
+skl_reserved_5|Habilidad reservada 5
+skl_reserved_5_desc|Esta es una habilidad reservada.
+skl_reserved_6|Habilidad reservada 6
+skl_reserved_6_desc|Esta es una habilidad reservada.
+skl_reserved_7|Habilidad reservada 7
+skl_reserved_7_desc|Esta es una habilidad reservada.
+skl_reserved_8|Habilidad reservada 8
+skl_reserved_8_desc|Esta es una habilidad reservada.
+skl_looting|Saquear
+skl_looting_desc|Esta habilidad aumenta la cantidad de botín obtenido en un 10%% por nivel.(Habilidad de hueste)
+skl_horse_archery|Tiro con arco a caballo.
+skl_horse_archery_desc|Reduce el daño y la penalización a la precisión de los proyectiles y del tiro con arco a caballo. (Habilidad personal)
+skl_riding|Cabalgar
+skl_riding_desc|Permite montar a caballo en niveles de dificultad más altos y aumenta la velocidad de galope y la maniobra. Con una habilidad de 4 o más también puedes llamar a tu caballo en la batalla, mediante la tecla “H”. (Habilidad personal)
+skl_athletics|Atletismo
+skl_athletics_desc|Aumenta la velocidad en carrera (Habilidad personal)
+skl_shield|Escudo
+skl_shield_desc|Reduce el daño a los escudos (un 8%% por nivel de habilidad) y mejora la velocidad del escudo y la cobertura. (Habilidad personal)
+skl_weapon_master|Maestría en armas
+skl_weapon_master_desc|Hace que sea más fácil de aprender competencias de armas, aumenta los límites de la habilidad y mejora la velocidad del escudo y la cobertura. El límite progresa de este modo: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Habilidad personal)
+skl_maintenance|Mantenimiento armas
+skl_maintenance_desc|El mantenimiento adecuado del equipo disminuirá la posibilidad de que se rompa en la batalla. Cada punto de esta habilidad reduce la probabilidad de rotura en un 7%%. (Habilidad de hueste)
+skl_reserved_10|Habilidad reservada 10
+skl_reserved_10_desc|Esta es una habilidad reservada.
+skl_reserved_11|Habilidad reservada 11
+skl_reserved_11_desc|Esta es una habilidad reservada.
+skl_reserved_12|Habilidad reservada 12
+skl_reserved_12_desc|Esta es una habilidad reservada.
+skl_reserved_13|Habilidad reservada 13
+skl_reserved_13_desc|Esta es una habilidad reservada.
+skl_power_draw|Potencia de tensado
+skl_power_draw_desc|Permite que el personaje utilice arcos más potentes. Cada punto de esta habilidad (hasta cuatro más la potencia de tensado requerida por el arco) aumenta el daño del arco en un 14 %%. (Habilidad personal)
+skl_power_throw|Potencia de lanzamiento
+skl_power_throw_desc|Cada punto de esta habilidad aumenta el daño en armas arrojadizas en un 10%%. (Habilidad personal)
+skl_power_strike|Potencia de golpe
+skl_power_strike_desc|Cada punto de esta habilidad aumenta el daño en combate en un 8%%. (Habilidad personal)
+skl_ironflesh|Piel de hierro
+skl_ironflesh_desc|Cada punto de esta habilidad aumenta tus puntos de golpe en +2. (Habilidad personal)
+skl_navigation|Navegación
+skl_navigation_desc|La velocidad marítima en el mapa de la hueste aumenta un 5%% por nivel de habilidad. (Habilidad de hueste)
+skl_sea_king|Lobo de mar
+skl_sea_king_desc|Cada punto aumenta el número máximo de barcos que puedes comandar. (Habilidad de liderazgo)
+skl_reserved_16|Habilidad reservada 16
+skl_reserved_16_desc|Esta es una habilidad reservada.
+skl_reserved_17|Habilidad reservada 17
+skl_reserved_17_desc|Esta es una habilidad reservada.
+skl_reserved_18|Habilidad reservada 18
+skl_reserved_18_desc|Esta es una habilidad reservada.

@@ -1,0 +1,1914 @@
+trp_multiplayer_profile_troop_male|Çoklu oyuncu profili erkek grubu
+trp_multiplayer_profile_troop_male_pl|Çoklu oyuncu profili erkek grubu
+trp_multiplayer_profile_troop_female|Çoklu oyuncu profili kadın grubu
+trp_multiplayer_profile_troop_female_pl|Çoklu oyuncu profili kadın grubu
+trp_temp_troop|Geçici Birlik
+trp_temp_troop_pl|Geçici Birlik
+trp_find_item_cheat|Eşya hilesi bul
+trp_find_item_cheat_pl|Eşya hilesi bul
+trp_random_town_sequence|Rastgele Kasaba Sırası
+trp_random_town_sequence_pl|Rastgele Kasaba Sırası
+trp_tournament_participants|Turnuva Katılımcıları
+trp_tournament_participants_pl|Turnuva Katılımcıları
+trp_tutorial_maceman|Gürzü
+trp_tutorial_maceman_pl|Gürzüler
+trp_tutorial_archer|Okçu
+trp_tutorial_archer_pl|Okçular
+trp_tutorial_swordsman|Kılıçlı
+trp_tutorial_swordsman_pl|Kılıçlılar
+trp_novice_fighter|Acemi Savaşçı
+trp_novice_fighter_pl|Acemi Savaşçılar
+trp_regular_fighter|Savaşçı
+trp_regular_fighter_pl|Gedikli Savaşçılar
+trp_veteran_fighter|Kıdemli Savaşçı
+trp_veteran_fighter_pl|Kıdemli Savaşçılar
+trp_champion_fighter|Usta Savaşçı
+trp_champion_fighter_pl|Usta Savaşçı
+trp_arena_training_fighter_1|Acemi Savaşçı
+trp_arena_training_fighter_1_pl|Acemi Savaşçı
+trp_arena_training_fighter_2|Acemi Savaşçı
+trp_arena_training_fighter_2_pl|Acemi Savaşçı
+trp_arena_training_fighter_3|Gedikli Savaşçı
+trp_arena_training_fighter_3_pl|Gedikli Savaşçı
+trp_arena_training_fighter_4|Gedikli Savaşçı
+trp_arena_training_fighter_4_pl|Gedikli Savaşçı
+trp_arena_training_fighter_5|Gedikli Savaşçı
+trp_arena_training_fighter_5_pl|Gedikli Savaşçı
+trp_arena_training_fighter_6|Gedikli Savaşçı
+trp_arena_training_fighter_6_pl|Kıdemli Savaşçılar
+trp_arena_training_fighter_7|Kıdemli Savaşçı
+trp_arena_training_fighter_7_pl|Kıdemli Savaşçılar
+trp_arena_training_fighter_8|Kıdemli Savaşçı
+trp_arena_training_fighter_8_pl|Kıdemli Savaşçılar
+trp_arena_training_fighter_9|Usta Savaşçı 
+trp_arena_training_fighter_9_pl|Usta Savaşçılar
+trp_arena_training_fighter_10|Usta Savaşçı 
+trp_arena_training_fighter_10_pl|Usta Savaşçılar
+trp_cattle|Sığır
+trp_cattle_pl|Sığırlar
+trp_farmer|Çiftçi
+trp_farmer_pl|Çiftçiler
+trp_cantaber_iuventus|Cantabrian Savaşçısı
+trp_cantaber_iuventus_pl|Cantabrian Akıncıları
+trp_asturias_veteran|Asturian Kıdemlisi
+trp_asturias_veteran_pl|Asturian Kıdemlileri
+trp_gallaecia_warrior|Gallaecian Comes'in Koruması
+trp_gallaecia_warrior_pl|Gallaecian Comes'in Koruması
+trp_townsman|Kasabalı
+trp_townsman_pl|Kasabalılar
+trp_watchman|Gözcü
+trp_watchman_pl|Gözcüler
+trp_mercenary_cavalry|Frank Atlısı
+trp_mercenary_cavalry_pl|Frank Atlıları
+trp_caravan_guard|Mızrakçı
+trp_caravan_guard_pl|Mızrakçılar
+trp_mercenary_swordsman|Kıdemli
+trp_mercenary_swordsman_pl|Kıdemliler
+trp_regular_sailors|Denizci
+trp_regular_sailors_pl|Denizciler
+trp_mercenary_horseman|Aquitanian Avcısı
+trp_mercenary_horseman_pl|Aquitanian Avcıları
+trp_mercenary_leader|Yaşlı Kaptan
+trp_mercenary_leader_pl|Yaşlı Kaptanlar
+trp_hired_blade|Svear Savaşçısı
+trp_hired_blade_pl|Sviar Savaşçıları
+trp_mercenary_crossbowman|Finn Okçusu
+trp_mercenary_crossbowman_pl|Finn Okçuları
+trp_mercenaries_end|mercenaries end
+trp_mercenaries_end_pl|mercenaries end
+trp_norse_slave|Azad Edilmiş Köle (Leysingja)
+trp_norse_slave_pl|Azad edilmiş köleler (Leysingjar)
+trp_norse_bowman|Okçu (Gestr)
+trp_norse_bowman_pl|Okçular (Gestir)
+trp_norse_elitearcher|Savaş Okçusu(Heimthegi)
+trp_norse_elitearcher_pl|Savaş Okçuları (Heimthegar)
+trp_norse_level0_landed|Mülk Sahibi (Bondi)
+trp_norse_level0_landed_pl|Mülk Sahipleri (Boendr)
+trp_norse_level1_landed|Mızrakçı (Drengr)
+trp_norse_level1_landed_pl|Mızrakçılar (Drengir)
+trp_norse_level2_landed|Kıdemli Mızrakçı (Thegn)
+trp_norse_level2_landed_pl|Kıdemli Mızrakçılar(Thegnar)
+trp_norse_level3_landed|Soylu (Hersi)
+trp_norse_level3_landed_pl|Soylular (Hersir)
+trp_norse_level0_companion|Genç Savaşçı (Hirdmann)
+trp_norse_level0_companion_pl|Genç Savaşçılar (Hirdmenn)
+trp_norse_level1_companion|Kıdemli (Rekkr)
+trp_norse_level1_companion_pl|Kıdemli (Rekkar)
+trp_norse_level2_companion|Gardiyan (Huskarl)
+trp_norse_level2_companion_pl|Gardiyanlar (Huskarlar)
+trp_norse_standard_bearer|Sancaktar (Merkismathr)
+trp_norse_standard_bearer_pl|Sancaktarlar (Merkismathr)
+trp_norse_priest|Odin Rahibi (Godi)
+trp_norse_priest_pl|Odin Rahipleri (Godar)
+trp_briton_slave|Serf (Aillt)
+trp_briton_slave_pl|Serfler (Aillts)
+trp_briton_level0_landed|Özgür Adam (Bonheddwr)
+trp_briton_level0_landed_pl|Özgür Adamlar (Bonheddwyr)
+trp_briton_level1_landed|Mızrakçı (Pedyt)
+trp_briton_level1_landed_pl|Mırakçılar (Pedytes)
+trp_briton_level2_landed|Kıdemli Mızrakçı (Gwrda)
+trp_briton_level2_landed_pl|Kıdemli Mızrakçılar (Gwrdas)
+trp_briton_level3_landed|Soylu (Uchelwr)
+trp_briton_level3_landed_pl|Soylular (Uchelwyr)
+trp_briton_level0_companion|Savaşçı (Cadwr)
+trp_briton_level0_companion_pl|Savaşçılar (Cadwyr)
+trp_briton_level1_companion|Usta (Campiwr)
+trp_briton_level1_companion_pl|Ustalar (Campgwr)
+trp_briton_level2_companion|Gardiyan (Teulu)
+trp_briton_level2_companion_pl|Gardiyanlar (Teulus)
+trp_briton_bowman|Avcı (Bweydd)
+trp_briton_bowman_pl|Avcılar (Bweydds)
+trp_briton_marksman|Kıdemli Avcı (Saethydd)
+trp_briton_marksman_pl|Kıdemli Avcılar(Saethydds)
+trp_briton_horseman|Yüksüz Atlı (Marchoc)
+trp_briton_horseman_pl|Yüksüz Atlılar (Marcach)
+trp_briton_standard_bearer|Sancaktar (Gwas Ys Tafell)
+trp_briton_standard_bearer_pl|Sancaktarlar (Gwas Ys Tafell)
+trp_briton_priest|Briton Rahibi
+trp_briton_priest_pl|Briton Rahipleri
+trp_saxon_slave|Saxon Köylü (Gebur)
+trp_saxon_slave_pl|Köylüler(Geburas)
+trp_saxon_bowman|Okçu (Scytta)
+trp_saxon_bowman_pl|Okçular (Scyttena)
+trp_saxon_level0_landed|Mülk Sahibi (Kotsetla)
+trp_saxon_level0_landed_pl|Mülk Sahipleri (Kotsetlas)
+trp_saxon_level1_landed|Mızrakçı (Geoguth)
+trp_saxon_level1_landed_pl|Mızrakçılar (Geoguthas)
+trp_saxon_level2_landed|Kıdemli Mızrakçı (Duguth)
+trp_saxon_level2_landed_pl|Kıdemli Mızrakçılar (Duguthas)
+trp_saxon_level3_landed|Soylu (Thegn)
+trp_saxon_level3_landed_pl|Soylular (Thegns)
+trp_saxon_level0_companion|Genç Savaşçı(Geneata)
+trp_saxon_level0_companion_pl|Yandaşlar (Geneatas)
+trp_saxon_level1_companion|Kıdemli (Gesith)
+trp_saxon_level1_companion_pl|Kıdemliler (Gesithas)
+trp_saxon_level2_companion|Gardiyan (Heorthwerod)
+trp_saxon_level2_companion_pl|Gardiyanlar (Heorthwerodu)
+trp_saxon_horseman|Atlı (Ridwiga)
+trp_saxon_horseman_pl|Atlılar (Ridwigas)
+trp_saxon_standard_bearer|Sancaktar(Tacnberend)
+trp_saxon_standard_bearer_pl|Sancaktarlar (Tacnberends)
+trp_saxon_priest|Saxon Rahibi
+trp_saxon_priest_pl|Saxons Rahipleri
+trp_scotch_peasant|Köylü (Petta)
+trp_scotch_peasant_pl|Köylüler (Pettas)
+trp_scotch_bowman|Okçu (Fuidir)
+trp_scotch_bowman_pl|Okçular (Fuidirs)
+trp_scotch_level0_skirmisher|Kıdemli Okçu (Saiogdear)
+trp_scotch_level0_skirmisher_pl|Kıdemli Okçular (Saiogdears)
+trp_scotch_level1_skirmisher|Elit Okçu (Cruithne)
+trp_scotch_level1_skirmisher_pl|Elit Okçular (Cruithne)
+trp_scotch_horseman|Yüksüz Atlı (Each Raidh)
+trp_scotch_horseman_pl|Yüksüz Atlılar (Each Raidhs)
+trp_scotch_level0_landed|Köylü (Bothach)
+trp_scotch_level0_landed_pl|Köylüler (Bothach)
+trp_scotch_level1_landed|Mızrakçı (Octhingern)
+trp_scotch_level1_landed_pl|Mızrakçılar (Octhingern)
+trp_scotch_level2_landed|Mızrakçı (Diuberr)
+trp_scotch_level2_landed_pl|Mızrakçılar (Diuberrs)
+trp_scotch_level0_companion|Kılıçlı (Creach Sluagh)
+trp_scotch_level0_companion_pl|Kılıçlılar (Creach Sluagh)
+trp_scotch_level1_companion|Kıdemli (Bruide)
+trp_scotch_level1_companion_pl|Kıdemliler (Bruides)
+trp_scotch_level2_companion|Usta (Gaisgidh)
+trp_scotch_level2_companion_pl|Ustalar (Gaisgidhs)
+trp_scotch_knight|Atlı Soylu(Toisech)
+trp_scotch_knight_pl|Atlı Soylular (Toisechs)
+trp_scotch_standard_bearer|Sancaktar (Samhladh)
+trp_scotch_standard_bearer_pl|Sancaktarlar (Samhladh)
+trp_scotch_musician|Pictish Hornman
+trp_scotch_musician_pl|Pictish Hornmen
+trp_scotch_priest|Pikt Rahibi
+trp_scotch_priest_pl|Pikt Rahipleri
+trp_angle_slave|Angle Köylü (Gebur)
+trp_angle_slave_pl|Köylüler (Geburas)
+trp_angle_bowman|Okçu (Scytta)
+trp_angle_bowman_pl|Okçular (Scyttena)
+trp_angle_level0_landed|Mülk Sahibi (Kotsetla)
+trp_angle_level0_landed_pl|Mülk Sahipleri (Kotsetlas)
+trp_angle_level1_landed|Angle Mızrakçı (Geoguth)
+trp_angle_level1_landed_pl|Mızrakçılar (Geoguthas)
+trp_angle_level2_landed|Kıdemli Mızrakçı(Duguth)
+trp_angle_level2_landed_pl|Kıdemli Mızrakçılar (Duguthas)
+trp_angle_level3_landed|Soylu (Thegn)
+trp_angle_level3_landed_pl|Soylular (Thegns)
+trp_angle_level0_companion|Yoldaş (Geneata)
+trp_angle_level0_companion_pl|Yoldaşlar (Geneatas)
+trp_angle_level1_companion|Kıdemli Yoldaş (Gesith)
+trp_angle_level1_companion_pl|Kıdemli Yoldaşlar (Gesithas)
+trp_angle_level2_companion|Gardiyan (Heorthwerod)
+trp_angle_level2_companion_pl|Gardiyanlar (Heorthwerodu)
+trp_angle_horseman|Atlı (Ridwiga)
+trp_angle_horseman_pl|Atlılar (Ridwigas)
+trp_angle_standard_bearer|Sancaktar (Tacnberend)
+trp_angle_standard_bearer_pl|Sancaktarlar (Tacnberends)
+trp_angle_priest|Anglo Rahibi
+trp_angle_priest_pl|Anglo Rahipleri
+trp_irish_slave|Serf (Senchleithe)
+trp_irish_slave_pl|Serfler (Senchleithe)
+trp_irish_bowman|Okçu (Fer Midboth)
+trp_irish_bowman_pl|Okçular (Fer Midboth)
+trp_irish_level0_skirmisher|Kıdemli Okçu (Ceitherne)
+trp_irish_level0_skirmisher_pl|Kıdemli Okçular (Ceitherne)
+trp_irish_level1_skirmisher|Okçu (Fian)
+trp_irish_level1_skirmisher_pl|Okçular (Fianna)
+trp_irish_horseman|Yüksüz Atlı (Marcach)
+trp_irish_horseman_pl|Yüksüz Atlılar (Marcachs)
+trp_irish_level0_landed|İşçi (Bothach)
+trp_irish_level0_landed_pl|Milis (Bothach)
+trp_irish_level1_landed|Mülk Sahibi (Ocaire)
+trp_irish_level1_landed_pl|Mızrakçı (Ocaires)
+trp_irish_level2_landed|Kıdemli (Boaire)
+trp_irish_level2_landed_pl|Kıdemliler (Boaires)
+trp_irish_level3_landed|Soylu (Airig)
+trp_irish_level3_landed_pl|Soylular (Arras)
+trp_irish_level0_companion|Savaşçı (Cliarthaire)
+trp_irish_level0_companion_pl|Savaşçılar (Cliarthairi)
+trp_irish_level1_companion|Usta (Curraidh)
+trp_irish_level1_companion_pl|Ustalar (Curraidhs)
+trp_irish_knight|Gardiyan (Deaisbard)
+trp_irish_knight_pl|Gardiyanlar (Deaisbards)
+trp_irish_standard_bearer|Sancaktar (Meirgeach)
+trp_irish_standard_bearer_pl|Sancaktarlar (Meirgeach)
+trp_irish_priest|Godelic Rahibi
+trp_irish_priest_pl|Godelic Rahipleri
+trp_todos_cuerno|Hornman
+trp_todos_cuerno_pl|Hornmen
+trp_norse_messenger|Ulak (Bodi)
+trp_norse_messenger_pl|Ulaklar (Bodar)
+trp_norse_deserter|Nors Firarisi
+trp_norse_deserter_pl|Nors Firarileri
+trp_norse_prison_guard|Hapishane gardiyanı
+trp_norse_prison_guard_pl|Hapishane gardiyanları
+trp_norse_castle_guard|Kale Muhafızı
+trp_norse_castle_guard_pl|Kale Muhafızları
+trp_frisian_basic|Frisyalı (Fresen)
+trp_frisian_basic_pl|Frisyalılar (Fresena)
+trp_frisian_mid|Frisyalı Savaşçı (Wigand)
+trp_frisian_mid_pl|Frisyalı Savaşçılar (Wiganda)
+trp_frisian_heavy|Frisyalı Kıdemli (Werand)
+trp_frisian_heavy_pl|Frisyalı Kıdemliler (Weranda)
+trp_frisian_cav|Atlı (Hengstmon)
+trp_frisian_cav_pl|Atlılar (Hengstmonnes)
+trp_briton_messenger|Ulak
+trp_briton_messenger_pl|Ulaklar
+trp_briton_deserter|Briton Kaçak
+trp_briton_deserter_pl|Briton Kaçaklar
+trp_briton_prison_guard|Hapishane Muhafızı
+trp_briton_prison_guard_pl|Hapishane Muhafızları
+trp_briton_castle_guard|Kale Muhafızı
+trp_briton_castle_guard_pl|Kale Muhafızları
+trp_saxon_messenger|Ulak (Horsweala)
+trp_saxon_messenger_pl|Ulaklar (Horswealas)
+trp_saxon_deserter|Sakson Kaçak
+trp_saxon_deserter_pl|Sakson Kaçaklar
+trp_saxon_prison_guard|Hapishane Muhafızı
+trp_saxon_prison_guard_pl|Hapishane Muhafızları
+trp_saxon_castle_guard|Kale Muhafızı
+trp_saxon_castle_guard_pl|Kale Muhafızları
+trp_scotch_messenger|Ulak
+trp_scotch_messenger_pl|Ulaklar
+trp_scotch_deserter|Pikt Kaçak
+trp_scotch_deserter_pl|Pikt Kaçaklar
+trp_scotch_prison_guard|Hapishane Muhafızı
+trp_scotch_prison_guard_pl|Hapishane Muhafızları
+trp_scotch_castle_guard|Kale Muhafızı
+trp_scotch_castle_guard_pl|Kale Muhafızları
+trp_angle_messenger|Ulak (Horsweala)
+trp_angle_messenger_pl|Ulaklar (Horswealas)
+trp_angle_deserter|Anglo Kaçak
+trp_angle_deserter_pl|Anglo Kaçaklar
+trp_angle_prison_guard|Hapishane Muhafızı
+trp_angle_prison_guard_pl|Hapishane Muhafızları
+trp_angle_castle_guard|Kale Muhafızı
+trp_angle_castle_guard_pl|Kale Muhafızları
+trp_irish_messenger|Ulak
+trp_irish_messenger_pl|Ulaklar
+trp_irish_deserter|Goidelic Kaçak
+trp_irish_deserter_pl|Goidelic Kaçaklar
+trp_irish_prison_guard|Hapishane Muhafızı
+trp_irish_prison_guard_pl|Hapishane Muhafızları
+trp_irish_castle_guard|Kale Muhafızı
+trp_irish_castle_guard_pl|Kale Muhafızları
+trp_looter|Maganda
+trp_looter_pl|Magandalar
+trp_bandit|Haydut
+trp_bandit_pl|Haydutlar
+trp_brigand|Eşkiya
+trp_brigand_pl|Eşkiyalar
+trp_mountain_bandit|Soyguncu
+trp_mountain_bandit_pl|Soyguncular
+trp_forest_bandit|Hatdut
+trp_forest_bandit_pl|Haydutlar
+trp_sea_raider|Yağmacı
+trp_sea_raider_pl|Yağmacılar
+trp_desert_bandit|Haydut
+trp_desert_bandit_pl|Haydutlar
+trp_steppe_bandit|Northmathr Vikingr
+trp_steppe_bandit_pl|Northmenn Vikingarnir
+trp_taiga_bandit|Vikingr
+trp_taiga_bandit_pl|Vikingarnir
+trp_elite_viking|Danish Elit Vikingr
+trp_elite_viking_pl|Danish Elit Vikingarnir
+trp_elite_viking_2|Svear Elit Vikingr
+trp_elite_viking_2_pl|Sviar Elit Vikingarnir
+trp_sea_raider_leader2|Kaptan
+trp_sea_raider_leader2_pl|Kaptanlar
+trp_looter_leader2|Haydut Lideri
+trp_looter_leader2_pl|Haydut Liderleri
+trp_manhunter|Genç Savaşçı
+trp_manhunter_pl|Genç Birlik
+trp_slave_driver|Köle Taciri
+trp_slave_driver_pl|Köle Tacirleri
+trp_slave_hunter|Köle Avcısı
+trp_slave_hunter_pl|Köle Avcıları
+trp_slave_crusher|Kıdemli Köle Avcısı
+trp_slave_crusher_pl|Kıdemli Köle Avcıları
+trp_slaver_chief|Köle Taciri Ustası
+trp_slaver_chief_pl|Köle Taciri Ustaları
+trp_follower_woman|Kamp Kadını
+trp_follower_woman_pl|Kamp Kadınları
+trp_hunter_woman|Kamp Takipçisi
+trp_hunter_woman_pl|Kamp Takipçileri
+trp_fighter_woman|Askerin Eşi
+trp_fighter_woman_pl|Askerlerin Eşleri
+trp_sword_sister|Kamp Savunmacısı
+trp_sword_sister_pl|Kamp Savunmacıları
+trp_refugee|Mülteci
+trp_refugee_pl|Mülteciler
+trp_peasant_woman|Köylü Kadın
+trp_peasant_woman_pl|Köylü Kadınlar
+trp_refugeeromanruins|Mülteci
+trp_refugeeromanruins_pl|Mülteciler
+trp_peasant_womanromanruins|Köylü Kadın
+trp_peasant_womanromanruins_pl|Köylü Kadınlar
+trp_refugeedruid|Mülteci
+trp_refugeedruid_pl|Mülteciler
+trp_peasant_womandruid|Köylü Kadın
+trp_peasant_womandruid_pl|Köylü Kadınlar
+trp_farmerdruid|Çiftçi
+trp_farmerdruid_pl|Çiftçiler
+trp_manhunterdruid|Genç Savaşçı
+trp_manhunterdruid_pl|Genç Birlik
+trp_prisionerdruid|Mahkum
+trp_prisionerdruid_pl|Mahkumlar
+trp_quarry_trabajador|İşçi
+trp_quarry_trabajador_pl|İşçiler
+trp_quarry_capataz|Maden ustası
+trp_quarry_capataz_pl|Maden ustaları
+trp_saltmine_capataz|Tuz ustası
+trp_saltmine_capataz_pl|Tuz ustaları
+trp_lumbercamp_capataz|Kereste Ustası
+trp_lumbercamp_capataz_pl|Kereste Ustaları
+trp_farmstead_boss|Çiftlik Kahyası
+trp_farmstead_boss_pl|Çiftlik Kahyaları
+trp_bandit_lairmerchant|Haydut Lideri
+trp_bandit_lairmerchant_pl|Haydut Lideri
+trp_abad|Başrahip
+trp_abad_pl|Başrahip
+trp_monjes|Rahip
+trp_monjes_pl|Rahip
+trp_caravan_master|Karavan Şefi
+trp_caravan_master_pl|Karavan Şefleri
+trp_kidnapped_girl|Kaçırılan Kız
+trp_kidnapped_girl_pl|Kaçırılan Kızlar
+trp_town_walker_1|Kasabalı erkek
+trp_town_walker_1_pl|Kasabalı erkekler
+trp_town_walker_2|Kasabalı Kadın
+trp_town_walker_2_pl|Kasabalı Kadınlar
+trp_town_walker_3|Kasabalı erkek
+trp_town_walker_3_pl|Kasabalı erkekler
+trp_town_walker_4|Kasabalı Kadın
+trp_town_walker_4_pl|Kasabalı Kadınlar
+trp_town_walker_5|Kasabalı erkek
+trp_town_walker_5_pl|Kasabalı erkekler
+trp_town_walker_6|Kasabalı Kadın
+trp_town_walker_6_pl|Kasabalı Kadınlar
+trp_town_walker_7|Kasabalı erkek
+trp_town_walker_7_pl|Kasabalı erkekler
+trp_town_walker_8|Kasabalı Kadın
+trp_town_walker_8_pl|Kasabalı Kadınlar
+trp_nino_varon|Çocuk
+trp_nino_varon_pl|Çocuklar
+trp_nina_chica|Çocuk
+trp_nina_chica_pl|Çocuklar
+trp_monk_walker|Rahip
+trp_monk_walker_pl|Rahipler
+trp_village_walker_1|Köylü
+trp_village_walker_1_pl|Köylüler
+trp_village_walker_2|Köylü
+trp_village_walker_2_pl|Köylüler
+trp_village_walker_3|Köylü
+trp_village_walker_3_pl|Köylüler
+trp_village_walker_4|Köylü
+trp_village_walker_4_pl|Köylüler
+trp_village_walker_5|Köylü
+trp_village_walker_5_pl|Köylüler
+trp_village_walker_6|Köylü
+trp_village_walker_6_pl|Köylüler
+trp_village_walker_7|Köylü
+trp_village_walker_7_pl|Köylüler
+trp_village_walker_8|Köylü
+trp_village_walker_8_pl|Köylüler
+trp_village_walker_1a|Köylü
+trp_village_walker_1a_pl|Köylüler
+trp_village_walker_3a|Köylü
+trp_village_walker_3a_pl|Köylüler
+trp_village_walker_5a|Köylü
+trp_village_walker_5a_pl|Köylüler
+trp_spy_walker_1|Kasabalı erkek
+trp_spy_walker_1_pl|Kasabalı erkekler
+trp_spy_walker_2|Kasabalı Kadın
+trp_spy_walker_2_pl|Kasabalı Kadınlar
+trp_tournament_master|Turnuva Şefi
+trp_tournament_master_pl|Turnuva Şefleri
+trp_trainer|Talimci
+trp_trainer_pl|Talimci
+trp_constable_hareck|Polis memuru Hareck
+trp_constable_hareck_pl|Polis Memuru Hareck
+trp_ramun_the_slave_trader|Köle Taciri Aethelmaer
+trp_ramun_the_slave_trader_pl|Köle Taciri Aethelmaer
+trp_guide|Ulric
+trp_guide_pl|Ulric
+trp_xerina|Pikt Anchoret
+trp_xerina_pl|Anchoret
+trp_dranton|Briton Niall
+trp_dranton_pl|Niall
+trp_kradus|Sakson Uthred
+trp_kradus_pl|Kradus
+trp_tutorial_trainer|Talim alanı şefi
+trp_tutorial_trainer_pl|Talim alanı şefi
+trp_galeas|Balin
+trp_galeas_pl|Balin
+trp_farmer_from_bandit_village|Çiftçi
+trp_farmer_from_bandit_village_pl|Çiftçiler
+trp_trainer_2|Harald
+trp_trainer_2_pl|Talimci
+trp_trainer_1|Kıdemli
+trp_trainer_1_pl|Kıdemli
+trp_trainer_3|Talimci
+trp_trainer_3_pl|Talimci
+trp_trainer_4|Talimci
+trp_trainer_4_pl|Talimci
+trp_trainer_5|Talimci
+trp_trainer_5_pl|Talimci
+trp_ransom_broker_1|Köle Taciri
+trp_ransom_broker_1_pl|Köle Taciri
+trp_ransom_broker_2|Köle Taciri
+trp_ransom_broker_2_pl|Köle Taciri
+trp_ransom_broker_3|Köle Taciri
+trp_ransom_broker_3_pl|Köle Taciri
+trp_ransom_broker_4|Köle Taciri
+trp_ransom_broker_4_pl|Köle Taciri
+trp_ransom_broker_5|Köle Taciri
+trp_ransom_broker_5_pl|Köle Taciri
+trp_ransom_broker_6|Köle Taciri
+trp_ransom_broker_6_pl|Köle Taciri
+trp_ransom_broker_7|Köle Taciri
+trp_ransom_broker_7_pl|Köle Taciri
+trp_ransom_broker_8|Köle Taciri
+trp_ransom_broker_8_pl|Köle Taciri
+trp_ransom_broker_9|Köle Taciri
+trp_ransom_broker_9_pl|Köle Taciri
+trp_ransom_broker_10|Köle Taciri
+trp_ransom_broker_10_pl|Köle Taciri
+trp_ransom_broker_20|Köle Taciri
+trp_ransom_broker_20_pl|Köle Taciri
+trp_tavern_traveler_1|Gezgin
+trp_tavern_traveler_1_pl|Gezgin
+trp_tavern_traveler_2|Gezgin
+trp_tavern_traveler_2_pl|Gezgin
+trp_tavern_traveler_3|Gezgin
+trp_tavern_traveler_3_pl|Gezgin
+trp_tavern_traveler_4|Gezgin
+trp_tavern_traveler_4_pl|Gezgin
+trp_tavern_traveler_5|Gezgin
+trp_tavern_traveler_5_pl|Gezgin
+trp_tavern_traveler_6|Gezgin
+trp_tavern_traveler_6_pl|Gezgin
+trp_tavern_traveler_7|Gezgin
+trp_tavern_traveler_7_pl|Gezgin
+trp_tavern_traveler_8|Gezgin
+trp_tavern_traveler_8_pl|Gezgin
+trp_tavern_traveler_9|Gezgin
+trp_tavern_traveler_9_pl|Gezgin
+trp_tavern_traveler_10|Gezgin
+trp_tavern_traveler_10_pl|Gezgin
+trp_tavern_bookseller_1|Kitap Tüccarı
+trp_tavern_bookseller_1_pl|Kitap Tüccarı
+trp_tavern_bookseller_2|Kitap Tüccarı
+trp_tavern_bookseller_2_pl|Kitap Tüccarı
+trp_tavern_minstrel_1|Gezgin Ozan
+trp_tavern_minstrel_1_pl|Şair
+trp_tavern_minstrel_2|Gezgin ozan
+trp_tavern_minstrel_2_pl|Şair
+trp_tavern_minstrel_3|Gezgin Ozan
+trp_tavern_minstrel_3_pl|Şair
+trp_tavern_minstrel_4|Gezgin Ozan
+trp_tavern_minstrel_4_pl|Şair
+trp_tavern_minstrel_5|Gezgin Ozan
+trp_tavern_minstrel_5_pl|Şair
+trp_quastuosa_1|Mutlu Dul
+trp_quastuosa_1_pl|quastuosa
+trp_quastuosa_2|Mutlu Dul
+trp_quastuosa_2_pl|quastuosa
+trp_quastuosa_3|Mutlu Dul
+trp_quastuosa_3_pl|quastuosa
+trp_quastuosa_4|Mutlu Dul
+trp_quastuosa_4_pl|quastuosa
+trp_quastuosa_5|Mutlu Dul
+trp_quastuosa_5_pl|quastuosa
+trp_quastuosa_6|Mutlu Dul
+trp_quastuosa_6_pl|quastuosa
+trp_quastuosa_7|Mutlu Dul
+trp_quastuosa_7_pl|quastuosa
+trp_quastuosa_end|Mutlu Dul
+trp_quastuosa_end_pl|quastuosa
+trp_bardo_1|Kraliyet Ozanı
+trp_bardo_1_pl|Ozan
+trp_bardo_2|Kraliyet Ozanı
+trp_bardo_2_pl|Ozan
+trp_bardo_3|Kraliyet Ozanı
+trp_bardo_3_pl|Ozan
+trp_bardo_4|Kraliyet Ozanı
+trp_bardo_4_pl|Ozan
+trp_bardo_5|Kraliyet Ozanı
+trp_bardo_5_pl|Ozan
+trp_bardo_6|Kraliyet Ozanı
+trp_bardo_6_pl|Ozan
+trp_bardo_7|Kraliyet Ozanı
+trp_bardo_7_pl|Ozan
+trp_bardo_8|Kraliyet Ozanı
+trp_bardo_8_pl|Ozan
+trp_bardo_9|Kraliyet Ozanı
+trp_bardo_9_pl|Ozan
+trp_bardo_10|Kraliyet Ozanı
+trp_bardo_10_pl|Ozan
+trp_bardo_11|Kraliyet Ozanı
+trp_bardo_11_pl|Ozan
+trp_bardo_12|Kraliyet Ozanı
+trp_bardo_12_pl|Ozan
+trp_bardo_13|Kraliyet Ozanı
+trp_bardo_13_pl|Ozan
+trp_bardo_14|Kraliyet Ozanı
+trp_bardo_14_pl|Ozan
+trp_bardo_15|Kraliyet Ozanı
+trp_bardo_15_pl|Ozan
+trp_bardo_16|Kraliyet Ozanı
+trp_bardo_16_pl|Ozan
+trp_bardo_17|Kraliyet Ozanı
+trp_bardo_17_pl|Ozan
+trp_bardo_18|Kraliyet Ozanı
+trp_bardo_18_pl|Ozan
+trp_bardo_19|Kraliyet Ozanı
+trp_bardo_19_pl|Ozan
+trp_bardo_20|Kraliyet Ozanı
+trp_bardo_20_pl|Ozan
+trp_bardo_21|Kraliyet Ozanı
+trp_bardo_21_pl|Ozan
+trp_sacerdote_1|Hristiyan Piskopos
+trp_sacerdote_1_pl|Hristiyan Piskopos
+trp_sacerdote_2|Piskopos Ealhheard
+trp_sacerdote_2_pl|papaz
+trp_paganop_1|Odin Din Adamı 
+trp_paganop_1_pl|Odin Din Adamı
+trp_priest_end|Priest both religions end
+trp_priest_end_pl|papaz
+trp_especiales_1|Hermit Derfel Gadarn
+trp_especiales_1_pl|especiales
+trp_kingdom_heroes_including_player_begin|kingdom heroes including player begin
+trp_kingdom_heroes_including_player_begin_pl|kingdom heroes including player begin
+trp_npc1|Caio
+trp_npc1_pl|Caio
+trp_npc2|Egil
+trp_npc2_pl|Egil
+trp_npc3|Brunhild
+trp_npc3_pl|Brunhild
+trp_npc4|Donnchadh
+trp_npc4_pl|Donnchadh
+trp_npc5|Morgant
+trp_npc5_pl|Morgant
+trp_npc6|Bodo
+trp_npc6_pl|Bodo
+trp_npc7|Dwywei
+trp_npc7_pl|Dwywei
+trp_npc8|Reginhard
+trp_npc8_pl|Reginhard
+trp_npc9|Clovis
+trp_npc9_pl|Clovis
+trp_npc10|Ceawlin
+trp_npc10_pl|Ceawlin
+trp_npc11|Solveig
+trp_npc11_pl|Solveig
+trp_npc12|Asbjorn
+trp_npc12_pl|Asbjorn
+trp_npc13|Helgi
+trp_npc13_pl|Helgi
+trp_npc14|Ailchu
+trp_npc14_pl|Ailchu
+trp_npc15|Agathinos
+trp_npc15_pl|Agathinos
+trp_npc16|Beda
+trp_npc16_pl|Beda
+trp_kingdom_1_lord|Konungr Horik Gottfredsson
+trp_kingdom_1_lord_pl|Krallık 1 Lordu
+trp_kingdom_2_lord|Konungr Harald Halfdanarson
+trp_kingdom_2_lord_pl|Krallık 2 Lordu
+trp_kingdom_3_lord|Konungr Gudrod Ragnarson
+trp_kingdom_3_lord_pl|Krallık 3 Lordu
+trp_kingdom_4_lord|Konungr Hrorek Hemmingsson
+trp_kingdom_4_lord_pl|Krallık 4 Lordu
+trp_kingdom_5_lord|Brytenwalda Aethelred Aethelwulfing
+trp_kingdom_5_lord_pl|Krallık 5 Lordu
+trp_kingdom_6_lord|Cyning Eadmund Aethelberhting
+trp_kingdom_6_lord_pl|Krallık 6 Lordu
+trp_kingdom_7_lord|Cyning Brugred Beorhtwulfing
+trp_kingdom_7_lord_pl|Krallık 7 Lordu
+trp_kingdom_8_lord|Jarl Halfdan Ragnarsson
+trp_kingdom_8_lord_pl|Krallık 8 Lordu
+trp_kingdom_9_lord|Ri Rhodri map Merfyn
+trp_kingdom_9_lord_pl|Krallık 9 Lordu
+trp_kingdom_10_lord|Ri Elisedd map Tewdr
+trp_kingdom_10_lord_pl|Krallık 10 Lordu
+trp_kingdom_11_lord|Ri Arthgal map Dumnagual
+trp_kingdom_11_lord_pl|Krallık 11 Lordu
+trp_kingdom_12_lord|Ri Dunyart map Eferferdyn
+trp_kingdom_12_lord_pl|Krallık 12 Lordu
+trp_kingdom_13_lord|Ri Hywel map Rhys
+trp_kingdom_13_lord_pl|Krallık 13 Lordu
+trp_kingdom_14_lord|Ruire Lethlobar mac Loingsig
+trp_kingdom_14_lord_pl|Krallık 14 Lordu
+trp_kingdom_15_lord|Ruire Dunlaing mac Muiredaig
+trp_kingdom_15_lord_pl|Krallık 15 Lordu
+trp_kingdom_16_lord|Ruire Cenn Faelad hua Mugthigirn
+trp_kingdom_16_lord_pl|Krallık 16 Lordu
+trp_kingdom_17_lord|Ruire Mugron mac Maele Cothaid
+trp_kingdom_17_lord_pl|Krallık 17 Lordu
+trp_kingdom_18_lord|Ard Ruire Aed mac Niall
+trp_kingdom_18_lord_pl|Krallık 18 Lordu
+trp_kingdom_19_lord|Ruire Donnchad mac Eochocai
+trp_kingdom_19_lord_pl|Krallık 19 Lordu
+trp_kingdom_20_lord|Ruire Causantin mac Cinaeda
+trp_kingdom_20_lord_pl|Krallık 20 Lordu
+trp_kingdom_21_lord|Ruire Cerball mac Dunlainge
+trp_kingdom_21_lord_pl|Krallık 21 Lordu
+trp_knight_1_1|Yarl Sigifrid Angantyrsson
+trp_knight_1_1_pl|Yarl Sigifrid Angantyrsson
+trp_knight_1_2|Yarl Bagsecg
+trp_knight_1_2_pl|Aetheling Bagsecg
+trp_knight_1_3|Yarl Halfdan Angantyrsson
+trp_knight_1_3_pl|Jarl Halfdan Angantyrsson
+trp_knight_1_4|Hersir Guthrum
+trp_knight_1_4_pl|Hersir Guthrum
+trp_knight_1_5|Yarl Sigurd Ragnarsson
+trp_knight_1_5_pl|Hersir Sigurd Ragnarsson
+trp_knight_1_6|Hersir Helgi Hvassi
+trp_knight_1_6_pl|Hersir Helgi Hvassi
+trp_knight_2_1|Yarl Guthorm Haraldrsson
+trp_knight_2_1_pl|Yarl Guthorm Haraldrsson
+trp_knight_2_2|Konungr Eirik
+trp_knight_2_2_pl|Yarl Eirik Konungr
+trp_knight_2_3|Yarl Kjotvi Hinn Audgi
+trp_knight_2_3_pl|Yarl Kjotvi Hinn Audgi
+trp_knight_2_4|Hersir Ketill Bjornsson
+trp_knight_2_4_pl|Hersir Ketill Bjornsson
+trp_knight_2_5|Hersir Bjorn Ketilsson
+trp_knight_2_5_pl|Hersir Bjorn Ketilsson
+trp_knight_3_1|Yarl Olaf Gudrodrsson
+trp_knight_3_1_pl|Yarl Olaf Gudrodrsson
+trp_knight_3_2|Yarl Ivar Gudrodrsson
+trp_knight_3_2_pl|Yarl Ivarr Gudrodrsson
+trp_knight_3_3|Yarl Asl Gudrodrsson
+trp_knight_3_3_pl|Yarl Asl Gudrodrsson
+trp_knight_3_4|Yarl Orkan
+trp_knight_3_4_pl|Yarl Orkan
+trp_knight_3_5|Yarl Helgi Ketilsson
+trp_knight_3_5_pl|Yarl Helgi Ketilsson
+trp_knight_3_6|Hersir Eystein Olafsson
+trp_knight_3_6_pl|Hersir Eystein Olafsson
+trp_knight_3_7|Hersir Sygtrygg Ivarrsson
+trp_knight_3_7_pl|Hersir Sygtrygg Ivarrsson
+trp_knight_3_8|Hersir Thorstein Olafsson
+trp_knight_3_8_pl|Hersir Thorstein Olafsson
+trp_knight_4_1|Yarl Harald Hemmingsson
+trp_knight_4_1_pl|Yarl Haraldr Hemmingsson
+trp_knight_4_2|Yarl Gotrik Haraldsson
+trp_knight_4_2_pl|Yarl Gotrik Haraldsson
+trp_knight_4_3|Yarl Hrodulf Haraldsson
+trp_knight_4_3_pl|Yarl Hrodulfr Haraldsson
+trp_knight_5_1|Aetheling Aelfred Aethelwulfing
+trp_knight_5_1_pl|Aetheling Aelfred Aethelwulfing
+trp_knight_5_2|Ealdorman Aethelmod
+trp_knight_5_2_pl|Ealdorman Aethelmod
+trp_knight_5_3|Ealdorman Wulfhere
+trp_knight_5_3_pl|Ealdorman Wulfhere
+trp_knight_5_4|Ealdorman Aelfstan
+trp_knight_5_4_pl|Ealdorman Aelfstan
+trp_knight_5_5|Ealdorman Cuthred
+trp_knight_5_5_pl|Ealdorman Cuthred
+trp_knight_5_6|Ealdorman Bucca
+trp_knight_5_6_pl|Ealdorman Bucca
+trp_knight_5_7|Ealdorman Wulfred
+trp_knight_5_7_pl|Ealdorman Wulfred
+trp_knight_5_8|Ealdorman Wigstan
+trp_knight_5_8_pl|Ealdorman Wigstan
+trp_knight_5_9|Ealdorman Sigeberht Sigewulfing
+trp_knight_5_9_pl|Ealdorman Sigeberht Sigewulfing
+trp_knight_5_10|Ealdorman Garulf
+trp_knight_5_10_pl|Ealdorman Garulf
+trp_knight_5_11|Dryhten Drihtwald
+trp_knight_5_11_pl|Dryhten Drihtwald
+trp_knight_6_1|Ealdorman Oswald
+trp_knight_6_1_pl|Ealdorman Oswald
+trp_knight_6_2|Ealdorman Aethelred
+trp_knight_6_2_pl|Ealdorman Aethelred
+trp_knight_6_3|Ealdorman Ealhhere
+trp_knight_6_3_pl|Ealdorman Ealhhere
+trp_knight_6_4|Eanfrith
+trp_knight_6_4_pl|Eanfrith
+trp_knight_6_5|Ecgwald
+trp_knight_6_5_pl|Ecgwald
+trp_knight_7_1|Ealdorman Ceowulf Ceowulfing
+trp_knight_7_1_pl|Ealdorman Ceowulf Ceowulfing
+trp_knight_7_2|Ealdorman Hereberht
+trp_knight_7_2_pl|Ealdorman Hereberht
+trp_knight_7_3|Ealdorman Aethelred
+trp_knight_7_3_pl|Ealdorman Aethelred
+trp_knight_7_4|Ealdorman Aethelred Mucel
+trp_knight_7_4_pl|Ealdorman Aethelred Mucel
+trp_knight_7_5|Ealdorman Aelfgar
+trp_knight_7_5_pl|Ealdorman Aelfgar
+trp_knight_7_6|Ealdorman Aethulf
+trp_knight_7_6_pl|Ealdorman Aethulf
+trp_knight_7_7|Ealdorman Beornoth
+trp_knight_7_7_pl|Ealdorman Beornoth
+trp_knight_7_8|Ealdorman Sigberth
+trp_knight_7_8_pl|Ealdorman Sigberth
+trp_knight_7_9|Dryhten Aethelwulf Aethelreding
+trp_knight_7_9_pl|Dryhten Aethelwulf Aethelreding
+trp_knight_8_1|Cyning Egbert
+trp_knight_8_1_pl|Cyning Egbert
+trp_knight_8_2|Yarl Rathbarth Ragnarsson
+trp_knight_8_2_pl|Hersir Rathbarth Ragnarsson
+trp_knight_8_3|Ealdorman Ealdred
+trp_knight_8_3_pl|Ealdorman Ealdred
+trp_knight_8_4|Yarl Sidroc The Elder
+trp_knight_8_4_pl|Yarl Sidrac
+trp_knight_8_5|Ealdorman Ricsige
+trp_knight_8_5_pl|Ealdorman Ricsige
+trp_knight_8_6|Ealdorman Egbert The Second
+trp_knight_8_6_pl|Ealdorman Egbert
+trp_knight_8_7|Yarl Bjorn Ragnarsson
+trp_knight_8_7_pl|Yarl Bjorn Jarnsida
+trp_knight_8_8|Hersir Guthred Knutr
+trp_knight_8_8_pl|Guthred Knutr
+trp_knight_8_9|Hersir Rognvald
+trp_knight_8_9_pl|Hersir Regnald
+trp_knight_8_10|Hersir Harald
+trp_knight_8_10_pl|Yarl Harald
+trp_knight_8_11|Hersir Sidroc The Young
+trp_knight_8_11_pl|Yarl Sidrac
+trp_knight_8_12|Hersir Fraena
+trp_knight_8_12_pl|Yarl Fraena
+trp_knight_8_13|Yarl Ivarr Inn Beinlaussi
+trp_knight_8_13_pl|Hersir Ivarr Inn Beinlaussi
+trp_knight_8_14|Yarl Hubbi Ragnarsson
+trp_knight_8_14_pl|Hersir Hubbi Ragnarsson
+trp_knight_8_15|Yarl Bagsecg
+trp_knight_8_15_pl|Yarl Bagsecg
+trp_knight_9_1|Mael Anarawd map Rhodri
+trp_knight_9_1_pl|Mael Anarawd map Rhodri
+trp_knight_9_2|Mael Cadell map Rhodri
+trp_knight_9_2_pl|Mael Cadell map Rhodri
+trp_knight_9_3|Mael Merfyn map Rhodri
+trp_knight_9_3_pl|Mael Merfyn map Rhodri
+trp_knight_9_4|Ri Gwgon map Meurig 
+trp_knight_9_4_pl|Ri Gwgon map Meurig
+trp_knight_9_5|Guledic Gwriad map Merfyn
+trp_knight_9_5_pl|Guledic Gwriad map Merfyn
+trp_knight_9_6|Mael Tudwal map Rhodri
+trp_knight_9_6_pl|Mael Tudwal map Rhodri
+trp_knight_9_7|Guledic Hyfaidd map Bleddri
+trp_knight_9_7_pl|Guledic Hyfaidd map Bleddri
+trp_knight_9_8|Tiern Owain map Hywel
+trp_knight_9_8_pl|Tiern Owain map Hywel
+trp_knight_9_9|Tiern Llofan map Cilmin Broetu
+trp_knight_9_9_pl|Tiern Llofan map Cilmin Broetu
+trp_knight_10_1|Mael Guledic
+trp_knight_10_1_pl|Mael Guledic
+trp_knight_11_1|Mael Rhun map Arthgal
+trp_knight_11_1_pl|Mael Rhun map Arthgal
+trp_knight_11_2|Mael Echou map Rhun
+trp_knight_11_2_pl|Mael Echou map Rhun
+trp_knight_11_3|Guledic Dyfnwal map Rhun
+trp_knight_11_3_pl|Guledic Dyfnwal map Rhun
+trp_knight_11_4|Guledic Giric Map Rath
+trp_knight_11_4_pl|Guledic Giric Map Rath
+trp_knight_11_5|Cynon map Cyndrwyn
+trp_knight_11_5_pl|Cynon ap Cyndrwyn
+trp_knight_11_6|Gwion map Cyndrwyn
+trp_knight_11_6_pl|Gwion ap Cyndrwyn
+trp_knight_11_7|Madoc map Cadell
+trp_knight_11_7_pl|Madoc map Cadell
+trp_knight_11_8|Caradoc map Riwall
+trp_knight_11_8_pl|Caradoc map Riwall
+trp_knight_12_1|Guledic Eliud map Eferferdyn
+trp_knight_12_1_pl|Guledic Eliud map Eferferdyn
+trp_knight_12_2|Guledic Alanorus map Eliud
+trp_knight_12_2_pl|Guledic Alanorus map Eliud
+trp_knight_12_3|Mael Ricatus map Dunyart
+trp_knight_12_3_pl|Mael Ricatus map Dunyart
+trp_knight_13_1|Guledic Meurig map Arthfael
+trp_knight_13_1_pl|Guledic Meurig map Arthfael
+trp_knight_13_2|Mael Owain map Hywel
+trp_knight_13_2_pl|Mael Owain map Hywel
+trp_knight_13_3|Tiern Brochwael map Meurig
+trp_knight_13_3_pl|Tiern Brochwael map Meurig
+trp_knight_14_1|Mael Cathalan mac Indrechtaig
+trp_knight_14_1_pl|Ruire Cathalan mac Indrechtaig
+trp_knight_14_2|Mael Conallan mac Maele Duin
+trp_knight_14_2_pl|Ruire Conallan mac Maele Duin
+trp_knight_14_3|Ard Mocheirge mac Indrechtaig
+trp_knight_14_3_pl|Ard Mocheirge mac Indrechtaig
+trp_knight_14_4|Tiarna Ainbith mac Aedo
+trp_knight_14_4_pl|Tiarna Ainbith mac Aedo
+trp_knight_14_5|Tiarna Cummascach mac Cathalan
+trp_knight_14_5_pl|Tiarna Cummascach mac Cathalan
+trp_knight_15_1|Ard Tiarna Ailill mac Dunlainge
+trp_knight_15_1_pl|Ard Tiarna Ailill mac Dunlainge
+trp_knight_15_2|Ard Tiarna Cairpre mac Dunlainge
+trp_knight_15_2_pl|Ard Tiarna Cairpre mac Dunlainge
+trp_knight_15_3|Tiarna Muiredach mac Brain
+trp_knight_15_3_pl|Tiarna Muiredach mac Brain
+trp_knight_15_4|Tiarna Domnall mac Muirecain
+trp_knight_15_4_pl|Tiarna Domnall mac Muirecain
+trp_knight_15_5|Tiarna Cerball mac Muirecain
+trp_knight_15_5_pl|Tiarna Cerball mac Muirecain
+trp_knight_15_6|Tiarna Augaire mac Ailella
+trp_knight_15_6_pl|Tiarna Augaire mac Ailella
+trp_knight_16_1|Ard Tiarna Dunchad mac  Dub da Bairenn
+trp_knight_16_1_pl|Ard Tiarna Dunchad mac  Dub da Bairenn
+trp_knight_16_2|Ard Tiarna Dub Lachtnai mac Mael Gualu
+trp_knight_16_2_pl|Ard Tiarna Dub Lachtnai mac Mael Gualu
+trp_knight_16_3|Tiarna Foghartach mac Suibhne
+trp_knight_16_3_pl|Tiarna Foghartach mac Suibhne
+trp_knight_16_4|Tiarna Longbortan mac Finnachta
+trp_knight_16_4_pl|Tiarna Longbortan mac Finnachta
+trp_knight_16_5|Tiarna Reachtabhra macBran Finn
+trp_knight_16_5_pl|Tiarna Reachtabhra macBran Finn
+trp_knight_16_6|Tiarna Colman mac Cionaith
+trp_knight_16_6_pl|Tiarna Colman mac Cionaith
+trp_knight_17_1|Mael Conchobar mac Taidg Mor
+trp_knight_17_1_pl|Ruire Conchobar mac Taidg Mor
+trp_knight_17_2|Tiarna Aedh mac Conchobar
+trp_knight_17_2_pl|Tiarna Aedh mac Conchobar
+trp_knight_17_3|Tiarna Tadg mac Conchobar
+trp_knight_17_3_pl|Tiarna Tadg mac Conchobar
+trp_knight_17_4|Tiarna Finshnechta mac Maele Corcrai
+trp_knight_17_4_pl|Tiarna Finshnechta mac Maele Corcrai
+trp_knight_17_5|Tiarna Dobhailen mac Gormghus
+trp_knight_17_5_pl|Tiarna Dobhailen mac Gormghus
+trp_knight_17_6|Tiarna Cathal mac Conchobar
+trp_knight_17_6_pl|Tiarna Cathal mac Conchobar
+trp_knight_18_1|Mael Domnall mac Aeda
+trp_knight_18_1_pl|Mael Domnall mac Aeda
+trp_knight_18_2|Mael Dabaill
+trp_knight_18_2_pl|Mael Dabaill
+trp_knight_18_3|Mael Dub mac Aeda
+trp_knight_18_3_pl|Mael Dub mac Aeda
+trp_knight_18_4|Ruire Congalach mac Finnachta
+trp_knight_18_4_pl|Ruire Congalach mac Finnachta
+trp_knight_18_5|Tiarna Cummascach mac Muiredaig
+trp_knight_18_5_pl|Tiarna Cummascach mac Muiredaig
+trp_knight_18_6|Mael Padraig mac Mael Curarada
+trp_knight_18_6_pl|Mael Padraig mac Mael Curarada
+trp_knight_18_7|Tiarna Laidhgnen mac Donnagain
+trp_knight_18_7_pl|Tiarna Laidhgnen mac Donnagain
+trp_knight_19_1|Mael Sechnaill mac Niall
+trp_knight_19_1_pl|Mael Sechnaill mac Niall
+trp_knight_19_2|Mael Diarmait mac Etersceili
+trp_knight_19_2_pl|Mael Diarmait mac Etersceili
+trp_knight_19_3|Mael Flann Sinna mac Sechnaill
+trp_knight_19_3_pl|Flann Sinna mac Sechnaill
+trp_knight_19_4|Tiarna Flann mac Conaing
+trp_knight_19_4_pl|Tiarna Flann mac Conaing
+trp_knight_19_5|Conall mac Echach
+trp_knight_19_5_pl|Conall Crandomna mac Echach
+trp_knight_20_1|Mael Domnall dasachtach mac Causantin
+trp_knight_20_1_pl|Mael Domnall dasachtach mac Causantin
+trp_knight_20_2|Ard Tiarna Aed mac Cinaeda 
+trp_knight_20_2_pl|Ard Tiarna Aed mac Cinaeda
+trp_knight_20_3|Tiarna Causantin mac Aeda
+trp_knight_20_3_pl|Tiarna Causantin mac Aeda
+trp_knight_20_4|Tiarna Domhall mac Aeda
+trp_knight_20_4_pl|Tiarna Domhall mac Aeda
+trp_knight_20_5|Mael Coluim mac Domnall
+trp_knight_20_5_pl|Mael Coluim mac Domnall
+trp_knight_20_6|Domlech
+trp_knight_20_6_pl|Domlech
+trp_knight_20_7|Entifidach
+trp_knight_20_7_pl|Entifidach
+trp_knight_20_8|Lugthreni
+trp_knight_20_8_pl|Lugthreni
+trp_knight_21_1|Mael Diarmait mac Cerbaill
+trp_knight_21_1_pl|Mael Domnall dasachtach mac Causantin
+trp_knight_21_2|Mael Cellach mac Cerbaill
+trp_knight_21_2_pl|Ard Tiarna Aed mac Cinaeda
+trp_knight_21_3|Ard Tiarna Riacan mac Dunlainge
+trp_knight_21_3_pl|Tiarna Causantin mac Aeda
+trp_kingdom_1_pretender|Yarl Thorgil
+trp_kingdom_1_pretender_pl|Yarl Thorgil
+trp_kingdom_2_pretender|Ard Tiarna Dungal
+trp_kingdom_2_pretender_pl|Ard Tiarna Dungal
+trp_kingdom_3_pretender|Aetheling Oswine
+trp_kingdom_3_pretender_pl|Aetheling Oswine
+trp_kingdom_4_pretender|Aetheling Ceorl
+trp_kingdom_4_pretender_pl|Aetheling Ceorl
+trp_kingdom_5_pretender|Tanist Bili
+trp_kingdom_5_pretender_pl|Tanist Bili
+trp_kingdom_6_pretender|Mael Elisedd ap Cyngen
+trp_kingdom_6_pretender_pl|Elisedd ap Cyngen
+trp_knight_1_1_wife|Hata - şovalye 1 1 eşi oyunda görünmemeli
+trp_knight_1_1_wife_pl|Şovalye 1 1 eşi
+trp_kingdom_1_lady_1|Aslaug
+trp_kingdom_1_lady_1_pl|Oslafa
+trp_kingdom_1_lady_2|Blaeja
+trp_kingdom_1_lady_2_pl|Blaeja
+trp_kingdom_1_lady_3|Ragnhild Ragnarsdottir
+trp_kingdom_1_lady_3_pl|Ragnhild Ragnarsdottir
+trp_kingdom_1_lady_4|Ingun
+trp_kingdom_1_lady_4_pl|Ingun
+trp_kingdom_2_lady_1|Gyda Eirikdottir
+trp_kingdom_2_lady_1_pl|Gyda
+trp_kingdom_2_lady_2|Yngvild
+trp_kingdom_2_lady_2_pl|Yngvild
+trp_kingdom_2_lady_3|Thorunn Ketilsdottir 
+trp_kingdom_2_lady_3_pl|Thorunn
+trp_kingdom_2_lady_4|Hallbera 
+trp_kingdom_2_lady_4_pl|Hallbera
+trp_kingdom_3_lady_1|Salbjorg
+trp_kingdom_3_lady_1_pl|Salbjorg
+trp_kingdom_3_lady_2|Bera
+trp_kingdom_3_lady_2_pl|Bera
+trp_kingdom_3_lady_3|Grunnhild
+trp_kingdom_3_lady_3_pl|Grunnhild
+trp_kingdom_3_lady_4|Asgerd
+trp_kingdom_3_lady_4_pl|Asgerd
+trp_kingdom_4_lady_1|Helga
+trp_kingdom_4_lady_1_pl|Helga
+trp_kingdom_4_lady_2|Hakon
+trp_kingdom_4_lady_2_pl|Hakon
+trp_kingdom_4_lady_3|Ingibjorg
+trp_kingdom_4_lady_3_pl|Ingibjorg
+trp_kingdom_4_lady_4|Sacun
+trp_kingdom_4_lady_4_pl|Sacun
+trp_kingdom_5_lady_1|Osburh
+trp_kingdom_5_lady_1_pl|Osburh
+trp_kingdom_5_lady_2|Wulfthryth
+trp_kingdom_5_lady_2_pl|Wulfthryth
+trp_kingdom_5_lady_3|Ealswith
+trp_kingdom_5_lady_3_pl|Ealswith
+trp_kingdom_5_lady_4|Aelswith
+trp_kingdom_5_lady_4_pl|Aelswith
+trp_kingdom_5_lady_5|Aelflaed
+trp_kingdom_5_lady_5_pl|Aelflaed
+trp_kingdom_5_lady_6|Eormengyth
+trp_kingdom_5_lady_6_pl|Eormengyth
+trp_kingdom_5_lady_7|Aelfwynne
+trp_kingdom_5_lady_7_pl|Aelfwynne
+trp_kingdom_6_lady_1|Edith
+trp_kingdom_6_lady_1_pl|Edith
+trp_kingdom_6_lady_2|Edburge
+trp_kingdom_6_lady_2_pl|Edburge
+trp_kingdom_6_lady_3|Adelburga
+trp_kingdom_6_lady_3_pl|Adelburga
+trp_kingdom_6_lady_4|Hild
+trp_kingdom_6_lady_4_pl|Hild
+trp_kingdom_7_lady_1|Aethelswith
+trp_kingdom_7_lady_1_pl|Aethelswith
+trp_kingdom_7_lady_2|Eadburh
+trp_kingdom_7_lady_2_pl|Eadburh
+trp_kingdom_7_lady_3|Aedgyth
+trp_kingdom_7_lady_3_pl|Aedgyth
+trp_kingdom_7_lady_4|Cyneswith
+trp_kingdom_7_lady_4_pl|Cyneswith
+trp_kingdom_7_lady_5|Alwith
+trp_kingdom_7_lady_5_pl|Alwith
+trp_kingdom_7_lady_6|Aedelfled
+trp_kingdom_7_lady_6_pl|Aedelfled
+trp_kingdom_7_lady_7|Aepelhilde
+trp_kingdom_7_lady_7_pl|Aepelhilde
+trp_kingdom_7_lady_8|Aepelswip
+trp_kingdom_7_lady_8_pl|Aepelswip
+trp_kingdom_7_lady_9|Aette
+trp_kingdom_7_lady_9_pl|Aette
+trp_kingdom_8_lady_1|Alof Ragnarsdottir
+trp_kingdom_8_lady_1_pl|Alof
+trp_kingdom_8_lady_2|Eanflaed
+trp_kingdom_8_lady_2_pl|Eanflaed
+trp_kingdom_8_lady_3|Freydis
+trp_kingdom_8_lady_3_pl|Freydis
+trp_kingdom_8_lady_4|Gudrun
+trp_kingdom_8_lady_4_pl|Gudrun
+trp_kingdom_8_lady_5|Sigrid
+trp_kingdom_8_lady_5_pl|Sigrid
+trp_kingdom_8_lady_6|Svanhild
+trp_kingdom_8_lady_6_pl|Svanhild
+trp_kingdom_8_lady_7|Sigrunn
+trp_kingdom_8_lady_7_pl|Sigrunn
+trp_kingdom_8_lady_8|Turid
+trp_kingdom_8_lady_8_pl|Turid
+trp_kingdom_8_lady_9|Aebbe
+trp_kingdom_8_lady_9_pl|Aebbe
+trp_kingdom_9_lady_1|Angharad verch Meurig
+trp_kingdom_9_lady_1_pl|Angharad
+trp_kingdom_9_lady_2|Elen verch Rhodri
+trp_kingdom_9_lady_2_pl|Elen
+trp_kingdom_9_lady_3|Creirwy
+trp_kingdom_9_lady_3_pl|Creirwy
+trp_kingdom_9_lady_4|Nest verch Rhodri
+trp_kingdom_9_lady_4_pl|Nest
+trp_kingdom_9_lady_5|Lleigy
+trp_kingdom_9_lady_5_pl|Lleigy
+trp_kingdom_9_lady_6|Anna
+trp_kingdom_9_lady_6_pl|Anna
+trp_kingdom_10_lady_1|Marwenna
+trp_kingdom_10_lady_1_pl|Marwenna
+trp_kingdom_10_lady_2|Gwenonwy
+trp_kingdom_10_lady_2_pl|Gwenonwy
+trp_kingdom_10_lady_3|Gweneddlon
+trp_kingdom_10_lady_3_pl|Gweneddlon
+trp_kingdom_11_lady_1|Verh Cinaed
+trp_kingdom_11_lady_1_pl|Verh Cinaed
+trp_kingdom_11_lady_2|Brifael
+trp_kingdom_11_lady_2_pl|Brifael
+trp_kingdom_11_lady_3|Ceindrych
+trp_kingdom_11_lady_3_pl|Ceindrych
+trp_kingdom_11_lady_4|Morgawse
+trp_kingdom_11_lady_4_pl|Morgawse
+trp_kingdom_12_lady_1|Meisyr
+trp_kingdom_12_lady_1_pl|Meisyr
+trp_kingdom_12_lady_2|Heledd
+trp_kingdom_12_lady_2_pl|Heledd
+trp_kingdom_12_lady_3|Ffever
+trp_kingdom_12_lady_3_pl|Ffever
+trp_kingdom_12_lady_4|Medlan
+trp_kingdom_12_lady_4_pl|Medlan
+trp_kingdom_13_lady_1|Rhiain Ceinfrid
+trp_kingdom_13_lady_1_pl|Ceinfrid
+trp_kingdom_13_lady_2|Meddwyl
+trp_kingdom_13_lady_2_pl|Meddwyl
+trp_kingdom_13_lady_3|Gwladus
+trp_kingdom_13_lady_3_pl|Gwladus
+trp_kingdom_14_lady_1|Muireann
+trp_kingdom_14_lady_1_pl|Muireann
+trp_kingdom_14_lady_2|Medb
+trp_kingdom_14_lady_2_pl|Medb
+trp_kingdom_14_lady_3|Creide
+trp_kingdom_14_lady_3_pl|Creide
+trp_kingdom_14_lady_4|Derbforgaill
+trp_kingdom_14_lady_4_pl|Derbforgaill
+trp_kingdom_15_lady_1|Mhari
+trp_kingdom_15_lady_1_pl|Mhari
+trp_kingdom_15_lady_2|Mall
+trp_kingdom_15_lady_2_pl|Mall
+trp_kingdom_15_lady_3|Teglaig
+trp_kingdom_15_lady_3_pl|Teglaig
+trp_kingdom_15_lady_4|Lassa
+trp_kingdom_15_lady_4_pl|Lassa
+trp_kingdom_16_lady_1|Cath
+trp_kingdom_16_lady_1_pl|Cath
+trp_kingdom_16_lady_2|Lassair
+trp_kingdom_16_lady_2_pl|Lassair
+trp_kingdom_16_lady_3|Duinseach
+trp_kingdom_16_lady_3_pl|Duinseach
+trp_kingdom_16_lady_4|Eva
+trp_kingdom_16_lady_4_pl|Eva
+trp_kingdom_16_lady_5|Doirend
+trp_kingdom_16_lady_5_pl|Doirend
+trp_kingdom_16_lady_6|Delbchaem
+trp_kingdom_16_lady_6_pl|Delbchaem
+trp_kingdom_17_lady_1|Caelfind
+trp_kingdom_17_lady_1_pl|Caelfind
+trp_kingdom_17_lady_2|Briana
+trp_kingdom_17_lady_2_pl|Briana
+trp_kingdom_17_lady_3|Binne
+trp_kingdom_17_lady_3_pl|Binne
+trp_kingdom_17_lady_4|Aoibheann
+trp_kingdom_17_lady_4_pl|Aoibheann
+trp_kingdom_17_lady_5|Aodhnait
+trp_kingdom_17_lady_5_pl|Aodhnait
+trp_kingdom_17_lady_6|Almu
+trp_kingdom_17_lady_6_pl|Almu
+trp_kingdom_18_lady_1|Fedelm
+trp_kingdom_18_lady_1_pl|Fedelm
+trp_kingdom_18_lady_2|Uaisle
+trp_kingdom_18_lady_2_pl|Uaisle
+trp_kingdom_18_lady_3|Condadil
+trp_kingdom_18_lady_3_pl|Condadil
+trp_kingdom_18_lady_4|Flannesda
+trp_kingdom_18_lady_4_pl|Flannesda
+trp_kingdom_18_lady_5|Mor
+trp_kingdom_18_lady_5_pl|Mor
+trp_kingdom_18_lady_6|Aine
+trp_kingdom_18_lady_6_pl|Aine
+trp_kingdom_19_lady_1|Muire ingen Cinaeda
+trp_kingdom_19_lady_1_pl|Muire
+trp_kingdom_19_lady_2|Gormlaith
+trp_kingdom_19_lady_2_pl|Gormlaith
+trp_kingdom_19_lady_3|Eithne
+trp_kingdom_19_lady_3_pl|Eithne
+trp_kingdom_19_lady_4|Lann
+trp_kingdom_19_lady_4_pl|Lann
+trp_kingdom_19_lady_5|Etain
+trp_kingdom_19_lady_5_pl|Etain
+trp_kingdom_20_lady_1|Coluim
+trp_kingdom_20_lady_1_pl|Coluim
+trp_kingdom_20_lady_2|Sabhdh Ingen Giric
+trp_kingdom_20_lady_2_pl|Sabhdh Ingen Giric
+trp_kingdom_20_lady_3|Ingen Brude
+trp_kingdom_20_lady_3_pl|Ingen Brude
+trp_kingdom_20_lady_4|Ingen Domlech
+trp_kingdom_20_lady_4_pl|Ingen Domlech
+trp_kingdom_20_lady_5|Ingen Gwydd
+trp_kingdom_20_lady_5_pl|Ingen Gwydd
+trp_kingdom_20_lady_6|Bridei
+trp_kingdom_20_lady_6_pl|Bridei
+trp_kingdom_20_lady_7|Muire
+trp_kingdom_20_lady_7_pl|Muire
+trp_kingdom_21_lady_1|Aideen
+trp_kingdom_21_lady_1_pl|Aideen
+trp_kingdom_21_lady_2|Ethna
+trp_kingdom_21_lady_2_pl|Ethna
+trp_castle_1_seneschal|Kale Kahyası
+trp_castle_2_seneschal|Kale Kahyası
+trp_castle_3_seneschal|Kale Kahyası
+trp_castle_4_seneschal|Kale Kahyası
+trp_castle_5_seneschal|Kale Kahyası
+trp_castle_6_seneschal|Kale Kahyası
+trp_castle_7_seneschal|Kale Kahyası
+trp_castle_8_seneschal|Kale Kahyası
+trp_castle_9_seneschal|Kale Kahyası
+trp_castle_10_seneschal|Kale Kahyası
+trp_castle_11_seneschal|Kale Kahyası
+trp_castle_12_seneschal|Kale Kahyası
+trp_castle_13_seneschal|Kale Kahyası
+trp_castle_14_seneschal|Kale Kahyası
+trp_castle_15_seneschal|Kale Kahyası
+trp_castle_16_seneschal|Kale Kahyası
+trp_castle_17_seneschal|Kale Kahyası
+trp_castle_18_seneschal|Kale Kahyası
+trp_castle_19_seneschal|Kale Kahyası
+trp_castle_20_seneschal|Kale Kahyası
+trp_castle_21_seneschal|Kale Kahyası
+trp_castle_22_seneschal|Kale Kahyası
+trp_castle_23_seneschal|Kale Kahyası
+trp_castle_24_seneschal|Kale Kahyası
+trp_castle_25_seneschal|Kale Kahyası
+trp_castle_26_seneschal|Kale Kahyası
+trp_castle_27_seneschal|Kale Kahyası
+trp_castle_28_seneschal|Kale Kahyası
+trp_castle_29_seneschal|Kale Kahyası
+trp_castle_30_seneschal|Kale Kahyası
+trp_castle_31_seneschal|Kale Kahyası
+trp_castle_32_seneschal|Kale Kahyası
+trp_castle_33_seneschal|Kale Kahyası
+trp_castle_34_seneschal|Kale Kahyası
+trp_castle_35_seneschal|Kale Kahyası
+trp_castle_36_seneschal|Kale Kahyası
+trp_castle_37_seneschal|Kale Kahyası
+trp_castle_38_seneschal|Kale Kahyası
+trp_castle_39_seneschal|Kale Kahyası
+trp_castle_40_seneschal|Kale Kahyası
+trp_castle_41_seneschal|Kale Kahyası
+trp_castle_42_seneschal|Kale Kahyası
+trp_castle_43_seneschal|Kale Kahyası
+trp_castle_44_seneschal|Kale Kahyası
+trp_castle_45_seneschal|Kale Kahyası
+trp_castle_46_seneschal|Kale Kahyası
+trp_castle_47_seneschal|Kale Kahyası
+trp_castle_48_seneschal|Kale Kahyası
+trp_castle_49_seneschal|Kale Kahyası
+trp_castle_50_seneschal|Kale Kahyası
+trp_castle_51_seneschal|Kale Kahyası
+trp_castle_52_seneschal|Kale Kahyası
+trp_castle_53_seneschal|Kale Kahyası
+trp_castle_54_seneschal|Kale Kahyası
+trp_castle_55_seneschal|Kale Kahyası
+trp_castle_56_seneschal|Kale Kahyası
+trp_castle_57_seneschal|Kale Kahyası
+trp_castle_58_seneschal|Kale Kahyası
+trp_castle_59_seneschal|Kale Kahyası
+trp_castle_60_seneschal|Kale Kahyası
+trp_castle_61_seneschal|Kale Kahyası
+trp_castle_62_seneschal|Kale Kahyası
+trp_castle_63_seneschal|Kale Kahyası
+trp_castle_64_seneschal|Kale Kahyası
+trp_castle_65_seneschal|Kale Kahyası
+trp_castle_66_seneschal|Kale Kahyası
+trp_castle_67_seneschal|Kale Kahyası
+trp_castle_68_seneschal|Kale Kahyası
+trp_castle_69_seneschal|Kale Kahyası
+trp_castle_70_seneschal|Kale Kahyası
+trp_castle_71_seneschal|Kale Kahyası
+trp_castle_72_seneschal|Kale Kahyası
+trp_castle_73_seneschal|Kale Kahyası
+trp_castle_74_seneschal|Kale Kahyası
+trp_castle_75_seneschal|Kale Kahyası
+trp_castle_76_seneschal|Kale Kahyası
+trp_castle_77_seneschal|Kale Kahyası
+trp_castle_78_seneschal|Kale Kahyası
+trp_castle_79_seneschal|Kale Kahyası
+trp_castle_80_seneschal|Kale Kahyası
+trp_castle_81_seneschal|Kale Kahyası
+trp_castle_82_seneschal|Kale Kahyası
+trp_castle_83_seneschal|Kale Kahyası
+trp_castle_84_seneschal|Kale Kahyası
+trp_castle_85_seneschal|Kale Kahyası
+trp_castle_86_seneschal|Kale Kahyası
+trp_castle_87_seneschal|Kale Kahyası
+trp_castle_88_seneschal|Kale Kahyası
+trp_castle_89_seneschal|Kale Kahyası
+trp_castle_90_seneschal|Kale Kahyası
+trp_castle_91_seneschal|Kale Kahyası
+trp_town_1_arena_master|Müsabaka Şefi
+trp_town_2_arena_master|Müsabaka Şefi
+trp_town_3_arena_master|Müsabaka Şefi
+trp_town_4_arena_master|Müsabaka Şefi
+trp_town_5_arena_master|Müsabaka Şefi
+trp_town_6_arena_master|Müsabaka Şefi
+trp_town_7_arena_master|Müsabaka Şefi
+trp_town_8_arena_master|Müsabaka Şefi
+trp_town_9_arena_master|Müsabaka Şefi
+trp_town_10_arena_master|Müsabaka Şefi
+trp_town_11_arena_master|Müsabaka Şefi
+trp_town_12_arena_master|Müsabaka Şefi
+trp_town_13_arena_master|Müsabaka Şefi
+trp_town_14_arena_master|Müsabaka Şefi
+trp_town_15_arena_master|Müsabaka Şefi
+trp_town_16_arena_master|Müsabaka Şefi
+trp_town_17_arena_master|Müsabaka Şefi
+trp_town_18_arena_master|Müsabaka Şefi
+trp_town_19_arena_master|Müsabaka Şefi
+trp_town_20_arena_master|Müsabaka Şefi
+trp_town_21_arena_master|Müsabaka Şefi
+trp_town_22_arena_master|Müsabaka Şefi
+trp_town_23_arena_master|Müsabaka Şefi
+trp_town_24_arena_master|Müsabaka Şefi
+trp_town_25_arena_master|Müsabaka Şefi
+trp_town_26_arena_master|Müsabaka Şefi
+trp_town_27_arena_master|Müsabaka Şefi
+trp_town_28_arena_master|Müsabaka Şefi
+trp_town_29_arena_master|Müsabaka Şefi
+trp_town_1_armorer|Zırh Üreticisi
+trp_town_2_armorer|Zırh Üreticisi
+trp_town_3_armorer|Zırh Üreticisi
+trp_town_4_armorer|Zırh Üreticisi
+trp_town_5_armorer|Zırh Üreticisi
+trp_town_6_armorer|Zırh Üreticisi
+trp_town_7_armorer|Zırh Üreticisi
+trp_town_8_armorer|Zırh Üreticisi
+trp_town_9_armorer|Zırh Üreticisi
+trp_town_10_armorer|Zırh Üreticisi
+trp_town_11_armorer|Zırh Üreticisi
+trp_town_12_armorer|Zırh Üreticisi
+trp_town_13_armorer|Zırh Üreticisi
+trp_town_14_armorer|Zırh Üreticisi Eadwine  
+trp_town_15_armorer|Zırh Üreticisi Donnchadh 
+trp_town_16_armorer|Zırh Üreticisi Paega 
+trp_town_17_armorer|Zırh Üreticisi Lifris
+trp_town_18_armorer|Zırh Üreticisi Fearchair
+trp_town_19_armorer|Zırh Üreticisi
+trp_town_20_armorer|Zırh Üreticisi
+trp_town_21_armorer|Zırh Üreticisi
+trp_town_22_armorer|Zırh Üreticisi
+trp_town_23_armorer|Zırh Üreticisi
+trp_town_24_armorer|Zırh Üreticisi
+trp_town_25_armorer|Zırh Üreticisi
+trp_town_26_armorer|Zırh Üreticisi
+trp_town_27_armorer|Zırh Üreticisi
+trp_town_28_armorer|Zırh Üreticisi
+trp_town_29_armorer|Zırh Üreticisi
+trp_town_30_armorer|Ingleri
+trp_town_1_weaponsmith|Silah Ustası
+trp_town_2_weaponsmith|Silah Ustası
+trp_town_3_weaponsmith|Silah Ustası
+trp_town_4_weaponsmith|Silah Ustası
+trp_town_5_weaponsmith|Silah Ustası Atli 
+trp_town_6_weaponsmith|Silah Ustası Harenbili
+trp_town_7_weaponsmith|Silah Ustası Egil 
+trp_town_8_weaponsmith|Silah Ustası Godgyfu 
+trp_town_9_weaponsmith|Silah Ustası Uormuin 
+trp_town_10_weaponsmith|Silah Ustası
+trp_town_11_weaponsmith|Silah Ustası
+trp_town_12_weaponsmith|Silah Ustası
+trp_town_13_weaponsmith|Silah Ustası
+trp_town_14_weaponsmith|Silah Ustası
+trp_town_15_weaponsmith|Silah Ustası
+trp_town_16_weaponsmith|Silah Ustası
+trp_town_17_weaponsmith|Silah Ustası
+trp_town_18_weaponsmith|Silah Ustası
+trp_town_19_weaponsmith|Silah Ustası
+trp_town_20_weaponsmith|Silah Ustası
+trp_town_21_weaponsmith|Silah Ustası
+trp_town_22_weaponsmith|Silah Ustası
+trp_town_23_weaponsmith|Silah Ustası
+trp_town_24_weaponsmith|Silah Ustası
+trp_town_25_weaponsmith|Silah Ustası
+trp_town_26_weaponsmith|Silah Ustası
+trp_town_27_weaponsmith|Silah Ustası
+trp_town_28_weaponsmith|Silah Ustası
+trp_town_29_weaponsmith|Silah Ustası
+trp_town_30_weaponsmith|Ulfberht
+trp_town_31_weaponsmith|Weland
+trp_town_1_tavernkeeper|Hancı
+trp_town_2_tavernkeeper|Hancı
+trp_town_3_tavernkeeper|Hancı
+trp_town_4_tavernkeeper|Hancı
+trp_town_5_tavernkeeper|Hancı
+trp_town_6_tavernkeeper|Hancı
+trp_town_7_tavernkeeper|Hancı
+trp_town_8_tavernkeeper|Hancı
+trp_town_9_tavernkeeper|Hancı
+trp_town_10_tavernkeeper|Hancı
+trp_town_11_tavernkeeper|Hancı
+trp_town_12_tavernkeeper|Hancı
+trp_town_13_tavernkeeper|Hancı
+trp_town_14_tavernkeeper|Hancı
+trp_town_15_tavernkeeper|Hancı
+trp_town_16_tavernkeeper|Hancı
+trp_town_17_tavernkeeper|Hancı
+trp_town_18_tavernkeeper|Hancı
+trp_town_19_tavernkeeper|Hancı
+trp_town_20_tavernkeeper|Hancı
+trp_town_21_tavernkeeper|Hancı
+trp_town_22_tavernkeeper|Hancı
+trp_town_23_tavernkeeper|Hancı
+trp_town_24_tavernkeeper|Hancı
+trp_town_25_tavernkeeper|Hancı
+trp_town_26_tavernkeeper|Hancı
+trp_town_27_tavernkeeper|Hancı
+trp_town_28_tavernkeeper|Hancı
+trp_town_29_tavernkeeper|Hancı
+trp_town_30_tavernkeeper|Casius
+trp_town_1_merchant|Tüccar
+trp_town_2_merchant|Tüccar
+trp_town_3_merchant|Tüccar
+trp_town_4_merchant|Tüccar
+trp_town_5_merchant|Tüccar
+trp_town_6_merchant|Tüccar
+trp_town_7_merchant|Hogni
+trp_town_8_merchant|Tüccar
+trp_town_9_merchant|Tüccar
+trp_town_10_merchant|Tüccar
+trp_town_11_merchant|Adda
+trp_town_12_merchant|Tüccar
+trp_town_13_merchant|Tüccar
+trp_town_14_merchant|Tüccar
+trp_town_15_merchant|Tüccar
+trp_town_16_merchant|Tüccar
+trp_town_17_merchant|Tüccar
+trp_town_18_merchant|Tüccar
+trp_town_19_merchant|Tüccar
+trp_town_20_merchant|Tüccar
+trp_town_21_merchant|Tüccar
+trp_town_22_merchant|Tüccar
+trp_town_23_merchant|Tüccar
+trp_town_24_merchant|Tüccar
+trp_town_25_merchant|Tüccar
+trp_town_26_merchant|Tüccar
+trp_town_27_merchant|Tüccar
+trp_town_28_merchant|Tüccar
+trp_town_29_merchant|Tüccar
+trp_salt_mine_merchant|Aeron ap Gareth
+trp_salt_mine_merchant_pl|Aeron ap Gareth
+trp_town_1_horse_merchant|At Tüccarı
+trp_town_2_horse_merchant|At Tüccarı
+trp_town_3_horse_merchant|At Tüccarı
+trp_town_4_horse_merchant|At Tüccarı
+trp_town_5_horse_merchant|At Tüccarı
+trp_town_6_horse_merchant|At Tüccarı
+trp_town_7_horse_merchant|At Tüccarı
+trp_town_8_horse_merchant|At Tüccarı
+trp_town_9_horse_merchant|At Tüccarı
+trp_town_10_horse_merchant|At Tüccarı
+trp_town_11_horse_merchant|At Tüccarı
+trp_town_12_horse_merchant|At Tüccarı
+trp_town_13_horse_merchant|At Tüccarı
+trp_town_14_horse_merchant|At Tüccarı
+trp_town_15_horse_merchant|At Tüccarı
+trp_town_16_horse_merchant|At Tüccarı
+trp_town_17_horse_merchant|At Tüccarı
+trp_town_18_horse_merchant|At Tüccarı
+trp_town_19_horse_merchant|At Tüccarı
+trp_town_20_horse_merchant|At Tüccarı
+trp_town_21_horse_merchant|At Tüccarı
+trp_town_22_horse_merchant|At Tüccarı
+trp_town_23_horse_merchant|At Tüccarı
+trp_town_24_horse_merchant|At Tüccarı
+trp_town_25_horse_merchant|At Tüccarı
+trp_town_26_horse_merchant|At Tüccarı
+trp_town_27_horse_merchant|At Tüccarı
+trp_town_28_horse_merchant|At Tüccarı
+trp_town_29_horse_merchant|At Tüccarı
+trp_town_1_mayor|Belediye Başkanı
+trp_town_2_mayor|Belediye Başkanı
+trp_town_3_mayor|Belediye Başkanı
+trp_town_4_mayor|Hallvard
+trp_town_5_mayor|Belediye Başkanı
+trp_town_6_mayor|Belediye Başkanı
+trp_town_7_mayor|Belediye Başkanı
+trp_town_8_mayor|Belediye Başkanı
+trp_town_9_mayor|Belediye Başkanı
+trp_town_10_mayor|Belediye Başkanı
+trp_town_11_mayor|Belediye Başkanı
+trp_town_12_mayor|Belediye Başkanı
+trp_town_13_mayor|Belediye Başkanı
+trp_town_14_mayor|Belediye Başkanı
+trp_town_15_mayor|Belediye Başkanı
+trp_town_16_mayor|Belediye Başkanı
+trp_town_17_mayor|Belediye Başkanı
+trp_town_18_mayor|Belediye Başkanı
+trp_town_19_mayor|Belediye Başkanı
+trp_town_20_mayor|Belediye Başkanı
+trp_town_21_mayor|Belediye Başkanı
+trp_town_22_mayor|Belediye Başkanı
+trp_town_23_mayor|Belediye Başkanı
+trp_town_24_mayor|Belediye Başkanı
+trp_town_25_mayor|Belediye Başkanı
+trp_town_26_mayor|Belediye Başkanı
+trp_town_27_mayor|Belediye Başkanı
+trp_town_28_mayor|Belediye Başkanı
+trp_town_29_mayor|Belediye Başkanı
+trp_village_1_elder|Yerel Lider
+trp_village_2_elder|Yerel Lider
+trp_village_3_elder|Yerel Lider
+trp_village_4_elder|Yerel Lider
+trp_village_5_elder|Yerel Lider
+trp_village_6_elder|Yerel Lider
+trp_village_7_elder|Yerel Lider
+trp_village_8_elder|Yerel Lider
+trp_village_9_elder|Yerel Lider
+trp_village_10_elder|Yerel Lider
+trp_village_11_elder|Yerel Lider
+trp_village_12_elder|Yerel Lider
+trp_village_13_elder|Yerel Lider
+trp_village_14_elder|Yerel Lider
+trp_village_15_elder|Yerel Lider
+trp_village_16_elder|Yerel Lider
+trp_village_17_elder|Yerel Lider
+trp_village_18_elder|Yerel Lider
+trp_village_19_elder|Yerel Lider
+trp_village_20_elder|Yerel Lider
+trp_village_21_elder|Yerel Lider
+trp_village_22_elder|Yerel Lider
+trp_village_23_elder|Yerel Lider
+trp_village_24_elder|Yerel Lider
+trp_village_25_elder|Yerel Lider
+trp_village_26_elder|Yerel Lider
+trp_village_27_elder|Yerel Lider
+trp_village_28_elder|Yaşlı Godiva
+trp_village_29_elder|Yerel Lider
+trp_village_30_elder|Yerel Lider
+trp_village_31_elder|Yerel Lider
+trp_village_32_elder|Yerel Lider
+trp_village_33_elder|Yerel Lider
+trp_village_34_elder|Yerel Lider
+trp_village_35_elder|Yerel Lider
+trp_village_36_elder|Yerel Lider
+trp_village_37_elder|Yerel Lider
+trp_village_38_elder|Yerel Lider
+trp_village_39_elder|Yerel Lider
+trp_village_40_elder|Yerel Lider
+trp_village_41_elder|Yerel Lider
+trp_village_42_elder|Yerel Lider
+trp_village_43_elder|Yerel Lider
+trp_village_44_elder|Yerel Lider
+trp_village_45_elder|Yerel Lider
+trp_village_46_elder|Yerel Lider
+trp_village_47_elder|Yerel Lider
+trp_village_48_elder|Yerel Lider
+trp_village_49_elder|Yerel Lider
+trp_village_50_elder|Yerel Lider
+trp_village_51_elder|Yerel Lider
+trp_village_52_elder|Yerel Lider
+trp_village_53_elder|Yaşlı Wigmund 
+trp_village_54_elder|Yerel Lider
+trp_village_55_elder|Yerel Lider
+trp_village_56_elder|Yerel Lider
+trp_village_57_elder|Yerel Lider
+trp_village_58_elder|Yerel Lider
+trp_village_59_elder|Yerel Lider
+trp_village_60_elder|Yerel Lider
+trp_village_61_elder|Yerel Lider
+trp_village_62_elder|Yerel Lider
+trp_village_63_elder|Yerel Lider
+trp_village_64_elder|Yerel Lider
+trp_village_65_elder|Yerel Lider
+trp_village_66_elder|Yaşlı Pyr
+trp_village_67_elder|Yerel Lider
+trp_village_68_elder|Yerel Lider
+trp_village_69_elder|Yerel Lider
+trp_village_70_elder|Yerel Lider
+trp_village_71_elder|Yerel Lider
+trp_village_72_elder|Yerel Lider
+trp_village_73_elder|Yerel Lider
+trp_village_74_elder|Yerel Lider
+trp_village_75_elder|Yerel Lider
+trp_village_76_elder|Yerel Lider
+trp_village_77_elder|Yerel Lider
+trp_village_78_elder|Yerel Lider
+trp_village_79_elder|Yerel Lider
+trp_village_80_elder|Yerel Lider
+trp_village_81_elder|Yerel Lider
+trp_village_82_elder|Yaşlı Aesc 
+trp_village_83_elder|Yerel Lider
+trp_village_84_elder|Yerel Lider
+trp_village_85_elder|Yerel Lider
+trp_village_86_elder|Yerel Lider
+trp_village_87_elder|Yerel Lider
+trp_village_88_elder|Yerel Lider
+trp_village_89_elder|Yerel Lider
+trp_village_90_elder|Yerel Lider
+trp_village_91_elder|Yerel Lider
+trp_village_92_elder|Yerel Lider
+trp_village_93_elder|Yerel Lider
+trp_village_94_elder|Yerel Lider
+trp_village_95_elder|Yerel Lider
+trp_village_96_elder|Yerel Lider
+trp_village_97_elder|Yerel Lider
+trp_village_98_elder|Yaşlı Ingolf
+trp_village_99_elder|Yaşlı Oleif 
+trp_village_100_elder|Yerel Lider
+trp_village_101_elder|Yerel Lider
+trp_village_102_elder|Yerel Lider
+trp_village_103_elder|Yerel Lider
+trp_village_104_elder|Yerel Lider
+trp_village_105_elder|Yerel Lider
+trp_village_106_elder|Yerel Lider
+trp_village_107_elder|Yerel Lider
+trp_village_108_elder|Yerel Lider
+trp_village_109_elder|Yerel Lider
+trp_village_110_elder|Yerel Lider
+trp_village_111_elder|Yerel Lider
+trp_village_112_elder|Yerel Lider
+trp_village_113_elder|Yerel Lider
+trp_village_114_elder|Yerel Lider
+trp_village_115_elder|Yerel Lider
+trp_village_116_elder|Yerel Lider
+trp_village_117_elder|Yerel Lider
+trp_village_118_elder|Yerel Lider
+trp_village_119_elder|Yerel Lider
+trp_village_120_elder|Yerel Lider
+trp_village_121_elder|Yerel Lider
+trp_village_122_elder|Yerel Lider
+trp_village_123_elder|Yerel Lider
+trp_village_124_elder|Yerel Lider
+trp_village_125_elder|Yerel Lider
+trp_village_126_elder|Yerel Lider
+trp_village_127_elder|Yerel Lider
+trp_village_128_elder|Yerel Lider
+trp_village_129_elder|Yerel Lider
+trp_village_130_elder|Yerel Lider
+trp_village_131_elder|Yerel Lider
+trp_village_132_elder|Yerel Lider
+trp_village_133_elder|Yerel Lider
+trp_village_134_elder|Yerel Lider
+trp_village_135_elder|Yerel Lider
+trp_village_136_elder|Yerel Lider
+trp_village_137_elder|Yerel Lider
+trp_village_138_elder|Yerel Lider
+trp_village_139_elder|Yerel Lider
+trp_village_140_elder|Yerel Lider
+trp_village_141_elder|Yerel Lider
+trp_village_142_elder|Yerel Lider
+trp_village_143_elder|Yerel Lider
+trp_village_144_elder|Yerel Lider
+trp_village_145_elder|Yerel Lider
+trp_village_146_elder|Yerel Lider
+trp_village_147_elder|Yerel Lider
+trp_village_148_elder|Yerel Lider
+trp_village_149_elder|Yerel Lider
+trp_village_150_elder|Thonkrik
+trp_monje_mercader|Tüccar Rahip
+trp_monje_mercader_pl|Tüccar Rahipler
+trp_merchants_end|merchants end
+trp_merchants_end_pl|merchants end
+trp_town_1_healer|Doktor
+trp_town_2_healer|Doktor
+trp_town_3_healer|Doktor
+trp_town_4_healer|Doktor
+trp_town_5_healer|Doktor
+trp_town_6_healer|Doktor
+trp_town_7_healer|Doktor
+trp_town_8_healer|Doktor
+trp_town_9_healer|Doktor
+trp_town_10_healer|Doktor
+trp_town_11_healer|Doktor
+trp_town_12_healer|Doktor
+trp_town_13_healer|Doktor
+trp_town_14_healer|Doktor
+trp_town_15_healer|Doktor
+trp_town_16_healer|Doktor
+trp_town_17_healer|Doktor
+trp_town_18_healer|Doktor
+trp_town_19_healer|Doktor
+trp_town_20_healer|Doktor
+trp_town_21_healer|Doktor
+trp_town_22_healer|Doktor
+trp_town_23_healer|Doktor
+trp_town_24_healer|Doktor
+trp_town_25_healer|Doktor
+trp_town_26_healer|Doktor
+trp_town_27_healer|Doktor
+trp_town_28_healer|Doktor
+trp_town_29_healer|Doktor
+trp_town_30_healer|Doktor
+trp_healer_end|healer end
+trp_town_1_shipwright|Tershane İşçisi
+trp_town_2_shipwright|Tershane İşçisi
+trp_town_3_shipwright|Tershane İşçisi
+trp_port_chief|Liman Şefi
+trp_port_chief_pl|Liman Şefleri
+trp_town_5_shipwright|Tershane İşçisi
+trp_town_6_shipwright|Tershane İşçisi
+trp_town_7_shipwright|Tershane İşçisi
+trp_town_8_shipwright|Tershane İşçisi
+trp_town_9_shipwright|Tershane İşçisi
+trp_town_10_shipwright|Tershane İşçisi
+trp_town_11_shipwright|Tershane İşçisi
+trp_town_12_shipwright|Tershane İşçisi
+trp_town_13_shipwright|Tershane İşçisi
+trp_town_14_shipwright|Tershane İşçisi
+trp_town_15_shipwright|Tershane İşçisi
+trp_town_16_shipwright|Tershane İşçisi
+trp_town_17_shipwright|Tershane İşçisi
+trp_town_18_shipwright|Tershane İşçisi
+trp_town_19_shipwright|Tershane İşçisi
+trp_town_20_shipwright|Tershane İşçisi
+trp_town_21_shipwright|Tershane İşçisi
+trp_town_22_shipwright|Tershane İşçisi
+trp_town_23_shipwright|Tershane İşçisi
+trp_town_24_shipwright|Tershane İşçisi
+trp_town_25_shipwright|Tershane İşçisi
+trp_town_26_shipwright|Tershane İşçisi
+trp_town_27_shipwright|Tershane İşçisi
+trp_town_28_shipwright|Tershane İşçisi
+trp_town_29_shipwright|Tershane İşçisi
+trp_shipwright_end|shipwright end
+trp_local_merchant|Yerel Tüccar
+trp_local_merchant_pl|Yerel Tüccarlar
+trp_tax_rebel|Köylü Ayaklanması
+trp_tax_rebel_pl|Köylü Ayaklanmaları
+trp_trainee_peasant|Köylü
+trp_trainee_peasant_pl|Köylüler
+trp_fugitive|Kızgın adam
+trp_fugitive_pl|Kızgın Adamlar
+trp_belligerent_drunk|Agresif Sarhoş
+trp_belligerent_drunk_pl|Agresif Sarhoş
+trp_hired_assassin|Kiralık Katil
+trp_hired_assassin_pl|Kiralık Katil
+trp_fight_promoter|Sert Görünüşlü Karakter
+trp_fight_promoter_pl|Sert Görünüşlü Karakter
+trp_spy|Sıradan Kasabalı Erkek
+trp_spy_pl|Sıradan Kasabalı Erkekler
+trp_spy_partner|Önemsiz Şehirli
+trp_spy_partner_pl|Önemsiz Şehirliler
+trp_camp_armory|Kamp Cephaneliği
+trp_camp_armory_pl|Kamp Cephaneliği
+trp_nurse_for_lady|Hemşire
+trp_nurse_for_lady_pl|Hemşire
+trp_temporary_minister|Başkan
+trp_temporary_minister_pl|Başkan
+trp_norse_multiplayer|Hirdman
+trp_norse_multiplayer_pl|Hirdmen
+trp_saxon_multiplayer|Geanata
+trp_saxon_multiplayer_pl|Geanatas
+trp_angle_multiplayer|Geanata
+trp_angle_multiplayer_pl|Geanatas
+trp_briton_multiplayer|Milwr
+trp_briton_multiplayer_pl|Milwyr
+trp_irish_multiplayer|Cliarthaire
+trp_irish_multiplayer_pl|Cliarthairi
+trp_scotch_multiplayer|Bruide
+trp_scotch_multiplayer_pl|Bruides
+trp_norse_capitan|Soylu (Hersi)
+trp_norse_capitan_pl|Soylular (Hersir)
+trp_norse_elite|Elit Savaşçı (Huskarl)
+trp_norse_elite_pl|Elit Savaşçı (Huskarlar)
+trp_saxon_capitan|Soylu (Thegn)
+trp_saxon_capitan_pl|Soylular (Thegns)
+trp_saxon_elite|Koruma (Hearthweru)
+trp_saxon_elite_pl|Korumalar (Hearthwerus)
+trp_angle_capitan|Soylu (Thegn)
+trp_angle_capitan_pl|Soylular (Thegns)
+trp_angle_elite|Koruma (Hearthweru)
+trp_angle_elite_pl|Korumalar (Hearthwerus)
+trp_briton_capitan|Soylu (Uchelwr)
+trp_briton_capitan_pl|Soylular (Uchelwyr)
+trp_briton_elite|Şampiyon (Campiwr)
+trp_briton_elite_pl|Şampiyonlar (Campgwr)
+trp_irish_capitan|Soylu (Airig)
+trp_irish_capitan_pl|Soylular (Arras)
+trp_irish_elite|Koruma (Deaisbard)
+trp_irish_elite_pl|Korumalar (Deaisbards)
+trp_scotch_capitan|Soylu (Toisech)
+trp_scotch_capitan_pl|Soylular (Toisechs)
+trp_scotch_elite|Şampiyon (Gaisgidh)
+trp_scotch_elite_pl|Şampiyonlar (Gaisgidhs)
+trp_nurse|Hemşire
+trp_quick_battle_troop_1|Bodo the Cantabrian
+trp_quick_battle_troop_1_pl|Bodo the Cantabrian
+trp_quick_battle_troop_2|Boğa Boyunlu Sven 
+trp_quick_battle_troop_2_pl|Boğa Boyunlu Sven
+trp_quick_battle_troop_3|Cerball mac Dunlainge
+trp_quick_battle_troop_3_pl|Cerball mac Dunlainge
+trp_quick_battle_troop_4|Artorius
+trp_quick_battle_troop_4_pl|Artorius
+trp_quick_battle_troop_5|Cinead
+trp_quick_battle_troop_5_pl|Cinead
+trp_quick_battle_troop_6|Oswald
+trp_quick_battle_troop_6_pl|Oswald
+trp_quick_battle_troop_7|Brynhild
+trp_quick_battle_troop_7_pl|Brynhild
+trp_quick_battle_troops_cam|Kamera
+trp_quick_battle_troops_cam_pl|Kamera
+trp_tutorial_fighter_1|Novice Savaşçısı
+trp_tutorial_fighter_1_pl|Savaşçılar
+trp_tutorial_fighter_2|Novice Savaşçısı
+trp_tutorial_fighter_2_pl|Savaşçılar
+trp_tutorial_fighter_3|Daimi Savaşçı
+trp_tutorial_fighter_3_pl|Savaşçılar
+trp_tutorial_fighter_4|Kıdemli Savaşçı
+trp_tutorial_fighter_4_pl|Savaşçılar
+trp_tutorial_archer_1|Okçu
+trp_tutorial_archer_1_pl|Okçular
+trp_tutorial_master_archer|Okçu Talimcisi
+trp_tutorial_master_archer_pl|Okçu Talimcisi
+trp_tutorial_rider_1|Atlı
+trp_tutorial_rider_2|Horsewealas
+trp_tutorial_master_horseman|Atlı Talimci
+trp_tutorial_master_horseman_pl|Atlı Talimci
+trp_swadian_merchant|Tüccar
+trp_vaegir_merchant|Tüccar
+trp_khergit_merchant|Tüccar
+trp_nord_merchant|Şifacı
+trp_rhodok_merchant|Tüccar
+trp_sarranid_merchant|Tüccar
+trp_startup_merchants_end|startup merchants end
+trp_startup_merchants_end_pl|startup merchants end
+trp_old_hero_boargrove|Yaşlı Kahraman
+trp_old_hero_boargrove_pl|Yaşlı Kahraman
+trp_sea_raider_leader|Yaşlı Kahraman
+trp_sea_raider_leader_pl|Yaşlı Kahramanlar
+trp_looter_leader|Haydut Lideri
+trp_looter_leader_pl|Yağmacılar
+trp_bandit_leaders_end|bandit leaders end
+trp_bandit_leaders_end_pl|bandit leaders end
+trp_relative_of_merchant|Asturian Kaptanı
+trp_relative_of_merchants_end|relative of merchants end
+trp_relative_of_merchants_end_pl|relative of merchants end
+trp_sacerdote_lair|Rahip Beda
+trp_sacerdote_lair_pl|Sacerdote
+trp_pagano_lair|Godi Olafr
+trp_pagano_lair_pl|Sacerdote
+trp_bardo_lair|Ozan Siwi
+trp_bardo_lair_pl|Ozan
+trp_skald_lair|Ozan Bragi
+trp_skald_lair_pl|Ozan
+trp_quastuosa_lair1|Suaibsech
+trp_quastuosa_lair1_pl|quastuosa
+trp_quastuosa_lair2|Tancoystl
+trp_quastuosa_lair2_pl|quastuosa
+trp_quastuosa_lair3|Gulla
+trp_quastuosa_lair3_pl|quastuosa
+trp_quastuosa_lair4|Eadgyd
+trp_quastuosa_lair4_pl|quastuosa
+trp_lair_barber1|Aurelius
+trp_lair_barber1_pl|Aurelius
+trp_lair_barber2|Morgan
+trp_lair_barber2_pl|Morgan
+trp_lair_barber3|Alexander
+trp_lair_barber3_pl|Alexander
+trp_lair_barber4|Ailill
+trp_lair_barber4_pl|Ailill
+trp_cook_lair|Wamba
+trp_cook_lair_pl|Cook
+trp_lair_captain|Marcus
+trp_lair_captain_pl|Lair Kaptanları
+trp_mule_troop|The Frog
+trp_mule_troop_pl|The Frog
+trp_leader_playerrf|Kıdemli
+trp_leader_playerrf_pl|Kıdemli
+trp_mountain_bandit_leader|Wolf Heart
+trp_mountain_bandit_leader_pl|Wolf Heart
+trp_last_druid|Rahip
+trp_last_druid_pl|Rahip
+trp_old_roman|Yaşlı Romalı
+trp_old_roman_pl|Yaşlı Romalı
+trp_sea_raider_hero2|Kaptan Hero
+trp_sea_raider_hero2_pl|Kaptan Hero
+trp_desert_bandit_hero|Haydut Kralı
+trp_desert_bandit_hero_pl|Haydut Kralı
+trp_troll_bridge|Uzun adam
+trp_troll_bridge_pl|Uzun adam
+trp_elf_riddles|Kısa adam
+trp_elf_riddles_pl|Kısa adam
+trp_silo_gallaecia|Comes Silo of Gallaecia
+trp_silo_gallaecia_pl|Silo of Gallaecia
+trp_petrus_didaz|Dux Petrus Didaz
+trp_petrus_didaz_pl|Dux Petro of Oveto
+trp_gundinsalvo_cantabrian|Comes Gundinsalvo of Amaia
+trp_gundinsalvo_cantabrian_pl|Comes Gundinsalvo of Amaia
+trp_port_crew|Yaşlı Kaptan
+trp_port_crew_pl|SR Kaptanları
+trp_port_pirate|Köle Taciri
+trp_port_pirate_pl|Köle Taciri
+trp_fisher|balıkçı
+trp_fisher_pl|Balıkçılar
+trp_thiaderd|Thiaderd
+trp_thiaderd_pl|Thiaderd
+trp_sea_raider_prisoner|Kaptan
+trp_sea_raider_prisoner_pl|Kaptanlar
+trp_doccinga_torturador|İşkenceci
+trp_doccinga_torturador_pl|İşkenceciler
+trp_leader_svenlair|Harald
+trp_leader_svenlair_pl|Kaptanlar
+trp_farmstead_prisoner|Mahkum
+trp_farmstead_prisoner_pl|Mahkum
+trp_sven_brother|Olvir White Hair
+trp_sven_brother_pl|Olvir
+trp_atli_eiriksson|Atli Eiriksson
+trp_atli_eiriksson_pl|Atli
+trp_sven_bull_neck| Boğa Boyunlu Sven
+trp_sven_bull_neck_pl|Sven
+trp_frisianship_merchant|Kaptan
+trp_sailors|Woden Ric Sailor
+trp_sailors_pl|Woden Ric Sailors
+trp_mercenary_arqueros|Mercenary Archer
+trp_mercenary_arqueros_pl|Mercenary Archers
+trp_bodo_falso|Bodo
+trp_bodo_falso_pl|Bodo
+trp_your_tutorialwife|Anne
+trp_your_tutorialwife_pl|Anne
+trp_your_motherold|Yaşlı Anne
+trp_your_motherold_pl|Yaşlı Anne
+trp_ulf_thefarmer|Ulf
+trp_hija_granja|Thora
+trp_hija_granja_pl|Thora
+trp_orm_robagranjas|Orm Svarti
+trp_orm_robagranjas_pl|Orm Svarti
+trp_pagano|Godi Olafr
+trp_pagano_pl|Sacerdote
+trp_pseudo_troop_01|pt01
+trp_pseudo_troop_01_pl|pt
+trp_pseudo_troop_02|pt02
+trp_pseudo_troop_02_pl|pt
+trp_pseudo_troop_03|pt03
+trp_pseudo_troop_03_pl|pt
+trp_pseudo_troop_04|pt04
+trp_pseudo_troop_04_pl|pt
+trp_pseudo_troop_05|pt05
+trp_pseudo_troop_05_pl|pt
+trp_pseudo_troop_06|pt06
+trp_pseudo_troop_06_pl|pt
+trp_pseudo_troop_07|pt07
+trp_pseudo_troop_07_pl|pt
+trp_pseudo_troop_08|pt08
+trp_pseudo_troop_08_pl|pt
+trp_pseudo_troop_09|pt09
+trp_pseudo_troop_09_pl|pt
+trp_pseudo_troop_end|pseudo troop end
+trp_pseudo_troop_end_pl|pseudo troop end
+trp_copy_npc1|Caio
+trp_copy_npc1_pl|Caio
+trp_copy_npc2|Egil
+trp_copy_npc2_pl|Egil
+trp_copy_npc3|Brunhild
+trp_copy_npc3_pl|Brunhild
+trp_copy_npc4|Donnchadh
+trp_copy_npc4_pl|Donnchadh
+trp_copy_npc5|Morgant
+trp_copy_npc5_pl|Morgant
+trp_copy_npc6|Bodo
+trp_copy_npc6_pl|Bodo
+trp_copy_npc7|Dwywei
+trp_copy_npc7_pl|Dwywei
+trp_copy_npc8|Reginhard
+trp_copy_npc8_pl|Reginhard
+trp_copy_npc9|Clovis
+trp_copy_npc9_pl|Clovis
+trp_copy_npc10|Ceawlin
+trp_copy_npc10_pl|Ceawlin
+trp_copy_npc11|Solveig
+trp_copy_npc11_pl|Solveig
+trp_copy_npc12|Asbjorn
+trp_copy_npc12_pl|Asbjorn
+trp_copy_npc13|Helgi
+trp_copy_npc13_pl|Helgi
+trp_copy_npc14|Ailchu
+trp_copy_npc14_pl|Ailchu
+trp_copy_npc15|Agathinos
+trp_copy_npc15_pl|Agathinos
+trp_copy_npc16|Beda
+trp_copy_npc16_pl|Beda

@@ -1,0 +1,147 @@
+qst_deliver_message|{s13}{.e} mesaj ilet.
+qst_deliver_message_text|{s9}, {s13} şahsına bir mesaj götürmeni istedi. {s13}, sen bu görevi aldığında {s4} civarındaydı.
+qst_deliver_message_to_enemy_lord|{s13}{.e} mesaj ilet.
+qst_deliver_message_to_enemy_lord_text|{s9} senden {s13} of {s15} şahsına bir mesaj götürmeni istedi. {s13}, sen bu görevi aldığında{s4} civarındaydı.
+qst_raise_troops|{reg1} {s14} yetiştir
+qst_raise_troops_text|{s9} senden kendisi için {reg1} tane {s14} yetiştirmeni istedi.
+qst_escort_lady|{s13}'{.e} {s14}{.e} kadar refakatlik yap.
+qst_deal_with_bandits_at_lords_village|{s15} köyü{.nü} yağmacı haydutlardan kurtar
+qst_deal_with_bandits_at_lords_village_text|{s13}, sahibi olduğu {s15} köyüne sığınan banditlerden kurtulmanı ve sonrasına kendisine haber vermeni istedi.
+qst_collect_taxes|{s3}{.den} vergi topla.
+qst_collect_taxes_text|{s9}, senden {s3} vergilerini toplamanı istedi. Topladığın paranın beşte birini sana vereceğini söyledi. 
+qst_hunt_down_fugitive|{s4}'{.i} avla.
+qst_hunt_down_fugitive_text|{s9}, {s4} isimli kaçağı avlamanı istedi. Kaçağın şu sıralar {s3} civarında olduğu sanılıyor.
+qst_kill_local_merchant|{s3}{.de}ki yerli tüccarı öldür.
+qst_kill_local_merchant_text|{s9}, {s3}{.de}ki yerli tüccarı öldürmeni istedi.
+qst_bring_back_runaway_serfs|Kaçak köleleri geri getir.
+qst_bring_back_runaway_serfs_text|{s9} senden üç kaçak köle grubunu {s2}'{.ye} geri getirmeni istedi. Bu üç grubun {s3} yönünde kaçıyor olabileceğini söyledi. 
+qst_follow_spy|Casusu buluşma yerine kadar izle
+qst_follow_spy_text|{s11}, senden {s12}'{.den} ayrılacak olan casusu takip etmeni istedi. Casus tarafından farkedilmemek için dikkatli olmalısın. Yoksa senden şüphelenecektir ve kendini ele vermemek için işini yarım bırakacaktır. Casus yardakçısıyla buluştuğu zaman ikisini de kıskıvrak yakalayıp {s11}'{.e} getirmelisin.
+qst_capture_enemy_hero|{s13}{.den} bir Lord esir al.
+qst_lend_companion|{s9}'{.e} yardımcın {s3}'{.i} ödünç ver.
+qst_lend_companion_text|{s9} senden {s3} adlı yoldaşını kendisine bir haftalığına ödünç vermeni istedi.
+qst_collect_debt|{s3}'{.nin} {s9}'{.e} olan borcunu topla.
+qst_collect_debt_text|{s9} senden {s3} halkının kendisine olan {reg4} peninglik borcunu toplamanı istedi. 
+qst_incriminate_loyal_commander|Sadık {s13} komutanı {s16}'{.e} iftira at.
+qst_meet_spy_in_enemy_town|{s13}'{.de} casusla buluş.
+qst_capture_prisoners|{reg1} {s3} esir getir.
+qst_capture_prisoners_text|{s9} senden kendisine {reg1} tane {s3} esir getirmeni istedi. 
+qst_lend_surgeon|{s1} cerrahını ({s3}) kendisine ödünç vermeni istedi.
+qst_lend_surgeon_text|Tecrübeli cerrahın {s3}'{.i}, {s1}'{.e} ödünç ver.
+qst_follow_army|{s9}'{.nin} ordusunu takip et.
+qst_report_to_army|Mareşale ({s13}) rapor ver.
+qst_deliver_cattle_to_army|{s13} için {reg3} baş sığır götür.
+qst_join_siege_with_army|{s14} kuşatmasına katıl
+qst_screen_army|{s13} ordusunun ilerlemesini görüntüle
+qst_scout_waypoints|{s13}, {s14} ve {s15}'{.i} gözle.
+qst_rescue_lord_by_replace|{s13} kişisini {s14} kişisinden kurtar.
+qst_deliver_message_to_prisoner_lord|{s14} bölgesindeki {s13}'{.e} mesaj ilet.
+qst_duel_for_lady|{s13}'{.i} düelloya davet et.
+qst_duel_courtship_rival|{s13}'{.i} düelloya davet et (isteğe bağlı)
+qst_duel_avenge_insult|{s13}'{.i} düelloya davet et
+qst_move_cattle_herd|Sığır Sürüsünü {s13}{.e} sür.
+qst_move_cattle_herd_text|{s10} topraklarının sahibi, {s13}'{.e} bir sığır sürüsü sürmeni istedi.
+qst_escort_merchant_caravan|Kervana {s8}{.e} kadar refakat et
+qst_escort_merchant_caravan_text|Kervana {s8}{.e} kadar refakat et.
+qst_deliver_wine|{s8}{.e} {reg5} adet {s6} götür.
+qst_deliver_wine_text|{s9} of {s3} senden {s4} tavernasına 7 gün içerisinde {reg5} tane {s6} götürmeni istedi.
+qst_troublesome_bandits|Belalı haydutları yok et
+qst_troublesome_bandits_text|{s9} of {s4} senden şehir civarındaki belalı haydutları yok etmeni istedi. 
+qst_kidnapped_girl|Kızın fidyesini götür
+qst_kidnapped_girl_text|{s4} topraklarının sahibi sana haydutlar tarafından kaçırılan kızın fidyesini ödemen için {reg12} pening verdi. {s3} yakınlarında haydutlarla buluşup fidyeyi ödemekle ve sonrasında da kızı {s4}'{.e} geri getirmekle yükümlüsün. 
+qst_persuade_lords_to_make_peace|İki Lordun barışa karşı gelmeyeceklerine emin ol
+qst_persuade_lords_to_make_peace_text|{s4} topraklarının sahibi, eğer {s12} ve {s13}'{.i} {s15} ve {s14} arasındaki barışa tehdit unsuru olmaktan çıkarabilirsen, sana {reg12} pening vaad etti. bunu yapabilmek için ya ikisini de ikna etmelisin ya da barış antlaşması yapılana kadar ikisini de esir olarak tutmalısın.
+qst_deal_with_looters|Yağmacıları hallet
+qst_deal_with_looters_text|{s4} topraklarının sahibi senden {s4} etrafındaki yağmacı gruplarını temizlemeni ve ganimet olarak ne eşya bulursan kendisine getirmeni istedi.
+qst_deal_with_night_bandits|Gece haydutlarıyla ilgilen
+qst_deliver_grain|{s3}{.e} buğday getir.
+qst_deliver_grain_text|{s3} köyü yaşlısı senden kendilerine {reg5} çuval un getirmeni istedi.
+qst_deliver_cattle|{s3}{.e} {reg5} baş sığır götür.
+qst_deliver_cattle_text|{s3} köyü yaşlısı senden {reg5} baş sığır getirmeni istedi. 
+qst_train_peasants_against_bandits|{s13} ahalisini haydutlara karşı eğit.
+qst_eliminate_bandits_infesting_village|{s1} haydutlar tarafından istila edildi. Onları etkisiz hale getir.
+qst_eliminate_bandits_infesting_village_text|{s7} köyünden bir köylü, köylerini istilacı haydutlardan kurtarman için sana yalvardı.
+qst_visit_lady|Leydiyi ziyaret et
+qst_formal_marriage_proposal|Resmi Evlenme Teklifi
+qst_obtain_liege_blessing|Resmi Evlenme Teklifi
+qst_wed_betrothed|Nişanlınla Evlen
+qst_wed_betrothed_female|Nişanlınla Evlen
+qst_join_faction|{s1}'{.e} bağlılık yemini et.
+qst_join_faction_text|{s1}'{.i} bul ve ona bağlılık yemini et.
+qst_rebel_against_kingdom|{s13}'{.in} {s14} tacını elde etmesine yardım et.
+qst_consult_with_minister|Başkana danış
+qst_consult_with_minister_text|Başkana, {s11}, danış. Kendisi şu sıralar  {s12}'{de}.
+qst_organize_feast|Ziyafet düzenle
+qst_organize_feast_text|Eşin {s11}'{.e} ziyafet için malzeme getir. Kendisi şu sıralar {s12}'{.de}.
+qst_resolve_dispute|Münakaşayı sonlandır
+qst_resolve_dispute_text|{s11} ve {s12} arasındaki münakaşayı sonlandır.
+qst_offer_gift|Hediye ver
+qst_offer_gift_text|{s10}'{.e}, {reg4?her:his} {s11}, {s12}'{.e} iletmek üzere bir hediye ver.
+qst_denounce_lord|Lorda beğlılık yeminini boz
+qst_denounce_lord_text|{s11} tarafına ettiğin bağlılık yeminini boz.
+qst_intrigue_against_lord|Lordun arkasından işler çevir
+qst_intrigue_against_lord_text|{s11} arkasından işler çevir.
+qst_track_down_bandits|Haydutları takip et
+qst_track_down_bandits_text|{s9} of {s4} senden şehre yakın yollardaki gezginlere saldıran {s6}'{.i} takip etmeni istedi.
+qst_track_down_provocateurs|Provokatörleri takip et
+qst_track_down_provocateurs_text|{s9} of {s4} senden {s5} ve {s6} arasında sınır vakası yaratmaya çalışan provokatörleri takip etmeni istedi.
+qst_retaliate_for_border_incident|Bir sınır olayına karşılık ver
+qst_retaliate_for_border_incident_text|{s9} of {s4} senden {s5} of the {s7}'{.i} yenip {s8} tarafındaki savaşa girmek üzere tırmanın tansiyonu dindirmeni istedi.
+qst_raid_caravan_to_start_war|Bağımsız bir kervana saldırıp savaş sebebi yarat
+qst_cause_provocation|Bir krallığı diğerine saldırması için kışkırt
+qst_rescue_prisoner|Bir mahkumu fidye ya da fidyesiz kurtar
+qst_destroy_bandit_lair|Haydutların sığınağını yok et
+qst_destroy_bandit_lair_text|{s9} of {s4} senden bir {s6} bulup yok etmeni istedi.
+qst_kennemer_jarl|İntikam: Kennemer soylusu ile konuş.
+qst_kennemer_jarl_missions|İntikam: Bir soylu için çalış.
+qst_kennemer_mission_1|Soylu görevi: Manastırdaki yargılama.
+qst_kennemer_mission_2|Soylu görevi: Thiaderd ölmeli.
+qst_kennemer_mission_3|Soylu görevi: Bir kral öldürme.
+qst_reginhard_donations|Reginhard Ricası: Savaş kurbanları için bağış.
+qst_recruit_an_army|Soylu görevi: Savaşçılara yardım
+qst_doccinga_assault|Viking Saldırısı: Doccinga'yı Sven'in saldırısından kurtar.
+qst_doccinga_interrogation|Viking saldırısı: Viking sorgulaması.
+qst_getting_ship|Viking saldırısı:Bir bot ve bir kız.
+qst_notes_companions|Yoldaşının notları.
+qst_notes_global|Senin notların.
+qst_notes_frisa|Friese'deki notların.
+qst_notes_danmork|Danimarka'daki notların.
+qst_notes_englaland|Englaland'daki notların.
+qst_sven_lair|İntikam: Kurtların sığınağı.
+qst_danmork_protection|İntikam: Kral Horek'in kanatlarının altında.
+qst_revenge_sigurd|The Revenge:Sigurd'a 'Yılan Göz'ü sor.
+qst_collect_smen|Sigurd Görevi:Sigurd ordularından birine yardım.
+qst_bodo_letter|İntikam: Çok önemli bir mektubu ulaştırma. 
+qst_the_holmgang|Holmgang:Hirdman öldürme.
+qst_the_fleet|İntikam:Englaland'ı istila etme.
+qst_sven_traitor|İntikam:Hain Sven.
+qst_wessex_foragers|Kuşatma: Batı Seaxe avcıları.
+qst_the_messengersn|Kuşatma: Ulak.
+qst_the_alliance|İntikam: İttifak.
+qst_welsh_and_pictish|Fatih: Bir amaca hizmet.
+qst_cathach_colum|Viking olma: 'The Cathach of Colum Cille'.
+qst_entregando_pieles|Viking olma: Kürk ticareti yapma.
+qst_revenge_exchange|İntikame: Çiftlik.
+qst_ulf_testigo|Kelleni kurtama: Çiftçiler ve soyluların desteğini kazan.
+qst_the_thing|İntikam: Meclis.
+qst_douar_an_enez|İntikam: Douar-an-Enez.
+qst_aescesdun|Savaş: Aescesdun.
+qst_svenbn_final|İntikam: Boğa Boyun Sven.
+qst_old_roman|Hadrian Duvarı: Açlıktan ölmek üzere olanları kurtar.
+qst_vc_menu|Viking kuşatması menü sistemi.
+qst_vc_wounds|Viking kuşatması yara sistemi.
+qst_sea_battle_spawn|oluşturma sistemi.
+qst_team_0_ships|oluşturma sistemi.
+qst_team_1_ships|oluşturma sistemi.
+qst_blank_quest_2|Piskoposa {s14}'{.e} kadar eşlik et.
+qst_blank_quest_6|{reg5} kadını yakalayıp {s3}'{.e} getir.
+qst_blank_quest_6_text|{s3} köyü yaşlısı senden köye esir olarak {reg5} kadın getirmeni istedi.
+qst_blank_quest_16|
+qst_blank_quest_16_text|{s11}, kendisine {reg25} parça {s17} getirmeni istedi.
+qst_blank_quest_17|{s11}'{.e} 2 parça peynir ve {reg25} şişe şarap getir.
+qst_blank_quest_17_text|{s11}, kendisine 2 parça peynir ve {reg25} şişe şarap getirmeni istedi.
+qst_collect_men|İntikam:Doccinga'yı ziyaret et
+qst_learn_where_merchant_brother_is|İntikam: Kennemer soylusu ile konuş.
+qst_save_relative_of_merchant|Haydut sığınağına saldır
+qst_save_town_from_bandits|Şehri haydutlardan kurtar
+qst_quests_end|Görevler bitti

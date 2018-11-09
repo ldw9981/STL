@@ -1,0 +1,402 @@
+p_zendar|Zendar{***}
+p_town_1|坎 特 伯 雷 
+p_town_2|切 本 哈 姆 
+p_town_3|愛 丁 堡 
+p_town_4|裡 伯 
+p_town_5|頓 士 伯 格 
+p_town_6|敦 巴 頓 
+p_town_7|都 柏 林 
+p_town_8|錫 倫 要 塞 
+p_town_9|戴 夫 堡 
+p_town_10|約 維 克 
+p_town_11|杜 裡 斯 特 
+p_town_12|倫 敦 威 克 
+p_town_13|安 格 爾 西 
+p_town_14|杜 威 克 
+p_town_15|斯 昆 
+p_town_16|維 坦 要 塞 
+p_town_17|博 德 明 
+p_town_18|卡 寧 
+p_town_19|賽 爾 裡 滿 萊 
+p_town_20|拉 賽 特 爾 
+p_town_21|梅 斯 圖 
+p_town_22|馬 威 堡 
+p_town_23|托 騰 
+p_town_24|凱 希 亞 
+p_town_25|埃 裡 奇 
+p_town_26|拜 卡 靈 
+p_town_27|貝 班 堡 
+p_town_28|克 魯 亨 
+p_town_29|提 梅 爾 
+p_castle_1|萊 桂 寧 堡 
+p_castle_2|梅 耶 要 塞 
+p_castle_3|多 恩 要 塞 
+p_castle_4|米 都 斯 堡 
+p_castle_5|迪 納 斯 
+p_castle_6|艾 戈 芬 
+p_castle_7|丁 貝 爾 
+p_castle_8|威 斯 頓 
+p_castle_9|諾 丁 漢 
+p_castle_10|林 克 裡 
+p_castle_11|漢 敦 
+p_castle_12|尼 潘 頓 
+p_castle_13|牛 津 
+p_castle_14|科 恩 要 塞 
+p_castle_15|更 士 伯 
+p_castle_16|斯 坦 福 
+p_castle_17|諾 威 治 
+p_castle_18|海 高 力 敦 
+p_castle_19|蘭 都 斯 堡 
+p_castle_20|劍 橋 
+p_castle_21|羅 斐 要 塞 
+p_castle_22|唐 沃 納 要 塞 
+p_castle_23|希 羅 伯 
+p_castle_24|朵 斯 要 塞 
+p_castle_25|威 爾 頓 
+p_castle_26|坎 頓 
+p_castle_27|巴 登 
+p_castle_28|艾 斯 肯 要 塞 
+p_castle_29|圖 安 要 塞 
+p_castle_30|丁 泰 格 爾 
+p_castle_31|卡 菲 爾 士 
+p_castle_32|裘 南 
+p_castle_33|卡 拉 道 格 堡 
+p_castle_34|高 賓 
+p_castle_35|杜 恩 丘 
+p_castle_36|火 德 丘 
+p_castle_37|泰 羅 丘 
+p_castle_38|阿 沃 爾 丘 
+p_castle_39|昂 黎 丘 
+p_castle_40|阿 繆 爾 柯 
+p_castle_41|拜 克 堡 
+p_castle_42|迪 納 斯 布 蘭 
+p_castle_43|阿 爾 特 堡 
+p_castle_44|厄 夫 堡 
+p_castle_45|先 能 特 堡 
+p_castle_46|史 維 斯 堡 
+p_castle_47|梅 根 蘇 賽 
+p_castle_48|溫 德 堡 
+p_castle_49|斯 卡 發 
+p_castle_50|偉 約 克 
+p_castle_51|豪 斯 塔 夫 
+p_castle_52|海 德 貝 爾 
+p_castle_53|斯 蓋 寧 索 
+p_castle_54|霍 達 蘭 
+p_castle_55|愛 蒂 爾 
+p_castle_56|羅 加 蘭 
+p_castle_57|雷 德 要 塞 
+p_castle_58|倍 得 丘 
+p_castle_59|馬 恩 島 
+p_castle_60|加 納 萊 
+p_castle_61|奧 克 尼 加 
+p_castle_62|微 斯 嘉 
+p_castle_63|肯 尼 莫 
+p_castle_64|維 拉 斯 印 吉 
+p_castle_65|塞 比 奇 丘 
+p_castle_66|馬 拉 弗 
+p_castle_67|馬 柯 巴 
+p_castle_68|杜 倫 莫 爾 
+p_castle_69|拉 克 車 爾 
+p_castle_70|科 法 明 
+p_castle_71|亞 德 麻 查 
+p_castle_72|馬 格 杜 邁 
+p_castle_73|阿 斯 摩 爾 
+p_castle_74|阿 依 徹 達 
+p_castle_75|阿 勃 該 爾 
+p_castle_76|雷 戈 卡 納 
+p_castle_77|卡 哈 柯 美 
+p_castle_78|倫 卡 納 特 
+p_castle_79|科 克 埃 米 
+p_castle_80|阿 斯 伯 納 
+p_castle_81|蓋 安 埃 伯 
+p_castle_82|萊 斯 摩 爾 
+p_castle_83|塞 利 盧 卡 
+p_castle_84|密 斯 桂 
+p_castle_85|南 巴 克 丘 
+p_castle_86|塞 笛 拉 
+p_castle_87|萊 昂 翰 
+p_castle_88|博 格 丘 
+p_castle_89|羅 米 楚 林 
+p_castle_90|麥 爾 雷 根 
+p_village_1|萊 桂 寧 翰 
+p_village_2|梅 耶 翰 
+p_village_3|多 恩 翰 
+p_village_4|米 都 斯 翰 
+p_village_5|迪 納 斯 翰 
+p_village_6|艾 戈 芬 翰 
+p_village_7|貝 爾 翰 
+p_village_8|威 克 斯 翰 
+p_village_9|諾 丁 漢 南 
+p_village_10|林 克 裡 翰 
+p_village_11|漢 翰 
+p_village_12|尼 潘 頓 翰 
+p_village_13|牛 津 翰 
+p_village_14|科 恩 翰 
+p_village_15|更 士 伯 翰 
+p_village_16|斯 坦 翰 
+p_village_17|諾 威 翰 
+p_village_18|海 高 力 翰 
+p_village_19|蘭 都 斯 翰 
+p_village_20|劍 橋 翰 
+p_village_21|羅 斐 翰 
+p_village_22|唐 沃 納 翰 
+p_village_23|希 羅 翰 
+p_village_24|朵 斯 翰 
+p_village_25|威 爾 翰 
+p_village_26|坎 翰 
+p_village_27|巴 登 翰 
+p_village_28|艾 斯 肯 翰 
+p_village_29|徹 弗 圖 安 
+p_village_30|徹 弗 泰 格 爾 
+p_village_31|徹 弗 卡 菲 爾 士 
+p_village_32|徹 弗 裘 
+p_village_33|徹 弗 卡 拉 道 格 
+p_village_34|徹 弗 高 賓 
+p_village_35|巴 爾 杜 恩 
+p_village_36|巴 爾 火 德 
+p_village_37|巴 爾 泰 羅 
+p_village_38|巴 爾 阿 沃 
+p_village_39|巴 爾 昂 黎 
+p_village_40|巴 爾 繆 柯 
+p_village_41|徹 弗 拜 克 
+p_village_42|徹 弗 布 蘭 
+p_village_43|徹 弗 阿 爾 特 
+p_village_44|徹 弗 厄 夫 
+p_village_45|徹 弗 先 能 特 
+p_village_46|徹 弗 史 維 斯 
+p_village_47|徹 弗 賽 柯 
+p_village_48|徹 弗 溫 德 
+p_village_49|斯 卡 發 拜 
+p_village_50|偉 約 克 拜 
+p_village_51|豪 斯 塔 夫 拜 
+p_village_52|海 德 拜 
+p_village_53|斯 蓋 寧 索 拜 
+p_village_54|霍 達 拜 
+p_village_55|愛 蒂 爾 拜 
+p_village_56|羅 加 蘭 拜 
+p_village_57|徹 弗 雷 德 
+p_village_58|巴 爾 倍 得 
+p_village_59|徹 弗 馬 恩 
+p_village_60|加 納 萊 拜 
+p_village_61|奧 克 尼 加 拜 
+p_village_62|微 斯 嘉 拜 
+p_village_63|肯 尼 莫 特 
+p_village_64|維 拉 斯 印 吉 特 
+p_village_65|巴 爾 塞 比 奇 
+p_village_66|巴 爾 馬 拉 
+p_village_67|巴 爾 馬 柯 巴 
+p_village_68|巴 爾 莫 爾 北 
+p_village_69|巴 爾 克 車 爾 
+p_village_70|巴 爾 法 明 
+p_village_71|巴 爾 麻 查 
+p_village_72|巴 爾 杜 邁 
+p_village_73|巴 爾 莫 爾 南 
+p_village_74|巴 爾 依 徹 達 
+p_village_75|巴 爾 勃 該 爾 
+p_village_76|巴 爾 卡 納 
+p_village_77|巴 爾 柯 美 
+p_village_78|巴 爾 倫 
+p_village_79|巴 爾 科 克 埃 米 
+p_village_80|巴 爾 伯 納 
+p_village_81|巴 爾 蓋 安 埃 伯 
+p_village_82|巴 爾 萊 斯 摩 爾 
+p_village_83|巴 爾 塞 利 盧 卡 
+p_village_84|巴 爾 密 斯 桂 
+p_village_85|巴 爾 南 巴 克 
+p_village_86|巴 爾 笛 拉 
+p_village_87|巴 爾 萊 昂 翰 
+p_village_88|巴 爾 博 格 
+p_village_89|巴 爾 羅 米 楚 林 
+p_village_90|巴 爾 麥 爾 雷 根 
+p_village_91|巴 爾 塔 拉 
+p_village_92|坎 托 拉 翰 北 
+p_village_93|坎 托 拉 翰 南 
+p_village_94|熙 朋 翰 東 
+p_village_95|熙 朋 翰 西 
+p_village_96|愛 丁 翰 東 
+p_village_97|愛 丁 翰 西 
+p_village_98|裡 伯 拜 北 
+p_village_99|裡 伯 拜 南 
+p_village_100|頓 士 拜 東 
+p_village_101|頓 士 拜 西 
+p_village_102|徹 弗 布 雷 頓 東 
+p_village_103|徹 弗 布 雷 頓 西 
+p_village_104|都 柏 林 拜 北 
+p_village_105|都 柏 林 拜 南 
+p_village_106|徹 弗 戴 夫 東 
+p_village_107|徹 弗 戴 夫 西 
+p_village_108|依 奧 法 翰 東 
+p_village_109|依 奧 法 翰 西 
+p_village_110|多 爾 翰 東 
+p_village_111|多 爾 翰 西 
+p_village_112|倫 敦 翰 北 
+p_village_113|倫 敦 翰 南 
+p_village_114|徹 弗 芒 東 
+p_village_115|徹 弗 芒 西 
+p_village_116|杜 翰 北 
+p_village_117|杜 翰 南 
+p_village_118|巴 爾 斯 昆 東 
+p_village_119|巴 爾 斯 昆 西 
+p_village_120|維 坦 翰 北 
+p_village_121|維 坦 翰 南 
+p_village_122|徹 弗 博 明 東 
+p_village_123|徹 弗 博 明 西 
+p_village_124|巴 爾 卡 寧 北 
+p_village_125|巴 爾 卡 寧 南 
+p_village_126|巴 爾 裡 滿 萊 北 
+p_village_127|巴 爾 裡 滿 萊 南 
+p_village_128|巴 爾 賽 特 東 
+p_village_129|巴 爾 賽 特 西 
+p_village_130|巴 爾 梅 斯 圖 東 
+p_village_131|巴 爾 梅 斯 圖 西 
+p_village_132|徹 弗 馬 威 東 
+p_village_133|徹 弗 馬 威 西 
+p_village_134|托 翰 東 
+p_village_135|徹 弗 馬 威 西 
+p_village_136|巴 爾 凱 希 亞 東 
+p_village_137|巴 爾 凱 希 亞 西 
+p_village_138|巴 爾 埃 裡 奇 東 
+p_village_139|巴 爾 埃 裡 奇 西 
+p_village_140|徹 弗 拜 卡 靈 東 
+p_village_141|徹 弗 拜 卡 靈 西 
+p_village_142|貝 班 翰 北 
+p_village_143|貝 班 翰 南 
+p_village_144|巴 爾 克 魯 亨 東 
+p_village_145|巴 爾 克 魯 亨 西 
+p_village_146|巴 爾 提 梅 爾 北 
+p_village_147|巴 爾 提 梅 爾 南 
+p_village_148|錫 倫 翰 東 
+p_village_149|錫 倫 翰 西 
+p_village_150|道 琴 嘉 
+p_salt_mine|鹽 礦 
+p_four_ways_inn|福 澤 斯 坦 
+p_test_scene|測 試 場 景 
+p_battlefields|戰 場 
+p_frisa_beach|弗 裡 斯 海 灘 
+p_farmland|伍 爾 夫 的 農 場 
+p_boar_grove|野 豬 林 
+p_readingum|雷 丁 鎮 
+p_aescesdun|艾 克 丹 
+p_mega_danishrmy|維 京 雄 獅 
+p_battle_stones|石 陣 
+p_farmland_special|農 田 
+p_roman_fort|諾 曼 要 塞 
+p_troll_bridge|巨 魔 橋 
+p_circle_mystic1|神 秘 圓 陣 
+p_celidon_forest|遠 古 石 群 
+p_hidden_valley|罕 見 的 遺 跡 
+p_quarry1|采 石 場 
+p_quarry2|采 石 場 
+p_quarry3|采 石 場 
+p_quarry4|采 石 場 
+p_saltmine1|鹽 礦 
+p_saltmine2|鹽 礦 
+p_saltmine3|鹽 礦 
+p_saltmine4|鹽 礦 
+p_lumbercamp1|伐 木 營 
+p_lumbercamp2|伐 木 營 
+p_lumbercamp3|伐 木 營 
+p_lumbercamp4|伐 木 營 
+p_farmsteadsp1|農 場 
+p_farmsteadsp2|農 場 
+p_farmsteadsp3|農 場 
+p_farmsteadsp4|農 場 
+p_farmsteadsp5|農 場 
+p_farmsteadsp6|農 場 
+p_farmsteadsp7|農 場 
+p_farmsteadsp8|農 場 
+p_farmsteadsp9|農 場 
+p_hadrian_wall1|哈 德 良 長 城 
+p_bjorn_camp|比 約 恩 的 營 地 
+p_snotingaham_siege|被 包 圍 的 諾 丁 漢 
+p_odin_cave|奧 丁 之 穴 
+p_stonemonumento|石 之 豐 碑 
+p_forestbattle|林 中 之 戰 
+p_the_thing|集 結 號 
+p_dhorak_keep|多 拉 克 要 塞 
+p_training_ground|訓 練 場 
+p_training_ground_1|訓 練 場 
+p_training_ground_2|訓 練 村 
+p_training_ground_3|訓 練 場 
+p_training_ground_4|訓 練 湖 
+p_training_ground_5|訓 練 營 
+p_monasterio1|坎 達 卡 莎 慕 修 道 院 
+p_monasterio2|衛 利 波 洛 修 道 院 
+p_monasterio3|多 默 克 修 道 院 
+p_monasterio4|林 第 斯 法 納 修 道 院 
+p_monasterio5|埃 克 杉 修 道 院 
+p_monasterio6|佩 特 勒 斯 
+p_monasterio7|佩 爾 斯 格 修 道 院 
+p_monasterio8|朗 特 魯 道 格 修 道 院 
+p_monasterio9|安 格 爾 艾 利 修 道 院 
+p_monasterio10|伊 威 宿 曼 修 道 院 
+p_monasterio11|艾 德 武 達 修 道 院 
+p_monasterio12|漢 格 斯 修 道 院 
+p_monasterio13|卜 爾 丹 修 道 院 
+p_monasterio14|古 拉 達 克 修 道 院 
+p_monasterio15|沃 茨 納 格 修 道 院 
+p_monasterio16|庫 洛 碩 修 道 院 
+p_monasterio17|威 爾 巴 赫 修 道 院 
+p_monasterio18|第 爾 哈 斯 特 修 道 院 
+p_monasterio19|瓦 特 晗 修 道 院 
+p_monasterio20|布 雷 特 羅 戈 修 道 院 
+p_monasterio21|枚 德 漢 姆 斯 修 道 院 
+p_monasterio22|庫 克 漢 姆 修 道 院 
+p_monasterio23|巴 特 利 修 道 院 
+p_monasterio24|戴 卡 格 裡 修 道 院 
+p_monasterio25|菲 尼 安 修 道 院 
+p_monasterio26|瓦 澤 安 修 道 院 
+p_monasterio27|克 汗 斯 茨 修 道 院 
+p_monasterio28|斯 樂 科 海 慈 修 道 院 
+p_monasterio29|格 倫 達 洛 谷 修 道 院 
+p_yourlair|庇 護 所 
+p_thiaderd_lair|泰 德 的 藏 身 處 
+p_destroy1|泰 德 的 藏 身 處 ( 已 破 壞 ) 
+p_destroy2|斯 溫 的 藏 身 處 ( 已 破 壞 ) 
+p_destroy3|艾 克 丹 戰 場 
+p_followers_camp|追 隨 者 營 地 
+p_ferry_1a| 渡 口 
+p_ferry_2a| 渡 口 
+p_ferry_3a|渡 口 
+p_ferry_4a|渡 口 
+p_ferry_1b|渡 口 
+p_ferry_2b|渡 口 
+p_ferry_3b|渡 口 
+p_ferry_4b|渡 口 
+p_wales_spawn_point|海 岸 
+p_fortiu_spawn_point|海 岸 
+p_sussex_spawn_point|南 撒 克 遜 
+p_clyde_coast_spawn_point|河 
+p_limerick_spawn_point|海 岸 
+p_norway_spawn_point|山 岳 
+p_northumbria_spawn_point|鄉 村 
+p_mierce_spawn_point|鄉 村 
+p_crafu_spawn_point|鄉 村 
+p_alban_spawn_point|鄉 村 
+p_aileach_spawn_point|鄉 村 
+p_engla_coast_spawn_point|海 岸 
+p_cornish_coast_spawn_point|海 岸 
+p_leinster_spawn_point|鄉 村 
+p_frisia_spawn_point|鄉 村 
+p_denmark_spawn_point|鄉 村 
+p_caitness_priest_spawn_point|鄉 村 
+p_northumbria_priest_spawn_point|鄉 村 
+p_norway_priest_spawn_point|鄉 村 
+p_denmark_priest_spawn_point|鄉 村 
+p_channel_spawn_point|海 峽 
+p_bight_spawn_point|南 部 的 海 岸 線 
+p_irish_sea_spawn_point|愛 爾 蘭 海 
+p_forth_firth_spawn_point|福 斯 灣 
+p_skagerrak_spawn_point|斯 卡 格 拉 克 海 峽 
+p_firth_clyde_spawn_point|克 萊 德 灣 
+p_landing_point|碼 頭 
+p_the_fleet|艦 隊 
+p_transporter|運 輸 者 
+p_troop_camp_1|軍 營 
+p_troop_camp_2|軍 營 
+p_paganholysites1|奧 丁 神 廟 
+p_paganholysites2|索 爾 神 廟 
+p_oldpagan_hut|破 舊 的 多 神 教 徒 小 屋 
+p_morrigan_lair|莫 莉 卡 的 巢 穴 
+p_bresail_farm|普 雷 西 爾 王 子 的 農 場 
+p_bresail_fort|普 雷 西 爾 王 子 的 堡 壘 

@@ -1,0 +1,1273 @@
+menu_start_game_0|Viking İstilası'na Hoşgeldin.
+menu_start_phase_2|{s1}
+mno_continue|Devam...
+mno_continue_cheat|Eğitimi geç.
+mno_go_back_dot|Geri dön.
+menu_start_game_3|Senaryo seç:
+mno_go_back|Geri dön.
+menu_tutorial|Yerel sakinlerin silah talimi yaptığı bir alana yaklaşıyorsun. Burada savaş becerilerini geliştirebilirsin.
+menu_reports|Karakter Şanı: {reg5}^Onur Derecesi: {reg6}^Grup Morali: {reg8}^Grup Büyüklüğü Sınırı: {reg7}^
+mno_resume_travelling|Yolculuğa devam et.
+menu_start_phase_2x|Geri dön
+menu_start_phase_22|{s1}
+mno_town_4|Devam...
+menu_custom_battle_scene|(NO TRANS)
+menu_custom_battle_end|Savaş bitti. {s1} Grubun {reg5} düşman öldürdü ve savaş sırasında {reg6} asker kaybetti. Kişisel olarak {reg7} adam öldürdün.
+menu_start_game_2|Viking İstilası'na Hoşgeldin.
+menu_start_game_1|Viking İstilası'na Hoşgeldin.
+menu_start_game_11|Çıkış?
+menu_start_game_4|Bazı değişiklikler yaptın. Oyun başladıktan sonra bunları değiştiremeyeceksin. Bunları kaydetmek ve devam etmek istiyor musun?
+menu_past_life_explanation|{u}
+mno_view_next|{s5}
+menu_morale_report|{s1}
+menu_courtship_relations|{s1}
+menu_lord_relations|{s1}
+menu_companion_report|{s7}{s1}
+menu_character_report|{s9}
+menu_party_size_report|{s1}
+menu_faction_relations_report|{s1}
+menu_camp|Kamp kurdun. Ne yapmak istiyorsun?
+mno_camp_action|Bir işe giriş.
+mno_camp_wait_here|Burada bir süre bekle.
+menu_camp_action_rest|Kamp yapmak adamlarının dinlenmelerini ve zorlu yolculukların rehavetini üzerlerinden atmalarını sağlar. Buna ek olarak yemekten tasarruf etmenizi ve yemek stoklarınızı büyütmenizi sağlar. Bu avantajı dolayısıyla özellikle düşman topraklarında yapılan kamp, etrafta size yemek verecek yerleşim bulamayacağınız için büyük bir kurtarıacı niteliğindedir. 
+menu_build_refuge_new|Adamların sığınağı inşa etmek için emrini bekliyor. Şimdiye kadar yeterli materyal toplanmış durumda. Toplanamamış, eksik olanlar ise çevre köylerden satın alınabilir.^^Toplam Eder: 1000 pening.^Gerekli Süre: 6 saat.
+mno_refuge_here|Emret.
+menu_camp_cheat|Hile seç:
+mno_camp_cheat_find_item|Bir eşya bul...
+mno_update_danmork4|Test: Şöhret, para ve asker ekle."para ve asker ekle.
+menu_storyline_cheat|Hile seç:
+mno_hide_lords|Elçi Görvinden Sonra: Snotingaham'da lordlar spawnla.
+mno_douar_1s|Douar-an-Enez'e erişim (danimarka tarafı). Boar Grove'dan önce.
+mno_douar_2s|Douar-an-Enez'e erişim (wessex tarafı). Boar Grove'dan önce.
+mno_douar_2sbeda|Douar-an-Enez'e erişim (Partinde Beda olmalı - gidip yaşlı kaptanla konuş)
+mno_update_danmork21|Test: ulf testigo.
+mno_douar_back|Final kısmı: Douar-an-Enez'den dönüş (sığır görevinden önce).
+mno_oath_mission|Krallığa katılma görevini tekrar sahnelemek için İttifak görevine geri dön.
+mno_mission_test_1|Test cenaze görevi.
+mno_mission_test_2|Test svenattack thefleet.
+mno_mission_test_4|İlk gemi görevi.
+mno_mission_test_5|douaranenez çıkartması (wessex tarafı)
+mno_mission_test_6|douaranenez çıkartması (dan tarafı)
+mno_mission_test_7|Holmgang (Reginhard)
+mno_mission_test_8|Holmgang (Egil)
+menu_phaiak_cheats|Yalnızca test için:
+mno_vc_menu|vc menüsü kapalı: {reg1}
+mno_beaufort|beaufort: {reg1}
+mno_crew|A. Ekibinin oranlarını seç. Şu anda: {reg1} %%
+mno_testdrive|Test sürüşü
+mno_mission_test_3|D-day (100 gemi)
+menu_camp_action|Bir eylem seç:
+mno_formation|Formasyon seçenekleri.
+mno_global_options|Genel seçenekler.
+mno_camp_cheat|HİLE MENÜSÜ!
+mno_storyline_cheat|Senaryo Hileleri!
+mno_camp_action_1testing|Grup testi.
+mno_jump_to_scene|debug: senaryo menüsü testi
+mno_toggle_cheat_on|Değiştir: hile menüsü açık.
+mno_toggle_cheat_off|Değiştir: hile menüsü kapalı.
+mno_camp_action_4|Kamp menüsüne dön.
+menu_camp_recruit_prisoners|Sana katılmayı kabul ederlerse esirlerine özgürlük vaad ediyorsun. {s18}
+mno_camp_recruit_prisoners_accept|Kabul et.
+mno_camp_recruit_prisoners_reject|Geri çevir.
+menu_camp_no_prisoners|Sana katılacak mahkumun yok.
+menu_camp_action_read_book|Okumak üzere bir kitap seç:
+mno_action_read_book_1|{s1}.
+mno_action_read_book_2|{s1}.
+mno_action_read_book_3|{s1}.
+mno_action_read_book_4|{s1}.
+mno_action_read_book_5|{s1}.
+mno_action_read_book_6|{s1}.
+mno_action_read_book_7|{s1}.
+menu_camp_action_read_book_start|{s1}
+menu_retirement_verify|{reg0}. gündesin. Şu anki şansın {reg1}. Emekli olmak istediğine emin misin?
+mno_retire_yes|Evet
+mno_retire_no|Hayır
+menu_end_game|Karar verildi, maceracı hayatını bir yana bırakıp yerleşmeye azmettin. Silahlarını ve zırhını satıyorsun, tüm paranı topluyorsun ve ve günbatımına doğru sürüyorsun atını...
+mno_end_game_bye|Hoşçakal
+menu_cattle_herd|Bir sığır sürüsüne rastladın.
+mno_cattle_drive_away|Sığırları uzaklaştır.
+mno_cattle_stop|Sürüyü durdur.
+mno_cattle_kill|Hayvanların bir kısmını kes.
+mno_leave|Ayrıl.
+menu_cattle_herd_kill|Kaç hayvan kesmek istiyorsun?
+mno_cattle_kill_1|Bir.
+mno_cattle_kill_2|İki.
+mno_cattle_kill_3|Üç.
+mno_cattle_kill_4|Dört.
+mno_cattle_kill_5|Beş.
+mno_cattle_kill_20|Yirmi.
+menu_arena_duel_fight|Düello ciddi bir iştir, özellikle de ölümüneyse. Düello alanına iki kişi girer  ama sadece bir tanesi çıkar...^^Hem zihin hem de vücut strese ve tehlikeye tepki gösterirler. Hava sıcak olsa da olmasa da görülen türden  soğuk teri koltuk altlarında hissedersin. Bu kavganın teridir ve varlığı işaret eder ki... hazırsın.
+menu_simple_encounter|{s2} ile karşılaştın. {reg10} askerin onların {reg11} askerine karşı savaşa hazır.^^{s7}
+mno_encounter_attack|{s7} düşman.
+mno_encounter_deploy|Savaş mevzilenmesine başla.
+mno_encounter_order_attack|Askerlerine sensiz saldırmalarını emret.
+mno_tactical_nuevo|Komutan Seçenekleri
+mno_encounter_leave|Ayrıl.
+mno_encounter_retreat|Geri çekil ve bazı askerleri kaçışı korumak üzere önde bırak.
+mno_encounter_surrender|Teslim ol.
+menu_encounter_retreat_confirm|En yüksek taktik becerisine ({reg2}) sahip olan kişi olarak {reg3?senin:{s3}} tarafından senin ve adamlarının kaçmasına izin verecek bir plan kuruluyor ancak düşmanın takibi bırakması için {reg4} askeri geride bırakman gerekecek.
+mno_leave_behind|Devam et. Bu adamların fedâkarlığı geri kalanları kurtaracak.
+mno_dont_leave_behind|Hayır. Kimse arkada bırakılmayacak.
+menu_encounter_retreat|Askerlerinden {reg4} tanesine siz grubun geri kalanıyla geri çekilirken düşmanı tutmalarını emrediyorsun.
+menu_order_attack_begin|Askerlerin düşmana saldırmak için hazır...
+mno_order_attack_begin|Saldırıya geçme emri ver.
+mno_call_back|Geri çağır.
+menu_order_attack_2| {s4}^^Kayıpların: {s8}^^Düşmanın kayıpları: {s9}.
+mno_order_attack_continue|Askerlerine saldırıya devam etmelerini söyle.
+mno_order_retreat|Askerlerini geri çağır.
+menu_battle_debrief|{s11} Kayıplar:^^Kayıpların:{s8}{s10}^^Düşmanın kayıpları:{s9}^^{s3}
+menu_total_victory|Bunu okumuyor olman lazım... {s9}
+menu_enemy_slipped_away|{s17}
+menu_permanent_damage|{s0}
+mno_s0|{s0}
+menu_pre_join|{s2} ile {s1} arasında bir muharebeye rast geldin. Kararın...
+mno_pre_join_help_attackers|gidip {s2} tarafına yardım et.
+mno_pre_join_help_defenders|{s1} tarafının yardımına yetiş.
+mno_pre_join_leave|karışma.
+menu_join_battle|{s1} grubuna karşı {s2} grubunun yanına katıldın. Düşmanın muharebeye hazır {reg11} askerine karşı {reg10} askerin bulunuyor.
+mno_join_attack|{s7} düşman.
+mno_join_order_attack|Geride kal ve askerlerine müttefiklerine katılma emri ver.
+mno_join_leave|Ayrıl.
+menu_join_order_attack|{s4} Kayıpların: {s8}. Müttefiklerin kayıpları: {s9}. Düşman kayıpları: {s10}.
+menu_zendar|Zendar kasabasına giriyorsun.
+mno_zendar_enter| 
+mno_zendar_enter_door|Şehrin merkez kapısı.
+mno_zendar_tavern| 
+mno_zendar_tavern_door|Han kapısı.
+mno_zendar_merchant| 
+mno_zendar_merchant_door|Tüccarın kapısı.
+mno_zendar_arena| 
+mno_zendar_arena_door|Arena kapısı.
+mno_town_1_leave| 
+menu_salt_mine|Tuz madenine giriyorsun.
+mno_enter|Gir.
+mno_enter_door|Ayrıl.
+menu_four_ways_inn|Dört Yol Hanına varıyorsun.
+menu_test_scene|Test mekanına giriyorsun.
+menu_quarry1|Bir taş ocağına varıyorsun. Düzinelerce özgür adam çalışırken arabaların ve kazmaların sesi ortalığı dolduruyor.
+menu_salt_mine_vc|Bir tuz madenine varıyorsun. Düzinelerce özgür adam çalışırken arabaların ve küreklerin sesi ortalığı dolduruyor.
+mno_enter_sm|Gir.
+mno_leave_sm|Ayrıl.
+menu_lumber_camp|Bir kereste kampına varıyorsun. Düzinelerce özgür adam çalışırken baltaların ve testerelerin sesi ortalığı dolduruyor.
+mno_enter_lc|Gir.
+mno_leave_lc|Ayrıl.
+menu_farmstead_special|Bir çiftliğe varıyorsun. Çiftlik çeşitli araçlar ve yiyecek mazelemerli için en temel üretim birimidir. Burada adamlarını beslemek için yiyecek satın almak ya da bu ürünleri kasabada daha pahalıya satmak iyi bir fikir olabilir.
+mno_enter_fs|Gir.
+mno_leave_fs|Ayrıl.
+menu_hadrian_wall1|Bir zamanlar Hadrianus Duvarı olan kalıntılara varıyorsun.
+menu_celidon_forest|Önünde, geçmişten mistik bir enerji yayar gibi duran ilginç bir mekan var.
+menu_hidden_valley|Roma kalıntılarına benzeyen ilginç bir yere varıyorsun. Adamların kamp kurarken sen araştırmaya koyuluyorsun.
+menu_dhorak_keep|Dhorak Kalesi'ne giriyorsun.
+menu_join_siege_outside|{s1} {s2} tarafından kuşatıldı.
+mno_approach_besiegers|Kuşatmacıların kampına yaklaş.
+mno_pass_through_siege|Kuşatmayı geç ve {s1}ne gir.
+menu_cut_siege_without_fight|Kuşatmacılar kale kapısına yaklaşmana herhangi bir zorluk çıkarmadan izin veriyorlar.
+menu_besiegers_camp_with_allies|{s1} hala kuşatma altında. Buyur edildiğin kuşatmacı kampının tepesinde {s2} sancakları dalgalanıyor
+mno_talk_to_siege_commander|Kuşatma kumandanıyla görüşme talep et.
+mno_join_siege_with_allies|Sonraki saldırıya katıl.
+mno_join_siege_stay_back|Askerlerine sonraki saldırıya sensiz girmelerini emret.
+menu_castle_outside|{s2} dışındasın. {s11} {s3} {s4} 
+mno_approach_gates|Kapıya yaklaş ve nöbetçilere seslen.
+mno_town_sneak|Kılık değiştirerek {s7} içine sızmayı dene.
+mno_castle_start_siege|{reg6?Şehri:Kaleyi} kuşat...
+mno_castle_leave|Ayrıl...
+menu_castle_guard|Kapıya yaklaştın. Nöbetçiler seni dikkatle izliyor.^^{s10}
+mno_request_shelter|Kaleye giriş talep et.
+mno_request_meeting_commander|Birisiyle görüşme isteğinde bulun.
+mno_guard_leave|Ayrıl.
+menu_castle_entry_granted|Kısa bir bekleyişten sonra nöbetçiler kapıları açıyor ve sen ve maiyetinin girişine izin veriyorlar.
+menu_castle_entry_denied|Bu kalenin lordu surların ardına geçmeni yasaklamış ve nöbetçi çavuş eğer girmeye çalışırsan ateş açacaklarına dair seni bilgilendiriyor.
+menu_castle_meeting|Kiminle görüşmek istiyorsun?
+mno_guard_meet_s5|{s5}.
+mno_forget_it|Unut gitsin.
+menu_castle_meeting_selected|Görüşme talebin içeri iletiliyor ve {s6} nihayet seninle görüşmek üzere çıkıyor.
+menu_port_attack|{s1} limanına saldırıyorsun. Düşmanın {reg11} askeriyle savaşmaya hazır {reg10} adamın var.
+mno_lead_attack|Askerlerine sahile yönelen saldırıda bizzat kumanda et.
+mno_attack_stay_back|Sen geride kalırken askerlerine hücum emri ver...
+mno_lift_siege|Saldırıyı durdur.
+menu_castle_besiege|{s1}ni kuşatıyorsun. {s2}^^{s15} {s16} {s17} {s18} {s19} {s20} {s21} {s22}
+mno_siege_request_meeting|Kale kumandanıyla görüşme talep et.
+mno_siege_warfare_p|Kuşatma Savaşı (Kuşatma Planlama).
+mno_siege_assault_p|Kuşatma Savaşı (Saldırıyı Hazırlama).
+mno_wait_24_hours|Yarına kadar bekle.
+menu_siege_plan|Kuşatmayı planlamak ve {s4}'{.ü} mümkün olan en az zaiyatla ele geçirmek için danışmanlarınla bir araya geliyorsun. Stratejin düşmanı açlık ve moral bozukluğuyla zayıflarmak olabilir.^^{s15} {s17} {s18} {s19} {s20}
+mno_build_circunvalation|Abluka: {s4} etrafında kontrol noktaları ve ufak kamplar kur. (250 adam gerekiyor).
+mno_close_circunvalation|Adamların sıkı çalıştılar ve {s4} etrafındaki kontrol noktaları tamamlandı. Şimdi aktif izleme emri ver.
+mno_town_investigar|Sızma harekatıyla {s4}'{.ün} savunmasını incele İzleme yeteneğinin faydası olur.
+mno_traicion_interna|{s4}'{.ün} savunması içinde bir işbirlikçi bul.
+mno_traicion_interna3|İşbirlikçi aramak için içeri göderilen adamlardan haber var mı?
+mno_infiltracion_interna|{s4}'{.ün} savunma hatlarına sızarak hasar vermek için adamlarını yolla.
+mno_infiltracion_interna3|Savunma hatlarına sızmak için gönderilen adamlardan haber var mı?
+mno_build_varios|Hastalıkları önlemek için sıhhi tesisat kurulması emrini ver.
+mno_destruir_campos_a|Yiyecek elde etmek ve düşmanı zayıflatmaki çin yakınlardaki ekin depolarını ve çiftlikleri yağmala.
+mno_destruir_campos_b|Ekin depolarını ve çiftlikleri yağmalamak için gönderdiğim adamlardan haber var mı?
+menu_siege_assault|Zaman hayati öneme sahip ve destek güçlerinin gelmesinden korkuyorsun. Saldırı ağır kayıplar anlamına gelebilir ama karar verdin.^^{s17} {s18} {s19}
+mno_scout_investigar|{s4} hakkında bilgi toplayan gözcüleri çağır.
+mno_poniendo_elementos_mantles|Öncü birliğe kalkan kullanmaları ve senin kumandan altındaki ana ordunun saldırısına hazırlanmaları emrini ver.
+mno_poniendo_elementos|Öncü birliklere saldırı malzemelerini yerleştirmeleri ve senin kumandan altındaki ana ordunun saldırısına hazırlanmaları emrini ver.
+mno_castle_lead_attack|Vakit geldi. Askerlerine saldırıda komuta et!  Kan, ter aksın ve çelik şakısın...
+mno_build_mantlet|Kalkan imal et.
+mno_build_ladders|Kaleye saldırı için merdivenler imal et. Saldırıda zaiyatlar olabilir.
+mno_build_siege_tower|Kaleye saldırmak için Kuşatma Kulesi ve araç gereç imal et. Saldırıda zaiyatlar olabilir.
+menu_siege_attack_meets_sally|Savunma güçleri saldırını karşılamak üzere hisardan dışarı fırlıyor.
+menu_nofood_siege_defenders_sally|Yiyecek kıtlığı {s4}'{.ün} çaresiz savunucularını kuşatmayı kırma umuduyla karşı saldırıya geçmeye zorluyor.
+menu_surrender_siege_defenders_starved|{s4}'{.ün} savunucuları artık kuşatmacıları dışarıda tutamıyorlar. Yiyecek yokluğu takatlerini kesti, en zayıflar şimdiden açlıktan öldüler ve bazı durumlarda ihtiyaç yamyamlığa neden oldu.^{s4} teslim olmaya hazır...
+menu_castle_attack_walls_simulate2|{s4}^^Kayıpların:{s8}^^Düşmanın Kayıpları: {s9}
+menu_sneak_into_town_suceeded2|Kılık değiştirmiş olarak gecenin karanlığında {s4}'{.e} sızıyorsunuz. Şimdi savunmaları hakkında bilgi toplama zamanı.
+menu_construct_saneamiento|Fareleri ve hastalıkları önlemek için sıkki tesisat önemli. Tuvalet ve boru hatları inşa ederek, yağmurla çamurun ve pisliğin toplanmasını önlemek ve su rezervi elde etmek için bir depo kazmak mümkün. Yapmak istiyor musun?^8 saat sürecek.
+mno_build_saneamiento|Yap.
+menu_construct_circunvalation|Abluka kuşatma sırasında birliklerini korur, düşmanın avcı birliklerini engeller ve yiyecek ve takviye girişini önler. Aynı zamanda düşmanın moralini bozarak yerin teslimi için görüşmelerde sana faydalı olur.^^Grubun en yüksek mühendislik becerisine sahip üyesi olarak ({reg2}) saldırı için ablukayı kurmanın {reg4} saat süreceğini tahmin {reg3? ediyorsun:{s3} ediyor}.
+mno_build_circun_cont|Yap.
+menu_traicion_interna2|Kuşatman savunmacıların moralini bozmaya başladı. Askerlerinden bazıları {s4}'{.deki} garnizon ve halkla ilişkiye geçerek işbirliği yapmaya hazır birilerini bulmaya ve fethi kolaylaştırmaya istekli. Bunun için 500 peninge ihtiyaçları var.
+mno_intentar_traicion|Bu adamların işbirlikçi aramalarına izin ver.
+menu_traicion_resultado1|Yeni bir haber yok. Kimse işbirliği yapmak istemiyor.
+mno_back_behind|Güzel, kötü şans.
+menu_traicion_resultado2|Efendim! Surların yanındaki adamlarımız düşman tarafından farkedildiler ve {s4}'{.ten} çıkmak için dövüşüyorlar. Çıkış kapısına doğru bakın. Kaçmaya çalışıyorlar ancak kuşatıldılar...
+mno_ayudar_infiltrados|Emir: bir grup adamı yardımlarına gönderin.
+mno_leave_men|Kendi kaderlerine bırakın. Kendilerini neyin beklediğini biliyorlardı.
+menu_traicion_resultado3|Adamların döndüler. İçerdeki bir işbirlikçi ambarları ateşe verdi ve yakında {s4}'{.ten} kaçarak ordunuza katılacak. Düşman bu nedenle yiyecek stoğunun önemli bir kısmını kaybedecek.
+mno_back_to_siege|Aferin.
+menu_traicion_resultado4|Adamların döndüler. Garnizonun rutinini bilen bir işbirlikçi bulduklarını ve adamın surların dışında ufak bir derede su ikmaline geldiklerinde düşmanı pusuya düşürmek için ufak bir güce öncülük etmeye gönüllü olduğunu söylüyorlar.
+mno_atacar_emboscada_player|En yakın adamlarını yanına alarak sen git.
+mno_atacar_emboscada|Emir: pusu atmak için işbirlikçi ile beraber bir grup adam gönder.
+menu_emboscada_player|Bitki örtüsü arasında gizlice hareket ederek düşmanı sürprize uğrattın ve karşılarında kim olduğunu gösterdin. Şimdi garnizon dışarı adam gönderirken iki defa düşünmek zorunda kalacak.
+mno_emboscada_playerok|Zafer!
+menu_emboscada_nada|Adamların bitki örtüsünden yararlanarak surlardaki gözcülerin bakışlarından uzakta hareket ediyorlar ancak buluşma noktasına geldiklerinde kimseyi bulamıyorlar. Sözde işbirlikçi ya yakalandı ya da pişman oldu. Adamların hayal kırıklığı içinde geri dönüyor.
+mno_emboscada_nanai|Merak etme başka fırsatlar da olacak.
+menu_emboscada_lose|Alarm! İhanet! Sözde işbirlikçi adamlarını pusuya düşürttü. Nice adamı savaş alanında bırakarak umutsuzca dövüşüyorlar.
+mno_regreso_lucha|En kötü rüyaların gerçek oldu.
+menu_emboscada_victory|İşbirlikçi adamlarını gecenin karanlığında bir su kuyusuna giden patikayı kontrol eden bir tepeye götürdü. Adamların yüzleri siyaha boyanmış olarak sessizce bitki örtüsünün arasında konumlandılar. Gün doğumunda büyük bir düşman grubu suyun yanında görüldü.^^Adamların düşmanın üzerine ölüm dalgası gibi inerken bir savaş çığlığı vadiyi doldurdu... nice düşman öldürüldü.
+menu_traicion_resultado5|Adamların geri geldiklerinde sana yiyecek tayınını kontrol eden bir adamla ilişki kurduklarını ve adamın yiyecek fiyatlarını artırarak hemşerileri arasında hoşnutsuzluk yaratmaya ve böylece onları kaleyi terketmeye daha meyilli kılmaya söz verdiğini söylüyorlar.
+mno_traicion_moral|Mükemmel!
+menu_traicion_lucha|Adamların surların dibinde düşmanla ölümüne çarpışıyor ve durum tamamen aleyhlerine görünüyor.Onları savaşır ve geri çekilirken seyrediyorsun. Nice beden geride bırakılıyor.^^Kayıpların:{s8}^^Düşmanın Kayıpları: {s9}
+menu_infiltracion_resultado1|Yeni bir haber olmadan döndüler. Yerleşim yerine girmeyi başaramamışlar.
+menu_infiltracion_resultado2|Efendim! {s4}'{.teki} adamlarımız açığa çıkarılldılar. Ne yazık ki hiçbiri geri dönmedi. Hepsi ya öldürüldü ya da ele geçirildi.
+mno_muertos_infiltrado|Korkunç haberler.
+menu_infiltracion_resultado3|Zafer! Birçok erzak deposunu ateşe vermeyi başardılar. Düşman moral bozukluğu içinde. Belki de teslim olmalarını isteme zamanı gelmiştir.
+menu_infiltracion_resultado3_c|Zafer! Birçok büyükbaş hayvanı öldürmeyi ve su rezervlerini zehirlemeyi başardılar. Düşman moral bozukluğu içinde ve lordları şöhretinin bir kısmını kaybetti.Belki de teslim olmalarını isteme zamanı gelmiştir.
+menu_infiltracion_resultado4|Adamların döndüler. Dediklerine göre bazı savaşçılar durumdan memnun değiller ve bazıları senin tarafına geçmeye ikna edildiler. Eğer kabul edersen gece şehri terkederek orduna katılacaklar. Şehri terketmeden önce huzursuzluk yaratarak teslim olmayı kolaylaştıracaklarına söz verdiler.
+mno_aceptar_si|Hoş geldiler.
+menu_infiltracion_resultado4_c|Adamların döndüler. Bazı kuyuları ve yakınlardaki dereleri zehirlediklerini söylüyorlar. Bu garnizondakilerin çoğunu hasta edecektir.
+mno_aceptar_ok|Bu güzel haber. Surları savunmak için az adam kalacak.
+menu_infiltracion_resultado5|Aman tanrım. Düşman, içinde adamlarınızın kafaları olan bir çanta gönderdi. Bazı askerler çantayı gördü ve kampta korku havası dolaşıyor.
+mno_infiltracion_moral|Korkaklar! Nasıl bir iki tane kafa bir ordunun moralini bozabilir? Bunlar koyun mi erkek mi?
+menu_campos_cercanos1|Efendim, ekinler ve çiftlikler yakıldı ama hasat mevsiminde olmadığımızdan yiyecek elde etmeyi başaramadık.
+mno_back_behind_d|Aferin, endişelenmeyin.
+menu_campos_cercanos2|Efendim, ekinler ve çiftlikler yakıldı ve hasat mevsiminde olduğumuzdan bolca yiyecek ele geçirdik.
+mno_back_behind_c|Aferin, yiyecek her zaman işe yarar.
+menu_campos_cercanos2_c|Efendim, ekinler ve çiftlikler yakıldı.Başaklar hala yeşil ama yenebilir. Bolca yiyecek ele geçirdik.
+menu_campos_cercanos3|Efendim, tarlaları ateşe verdik ancak hasat mevsiminde olduğumuzdan tahıl ele geçiremedik fakat çiftçiler hayvanlarından bazılarını geride bırakmışlardı.
+mno_back_behind_b|Yiyecek her zaman işe yarar.
+menu_campos_cercanos4|Sorunlarla karşılaştık. Tarlalar ateşe verildi ama garnizondan da destek alan çiftçiler adamlarımıza saldırdılar.^^Kayıpların:{s8}^^Düşmanın Kayıpları: {s9}
+mno_back_behind_a|Korkunç haberler!
+menu_poner_escaleras|Öncülerin merdivenler, kürekler ve başka kuşatma araçları taşıyarak ilerliyorlar... Uzun menzilli silahlar taşıyan bir grup adamın düşmanın oklarını üzerlerine çekerek hareket ediyorlar. Kalbin göğüs kafesinden fırlayacak gibi çarpıyor. Bir şekilde, her savaş ilk savaşmış gibi oluyor.^Heyecan, korku ve ter her zaman var. Adamlarının kalkan formasyonuna geçtiğini ve surların üzerlerinde ilerlediğin görüyorsun...^^Kayıpların:{s8}^^Düşmanın Kayıpları: {s9}
+mno_back_behind_esc1|Adamların düşmanla karşılaştı, şimdi senin vaktin geldi...
+menu_poner_escaleras_mantlets|Öncü birliğin harekete geçer; merdiven, kalkan, kürek ve diğer kullanışlı kuşatma ekipmanlarıyla geri dönerler. Menzilli silahla donanmış ve kalkanlarla korunan askerlerin öne çıkar, tehlike arzederek düşmanın dikkatini ve oklarını üzerlerine çekerler. Kalbin göğüs kafesinden fırlayacakmışcasına atıyordur. Nasıldır bilinmez fakat her savaş sana aynı hisleri yaşatır. ^O heyecan, o korku ve o ecel terleri her daim orada; kısa bir zaman diliminin ardından kana bulanacak olan o savaş meydanında seninle beraberdir. Bunları düşünürken askerlerinin başarılı bir kalkan formasyonu oluşturup çoktan duvarlara yönelmiş olduğunu farkedersin. Kullandığınız kalkanlar çokça iş görmüş, onlarca hayat kurtarmıştır.^^Kayıpların: {s8}^^Düşman Kayıpları: {s9}
+mno_back_behind_esc2|Adamların düşmanla karşılaştı, şimdi senin vaktin geldi...
+menu_informacion_ciudad|Öncüler karşında duruyor: '{s11}^^{s12} {s1} {s5}^^{s17}
+menu_castle_besiege_inner_battle|{s1}
+menu_build_mantles2|Hücum malzemeleri kullanmaları gerektiğinde, kalkanlar adamlarını korumaya yardımcı oluyor. Nice hayat kurtarıyorlar. Gruptaki en yüksek mühendislik becerisine sahip kişi olarak ({reg2}) kalkanlar imal etmenin {reg4} saat süreceğini tahmin {reg3?ediyorsun:{s3} ediyor}.
+mno_build_mantles|Yap.
+menu_construct_ladders|Gruptaki en yüksek mühendislik becerisine sahip kişi olarak  ({reg2}) hücum için yeterince malzeme imal etmenin {reg4} saat süreceğini tahmin {reg3?ediyorsun:{s3} ediyor}.
+mno_build_ladders_cont|Yap.
+menu_construct_siege_tower|Gruptaki en yüksek mühendislik becerisine sahip kişi olarak ({reg2}) bir kuşatma kulesi ve hücum için gereken diğer malzemeleri imal etmenin {reg4} saat süreceğini tahmin {reg3?ediyorsun:{s3} ediyor}.
+mno_build_siege_tower_cont|İnşa etmeye başla.
+menu_castle_attack_walls_simulate|{s4}^^Kayıpların:{s8}^^Düşmanın Kayıpları: {s9}
+menu_castle_attack_walls_with_allies_simulate|{s4}^^Kayıpların: {s8}^^Müttefik Kayıpları: {s9}^^Düşman Kayıpları: {s10}
+menu_castle_taken_by_friends|Görecek birşey yok.
+menu_castle_taken|{s60} savaşı neredeyse sone erdi. Birliklerin {reg2?kasabanın:kalenin} yağmasına başlamaya istekli. {s10}^{s4}
+mno_saqueo_noallowed|{reg2?Kasabayı:Kaleyi} ele geçir ve yağmayı yasakla.
+mno_saqueo_normal|{reg2?Kasabayı:Kaleyi} yağmala et ve kendi haline bırak.
+mno_saqueo_total|Yeri harabeye çevir ve yaşayanları kılıçtan geçir.
+menu_castle_taken_plunder|{reg2?Kasaba:Kale} yağmalandı. {reg7} pening elde ettin.
+menu_castle_taken_native|{s3} birliklerine teslim oldu ve {reg2?kasabanın:kalenin} kontrolü artık sende. {reg1? Onu geri almaya çalışacak düşmanlara karşı buraya asker yerleştirebilirsin. Ayrıca {reg2?kasabayı:kaleyi} kendine mi alacağına yoksa sadık bir adamına mı vereceğine karar vermen lazım.
+menu_castle_taken_2|{s3} birliklerine teslim oldu ve şimdi kalenin tam kontrolü sende.Şimdi {s9}a zaferinin haberlerini bildirmenin zamanıdır.{s5}
+mno_castle_taken_claim|{s3}nin sana verilmesini iste.
+mno_castle_taken_claim_2|{s3}nin {reg59?karına:kocana}.
+mno_castle_taken_no_claim|Hiçbir şey isteme.
+menu_saqueo_loot_continue|Bu yerleşim yeri yağmalandı.
+menu_requested_castle_granted_to_player|Lordundan bir mesaj aldın, {s3}.^^ {reg4?}  {s2}{reg3? Ona bağlı {s4} köyünü} tüm ünvanları ve iradlarıyla birlikte bağlılık yeminini koruduğun sürece onun adına yönetmen için sana vermeye karar vermiş.
+menu_requested_castle_granted_to_player_husband|Lordundan bir mesaj aldın, {s3}.^^ {reg4?}  {s2}{reg3? Ona bağlı {s4} köyünü} kocana vermeye karar vermiş, {s7}.
+menu_requested_castle_granted_to_another|Hükümdarından bir mesaj aldın, {s3}.^^ 'Yiğitçe dövüşerek {s2}{.i} aldığını duydum. Zaferin bizi çok memnun etti. Adı geçen kalenin sana bağışlanmasını talep etmişsin. Ancak ülkemde zaten yeterince çok mülkün olduğu için bu isteğini kabul edemedim. Bu yüzden seferinin masraflarını karşılamak için sana {reg6} pening gönderiyorum fakat {s2}{.i} {s5}'{.e} verdim.'
+mno_accept_decision|Hükümdarının kararını kabul et.
+mno_leave_faction|Sana karşı yanlış yapıldı. Bağlılık yeminini boz!
+menu_requested_castle_granted_to_another_female|Hükümdarından bir mesaj aldın, {s3}.^^ 'Yiğitçe dövüşerek {s2}{.i} aldığını duydum. Zaferin bizi çok memnun etti. Adı geçen kalenin kocana bağışlanmasını talep etmişsin.  Ancak kendisinin ülkemde zaten yeterince mülkleri olduğu için isteğini kabul edemem. Bu yüzden seferinin masraflarını karşılamak için sana {reg6} pening gönderiyorum fakat {s2}{.i} {s5}'{.e} verdim.'
+menu_leave_faction|Bağlılık yeminini bozmak ciddi bir iştir. Lordun seni kınayıp topraklarını ve kalelerini elinden alabilir. Fakat topraklarını ve kalelerini kendi isteğinle geri verirsen büyük ihtimalle sana düşmanlık gütmeyecektir.
+mno_leave_faction_give_back|Yemininden feragat et ve topraklarından vazgeç.
+mno_leave_faction_hold|Yemininden feragat et ve  {s2} dahil topraklarını kendi elinde tut.
+mno_leave_faction_cancel|Efendine bağlı kal ve kararı kabul et.
+menu_give_center_to_player|Hükümdarın {s1} sana yeni bir mülk teklif ediyor! Sadık hizmetinin karşılığında {s2} sana öneriliyor.Cevabın nedir?
+mno_give_center_to_player_accept|Kabul et. 
+mno_give_center_to_player_reject|Reddet. {s2} senin ilgilendiğin bir yer değil.
+menu_give_center_to_player_2|Kısa bir törenden sonra {s2}{reg3? Ve ona bağlı {s4} köyü :} sana bağlandı. {reg3?Buralar:Burası} topraklarına çok değerli bir katılım olacak. Bu mülke ait vergi ve kiraları alabilir, halktan asker toplayabilir, topraklarını istediğin gibi yönetebilirsin. Ayrıca senden tımarını düşmanlardan ve yağmacılardan koruman, bölgende adalet ve düzeni sağlaman beklenir.
+menu_oath_fulfilled|{s1} ile belli bir süre ona hizmet edeceğine dair sözleşmen vardı. Sözleşmenin süresi dolu. Ne yapacaksın?
+mno_renew_oath|{s1} ile sözleşmeni bir ay daha uzat.
+mno_dont_renew_oath|Bağından kurtul.
+menu_siege_started_defender|{s1} {s2} üzerine bir saldırı başlattı. Düşmanın {reg11} askerine karşı savaşabilecek {reg10} askerin var. Kararın...
+mno_siege_defender_join_battle|Savaşa katıl.
+mno_siege_defender_troops_join_battle|Sen geride kalırken adamlarına savaşa katılmalarını söyle.
+menu_siege_join_defense|{s4}^^Kayıpların: {s8}^^Müttefiklerin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
+menu_enter_your_own_castle|{s10}
+menu_village|{s10} {s12}^{s11}^{s6}{s7}^^{s15}
+mno_village_manage|Bu köyü idare et.
+mno_recruit_volunteers|Gönüllü topla.
+mno_village_center|Köy merkezine gir.
+mno_village_center_door|Köy merkezine giden kapı.
+mno_village_buy_food|Köylülerden erzak satın al.
+mno_comprar_cattle|Biraz sığır satın almak istiyorum.
+mno_village_attack_bandits|Haydutlara saldır.
+mno_village_wait|Burada bir süre bekle.
+mno_collect_taxes_qst|{s1} için {reg5?vergileri toplamaya devam et:vergi topla}.
+mno_train_peasants_against_bandits_qst|Köylüleri eğit.
+mno_village_hostile_action|Saldırgan bir eylemde bulun.
+mno_village_leave|Ayrıl...
+menu_village_hostile_action|Aklında ne yapmak var?
+mno_village_take_food|Köylüleri erzak vermeye zorla.
+mno_village_steal_cattle|Sığır çal.
+mno_enslave_villagers|Köylüleri köle yap.
+mno_village_loot|Köyü yağmala ve evleri ateşe ver.
+menu_recruit_volunteers|{s18}
+mno_continue_not_enough_gold|Yeterli param yok...
+mno_recruit_them|Onları ({reg6} peninge) al.
+menu_village_hunt_down_fugitive_defeated|Kaçaktan gelen sert bir darbe seni yere çalıyor ve görüşün dönüp kararıyor. Zaman geçiyor. Gözlerini tekrar açtığında kendini kana bulanmış ve sarsılmış buluyorsun ama şanslısın ki hiç bir yara ölümcül görünmüyor.   
+menu_village_infest_bandits_result|{s9}
+menu_village_infestation_removed|Şarkılarda anlatılmaya değer bir savaşta sen ve adamların haydutları köyden atıp güvenliği sağlamayı başardınız. Son olaylar onlara ağır bir darbe indirmiş olsa da köylüler bulabildikleri herşeyi sana ve birliğine sunuyorlar.
+mno_village_bandits_defeated_accept|Yerinde ödülün olarak önerilenleri al.
+mno_village_bandits_defeated_cont|Onların daha çok ihtiyacı olduğunu söyleyerek reddet.
+menu_center_manage|{s19}^{reg6?^^Şu an {s7} inşa ediyorsun. Bina {reg8} gün sonra tamamlanacak.:}
+mno_center_build_manor|Malikane inşa et.
+mno_center_build_fish_pond|Değirmen inşa et.
+mno_center_build_watch_tower|Gözcü kulesi inşa et.
+mno_center_build_school|Okul inşa et.
+mno_center_build_messenger_post|Ulak karakolu inşa et.
+mno_center_build_prisoner_tower|Mahkum kulesi inşa et.
+mno_center_build_religion1|Hristiyan manastırı inşa et (din değiştirme faktörü).
+mno_center_build_religion2|Odin'e bir tapınak inşa et (din değiştirme faktörü).
+mno_center_build_religion3|Hristiyan klisesi inşa et (din değiştirme faktörü).
+mno_center_build_religion4|Norse tanrılarına bir mabet inşa et (din değiştirme faktörü).
+mno_center_build_herreria|Demirci dükkanı inşa et.
+mno_center_build_guilds|Tüccar hanı inşa et.
+mno_center_build_library|Manastır yazıhanesi inşa et.
+mno_center_build_slavemarket|Bir köle marketi inşa et.
+mno_center_build_brewery|Bir bira fabrikası inşa et.
+menu_center_improve|{s19} Birliğinin mühendislik becerisi en yüksek üyesi olarak {s4} binasını inşa etmenin sana {reg5} pening ve  {reg6} güne malolacağını ({reg2}) {reg3?tahmin ediyorsun:{s3} tahmin ediyor.}
+mno_improve_cont|Devam et.
+mno_improve_not_enough_gold|Bunun için yeterli param yok.
+menu_town_bandits_failed|{s4} {s5}
+menu_town_bandits_succeeded|Haydutlar bıçakla tereyağını keser gibi devriliyorlar! Kısa zaman sonra saldırganlar bilinçsiz, ölü ya da can çekişirken sokakta tek başına kalıyorsun. Vücutları aradığında bu vahşilerin önceki kurbanına ait olması gereken bir cüzdan buluyorsun. Ya da belki de onlara senin hayatına uygun bir son ayarlanmasını isteyen biri tarafından verilmişti.
+menu_village_steal_cattle_confirm|Grubun en yüksek yağma becerisine({reg2}) sahip olan üyesi olarak {reg3?sen:{s1}} köyden {reg4} başa kadar sığır çalabileceğinizi {reg3?hesaplıyorsun:hesaplıyor}.
+mno_village_steal_cattle_confirm|Devam...
+menu_village_steal_cattle|{s1}
+menu_village_take_food_confirm|Köylüleri kıymetli erzaklarını vermeleri için tehdit edip zorlamak zor olacak. En az bir saate ihtiyacın olacağını düşünüyorsun.
+mno_village_take_food_confirm|Devam et.
+menu_village_take_food|Köylüler istemeye istemeye bir miktar erzak getiriyor..
+mno_take_supplies|Erzağı al.
+mno_let_them_keep_it_2|Erzağı ellerinde tutmalarına izin ver.
+menu_village_start_attack|Bazı köylüler tarım aletlerini kapıp sana karşı koymaya hazırlanıyorlar.
+mno_village_raid_attack|Saldır onlara.
+mno_village_raid_leave|Bu köyü kendi haline bırak...
+menu_village_raid_villagers_toslaves|Köylüleri hayvanlar gibi takip edip köle yapmak istiyor musun?
+mno_villagers_slaves|Tüm köylüleri esir alın!
+menu_village_loot_no_resist|Köylüler sayıca azlar ve korkmuş durumdalar. Birliklerin önünde çabucak dağılıyorlar. Köy insafına kalmış durumda.
+mno_village_enslave|Köylüleri köleleştir.
+mno_take_supplies1|Stoğa el koy.
+menu_village_loot_complete|Emrin üzerine birliklerin köyü yağmalayıp değerli olabilecek herşeye el koyarak yapıları ateşe verdiler. Bulunan değerli eşyalar ve paradan payın olan {reg1} peningi alıyorsun.
+menu_village_loot_defeat|Cesaret ve kararlılıkla savaşarak birlikte hareket eden köylüler komutandaki güçleri geri püskürttü.
+menu_village_loot_continue|Köyü yağmalamaya devam etmek istiyor musun?
+mno_lootvillage_yes|Evet..
+mno_lootvillage_no|Hayır.
+menu_close|Hiç.
+menu_town|{s10} {s14}^{s11}{s12}{s13}
+mno_castle_castle|Lordun kabul salonuna git.
+mno_castle_castle_door|Lordun kabul salonu.
+mno_join_tournament|Turnuvaya katıl.
+mno_town_castle|Lordun kabul salonuna git.
+mno_town_castle_door|Lordun kabul salonu.
+mno_town_center|Caddelerde dolaş.
+mno_town_center_door|Şehir meydanına giden kapı.
+mno_town_tavern|Hana git.
+mno_town_tavern_door|Han kapısı.
+mno_town_merchant|Tüccarla konuş.
+mno_town_merchant_door|Dükkan kapısı.
+mno_town_arena|Arenaya gir.
+mno_town_arena_door|Arena kapısı.
+mno_town_dungeon|Asla: Zindana gir.
+mno_town_dungeon_door|Zindan kapısı.
+mno_castle_inspect|Avluda dolaş.
+mno_castle_inspect_door|Çık.
+mno_town_enterprise|{s3}{.n}{.i} ziyaret et.
+mno_town_enterprise_door|İşletme kapısı.
+mno_visit_lady|Bir nedimeyi ziyaret etmeyi dene.
+mno_visit_lady_door|Bahçeye giden kapı.
+mno_trade_with_merchants|Pazar yerine gir.
+mno_travel|Başka bir limana seyahat et.
+mno_travel_door|Partini giydir.
+mno_walled_center_manage|Bu {reg0?şehri:kaleyi} düzenle.
+mno_walled_center_move_court|Sarayını buraya taşı.
+mno_castle_station_troops|Garnizonu düzenle {s10}
+mno_castle_wait|Burada biraz bekle {s1}.
+mno_castle_wait_door|Yatak.
+mno_town_alley|Partine katılacak acemi askerler sor.
+mno_town_visit_port|Şehir limanına git.
+mno_banquete_mead|Adamlarım {reg0?şehir:kale}{.de} bir şöleni hak ediyorlar. İçki ve yiyecek satın al.
+mno_banquete_mead_door|Yelken aç.
+mno_set_sail|Limandan yelken aç.
+mno_set_sail_door|Yelken aç.
+mno_town_leave|Ayrıl...
+mno_town_leave_door|Bölgeyi terket.
+menu_cannot_enter_court|Lordun salonunda şu anda bir ziyafet var fakat sen içeri davet edilmek için yeterli mevkide değilsin. Belki şanını artırmak sana içeri kabul şansı verecektir -- veya ziyafet sürecinde bir turnuvada kendini kanıtlamayı deneyebilirsin.
+menu_lady_visit|Kimi ziyaret etmek istersin?
+mno_visit_lady_1|{s12}'{.i} ziyaret et
+mno_visit_lady_2|{s12}'{.i} ziyaret et
+mno_visit_lady_3|{s12}'{.i} ziyaret et
+mno_visit_lady_3_door|Bahçeye giden kapı.
+mno_visit_lady_4|{s12}'{.i} ziyaret et
+mno_visit_lady_5|{s12}'{.i} ziyaret et
+mno_visit_lady_6|{s12}'{.i} ziyaret et
+mno_visit_lady_7|{s12}'{.i} ziyaret et
+mno_visit_lady_8|{s12}'{.i} ziyaret et
+menu_town_tournament_lost|Turnuvadan elendin.{s8}
+menu_town_tournament_won|{s3} turnuvasını kazandın! Kalabalık ismini haykırırken gururla doluyorsun. Onur, şan ve üne ek olarak {reg9} peninglik ödül kazandın. {s8}
+menu_town_tournament_won_by_another|Günün tek yenilmez {reg3?savaşçısı:adamı} olarak kalan {s1} turnuvayı ve getirdiği şanı kazanıyor.
+menu_town_tournament|{s1}Turnuvanın {reg0}. Turundasın ve  {reg1} katılımcı kalmış durumda. Sonraki turda {reg3} savaşçıdan oluşan {reg2} grup savaşacak. 
+mno_tournament_view_participants|Katılımcıları gör.
+mno_tournament_bet|Kendi üstüne bahis oyna.
+mno_tournament_join_next_fight|Sonraki turda savaş.
+mno_leave_tournament|Turnuvadan çekil.
+menu_tournament_withdraw_verify|Turnuvadan çekilmek istediğine emin misin?
+mno_tournament_withdraw_yes|Evet, bu anlamsız bir uğraş.
+mno_tournament_withdraw_no|Zafer şansı oldukça hayır!
+menu_tournament_bet|Üzerine bahisler {reg5}e karşı {reg6}.{reg1? Şimdiye kadar kendine {reg1} pening oynadın ve kazanırsan {reg2} pening kazanacaksın.:} Ne kadar oynamak istiyorsun? 
+mno_bet_100_denars|100 pening
+mno_bet_50_denars|50 pening
+mno_bet_20_denars|20 pening
+mno_bet_10_denars|10 pening
+mno_bet_5_denars|5 pening
+menu_tournament_bet_confirm|Eğer {reg1} pening oynarsan turnuvayı kazandığında {reg2} pening kazanacaksın. Bu uygun mu?
+mno_tournament_bet_accept|Devam et.
+mno_tournament_bet_cancel|Unut gitsin.
+menu_tournament_participants|Tellallara turnuva katılımcılarının isimlerini soruyorsun. İsimler:^{s11}
+menu_collect_taxes|Grubun en yüksek ticaret yeteneğine ({reg2}) sahip kişi olarak {reg3?sana göre:{s1} diyor ki} burada vergi toplamanız {reg4} gün sürecek.
+mno_start_collecting|Toplamaya başla.
+mno_collect_later|Ertele...
+menu_collect_taxes_complete|{s3}nden {reg3} peninglik vergi topladın. {s19} parayı ona getirmeni bekleyecektir.
+menu_collect_taxes_rebels_killed|Hızlı tepkin ve güçlü kolun isyanı başarılı bir şekilde sona erdirdi. Bundan sonra sana karşı isyan etmek isteyen olursa şüphesiz tekrar düşünecektir.
+menu_collect_taxes_failed|İsyan çıkana kadar {s3}nden sadece {reg3} pening toplayabildin. {s1} mutlu olmayacak ama biraz gümüş en azından biraz yatıştıracaktır.
+menu_monasterio_saqueado|Rahiplerin kanları toprağı sularken bedenleri kargaları beslemek için bırakılıyor. Kolay bir zafer, büyük bir ödül... ama Hristiyanlar arasında yeni düşmanlar yarattın.
+menu_collect_taxes_revolt_warning|{s3} halkı taleplerin karşısında nefretle ayaklanıyorlar ve haraç kesmekten farksız olduğunu haykırıyorlar. Huzursuzlukları artıyor ve bastırmaya devam edersen ters tepki verebilirler.
+mno_continue_collecting_taxes|Görmezden gelip devam et.
+mno_halve_taxes|Toplanacak parayı yarıya düşürmeyi kabul et. ({s1} sinirlenebilir.)
+menu_collect_taxes_revolt|{s3}nde vergi toplayışın yarıda kesiliyor. Büyük bir {reg9?köylü:kasabalı} güruhu fahiş vergiler hakkında bağırıp silahlar ve meşaleler sallayarak yaklaşıyor. Görünüşe bakılırsa savaş istiyorlar!
+menu_train_peasants_against_bandits|En yüksek talimci becerisine ({reg2}) sahip olan {reg3?sana göre:{s1} diyor ki} köylülerin bazılarının çalışmaya hazır olması için {reg4} saat gerekecek.
+mno_make_preparation|Eğitime başla.
+mno_train_later|Daha sonraya ertele...
+menu_train_peasants_against_bandits_ready|Köylüleri askerlik, disiplin ve itaat konularında eğitime sokuyorsun. {reg0} tanesinin eğitimi kaptığını ve biraz pratiğe hazır olduğunu düşünüyorsun.
+mno_peasant_start_practice|Eğitim dövüşüne başla.
+menu_train_peasants_against_bandits_training_result|{s0}
+menu_train_peasants_against_bandits_attack|Eğitime devam etmeye hazırlanırken köyden bir gözcü tehlike haberleri çığırarak koşup geliyor. {s3}ne doğru yaklaşan haydutlar ufukta görülüyor. Köyün ihtiyarı yeni-eğitilmiş milis gücünü organize edip onlarla yüzleşmen için sana yalvarıyor.
+mno_peasants_against_bandits_attack_resist|Savaşa hazırlan!
+menu_train_peasants_against_bandits_attack_result|{s9}
+menu_train_peasants_against_bandits_success|Haydutlar dağıldı! Kaçan bir kaç tanesi de kuyruklarını bacaklarının arasına alarak köylüler ve onların yeni müdafisinden dehşete düşmüş bir şekilde kaçıyorlar. Köylülerin bu zorluktan sonra maddi açıdan pek az şeyleri kalmış durumda ancak minnettarlıklarını göstermek için bulabildikleri herşeyi sana sunuyorlar.
+menu_loot_options|Savaş sona erdi. Ganimeti ne yapmak istiyorsun?
+mno_loot_0|Ganimeti adet olduğu şekilde paylaşma emri ver.
+mno_loot_1|Tüm ganimeti önceden görme hakkını savun.
+mno_loot_2|Tüm ganimeti adamlarına bırak.
+mno_loot_3|Ganimeti bırak ama ölüleri gömmeye başla.
+menu_landing_point_encounter|Gemiden inmek istiyor musun?
+mno_disembark_no|Hayır.
+menu_landet_ships_encounter|Gemiye binmek istiyor musun?
+mno_reembark_no|Hayır.
+menu_ferry_encounter|Geminin kaptanı seni karşı kıyıya {reg7} peninge geçirecek.
+mno_back|Geri.
+menu_port_encounter|{s2} limanına varıyorsun. {s3}
+mno_attack|Saldır.
+mno_merge|Filoları birleştir.
+menu_port_encounter_2|{s2} limanına varıyorsun. Bu kasabada hoş karşılanmıyorsun.^^{s7}
+mno_coastal_assault|Gemileri yanaştır ve akına başla.
+menu_after_sea_raid|Adamlarınla beraber savaşıyor| ganimetleri topluyor ve yeri terketmek için hızla gemilere dönüyorsunuz. Ele geçirilen gümüş ve diğer değerli mallardan {reg1} pening değerindeki payını alıyorsun.
+menu_sea_raid_defeat|Sizi gemilere kadar geri sürmeyi başardılar.
+menu_port_new|{s1} limanına hoş geldin. Liman bölgesinin sokaklarında dolaşırken tuz ve uzak memleketlerin kokusunu getiren rüzgarı hissedebiliyorsun. Martıların çığlıkları ve denizcilerin değişik dillerdeki konuşmaları seni başka bir dünyaya götürüyor gibi...
+mno_town_port_new|Şehir limanına git.
+mno_buy_a_ship|Bir gemi sat ya da satın al.
+mno_reset_town_ships|HİLE: Şehre yeni gemiler ver.
+mno_spawn_enemy_ship|HİLE: Şehir yakınlarında Dena korsanları yarat.
+mno_sail_from_port|Limandan yelken aç.
+mno_go_to_town|Şehre gir.
+menu_camp_on_sea|Gemilerini denizde durduruyorsun. Ne yapmak istiyorsun?^^{s1}
+mno_epic_sea_battle|B. Destansı deniz savaşı!
+mno_d_day1|C. D-day! (200 gemi)
+mno_testdrive2|Büyük deniz savaşı... rakip seç 0
+mno_see_ships|Gemilerini incele. (WIP)
+menu_center_reports|Kentin Adı: {s1}^Kira Geliri: {reg1} pening^Vergi Geliri: {reg2} pening^Yiyecek Stoğu: {reg3} günlük
+mno_to_price_and_productions|Fiyat ve ürünleri göster.
+menu_price_and_production|Ürünler:^{s1}^^Fiyat faktörleri:^{s2}
+menu_town_trade|Pazar yerine doğru gidiyorsun.
+mno_assess_prices|Ticari mallara değer biç.
+mno_trophies|Savaş ganimetlerini rehinden kurtar.
+mno_trade_with_arms_merchant|Silah tüccarıyla alışveriş yap.
+mno_trade_with_armor_merchant|Zırh tüccarıyla ticaret yap.
+mno_trade_with_horse_merchant|At tüccarıyla ticaret yap.
+mno_trade_with_goods_merchant|Erzak tüccarıyla alışveriş yap.
+mno_back_to_town_menu|Geri dön.
+menu_trophy_premium|Savaş ganimetleri değerli mallar. Para ve deneyim karşılığında onları takas et.
+mno_premium_a|Savaş ganimeti takas et.
+mno_premium_b|Savaş ganimeti takas et.
+mno_premium_c|Tarihi ganimetleri takas et.
+menu_town_trade_assessment_begin|Yerel bölgedeki ticari malların fiyatları hakkında çeşitli konuşmalara kulak misafiri oluyorsun. ^Etraftaki en iyi anlaşmaları bulmaya çalışarak yakından dinliyorsun.
+menu_town_trade_assessment|Gruptaki ticaret becerisi en yüksek kişi olarak ({reg2}) fiyatları tahmin {reg3?ettin:{s1} etti}. {s2}
+menu_sneak_into_town_suceeded|Fakir bir yolcu kılığına bürünmüş halde muhafızları kandırıp şehre girmeyi başardın.
+menu_sneak_into_town_caught|Şehre sızmaya çalıştığın sırada muhafızlardan biri seni tanıyor ve diğerlerini uyarıyor! Şehirdeki tüm muhafızlar üstüne hücum etmeden önce  kapılardan gerisin geri kaçmanın yolunu bulmalısın.
+mno_sneak_caught_fight|Muhafız birliğini yararak kaçmaya çalış!
+mno_sneak_caught_surrender|Teslim ol.
+menu_sneak_into_town_caught_dispersed_guards|Nöbetçileri kovalayıp kaçarken izlerini siliyorsun ve ara sokaklarda kolayca takipçilerini kaybediyorsun.
+menu_sneak_into_town_caught_ran_away|Nihayet şehri geride bıraktın ve güvende olacağın tepelere doğru kaçmayı başardın.{s11}
+menu_enemy_offer_ransom_for_prisoner|{s2} eğer ona {s1} isimli esirini satmak istersen sana {reg12} peninglik gümüş öneriyor.
+mno_ransom_accept|Öneriyi kabul et
+mno_ransom_reject|Öneriyi reddet.
+menu_training_ground|Ölümcül kabiliyetlerini geliştirebileceğin talim alanına giriyorsun. Ne tür bir çalışma yapmak istiyorsun?
+mno_camp_trainer|Talim ustasıyla konuş.
+mno_camp_train_melee|Dövüş talimi.
+mno_camp_train_archery|Mesafeli silah talimi.
+mno_camp_train_mounted|At-üstü talimi.
+menu_training_ground_selection_details_melee_1|Kaç rakibe karşı dövüşeceksin?
+mno_camp_train_melee_num_men_1|Bir.
+mno_camp_train_melee_num_men_2|İki.
+mno_camp_train_melee_num_men_3|Üç.
+mno_camp_train_melee_num_men_4|Dört.
+menu_training_ground_selection_details_melee_2|Rakibini seç: #{reg1}:
+mno_training_ground_selection_details_melee_random|Rastgele seç.
+menu_training_ground_selection_details_mounted|Nasıl bir silah kullanmak istiyorsun?
+mno_camp_train_mounted_details_1|Tek elli bir silah.
+mno_camp_train_mounted_details_2|Gönderli bir silah.
+mno_camp_train_mounted_details_3|Yay.
+mno_camp_train_mounted_details_4|Fırlatmalı bir silah.
+menu_training_ground_selection_details_ranged_1|Hangi fırlatmalı silahı kullanmak istiyorsun?
+mno_camp_train_ranged_weapon_bow|Ok ve yay.
+mno_camp_train_ranged_weapon_crossbow|Mızrak.
+mno_camp_train_ranged_weapon_thrown|Fırlatma hançeri
+menu_training_ground_selection_details_ranged_2|Ne kadar mesafede çalışmak istiyorsun?
+mno_camp_train_ranged_details_1|10 yarda.
+mno_camp_train_ranged_details_2|20 yarda.
+mno_camp_train_ranged_details_3|30 yarda.
+mno_camp_train_ranged_details_4|40 yarda.
+mno_camp_train_ranged_details_5|50 yarda.
+mno_camp_train_ranged_details_6|60 yarda.
+mno_camp_train_ranged_details_7|70 yarda.
+menu_training_ground_description|{s0}
+menu_training_ground_training_result|{s7}{s2}
+menu_marshal_selection_candidate_ask|{s15} yakında {s23} için yeni bir mareşal seçecek. Bazı lordlar seni olası aday olarak önerdiler.
+mno_marshal_candidate_accept|{s15} mareşal olarak hizmet vermeye hazır olduğunu öğrensin.
+mno_marshal_candidate_reject|Bu aralar çok meşgul olduğunu belirt.
+menu_captivity_avoid_wilderness|Birden dünya etrafında kararıyor. Saatler sonra bilincini kazanıp kendini düştüğün yerde buluyorsun. Düşmanların öldüğünü sanıp seni orada bırakmış olmalılar. Ne var ki yaralarının hiçbiri ölümcül değil ve berbat hissetsen de hala yürüyebiliyorsun.  Kalkıp grubundan hayatta kalan diğerlerini aramaya koyuluyorsun.
+menu_captivity_start_wilderness|Tökezleme
+menu_captivity_start_wilderness_surrender|Tökezleme
+menu_captivity_start_wilderness_defeat|Düşmanların tarafından esir alındın.
+menu_captivity_start_castle_surrender|Tökezleme
+menu_captivity_start_castle_defeat|Tökezleme
+menu_captivity_start_under_siege_defeat|Düşmanların tarafından esir alındın.
+menu_captivity_wilderness_taken_prisoner|{s2}
+mno_continue1|Devam...
+menu_captivity_wilderness_check|tökezleme
+menu_captivity_end_wilderness_escape|Esir olarak oradan oraya sürüklendiğin ıstırap dolu günlerden sonra boş bir anlarını yakalayıp muhafızlardan kaçmayı başardın.
+menu_captivity_castle_taken_prisoner|Çevren birden bire muhafızlarla sarıldı. Silahlarını alıp hakaretler ve küfürler eşliğinde seni zindana attılar. Tutsaklığının berbat günlerini burada geçireceksin.
+menu_captivity_rescue_lord_taken_prisoner|Kendini ortaya çıkarmadan önce olabildiğince tebdil-i kıyafet dolaşıyorsun. Nöbetçiler öfkeden kudurmuş bir halde seni hücreye tıkmadan önce vahşice dövüyorlar..
+menu_captivity_castle_check|tökezleme
+menu_captivity_end_exchanged_with_prisoner|Günler süren esaretten sonra seni nihayet kendi taraflarından bir adamla takas ederek serbest bırakıyorlar. 
+menu_captivity_end_propose_ransom|Zindanın ışık sızmayan küflü havasını soluyarak, sayamayacağın kadar çok saatler geçiriyorsun. Birden seni esir alanlardan biri hücrene gelerek sana bir teklifte bulunuyor:Saklı servetinden vereceğin {reg5} pening karşılığında seni bırakacağını söylüyorlar. Kararın...
+mno_captivity_end_ransom_accept|Teklifi kabul et.
+mno_captivity_end_ransom_deny|Reddet ve daha iyibir şeyin çıkmasını bekle.
+menu_captivity_castle_remain|Hücrenin karanlığında günler geçmeye devam ediyor. Muhafızların tekmelerine ve küfürlerine katlanırken açlık çeken bedeninin nasıl zayıfladığını izliyorsun.
+menu_kingdom_army_quest_report_to_army|{s8} yeni askeri harekatına katılmanı istediği haberini iletiyor. Orduya en az {reg13} asker getirmeni eğer bu mümkün değilse acilen bu sayıya ulaşacak kadar adam eğitmeni istiyor.
+menu_kingdom_army_quest_messenger|{s8} yapılmasını istediği bir iş için seninle konuşmak istediğini iletiyor. En yakın zamanda onunla konuşmanı talep ediyor.
+menu_kingdom_army_quest_join_siege_order|{s8} nihai saldırı için {s9} kuşatmasına katılmanı istediği haberini iletiyor. Askerlerin ne pahasına olursa olsun {s9}{.u} almalılar.
+menu_kingdom_army_follow_failed|{s8} ile hareket etmedin. Mareşal başka yükümlülüklerin olduğunu düşündü ama senin desteğini alabilmekten memnun olacaktı.
+menu_invite_player_to_faction_without_center|Bir derebeylik teklifi aldın!^^ {s9}ndan {s8} krallık habercisini sana davetiyesini elden teslim etmek için yollamış. {s9}nın bir {reg59?hanımı:beyi} olma onuruna erişeceksin, karşılığında da bağlılık yemini etmeni ve askeri harekatlarına katılmanı istiyor. Ancak sana bir toprak ya da titr önermiyor. Öneriyi kabul etmezsen şüphesiz alınacaktır.
+mno_faction_accept|Kabul et...
+mno_faction_reject|Geri çevir...
+menu_invite_player_to_faction|Bir derebeylik teklifi aldın!^^ {s9}ndan {s8} krallık habercisini sana davetiyesini elden teslim etmek için yollamış. {s9}nın bir {reg59?hanımı:beyi} olma onuruna erişeceksin, karşılığında da bağlılık yemini etmeni ve askeri harekatlarına katılmanı istiyor. Bağlılığın karşılığında sana toprak olarak {s2} öneriliyor. Öneriyi kabul etmezsen şüphesiz alınacaktır.
+menu_invite_player_to_faction_accepted|Derebeyi olmak için {s3}{.e} bağlılık yemini etmen gerek. Onu bulman ve yeminini karşısında tekrar etmen gerekiyor.{s5}
+menu_question_peace_offer|Barış Önerisi Alıyorsun {s1} barış anlaşması öneriyor. Cevabın nedir?
+mno_peace_offer_accept|Kabul et.
+mno_peace_offer_reject|Reddet.
+menu_notification_truce_expired|Ateşkes sona erdi^^{s1} ve {s2} arasındaki ateşkes sona erdi.
+menu_notification_feast_quest_expired|{s10}
+menu_notification_sortie_possible|Düşman göründü^^Düşmanlar {s4}{.nin} surları dışında görülmüş. {s5} ve diğerleri bir saldırıya hazırlanıyor. Arzu edersen onlara katılabilirsin.
+menu_notification_casus_belli_expired|Krallık Cevap Vermedi^^ {s1} {s2} tarafından yapılan kışkırtmalara cevap vermedi ve {s3} tebaası karşısında itibar kaybetti...
+menu_notification_lord_defects|Karşı tarafa geçme^^ {s4} {s5}{.den} ayrılıp topraklarıyla birlikte {s7}{.e} katıldı. 
+menu_notification_treason_indictment|İhanet Suçlaması^^{s9}
+menu_notification_border_incident|Sınır Vakası^^Söylenenlere bakılırsa {s9}. Duyduklarının doğru olup olmadığın bilmemene rağmen bir şeyden eminsin -- görünüşte önemsiz olan bu olay {s4}{.de}ki heyecanı kabarttı ve {s3}{.le} savaşa girme ihtimallerini kuvvetlendirdi.
+menu_notification_player_faction_active|Şimdi hiç bir krallığa bağlı olmadan kendine ait toprağa sahipsin. Sarayın geçici olarak {s12}'{de} bulunacak ve kendi başına bir hükümdar olacaksın. Ancak diğer hükümdarlar seni bir tehdit olarak görecekler zira güçlenen herhangi bir savaş lordu tahta ulaşabilirse, kendi meşruiyetleri tartışılır hale gelecek.^^Eğer başka bir krallığa bağlanmayı daha yeğ bulabilirsin. Ama bağımsız bir hükümdar olarak devam etmek istiyorsan önceliğin bağımsız yönetme hakkını sağlamlaştırmak olmalı. Bunun için değişik yollar var: soylu biriyle evlenmek, yeni lordlar devşirmek, topraklarını yönetmek, diğer krallarla anlaşmalar yapmak ya da yoldaşlarını çeşitli görevlere yollamak.^^Her durumda ilk icraatın yoldaşların arasından devlet işlerini yürütecek bir baş danışman atamak olmalı. Yoldaşlarının her biri değişik yeteneklere sahipler.^Zaman zaman yeni danışmanlar atayabilirsin. Danışmanla konuşarak sarayının yerini de değiştirebilirsin.
+mno_appoint_spouse|Karını ata {s10}...
+mno_appoint_npc1|{s10}'{.i} ata
+mno_appoint_npc2|{s10}'{.i} ata
+mno_appoint_npc3|{s10}'{.i} ata
+mno_appoint_npc4|{s10}'{.i} ata
+mno_appoint_npc5|{s10}'{.i} ata
+mno_appoint_npc6|{s10}'{.i} ata
+mno_appoint_npc7|{s10}'{.i} ata
+mno_appoint_npc8|{s10}'{.i} ata
+mno_appoint_npc9|{s10}'{.i} ata
+mno_appoint_npc10|{s10}'{.i} ata
+mno_appoint_npc11|{s10}'{.i} ata
+mno_appoint_npc12|{s10}'{.i} ata
+mno_appoint_npc13|{s10}'{.i} ata
+mno_appoint_npc14|{s10}'{.i} ata
+mno_appoint_npc15|{s10}'{.i} ata
+mno_appoint_npc16|{s10}'{.i} ata
+mno_appoint_default|Bölgeden seçkin bir yurttaş ata...
+menu_minister_confirm|{s9}'{.i} {s12}{.de}ki merkezinde bulabilirsin. Otoriteni sarsacak sorunların birikmemesi için onunla sık sık konuşman iyi olur...
+menu_notification_court_lost|{s12}
+menu_notification_player_faction_deactive|Artık hiç toprağın yok.
+menu_notification_player_wedding_day|{s8}'{.nin} sana gönderdiği mesaja göre {s10}{.de}ki evlilik hazırlıklarınız tamamlanmıştır ve en kısa zamanda orada olmanız bekleniyor.
+menu_notification_player_kingdom_holds_feast|{s11}
+menu_notification_center_under_siege|{s1}  {s3}ndan {s2} tarafından kuşatıldı!^^Savunmadaki askerler silah ve taş depolayarak düşmana direnmeyi umuyorlar.
+menu_notification_village_raided|Düşmanların bir tımarı yıkıp geçti.^^{s1} {s3}ndan {s2} tarafından yağmalandı.
+menu_notification_village_raid_started|Köyün saldırı altında!^^{s3}ndan {s2} {s1}nü yakıp yıkıyor.
+menu_notification_one_faction_left|Northlands Krallığı tek bir krallık tarafından ele geçirildi!^^{s1} tüm rakiplerini alt edip tek krallık olarak kaldı.^^Sen BRYTENWALDA'sın!
+menu_notification_oath_renounced_faction_defeated|Eski tarafın yenildi!^^ {s1}na karşı savaşı kazandın! Böylece onlara olan bağlılık yeminini bozduğundan beri oluşan mücadelen bitmiş oldu.
+menu_notification_center_lost|Bir mülkünü kaybettin!^^{s1} {s2} tarafından ele geçirildi.
+menu_notification_troop_left_players_faction|İhanet!^^{s1} {s2}ndan ayrılıp {s3}na katıldı.
+menu_notification_troop_joined_players_faction|Müjde!^^ {s1} {s2}ndan ayrılıp {s3}na katıldı.
+menu_notification_war_declared|Savaş İlanı!^^{s1}{s2}'{.ye} savaş açtı!^{s57}^^Demirciler saban üretmeyi durdurup kılıç ve mızrak üretmeye başladılar. Savaş ilan edildi!
+menu_notification_peace_declared|Barış anlaşması^^{s1} ve {s2} barış anlaşması imzaladılar!^{s57} ^^Bu iki halk aralarındaki kavgaya son verdiler. Bu| başka bir savaşa hazırlanmak için geçici bir ateşkes de olabilir ya da barış samimi ve uzun vadeli olacaktır.
+menu_notification_alliance_declared|İttifak Anlaşması!^^ {s1} ve {s2} ittifak kurdular!^{s57}^^İki krallık kaderlerini birleştirdiler ve artık daha güçlüler.
+menu_notification_alliance_offer|{s1} seninle ittifak yapmak istiyor. Cevabın?
+mno_offer_accept|Kabul et.
+mno_offer_reject|Geri çevir.
+menu_notification_faction_defeated|Taraf elendi!^^{s1} artık yok!
+menu_notification_rebels_switched_to_faction|İsyan Başarılı!^^ İsyanın başarılı oldu! Artık tarafın {s12} liderliğinde {s11} adının tek hakimi.
+menu_notification_player_should_consult|Bakanının sana gönderdiği habere göre ülkende önlem alınmadığı takdirde otoriteni sarsabilecek olaylar gelişmekte. Onunla en kısa zamanda konuşup yapılması gerekenleri gözden geçirmenizi istiyor.
+menu_banquete_moral|Adamlarına silahlarını dışarıda bırakmalarını emrediyor ve kabul salonuna girip rütbelerine göre masanda yer almaya davet ediyorsun. En sevdiklerin en yakınında oturacak.^ Kızlar dolu dolu et ve içki ikram ediyorlar. Bu ziyafete büyük paralar harcadın çünkü adamların bunu hak ediyorlar.^ Seninle beraber kanlarını akıttılar, seninle beraber topraklarını fethettiler. Onlar senin sadık izleyicilerin.^ Saat ilerliyor. Çoğu kütük gibi sarhoşlar, bağırıp şarkılar söylüyorlar. Kimileri kusmaya koşuyorlar ve diğerleri kızların dikkatini çekmek için dövüş horozları gibi kavga ediyorlar.^ Arkanda bir ozan iktidarını ve başarılarını öven şarkılar söylüyor. Bir hükümdar gibi hareket ediyorsun, bir hükümdarsın...”halkının çobanı.”
+mno_banquete_ok|İçinden geldiği gibi bağırıp gülerek içiyorsun.
+mno_banquete_ok2|Ayık kalıyor, gerekli olandan fazlasını içmiyorsun.
+menu_comprar_cattle2|Her biri {reg6} tutan {reg5} baş sığır var. Kaç tane satın almak istiyorsun?
+mno_cattle_ok|Bir.
+mno_cattle_ok2|Beş.
+mno_cattle_ok3|Unut gitsin.
+menu_notification_player_feast_in_progress|Ziyafet hazırlanıyor^^Karın ziyafet için hazırlıklara {s11}{.de} başladı
+menu_notification_lady_requests_visit|Yaşlı bir kadın grubuna yaklaşıp adamlarından birine mühürlü bir mektup verdi. Senin adına gönderilen bu mektubu alıp mührü kırdığında gönderenin {s15} olduğunu anlıyorsun. Mektupta “Son ziyaretin beni çok mutlu etti. {s14} Şu andaki ikametim {s10}.{s12}” diye yazıyor.
+menu_garden|{s12}
+mno_nurse|Yaşlı kadınla beraber git.
+menu_kill_local_merchant_begin|Kurbanını görüp izlemeye başlıyorsun ve o karanlık bir ara sokağa dalarken izliyorsun.. Bu kesinlikle saldırmak için en iyi fırsat olacaktır.
+menu_debug_alert_from_s65|DEBUG ALERT: {s65}
+menu_auto_return_to_map|tökezleme
+menu_bandit_lair|{s3}
+mno_continue_1|Saklandıkları yere saldır...
+mno_trade_withbandits|Haydutlara ganimetleri sat.
+mno_leave_no_attack|Terket...
+mno_leave_victory|Devam et...
+mno_leave_defeat|Devam et...
+menu_notification_player_faction_political_issue_resolved|Beylerine danıştıktan sonra {s10} {s11}{.i} {s12}'{.e} bahşetmeye karar verdi.
+menu_notification_player_faction_political_issue_resolved_for_player|Beylerine danıştıktan sonra {s10} {s11}{.i} sana bahşetmeye karar verdi. İstersen bu şerefi geri çevirebilirsin ama bu durumda muhtemelen bir süre yeni ihsanlar alamazsın.{s12}
+mno_accept|Şerefi kabul et
+mno_decline|Şerefi reddet
+menu_start_phase_3|{s1}
+menu_start_phase_4|{s11}
+menu_lost_tavern_duel|{s11}
+menu_establish_court|Sarayını {s4}'{.a} kurmak için küçük bir tadilata ihtiyaç var. Bunun için bir alet takımı ve biraz gümüş gerekiyor. Ayrıca bazı takipçilerinin buraya taşınması biraz vakit alabilir. Devam etmek istiyor musun?
+mno_establish|Sarayı {s4}'{.a} kur.
+menu_notification_relieved_as_marshal|{s4} artık mareşal olarak hizmetlerine ihtiyacının kalmadığını iletti. Kraliyet adına {reg4} gün süren yürekli çabaların için sana içinde {reg5} pening olan bir kese hediye ediyor.
+menu_monasterio_visit|Bir manastıra varıyorsun. Manastır bir kilise, rahipler ve hizmetçilerin odaları ve kümes hayvanlarıyla dolu bahçeler boyunca uzanıyor. Burası bir hazine değerinde!^^{s13}
+mno_enter_interior|Başrahibi ziyaret et.
+mno_enter_interior_door|Başrahibin odası.
+mno_monasterio_recruit|Sana katılmak isteyen var mı diye sor.
+mno_donate|Dua et ve manastıra bağışta bulun (500 pening).
+mno_aprender_leer|Okuma yazma öğren (4000 pening).
+mno_convertir|Hristiyan ol.
+mno_pillage_monastery|Manastırı yağmala.
+menu_saquear_monasterio|Kan ve hazine. En pervasız adamların {s3}e gönderiliyor| önlerine çıkan herkesi öldürüp zenginlikleri yağmalıyorlar. Ateş ve ölüm yeri süpürüyor. {reg3} pening değerinde savaş ganimeti ele geçiriyorsun.^^{s7}^^{s4}^
+menu_refugee_recruit_troops12|Askerlerine katılarak yeni bir hayat aramak isteyen dullar ve yetimler var.
+mno_acept_them|Tut onları. (20 pening)
+menu_refugee_recruit_troops22|Kimse sana katılmak istemiyor.
+menu_refugee_recruit_troops32|Orduna katılmak isteyen çobanlar ve çiftçiler var.
+menu_refugee_recruit_troops42|Orduna katılmak isteyen bir rahip ve bazı genç savaşçılar var.
+menu_panel_comandante|Savaştan önce...
+mno_choice_1|Tutkulu bir konuşmayla adamlarını heyecanla doldur.
+mno_choice_2|Onur düellosu için düşmanlarını meydana çağır.
+mno_choice_3|Avcı erleri: düşmanın ilerlemesini durdurmak için adamlarını gönder.
+mno_choice_4|Tanrılara adak ada.
+mno_choice_5|Hiçbir şey yapma.
+menu_escaramuza_1|Efendim, düşman komutanı sizin taktik becerilerinize üstün geldi. Biz daha hazırlanamadan düşmanın uzun menzilli silah kullanan savaşçıları tarafından yakalandık. Çok sayıda zaiyat var. Sizin kayıplarınız: {s8}
+mno_defendiendo_1|Hay lanet!!
+menu_escaramuza_2|Adamlarımız zamanında sevk edildiler ve düşmanla temas ederek geri dönmeden önce onları ağır kayıplara uğrattılar.^^ Düşmanın kayıpları: {s8]
+mno_defendiendo_2|Aferin!
+menu_escaramuza_3|Düşmana yaklaşan birliklerimiz düşman komutanının birliklerinin ilerleyişini korumak için uzun menzilli silah kullanan askerler konumlandırdığını gördüler. Adam kaybetmemek için askerleriniz saldırıya geçmeden geri döndüler.
+mno_defendiendo_3|Tamam.
+menu_lucha_2_no|Düelloya gönüllü kimse yok.
+mno_defendiendo_4|Geri.
+menu_lucha_1_d|Bir düşman savaşçısı orduna doğru ilerliyor ve bir taş atımı mesafede duruyor. İçki dolu kuzu derisinden bir matarayı boynundan çıkartarak yere atıyor. Kaslarını ısıtmak için zıpladığını görüyorsun. Pelerinini atıyor, elbisesini çıkartıyor ve sadece mızrak ve kalkan olduğu halde çıplak duruyor. Düşmanın şampiyonu bu, ordunu işaret ederek adamlarına meydan okuyor.^^Sen konuşmadan önce bir genç saflardan fırlayıp koşuyor. Tecrübeli bir asker değil, en yeteneklilerden biri de değil ama kesinlikle cesur.^^ Savaşçın şampiyonun düşmana doğru ilerliyor. Birbirlerinin etrafında dönerek karşıdakinin hareketlerini gözlüyorlar. Savaşçının sinirleri iflas ediyor ve mızrağıyla hamle yaparken kalkanını indiriyor. Düşman savaşçısı bundan yararlanıyor ve hızlıca mızrağını askerinin kalbine saplıyor...^^Düelloyu kaybettin.
+mno_defendiendo_5|Geri.
+menu_lucha_2_v|Adamlarından biri saflardan ayrılarak düşmana doğru ilerliyor sonra dönüyor, giysisini yarıya kadar yukarı çekiyor ve kıçını gösteriyor. Düşmanın şampiyonlarından biri ona doğru öfkeli şekilde koşuyor ve mızrağını fırlatıyor. Adamının bir iki adım önüne düşen çılgın bir atış bu. Düşman daha sonra kılıcını çekerek çığlık atarak saldırıyor.^^Adamın hızla hazırlanıyor ve mızrağını sallayarak yerinde duruyor. Her biri hedefi bulmak için karşısındakinin kalkanını dövüyor.^^Dikkatle izlerken ilk kanın dökülüşünü görüyorsun, şampiyonun mızrağını düşmanının ağzına sapladığında da sonuncuyu. Nefesini toparladıktan sonra şampiyonun geri dönüyor ve adamlarına bağırıyor: “Ağzı için çok büyüktüm!”^^Düelloyu kazandın.
+mno_defendiendo_6|Geri.
+menu_lucha_1_p|Düşman ordularının komutanı ordularının önünde duruyor ve seni işaret ederek düelloya çağırıyor.
+mno_defendiendo_7|Kabul et.
+mno_defendiendo_8|Geri.
+menu_sacrificio_off|Tanrılar dua ve adaklarına sessiz kalıyorlar.
+mno_sacri_1|Geri.
+menu_sacrificio_1|Kurban edilen hayvanların iç organları kurtlarla dolu: kötüye alamet.^^Belki de bugün savaşmamalısın.
+menu_sacrificio_2|Kurban edilen hayvanların kanlarına baktığın zaman adamlarından birisi ufuğa doğru işaret ederek pençelerindeki yılanla havalanan kartalı gösteriyor. Güzel bir tanrı işareti gerçekten de.^^Düşmana saldırma zamanı geldi.
+menu_sacrificio_3|Kurban bıçağını hayvanın boğazına doğru sapladığın anda ellerinden kaçıyor ve düşmanın önünde yere kapaklanmadan önce bir kaç yarda koşuyor. Bu sadece kötü bir işaret olabilir.^^Belki de bugün savaşa girmemelisiniz.
+menu_sacrificio_4|Kurban edilen hayvanın bağırsaklarını eşelediğinde gümüş bir yüzük farkediyorsun. Bu sadece iyiye işaret olabilir.^^Savaşa hazırsın.
+menu_discurso_off|Sen de öne çıkıyor ve küçümseyici birkaç söz etmeye çalışıyorsun ama ikna edici olamıyorsun. Sinirlerin seni ele veriyor ve tek bir kelime bile edemiyorsun.
+menu_discurso_1|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Köyünün genç adamları ve güzel kızları savaş yaralarını nerede aldığını sorduklarında şöyle diyeceksiniz:  “Britanya ve Hiberniya'nın gördüğü en büyük generalin yönettiği en büyük ordunun sancakları altında.”
+menu_discurso_2|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Köyünün genç adamları ve güzel kızları savaş yaralarını nerede aldığını sorduklarında şöyle diyeceksiniz:  “Britanya ve Hiberniya'nın gördüğü en büyük generalin yönettiği en büyük ordunun sancakları altında.”
+menu_discurso_3|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Düşünün ki tam bu anda Bryten'in her yerinde korkaklar ve ihtiyarlar keçilerini güdüyor, tarlalarıyla uğraşıyor, bir hiç uğruna emek ve ter döküyorlar! Bizse burada özgür adamlar olarak duruyoruz. Bizim çabamız başlamak üzere. Kendi terimiz ve kanımız akmaya hazır. Ne için? Onur için! Zafer için! Refah için!”
+menu_discurso_4|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Bütün bu topraklar boyunca bugün bu anda kaderimizle karşılaşmak için yol aldık.Bizler öldükten yıllar sonra bile isimlerimiz şarkılarda söylenecek. Bu savaş alanında bulacağımız görkemin şarkısını söyleyecekler!”
+menu_discurso_5|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Kardeşlerim! Doğdunuz ve büyüyüp erkekler oldunuz. Dün yürüdük; bugün savaşıyoruz! Bugün düşmanlarımızın kanını dökerek onları yerle bir edeceğiz. Kalkanlarını parçalayacağız. Hayatlarınızın geçen her günü sizi buraya getirdi. Bugün kardeşlik içinde fethedeceğiz. Bu gece düşmanın masasında ziyafete oturacağız!”.
+menu_discurso_6|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Erkekler!Kardeşlerim! Ne kadar uzun yollardan yürüdük. Ödülünüzse sizi bekliyor! Ödül, şan düşmanınızın inlemelerinden gelecek! Gidin şimdi! Kaderinize yürüyün! Ödülünüzü alın! Dövüşün! Dövüşün! Dövüşün!”
+menu_discurso_7|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Arkadaşlarım! Beni dinleyin! Bugün evlerimizde söylediğimiz şarkıları düşmanlarımızın kanlarıyla yazdığımız gündür! Özgür erkeklersiniz! Kimse topraklarımıza saldırıp bize masal okuyamaz. Karşımızdaki güruh kalabalık ama yuvaları için değil sizinkileri yağmalamak için dövüşüyorlar. Boyun eğecekler. Mızraklarınızı hazırlayın. Sağlam durun ve asla yılmayın! Hiçbir erkek karşımızdaki ayaktakımı kalabalığına toprağını ya da şerefini vermez. Dövüşün! Ölün ama asla teslim olmayın! Asla, asla, asla!”
+menu_discurso_8|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Erkekler kavgaya hazır düşmanlarımızın önünde duruyoruz. Çekin kılıcınızı! Sallayın mıraklarınızı! Bu kalkanlardan duvar bizim evimiz, o zaman hoş geldin diyelim düşmanlarımıza! Gelsinler! Kalkan duvarlar birbirine vursun! Tek ihtiyacınız bileğiniz ve kalbiniz. Bu kalkan duvar içinde duracaksınız kardeşlerim. Biliyorum ki buradaki her erkeğin göğsünde o kadar parlak bir ateş yanıyor ki bu duvarlar düşmanlarımızı koruyor bizi değil! Zafer bizim kaderimiz! Biz sunmadıkça kimse onu bizden alamaz!”
+menu_discurso_9|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^"Hadi, aslanlarım! İlerleyip düşmanımızla savaş meydanında yüzleşelim! İçinde sizin gibi yiğitler olduğu sürece ne kılıç birliğimiz ne kalkan duvarımız bize kafa tutan o namert köpeklere yenilmeyecektir! Her biriniz gerçek birer erkek, her biriniz birer kahramansınız!  Eski kahramanlar gibi, gidip rakiplerimize katliamı yaşatalım! Bugün, bir karganın aç gözlü caniliğiyle düşmanlarımıza saldıralım!
+menu_discurso_10|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Çocuklarınızı ve eşlerinizi hatırlayın. Evlerinizi ve atalarınızı hatırlayın. Tanrılarınızı ve uğrunda dövüştüğümüz herşeyi hatırlayın. Daha iyi bir dünya yaratmak için buradayız. Karşımızdakiler de bunu biliyor ve kararlılığımızdan korkuyorlar. Öyle korkuyorlar ki pantolonlarına işiyor ve mızrakları tutamayacak kadar titriyorlar. Erkekler! Kılıcım ve kalkanımla, kanım ve terimle sizinle beraberim. Sizin gibi devlerler omuz omuza olmaktan guruluyum. Erkekler, kaderimiz bizi bekler. Gidip onu yakalamanın zamanıdır!”
+menu_discurso_11|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Bu yangın yerinden dışarı çıkalım ve düşmanlarımızın karşısına dikilelim. Ölenler tanrılarımızla buluşacak. Ölmeyenlerin isimleri onurlandırılacak. İlk ben gidiyorum, yaptığımı yapın. Tanrılar şahidim olsun ki sizi asla terketmeyeceğim, kardeşlerim ve yoldaş şövalyelerim!”
+menu_discurso_12|Birliklerini teftiş ederek aralarında dolaşıyorsun. Onlarla konuşurken bugünün önemini onlara aktarmak için her bir adamının gözlerinin içine bakıyorsun.^^”Güneş bu akşam düşmanlarımızın üzerine batacak ama biz bahar günündeki güneş gibi parlayacağız. Şimdi gergin ve titrer halde olabilirsiniz ama titreyen elleriniz onlarınkiyle karşılaştırılınca hiçbir şey değil. Şimdi rüzgardaki güz yaprakları gibiler, biz ise kükreyen fırtınayız onları çayırlara dağıtacak olan, bir daha görülemesinler diye. Sallayın mızraklarınızı. Ağaçlarını budayan fırtına olun. Bu topraklar sizin -bu ormanlar, bu tepeler, bu tarlalar- öyle olacak mevsimler mevsimleri, yıllar yılları izledikçe, sonsuza kadar!”
+menu_doccinga_messenger|Bir çiftçi sefil katırını döverek yaklaşıyor. Önünde duruyor, nefes alıp bağırıyor:^^'Boğa Boyun Sven Doccinga üzerine üç gemiyle ilerliyor! Thonkrik seni uyarmam için yolladı beni. {s4} gelmeyecek, bizi kaderimize terketti!^Haberi diğer asilzadelere de vereceğim ama onlar Dan ve Frisialılar hakkında tasalanmıyorlar. Lütfen yardımınıza ihtiyacımız var. Halkımı kurtarın!^^Çiftçi katırını tekmeliyor ve sürerek uzaklaşıyor. “Halkımı kurtarın” sözleri bir sıkıntının yankısı olarak aklında kalıyor.
+mno_choice_01_1|Devam.
+menu_doccinga_messenger2|Dörtnala bir haberci yaklaşıyor. Önünde duruyor, bir nefes alıp bağırıyor:^^”Thonkrik Doccinga'ya gelmenizi istiyor {playername}. Son savaşta Boğa Boyun Sven'in Viking akıncılarından birini tutsak aldı.^Onu sorgulamanın ilginizi çekeceğini düşünüyor ve bir an önce kendisini görmeye gelmenizi istiyor.Thonkrik  İskandinavların kralı esiri istemeden önce ne kadar daha elinde tutabileceğini bilmiyor.”
+menu_doccinga_c_assault|Doccinga yakınlarındaki bir tepeden kasaba hakının kaçıştığını görüyorsun. Daha cesur olanlar ve kralın adamlarından bazıları sahilde bir kalkan duvarı kurmaya çalışıyor, mallarını korumak ya da en kötü durumda sevdiklerinin kaçmasını güvenceye almak için.^Uzakta denizde üç Viking gemisi seçiyorsun. Bu mesafeden iyi göremiyorsun ama savaşçı dolu olduklarını tahmin etmek zor değil.^^Boğa Boyun Sven'in gemine saldırdığı deniz savaşına gidiyor aklın ister istemez. Şimdi en sonunda yüce Viking'le karşılaşacaksın.^^Doccinga'dan koşarak ayrılan bir adamı seçiyor gözlerin. Savaşçıya benziyor. Seni farkedince sana doğru yöneliyor...
+mno_choice_01_1d|Yardım etmek için Doccinga'ya yaklaş ve savaşçıyla görüş.
+mno_choice_doccinga|Daha fazla adam silah altına almam lazım.
+mno_encounter_save|Daha sonra geri döneceğim. Doccinga bekleyebilir.
+menu_doccinga_c_assaultnoche|Gece ilerledi ve adamlarının dinlenmeye ihtiyaçları var. Sabah geri gel.
+mno_choice_01_3d|Devam.
+menu_noaccessallowed|Partinde çok fazla adam oluşu insanlara, saldırmayı planlıyormuşsun korkusu verebilir. Şimdilik kampa bir miktar asker bırakmak isteyebilirsin.
+menu_doccinga_c_assault2|Köye yaklaşırken Doccinga'dan kaçanların oluşturduğu kuyruğu görüyorsun. Tüm mallarını alarak yürüyor ve ağır arabalar çekiyorlar, bu yüzden çok yavaş hareket edebiliyorlar. Eğer Vikingleri sahilde durduramazsan tüm kaçanlar kılıçlarının önünde ölecekler.
+mno_choice_01_1e|Doccinga'ya gir.
+menu_doccinga_victory|Dirseğinden eline kan damlıyor. Çevrende sadece ölüm var ve kulakların can çekişenlerin inlemeleriyle dolu.^^Yenilen Vikingler denize döndüler, geride birçok ölü ve yaralı bıraktılar ama bedel ağır oldu.^^Boğa Boyun Sven saldıranların arasında değildi ve bu seni şaşırtıyor zira gemiler onunkilerdi. Nefret ettiğin düşmanın neredeydi peki?^^Thonkrik'in sözleri kulağında yankılanıyor. Belki de Kennemer kralına bir ziyaretin zamanı geldi. Bazı açıklamalar yapması gerekecek.
+menu_frisa_proscrito|Kennemer jarlı tarafından Doccinga'yı terketmen için verilen süre doldu. Artık Friese'de bir kanun kaçağısın.
+mno_choice_01_1a|Devam.
+menu_thiaderd_muerto|Savaş sert oldu. Thiaderd'in adamları aslanlar gibi dövüştüler ama askerlerin haklarından gelmeyi başardı.^^Thiaderd'in cansız bedeni de adamlarının arasında. Sen görevini yaptın, geriye kalan Thiaderd'in biraz ilerdeki kampını yağmalamak.
+menu_thiaderd_battle|Savaş kaçınılmaz. Thiaderd Reginhard'ı görünce öfkeden kuduruyor ve adamlarına saldırı emrini veriyor.
+menu_camp_thiaderd|{s5}
+mno_talk_to_thiaderd|Adamlarla konuş.
+mno_kill_thiader_fam|Hepsini öldür, kampı ateşe ver ve alabildiğin kadar fazla para al onlardan.
+mno_loot_thiader_fam|Haydut yatağını yağmala ama kalanların canını bağışla.
+mno_no_kill_thiader_f|Biz katil değiliz!Bırakın huzur içinde yaşasınlar.
+mno_choice_farm|Daha fazla adam silah altına almam lazım.
+mno_encounter_savefarm|Ayrıl.
+menu_frisa_beach|Denizden esen rüzgar yüzünü yalıyor. Kafanın üzerinde martıları duyuyorsun ve tuz kokusu gittikçe güçleniyor. Uzakta gizli bir sahilde bir geminin silüetini seçiyorsun. Thonkrik'in sana bahsettiği gemi bu...senin gemin.
+menu_sven_lair|Bir nehir kıyısında bir Viking kalesi farkediyorsun. Sven'in inini buldun!^Gemiler için ufak bir limanı da olan savunması kolay, iyi bir yer. Duvarın arkasında, evlerin arasında bazı savaşçılar görüyorsun. Farkedilmeden hepsini sayamazsın ama bir kaç düzine gibiler. Kalenin ortasında satılmak üzere bekleyen tutsaklar görüyorsun. Annen onlar arasında olabilir mi?
+mno_talk_to_fort_leader|Kale komutanıyla bir görüşme talep et.
+mno_enter_to_buy_prisoners|Kaleye gir ve tutsakları satın al.
+mno_initial_attack|Süpriz saldırı.
+mno_nosurprise_attack|Topyekün Saldırı!
+mno_conquestsl_attack0|Sven'in adamları ordumu izliyorlar. Daha sonra dönmeliyim.
+mno_conquestsl_attack|Sven'in sığınağını ele geçir!
+mno_choice_fort|Daha fazla adam silah altına almam lazım.
+mno_encounter_savefort|Ayrıl.
+menu_sven_lair_comprado|Boğa Boyun Sven'in sığınağını geride bırakıyorsun. Adamların arasında kayıpları önlemek için amaçlarına diplomasi ile ulaşmaya karar veriyorsun.^^Grubunda yeni bir adam var, eski bir dost, Kantabrialı  Bodo. Sven'in sığınağının hemen dışında  onu da yanına almanı istedi. Woden Ric'te Sven'İn saldırısından sonra neler olduğunu anlatmak istiyor.
+mno_talk_to_bodo|Bodo ile konuş.
+menu_svenlair_victory|Sert bir savaştan sonra adamların sığınağı koruyan Vikingleri bozguna uğratıyorlar. Evlerden birinde üç tutsak buluyorsunuz: iki kadın ve bir adam. Kadınları tanımıyorsun, belki de başka Viking akınlarında esir düştüler ama adam Kantabrialı Bodo, Woden Ric'te seninle beraberdi.^^Bodo grubuna katılıyor. Eski bir dosta kavuştun. Onunla yürümeni istiyor. Boğa Boyun Sven'in Woden Ric saldırısından sonra olanları anlatmak istiyor. Ama önce Sven'in sığınağına ne yapmak istediğine karar vermelisin.
+mno_take_it|Burası iyi bir yer. Ben Bodo ile konuşurken adamlarıma ortalığı temizlemelerini söyleyeceğim.
+mno_destroy_it|Ben Bodo ile konuşuken yağmalayıp yıkmaları için adamlarıma emir veriyorum.
+menu_sven_lair_final|Kader seninle oyun oynuyor. En başta herşey annenin ölümüne işaret ediyordu. Seni güden duygu hayatta kalma isteğinden çok intikamdı: Sven'i bul ve öldür. Ama madem ki annen hala hayatta ve düşmanlarının elinde, önceliğin onu bularak kurtarmak.
+mno_travel_s|Git.
+menu_svenlair_victory_conquista|Sert bir savaştan sonra adamların sığınağı koruyan Vikingleri bozguna uğratıyorlar. Buraya ne yapacağına karar vermen gerekiyor.
+menu_farmstead_sigurd|Toprak bir yol arkasında çok sayıda ev yapılmış olan büyük bir çite doğru ilerliyor. Zengin bir adamın evi olan dört başı mağmur bir yere benziyor.^Olduğun yerden bazı adamların ortalıkta gezdiğini görüyorsun. Herşey sessizlik içinde.
+mno_enter_to_farmstead|Çiftliğe gir.
+menu_farmstead_sigurd2|Gözcülerinin bir grup adamın yaklaştığını haber vermeleri uzun sürmüyor. Çiftlikte ortam gergin. Ama bir tepeye konumlanmış olan Egil endişelenmemen için haber gönderiyor çünkü ziyaretçiler kralın flamalarını taşıyorlar.^^Kral Horik takviye gönderiyor!
+mno_talk_kingleader|Liderleri olan adamla konuş.
+menu_farmstead_sigurd3|Farkediyorsun ki çiftlik yolun tehlikelerinden ve zor kararlarından uzakta bir gün geçirmek için idela bir yer. Bir an için çiftliğin senin olduğunu, tarlaları ektiğini, köleleri yönettiğini, her yeni günün bir öncekinden daha iyi geçtiğini hayal ediyorsun. {s2}. Kendini kapının önündeki bir sırada oturur gün batımını ya da doğumunu izlerken hayal ediyorsun... İstediğin bu mu? Yoksa sana bu sakinlik fazla sıkıcı mı gelirdi? Her durumda sakin bir hayatı düşünmeden önce yapacak çok işin var.^İkinci gün  gözcülerinden biri silahlı adamların yaklaştığı haberini getiriyor. Çok sayıdalar ve Sigurd “Yılan Göz”ün sancaklarını taşıyorlar Emir vermene gerek kalmadan adamlarının silahlarını alıyorlar, zırhlarını giyiyorlar ve çiftlik kapısında bir kalkan duvar kurmak üzere koşuyorlar.
+mno_enter_to_battlefs|Görüşmelere başla.
+menu_farmstead_sigurd4|Gelen adamlara bakıyorsun, belki altmıştan fazlalar ve iyi silahlanmışlar. Önlerinde iteklenen kafası çuvala geçirilmiş bir esir var...
+mno_choice_01_sigur|Gir.
+menu_hablar_olvir|Sert bir savaştan sonra Ulf'un çiftliği cesetlerle doluyor. Adamların bedenlerin arasında dolaşıp yaralıların işini bitiriyor ve değerli herşeyi alıyorlar. Can çekişen bir yaralının altın yüzüğünü almak için parmağını kesen Egil'e bakıyorsun, sonra tüm kıyımı dehşetle izleyen Brunhild'e, sonra bir ceset üzerine oturmuş gülen Reginhard'a. Sen nasıl hissediyorsun fikrin yok. Bir gün birisi savaşın insanları değiştirdiğini, ruhu yutan obur bir şeytan olduğunu söylemişti. Değiştin mi? Farklı mısın?^^ Düşüncelerin iki adamının önüne getirdiği Olvir ile kesiliyor. Hala hayatta ama fazla sürmez. Bedeninden kan fışkırıyor... durdurmak imkansız.
+mno_talk_to_olvir|Olvir ile konuş.
+menu_doccinga_prisonerjoined|Yoldayken bir adam orduna yaklaşıyor. Birkaç yarda ötede silahlarını ve kalkanını yere bırakıp çıplak ellerini gösteriyor. Güç bela tanıyorsun. Doccinga'da sorguladığın adam bu yaşamasına izin verdiğin Viking kaptanı.
+mno_talk_to_captain|Diyeceklerini dinle.
+menu_entregar_bodo|Sigurd'un iki adamı seni Bodo'nun yanına kadar takip ediyorlar, durumu açıkladığın zaman direniş göstermiyor. Sigurd'un adamları onu alıp götürürken önünde duruyor, yaşlı gözlerle sana bakıyor. Brunhild ve Reginhard seçiminden memnun olmuşa benzemiyorlar.
+mno_talk_to_bodoentregado|Bodo'yla konuş.
+menu_arboleda_conrey|Kralı izleyen gözlerden ve kulaklardan uzakta olacağınız bir ağaçlığa kadar takip ediyorsun.
+mno_talk_to_reyhorik|Kral Horil ile konuş.
+menu_arboleda_conrey2|Kralı izleyen gözlerden ve kulaklardan uzakta olacağınız bir ağaçlığa kadar takip ediyorsun.
+menu_meeting_ragnarssons|Snotingaham kapılarında birçok adam seni karşılamaya gelitor. Silahlı oldukları halde tehditkar değil seni görmekten mutlu olmuş görünüyorlar.
+mno_talk_to_siegemen|Konuş onlarla.
+menu_primer_barco|İlk gemini aldın. Bir gemi sadece denizi geçmeye yaramıyor. Aynı zamanda eğer deniz yoluyla ticarete başlarsan zenginlik de getiriyor. Sahildeki yerleşimlere hızlı akınlar düzenlersen korkulan bir adam da oluyorsun. Yabancı toprakları fethettiğinde hükümdar haline geliyorsun. Norsemanlar seni öbür dünyaya götürdüğünü de söylüyorlar.^^Ancak gemi yolculuğu aynı zamanda tehlikeli de. Deniz güvertenin altında seni ve adamlarını bekleyen açık bir mezar gibi. Kış fırtınaları gemilerine zarar verir ama sakin havalar da daha iyi değil zira adamlarını kürek çekmek zorunda bırakır. Mürettabatı çok zorlamamak için gece çökünce yolculuğa ara vermek ve karada dinlenmek adettendir.^^Bir gemi aynı zamanda değerli bir mülktür de. Sahibinin bir gözü her zaman üzerinde olmalıdır.^^Yelken açmak istediğin anda buraya geri dön...
+menu_lugar_destruido|{s4}.
+mno_lugar_des|Git.
+menu_banquete_moral_refuge|Adamlarına silahlarını dışarıda bırakmalarını emrediyor ve kabul salonuna girip rütbelerine göre masanda yer almaya davet ediyorsun. En sevdiklerin en yakınında oturacak.^ Kızlar dolu dolu et ve içki ikram ediyorlar. Bu ziyafete büyük paralar harcadın çünkü adamların bunu hak ediyorlar.^ Seninle beraber kanlarını akıttılar seninle beraber topraklarını fethettiler. Onlar senin sadık izleyicilerin.^ Saat ilerliyor. Çoğu kütük gibi sarhoşlar. Bağırıp şarkılar söylüyorlar. Kimileri kusmaya koşuyorlar ve diğerleri kızların dikkatini çekmek için dövüş horozları gibi kavga ediyorlar.^ Arkanda bir ozan iktidarını ve başarılarını öven şarkılar söylüyor. Bir hükümdar gibi hareket ediyorsun, bir hükümdarsın...”halkının çobanı.”
+mno_banquete_ok3|Adamlarını çağır ve onlara yüzükler, kolyeler ver (2000 pening).
+menu_player_lair_menus|{s10} Kişisel sığınağın, işler kötüye gittiğinde düşmanlarından uzakta saklanabileceğin, yolculukların yorgunluğunu üzerinden atabileceğin, en kişisel hazinelerini saklayabileceğin bir yer.^^{s11}^^{s13}
+mno_banquete_refugemead|Adamlarım sığınakta bir ziyafeti hak ediyorlar.
+mno_guarida_rename|Sığınağına yeni bir isim ver.
+mno_lair_interior|Sığınak salonuna git.
+mno_lair_interior_door|Sığınak kapısı.
+mno_visit_tavern_lair|Kabul salonuna git.
+mno_visit_tavern_lair_door|Kabul salonu kapısı.
+mno_lair_buildings_improve|Kaptanınla konuş.
+mno_lair_buildings_improve_door|Sığınak kapısı.
+mno_hirelair_staff|Eleman tut.
+mno_lair_inspect|Sığınak etrafında dolaş.
+mno_lair_inspect_door|Meydana git.
+mno_mylair_station_troops|Garnizonu yönet.
+mno_demoler_lair|Kişisel sığınağını yık (500 pening).
+mno_lair_wait|Bir süre burada bekle.
+mno_embark|Gemiye bin.
+mno_lair_leave|Ayrıl...
+mno_lair_leave_door|Bölgeden ayrıl.
+menu_demoler_lairm|Sığınağını yıkmak istediğine emin misin?
+mno_demoler_yes|Evet (1000 pening).
+mno_demoler_no|Geri.
+menu_conversacion_companions1|Yolda dinlenmek için durduğunda Brunhild'in başlarını çektiği adamların yanına geliyorlar. Sana söylecek bir şeyleri var.
+mno_talk_to_brunhild|Brunhild'i dinle.
+menu_conversacion_companions2|Yolda dinlenmek için durduğunda adamların yanına geliyorlar. Yüzlerinde endişe var.
+mno_talk_to_companions2|Onları dinle.
+menu_conversacion_companionsbodo_choice|Yolda dinlenmek için durduğunda Bodo'nun başlarını çektiği adamların yanına geliyorlar. Sana söylecek bir şeyleri var.
+mno_talk_to_bodochoice|Bodo'yu dinle.
+menu_caio_entry|Adamların seni görmek isteyen birisi olduğunu haber veriyorlar. Sırık gibi uzun neşeli bir çocuk. Kesinlikle ihtiyar Roman'ın oğlu bu.
+mno_talk_to_caio|Devam.
+menu_egil_conversacion|Adamların sana doğru gelen birisi olduğunu haber veriyorlar. Saklanmadan ve güvenle dolu yalnız birisi bu. Uzun bir adam, yapılı ve gururlu. Adamlarının önüne vardığında ellerini açıyor ki silahsız olduğu görülsün. Gözleriyle seni arıyor ve sana doğru ilerliyor. Adamlarından birisi mızrağıyla durduruyor...
+mno_talk_to_egil|Devam.
+menu_aghatinos_conversacion|Yolun bir kenarında büyük bir taş üzerine oturmuş bekleyen bir adam var. Zayıf, uzun boylu ve fakir giysili. Zararsız görünüyor. Sakince yakınına gelmeni bekliyor. Adamlarının üzerinde dolaşan gözleri seni farkedince duruyor, ayağa kalkıp sana doğru ilerliyor.
+mno_talk_to_aghatinos|Konuş onunla.
+menu_egil_rebelion|Öyle görünüyorki yolunca gitmeyen şeyler var. Bir çığlık duyuyorsun ve Egil sana doğru geliyor.
+mno_talk_to_egilreb|Egil'i dinle.
+menu_egil_rebelion2|Egil'in cansız bedeni ayaklarının dibinde duruyor, sonsuz uykuya kavuşmuş. Adamlarından bazıları cenaze töreni için cesedi alıyorlar. Grubunun sevilen bir üyesiydi ve ölümü savaşçıların arasında büyük etki yaratıyor.
+mno_permitir1|Egil'i gömen adamlara katıl ve cenaze masraflarını öde.
+mno_permitir2|Egil'i gömmelerine izin ver.
+menu_egil_duel|Egil sana doğru hamle yapıyor. Adamların ikinizin çevresinde bir daire oluşturuyor. Ya sen ya o...
+mno_fight_egilreb|Kavga.
+menu_backfrom_frankia|{s4}
+mno_choice_01_1frankia|Devam.
+menu_cueva_odin|Bu civarlarda denizin kokusu her yere yayılıyor ve uçurumun kıyısına çarparak kırılan dalgaların kükreyişi kafanın içinde fırtına gibi katlanarak büyüyor. Kumsalın sonunda çok dar bir patika var, burada birilerinin izlerini seçiyorsun. Sadece senin devam edebileceğin zor bir yol bu, adamlarına sen araştırırken beklemelerini emrediyorsun.
+mno_choice_doccingas|Daha fazla adam askere almalıyım.
+menu_orm_duel|Çiftlikten çıkarak, Ulf'un kölelerinin düello alanının sınırlarını törensel bir şekilde taşlarla işaretledikleri bir açıklığa geliyorsun. Çevrende, çiftliğin adamlarıyla senin adamların sana tezahürat yapan bir çember oluşturuyorlar.^^Önünde Kara Orm aşırı gelişmiş kaslarını ısıtıyor. Kendine güveni tam. Belki de bugüne kadar hiç yenilmediği için aşırı güvenli olarak değerlendirmek yanlış olur. Yoldaşların sırtına vurarak sana öneriler veriyor, iyi şanslar diliyorlar. Karamsar olan Reginhard ise mezar taşını kendisinin yazacağını söylüyor. Aniden Egil Orm'a doğru işaret ediyor. Berserker kaslarını ısıtmayı tamamlamış, bedeni istem dışı olarak kasılıyor, ağzından köpükler geliyor. Birdenbire kafasını kaldırıp kan çanağına dönmüş gözleriyle sana bakarak anlaşılmaz bir şeyler bağırıyor. Sana doğru bir engerek gibi atılıyor, bu irilikteki bir adamdan beklenemeyecek kadar hızlıca hem de...
+mno_duel_orm|Kavgaya gir.
+menu_orm_duel_win|Kara Orm'un bedeni ayaklarının dibinde yatıyor. Vahşi saldırılarını önlemeye çalışmaktan kolların yara bere içinde, ve aklında düellonun en zorlu anları durmadan tekrar ediyor. Orm'un hiddetine ve acıya aleni duyarsızlığına hala şaşırıyorsun. Şüphe yok ki şanslısın, bir berserker ile olan kavgadan sağ çıkmayı başardın!
+menu_viking_duel_win|Düello sona erdi ve {s1}{.i} yenmeyi başardın. Ozanlar zaferinden bahsedecekler ve başarının şanı ağızdan ağza yayılacak.
+menu_viking_duel_lose|{s1} senden çok daha yetenekli bir rakipti. Kavgayı kaybettin. {s1}'{.in} şanı ozanlar sayesinde büyüyecek, insanlar seni sadece mağlup olarak hatırlayacaklar.
+menu_duel_troop_rebelion|{s4}
+mno_duel_rebelion|Meydan okumayı kabul et.
+menu_duel_rebelion_win|Düello bitti. Rakibin yerde yatıyor, silah kullanmaktaki maharetinle hakkından geldin. Bunun diğer olası rakiplere de bir uyarı olacağını umuyorsun. Şimdi görevin güveni tesis etmek ve ordunun moralini düzeltmek. 
+menu_thething_messenger|Atını deli gibi süren bir haberci yaklaşıyor. Önünde duruyor, bir nefes alıp bağırıyor, ^^”Kralım, Danimarkalı Horik sizi Ribe yakınlarındaki Meclise çağırıyor. Toplantı sizin Boğa Boyun Sven ve Sigurd Ragnarsson hakkındaki şikayetiniz üzerine olduğundan acilen gitmelisiniz yoksa Meclis'in kararı aleyhinize olacaktır.”^^Haberci daha sonra atını tekmeleyip uzaklaşıyor.
+mno_choice_01_1thing|Devam.
+menu_the_holmgang|İyice silahlanmış bir grup adam sana yaklaşıyor. Başlarında kralın sağ kolu olan Harald Haraldsson var ve bu sana Meclis'te verdiğin sözü hatırlatıyor. Düello saati geldi ve rakibin şimdiden Short Adası'nda. Grubunu kuşatıp sizi yakınlardaki bir kumsala götürüyorlar; burada zayıf ihtiyar bir adam ufak bir kayıkta bekliyor. Kayığa biniyorsun ve Harald'ın iki adamı sizi suya itiyorlar. İhtiyar sana bir şey demeden ufuktaki adaya doğru kürek çekmeye başlıyor.
+mno_choice_01_1duel|Devam.
+menu_the_holmgang2|Su sakin. Duyduğun tek ses sudaki küreklerin, ağır ve ölçülü vuruşlarının sesi. İhtiyar adam o kadar da yaşlı değil ama denizde geçen zorlu bir hayatın kırışıklıkları onu daha yaşlı gösteriyor. Yıpranmış ve tuzdan beyazlamış bir giysi giyiyor ve ellerinin derisi kalın bir köseleye benziyor. Gözleri kristal berraklığında bir maviye çalıyor ve bir an bile sana doğrudan bakmıyor, adaya odaklanmaya devam ediyor. Daha ileride bir zamanlar bir yoldaşın olan rakibin bekliyor. Meclis ikinizin Short Adasına gitmesine ama sadece birinizin dönmesine karar verdi. Kayık ufak bir kumsal yakınlarında duruyor ve sen indikten sonra, ihtiyar adam bir kaç on metre boyunca kürek çekerek karadan açılıp beklemeye başlıyor.
+mno_choice_01_2duel|Düello.
+menu_the_holmgang3|“Adaya iki kişi gitti, sadece biri dönüyor.'^^Galip geldin ama bedeli eski bir dostu öldürmek oldu. Reginhard'dan sıkça duyduğun cümleyi hatırlıyorsun: Gaed a wyrd swa hio scel!, Kader hep gitmesi gereken yolda gider!^^İhtiyar kayığı askerlerinin seni Danimarka'da beklediği yere götürüyor. Vardığında, tek kelime etmeden eşyalarını alıyorlar, anın ağırlığının farkındalar. Kısa sürede yola çıkmaya hazır hale geliyorlar. Harald ve adamları çoktan gittiler. Şimdi Asbjorn adındaki Meclis yargıcını Ribe'deki içki salonunda bulma zamanı.
+menu_the_thing|İnsanların ölülerine saygı göstermek veya Tanrıları'nı yüceltmek için büyük kayalar diktikleri geçmiş dönemleri andıran bir ortamda toplanıyor Meclis. Yaklaştıkça yüzlerce ağızdan çıkan sesleri işitiyor, çadırları ayırt ediyor ve gezgin tüccarların tezgahlarından yükselen yiyeceklerin kokusunu alıyorsun. Meclis sadece meselelerin görüşülüp kararlar alınan bir yer değil, aynı zamanda çevredeki insanların birbirlerinden haber almak ya da mallarını satmak için biraraya geldikleri bir etkinlik de.
+mno_enter_thing|Yaklaş.
+mno_encounter_leavethething|Ayrıl.
+menu_partida_ribe_fleet|Nihayet, uzun bir yolculuğa olan hazırlıklar bittikten sonra, filo Danimarka'yı geride bırakıp Balinaların Yolunu izlemek üzere Ribe'den kürek çekerek ayrılıyor.
+menu_partida_ribe_fleet2|Şu ana kadar Jarl Sigurd tarafından korunan Boğa Boyun Sven ve Kral Horik tarafından korunan Harald Haraldsson arasındaki farklılıklar o kadar belirgin ki filo hangi komutanın kimi desteklediğine göre ikiye bölünmüş biçimde seyrediyor.^^Ama bunu dert edecek zaman değil. Deniz rüzgarı ve dalgaların özgürlüğünü getiriyorve gemin nehirlerin gümüş taşıdığı, erkeklerin şan kazandığı Englaland'a doğru ilerliyor. Ve şimdi Boğa Boyun Sven'e her zamankinden daha yakındasın. Onu öldürerek anneni kurtarmak için bir fırsat bekliyorsun... Kader her zaman sabırlı olanı ödüllendirir.
+menu_sven_attack_fleet|Ribe'den Eoferwick'e veya Danlar'ın verdiği isimle Jorvik'e olan yolculuk iyi havada üç gün sürüyor ama daha yavaş yol alan knorrlarla bir iki gün daha uzun olacak. Gemiler dağınık halde yol alıyorlar ama bu normal. Yelken açıldığında efendi rüzgardır.^^Böyle uzun bir yolculuk rutinler gerektirir. Adamlar geceleyin bile nöbetleşe çalışırlar çünkü açık denizlerde filo hiçbir zaman durmaz. Biraraya tıkışmış adamların kokuları korkunç, içtiği su ve yediğin yemeğin tadı felaket ve güverteden işemek zorunda kalmak hiç de rahat değil.^^En sonunda Harald ve Sven arasındaki ayrım derinleşiyor. Her biri kendilerine sadık kaptanlarla ayrı ayrı görüşüyorlar. Filonun iki parçası ayrı yol alıyor. Harald seni ve diğer kaptanları acil bir toplantı için gemisine çağırıyor. Belli ki Boğa Boyun Sven'e sadık kaptanlardan birisi saf değiştirmiş ve haberleri var.^^Sen de toplantıyı dört gözle bekliyorsun. Belki de en sonunda annenden bir haber alacaksın.
+mno_choice_mettingcap|Kaptanların toplantısı.
+menu_playerflee_svenattack|Savaşı, yaralıların acı dolu bağırışlarını ve kılıçların şakırtısını arkanda bırakıyorsun. Boğa Boyun Sven'in adamlarının katlettiği Harald Haraldsson'un ordusunu arkanda bırakıyorsun. Görevin Engaland'a gidip Rathbarth Ragnarsson'u bularak neler olduğunu ve Boğa Boyun Sven'in nasıl kralın adamlarına ihanet ettiğini anlatmak.
+mno_choice_flee1|Kaçış.
+menu_way_to_douaranenez|Filoyu topluyorsun ve denizciler hızla gemileri harekete geçirip halatları çekerek yelkenleri açıyorlar. Sabah rüzgarı önünde yelkenler kımıldanıyor ve kaptanlar kürek çeken tayfalara emirler bağırırken gemiler hareket etmeye başlıyor. Yelken ve kürekler tarafından ilerletilen filo limandan ayrılarak açık denize çıkıyor.
+menu_way_to_douaranenez2|Denizde günler geçiriyorsun, kendine ait özel bir yer ve sukunet olmayan kalabalık gemide son derece rahatsız durumdasın. Ter ve idrarın ekşimiş kokusu havayı dolduruyor, hatta denizin tuzlu kokusunu bile bastırıyor.^Hava sakin: fırtına yok, rüzgar yok, yalnızca erken görülen sis var. Aslında bu kadar az rüzgarla filo çok yavaş ilerliyor ve yolculuk uzuyor.^^En sonunda, yakınlardaki bir gemideki gözcü ufka işaret ediyor ve Douar-an-Enez'i görüyorsunuz. Köyün koyunda 40'dan fazla gemi var, çoğu denizde ve savaş formasyonunda birbirine bağlanmış. Bir gemi gruptan ayrılıyor ve size doğru geliyor...
+mno_choice_d1|Tartışmaya katıl.
+menu_way_to_douaranenez3|Arkanda köydeki tartışmayı duyuyorsun. Astures kampında bir anlaşmazlık baş göstermiş olmalı. Kılıçlar ve bağırtılar duyuyorsun.^^Ama şu anda bunların hiçbiri derdin değil. Pupa yelken giden bir Kantabria gemisi seni gemine doğru götürüyor. Uzakta filonu saldırganlarla karşılaşmak için manevra yaparken görüyorsun. Gundinsalvo seninle beraber seyahat ediyor. Ciddi, çok ciddi duruyor, toplantıdaki maskaralığa rağmen. İki filonun pozisyon almak için küreklerle manevra yaptığı yere bakıyor. Yüzü yıllanmış ve ölümden korkmayan bir savaşçının vahşi izlerini taşıyor. Gemin varır varmaz filona doğru kürek çekiyor. Kontrolü ele almanın zamanı geldi...
+mno_choice_douarb|Savaşa gir.
+menu_way_to_douaranenez4|Deniz ateş, kan ve ölüm cehennemine dönüşmüş durumda. Zaferi kazandınız ama kılıca kurban düşen nicelerini geride bırakarak; aralarında Kantabrialı Gundinsalvo da var.^^Deniz savaşı bir delilik cinneti gibiydi, ama şimdi düşmanlarınız kaçıyorlar. Douar-an-Enez'e sığınmak niyetindeler ama savaşçıların onları takip ediyorlar ve ufak köyde yeni bir muharebe patlak veriyor. Bodo'yu burada terkediyorsun, o sırada Asturialıları biraraya getirerek koordine etmeye çalışıyordu.^^Şimdi senin kavgaya girme zamanın geldi...
+mno_choice_douard|Karaya çık.
+menu_way_to_douaranenez5|Douar-an-Enez ilk geldiğindeki yer değil artık. Şimdi sadece ateş ve ölüm var... Yaşayanları işkenceler çektiler ve bir gün birilerinin bu lanetlenmiş yere tekrar dönmek isteyeceğinden şüphe ediyorsun.^^Kendi yaralı adamlarının yalvaran seslerini duyuyorsun ve hala savaşın şokunu yaşayan adamlar uzaklara bakarak yanından geçip gidiyorlar. Bodo'nun savaşta nasıl öldüğünü ve onunla son paylaştıklarını hatırlıyorsun. Görevi kaçınılmaz olarak başarısızlığa uğradı. Artık Asturias krallığının bir filosu yok, yalnızca liderleri Gundinsalvo'nun ölümünden sonra davanıza katılan birkaç Kantabriyalı. Artık liderleri sensin. Adamlarından bazılar düşmanın işini bitirerek mallarını ele geçirmekle uğraşıyorlar.
+mno_choice_douarb1|Yağmadan payını iste.
+mno_choice_douarb2|Adamlarının tüm ganimeti almalarına izin ver.
+menu_bjorn_camp|Tepede Danlar ufak bir kamp kurmuşlar. Görebildiğin çadırların sayısından hareketle 250-300 arası adam olduğunu tahmin ediyorsun. Çadırlardan birinin üzerinde Ragnar'ın en meşhur oğullarından biri olan Bjorn'un flaması dalgalanıyor.^^Birkaç adam seni durduruyor ama kendini tanıttığın anda geçmene izin veriyorlar, zira geleceğin onlara bildirilmiş.
+mno_enter_bjorncamp|Kampa gir.
+mno_enter_bjorncamp2|Soruştur.
+menu_nothingam_siege|Uzakta aşağıda Snotingaham'ı kuşatan iki Saxon ve Angle kampı görüyorsun. Kamplar binlerce askeri barındırabilecek kadar büyükler ve ayrıca şehre kimsenin girip çıkmaması için çevresinde askerler devriye geziyorlar. Bu mesafeden kalenin surlarının çevresinde devriye gezen Dan savaşçılarının silüetlerini görüyorsun. Sayıca zor bir durumda oldukları kesin ve her geçen gün yiyecekleri de azalıyor.
+mno_mierce_patrols|Mierce devriyelerinin arasından geçerek Snotingaham'a gir.
+mno_choice_snott|Daha fazla adam silah altına almam lazım.
+menu_nothingam_siege2|Snotingaham'ı arkanda bırakarak ormana geri dönüyorsun...
+mno_mierce_patrols2|Mierce devriyelerinin arasından geçerek Snotingaham'a gir.
+menu_nothingam_siege_al|Snotingaham'a yaklaştığın sırada, Saxon devriyeleri çevreni kuşatıyorlar ama temsilci flamana saygı göstererek saldırmıyorlar. Aelfred'i ararken seni bir saat kadar bekletiyorlar.^^Sonunda bir grup atlı bulunduğun yere geliyor, attan inerek sana doğru yürüyorlar.
+mno_talk_to_alfred|Devam.
+menu_ambush_kennemer|Grubun yolun yorgunluğunu atmak için dinlenirken, bundan yararlanarak kamptan biraz uzaklaşmaya ve gözlerden uzak bir yer bulmaya çalışıyorsun, zira karnın kötü durumda^^Ama tam kayaların arasına gizlenip rahatlarken sağ tarafından gelen bir gürültüyle irkiliyorsun...
+mno_relax_broken|Hızla giyin ve silahını al.
+menu_welsh_and_pictish_complete|Otuz gün oldu ve {s3}{.ü} elde tutmayı başardın. Şimdi Boğa Boyun Sven'den haber almak ve Bodo'nun mektubu hakkındaki kararı öğrenme için dönmenin zamanı.
+menu_messeger_mothernews|Bakımsız bir atı hızla süren bir haberci yaklaşıyor. Senin önünde duruyor, bir nefes alıp bağırıyor,^^”Bu mesaj {playername} adındaki birisi için. Eğer annenden haber almak istiyorsan, Dommoc yakınlarındaki Boar korusuna git ve oduncunun evini ara.”^^Haberci, yeniden hareket etmeye başlayana kadar atına vuruyor ve çekip gidiyor.
+mno_choice_01_newsm|Devam.
+menu_circle_mystic|Gözlerin özel bir yeri ayırt ediyor, görünüşe göre eski insanlar tarafından yapılmış burası. Belki de gidip başka zamanların sanatının tadına varmak için iyi bir an.
+mno_enter_quest|Git.
+mno_enter_mystic|Yaklaş.
+menu_troll_bridge|Çok uzak olmayan bir mesafede bir derenin üzerinde bir köprü var. Derenin adı yok ama köprü herkes tarafından Trolün Köprüsü olarak biliniyor.
+mno_enter_troll|Köprüye yaklaş.
+menu_battle_stones|Hemen yakında, yere dizilmiş bir sıra taşla çevrilmiş bir ev görüyorsun. Yaşamak için cennet gibi bir yere benziyor, huzur ve sükunetle çevrili. Hayvanlarla ya da ekinlerle ilgilenmek dışında bir tasanın olmayacağı bir yer... Bu yüzden senin hareketli gezgin hayatından inanılmaz kadar uzak.
+mno_enter_stones|Gir.
+menu_roman_fort|Patikayı izlediğinde, Britanya'nın diğer kısımlarında bulunanlara benzeyen eski bir Roma kalesinin kalıntılarını görebilirsin.
+mno_enter_romanfort|Araştır.
+menu_farmland_menu|Yol kıyısındaki ufak bir köye varıyorsun. Bir bacadan duman çıkıyor ama dışarıda kimseyi görmüyorsun.
+mno_enter_ambush|Köyü ziyaret et.
+menu_boar_grove|Derin bir koruluğa varıyorsun. {s4}
+menu_aescesdun_camp|Sakson ordusu Readingum yenilgisinden sonra yeniden toparlanmak için buraya çekilmiş. Her gün eklenen adamlarla takviye aldıkları bir tepeye kamp kurmuşlar. Güç toplamak ve batıya doğru ilerleyen Dan ordusuna Batı Seaxe'ye girmeden önce müdahale edebilmek için iyi bir yer.^^Burası Aescesdun diye biliniyor.^^{s4}
+mno_enter_aescendun|Kampa gir.
+menu_aescesdun_empty|Kamp, büyük ordunun savaşa girmek için ilerlemesinden sonra kalan az sayıdaki insan nedeniyle neredeyse boş.
+menu_readingum_camp|Ragnar'ın oğulları Readingum adındaki bir köyde müstahkem bir kamp kurmuşlar. Bölgenin iyi savunma olanakları ve bir hendeği var, Saksonların Danları kovmaya çalıştıkları bir önceki savaştan kalanlar da burada. Çevreyi savunmak ve korumak için iyi bir pozisyon.^^{s4}
+mno_enter_readingum|Kampa gir.
+menu_the_speech_l|{s4}
+mno_the_speech|Onlara katıl.
+menu_thetravel_danisharmy_l|Dan ordusu, Büyük Yaz Ordusu Aescendun'a vardı. Kral Aethelred ordusunu ikiye bölmüş: birisine kendisi kumanda ediyor ve diğerine de kardeşi genç Aelfred. Her bölük Ridgeway denen tarihi yolun bir tarafını kontrol ediyor. Vikingler savaş düzenine geçerlerken, Aethelred savaştan önce dua etmeye kara veriyor ve tören bitene kadar yerinden kıpırdamayı reddediyor. Ama Danlar hızla yaklaışyorlar, onların ordusu da ikiye bölünmüş durumda...
+menu_mega_battle_ashdown|Sakson ordusu iki tepenin üzerinde iki hakim noktaya yerleşmiş. Tepelerden birinde Kral Aethelred'in birlikleri duruyor, diğerinde de Aelfred'inkiler. Danlar hızlı hareket ediyorlar, sayıları beklenenden daha fazla ve dinlenmek ya da yeniden gruplanmak için durmuyorlar. Aethelred bunu beklemiyordu. Hala dualarına gömülü ve bitene kadar rahatsız edilmeme emri vermiş. Danlar beklemiyor. İlerleme sırasında ordularını ikiye ayırıyorlar. Bir bölük ordu komutanları Jarl Halfdan ve Kral Bagsecg yönetiminde Aethelred'in birliklerine doğru yöneliyor. Diğeri, beş diğer kumandanın yönetiminde Aelfred'in tarafına yöneliyorlar. Saksonların pozisyonundan daha yüksekte bir tepeyi ele geçirmeye başlıyorlar.Eğer buraya yerleşirlerse düşmanları karşısında yükseklik avantajına sahip olacaklar...^^{s2} Onların {reg11} adamına karşı savaşmak için senin {reg10} askerin var.
+mno_encounter_attackasc|Aescesdun savaşı..
+menu_svenbn_hunting|Savaş alanından aşağıya inerken silah kalıntıları, yaralı adamlar, yağmacılar, ölenlere son dualarında yardımcı olan rahipleri görüyorsun ve içinde hayatta kalmış olmanın neşesi ile karışık büyük bir perişanlık duygusu hissediyorsun. Her şeyden önce bir soruyu tekrar tekrar soruyorsun: Niye? Bunca insan ölmüşken ben niye hayattayım?^^Ama düşüncelerin ve kaderin ayrı yönlerde gidiyorlar. {s4}
+mno_talk_to_leader|Onunla konuş.
+menu_ashdown_battle_over|Savaş bitti. Kılıç ve kalkanların sebep olduğu gök gürültüsünden gümbürtülü sesler, kana susamış savaşçıların korku salan naraları ve muhtemelen bir uzvunu kaybetmiş, belki de son nefesini geriye kalan birkaç dakikalık hayatının acısını bastırmak için sarfeden şok içerisindeki askerlerin acı dolu çığlıkları... Hepsi kulaklarında çınlıyor. Kaba ellerin silahını kavramış şekilde, ölümün gerginliğini halen iliklerinde hissediyorsun. Başka bir mahşer yeri tecellisini daha kafan omuzlarının üzerinde atlatıyorsun. Sürekli olarak ölüme ramak kalmış şekilde; yine sürekli olarak, ellerinde güçlenen yoldaşın kılıcına güvenerek yaşamak... Bugün kazandın fakat biliyorsun ki bu krediyi başka bir günün şansından yedin. İşte o vaadesini kullandığın gün, hayatın son raddesine geldiğinde, meydana akacak o son damla kanın, seni öldürmeyi becerebilmiş yiğitin şanına şan katacak.^^Aescesdun sadece bir savaş olmaktan fazlasıdır. Yüzlerce adam bir meydanda cesurca çarpışmış ve şu an belki yine bir o kadarının bedeni yeşilliğe ölü şekilde düşmüştür. Aescesdun efsanesi şüphesiz ki gezgin şairler ve ozanlar tarafından senelerce anlatılacak, yiğitlerin akıttığı her bir damla kan ayrı bir insan evladının diline pelesenk olacaktır.
+mno_aescesdun_no|Devam et.
+menu_followers_camp_begin|Ordunun kalabalıklaşması tarafından çekilen bazı rahipler ve kadınlar da son zamanlarda size katıldılar, hatta bazı tüccarlar sizi takip etmek için izin istiyorlar.^^Bu, adamlarının moralini güçlendirecek birçok hizmete kolay ulaşım anlamına gelse de bu tür grupların yavaş hareket ettiğini ve senin ordunu da ağırlaştıracaklarını bilmen gerekiyor.^^Takipçilerin hizmetlerine kamp alanından ulaşılabiliyor.
+mno_followers_yes|Elbette. Hoş geldiler.
+mno_followers_no|Hayır. Bu bir ordu, kukla oyunu değil.
+menu_followers_camp_leave|Son olaylar ve adamlarının sayısındaki hızlı azalma takipçilerin dağılmasına neden oldu...
+mno_follw_yes|Hay lanet.
+menu_followers_remove|Takipçilerinizi dağıtmak istediğinden emin misin? Bu takipçilerinizin orduya eşlik etmesini durduracak. Bunun adamlarının morali üzerinde güçlü bir olumsuz etkisi olabilir.
+mno_remove_yes|Evet.
+mno_remove_no|Hayır.
+menu_sven_bullneck_readingum|Bu alanın iyi savunması ve hendeği var ve Saksonların Danları kovmaya çalıştıkları daha önceki savaştan hayatta kalanlar da mevcut. Savunmak için iyi bir yer.^^{s4}
+mno_talk_to_leadermen|Onunla konuş.
+mno_enter_to_talk_sven|Readingum'a yaklaş.
+mno_svenreadingum_attack|Topyekun Saldırı!
+mno_encounter_savereadingum|Ayrıl.
+menu_sven_halllatest|Readingum'da katliam devam ediyor, adamların hala Sven'in birliklerinden kalanlarla savaşıyorlar ama bu senin aradığın savaş değil. Boğa Boyun Sven kendisini Readingum'daki içki salonuna kapatmış, anneni ve birkaç adamını da yanına almış. Bu oyunu bitirmenin zamanı geldi...
+mno_fight_svhall|Tavernaya gir.
+menu_mother_death|Boğa Boyun Sven en sonunda ölü yatıyor. İntikamını aldınsa da ağzında acı bir tat var çünkü annenin ölü bedeni de Sven'in yakınlarında yatıyor. Seni büyüten ve onun için her şeyi geride bırakıp Friese'de bir şifa aradığın kadın. Son sevgi sözleri uzak bir yankı gibi kafanda tekrar ediyor.^^Boğa Boyun Sven ve annen seni götüren enerji gibiydiler ama artık ikisi de öldü. Bir boşluk hissediyorsun, sanki bir parçan onlarla gitmiş gibi.^^Tüm bu olanlardan sonra sana yalnızca hatıraların kaldı...
+mno_mother_funeral|Cenaze töreni düzenle.
+menu_event_siege_01|Danışmanlarından biri adamların yediği yiyeceklerin içinde sıçanlar bulduğunu söylüyor. Bir miktar sağlık tedbiri ile bu önlenebilirdi!
+mno_choice_01_2a|Adamlarımı yiyeceksiz bırakamam. Öldürebildiğiniz kadar çok sıçan öldürün.
+menu_ratas_siege|Tüm sıçanlar yok edilmeden önce adamlarının çoğu hastalanıp ölüyor.^^Kayıpların: {s8}
+mno_back_to_siegea|Tamam.
+menu_event_siege_02|Kamptaki kötü hijyen dizanteriye neden oldu. Adamların etrafında ölmeye başladılar. Bir miktar sağlık tedbiri ile bu önlenebilirdi!
+mno_choice_02_1b|Hastalananlara yardımcı olması için bir doktor tut (1000 pening).
+mno_choice_02_2b|Yapabileceğim bir şey yok.
+mno_choice_02_3b|Tanrıya dua edin.
+mno_choice_02_4b|Ben ya da arkadaşlarım onları tedavi edebiliriz.
+menu_enfermedad_siege|Kampında ölüm kol geziyor. Adamlarının çoğu hasta ve ölüyorlar.^^Kayıpların: {s8}
+mno_back_to_siegeb|Hay lanet.
+menu_enfermedad2_siege|Bazı adamlar hastalıktan ölüyorlar ama çoğu tuttuğun doktor sayesinde iyileşiyor.^^Kayıpların: {s8}
+menu_enfermedad3_siege|Kampında ölüm kol geziyor. Adamlarının çoğu hasta ve ölüyorlar. Belki tanrın bir kaçını kurtardı.^^Kayıpların: {s8}
+mno_back_to_sieged|Tamam.
+menu_enfermedad4_siege|Şifa yeteneklerin sayesinde nice adamı kurtarmayı başardın, ama bir kısmı yine de ölüyor.^^Kayıpların: {s8}
+mno_back_to_siegee|Kuşatmaya geri dön.
+menu_event_siege_03|O kadar çöp, parazit ve diğer zararlılar var ki kampın bir domuz ahırına benziyor. Adamların mutsuzlar. Bir miktar sağlık tedbiri ile bu önlenebilirdi!
+mno_choice_03_4c|Tedbirler alırken ilham verici bir konuşma yaparak zaman kazanacağım.
+mno_choice_03_2c|Ne yapabileceğime bakacağım.
+menu_event_siege_04|Bazı düşmanlar gece sızarak yiyeceklerinden bir kısmını yakmayı başardılar. Yiyecek stokunun bir kısmı imha edildi.
+mno_choice_04_1d|Örnek olsun diye, o gece nöbette olan adamları cezalandır.
+mno_choice_04_2d|Hayır, hiçbir şey yapma.
+menu_event_siege_05|Geceleyin adamların kampa sızarak yiyecek stoğunu yakmaya çalışan bir grup düşmanı yakalayarak öldürdüler.
+mno_choice_05_1e|İşlerini iyi yaptıkları için onları tebrik et.
+mno_choice_05_2e|Her birine bir savaşçı bileziği ver (300 pening).
+mno_choice_05_3e|Onları bir gece izin ve en yakın genelevde harcamaları için parayla ödüllendir (200 pening).
+mno_choice_05_4e|Hiçbir şey yapma, sert bir lidersin ve zayıflık göstermeyeceksin.
+menu_event_siege_06|Efendim, ikmal yollarımız tehlikede olabilir. Gözcülerimiz hatlarımızın gerisinde düşman akıncıları keşfettiler.^Yeri ablukaya alarak bu tür sorunları önleyebilirdik.
+mno_choice_06_1f|Yolları korumak ve düşmanı takip etmek için adam yolla. (Adamlar ana ordundan alınacaklar).
+mno_choice_06_2f|Onlara, ikmal yollarına saldırmamaları için para önermek üzere haberciler yolla (500 pening ama garantisi yok).
+mno_choice_06_3f|Hiçbir şey yapma (yiyeceklerinin bir kısmını kaybet ama adamlarının hayatını kurtar).
+menu_encuentro_avituallamiento|İkmal yollarına saldıran düşmanları izleyerek yolları korumak için bir grup adamını yolla. Adamların düşmanı bir yerde sıkıştırarak ölümüne savaşmaya zorluyor. Bazı kayıpların var ama adamların kazanıyor ve ikmal yollarını güvenceye alıyorlar.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_back_to_siegeg|Aferin.
+menu_encuentro_avituallamiento2|{s4}
+menu_event_siege_07|Gözcülerimiz düşmanın ölü hayvanlar kullanarak su kaynaklarını zehirlediklerini buldular.
+mno_choice_07_1g|Su satın al ve tüccarlara ikmal yolundan getirmelerini söyle (600 pening).
+mno_choice_07_2g|Suyu karneye bağla ve kuyu kazma emri ver.
+mno_choice_07_3g|Su olmadan kuşatma devam edemez. Kuşatmayı kaldır.
+menu_sed_siege|Su tükenmek üzere ve adamların güçten düştü. Susuzluktan çıldırmış halde bazıları zehirlenmiş suyu içiyor ve ölüyorlar. En sonunda bir kuyu hazır hale geliyor ve şimdilik suya kavuşuyorsunuz. Kuşatma devam edebilir.^^Zehirli sudan doğan kayıpların:{s8}
+mno_back_to_siegeh|Kaderden kaçılmaz.
+menu_event_siege_08|Kötü haber: adamlarımızdan biri düşmana sığındı. Düşük moralden ya da ona para önermiş olmalarından kaynaklanabilir. Hangisi olursa olsun, düşman planlarımızdan haberdar olabilir.
+mno_choice_08_1h|Morali yükseltmek için orduya 400 pening dağıt. Başka ihanet istemiyorum.
+mno_choice_08_2h|Endişelenme. Her zaman planları değiştrebilirim.
+menu_event_siege_09|Düşman ordusundan kaçan birisi saflarımıza katıldı. Bize verdiği bilgiye göre {s2}.
+mno_choice_09_1i|Saflarımıza hoş geldi.
+mno_choice_09_2i|Adamlarım arasında hainler istemiyorum. Öldürün onu.
+mno_choice_09_3i|Casus olduğuna eminim. Onu düşmana geri verin.
+menu_event_siege_10|Adamlarımız ve düşman askerleri artık birbirlerine fazla hakaret etmiyorlar ve hatta bazen konuşuyorlar. Bu durum, saldırdığımızda adamlarımızın savaşçı ruhlarını etkileyebilir. Ne yapalım?
+mno_choice_10_1j|Bırakın yapsınlar. Düşmanın savaşçı ruhu da etkileniyor.
+mno_choice_10_2j|Nasıl? Yasaklayın ve ihlal edenleri cezalandırın.
+menu_event_siege_11|Soğuk kış her zaman kurbanlar alır. Bazı adamlar soğuktan, gripten ve başka önemsiz hastalıklardan öldüler.^^Kayıpların: {s8}
+mno_choice_11_1j|Huzur içinde yatsınlar.
+menu_event_siege_12|Bir çiftçi geliyor ve kuşatma kampının yakınlarındaki bir çiftlikte yaşayan kızına adamlarından birisinin tecavüz ettiğini söylüyor. Çiftçi 100 pening kefaret parası istiyor. Ne yapacaksın?
+mno_choice_12_1j|Kefareti öde.
+mno_choice_12_2j|Vermeyi reddet. Düşman topraklarındasınız ve adamların ne isterlerse yapabilirler.
+mno_choice_12_3j|Çiftçiyi ve kızını öldür.
+menu_no_paymentandkill|İntikam için çevre köylerden adamlar bir araya geldiler ve çevrede yiyecek arayan adamlarına saldırdılar.^^Kayıpların: {s8}
+menu_event_siege_13|Bir grup düşman aniden adamlarına saldırdılar ve hemen geri çekildiler.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_choice_13_1b|Bu yaygın bir durum. Dikkatli ol. (Yeri ablukaya aldığında sorun anında çözülecektir).
+menu_event_siege_14|Yiyecek ararken bir grup düşman süvarisi adamlarından bir grupla karşılaştı.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_choice_14_1b|Bu yaygın bir durum. Dikkatli ol. (Yeri ablukaya aldığında sorun anında çözülecektir).
+menu_event_siege_15|Çevre köylere akın yaptığımız sırada düşman güçlerinin saldırısına uğradık. Köylüler de düşmana katıldılar ve ağır kayıplar verdik.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_choice_15_1b|Bu yaygın bir durum. Dikkatli ol. (Yeri ablukaya aldığında sorun anında çözülecektir).
+menu_event_siege_16|Düşman ve adamlarımız bir nehir kenarında karşılaştılar ve su için yapılan savaş iki tarafta da ağır kayıplara neden oldu.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_choice_16_1b|Bu yaygın bir durum. Dikkatli ol. (Yeri ablukaya aldığında sorun anında çözülecektir).
+menu_event_siege_17|Gizli bir geçitten dışarı hücum eden düşman, hızlıca surların arkasında güvenliğe çekilmeden önce askerlerimize saldırdı.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_choice_17_1b|Bu yaygın bir durum. Dikkatli ol. (Yeri ablukaya aldığında sorun anında çözülecektir).
+menu_event_siege_18|Adamlarından bazıları çevre köylerden kadınlar kaçırıp eğlenmek için kuşatma kampına getirdiler.
+mno_choice_18_1b|İzin veriyorsun ve en güzel kadını istiyorsun.
+mno_choice_18_2b|Adamlarına kadınları bırakmaları için emir ver ve kaçıranları cezalandır.
+menu_event_siege_19|Düşman ablukayı kırmaya, adamlarımız ise onları içeride tutmaya çalışıyor.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_choice_19_1b|Adamlarından bazılarını surları güçlendirmeye yolla, bu arada ben de saldırır gibi yapacağım. Bu onları geri çekilmeye zorlayacaktır.
+mno_choice_19_2b|Çabuk. Tüm adamları surların o tarafını korumaya yolla.
+mno_choice_19_3b|Endişelenme, surlarımız yeterince sağlam.
+menu_no_defendiendo|Düşman savunmalarımızı aştı ve ufak kamplarımızı ve kontrol noktalarımızı ateşe vererek ablukayı kırdı.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_defendiendo_1b|Ablukayı yeniden kurmalıyız
+menu_defendiendo_circunvallation|Düşmanı püskürttük ve duvarların korumasına geri çekilmeye zorladık...^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+menu_defendiendo_mal|Birliklerimizin burada olmasından yararlanan başka bir düşman grubu ablukanın diğer kısmını ateşe verdi.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+menu_event_siege_20|Düşman hücum malzemelerimiz yakmaya çalışıyor.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_choice_20_1b|Acele et. Bir bölük adamı malzeme bölgesini desteklemek için göndermek istiyorum, bu arada ben de saldırır gibi yapacağım. Bu onları geri çekilmeye zorlayacaktır.
+mno_choice_20_2b|Çabuk, tüm adamları malzeme bölgesini savunmaya yolla.
+mno_choice_20_3b|Endişelenme. Adamlarımız savunmayı başaracaktır.
+menu_no_defendiendo_equip|Düşman savunmalarımızı aşmayı ve malzemelerimizi ateşe vermeyi başardı.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+menu_defendiendo_equip|Düşmanı püskürttük ve duvarların korumasına geri çekilmeye zorladık...^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_defendiendo_1h|Aferin.
+menu_defendiendo_mal_equip|Başka bir düşman grubu pozisyonlarımızı kuşattı ve diğer taraftaki kuşatma malzemelerimizi ateşe verdi.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_defendiendo_1v|Hay lanet.
+menu_event_siege_21|Nöbetçilerin ablukadan kaçmak için gecenin karanlığından yararlanmaya çalışan çok sayıda adam gördüler.
+mno_choice_21_1b|Kaçmalarına izin verin.
+mno_choice_21_2b|Hepsini öldürün.
+menu_event_siege_22|Geceleyin nöbetçilerin sana koyun postları giymiş bir grup düşman gördüklerini haber veriyorlar. Tam şu anda düşman askerleri yerleşim yerine götürmek için nehir kıyısında şişelere su dolduruyorlar.
+mno_atacar_emboscada_player2|Seni izlemek isteyen herkesi alarak oraya git.
+mno_choice_22_1b|Koyun postundaki düşmanları pusuya düşür.
+mno_choice_22_2b|Hiçbir şey yapma.
+menu_victoria_ovejas|Askerlerin koyun postu giymiş düşmanı kuşattılar ve aniden üzerlerine saldırarak ölüm saçtılar.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_defendiendo_1l|Mükemmel!
+menu_derrota_ovejas|Bu bir tuzak! Efendim, koyun postu giymiş adamlar, askerlerimizi çekip pusuya düşürmek için bir yemmiş. Duvarlarımızın korumasına dönemeden birçoğu öldürüldüler.^^Kayıpların: {s8}^^Düşman kayıpları: {s9}
+mno_defendiendo_1p|Bu korkunç.
+menu_tablas_ovejas|Adamlarınız düşmanı kuşatmak için konumlandırıldılar ama çok ağır ve gürültücüydüler. Koyun postundaki adamlar tehlikeyi sezerek hızla yerleşimlerine döndüler.
+mno_defendiendo_1o|Neyse, gelecek sefere.
+menu_event_siege_23|Bugün saflarımıza katılmak isteyen bir paralı asker kampa geldi. Dediğine göre kuşattığımız yerden sürgün edilen biriymiş ve intikam almak istiyormuş.
+mno_choice_23_1b|Kabul edin onu.
+mno_choice_23_2b|Daha fazla adama ihtiyacım yok.
+menu_event_siege_24|Düşmanlarımızın ve ölü köylülerin kafalarını topladık. Düşmanın moralini bozmak ve hastalık yaymak için surların üzerinden atmamızı ister misiniz?
+mno_choice_24_1b|Ne! Manyak mısın sen? Böyle bir şey yapmayın.
+mno_choice_24_2b|Elbette, teslim görüşmelerinde böyle bir şey yararlı olur.
+menu_cabezas_moral|Kafalar yerleşim yerine atılıyor. Dışarıdan sevdiklerini tanıyan şehirlilerin bağırışlarını ve ağlamalarını işitiyorsun. Savaş acımasız ve en korkunç düşmanlardan biri olduğunu gösterdin.
+mno_defendiendo_1q|Bu teslim olmalarına yardımcı olur... ya da ölmelerine...
+menu_event_siege_25|Bir tüccar geceleyin adamlarını eğlendirmek için bir grup dansçı öneriyor.
+mno_choice_25_1b|Adamlarımın eylem için hazır olmaları gerekiyor, dikkatlerinin dağılmasını ya da yorulmalarını istemiyorum.
+mno_choice_25_2b|Dansçıları kendin için tut  (100 pening).
+mno_choice_25_3b|Adamların bunu hak ediyor. Dansçıları onlar için tut (500 pening).
+menu_event_siege_26|Bir grup haydut kampına yaklaşıyor. Adamların silahlarına sarılırken haydutlar silahlarını yere bırakıp savaşmak niyetinde olmadıklarını söylüyorlar. Liderleri öne çıkıp sana katılmak istediklerini söylüyor.
+mno_choice_26_1b|Elbette! Ordumda yetenekli ve gelecek vaad edenlere her zaman yer var.
+mno_choice_26_2b|Üzgünüm, sizin gibilere ordumda yer yok!
+mno_choice_26_3b|Bir köye saldırıp şeflerinin kafasını bana getirin ki sizi dikkate almama değeceğini göreyim.
+mno_choice_26_4b|Hepsini öldürün!
+menu_sanguinario_p|İki saat sonra haydutlar ganimet ve birisinin kafasıyla geri geliyorlar...
+menu_event_siege_27|Çok sayıda tüccar, senin kampının yakınlarında askerlerin karıları, fahişeler, sığınmacılar, çocuklar ve ordunun diğer takipçileri tarafından kurulan kampta malzeme satmak için sana geliyorlar.
+mno_choice_27_1b|Paraları ve kendileri hoş geldiler.
+mno_choice_27_2b|Zaten yeterince tüccar var.
+mno_choice_27_3b|Öldürün ve paralarını alın.
+menu_event_siege_28|Yiyeceklerinin daha uzun süre dayanması için savunmacılar kadınları, çocukları ve yaşlıları dışarı attılar. Savunma duvarınıza doğru ilerlediklerini ve yiyecek dilendiklerini görüyorsun.
+mno_choice_28_1b|Bir grup askeri çocuk ve ihtiyarları öldürüp kadınları askerleri için almak üzere gönderiyorsun.
+mno_choice_28_2b|Yiyecek satın alın ve dilencilere verin (1000 pening). Sonra bırakın gitsinler.
+mno_choice_28_3b|Hiçbir şey vermeyin onlara. Bırakın evlerinin kapısında açlıktan ölsünler!
+menu_event_siege_29|Uzun süren kuşatmaya sinirlenen askerlerinden birisi bir subayın karısına tecavüz ediyor.
+mno_choice_29_1b|Görmezden gel.
+mno_choice_29_b|Askeri cezalandır.
+mno_choice_29_3b|Askeri adam et.
+mno_choice_29_4b|Subaya kefaret parası öde (1000 pening).
+menu_lucha_oficial|Subay askeri öldürüyor ve askerin arkadaşlarıyla subaya bağlı olanlar arasında kavga çıkıyor, ölenler var.
+mno_defendiendo_1z|Bu korkunç.
+menu_messenger_system|Dörtnala bir haberci yaklaşıyor. Önünde duruyor, bir nefes alıp bağırıyor:^^”Efendim beni {s9}'{.a} gönderdiğin habercinin yol kıyısında ölü bulunduğunu haber vermem için gönderdi. Söylemekten üzgünüz ama gönderdiğiniz mesaj yerine ulaşmadı. Başka bir mesaj göndermek isterseniz hizmetinizde olacağız. Bizi nerede bulacağınızı biliyorsunuz.”
+mno_error_1|Devam.
+menu_messenger_system2|Dörtnala bir haberci yaklaşıyor. Önünde duruyor, bir nefes alıp bağırıyor:^^”Efendim beni {s9}'{.a} gönderdiğin habercinin yol kıyısında ölü bulunduğunu haber vermem için gönderdi. Söylemekten üzgünüz ama gönderdiğiniz mesaj yerine ulaşmadı. Başka bir mesaj göndermek isterseniz hizmetinizde olacağız. Bizi nerede bulacağınızı biliyorsunuz.”
+mno_finish_m|Kötü şans.
+menu_messenger_system_res|{s4}
+mno_Continue|Yardımınız için teşekkürler.
+menu_messenger_system_follow|{s4}
+menu_messenger_system_gotoplace|{s4}
+menu_messenger_system_patrolarea|{s4}
+menu_messenger_system_besiegeplace|{s4}
+menu_messenger_system_insult|{s4}
+menu_messenger_system_sendgift|{s4}
+menu_messenger_system_sugalliance|{s4}
+menu_messenger_system_suggestpeace|{s3}
+menu_messenger_system_declarewar|{s3}
+menu_random_juice_events|Olaylar
+menu_event_01_juicio|Biri uzun ve zayıf, diğer kısa ve tıknaz iki köylü bir buzağının sahipliği üzerine bir tartışma nedeniyle sana getiriliyorlar. Anlaşılıyor ki, tarlaları birbirine bitişik ve uzun olanın boğası diğerinin ineğini gebe bıraktı. Tıknaz köylü buzağının kendisinin olduğunu çünkü kendi ineğinden doğduğunu söylüyor. Uzun çiftçi ise en iyi boğasının dölü olduğu için kendisine ait olduğunu iddia ediyor ve en azından maddi olarak tazmin edilmek istiyor.
+mno_choice_01_1n|Boğanın sahibi haklı. Buzağı, nasıl inek onunsa, onun.
+mno_choice_01_2n|Boğanın sahibi haklı. Boğa onun ve buzağı da onun.
+mno_choice_01_3n|İneğin sahibi buzağıyı alır ve boğanın sahibine tazminat öder.
+mno_choice_01_4n|İkisi de haklı değil. Buzağıyı eti için kesecek ve bir kısmını adamlarıma vereceğim.
+mno_choice_01_5n|İkisi de haklı. Buzağıyı öldürün ve etini iki çiftçiye verin!
+menu_event_02_juicio|{reg59?Hanımım:Beyim}, bir katil yakaladık! Bu {s4}'{.te} habercilerimizden birine saldıran adam, habercimiz hala ciddi yaralarla yatıyor. Bu kabul edilebilir bir şey değil, zira haberci sizin korumanız altındaydı. Ancak, saldırganın ilginç bir hikayesi var ve idam edilmeden önce sizinle konuşmak istiyor.^^Mahkumun hikayesi: “{reg59?hanımım:beyim}, habercinize saldırmak aklımın ucundan geçmezdi ama bu adam küçük kızımla yatmak istedi ve teklifi reddedildi! Ama cevabımızı kabul etmedi, üç arkadaşıyla eve girdi ve kızıma tecavüz etti; bu sırada bana da gülerek sizin halktan birinin sözüne itibar etmeyeceğinizi söyledi. Bir baba yegane çocuğunu korumak zorunda!”
+mno_choice_02_1n|Haberci korumam altındaydı. Sen ve ailen şafak vakti idam edileceksiniz.
+mno_choice_02_2n|Sana makul davranacağım. Sadece sen asılacaksın.
+mno_choice_02_3n|Haberci hizmetimde olsa da aynısını yapardım. Gidebilirsin.
+mno_choice_02_4n|Habercinin asılmasını emrettim. Kimse konumundan çıkar sağlamamalı.
+menu_event_03_juicio|İki adamı, aralarındaki anlaşmazlık hakkında karar vermek için çağırıyorsun. Birisi yerel bir şef, diğeri ise şefin tarlasını kiralayan çiftçi.^^Adam hasadın kötü gittiğini ve kirayı ödeyemediğini, bunun üzerine liderin kızını yatağına ve hizmetçi olarak evine aldığını söylüyor. Yerel lider {s4} içinde etkili birisi.
+mno_choice_03_1n|Çiftçiyi cezalandır. Toprak sahibine kirasını ödemeli.
+mno_choice_03_2n|Yerel şefi cezalandır. Çiftçinin kızını almaya hakkı yok.
+mno_choice_03_3n|Soyluyu öldür ve vergi ödemediği için çiftçiyi orduna katılmaya zorla.
+mno_choice_03_4n|Soyluya haracı sen öde ve kızı geri yolla.
+menu_farmer_attack_lord|Kararından tatmin olmayan çiftçi bıçağını çektiği gibi yerel şefin üzerine atlıyor ve adamların bir şey yapamadan onu öldürüyor. Sonra sana dönüp “adalet öyle değil böyle olur piç kurusu!” diyerek aynı bıçakla kendisini de öldürüyor.
+mno_choice_03_1attack|Devam et.
+menu_event_04_juicio|Bağlılık yemini etmiş adamlarından birisi sana yaklaşıyor. Sana, adamlar arasında büyük huzursuzluk olmasından korktuğunu söylüyor. Bunun nedeni olarak da çok hareketsiz olmanı ve senin hizmetinde pek fazla altın ve şan kazanılamamasını gösteriyor.
+mno_choice_04_1n|Adamlara ödeme yap ve yüzükler ver.
+mno_choice_04_2n|Adamlarına ayrılacak kadar aptallarsa yeminlerinden azat edildiklerini söyle.
+mno_choice_04_3n|Herkesin önünde sana yaklaşan adamı öldür ve daha fazla nifağa izin vermeyeceğini söyle.
+mno_choice_04_4n|Liderlik yöntemini değiştirme sözü ver ve bir sonraki vurgunun hemen önünüzde olduğundan bahsetmeyi unutma.
+menu_event_05_juicio|{s4}'{.de} bir adam önüne getiriliyor. Adamların krala, dolayısıyla sana vergi ödemeyi reddettiğini söylüyorlar. Adam tamamı son savaşlarda öldürülen oğullar krallık tarafından geri verilene kadar vergi ödemeyeceğini söylüyor.
+mno_choice_05_1n|Bu adam zaten yeterince yitirmiş. Hayat boyu vergiden muafiyet ver.
+mno_choice_05_2n|Vergi ödemezse adamı ölümle cezalandır. Kötü bir örneğe izin veremezsin.
+mno_choice_05_3n|Adama oğullarının ölümü için kan parası ver ve adlarının hatırlanacağına söz ver.
+menu_nobody_want_paytax|Aniden, yasal otoriteni uyguladığın oda savaşta oğullarını kaybeden ve eşit davranılmak isteyenlerle doluyor.
+mno_choice_05_2notax|Bikaç torba parayı insanlar arasında tazminat olarak dağıt.(3000 pening).
+mno_choice_05_3notax|Bunca insan için paran olmadığından, askerlerine kalabalığı dağıtmalarını emrediyorsun.
+menu_event_06_juicio|İki adam sana geliyorlar. Adamların, bu ikisinin birbirlerini öldürmeye hazır olduklarını söylüyorlar. Birisi diğerinin arazisinde olan ama yoldaki trafiği engelleyen birkaç meşeyi kesmiş.^^”O ağaçlar arabamın geçmesini zorlaştırıyorlardı!” diye bağırıyor birinci. “Sadece ağaçlardan bahsediyoruz. Bu davayı anlamıyorum!”^^”O ağaçlar benim arazimdeydiler, geçenlerde ölen babam dikmişti onları” diye bağırıyor öteki de.
+mno_choice_06_1n|Ağaçları kesen adam diğerine tazminat ödemeli.
+mno_choice_06_2n|Ağaçlar yolu tıkıyordu. Kesilmeleri gerekiyordu.
+mno_choice_06_3n|Ağaçları kesen adam diğerine tazminat, sana ceza ödemeli.
+menu_event_07_juicio|Bu yılki hasat kötü olacağa benziyor, yani kışın çok açlık olacak. Ne yapalım?
+mno_choice_07_1n|Birkaç yük arabası tahıl satın alın. En azından elimden bu kadarı gelir.(1000 pening).
+mno_choice_07_2n|Diğer bölgelerden arabalarla tahıl satın alın. En azından bunu yapabilirim (1000 pening).
+mno_choice_07_3n|Başka yerden yiyecek almaya yetecek param yok.
+menu_event_08_juicio|Yerel şeflerden birisi sana yaklaşarak, çok değer verdiği gayrı-meşru bir oğlu olduğunu ve onun senin kaptanların arasına katılmasını istediğini söylüyor. Çocuğu görmeyi kabul ediyorsun, zira bir soyluyu doğrudan reddetmek yakışıksız olacak. Çocuğu gördüğünde, pek savaşçı kumaşından olmadığını anlıyorsun. Bu tombul, gülümseyen genç karşısında ne yapacaksın?
+mno_choice_08_1n|Kaptanlarına katılmasını kabul et.
+mno_choice_08_2n|Anlaşmayı tatlandırmak için para iste.
+mno_choice_08_3n|Reddet. Sadece en iyiler kaptan olarak hizmet edebilir.
+menu_event_09_juicio|Bir gün karşına iki öneri geliyor. Birisi Osberh adında eğitimli genç bir rahipten: {s4}'{.te} bir kilise inşa etmeyi öneriyor.Sana yeni şeyler öğreterek zekanı geliştirme sözü veriyor.^^Bunu duyan diğer adam önüne fırlıyor. İri kıyım, uzun sakallı bir savaşçı bu ve Osberh'i tamamen gölgede bırakıyor. Paranın bir eğitim kampı için kullanılmasının daha iyi olacağını söylüyor ve sana fiziksel maharetini artıracak bir numara öğretme sözü veriyor.
+mno_choice_09_1n|Osberh'İn önderisini seç. Zekanı geliştirmeye ihtiyacın var.
+mno_choice_09_2n|Savaşçıyı seç. Güçlenmeye ihtiyacın var.
+mno_choice_09_3n|İkisini inşa edecek kadar param var (3000 pening).
+mno_choice_9_4n|Ha! İkisini de seçmeyecek kadar zekaya zaten sahipsin.
+menu_event_10_juicio|A Geceleyin gökyüzünde parlayan bir ışık görülüyor. Ertesi gün herkes bu kehanet hakkında konuşuyor. {s4} ahalisi arasında bir kurban sunulması gerektiği yoksa ilahi bir öfkenin krallık üzerine çökeceği konusunda görüş birliği var. Hasat zamanı yaklaştığından hasır adam pratiği hız kazanıyor. Melek gibi bir kız buluyorlar ve hasat öncesine kadar ona yaşayan bir tanrıça gibi davranıyorlar. Aniden farkına varıyorsun ki asırlardır kaybolmuş gelenekler yeniden hayata dönmüş burada.
+mno_choice_10_1n|Kızın kurban edilmesine izin ver.
+mno_choice_10_2n|Kurbanı yasakla ve kızı güvenliği için grubuna al.
+mno_choice_10_3n|Bu konu seni ilgilendirmiyor.
+menu_event_11_juicio|Bir haberci koşarak sarayına varıyor ve senden izin aldıktan sonra kötü haberleri vermeye başlıyor. “{reg59?Hanımım:Beyim}, yakınlardaki bir köy büyük tehlike altında! Ahali garip bir hastalığın pençesinde, güçlükle hareket ediyorlar, terliyor ve kusuyorlar ve ebe kadının buna karşı bir tedavisi yok. Yerel şef kimsenin dışarı çıkmasına izin vermiyor ve emirlerinizi bekliyor.”
+mno_choice_11_1n|Değerli eşyaları aramak için savaşçılarını yolla. Hayatta kalan olmuşsa hepsini öldürün.
+mno_choice_11_2n|Durumu incelemeleri için bir asker grubu gönder. Eğer sağ kalanlar varsa, asker olarak al.
+menu_event_12_juicio|İki rahibe sana yaklaşıyor. “{reg59?Hanımım:Beyim}, pek iyi gitmeyen bir doğum hadisesi var! Yapabileceğimiz her şeyi denedik ama belli ki genç kadın çocuk doğurmaya uygun değil. Kız önemli bir yerel lordun kızı. Ne yapabiliriz?
+mno_choice_12_1n|Karantina! Ama en iyi doktorları kendi paramla yardıma göndereceğim! (500 pening)
+mno_choice_12_2n|Karantina! Salgın sona erdiğinde hayattaa kalanları muayene edeceğiz!
+menu_event_13_juicio|Bir gün, yakınlardan bir yerel soylu ilginç bir istekle sana geliyor. “Beyim, zor bir durumdayım. Tüm paramı düzgün malzemeler ve askerlerime harcadım ki size iyi hizmet edebileyim. Ama ilk kızım evlenmek üzere ve kocasına uygun bir drahoma yollayamıyoruz.”
+mno_choice_13_1n|Herkes diz çöksün, dua etmeye başlayın.
+mno_choice_13_2n|Nöbetçiler: Bana köydeki ebeyi getirin, HEMEN!
+mno_choice_13_3n|Hayır! Parayı şimdiye kadar biriktirmiş olman gerekiyordu!
+menu_event_14_juicio|Bir gün, bir Hristiyan misyoner kapına geliyor. Çok hararetli birisi. “{reg59?Hanımım:Beyim}, harika haberlerim var! {s4}'{.te} şu anda Kudüs'ten dönmüş bir tüccar var ve bize Kutsal Haç'ın bir parçasını satmaya hazır. Böylesine değerli bir kutsal emanete sahip olma fırsatımız olduğuna inanamıyorum! Ve İsa'nın sözünü inananara yaymam için bu bana büyük bir yardım olacaktır!”
+mno_choice_14_1n|Sadık hizmetlerin için bu az miktardaki gümüşü al (800 pening).
+mno_choice_14_2n|Sana yardım edeceğim ama bu son (400 pening).
+mno_choice_15_3n|Bu fırsatın kaçmasına izin veremeyiz! (5000 pening)
+menu_event_15_juicio|Eşlikçilerinle ziyafetteyken bir haberci önüne geliyor. “{reg59?Hanımım:Beyim}, {s4}'{.te} görüşünüze ihtiyaç duyan bir mesele var.” Özür dileyerek dışarı çıkıyorsun.^^Tartışmaya gömülmüş bir kalabalık toplanmış ama seni görünce susuyorlar. Bir ihtiyar eğilerek selam veriyor ve konuşmak için izin istiyor, veriyorsun. Şöyle diyor: {reg59?Hanımım:Beyim}, bilgeliğinize ihtiyacımız var. Bu çocuğun annesi olduklarını iddia eden iki kadın var ve ikisi de vaz geçmiyor.”^İki kadın önüne getiriliyor. Biri iyi giyinmiş, diğeri paçavralar içinde.
+mno_choice_15_1n|Kutsal Haç'ın nice parçasını gördüm. Sahte emanetlere para harcamıyorum.
+mno_choice_15_2n|Üzgünüm ama burada başka tanrılara tapıyoruz. Paramı çarçur etmiyorum.
+menu_child_half_one|O anda paçavralar içindeki kadın çığlık atıyor ve “Hayır, lütfen {reg59?Hanımım:Beyim}, diğer kadın çocuğu alsın o zaman.”^^ Yanındaki ihtiyar bağırıyor, “O zaman gerçek anne sensin ve bu senin çocuğun!^^Diğer kadın huzursuz görünüyor, “Ben bu çocuğa sürekli yoksulluk çekeceği bir hayattan daha iyisini sunabilirim”.
+mno_choice_half1|Çocuğu fakir kadına ver ve zengin kadını yalan söylediği için cezalandır.
+mno_choice_half2|Çocuğu fakir kadına, zengin kadını da kalabalığa ver.
+mno_choice_half3|Çocuğu zengin kadına ver.
+mno_choice_half4|Çocuğu zengin kadına, fakir kadını da askerlerine ver.
+menu_event_16_juicio|Kire bulanmış ve güneşten yanmış danışmanın, hasatı kontrol ettikten sonra geliyor. “Beyim, bu yıl hasat kötü. Eğer vergileri azaltmazsanız kışın açlık olacak.”
+mno_choice_16_1n|Çocuğu yoksul kadına ver.
+mno_choice_16_2n|Çocuğu zengin kadına ver.
+menu_event_17_juicio|Yakın bir köyden bir çiftçi bir istekle geliyor. Nefes almadan silahlı adamların çiftliğini bastıklarını, kadınları, sığırları ve tahılları kaçırdıklarını anlatıyor. Her yeri kana batmış ve yanık hasır kokuyor.
+mno_choice_17_1n|Daha az vergi adamlarımı yeminlerinden azad etmem demek. Kesilmiş gırtlaktansa aç karın yeğdir.
+mno_choice_17_2n|Eksiklerini bu yıl cebimden tamamlayacağım (1000 pening).
+mno_choice_17_3n|Yakın zamanda savaş olacak. Şu parayı al ve köyünü tekrar inşa et.
+menu_event_18_juicio|Efendine yeminle bağlı birçok adamın ihtiyaç giderirken acı çekmesi üzerine, şen bir dul cadılıkla suçlanıyor. Efendin da onları destekliyor. Aynı dertten muzdarip olduğunu düşünüyorsun ama açıkça söylemeyecek kadar akıllı.
+mno_choice_18_1n|Bölgeyi kontrol etmek için nöbetçiler tut  (300 pening).
+mno_choice_18_2n|Burada yapacak bir şey yok. Çek git herif!
+mno_choice_18_3n|Bir savaş yaklaşıyor. Bu parayı al ve köyünü yeniden kur.
+menu_event_19_juicio|Bir misyoner gelerek tanrı kelamını yaydıkları bir köyde olanları anlatıyor. İzleyicileriyle beraber paganlar için önemli eski bir ağacı kesmek istediklerinde ahalinin çoğu silahlanarak onları dışarı atmışlar.
+mno_choice_19_1n|Şen dulu kov ve başka yere sürgüne gönder.
+mno_choice_19_2n|Cadıyı Hristiyanlığın yayılmasına karşı yardım etmesi için parayla tut.
+mno_choice_19_3|Bu misyoner haksız. Hristiyanların köyü sorunsuz şekilde terketmelerini sağlayın.
+menu_event_20_juicio|Yakınlardaki bir köyden bir kadın gelerek geçenlerde ölen adamlarından birisinin kocası olduğunu iddia ediyor. Cenazeyle ilgilenebilmek için yardım talep ediyor.
+mno_choice_20_1n|Bu misyoner haklı: heretik ağacı kesin.
+mno_choice_20_2n|Bu misyoner haksız: Onu ve izleyicilerini tanrılar için yakın.
+mno_choice_20_3n|Üzgünüm ama bunun için param yok.
+menu_event_21_juicio|En önemli yerel şef gelerek bir talepte bulunuyor. “{reg59?Hanımım:Beyim}, sizin hizmetinizdeyken acı çekenlere yardım etmeniz büyük merhametinizi ve itibarınızı göstermez mi? Sokaklarda üç beş kuruş dilenen düzinelerce sakat, topal ve yaşlı eski savaşçı ve babalarını, kocalarını savaşlarınız sırasında yitirmiş aile var. Sadık destekleyicilerinizi ödüllendirmek ve korumak istiyoruz, yoksa ileride erkekler kalkan duvarınıza katılmak için tereddüt gösterebilirler.
+mno_choice_21_1n|Adamlarımın paralarını aileleri için biriktirmiyor oluşu benim suçum değil.
+mno_choice_21_3n|Emektar savaşçılarımızı ve ailelerini desteklemeliyiz.(800 pening).
+mno_choice_21_4n|Hazine sandıklarımı açın! Tüm aileler {reg59?hanımından:lordundan} destek alacak!
+mno_choice_21_5n|Bu beklenmedik gideri karşılayacak kadar param yok.
+menu_event_22_juicio|Görünüşte son derece açık bir vaka önüne getiriliyor. Dün, suçlanan adam mağdurun evine girmiş ve önemli miktarda mal çalmış. Onu gören çok sayıda insan var ve çalınan eşyalar adamın evinde bulunmuş. Ancak mağdur daha önceki lordun etkili bir destekçisi, ona danışman olarak hizmet etmiş ve şaibeli bağlılıkları olduğu biliniyor. Zanlı ise senin en güçlü destekçilerinden birisi ve davana çok miktarda para yardımı yaptı.
+mno_choice_22_1n|Para yardımı yap ve bir rahip yolla.
+mno_choice_22_2n|Bir şey yapma. Bu benim sorunum değil.
+mno_choice_22_3n|Ne yazık ki buna ayıracak param yok.
+menu_event_juicio_end|Görünüşte son derece açık bir vaka önüne getiriliyor. Dün, suçlanan adam mağdurun evine girmiş ve önemli miktarda mal çalmış. Onu gören çok sayıda insan var ve çalınan eşyalar adamın evinde bulunmuş. Ancak mağdur daha önceki lordun etkili bir destekçisi, ona danışman olarak hizmet etmiş ve şaibeli bağlılıkları olduğu biliniyor. Zanlı ise senin en güçlü destekçilerinden birisi ve davana çok miktarda para yardımı yaptı.
+mno_choice_end_1n|Delili inkar edip adamını kayırmak için onun esasında senin emirlerine göre hareket ettiğini söylüyorsun.
+mno_choice_end_2n|Delil apaçık ortada, juri de bununla hemfikir. Zanlı hırsızlıktan dolayı suçlu bulundu ve elleri kesilecek! 
+mno_choice_end_3n|İki grubun da hatalı olduğunu iddia ediyorsun. Onları sürgüne yollayıp, dosyayla alakalı tüm mallara el koyuyorsun. 
+menu_riots_01|{s4} ile ilişkin çok kötü. Sokaklarında dolaşırken insanlar sana nefret dolu bakışlar fırlatıyorlar ve arkandan hareketler yapıyorlar. Bir köşeyi dönüyorsun, artık güvendesin – çok sayıda insan ortalığa çıkana kadar. Sıradan insanlar yönetiminden bıkmış durumdalar ve sana hakaret etmeye başlıyorlar. Sonunda birisi  bıçak çekerek sana saldırmaya cesaret ediyor.
+mno_deffend_y|Kendini savun.
+menu_riots_02|Sokaklarda dolaşan bir grup savaşçın, sana hakaretler savuran ve sorunları için adamlarını suçlayan bir kalabalık tarafından saldırıya uğradılar ve öldürüldüler. {s4} ile ilişkilerini en kısa zamanda düzeltmelisin.
+mno_deffend_01|Adamlarına, saldırganları öldürerek mallarına el koymalarını emret.
+mno_deffend_02|Korku ile yönetmeyeceim. İlişkilerimi başka yollar kullanarak düzeltmem gerekiyor.
+mno_deffend_03|Şehrin tüm nüfusunu ortadan kaldır ve daha sadık insanları şehre yerleştir.
+menu_random_normal_events|Olaylar
+menu_random_normal_events2|Olaylar
+menu_event_01_normal|Dörtnala bir atın gürültüsü soğuk sabahı dolduruyor, dışarı fırladığında bir gözcünün attan indiğini görüyorsun. Gözcü yabancı bir dil konuşan adamlar taşıyan garip bir geminin yakındaki sahilde karaya oturduğunu söylüyor. Ne yapacaksın?
+mno_choice_01_1o|Kıymetli eşyaları aramaları için askerlerini yolla. Kurtulan kimse varsa öldürmelerini emret.
+mno_choice_01_2o|İnceleme için bir grup asker yolla. Yaşayan kimse varsa kurtarmalarını emret.
+mno_choice_01_3o|Hiçbir şey yapma.
+menu_event_02_normal|{s4}
+mno_choice_11_msg|Devam.
+menu_event_03_normal|Bir ozanın kahramanlıklarınla ilgili bir şarkı bestelediğini öğreniyorsun.
+mno_choice_03_1no|Mükemmel haber!
+mno_choice_03_2no|Bu şarkının diyardan diyara duyulması üzere onu 300 pening ile ödüllendir. 
+menu_event_04_normal|Başarılarının öyküsü bütün ülkede yayılıyor. Her gittiğin yerde kortejin dilenciler tarafından kuşatılıyor.
+mno_choice_04_1no|Sadaka için 200 pening ayır. 
+mno_choice_04_2no|Onları görmezden gel.
+mno_choice_04_3no|Dilenciler mi? Köpekleri salın!
+menu_event_05_normal|Genç bir soylu annen üzerine dedikodular yayıyor. Dünyanın en eski mesleğini icra ettiği suçlaması bunlar arasında.
+mno_choice_05_1no|Onu düelloya davet ediyorum!
+mno_choice_05_2no|Sadece bir konuşma olacak.
+menu_event_06_normal|Askerlerinden birisinin karısı ile karşılaşıyorsun. Kocasını sözleşmesinden azat etmen için sana yalvarıyor. Bu yıl hasat kötüydü ve kazandıkları aileyi beslemeye yetmiyor. Eğer geri gelip tarlada çalışırsa, hayatta kalabilirler.
+mno_choice_06_1no|Olamaz! Al, 200 pening.
+mno_choice_06_2no|Kocasını görevlerinden salıveriyorsun.
+menu_event_07_normal|Yerel bir istemezükçü hakkında sahte dedikodular yayıyor. Anlattıklarının çoğu saçma sapan olsalar da er ya da geç insanlar bunlara inanacaklar.
+mno_choice_07_1no|Ne söylemek istiyorsa söylemesine izin ver. Her erkeğin buna hakkı vardır.
+mno_choice_07_2no|Durmasını söyle. 100 pening işe yarayabilir.
+mno_choice_07_3no|Onu ebediyen sustur.
+menu_event_08_normal|Ormanda seyahat ederken aniden bir tuzağa yakalanmış yabani bir tavşan görüyorsun. Ne yapacaksın?
+mno_choice_08_1|Hayvanı serbest bırak.
+mno_choice_08_2|Kapanı sıkıca tut ve turnayı öldür!
+mno_choice_08_3|Hayvanı görmezden gel ve yanından geçip git.
+menu_event_09_normal|Eski savaşçılardan bir grubun şöhretini duyarak sana katılmak istediklerini haber alıyorsun. Ancak normalde bu tür askerlere verdiğinden daha fazla para istiyorlar.
+mno_choice_9_1|Rica ederim.
+mno_choice_9_2|Daha fazla birliğe ihtiyacım yok.
+mno_choice_9_3|Hepsini öldür. Kesin olarak güzel bir ganimet bırakacaklardır.
+menu_event_10_normal|Bir miktar kadının kampı takip etmek istediklerini haber alıyorsun.
+mno_choice_10_1no|Ne demek.
+mno_choice_10_2no|Beslenecek daha fazla gırtlağa ihtiyacım yok.
+menu_event_11_normal|Bir grup sokak müzisyeninin ordu müzisyeni ve sancaktar olarak sana katılmak istediklerini haber alıyorsun.
+mno_choice_11_1no|Bir şey değil.
+mno_choice_11_2no|Daha fazla birliğe ihtiyacım yok.
+menu_event_12_normal|Grubunun üzerinde daireler çizen bir turna görüyorsun. 
+mno_choice_12_1|Adamlarını turnanın zaferi simgelediğini söyle!
+mno_choice_12_2|Görmezden gel.
+mno_choice_12_3|Adamlarına turnaların kötü şansa yorulduğunu fakat senin, onlara sonuna kadar inandığını söyle!
+menu_event_13_normal|Bir çiftçi arkasında ağlayan bir genç kız olduğu halde yolda karşında duruyor. Parmağını suçlar gibi adamlarından birine yöneltmiş, adamın kızına tecavüz ettiğini ve cezalandırılması gerektiğini söylüyor. 
+mno_choice_13_1|Adamlarına turnanın zaferi simgelediğini söyle!
+mno_choice_13_3|Turnanın kötü talih habercisi olduğunu ama onlara güvendiğini söyle.
+menu_event_14_normal|Saatler sonra, ordun bir köy yakınlarında dinlenirken rahibin karısı kocası olmadan (yalnız başına) seni görmeye geliyor.f
+mno_choice_14_1|Adamların arasında ahlaksızlığa tahammül etmeyeceksin. Adamı damgalayıp gruptan at.
+mno_choice_14_3|Hayat zor ve bir erkek alabildiğini almalı.
+menu_event_15_normal|Şanın ve popülerliğin genç Norsemenleri davana çekiyor.
+mno_choice_15_1|Onları kabul et.
+mno_choice_15_2|Daha fazla adama ihtiyacım yok.
+menu_event_16_normal|Yolda fakir bir adama rastlıyorsun. Yorgun görünüyor. Adamlarından birini bu ıssız yerde ne aradığını sorması için gönderiyorsun. Soyulduğunu ve biraz para bulamazsa yakında açlıktan öleceğini söylüyor. Bir zamanlar orduda görev almış ve sadık bir savaşçı olabilir.
+mno_choice_16_1|Hayatın kendisi adil değil. Ona hiçbir şey verme.
+mno_choice_16_2|Ona sadece bir gün yemek yiyebileceği kadar para ver. (10 pening)
+mno_choice_16_4|Ona birkaç gün idare edebileceği kadar para ver. (200 pening)
+mno_choice_16_5|Ona para ver ve size katılmayı teklif et.
+menu_event_17_normal|Bir grup haydut kampına yaklaşıyor. Adamların silahlarına sarılırken haydutlar silahlarını yere bırakıp savaşmak niyetinde olmadıklarını söylüyorlar. Liderleri öne çıkıp sana katılmak istediklerini söylüyor.
+mno_choice_17_1|Elbette! Partim kana susamış askerlere her daim açıktır!
+mno_choice_17_2|Üzgünüm, senin gibi bir tip için yerimiz yok!
+mno_choice_17_3|Buna değecek olduğunu bir köyü yağmalayıp köy büyüğünün kafasını bana getirerek kanıtla!
+mno_choice_17_4|Hepsini öldür!
+menu_event_18_normal|Eski unutulmuş bir savaş lordunun mezarına rastlıyorsun.
+mno_choice_18_1|Kabul et.
+mno_choice_18_2|Mekanı terket.
+mno_choice_18_3|Reddet.
+menu_event_19_normal|Yakın köylerden birine ait korumasız bir sığır sürüsüne rastlıyorsun.
+mno_choice_19_1|Hayvanları köye geri getir ve ödül isteme.
+mno_choice_19_2|Hayvanları köye döndüreceğim -- ve bir ödül isteyeceğim.
+menu_season_change|{s1}
+menu_troop_camp|Şimdilik bu yerde bırakmak istediğin birlikler için ufak bir kamp kuruluyor.
+mno_station_troops|Birliğine göz at.
+menu_player_trait|Artık tecrübeli bir savaşçı ve savaş lordusun. Şu anda belli ki kişisel özelliğin  '{s3}'. Geliştirdiğin yeteneğini savaş meydanında kullanabilirsin.^^(Bunun için *T* tuşuna bas.) 
+menu_start_beda_final|FİNAL 
+menu_ship_capture|Düşmanlarından birine ait bşr gemiyi ele geçiriyorsun. Bu bir {s2}. Ama savaş nedeniyle '{s1}' kötü durumda. Bu gemiyi filona katmak istiyor musun?
+mno_capture|Gemiyi filona ekle.
+menu_sandboxmode_ok|Sandbox moduna girmek istiyor musun?
+menu_start_sea_travel|Denizde seyahat etmeye başlıyorsun
+menu_mutiny_start|Bazı birliklerinin morali düşük. Ayaklanma başlatıyorlar.
+menu_mutiny_end|Ayaklanmadan sonra ortalık duruluyor.
+menu_print_ships|Your ships with ship type, name, quality and wood type: ^{s10}
+menu_work_start|Kısa süre sonra, eklemlerin monoton işin yüzünden ağrımaya başlıyor fakat tüm gün çalışman üzere anlaştığınızdan, devam ediyorsun.
+menu_work_end|Ardına dönüp baktığında gördüğün şey bir günün emeği. Fakat elinde sıkıştırılan paraya baktığında gördüğün şey ise bu emeğin karşılığının hakettiğinin aksine çok daha az olduğu.
+menu_landing_point_encounter_as_marshal|Şu an mareşal sensin ve gemiden inmek üzeresiniz. {s1} {s2} ^^Şimdi karaya çıkmak istiyor musun yoksa bekleyecek misin?
+mno_disembark_yes|Gemiden in.
+menu_landet_ships_encounter_as_marshal|Şu an mareşal sensin ve gemiye binmek üzeresiniz. {s1} {s2} ^^Şimdi demir almak istiyor musun yoksa bekleyecek misin?
+mno_reembark_yes|Gemiye bin.
+menu_recruit_volunteers_town|{s18}

@@ -1,0 +1,2430 @@
+itm_no_item|INVALID ITEM
+itm_no_item_pl|INVALID ITEM
+itm_tutorial_spear|Mızrak
+itm_tutorial_spear_pl|Mızrak
+itm_tutorial_club|Sopa
+itm_tutorial_club_pl|Sopalar
+itm_tutorial_battle_axe|Ağır Balta
+itm_tutorial_battle_axe_pl|Ağır Baltalar
+itm_tutorial_arrows|Oklar
+itm_tutorial_arrows_pl|Oklar
+itm_tutorial_bolts|Kundak Oku
+itm_tutorial_bolts_pl|Kundak Okları
+itm_tutorial_short_bow|Uzun Yay
+itm_tutorial_short_bow_pl|Uzun Yaylar
+itm_tutorial_crossbow|Kundaklı Yay
+itm_tutorial_crossbow_pl|Kundaklı Yaylar
+itm_tutorial_throwing_daggers|Mızraklar
+itm_tutorial_throwing_daggers_pl|Mızraklar
+itm_tutorial_saddle_horse|Binek Atı
+itm_tutorial_saddle_horse_pl|Binek Atları
+itm_tutorial_shield|Yuvarlak Kalkan
+itm_tutorial_shield_pl|Yuvarlak Kalkanlar
+itm_tutorial_staff_no_attack|Asa
+itm_tutorial_staff_no_attack_pl|Asalar
+itm_tutorial_staff|Asa
+itm_tutorial_staff_pl|Asalar
+itm_tutorial_sword|Basit Kılıç
+itm_tutorial_sword_pl|Basit Kılıçlar
+itm_tutorial_axe|Balta
+itm_tutorial_axe_pl|Balta
+itm_tutorial_dagger|Uzun Seaks
+itm_tutorial_dagger_pl|Uzun Seaks
+itm_horse_meat|At Eti
+itm_horse_meat_pl|At Eti
+itm_practice_sword|Basit Kılıç
+itm_practice_sword_pl|Basit Kılıçlar
+itm_heavy_practice_sword|Goidelic Usta Kılıcı
+itm_heavy_practice_sword_pl|Goidelic Usta Kılıçları
+itm_practice_dagger|Uzun Seaks
+itm_practice_dagger_pl|Uzun Seaks
+itm_practice_axe|Ağır Balta
+itm_practice_axe_pl|Ağır Baltalar
+itm_arena_axe|Balta
+itm_arena_axe_pl|Baltalar
+itm_arena_sword|Basit Kılıç
+itm_arena_sword_pl|Basit Kılıçlar
+itm_arena_sword_two_handed|Goidelic Usta Kılıcı
+itm_arena_sword_two_handed_pl|Goidelic Usta Kılıcı
+itm_arena_lance|Mızrak
+itm_arena_lance_pl|Mızrak
+itm_practice_staff|Asa
+itm_practice_staff_pl|Asa
+itm_practice_lance|Mızrak
+itm_practice_lance_pl|Mızrak
+itm_practice_shield|Talim Kalkanı
+itm_practice_shield_pl|Talim Kalkanı
+itm_practice_bow|Uzun Yay
+itm_practice_bow_pl|Uzun Yay
+itm_practice_crossbow|Sapan
+itm_practice_crossbow_pl|Sapan
+itm_practice_javelin|Cirit
+itm_practice_javelin_pl|Cirit
+itm_practice_javelin_melee|Cirit
+itm_practice_javelin_melee_pl|Cirit
+itm_practice_throwing_daggers|Ciritler
+itm_practice_throwing_daggers_pl|Ciritler
+itm_practice_throwing_daggers_100_amount|Ciritler
+itm_practice_throwing_daggers_100_amount_pl|Ciritler
+itm_practice_horse|Binek Midillisi
+itm_practice_horse_pl|Binek Midillisi
+itm_practice_arrows|Oklar
+itm_practice_arrows_pl|Oklar
+itm_practice_bolts|Sapan Taşları
+itm_practice_bolts_pl|Sapan Taşları
+itm_practice_arrows_10_amount|Oklar
+itm_practice_arrows_10_amount_pl|Oklar
+itm_practice_arrows_100_amount|Oklar
+itm_practice_arrows_100_amount_pl|Oklar
+itm_practice_bolts_9_amount|Talim Kısa Oku
+itm_practice_bolts_9_amount_pl|Talim Kısa Oku
+itm_practice_boots|Bot
+itm_practice_boots_pl|Botlar
+itm_red_tourney_armor|Kırmızı Tunik
+itm_red_tourney_armor_pl|Kırmızı Tunik
+itm_blue_tourney_armor|Mavi Tunik
+itm_blue_tourney_armor_pl|Mavi Tunik
+itm_green_tourney_armor|Yeşil Tunik
+itm_green_tourney_armor_pl|Yeşil Tunik
+itm_gold_tourney_armor|Beyaz Tunik
+itm_gold_tourney_armor_pl|Beyaz Tunik
+itm_red_tourney_helmet|Başlık
+itm_red_tourney_helmet_pl|Başlık
+itm_blue_tourney_helmet|Başlık
+itm_blue_tourney_helmet_pl|Başlık
+itm_green_tourney_helmet|Başlık
+itm_green_tourney_helmet_pl|Başlık
+itm_gold_tourney_helmet|Başlık
+itm_gold_tourney_helmet_pl|Başlık
+itm_arena_shield_red|Yuvarlak Kalkan
+itm_arena_shield_red_pl|Yuvarlak Kalkan
+itm_arena_shield_blue|Yuvarlak Kalkan
+itm_arena_shield_blue_pl|Yuvarlak Kalkan
+itm_arena_shield_green|Yuvarlak Kalkan
+itm_arena_shield_green_pl|Yuvarlak Kalkan
+itm_arena_shield_yellow|Yuvarlak Kalkan
+itm_arena_shield_yellow_pl|Yuvarlak Kalkan
+itm_arena_armor_white|Beyaz Tunik
+itm_arena_armor_white_pl|Beyaz Tunik
+itm_arena_armor_red|Kırmızı Tunik
+itm_arena_armor_red_pl|Kırmızı Tunik
+itm_arena_armor_blue|Mavi Tunik
+itm_arena_armor_blue_pl|Mavi Tunik
+itm_arena_armor_green|Yeşil Tunik
+itm_arena_armor_green_pl|Yeşil Tunik
+itm_arena_armor_yellow|Sarı Tunik
+itm_arena_armor_yellow_pl|Sarı Tunik
+itm_arena_tunic_white|Beyaz Tunik
+itm_arena_tunic_white_pl|Beyaz Tunik
+itm_arena_tunic_red|Kırmızı Tunik
+itm_arena_tunic_red_pl|Kırmızı Tunik
+itm_arena_tunic_blue|Mavi Tunik
+itm_arena_tunic_blue_pl|Mavi Tunik
+itm_arena_tunic_green|Yeşil Tunik
+itm_arena_tunic_green_pl|Yeşil Tunik
+itm_arena_tunic_yellow|Sarı Tunik
+itm_arena_tunic_yellow_pl|Sarı Tunik
+itm_arena_helmet_red|Nazal Miğfer
+itm_arena_helmet_red_pl|Nazal Miğfer
+itm_arena_helmet_blue|Nazal Miğfer
+itm_arena_helmet_blue_pl|Nazal Miğfer
+itm_arena_helmet_green|Nazal Miğfer
+itm_arena_helmet_green_pl|Nazal Miğfer
+itm_arena_helmet_yellow|Nazal Miğfer
+itm_arena_helmet_yellow_pl|Nazal Miğfer
+itm_steppe_helmet_white|Nazal Miğfer
+itm_steppe_helmet_white_pl|Nazal Miğfer
+itm_steppe_helmet_red|Nazal Miğfer
+itm_steppe_helmet_red_pl|Nazal Miğfer
+itm_steppe_helmet_blue|Nazal Miğfer
+itm_steppe_helmet_blue_pl|Nazal Miğfer
+itm_steppe_helmet_green|Nazal Miğfer
+itm_steppe_helmet_green_pl|Nazal Miğfer
+itm_steppe_helmet_yellow|Nazal Miğfer
+itm_steppe_helmet_yellow_pl|Nazal Miğfer
+itm_tourney_helm_white|Nazal Miğfer
+itm_tourney_helm_white_pl|Nazal Miğfer
+itm_tourney_helm_red|Nazal Miğfer
+itm_tourney_helm_red_pl|Nazal Miğfer
+itm_tourney_helm_blue|Nazal Miğfer
+itm_tourney_helm_blue_pl|Nazal Miğfer
+itm_tourney_helm_green|Nazal Miğfer
+itm_tourney_helm_green_pl|Nazal Miğfer
+itm_tourney_helm_yellow|Nazal Miğfer
+itm_tourney_helm_yellow_pl|Nazal Miğfer
+itm_arena_turban_red|Başlık
+itm_arena_turban_red_pl|Başlık
+itm_arena_turban_blue|Başlık
+itm_arena_turban_blue_pl|Başlık
+itm_arena_turban_green|Başlık
+itm_arena_turban_green_pl|Başlık
+itm_arena_turban_yellow|Başlık
+itm_arena_turban_yellow_pl|Başlık
+itm_book_tactics|Peloponez Savaşı Tarihi
+itm_book_tactics_pl|Peloponez Savaşı Tarihi
+itm_book_persuasion|Rhetorica ad Herennium
+itm_book_persuasion_pl|Rhetorica ad Herennium
+itm_book_leadership|Büyük İskender'in Hayatı
+itm_book_leadership_pl|Büyük İskender'in Hayatı
+itm_book_intelligence|Paedeia
+itm_book_intelligence_pl|Paedeia
+itm_book_trade|Aristo'nun Ekonomikleri
+itm_book_trade_pl|Aristo'nun Ekonomikleri
+itm_book_weapon_mastery|Ksenefon'un Lacedaemonian Politikası
+itm_book_weapon_mastery_pl|Ksenefon'un Lacedaemonian Politikası
+itm_book_engineering|Vitrivius'un De architectura'sı
+itm_book_engineering_pl|Vitrivius'un De architectura'sı
+itm_book_wound_treatment_reference|Dioscorides'in Materia Medica'sı
+itm_book_wound_treatment_reference_pl|Dioscorides'in Materia Medica'sı
+itm_book_training_reference|De Re Militari
+itm_book_training_reference_pl|De Re Militari
+itm_book_surgery_reference|Galen'in Özeti
+itm_book_surgery_reference_pl|Galen'in Özeti
+itm_relic|The Cathach of Colum Cille
+itm_relic_pl|The Cathach of Colum Cille
+itm_mead|Bal Likörü
+itm_mead_pl|Bal Likörü
+itm_salt|Tuz
+itm_salt_pl|Tuz
+itm_tar|Katran
+itm_tar_pl|Katran
+itm_jewelry|Mücevher
+itm_jewelry_pl|Mücevher
+itm_raw_flax|Keten Bohçası
+itm_raw_flax_pl|Keten Bohçası
+itm_linen|Keten
+itm_linen_pl|Keten
+itm_wool|Yün
+itm_wool_pl|Yün
+itm_vc_wool_cloth|Yün Kumaş
+itm_vc_wool_cloth_pl|Yün Kumaş
+itm_amber|Kehribar
+itm_amber_pl|Kehribar
+itm_ivory|Mors Dişi
+itm_ivory_pl|Mors Dişi
+itm_silver|Gümüş
+itm_silver_pl|Gümüş
+itm_iron|Demir
+itm_iron_pl|Demir
+itm_stone|Taş
+itm_stone_pl|Taş
+itm_tools|Aletler
+itm_tools_pl|Aletler
+itm_vc_raw_leather|Deri
+itm_vc_raw_leather_pl|Deri
+itm_timber|Kereste
+itm_timber_pl|Kereste
+itm_soapstone|Sabuntaşı
+itm_soapstone_pl|Sabuntaşı
+itm_vc_furs|Kürk
+itm_vc_furs_pl|Kürk
+itm_wine|Şarap
+itm_wine_pl|Şarap
+itm_ale|Bira
+itm_ale_pl|Bira
+itm_smoked_fish|Füme Balık 
+itm_smoked_fish_pl|Füme Balık
+itm_cheese|Peynir
+itm_cheese_pl|Peynir
+itm_vc_honey|Bal
+itm_vc_honey_pl|Bal
+itm_sausages|Sosis
+itm_sausages_pl|Sosis
+itm_cabbages|Sebze
+itm_cabbages_pl|Sebze
+itm_dried_meat|Kurutulmuş Et
+itm_dried_meat_pl|Kurutulmuş Et
+itm_apples|Meyve
+itm_apples_pl|Meyve
+itm_barley|Arpa
+itm_barley_pl|Arpa
+itm_venison|Yaban Domuzu Eti
+itm_venison_pl|Yaban Domuzu Eti
+itm_grain|Buğday
+itm_grain_pl|Buğday
+itm_cattle_meat|Sığır Eti
+itm_cattle_meat_pl|Sığır Eti
+itm_bread|Ekmek
+itm_bread_pl|Ekmek
+itm_chicken|Tavuk
+itm_chicken_pl|Tavuk
+itm_pork|Domuz Eti
+itm_pork_pl|Domuz Eti
+itm_butter|Tereyağ
+itm_butter_pl|Tereyağ
+itm_siege_supply|Erzak
+itm_siege_supply_pl|Erzak
+itm_quest_wine|Şarap
+itm_quest_wine_pl|Şarap
+itm_quest_ale|Bira
+itm_quest_ale_pl|Bira
+itm_common_horse|At
+itm_common_horse_pl|At
+itm_common_horse2|At
+itm_common_horse2_pl|At
+itm_common_pony|Midilli
+itm_common_pony_pl|Midilli
+itm_common_pony2|Midilli
+itm_common_pony2_pl|Midilli
+itm_wild_horse|At
+itm_wild_horse_pl|At
+itm_wild_horse2|At
+itm_wild_horse2_pl|At
+itm_wild_pony|Midilli
+itm_wild_pony_pl|Midilli
+itm_wild_pony2|Midilli
+itm_wild_pony2_pl|Midilli
+itm_cow1|İnek
+itm_cow1_pl|İnek
+itm_cow2|İnek
+itm_cow2_pl|İnek
+itm_arrows|Oklar
+itm_arrows_pl|Oklar
+itm_khergit_arrows|Delici Ok
+itm_khergit_arrows_pl|Delici Ok
+itm_barbed_arrows|Kanca Temrenli Ok
+itm_barbed_arrows_pl|Kanca Temrenli Ok
+itm_bodkin_arrows| İnce Temrenli Ok
+itm_bodkin_arrows_pl|İnce Temrenli Ok
+itm_bolts|Kundaklı Yay Oku
+itm_bolts_pl|Kundaklı Yay Oku
+itm_bolts2|Delici Kundaklı Yay Oku
+itm_bolts2_pl|Delici Kundaklı Yay Oku
+itm_bolts3|Kanca Temrenli Yay Oku
+itm_bolts3_pl|Kanca Temrenli Yay Oku
+itm_bolts4|İnce Temrenli Yay Oku
+itm_bolts4_pl|İnce Temrenli Yay Oku
+itm_pilgrim_disguise|Gizlenme Kıyafeti
+itm_pilgrim_disguise_pl|Gizlenme Kıyafeti
+itm_pilgrim_hood|Gizlenme Başlığı
+itm_pilgrim_hood_pl|Gizlenme Başlığı
+itm_leather_gloves|Deri Eldiven
+itm_leather_gloves_pl|Deri Eldiven
+itm_carbatinae_1|Bot
+itm_carbatinae_1_pl|Bot
+itm_carbatinae_2|Bot
+itm_carbatinae_2_pl|Bot
+itm_carbatinae_3|Bot
+itm_carbatinae_3_pl|Bot
+itm_carbatinae_4|Bot
+itm_carbatinae_4_pl|Bot
+itm_carbatinae_5|Bot
+itm_carbatinae_5_pl|Bot
+itm_carbatinae_6|Bot
+itm_carbatinae_6_pl|Bot
+itm_carbatinae_7|Bot
+itm_carbatinae_7_pl|Bot
+itm_carbatinae_8|Bot
+itm_carbatinae_8_pl|Bot
+itm_carbatinae_9|Bot
+itm_carbatinae_9_pl|Bot
+itm_carbatinae_10|Bot
+itm_carbatinae_10_pl|Bot
+itm_carbatinae_vc1|Ayakkabı
+itm_carbatinae_vc1_pl|Ayakkabı
+itm_carbatinae_vc2|Ayakkabı
+itm_carbatinae_vc2_pl|Ayakkabı
+itm_carbatinae_vc3|Ayakkabı
+itm_carbatinae_vc3_pl|Ayakkabı
+itm_carbatinae_vc4|Ayakkabı
+itm_carbatinae_vc4_pl|Ayakkabı
+itm_carbatinae_vc5|Ayakkabı
+itm_carbatinae_vc5_pl|Ayakkabı
+itm_carbatinae_vc6|Ayakkabı
+itm_carbatinae_vc6_pl|Ayakkabı
+itm_carbatinae_1s| Bağlama Bot
+itm_carbatinae_1s_pl|Bağlama Bot
+itm_carbatinae_2s|Bağlama Bot
+itm_carbatinae_2s_pl|Bağlama Bot
+itm_carbatinae_3s|Bağlama Bot
+itm_carbatinae_3s_pl|Bağlama Bot
+itm_carbatinae_4s|Bağlama Bot
+itm_carbatinae_4s_pl|Bağlama Bot
+itm_carbatinae_5s|Bağlama Bot
+itm_carbatinae_5s_pl|Bağlama Bot
+itm_carbatinae_6s|Bağlama Bot
+itm_carbatinae_6s_pl|Bağlama Bot
+itm_carbatinae_vc1s|Bağlama Ayakkabı
+itm_carbatinae_vc1s_pl|Bağlama Ayakkabı
+itm_carbatinae_vc2s|Bağlama Ayakkabı
+itm_carbatinae_vc2s_pl|Bağlama Ayakkabı
+itm_carbatinae_vc3s|Bağlama Ayakkabı
+itm_carbatinae_vc3s_pl|Bağlama Ayakkabı
+itm_carbatinae_vc4s|Bağlama Ayakkabı
+itm_carbatinae_vc4s_pl|Bağlama Ayakkabı
+itm_carbatinae_1v|Bağlama Bot
+itm_carbatinae_1v_pl|Bağlama Bot
+itm_carbatinae_2v|Bağlama Bot
+itm_carbatinae_2v_pl|Bağlama Bot
+itm_carbatinae_3v|Bağlama Ayakkabı
+itm_carbatinae_3v_pl|Bağlama Ayakkabı
+itm_carbatinae_4v|Bağlama Ayakkabı
+itm_carbatinae_4v_pl|Bağlama Ayakkabı
+itm_carbatinae_5v|Bağlama Bot
+itm_carbatinae_5v_pl|Bağlama Bot
+itm_carbatinae_6v|Bağlama Bot
+itm_carbatinae_6v_pl|Bağlama Bot
+itm_carbatinae_vc1v|Bağlama Ayakkabı
+itm_carbatinae_vc1v_pl|Bağlama Ayakkabı
+itm_carbatinae_vc2v|Bağlama Ayakkabı
+itm_carbatinae_vc2v_pl|Bağlama Ayakkabı
+itm_carbatinae_11q|Kaliteli Bağlama Botu
+itm_carbatinae_11q_pl|Kaliteli Bağlama Botu
+itm_carbatinae_12q|Kaliteli Bağlama Botu
+itm_carbatinae_12q_pl|Kaliteli Bağlama Botu
+itm_carbatinae_11qs|Kaliteli Bağlama Botu
+itm_carbatinae_11qs_pl|Kaliteli Bağlama Botu
+itm_carbatinae_12qs|Kaliteli Bağlama Botu
+itm_carbatinae_12qs_pl|Kaliteli Bağlama Botu
+itm_carbatinae_13qs|Kaliteli Bağlama Botu
+itm_carbatinae_13qs_pl|Kaliteli Bağlama Botu
+itm_carbatinae_14qs|Kaliteli Bağlama Botu
+itm_carbatinae_14qs_pl|Kaliteli Bağlama Botu
+itm_carbatinae_14qv|Kaliteli Bağlama Botu
+itm_carbatinae_14qv_pl|Kaliteli Bağlama Botu
+itm_bare_foot_man|Yalın Ayak
+itm_bare_foot_man_pl|Yalın Ayak
+itm_just_man_boots_medium|Bot
+itm_just_man_boots_medium_pl|Bot
+itm_just_man_boots_light|Hafif Bot
+itm_just_man_boots_light_pl|Hafif Bot
+itm_just_man_shoes|Ayakkabı
+itm_just_man_shoes_pl|Ayakkabı
+itm_just_man_boots_dark|Kaliteli Koyu Bot
+itm_just_man_boots_dark_pl|Kaliteli Koyu Bot
+itm_gaelshoes_1|Godelic Ayakkabı
+itm_gaelshoes_1_pl|Godelic Ayakkabı
+itm_gaelshoes_2|Godelic Ayakkabı
+itm_gaelshoes_2_pl|Godelic Ayakkabı
+itm_gaelshoes_3|Godelic Ayakkabı
+itm_gaelshoes_3_pl|Godelic Ayakkabı
+itm_womenshoes_1|Ayakkabı
+itm_womenshoes_1_pl|Ayakkabı
+itm_womenshoes_2|Kaliteli Bot
+itm_womenshoes_2_pl|Kaliteli Bot
+itm_womenshoes_3|Bot
+itm_womenshoes_3_pl|Bot
+itm_womenshoes_4|Bot
+itm_womenshoes_4_pl|Bot
+itm_womenshoes_5|Yalınayak
+itm_womenshoes_5_pl|Yalınayak
+itm_womenshoes_6|Ayakkabı
+itm_womenshoes_6_pl|Ayakkabı
+itm_womenshoes_7|Ayakkabı
+itm_womenshoes_7_pl|Ayakkabı
+itm_womenshoes_8|Çıplak Bacak
+itm_womenshoes_8_pl|Çıplak Bacak
+itm_long_tunic1|Uzun Tunik
+itm_long_tunic1_pl|Uzun Tunik
+itm_nobleman_outfit|Uzun Tunik
+itm_nobleman_outfit_pl|Uzun Tunik
+itm_troll_tunic|Uzun Tunik
+itm_troll_tunic_pl|Uzun Tunik
+itm_priest1|Rahip Cübbesi
+itm_priest1_pl|Rahip Cübbesi
+itm_priest2|Rahip Cübbesi
+itm_priest2_pl|Rahip Cübbesi
+itm_robe|Keşiş Cübbesi
+itm_robe_pl|Keşiş Cübbesi
+itm_robe2|Keşiş Cübbesi
+itm_robe2_pl|Keşiş Cübbesi
+itm_robe3|Keşiş Cübbesi
+itm_robe3_pl|Keşiş Cübbesi
+itm_robe4|Keşiş Cübbesi
+itm_robe4_pl|Keşiş Cübbesi
+itm_robe5|Keşiş Cübbesi
+itm_robe5_pl|Keşiş Cübbesi
+itm_robe6|Keşiş Cübbesi
+itm_robe6_pl|Keşiş Cübbesi
+itm_robe7|Keşiş Cübbesi
+itm_robe7_pl|Keşiş Cübbesi
+itm_robe8|Keşiş Cübbesi
+itm_robe8_pl|Keşiş Cübbesi
+itm_robe9|Keşiş Cübbesi
+itm_robe9_pl|Keşiş Cübbesi
+itm_robe10|Keşiş Cübbesi
+itm_robe10_pl|Keşiş Cübbesi
+itm_ptunic_1|Siyah Basit Tunik 
+itm_ptunic_1_pl|Siyah Basit Tunik
+itm_ptunic_2|Mavi Basit Tunik
+itm_ptunic_2_pl|Mavi Basit Tunik
+itm_ptunic_3|Yeşil Basit Tunik
+itm_ptunic_3_pl|Yeşil Basit Tunik
+itm_ptunic_4|Turuncu Basit Tunik
+itm_ptunic_4_pl|Turuncu Basit Tunik
+itm_ptunic_5|Beyaz Basit Tunik
+itm_ptunic_5_pl|Beyaz Basit Tunik
+itm_ptunic_6|Beyaz Basit Tunik
+itm_ptunic_6_pl|Beyaz Basit Tunik
+itm_ptunic_7|Siyah Basit Tunik
+itm_ptunic_7_pl|Siyah Basit Tunik
+itm_ptunic_8|Mavi Basit Tunik
+itm_ptunic_8_pl|Mavi Basit Tunik
+itm_ptunic_9|Yeşil Basit Tunik
+itm_ptunic_9_pl|Yeşil Basit Tunik
+itm_ptunic_10|Turuncu Basit Tunik
+itm_ptunic_10_pl|Turuncu Basit Tunik
+itm_ptunic_11|Beyaz Basit Tunik
+itm_ptunic_11_pl|Beyaz Basit Tunik
+itm_ptunic_12|Sarı Basit Tunik
+itm_ptunic_12_pl|Sarı Basit Tunik
+itm_btunic_1|Siyah Tunik
+itm_btunic_1_pl|Siyah Tunik
+itm_btunic_2|Mavi Tunik
+itm_btunic_2_pl|Mavi Tunik
+itm_btunic_3|Yeşil Tunik
+itm_btunic_3_pl|Yeşil Tunik
+itm_btunic_4|Turuncu Tunik
+itm_btunic_4_pl|Turuncu Tunik
+itm_btunic_5|Beyaz Tunik 
+itm_btunic_5_pl|Beyaz Tunik
+itm_btunic_6|Siyah Tunik
+itm_btunic_6_pl|Siyah Tunik
+itm_btunic_7|Mavi Tunik
+itm_btunic_7_pl|Mavi Tunik
+itm_btunic_8|Yeşil Tunik
+itm_btunic_8_pl|Yeşil Tunik
+itm_btunic_9|Turuncu Tunik
+itm_btunic_9_pl|Turuncu Tunik
+itm_btunic_10|Beyaz Tunik
+itm_btunic_10_pl|Beyaz Tunik
+itm_btunic_11|Kırmızı Tunik
+itm_btunic_11_pl|Kırmızı Tunik
+itm_btunic_12|Kırmızı Tunik
+itm_btunic_12_pl|Kırmızı Tunik
+itm_btunic_13|Sarı Tunik
+itm_btunic_13_pl|Sarı Tunik
+itm_btunic_14|Sarı Tunik
+itm_btunic_14_pl|Sarı Tunik
+itm_btunic_15|Mor Tunik
+itm_btunic_15_pl|Mor Tunik
+itm_btunic_16|Mor Tunik
+itm_btunic_16_pl|Mor Tunik
+itm_hoodtunic_01|Başlık
+itm_hoodtunic_01_pl|Başlık
+itm_hoodtunic_02|Başlık
+itm_hoodtunic_02_pl|Başlık
+itm_hoodtunic_03|Başlık
+itm_hoodtunic_03_pl|Başlık
+itm_hoodtunic_04|Başlık
+itm_hoodtunic_04_pl|Başlık
+itm_hoodtunic_05|Başlık
+itm_hoodtunic_05_pl|Başlık
+itm_hoodtunic_06|Başlık
+itm_hoodtunic_06_pl|Başlık
+itm_hoodtunic_07|Başlık
+itm_hoodtunic_07_pl|Başlık
+itm_hoodtunic_08|Başlık
+itm_hoodtunic_08_pl|Başlık
+itm_bl_tunic01|Pahalı Kırmızı Tunik
+itm_bl_tunic01_pl|Pahalı Kırmızı Tunik
+itm_bl_tunic02|Pahalı Kırmızı Tunik
+itm_bl_tunic02_pl|Pahalı Kırmızı Tunik
+itm_bl_tunic03|Pahalı Mavi Tunik
+itm_bl_tunic03_pl|Pahalı Mavi Tuni
+itm_bl_tunic04|Pahalı Mavi Tunik
+itm_bl_tunic04_pl|Pahalı Mavi Tunik
+itm_bl_tunic05|Pahalı Yeşil Tunik
+itm_bl_tunic05_pl|Pahalı Yeşil Tunik
+itm_bl_tunic06|Pahalı Yeşil Tunik
+itm_bl_tunic06_pl|Pahalı Yeşil Tunik
+itm_bl_tunic07|Pahalı Kahverengi Tunik 
+itm_bl_tunic07_pl|Pahalı Kahverengi Tunik
+itm_bl_tunic08|Pahalı Kahverengi Tunik
+itm_bl_tunic08_pl|Pahalı Kahverengi Tunik
+itm_bl_tunic09|Pahalı Sarı Tunik
+itm_bl_tunic09_pl|Pahalı Sarı Tunik
+itm_bl_tunic10|Pahalı Sarı Tunik
+itm_bl_tunic10_pl|Pahalı Sarı Tunik
+itm_bl_tunic11|Yeşil Tunik
+itm_bl_tunic11_pl|Yeşil Tunik
+itm_bl_tunic12|Kirli Tunik
+itm_bl_tunic12_pl|Kirli Tunik
+itm_red_cloak|Örtülü Tunik
+itm_red_cloak_pl|Örtülü Tunik
+itm_yellow_cloak|Örtülü Tunik
+itm_yellow_cloak_pl|Örtülü Tunik
+itm_green_cloak|Örtülü Tunik
+itm_green_cloak_pl|Örtülü Tunik
+itm_blue_cloak|Örtülü Tunik
+itm_blue_cloak_pl|Örtülü Tunik
+itm_leather_cloak|Örtülü Tunik
+itm_leather_cloak_pl|Örtülü Tunik
+itm_yellow2_cloak|Örtülü Tunik
+itm_yellow2_cloak_pl|Örtülü Tunik
+itm_briton_tunic1|Britanya Tuniği
+itm_briton_tunic1_pl|Britanya Tuniği
+itm_briton_tunic2|Britanya Tuniği
+itm_briton_tunic2_pl|Britanya Tuniği
+itm_briton_tunic3|Britanya Tuniği
+itm_briton_tunic3_pl|Britanya Tuniği
+itm_briton_tunic4|Britanya Tuniği
+itm_briton_tunic4_pl|Britanya Tuniği
+itm_briton_tunic5|Britanya Tuniği
+itm_briton_tunic5_pl|Britanya Tuniği
+itm_briton_tunic6|Britanya Tuniği
+itm_briton_tunic6_pl|Britanya Tuniği
+itm_briton_tunic7|Britanya Tuniği
+itm_briton_tunic7_pl|Britanya Tuniği
+itm_briton_tunic8|Britanya Tuniği
+itm_briton_tunic8_pl|Britanya Tuniği
+itm_briton_tunic9|Yeşil Britanya Tuniği
+itm_briton_tunic9_pl|Yeşil Britanya Tuniği
+itm_briton_tunic10|Yeşil Britanya Tuniği
+itm_briton_tunic10_pl|Yeşil Britanya Tuniği
+itm_briton_tunic11|Beyaz Britanya Tuniği
+itm_briton_tunic11_pl|Beyaz Britanya Tuniği
+itm_briton_tunic12|Beyaz Britanya Tuniği
+itm_briton_tunic12_pl|Beyaz Britanya Tuniği
+itm_briton_tunic13|Siyah Britanya Tuniği
+itm_briton_tunic13_pl|Siyah Britanya Tuniği
+itm_briton_tunic14|Siyah Britanya Tuniği
+itm_briton_tunic14_pl|Siyah Britanya Tuniği
+itm_briton_tunic15|Mavi Britanya Tuniği
+itm_briton_tunic15_pl|Mavi Britanya Tuniği
+itm_briton_tunic16|Mavi Britanya Tuniği
+itm_briton_tunic16_pl|Mavi Britanya Tuniği
+itm_briton_tunic17|Kırmızı Britanya Tuniği
+itm_briton_tunic17_pl|Kırmızı Britanya Tuniği
+itm_briton_tunic18|Kırmızı Britanya Tuniği
+itm_briton_tunic18_pl|Kırmızı Britanya Tuniği
+itm_briton_tunic19|Sarı Britanya Tuniği
+itm_briton_tunic19_pl|Sarı Britanya Tuniği
+itm_briton_tunic20|Sarı Britanya Tuniği
+itm_briton_tunic20_pl|Sarı Britanya Tuniği
+itm_briton_tunic21|Turuncu Britanya Tuniği
+itm_briton_tunic21_pl|Turuncu Britanya Tuniği
+itm_briton_tunic22|Turuncu Britanya Tuniği
+itm_briton_tunic22_pl|Turuncu Britanya Tuniği
+itm_briton_tunic23|Pahalı Britanya Tuniği
+itm_briton_tunic23_pl|Pahalı Britanya Tuniği
+itm_briton_tunic24|Pahalı Britanya Tuniği
+itm_briton_tunic24_pl|Pahalı Britanya Tuniği
+itm_briton_tunic25|Briton Tuniği
+itm_briton_tunic25_pl|Briton Tuniği
+itm_briton_tunic26|Briton Tuniği
+itm_briton_tunic26_pl|Briton Tuniği
+itm_briton_tunic27|Briton Tuniği
+itm_briton_tunic27_pl|Briton Tuniği
+itm_briton_tunic28|Briton Tuniği
+itm_briton_tunic28_pl|Briton Tuniği
+itm_celta_capa1|Goidelic Pelerini
+itm_celta_capa1_pl|Goidelic Pelerini
+itm_celta_capa2|Uzun Goidelic Pelerini
+itm_celta_capa2_pl|Uzun Goidelic Pelerini
+itm_celta_capa3|Goidelic Pelerini
+itm_celta_capa3_pl|Goidelic Pelerini
+itm_celta_capa4|Uzun Goidelic Pelerini
+itm_celta_capa4_pl|Uzun Goidelic Pelerini
+itm_brat1|Pahalı Goidelic Pelerini
+itm_brat1_pl|Pahalı Goidelic Pelerini
+itm_brat2|Pahalı Goidelic Pelerini
+itm_brat2_pl|Pahalı Goidelic Pelerini
+itm_brat3|Pahalı Uzun Goidelic Pelerini
+itm_brat3_pl|Pahalı Uzun Goidelic Pelerini
+itm_brat4|Pahalı Uzun Goidelic Pelerini
+itm_brat4_pl|Pahalı Uzun Goidelic Pelerini
+itm_gael_tunic_01|Godelic Tuniği
+itm_gael_tunic_01_pl|Godelic Tuniği
+itm_gael_tunic_02|Godelic Tuniği
+itm_gael_tunic_02_pl|Godelic Tuniği
+itm_gael_tunic_03|Godelic Tuniği
+itm_gael_tunic_03_pl|Godelic Tuniği
+itm_gael_tunic_04|Godelic Tuniği
+itm_gael_tunic_04_pl|Godelic Tuniği
+itm_gael_tunic_05|Örtülü Godelic Tuniği
+itm_gael_tunic_05_pl|Örtülü Godelic Tuniği
+itm_gael_tunic_06|Örtülü Godelic Tuniği
+itm_gael_tunic_06_pl|Örtülü Godelic Tuniği
+itm_gael_tunic_07|Örtülü Godelic Tuniği
+itm_gael_tunic_07_pl|Örtülü Godelic Tuniği
+itm_gael_tunic_08|Örtülü Godelic Tuniği
+itm_gael_tunic_08_pl|Örtülü Godelic Tuniği
+itm_gael_hoodtunic_09|Başlıklı Tunik
+itm_gael_hoodtunic_09_pl|Başlıklı Tunik
+itm_gael_hoodtunic_10|Başlıklı Tunik
+itm_gael_hoodtunic_10_pl|Başlıklı Tunik
+itm_gael_hoodtunic_11|Başlıklı Tunik
+itm_gael_hoodtunic_11_pl|Başlıklı Tunik
+itm_gael_hoodtunic_12|Başlıklı Tunik
+itm_gael_hoodtunic_12_pl|Başlıklı Tunik
+itm_picts_tunic_09|Mavi Pikt Tuniği
+itm_picts_tunic_09_pl|Mavi Pikt Tuniği
+itm_picts_tunic_10|Yeşil Pikt Tuniği
+itm_picts_tunic_10_pl|Yeşil Pikt Tuniği
+itm_picts_tunic_11|Kırmızı Pikt Tuniği
+itm_picts_tunic_11_pl|Kırmızı Pikt Tuniği
+itm_picts_tunic_12|Pahalı Pikt Tuniği
+itm_picts_tunic_12_pl|Pahalı Pikt Tuniği
+itm_picts_tunic_13|Turuncu Pikt Tuniği
+itm_picts_tunic_13_pl|Turuncu Pikt Tuniği
+itm_picts_tunic_14|Sarı Pikt Tuniği
+itm_picts_tunic_14_pl|Sarı Pikt Tuniği
+itm_picts_tunic_15|Beyaz Pikt Tuniği
+itm_picts_tunic_15_pl|Beyaz Pikt Tuniği
+itm_picts_tunic_16|Siyah Pikt Tuniği
+itm_picts_tunic_16_pl|Siyah Pikt Tuniği
+itm_pictish_painted1|Çıplak Pikt
+itm_pictish_painted1_pl|Pictish Naked
+itm_pictish_painted2|Pictish Naked
+itm_pictish_painted2_pl|Pictish Naked
+itm_pictish_painted3|Pictish Naked
+itm_pictish_painted3_pl|Pictish Naked
+itm_pictish_painted4|Pictish Naked
+itm_pictish_painted4_pl|Pictish Naked
+itm_picts_hoodtunic_01|Pikt Başlığı
+itm_picts_hoodtunic_01_pl|Pikt Başlığı
+itm_picts_hoodtunic_02|Pikt Başlığı
+itm_picts_hoodtunic_02_pl|Pikt Başlığı
+itm_picts_hoodtunic_03|Pikt Başlığı
+itm_picts_hoodtunic_03_pl|Pikt Başlığı
+itm_picts_hoodtunic_04|Pikt Başlığı
+itm_picts_hoodtunic_04_pl|Pikt Başlığı
+itm_picts_hoodtunic_05|Pikt Başlığı
+itm_picts_hoodtunic_05_pl|Pikt Başlığı
+itm_picts_hoodtunic_06|Pikt Başlığı
+itm_picts_hoodtunic_06_pl|Pikt Başlığı
+itm_picts_hoodtunic_07|Pikt Başlığı
+itm_picts_hoodtunic_07_pl|Pikt Başlığı
+itm_picts_hoodtunic_11|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_11_pl|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_12|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_12_pl|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_13|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_13_pl|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_14|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_14_pl|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_15|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_15_pl|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_16|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_16_pl|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_17|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_17_pl|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_18|Başlıklı Pikt Tuniği
+itm_picts_hoodtunic_18_pl|Başlıklı Pikt Tuniği
+itm_linen_tunic|Keten Tunik
+itm_linen_tunic_pl|Keten Tunik
+itm_woman_saxon1|Kadın Elbisesi
+itm_woman_saxon1_pl|Kadın Elbisesi
+itm_woman_saxon2|Kadın Elbisesi
+itm_woman_saxon2_pl|Kadın Elbisesi
+itm_woman_saxon3|Kadın Elbisesi
+itm_woman_saxon3_pl|Kadın Elbisesi
+itm_woman_saxon4|Kadın Elbisesi
+itm_woman_saxon4_pl|Kadın Elbisesi
+itm_woman_saxon5|Kadın Elbisesi
+itm_woman_saxon5_pl|Kadın Elbisesi
+itm_woman_saxon6|Kadın Elbisesi
+itm_woman_saxon6_pl|Kadın Elbisesi
+itm_woman_saxon7|Kadın Elbisesi
+itm_woman_saxon7_pl|Kadın Elbisesi
+itm_woman_saxon8|Kadın Elbisesi
+itm_woman_saxon8_pl|Kadın Elbisesi
+itm_woman_saxon9|Kadın Elbisesi
+itm_woman_saxon9_pl|Kadın Elbisesi
+itm_woman_saxon10|Kadın Elbisesi
+itm_woman_saxon10_pl|Kadın Elbisesi
+itm_woman_saxon11|Kadın Elbisesi
+itm_woman_saxon11_pl|Kadın Elbisesi
+itm_richwoman_saxon1|Pahalı Kadın Elbisesi
+itm_richwoman_saxon1_pl|Pahalı Kadın Elbisesi
+itm_richwoman_saxon2|Pahalı Kadın Elbisesi
+itm_richwoman_saxon2_pl|Pahalı Kadın Elbisesi
+itm_richwoman_saxon3|Pahalı Kadın Elbisesi
+itm_richwoman_saxon3_pl|Pahalı Kadın Elbisesi
+itm_richwoman_saxon4|Pahalı Kadın Elbisesi
+itm_richwoman_saxon4_pl|Pahalı Kadın Elbisesi
+itm_richwoman_saxon5|Pahalı Kadın Elbisesi
+itm_richwoman_saxon5_pl|Pahalı Kadın Elbisesi
+itm_richwoman_saxon6|Pahalı Kadın Elbisesi
+itm_richwoman_saxon6_pl|Pahalı Kadın Elbisesi
+itm_richwoman_saxon7|Pahalı Kadın Elbisesi
+itm_richwoman_saxon7_pl|Pahalı Kadın Elbisesi
+itm_richwoman_saxon8|Pahalı Kadın Elbisesi
+itm_richwoman_saxon8_pl|Pahalı Kadın Elbisesi
+itm_richwoman_saxon9|Pahalı Kadın Elbisesi
+itm_richwoman_saxon9_pl|Pahalı Kadın Elbisesi
+itm_queenwoman_saxon|Mor Kadın Elbisesi
+itm_queenwoman_saxon_pl|Mor Kadın Elbisesi
+itm_queenpict_long_tunic|Pahalı Kadın Elbisesi
+itm_queenpict_long_tunic_pl|Pahalı Kadın Elbisesi
+itm_pict_richlong_tunic1|Pahalı Kadın Elbisesi
+itm_pict_richlong_tunic1_pl|Pahalı Kadın Elbisesi
+itm_pict_richlong_tunic2|Pahalı Kadın Elbisesi
+itm_pict_richlong_tunic2_pl|Pahalı Kadın Elbisesi
+itm_pict_richlong_tunic3|Pahalı Kadın Elbisesi
+itm_pict_richlong_tunic3_pl|Pahalı Kadın Elbisesi
+itm_pict_long_tunic1|Kadın Elbisesi
+itm_pict_long_tunic1_pl|Kadın Elbisesi
+itm_pict_long_tunic2|Kadın Elbisesi
+itm_pict_long_tunic2_pl|Kadın Elbisesi
+itm_pict_long_tunic3|Kadın Elbisesi
+itm_pict_long_tunic3_pl|Kadın Elbisesi
+itm_pict_long_tunic4|Kadın Elbisesi
+itm_pict_long_tunic4_pl|Kadın Elbisesi
+itm_pict_long_tunic5|Kadın Elbisesi
+itm_pict_long_tunic5_pl|Kadın Elbisesi
+itm_pict_long_tunic6|Kadın Elbisesi
+itm_pict_long_tunic6_pl|Kadın Elbisesi
+itm_woman_norse1|Kadın Elbisesi
+itm_woman_norse1_pl|Kadın Elbisesi
+itm_woman_norse2|Kadın Elbisesi
+itm_woman_norse2_pl|Kadın Elbisesi
+itm_woman_norse3|Kadın Elbisesi
+itm_woman_norse3_pl|Kadın Elbisesi
+itm_woman_norse4|Kadın Elbisesi
+itm_woman_norse4_pl|Kadın Elbisesi
+itm_woman_norse5|Kadın Elbisesi
+itm_woman_norse5_pl|Kadın Elbisesi
+itm_woman_norse6|Kadın Elbisesi
+itm_woman_norse6_pl|Kadın Elbisesi
+itm_richwoman_norse1|Pahalı Kadın Elbisesi
+itm_richwoman_norse1_pl|Pahalı Kadın Elbisesi
+itm_richwoman_norse2|Pahalı Kadın Elbisesi
+itm_richwoman_norse2_pl|Pahalı Kadın Elbisesi
+itm_richwoman_norse3|Pahalı Kadın Elbisesi
+itm_richwoman_norse3_pl|Pahalı Kadın Elbisesi
+itm_richwoman_norse4|Pahalı Kadın Elbisesi
+itm_richwoman_norse4_pl|Pahalı Kadın Elbisesi
+itm_btunic_1woman|Kısa Kadın Tuniği 
+itm_btunic_1woman_pl|Kısa Kadın Tuniği
+itm_btunic_2woman|Kısa Kadın Tuniği
+itm_btunic_2woman_pl|Kısa Kadın Tuniği
+itm_btunic_3woman|Kısa Kadın Tuniği
+itm_btunic_3woman_pl|Kısa Kadın Tuniği
+itm_btunic_4woman|Kısa Kadın Tuniği
+itm_btunic_4woman_pl|Kısa Kadın Tuniği
+itm_btunic_5woman|Kısa Kadın Tuniği
+itm_btunic_5woman_pl|Kısa Kadın Tuniği
+itm_btunic_6woman|Kısa Kadın Tuniği
+itm_btunic_6woman_pl|Kısa Kadın Tuniği
+itm_btunic_7woman|Kısa Kadın Tuniği
+itm_btunic_7woman_pl|Kısa Kadın Tuniği
+itm_btunic_8woman|Kısa Kadın Tuniği
+itm_btunic_8woman_pl|Kısa Kadın Tuniği
+itm_ptunic_1woman|Kısa Kadın Tuniği
+itm_ptunic_1woman_pl|Kısa Kadın Tuniği
+itm_ptunic_2woman|Kısa Kadın Tuniği
+itm_ptunic_2woman_pl|Kısa Kadın Tuniği
+itm_ptunic_3woman|Kısa Kadın Tuniği
+itm_ptunic_3woman_pl|Kısa Kadın Tuniği
+itm_ptunic_4woman|Kısa Kadın Tuniği
+itm_ptunic_4woman_pl|Kısa Kadın Tuniği
+itm_ptunic_5woman|Kısa Kadın Tuniği
+itm_ptunic_5woman_pl|Kısa Kadın Tuniği
+itm_ptunic_6woman|Kısa Kadın Tuniği
+itm_ptunic_6woman_pl|Kısa Kadın Tuniği
+itm_ptunic_7woman|Kısa Kadın Tuniği
+itm_ptunic_7woman_pl|Kısa Kadın Tuniği
+itm_gaeltunic_1woman|Kısa Kadın Tuniği
+itm_gaeltunic_1woman_pl|Kısa Kadın Tuniği
+itm_gaeltunic_2woman|Kısa Kadın Tuniği
+itm_gaeltunic_2woman_pl|Kısa Kadın Tuniği
+itm_gaeltunic_3woman|Kısa Kadın Tuniği
+itm_gaeltunic_3woman_pl|Kısa Kadın Tuniği
+itm_gaeltunic_4woman|Kısa Kadın Tuniği
+itm_gaeltunic_4woman_pl|Kısa Kadın Tuniği
+itm_gaeltunic_5woman|Kısa Kadın Tuniği
+itm_gaeltunic_5woman_pl|Kısa Kadın Tuniği
+itm_gaeltunic_6woman|Kısa Kadın Tuniği
+itm_gaeltunic_6woman_pl|Kısa Kadın Tuniği
+itm_gaeltunic_7woman|Kısa Kadın Tuniği
+itm_gaeltunic_7woman_pl|Kısa Kadın Tuniği
+itm_gaeltunic_8woman|Kısa Mor Kadın Tuniği
+itm_gaeltunic_8woman_pl|Kısa Mor Kadın Tuniği
+itm_britontunic_1woman|Siyah Tunik
+itm_britontunic_1woman_pl|Siyah Tunik
+itm_britontunic_2woman|Mavi Tunik
+itm_britontunic_2woman_pl|Mavi Tunik
+itm_britontunic_3woman|Yeşil Tunik
+itm_britontunic_3woman_pl|Yeşil Tunik
+itm_britontunic_4woman|Turuncu Tunik
+itm_britontunic_4woman_pl|Turuncu Tunik
+itm_britontunic_5woman|Beyaz Tunik
+itm_britontunic_5woman_pl|Beyaz Tunik
+itm_britontunic_6woman|Sarı Tunik
+itm_britontunic_6woman_pl|Sarı Tunik
+itm_britontunic_7woman|Kırmızı Tunik
+itm_britontunic_7woman_pl|Kırmızı Tunik
+itm_britontunic_8woman|Mor Tunik
+itm_britontunic_8woman_pl|Mor Tunik
+itm_veil_a|Başlık
+itm_veil_a_pl|Başlık
+itm_veil_b|Mavi Başlık
+itm_veil_b_pl|Mavi Başlık
+itm_veil_c|Turuncu Başlık
+itm_veil_c_pl|Turuncu Başlık
+itm_veil_d|Koyu Renk Kapşon
+itm_veil_d_pl|Koyu Renk Kapşon
+itm_veil_e|Beyaz Kapşon
+itm_veil_e_pl|Beyaz Kapşon
+itm_veil_f|Mavi Başlık
+itm_veil_f_pl|Mavi Başlık
+itm_elite_veil_1|Hanım Başlığı
+itm_elite_veil_1_pl|Hanım Başlığı
+itm_elite_veil_2|Hanım Başlığı
+itm_elite_veil_2_pl|Hanım Başlığı
+itm_elite_veil_3|Hanım Başlığı
+itm_elite_veil_3_pl|Hanım Başlığı
+itm_elite_veil_4|Hanım Başlığı
+itm_elite_veil_4_pl|Hanım Başlığı
+itm_common_veil_a|Başlık
+itm_common_veil_a_pl|Başlık
+itm_common_veil_b|Başlık
+itm_common_veil_b_pl|Başlık
+itm_common_veil_c|Başlık
+itm_common_veil_c_pl|Başlık
+itm_common_veil_d|Başlık
+itm_common_veil_d_pl|Başlık
+itm_common_veil_e|Başlık
+itm_common_veil_e_pl|Başlık
+itm_common_veil_f|Başlık
+itm_common_veil_f_pl|Başlık
+itm_elite_veil_5|Hanım Başlığı
+itm_elite_veil_5_pl|Hanım Başlığı
+itm_elite_veil_6|Hanım Başlığı
+itm_elite_veil_6_pl|Hanım Başlığı
+itm_elite_veil_7|Hanım Başlığı
+itm_elite_veil_7_pl|Hanım Başlığı
+itm_elite_veil_8|Hanım Başlığı
+itm_elite_veil_8_pl|Hanım Başlığı
+itm_gambeson1|Kısa Gambeson
+itm_gambeson1_pl|Kısa Gambeson
+itm_gambeson2|Kısa Gambeson
+itm_gambeson2_pl|Kısa Gambeson
+itm_gambeson3|Kısa Gambeson
+itm_gambeson3_pl|Kısa Gambeson
+itm_gambeson4|Kısa Gambeson
+itm_gambeson4_pl|Kısa Gambeson
+itm_gambeson5|Kısa Gambeson
+itm_gambeson5_pl|Kısa Gambeson
+itm_gambeson6|Kısa Gambeson
+itm_gambeson6_pl|Kısa Gambeson
+itm_gambeson7|Kısa Gambeson
+itm_gambeson7_pl|Kısa Gambeson
+itm_gambeson8|Kısa Gambeson
+itm_gambeson8_pl|Kısa Gambeson
+itm_gambeson9|Kısa Gambeson
+itm_gambeson9_pl|Kısa Gambeson
+itm_gambeson10|Kısa Gambeson
+itm_gambeson10_pl|Kısa Gambeson
+itm_gambeson11|Kısa Gambeson
+itm_gambeson11_pl|Kısa Gambeson
+itm_gambeson12|Kısa Gambeson
+itm_gambeson12_pl|Kısa Gambeson
+itm_gambeson13|Kısa Gambeson
+itm_gambeson13_pl|Kısa Gambeson
+itm_gambeson14|Kısa Gambeson
+itm_gambeson14_pl|Kısa Gambeson
+itm_gambeson15|Kısa Gambeson
+itm_gambeson15_pl|Kısa Gambeson
+itm_gambeson16|Kısa Gambeson
+itm_gambeson16_pl|Kısa Gambeson
+itm_gambeson17|Kısa Gambeson
+itm_gambeson17_pl|Kısa Gambeson
+itm_gambeson18|Kısa Gambeson
+itm_gambeson18_pl|Kısa Gambeson
+itm_gambeson19|Kısa Gambeson
+itm_gambeson19_pl|Kısa Gambeson
+itm_gambeson20|Kısa Gambeson
+itm_gambeson20_pl|Kısa Gambeson
+itm_gambeson21|Kısa Gambeson
+itm_gambeson21_pl|Kısa Gambeson
+itm_gambeson22|Kısa Gambeson
+itm_gambeson22_pl|Kısa Gambeson
+itm_gambeson23|Kısa Gambeson
+itm_gambeson23_pl|Kısa Gambeson
+itm_gambeson24|Kısa Gambeson
+itm_gambeson24_pl|Kısa Gambeson
+itm_gambeson1gael|Pikt Ceketi
+itm_gambeson1gael_pl|Pikt Ceketi
+itm_gambeson2gael|Pikt Ceketi
+itm_gambeson2gael_pl|Pikt Ceketi
+itm_gambeson3gael|Pikt Ceketi
+itm_gambeson3gael_pl|Pikt Ceketi
+itm_gambeson4gael|Pikt Ceketi
+itm_gambeson4gael_pl|Pikt Ceketi
+itm_gambeson5gael|Pikt Ceketi
+itm_gambeson5gael_pl|Pikt Ceketi
+itm_gambeson6gael|Pikt Ceketi
+itm_gambeson6gael_pl|Pikt Ceketi
+itm_gambeson7gael|Pikt Ceketi
+itm_gambeson7gael_pl|Pikt Ceketi
+itm_gambeson8gael|Pikt Ceketi
+itm_gambeson8gael_pl|Pikt Ceketi
+itm_gambeson9gael|Pikt Ceketi
+itm_gambeson9gael_pl|Pikt Ceketi
+itm_gambeson10gael|Pikt Ceketi
+itm_gambeson10gael_pl|Pikt Ceketi
+itm_gambeson11gael|Pikt Ceketi
+itm_gambeson11gael_pl|Pikt Ceketi
+itm_gambeson12gael|Pikt Ceketi
+itm_gambeson12gael_pl|Pikt Ceketi
+itm_gambeson13gael|Örtülü Goidelic Ceketi
+itm_gambeson13gael_pl|Örtülü Goidelic Ceketi
+itm_gambeson14gael|Örtülü Goidelic Ceketi
+itm_gambeson14gael_pl|Örtülü Goidelic Ceketi
+itm_gambeson15gael|Örtülü Goidelic Ceketi
+itm_gambeson15gael_pl|Örtülü Goidelic Ceketi
+itm_gambeson16gael|Örtülü Goidelic Ceketi
+itm_gambeson16gael_pl|Örtülü Goidelic Ceketi
+itm_gambeson1cloak|Örtülü Kısa Gambeson
+itm_gambeson1cloak_pl|Örtülü Kısa Gambeson
+itm_gambeson2cloak|Örtülü Kısa Gambeson
+itm_gambeson2cloak_pl|Örtülü Kısa Gambeson
+itm_gambeson5cloak|Örtülü Kısa Gambeson
+itm_gambeson5cloak_pl|Örtülü Kısa Gambeson
+itm_gambeson6cloak|Örtülü Kısa Gambeson
+itm_gambeson6cloak_pl|Örtülü Kısa Gambeson
+itm_gambeson3cloak|Örtülü Kısa Gambeson
+itm_gambeson3cloak_pl|Örtülü Uzun Gambeson
+itm_gambeson4cloak|Örtülü Uzun Gambeson
+itm_gambeson4cloak_pl|Örtülü Uzun Gambeson
+itm_gambeson25|Gambeson
+itm_gambeson25_pl|Gambeson
+itm_gambeson26|Gambeson
+itm_gambeson26_pl|Gambeson
+itm_gambeson27|Gambeson
+itm_gambeson27_pl|Gambeson
+itm_gambeson28|Gambeson
+itm_gambeson28_pl|Gambeson
+itm_gambeson29|Gambeson
+itm_gambeson29_pl|Gambeson
+itm_gambeson30|Gambeson
+itm_gambeson30_pl|Gambeson
+itm_gambeson31|Gambeson
+itm_gambeson31_pl|Gambeson
+itm_gambeson32|Gambeson
+itm_gambeson32_pl|Gambeson
+itm_gambeson33|Uzun Gambeson
+itm_gambeson33_pl|Uzun Gambeson
+itm_gambeson34|Uzun Gambeson
+itm_gambeson34_pl|Uzun Gambeson
+itm_gambeson35|Uzun Gambeson
+itm_gambeson35_pl|Uzun Gambeson
+itm_gambeson36|Uzun Gambeson
+itm_gambeson36_pl|Uzun Gambeson
+itm_gambeson37|Uzun Gambeson
+itm_gambeson37_pl|Uzun Gambeson
+itm_gambeson38|Uzun Gambeson
+itm_gambeson38_pl|Uzun Gambeson
+itm_gambeson39|Uzun Gambeson
+itm_gambeson39_pl|Uzun Gambeson
+itm_gambeson40|Uzun Gambeson
+itm_gambeson40_pl|Uzun Gambeson
+itm_gambeson41|Uzun Gambeson
+itm_gambeson41_pl|Uzun Gambeson
+itm_gambeson42|Uzun Gambeson
+itm_gambeson42_pl|Uzun Gambeson
+itm_gambeson43|Uzun Gambeson
+itm_gambeson43_pl|Uzun Gambeson
+itm_gambeson44|Uzun Gambeson
+itm_gambeson44_pl|Uzun Gambeson
+itm_gambeson45|Uzun Gambeson
+itm_gambeson45_pl|Uzun Gambeson
+itm_gambeson46|Uzun Gambeson
+itm_gambeson46_pl|Uzun Gambeson
+itm_gambeson47|Uzun Gambeson
+itm_gambeson47_pl|Uzun Gambeson
+itm_gambeson48|Uzun Gambeson
+itm_gambeson48_pl|Uzun Gambeson
+itm_mail_shirt|Zırh
+itm_mail_shirt_pl|Zırh
+itm_mail_shirt_1|Zırh
+itm_mail_shirt_1_pl|Zırh
+itm_mail_shirt_2|Zırh
+itm_mail_shirt_2_pl|Zırh
+itm_mail_shirt_3|Mavi Çelik Zırh
+itm_mail_shirt_3_pl|Mavi Çelik Zırh
+itm_mail_shirt_6|Kürklü Zırh
+itm_mail_shirt_6_pl|Kürklü Zırh
+itm_mail_shirt_7|Kürklü Zırh
+itm_mail_shirt_7_pl|Kürklü Zırh
+itm_mail_shirt_8|Kürklü Zırh
+itm_mail_shirt_8_pl|Kürklü Zırh
+itm_mail_shirt_9|Kürklü Zırh
+itm_mail_shirt_9_pl|Kürklü Zırh
+itm_mail_shirt_10|Mavi Çelik Zırh
+itm_mail_shirt_10_pl|Mavi Çelik Zırh
+itm_mail_shirt_11|Hringserks
+itm_mail_shirt_11_pl|Hringserks
+itm_mail_shirt_11_2|Hringserks
+itm_mail_shirt_11_2_pl|Hringserks
+itm_mail_shirt_11_3|Hringserks
+itm_mail_shirt_11_3_pl|Hringserks
+itm_mail_shirt_12|Mavi Çelik Örtülü
+itm_mail_shirt_12_pl|Mavi Çelik Örtülü
+itm_mail_shirt_13|Mavi Çelik Örtülü
+itm_mail_shirt_13_pl|Mavi Çelik Örtülü
+itm_mail_shirt_4|Sakson Zırhı
+itm_mail_shirt_4_pl|Sakson Zırhı
+itm_mail_shirt_5|Sakson Zırhı
+itm_mail_shirt_5_pl|Sakson Zırhı
+itm_mail_shirt_5_1|Sakson Zırhı
+itm_mail_shirt_5_1_pl|Sakson Zırhı
+itm_mail_shirt_5_2|Sakson Zırhı
+itm_mail_shirt_5_2_pl|Sakson Zırhı
+itm_mail_shirt_12_1|Goidelic Zırhı
+itm_mail_shirt_12_1_pl|Goidelic Zırhı
+itm_mail_shirt_12_2|Goidelic Zırhı
+itm_mail_shirt_12_2_pl|Goidelic Zırhı
+itm_mail_shirt_12_3|Goidelic Zırhı
+itm_mail_shirt_12_3_pl|Goidelic Zırhı
+itm_mail_shirt_12_4|Goidelic Zırhı
+itm_mail_shirt_12_4_pl|Goidelic Zırhı
+itm_mail_shirt_13_1|Goidelic Zırhı
+itm_mail_shirt_13_1_pl|Goidelic Zırhı
+itm_mail_shirt_13_2|Goidelic Zırhı
+itm_mail_shirt_13_2_pl|Goidelic Zırhı
+itm_mail_shirt_13_3|Goidelic Zırhı
+itm_mail_shirt_13_3_pl|Goidelic Zırhı
+itm_mail_shirt_13_4|Goidelic Zırhı
+itm_mail_shirt_13_4_pl|Goidelic Zırhı
+itm_byrnie|Zincir Zırh
+itm_byrnie_pl|Zincir Zırh
+itm_byrnie2|Zincir Zırh
+itm_byrnie2_pl|Zincir Zırh
+itm_byrnie3|Zincir Zırh
+itm_byrnie3_pl|Zincir Zırh
+itm_byrnie4|Zincir Zırh
+itm_byrnie4_pl|Zincir Zırh
+itm_byrnie5|Mavi Çelik Zincir Zırh
+itm_byrnie5_pl|Mavi Çelik Zincir Zırh
+itm_byrnie6|Mavi Çelik Zincir Zırh
+itm_byrnie6_pl|Mavi Çelik Zincir Zırh
+itm_byrnie7|Zincir Zırh
+itm_byrnie7_pl|Zincir Zırh
+itm_byrnie8|Zincir Zırh
+itm_byrnie8_pl|Zincir Zırh
+itm_byrnie9|Kürklü Zincir Zırh
+itm_byrnie9_pl|Kürklü Zincir Zırh
+itm_byrnie10|Kürklü Cübbe
+itm_byrnie10_pl|Kürklü Cübbe
+itm_byrnie11|Mavi Çelik Zincir Zırh
+itm_byrnie11_pl|Mavi Çelik Zincir Zırh
+itm_byrnie12|Örtülü Zincir Zırh
+itm_byrnie12_pl|Örtülü Zincir Zırh
+itm_byrnie13|Örtülü Zincir Zırh
+itm_byrnie13_pl|Örtülü Zincir Zırh
+itm_byrnie14|Mavi Çelik Zincir Zırh
+itm_byrnie14_pl|Örtülü Mavi Çelik Zincir Zırh
+itm_byrnie15|Zırh
+itm_byrnie15_pl|Zırh
+itm_byrnie16|Zırh
+itm_byrnie16_pl|Zırh
+itm_byrnie17|Zırh
+itm_byrnie17_pl|Zırh
+itm_byrnie18|Zırh
+itm_byrnie18_pl|Zırh
+itm_byrnie19|Zırh
+itm_byrnie19_pl|Zırh
+itm_byrnie20|Zırh
+itm_byrnie20_pl|Zırh
+itm_byrnie21|Zırh
+itm_byrnie21_pl|Zırh
+itm_byrnie22|Zırh
+itm_byrnie22_pl|Zırh
+itm_byrnie23|Zırh
+itm_byrnie23_pl|Zırh
+itm_byrnie24|Zırh
+itm_byrnie24_pl|Zırh
+itm_byrnie25|Zırh
+itm_byrnie25_pl|Zırh
+itm_byrnie26|Zırh
+itm_byrnie26_pl|Zırh
+itm_byrnie27|Zırh
+itm_byrnie27_pl|Zırh
+itm_byrnie28|Zırh
+itm_byrnie28_pl|Zırh
+itm_byrnie29|Zırh
+itm_byrnie29_pl|Zırh
+itm_byrnie30|Zırh
+itm_byrnie30_pl|Zırh
+itm_byrnie31|Cübbeli Zırh
+itm_byrnie31_pl|Cübbeli Zırh
+itm_byrnie32|Cübbeli Zırh
+itm_byrnie32_pl|Cübbeli Zırh
+itm_byrnie33|Cübbeli Zırh
+itm_byrnie33_pl|Cübbeli Zırh
+itm_byrnie34|Cübbeli Zırh
+itm_byrnie34_pl|Cübbeli Zırh
+itm_byrnie35|Zırh
+itm_byrnie35_pl|Zırh
+itm_byrnie36|Zırh
+itm_byrnie36_pl|Zırh
+itm_byrnie37|Zırh
+itm_byrnie37_pl|Zırh
+itm_byrnie38|Zırh
+itm_byrnie38_pl|Zırh
+itm_orm_byrnie|Orm'un Zırhı
+itm_orm_byrnie_pl|Orm'un Zırhı
+itm_lamellar_armor|Tabakalı Zırh
+itm_lamellar_armor_pl|Tabakalı Zırh
+itm_burlap_tunic|Kendir Tunik
+itm_burlap_tunic_pl|Kendir Tunik
+itm_hood_01|Başlık
+itm_hood_01_pl|Başlık
+itm_hood_02|Başlık
+itm_hood_02_pl|Başlık
+itm_phrygian1|Frigyalı
+itm_phrygian1_pl|Frigyalı Başlığı
+itm_phrygian2|Frigyalı Başlığı
+itm_phrygian2_pl|Frigyalı Başlığı
+itm_phrygian3|Frigyalı Başlığı
+itm_phrygian3_pl|Frigyalı Başlığı
+itm_phrygian4|Frigyalı Başlığı
+itm_phrygian4_pl|Frigyalı Başlığı
+itm_phrygian5|Frigyalı Başlığı
+itm_phrygian5_pl|Frigyalı Başlığı
+itm_phrygian6|Frigyalı Başlığı
+itm_phrygian6_pl|Frigyalı Başlığı
+itm_phrygian7|Kaliteli Frigyalı Başlığı
+itm_phrygian7_pl|Kaliteli Frigyalı Başlığı
+itm_phrygian8|Kaliteli Frigyalı Başlığı
+itm_phrygian8_pl|Kaliteli Frigyalı Başlığı
+itm_phrygian9|Kaliteli Frigyalı Başlığı
+itm_phrygian9_pl|Kaliteli Frigyalı Başlığı
+itm_phrygian10|Kaliteli Frigyalı Başlığı
+itm_phrygian10_pl|Kaliteli Frigyalı Başlığı
+itm_phrygian11|Kaliteli Frigyalı Başlığı
+itm_phrygian11_pl|Kaliteli Frigyalı Başlığı
+itm_phrygian12|Kaliteli Frigyalı Başlığı
+itm_phrygian12_pl|Kaliteli Frigyalı Başlığı
+itm_phrygian13|Kaliteli Frigyalı Başlığı
+itm_phrygian13_pl|Kaliteli Frigyalı Başlığı
+itm_phrygian14|Dekoratif Frigyalı Başlığı
+itm_phrygian14_pl|Dekoratif Frigyalı Başlığı
+itm_phrygian15|Dekoratif Frigyalı Başlığı
+itm_phrygian15_pl|Dekoratif Frigyalı Başlığı
+itm_phrygian16|Dekoratif Frigyalı Başlığı
+itm_phrygian16_pl|Dekoratif Frigyalı Başlığı
+itm_phrygian17|Dekoratif Frigyalı Başlığı
+itm_phrygian17_pl|Dekoratif Frigyalı Başlığı
+itm_briton_helm|Basit Miğfer
+itm_briton_helm_pl|Basit Miğfer
+itm_briton_helm2|Basit Miğfer
+itm_briton_helm2_pl|Basit Miğfer
+itm_briton_helm3|Eski Basit Miğfer
+itm_briton_helm3_pl|Eski Basit Miğfer
+itm_briton_helm4|Eski Basit Miğfer
+itm_briton_helm4_pl|Eski Basit Miğfer
+itm_briton_helm5|Basit Deri Miğfer
+itm_briton_helm5_pl|Basit Deri Miğfer
+itm_briton_helm6|Basit Deri Miğfer
+itm_briton_helm6_pl|Basit Deri Miğfer
+itm_briton_helm7|Eski Basit Deri Miğfer
+itm_briton_helm7_pl|Eski Basit Deri Miğfer
+itm_briton_helm8|Eski Basit Deri Miğfer
+itm_briton_helm8_pl|Eski Basit Deri Miğfer
+itm_briton_helm9|Kapalı Miğfer
+itm_briton_helm9_pl|Kapalı Miğfer
+itm_briton_helm10|Kapalı Miğfer
+itm_briton_helm10_pl|Kapalı Miğfer
+itm_briton_helm11|Eski Kapalı Miğfer
+itm_briton_helm11_pl|Eski Kapalı Miğfer
+itm_briton_helm12|Eski Kapalı Miğfer
+itm_briton_helm12_pl|Eski Kapalı Miğfer
+itm_briton_helm13|Kapalı Miğfer
+itm_briton_helm13_pl|Kapalı Miğfer
+itm_briton_helm14|Kapalı Miğfer
+itm_briton_helm14_pl|Kapalı Miğfer
+itm_briton_helm15|Kapalı Miğfer
+itm_briton_helm15_pl|Kapalı Miğfer
+itm_briton_helm16|Eski Kapalı Miğfer
+itm_briton_helm16_pl|Eski Kapalı Miğfer
+itm_briton_helm17|Eski Kapalı Miğfer
+itm_briton_helm17_pl|Eski Kapalı Miğfer
+itm_briton_helm18|Eski Kapalı Miğfer
+itm_briton_helm18_pl|Eski Kapalı Miğfer
+itm_briton_helm19|Nazal Miğfer
+itm_briton_helm19_pl|Nazal Miğfer
+itm_briton_helm20|Nazal Miğfer
+itm_briton_helm20_pl|Nazal Miğfer
+itm_briton_helm21|Nazal Miğfer
+itm_briton_helm21_pl|Nazal Miğfer
+itm_briton_helm22|Eski Nazal Miğfer
+itm_briton_helm22_pl|Eski Nazal Miğfer
+itm_briton_helm23|Eski Nazal Miğfer
+itm_briton_helm23_pl|Eski Nazal Miğfer
+itm_briton_helm24|Eski Nazal Miğfer
+itm_briton_helm24_pl|Eski Nazal Miğfer
+itm_briton_helm25|Deri Miğfer
+itm_briton_helm25_pl|Deri Miğfer
+itm_briton_helm26|Deri Miğfer
+itm_briton_helm26_pl|Deri Miğfer
+itm_briton_helm27|Deri Miğfer
+itm_briton_helm27_pl|Deri Miğfer
+itm_briton_helm28|Eski Deri Miğfer 
+itm_briton_helm28_pl|Eski Deri Miğfer 
+itm_briton_helm29|Eski Deri Miğfer 
+itm_briton_helm29_pl|Eski Deri Miğfer 
+itm_briton_helm30|Eski Deri Miğfer 
+itm_briton_helm30_pl|Eski Deri Miğfer 
+itm_briton_helm31|Zırhlı Miğfer
+itm_briton_helm31_pl|Zırhlı Miğfer
+itm_briton_helm32|Zırhlı Miğfer
+itm_briton_helm32_pl|Zırhlı Miğfer
+itm_briton_helm33|Zırhlı Miğfer
+itm_briton_helm33_pl|Zırhlı Miğfer
+itm_briton_helm34|Zırhlı Miğfer
+itm_briton_helm34_pl|Zırhlı Miğfer
+itm_briton_helm35|Kapalı Miğfer
+itm_briton_helm35_pl|Kapalı Miğfer
+itm_briton_helm36|Kapalı Miğfer
+itm_briton_helm36_pl|Kapalı Miğfer
+itm_briton_helm37|Kapalı Miğfer
+itm_briton_helm37_pl|Kapalı Miğfer
+itm_briton_helm38|Eski Kapalı Miğfer
+itm_briton_helm38_pl|Eski Kapalı Miğfer
+itm_briton_helm39|Eski Kapalı Miğfer
+itm_briton_helm39_pl|Eski Kapalı Miğfer
+itm_briton_helm40|Eski Kapalı Miğfer
+itm_briton_helm40_pl|Eski Kapalı Miğfer
+itm_spangenhelm_1|Basit Miğfer
+itm_spangenhelm_1_pl|Basit Miğfer
+itm_spangenhelm_2|Basit Miğfer
+itm_spangenhelm_2_pl|Basit Miğfer
+itm_spangenhelm_3|Eski Basit Miğfer
+itm_spangenhelm_3_pl|Eski Basit Miğfer
+itm_spangenhelm_4|Eski Basit Miğfer
+itm_spangenhelm_4_pl|Eski Basit Miğfer
+itm_spangenhelm_5|Zırhlı Basit Miğfer
+itm_spangenhelm_5_pl|Zırhlı Basit Miğfer
+itm_spangenhelm_6|Zırhlı Basit Miğfer
+itm_spangenhelm_6_pl|Zırhlı Basit Miğfer
+itm_spangenhelm_7|Basit Eski Deri Miğfer 
+itm_spangenhelm_7_pl|Basit Eski Deri Miğfer 
+itm_spangenhelm_8|Basit Eski Zırhlı Miğfer 
+itm_spangenhelm_8_pl|Basit Eski Zırhlı Miğfer 
+itm_spangenhelm_9|Kapalı Miğfer
+itm_spangenhelm_9_pl|Kapalı Miğfer
+itm_spangenhelm_10|Kapalı Miğfer
+itm_spangenhelm_10_pl|Kapalı Miğfer
+itm_spangenhelm_11|Eski Kapalı Miğfer
+itm_spangenhelm_11_pl|Eski Kapalı Miğfer
+itm_spangenhelm_12|Eski Kapalı Miğfer
+itm_spangenhelm_12_pl|Eski Kapalı Miğfer
+itm_spangenhelm_13|Kapalı Miğfer
+itm_spangenhelm_13_pl|Kapalı Miğfer
+itm_spangenhelm_14|Kapalı Miğfer
+itm_spangenhelm_14_pl|Kapalı Miğfer
+itm_spangenhelm_15|Kapalı Miğfer
+itm_spangenhelm_15_pl|Kapalı Miğfer
+itm_spangenhelm_16|Eski Kapalı Miğfer
+itm_spangenhelm_16_pl|Eski Kapalı Miğfer
+itm_spangenhelm_17|Eski Kapalı Miğfer
+itm_spangenhelm_17_pl|Eski Kapalı Miğfer
+itm_spangenhelm_18|Eski Kapalı Miğfer
+itm_spangenhelm_18_pl|Eski Kapalı Miğfer
+itm_spangenhelm_19|Nazal Miğfer
+itm_spangenhelm_19_pl|Nazal Miğfer
+itm_spangenhelm_20|Nazal Miğfer
+itm_spangenhelm_20_pl|Nazal Miğfer
+itm_spangenhelm_21|Nazal Miğfer
+itm_spangenhelm_21_pl|Nazal Miğfer
+itm_spangenhelm_22|Eski Nazal Miğfer
+itm_spangenhelm_22_pl|Eski Nazal Miğfer
+itm_spangenhelm_23|Eski Nazal Miğfer
+itm_spangenhelm_23_pl|Eski Nazal Miğfer
+itm_spangenhelm_24|Eski Nazal Miğfer
+itm_spangenhelm_24_pl|Eski Nazal Miğfer
+itm_spangenhelm_25|Deri Miğfer
+itm_spangenhelm_25_pl|Deri Miğfer
+itm_spangenhelm_26|Deri Miğfer
+itm_spangenhelm_26_pl|Deri Miğfer
+itm_spangenhelm_27|Deri Miğfer
+itm_spangenhelm_27_pl|Deri Miğfer
+itm_spangenhelm_28|Eski Deri Miğfer
+itm_spangenhelm_28_pl|Eski Deri Miğfer
+itm_spangenhelm_29|Eski Deri Miğfer
+itm_spangenhelm_29_pl|Eski Deri Miğfer
+itm_spangenhelm_30|Eski Deri Miğfer
+itm_spangenhelm_30_pl|Eski Deri Miğfer
+itm_spangenhelm_31|Zırhlı Miğfer
+itm_spangenhelm_31_pl|Zırhlı Miğfer
+itm_spangenhelm_32|Zırhlı Miğfer
+itm_spangenhelm_32_pl|Zırhlı Miğfer
+itm_spangenhelm_33|Eski Zırhlı Miğfer
+itm_spangenhelm_33_pl|Eski Zırhlı Miğfer
+itm_spangenhelm_34|Eski Zırhlı Miğfer
+itm_spangenhelm_34_pl|Eski Zırhlı Miğfer
+itm_spangenhelm_35|Kapalı Zırh
+itm_spangenhelm_35_pl|Kapalı Zırh
+itm_spangenhelm_36|Kapalı Zırh
+itm_spangenhelm_36_pl|Kapalı Zırh
+itm_spangenhelm_37|Kapalı Zırh
+itm_spangenhelm_37_pl|Kapalı Zırh
+itm_spangenhelm_38|Eski Kapalı Zırh
+itm_spangenhelm_38_pl|Eski Kapalı Zırh
+itm_spangenhelm_39|Eski Kapalı Zırh
+itm_spangenhelm_39_pl|Eski Kapalı Zırh
+itm_spangenhelm_40|Eski Kapalı Zırh
+itm_spangenhelm_40_pl|Eski Kapalı Zırh
+itm_vikingold_helm|Eski İskandinav Miğferi
+itm_vikingold_helm_pl|Eski İskandinav Miğferi
+itm_vikingold_helm2|Eski İskandinav Miğferi
+itm_vikingold_helm2_pl|Eski İskandinav Miğferi
+itm_vikingold_helm3|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm3_pl|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm4|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm4_pl|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm5|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm5_pl|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm6|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm6_pl|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm7|Eski Miğfer
+itm_vikingold_helm7_pl|Eski Miğfer
+itm_vikingold_helm8|Eski Miğfer
+itm_vikingold_helm8_pl|Eski Miğfer
+itm_vikingold_helm9|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm9_pl|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm10|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm10_pl|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm11|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm11_pl|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm12|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm12_pl|Eski Nazal İskandinav Miğferi
+itm_vikingold_helm13|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm13_pl|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm14|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm14_pl|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm15|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm15_pl|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm16|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm16_pl|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm17|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm17_pl|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm18|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm18_pl|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_helm19|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm19_pl|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm20|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm20_pl|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm21|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm21_pl|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm22|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm22_pl|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm23|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm23_pl|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm24|Eski Kapalı İskandinav Miğferi
+itm_vikingold_helm24_pl|Eski Kapalı İskandinav Miğferi
+itm_viking_helm|Basit İskandinav Miğferi
+itm_viking_helm_pl|Basit İskandinav Miğferi
+itm_viking_helm2|Basit İskandinav Miğferi
+itm_viking_helm2_pl|Basit İskandinav Miğferi
+itm_viking_helm3|Nazal İskandinav Miğferi
+itm_viking_helm3_pl|Nazal İskandinav Miğferi
+itm_viking_helm4|Nazal İskandinav Miğferi
+itm_viking_helm4_pl|Nazal İskandinav Miğferi
+itm_viking_helm5|Nazal İskandinav Miğferi
+itm_viking_helm5_pl|Nazal İskandinav Miğferi
+itm_viking_helm6|Nazal İskandinav Miğferi
+itm_viking_helm6_pl|Nazal İskandinav Miğferi
+itm_viking_helm7|İskandinav Miğferi
+itm_viking_helm7_pl|İskandinav Miğferi
+itm_viking_helm8|İskandinav Miğferi
+itm_viking_helm8_pl|İskandinav Miğferi
+itm_viking_helm9|Nazal İskandinav Miğferi
+itm_viking_helm9_pl|Nazal İskandinav Miğferi
+itm_viking_helm10|Nazal İskandinav Miğferi
+itm_viking_helm10_pl|Nazal İskandinav Miğferi
+itm_viking_helm11|Nazal İskandinav Miğferi
+itm_viking_helm11_pl|Nazal İskandinav Miğferi
+itm_viking_helm12|Nazal İskandinav Miğferi
+itm_viking_helm12_pl|Nazal İskandinav Miğferi
+itm_viking_helm13|Zırhlı İskandinav Miğferi
+itm_viking_helm13_pl|Zırhlı İskandinav Miğferi
+itm_viking_helm14|Zırhlı İskandinav Miğferi
+itm_viking_helm14_pl|Zırhlı İskandinav Miğferi
+itm_viking_helm15|Nazal İskandinav Miğferi
+itm_viking_helm15_pl|Nazal İskandinav Miğferi
+itm_viking_helm16|Nazal İskandinav Miğferi
+itm_viking_helm16_pl|Nazal İskandinav Miğferi
+itm_viking_helm17|Nazal İskandinav Miğferi
+itm_viking_helm17_pl|Nazal İskandinav Miğferi
+itm_viking_helm18|Nazal İskandinav Miğferi
+itm_viking_helm18_pl|Nazal İskandinav Miğferi
+itm_viking_helm19|Kapalı İskandinav Miğferi 
+itm_viking_helm19_pl|Kapalı İskandinav Miğferi
+itm_viking_helm20|Kapalı İskandinav Miğferi
+itm_viking_helm20_pl|Kapalı İskandinav Miğferi
+itm_viking_helm21|Kapalı İskandinav Miğferi
+itm_viking_helm21_pl|Kapalı İskandinav Miğferi
+itm_viking_helm22|Kapalı İskandinav Miğferi
+itm_viking_helm22_pl|Kapalı İskandinav Miğferi
+itm_viking_helm23|Kapalı İskandinav Miğferi
+itm_viking_helm23_pl|Kapalı İskandinav Miğferi
+itm_viking_helm24|Kapalı İskandinav Miğferi
+itm_viking_helm24_pl|Kapalı İskandinav Miğferi
+itm_vikingold_elitehelm1|Eski İskandinav Miğferi
+itm_vikingold_elitehelm1_pl|Eski İskandinav Miğferi
+itm_vikingold_elitehelm2|Eski İskandinav Miğferi
+itm_vikingold_elitehelm2_pl|Eski İskandinav Miğferi
+itm_vikingold_elitehelm3|Eski İskandinav Miğferi
+itm_vikingold_elitehelm3_pl|Eski İskandinav Miğferi
+itm_vikingold_elitehelm4|Eski Deri İskandinav Miğferi
+itm_vikingold_elitehelm4_pl|Eski Deri İskandinav Miğferi
+itm_vikingold_elitehelm5|Eski Deri İskandinav Miğferi
+itm_vikingold_elitehelm5_pl|Eski Deri İskandinav Miğferi
+itm_vikingold_elitehelm6|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_elitehelm6_pl|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_elitehelm7|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_elitehelm7_pl|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_elitehelm8|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_elitehelm8_pl|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_elitehelm9|Eski Zırhlı İskandinav Miğferi
+itm_vikingold_elitehelm9_pl|Eski Zırhlı İskandinav Miğferi
+itm_viking_elitehelm1|İskandinav Miğferi
+itm_viking_elitehelm1_pl|İskandinav Miğferi
+itm_viking_elitehelm2|İskandinav Miğferi
+itm_viking_elitehelm2_pl|İskandinav Miğferi
+itm_viking_elitehelm3|Deri İskandinav Miğferi
+itm_viking_elitehelm3_pl|Deri İskandinav Miğferi
+itm_viking_elitehelm4|İskandinav Miğferi
+itm_viking_elitehelm4_pl|İskandinav Miğferi
+itm_viking_elitehelm5|Deri İskandinav Miğferi
+itm_viking_elitehelm5_pl|Deri İskandinav Miğferi
+itm_viking_elitehelm6|Deri İskandinav Miğferi
+itm_viking_elitehelm6_pl|Deri İskandinav Miğferi
+itm_viking_elitehelm7|Zırhlı İskandinav Miğferi
+itm_viking_elitehelm7_pl|Zırhlı İskandinav Miğferi
+itm_viking_elitehelm8|Zırhlı İskandinav Miğferi
+itm_viking_elitehelm8_pl|Zırhlı İskandinav Miğferi
+itm_viking_elitehelm9|Zırhlı İskandinav Miğferi
+itm_viking_elitehelm9_pl|Zırhlı İskandinav Miğferi
+itm_viking_noblehelm1|Elit İskandinav Miğferi
+itm_viking_noblehelm1_pl|Elit İskandinav Miğferi
+itm_viking_noblehelm2|Elit Deri İskandinav Miğferi
+itm_viking_noblehelm2_pl|Elit Deri İskandinav Miğferi
+itm_viking_noblehelm3|Elit Zırhlı İskandinav Miğferi
+itm_viking_noblehelm3_pl|Elit Zırhlı İskandinav Miğferi
+itm_angle_helmet1|Eski Deri Miğfer
+itm_angle_helmet1_pl|Eski Deri Miğfer
+itm_angle_helmet2|Deri Miğfer
+itm_angle_helmet2_pl|Deri Miğfer
+itm_angle_helmet3|Eski Zırhlı Miğfer
+itm_angle_helmet3_pl|Eski Zırhlı Miğfer
+itm_angle_helmet4|Zırhlı Miğfer
+itm_angle_helmet4_pl|Zırhlı Miğfer
+itm_angle_helmet5|Eski Kapalı Zırh
+itm_angle_helmet5_pl|Eski Kapalı Zırh
+itm_angle_helmet6|Kapalı Zırh
+itm_angle_helmet6_pl|Kapalı Zırh
+itm_elf_helmet|Elf Miğferi
+itm_elf_helmet_pl|Elf Miğferi
+itm_noble_helm_smith|Soylu Miğferi
+itm_noble_helm_smith_pl|Soylu Miğferi
+itm_hersir_helm|Hersir Miğferi
+itm_hersir_helm_pl|Hersir Miğferi
+itm_crown1|Taht
+itm_crown1_pl|Taht
+itm_sarranid_horseman_helmet|Başsız
+itm_sarranid_horseman_helmet_pl|Başsız
+itm_saco_enlacabeza|Çuval
+itm_saco_enlacabeza_pl|Çuval
+itm_wooden_stick|Tahta Sopa
+itm_wooden_stick_pl|Tahta Sopa
+itm_club_hard|Sopa
+itm_club_hard_pl|Sopa
+itm_club_troll|Trol Sopası
+itm_club_troll_pl|Trol Sopası
+itm_knife|Av Bıçağı
+itm_knife_pl|Av Bıçağı
+itm_knife2|Av Bıçağı
+itm_knife2_pl|Av Bıçağı
+itm_knife3|Av Bıçağı
+itm_knife3_pl|Av Bıçağı
+itm_knife4|Av Bıçağı
+itm_knife4_pl|Av Bıçağı
+itm_knife5|Av Bıçağı
+itm_knife5_pl|Av Bıçağı
+itm_longseax1|Uzun Seaks
+itm_longseax1_pl|Uzun Seaks
+itm_longseax2|Uzun Seaks
+itm_longseax2_pl|Uzun Seaks
+itm_longseax3|Uzun Seaks
+itm_longseax3_pl|Uzun Seaks
+itm_longseax4|Uzun Seaks
+itm_longseax4_pl|Uzun Seaks
+itm_longseax5|Uzun Seaks
+itm_longseax5_pl|Uzun Seaks
+itm_longseax6|Uzun Seaks
+itm_longseax6_pl|Uzun Seaks
+itm_longseax7|Uzun Seaks
+itm_longseax7_pl|Uzun Seaks
+itm_longseax8|Uzun Seaks
+itm_longseax8_pl|Uzun Seaks
+itm_longseax9|Uzun Seaks
+itm_longseax9_pl|Uzun Seaks
+itm_longseax10|Uzun Seaks
+itm_longseax10_pl|Uzun Seaks
+itm_seax_1|Seaks
+itm_seax_1_pl|Seaks
+itm_seax_2|Seaks
+itm_seax_2_pl|Seaks
+itm_seax_3|Seaks
+itm_seax_3_pl|Seaks
+itm_seax_4|Seaks
+itm_seax_4_pl|Seaks
+itm_seax_5|Seaks
+itm_seax_5_pl|Seaks
+itm_ragnar_seax|Ragnar'ın Seaksı
+itm_ragnar_seax_pl|Ragnar'ın Seaxı
+itm_elf_seax|Elf Seaxı
+itm_elf_seax_pl|Elf Seaxı
+itm_spatha|Kılıç
+itm_spatha_pl|Kılıç
+itm_spatha_2|Kılıç
+itm_spatha_2_pl|Kılıç
+itm_spatha_3|Kılıç
+itm_spatha_3_pl|Kılıç
+itm_spatha_4|Kılıç
+itm_spatha_4_pl|Kılıç
+itm_spatha_5|Kılıç
+itm_spatha_5_pl|Kılıç
+itm_spatha_6|Kılıç
+itm_spatha_6_pl|Kılıç
+itm_spatha_7|Kılıç
+itm_spatha_7_pl|Kılıç
+itm_spatha_8|Kılıç
+itm_spatha_8_pl|Kılıç
+itm_sword|Kılıç
+itm_sword_pl|Kılıç
+itm_sword_2|Kılıç
+itm_sword_2_pl|Kılıç
+itm_sword_3|Kılıç
+itm_sword_3_pl|Kılıç
+itm_sword_4|Kılıç
+itm_sword_4_pl|Kılıç
+itm_sword_5|Kılıç
+itm_sword_5_pl|Kılıç
+itm_sword_6|Kılıç
+itm_sword_6_pl|Kılıç
+itm_sword_7|Kılıç
+itm_sword_7_pl|Kılıç
+itm_sword_8|Kılıç
+itm_sword_8_pl|Kılıç
+itm_new_sword1|Kılıç
+itm_new_sword1_pl|Kılıç
+itm_new_sword2|Kılıç
+itm_new_sword2_pl|Kılıç
+itm_new_sword3|Kılıç
+itm_new_sword3_pl|Kılıç
+itm_new_sword4|Kılıç
+itm_new_sword4_pl|Kılıç
+itm_new_sword5|Kılıç
+itm_new_sword5_pl|Kılıç
+itm_new_sword6|Kılıç
+itm_new_sword6_pl|Kılıç
+itm_noble_sword|Pahalı Kılıç
+itm_noble_sword_pl|Pahalı Kılıç
+itm_noble_sword_2|Pahalı Kılıç
+itm_noble_sword_2_pl|Pahalı Kılıç
+itm_noble_sword_3|Pahalı Kılıç
+itm_noble_sword_3_pl|Pahalı Kılıç
+itm_noble_sword_4|Pahalı Kılıç
+itm_noble_sword_4_pl|Pahalı Kılıç
+itm_noble_sword_5|Pahalı Kılıç
+itm_noble_sword_5_pl|Pahalı Kılıç
+itm_noble_sword_6|Pahalı Kılıç
+itm_noble_sword_6_pl|Pahalı Kılıç
+itm_old_swordv|Briton Kılıcı
+itm_old_swordv_pl|Briton Kılıcı
+itm_old_swordv2|Briton Kılıcı
+itm_old_swordv2_pl|Briton Kılıcı
+itm_old_swordv3|Briton Kılıcı
+itm_old_swordv3_pl|Briton Kılıcı
+itm_old_swordv4|Briton Kılıcı
+itm_old_swordv4_pl|Briton Kılıcı
+itm_old_swordv5|Briton Kılıcı
+itm_old_swordv5_pl|Briton Kılıcı
+itm_old_swordv6|Briton Kılıcı
+itm_old_swordv6_pl|Briton Kılıcı
+itm_old_swordv7|Briton Kılıcı
+itm_old_swordv7_pl|Briton Kılıcı
+itm_noble_sword_7|Pahalı Briton Kılıcı
+itm_noble_sword_7_pl|Pahalı Briton Kılıcı
+itm_noble_sword_8|Pahalı Briton Kılıcı
+itm_noble_sword_8_pl|Pahalı Briton Kılıcı
+itm_noble_sword_9|Pahalı Briton Kılıcı
+itm_noble_sword_9_pl|Pahalı Briton Kılıcı
+itm_noble_sword_10|Pahalı Briton Kılıcı
+itm_noble_sword_10_pl|Pahalı Briton Kılıcı
+itm_noble_sword_11|Pahalı Briton Kılıcı
+itm_noble_sword_11_pl|Pahalı Briton Kılıcı
+itm_noble_sword_12|Pahalı Briton Kılıcı
+itm_noble_sword_12_pl|Pahalı Briton Kılıcı
+itm_noble_sword_13|Pahalı Briton Kılıcı
+itm_noble_sword_13_pl|Pahalı Briton Kılıcı
+itm_noble_swordv|Soylu Kılıcı
+itm_noble_swordv_pl|Soylu Kılıcı
+itm_noble_swordv3|Soylu Kılıcı
+itm_noble_swordv3_pl|Soylu Kılıcı
+itm_noble_swordv4|Soylu Kılıcı
+itm_noble_swordv4_pl|Soylu Kılıcı
+itm_noble_swordv5|Soylu Kılıcı
+itm_noble_swordv5_pl|Soylu Kılıcı
+itm_noble_swordv6|Soylu Kılıcı
+itm_noble_swordv6_pl|Soylu Kılıcı
+itm_noble_swordv7|Soylu Kılıcı
+itm_noble_swordv7_pl|Soylu Kılıcı
+itm_irish_long_sword1|Uzun Soylu Goidelic Kılıcı
+itm_irish_long_sword1_pl|Uzun Soylu Goidelic Kılıcı
+itm_irish_long_sword2|Uzun Soylu Goidelic Kılıcı
+itm_irish_long_sword2_pl|Uzun Soylu Goidelic Kılıcı
+itm_irish_long_sword3|Uzun Goidelic Kılıcı
+itm_irish_long_sword3_pl|Uzun Goidelic Kılıcı
+itm_irish_long_sword4|Uzun Goidelic Kılıcı
+itm_irish_long_sword4_pl|Uzun Goidelic Kılıcı
+itm_irish_long_sword5|Uzun Goidelic Kılıcı
+itm_irish_long_sword5_pl|Uzun Goidelic Kılıcı
+itm_irish_long_sword6|Uzun Goidelic Kılıcı
+itm_irish_long_sword6_pl|Uzun Goidelic Kılıcı
+itm_irish_long_sword7|Uzun Goidelic Kılıcı
+itm_irish_long_sword7_pl|Uzun Goidelic Kılıcı
+itm_irish_long_sword8|Uzun Goidelic Kılıcı
+itm_irish_long_sword8_pl|Uzun Goidelic Kılıcı
+itm_irish_short_sword1|Kısa Godelic Kılıcı
+itm_irish_short_sword1_pl|Kısa Godelic Kılıcı
+itm_irish_short_sword2|Kısa Godelic Kılıcı
+itm_irish_short_sword2_pl|Kısa Godelic Kılıcı
+itm_irish_short_sword3|Kısa Godelic Kılıcı
+itm_irish_short_sword3_pl|Kısa Godelic Kılıcı
+itm_championsword1|Goidelic Usta Kılıcı
+itm_championsword1_pl|Goidelic Usta Kılıcı
+itm_championsword2|Goidelic Usta Kılıcı
+itm_championsword2_pl|Goidelic Usta Kılıcı
+itm_widow_maker|Widow Maker
+itm_widow_maker_pl|Widow Maker
+itm_suttonhoosword2|Kral Haydut Kılıcı
+itm_suttonhoosword2_pl|Bandit King Sword
+itm_siren_song|Siren Şarkısı
+itm_siren_song_pl|Siren Şarkısı
+itm_sword_of_war|Olvir'in Kılıcı
+itm_sword_of_war_pl|Olvir'in Kılıcı
+itm_sword_premium1|Nad
+itm_sword_premium1_pl|Nad
+itm_sword_premium2|Draguandil
+itm_sword_premium2_pl|Draguandil
+itm_sword_premium3|Blynjubitr
+itm_sword_premium3_pl|Blynjubitr
+itm_hatchet|Balta
+itm_hatchet_pl|Balta
+itm_axe|Balta
+itm_axe_pl|Balta
+itm_axe_2|Balta
+itm_axe_2_pl|Balta
+itm_hand_axe|Balta
+itm_hand_axe_pl|Balta
+itm_axe_3|Uzun Balta
+itm_axe_3_pl|Uzun Balta
+itm_axe_4|Uzun Balta
+itm_axe_4_pl|Uzun Balta
+itm_one_handed_war_axe_a|Büyük Balta
+itm_one_handed_war_axe_a_pl|Büyük Balta
+itm_one_handed_war_axe_b|Büyük Balta
+itm_one_handed_war_axe_b_pl|Büyük Balta
+itm_one_handed_war_axe_c|Büyük Balta
+itm_one_handed_war_axe_c_pl|Büyük Balta
+itm_one_handed_war_axe_d|Büyük Balta
+itm_one_handed_war_axe_d_pl|Büyük Balta
+itm_one_handed_war_axe_e|Büyük Uzun Balta
+itm_one_handed_war_axe_e_pl|Büyük Uzun Balta
+itm_one_handed_war_axe_f|Büyük Uzun Balta
+itm_one_handed_war_axe_f_pl|Büyük Uzun Balta
+itm_axe_5|El Baltası
+itm_axe_5_pl|El Baltası
+itm_axe_6|El Baltası
+itm_axe_6_pl|El Baltası
+itm_axe_7|El Baltası
+itm_axe_7_pl|El Baltası
+itm_axe_8|El Baltası
+itm_axe_8_pl|El Baltası
+itm_axe_9|Uzun El Baltası
+itm_axe_9_pl|Uzun El Baltası
+itm_axe_10|Uzun El Baltası
+itm_axe_10_pl|Uzun El Baltası
+itm_pictish_hatchet|Godelic Baltası
+itm_pictish_hatchet_pl|Godelic Baltası
+itm_pictish_hatchet2|Godelic Baltası
+itm_pictish_hatchet2_pl|Godelic Baltası
+itm_pictish_hatchet3|Godelic Baltası
+itm_pictish_hatchet3_pl|Godelic Baltası
+itm_pictish_hatchet4|Godelic Baltası
+itm_pictish_hatchet4_pl|Godelic Baltası
+itm_pictish_hatchet5|Pikt Baltası
+itm_pictish_hatchet5_pl|Pikt Baltası
+itm_pictish_hatchet6|Pikt Baltası
+itm_pictish_hatchet6_pl|Pikt Baltası
+itm_pictish_hatchet7|Pikt Baltası
+itm_pictish_hatchet7_pl|Pikt Baltası
+itm_pictish_hatchet8|Pikt Baltası
+itm_pictish_hatchet8_pl|Pikt Baltası
+itm_pictish_hatchet9|Pikt Baltası
+itm_pictish_hatchet9_pl|Pikt Baltası
+itm_pictish_hatchet10|Pikt Baltası
+itm_pictish_hatchet10_pl|Pikt Baltası
+itm_pictish_hatchet11|Godelic Nacağı
+itm_pictish_hatchet11_pl|Godelic Nacağı
+itm_pictish_hatchet12|Godelic Nacağı
+itm_pictish_hatchet12_pl|Godelic Nacağı
+itm_pictish_hatchet13|Godelic Nacağı
+itm_pictish_hatchet13_pl|Godelic Nacağı
+itm_pictish_hatchet14|Godelic Nacağı
+itm_pictish_hatchet14_pl|Godelic Nacağı
+itm_pictish_hatchet15|Godelic Nacağı
+itm_pictish_hatchet15_pl|Godelic Nacağı
+itm_pictish_hatchet16|Godelic Nacağı
+itm_pictish_hatchet16_pl|Godelic Nacağı
+itm_pictish_hatchet17|Soylu Godelic Baltası
+itm_pictish_hatchet17_pl|Soylu Godelic Baltası
+itm_pictish_hatchet18|Soylu Godelic Baltası
+itm_pictish_hatchet18_pl|Soylu Godelic Baltası
+itm_long_axe_b|Pahalı Godelic Baltası
+itm_long_axe_b_pl|Pahalı Godelic Baltası
+itm_frankish_axe|Frenk Baltası
+itm_frankish_axe_pl|Frenk Baltası
+itm_staff|Asa
+itm_staff_pl|Asa
+itm_quarter_staff|Kısa Asa
+itm_quarter_staff_pl|Kısa Asa
+itm_pitch_fork|Kara Dirgen
+itm_pitch_fork_pl|Kara Dirgen
+itm_battle_fork|Çoban Değneği
+itm_battle_fork_pl|Çoban Değneği
+itm_light_spear1|Hafif Mızrak
+itm_light_spear1_pl|Hafif Mızrak
+itm_light_spear2|Hafif Mızrak
+itm_light_spear2_pl|Hafif Mızrak
+itm_light_spear3|Hafif Mızrak
+itm_light_spear3_pl|Hafif Mızrak
+itm_light_spear4|Hafif Mızrak
+itm_light_spear4_pl|Hafif Mızrak
+itm_war_spear1|Savaş Mızrağı
+itm_war_spear1_pl|Savaş Mızrağı
+itm_war_spear2|Savaş Mızrağı
+itm_war_spear2_pl|Savaş Mızrağı
+itm_war_spear3|Savaş Mızrağı
+itm_war_spear3_pl|Savaş Mızrağı
+itm_heavy_spear1|Ağır Mızrak
+itm_heavy_spear1_pl|Ağır Mızrak
+itm_heavy_spear2|Ağır Mızrak
+itm_heavy_spear2_pl|Ağır Mızrak
+itm_heavy_spear3|Ağır Mızrak
+itm_heavy_spear3_pl|Ağır Mızrak
+itm_long_light_spear1|Uzun Hafif Mızrak
+itm_long_light_spear1_pl|Uzun Hafif Mızrak
+itm_long_light_spear2|Uzun Hafif Mızrak
+itm_long_light_spear2_pl|Uzun Hafif Mızrak
+itm_long_war_spear1|Uzun Savaş Mızrağı
+itm_long_war_spear1_pl|Uzun Savaş Mızrağı
+itm_long_war_spear2|Uzun Savaş Mızrağı
+itm_long_war_spear2_pl|Uzun Savaş Mızrağı
+itm_long_heavy_spear1|Uzun Ağır Mızrak
+itm_long_heavy_spear1_pl|Uzun Ağır Mızrak
+itm_long_heavy_spear2|Uzun Ağır Mızrak
+itm_long_heavy_spear2_pl|Uzun Ağır Mızrak
+itm_new_mace|Ray
+itm_new_mace_pl|Ray
+itm_premium_spear1|Gungnir
+itm_premium_spear1_pl|Gungnir
+itm_standard|Flama
+itm_standard_pl|Flama
+itm_standard_dragon|Dragon Standard
+itm_standard_dragon_pl|Dragon Standard
+itm_horn|Boynuz
+itm_horn_pl|Boynuz
+itm_horn_multi|Boynuz
+itm_horn_multi_pl|Boynuz
+itm_wooden_shield|Yuvarlak Kalkan
+itm_wooden_shield_pl|Yuvarlak Kalkan
+itm_viking_shield_round_06|Yuvarlak Kalkan
+itm_viking_shield_round_06_pl|Yuvarlak Kalkan
+itm_viking_shield_round_07|Yuvarlak Kalkan
+itm_viking_shield_round_07_pl|Yuvarlak Kalkan
+itm_viking_shield_round_10|Yuvarlak Kalkan
+itm_viking_shield_round_10_pl|Yuvarlak Kalkan
+itm_viking_shield_round_11|Yuvarlak Kalkan
+itm_viking_shield_round_11_pl|Yuvarlak Kalkan
+itm_viking_shield_round_08|Güçlendirilmiş Yuvarlak Kalkan
+itm_viking_shield_round_08_pl|Güçlendirilmiş Yuvarlak Kalkan
+itm_viking_shield_round_09|Güçlendirilmiş Yuvarlak Kalkan
+itm_viking_shield_round_09_pl|Güçlendirilmiş Yuvarlak Kalkan
+itm_viking_shield_round_12|Güçlendirilmiş Yuvarlak Kalkan
+itm_viking_shield_round_12_pl|Güçlendirilmiş Yuvarlak Kalkan
+itm_viking_shield_round_13|Güçlendirilmiş Yuvarlak Kalkan
+itm_viking_shield_round_13_pl|Güçlendirilmiş Yuvarlak Kalkan
+itm_viking_shield_round_01|Güçlendirilmiş Hamderi Kalkan
+itm_viking_shield_round_01_pl|Güçlendirilmiş Hamderi Kalkan
+itm_viking_shield_round_02|Güçlendirilmiş Hamderi Kalkan
+itm_viking_shield_round_02_pl|Güçlendirilmiş Hamderi Kalkan
+itm_viking_shield_round_03|Güçlendirilmiş Hamderi Kalkan
+itm_viking_shield_round_03_pl|Güçlendirilmiş Hamderi Kalkan
+itm_viking_shield_round_14|Güçlendirilmiş Hamderi Kalkan
+itm_viking_shield_round_14_pl|Güçlendirilmiş Hamderi Kalkan
+itm_viking_shield_round_15|Güçlendirilmiş Hamderi Kalkan
+itm_viking_shield_round_15_pl|Güçlendirilmiş Hamderi Kalkan
+itm_viking_shield_round_04|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_04_pl|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_05|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_05_pl|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_16|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_16_pl|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_17|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_17_pl|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_18|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_18_pl|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_19|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_19_pl|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_20|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_20_pl|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_21|Hamderi Yuvarlak Kalkan
+itm_viking_shield_round_21_pl|Hamderi Yuvarlak Kalkan
+itm_shield_1|Bombeli Kalkan
+itm_shield_1_pl|Bombeli Kalkan
+itm_shield_2|Bombeli Kalkan
+itm_shield_2_pl|Bombeli Kalkan
+itm_shield_3|Bombeli Kalkan
+itm_shield_3_pl|Bombeli Kalkan
+itm_shield_4|Bombeli Kalkan
+itm_shield_4_pl|Bombeli Kalkan
+itm_shield_5|Bombeli Kalkan
+itm_shield_5_pl|Bombeli Kalkan
+itm_shield_6|Bombeli Kalkan
+itm_shield_6_pl|Bombeli Kalkan
+itm_shield_6_2|Bombeli Kalkan
+itm_shield_6_2_pl|Bombeli Kalkan
+itm_shield_7|Hamderi Kalkan
+itm_shield_7_pl|Hamderi Kalkan
+itm_shield_8|Hamderi Kalkan
+itm_shield_8_pl|Hamderi Kalkan
+itm_shield_9|Yuvarlak Kalkan
+itm_shield_9_pl|Yuvarlak Kalkan
+itm_shield_10|Yuvarlak Kalkan
+itm_shield_10_pl|Yuvarlak Kalkan
+itm_shield_11|Yuvarlak Kalkan
+itm_shield_11_pl|Yuvarlak Kalkan
+itm_shield_12|Yuvarlak Kalkan
+itm_shield_12_pl|Yuvarlak Kalkan
+itm_shield_13|Hamderi Kalkan
+itm_shield_13_pl|Hamderi Kalkan
+itm_shield_14|Hamderi Kalkan
+itm_shield_14_pl|Hamderi Kalkan
+itm_shield_15|Yuvarlak Kalkan
+itm_shield_15_pl|Yuvarlak Kalkan
+itm_shield_16|Yuvarlak Kalkan
+itm_shield_16_pl|Yuvarlak Kalkan
+itm_shield_17|Danimarka Kalkanı
+itm_shield_17_pl|Danimarka Kalkanı
+itm_shield_18|Northmathr Kalkanı
+itm_shield_18_pl|Northmathr Kalkanı
+itm_shield_19|Yuvarlak Kalkan
+itm_shield_19_pl|Yuvarlak Kalkan
+itm_shield_20|NorthMathr Kalkanı
+itm_shield_20_pl|NorthMathr Kalkanı
+itm_shield_21|Yuvarlak Kalkan
+itm_shield_21_pl|Yuvarlak Kalkan
+itm_gael_bigroundshield_01|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_01_pl|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_02|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_02_pl|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_03|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_03_pl|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_04|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_04_pl|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_05|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_05_pl|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_06|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_06_pl|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_07|Yuvarlak Gael Kalkanı
+itm_gael_bigroundshield_07_pl|Yuvarlak Gael Kalkanı
+itm_elf_shield|Elf Kalkanı
+itm_elf_shield_pl|Elf Kalkanı
+itm_tab_shield_round_c|Boyalı Bombeli Kalkan
+itm_tab_shield_round_c_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_01_device|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_01_device_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_01_nodevice|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_01_nodevice_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_02_device|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_02_device_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_02_nodevice|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_02_nodevice_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_03_device|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_03_device_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_03_nodevice|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_03_nodevice_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_04_device|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_04_device_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_04_nodevice|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_04_nodevice_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_05_device|Boyalı Bombeli Kalkan
+itm_tab_shield_round_05_device_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_05_nodevice|Boyalı Bombeli Kalkan
+itm_tab_shield_round_05_nodevice_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_06_device|Boyalı Bombeli Kalkan
+itm_tab_shield_round_06_device_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_06_nodevice|Boyalı Bombeli Kalkan
+itm_tab_shield_round_06_nodevice_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_07_device|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_07_device_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_07_nodevice|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_07_nodevice_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_08_device|Boyalı Bombeli Kalkan
+itm_tab_shield_round_08_device_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_08_nodevice|Boyalı Bombeli Kalkan
+itm_tab_shield_round_08_nodevice_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_09_device|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_09_device_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_09_nodevice|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_09_nodevice_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_10_device|Boyalı Bombeli Kalkan
+itm_tab_shield_round_10_device_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_10_nodevice|Boyalı Bombeli Kalkan
+itm_tab_shield_round_10_nodevice_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_11_device|Boyalı Bombeli Kalkan
+itm_tab_shield_round_11_device_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_11_nodevice|Boyalı Bombeli Kalkan
+itm_tab_shield_round_11_nodevice_pl|Boyalı Bombeli Kalkan
+itm_tab_shield_round_12_device|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_12_device_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_12_nodevice|Boyalı Yuvarlak Kalkan
+itm_tab_shield_round_12_nodevice_pl|Boyalı Yuvarlak Kalkan
+itm_tab_shield_small_round_c|Küçük Yuvarlak Kalkan
+itm_tab_shield_small_round_c_pl|Küçük Yuvarlak Kalkan
+itm_small_roundsh1|Küçük Yuvarlak Kalkan
+itm_small_roundsh1_pl|Küçük Yuvarlak Kalkan
+itm_small_roundsh2|Küçük Yuvarlak Kalkan
+itm_small_roundsh2_pl|Küçük Yuvarlak Kalkan
+itm_small_roundsh3|Küçük Yuvarlak Kalkan
+itm_small_roundsh3_pl|Küçük Yuvarlak Kalkan
+itm_small_roundsh4|Küçük Yuvarlak Kalkan
+itm_small_roundsh4_pl|Küçük Yuvarlak Kalkan
+itm_small_roundsh5|Küçük Yuvarlak Kalkan
+itm_small_roundsh5_pl|Küçük Yuvarlak Kalkan
+itm_small_roundsh6|Küçük Yuvarlak Kalkan
+itm_small_roundsh6_pl|Küçük Yuvarlak Kalkan
+itm_h_shield1|H Kalkan
+itm_h_shield1_pl|H Kalkan
+itm_h_shield2|H Kalkan
+itm_h_shield2_pl|H Kalkan
+itm_h_shield3|H Kalkan
+itm_h_shield3_pl|H Kalkan
+itm_h_shield4|H Kalkan
+itm_h_shield4_pl|H Kalkan
+itm_h_shield5|H Kalkan
+itm_h_shield5_pl|H Kalkan
+itm_h_shield6|H Kalkan
+itm_h_shield6_pl|H Kalkan
+itm_squaresh_1|Kare Kalkan
+itm_squaresh_1_pl|Kare Kalkan
+itm_squaresh_2|Kare Kalkan
+itm_squaresh_2_pl|Kare Kalkan
+itm_squaresh_3|Kare Kalkan
+itm_squaresh_3_pl|Kare Kalkan
+itm_squaresh_4|Kare Kalkan
+itm_squaresh_4_pl|Kare Kalkan
+itm_squaresh_5|Kare Kalkan
+itm_squaresh_5_pl|Kare Kalkan
+itm_squaresh_6|Kare Kalkan
+itm_squaresh_6_pl|Kare Kalkan
+itm_darts|Basit Cirit
+itm_darts_pl|Basit Cirit
+itm_darts_melee|Basit Cirit
+itm_darts_melee_pl|Basit Cirit
+itm_javelin|Ciritler
+itm_javelin_pl|Ciritler
+itm_javelin_melee|Cirit
+itm_javelin_melee_pl|Cirit
+itm_javelin_skirmishes|Ciritler
+itm_javelin_skirmishes_pl|Ciritler
+itm_javelin_skirmishes_melee|Cirit
+itm_javelin_skirmishes_melee_pl|Cirit
+itm_javelin_skirmishesel|Atlı Ciriti
+itm_javelin_skirmishesel_pl|Atlı Ciriti
+itm_javelin_skirmishesel_melee|Atlı Ciriti
+itm_javelin_skirmishesel_melee_pl|Atlı Ciriti
+itm_javelin_jinetes|Atlı Ciriti
+itm_javelin_jinetes_pl|Atlı Ciriti
+itm_javelin_jinetes_melee|Atlı Ciriti
+itm_javelin_jinetes_melee_pl|Atlı Ciriti
+itm_throwing_spears|Fırlatma Mızrağı
+itm_throwing_spears_pl|Fırlatma Mızrağı
+itm_throwing_spear_melee|Fırlatma Mızrağı
+itm_throwing_spear_melee_pl|Fırlatma Mızrağı
+itm_throwing_spears2|Fırlatma Mızrağı
+itm_throwing_spears2_pl|Fırlatma Mızrağı
+itm_throwing_spear2_melee|Fırlatma Mızrağı
+itm_throwing_spear2_melee_pl|Fırlatma Mızrağı
+itm_stones|Taş
+itm_stones_pl|Taş
+itm_long_bow|Uzun Yay
+itm_long_bow_pl|Uzun Yay
+itm_long_bow2|Uzun Elit Yay
+itm_long_bow2_pl|Uzun Elit Yay
+itm_long_bow3|Özellikli Uzun Yay
+itm_long_bow3_pl|Özellikli Uzun Yay
+itm_hunting_crossbow|Pikt Kundaklı Yayı
+itm_hunting_crossbow_pl|Pikt Kundaklı Yayı
+itm_strong_bow|Koyu Avcı
+itm_strong_bow_pl|Koyu Avcı
+itm_war_bow|Göz Alıcı
+itm_war_bow_pl|Göz Alıcı
+itm_sling_rock1|Sapan Taşı
+itm_sling_rock1_pl|Sapan Taşı
+itm_sling_lead|Sapan Lastiği
+itm_sling_lead_pl|Sapan Lastiği
+itm_sling|Sapan
+itm_sling_pl|Sapan
+itm_sling2|Sapan
+itm_sling2_pl|Sapan
+itm_sling3|Sapan
+itm_sling3_pl|Sapan
+itm_sling_militar|Asker Sapanı
+itm_sling_militar_pl|Asker Sapanı
+itm_fustibalus1|Fustibalus
+itm_fustibalus1_pl|Fustibalus
+itm_fustibalus2|Fustibalus
+itm_fustibalus2_pl|Fustibalus
+itm_fustibalus_military|Askeri Fustibalus
+itm_fustibalus_military_pl|Askeri Fustibalus
+itm_torch|Şaloma
+itm_torch_pl|Şaloma
+itm_lyre|Lir
+itm_lyre_pl|Lir
+itm_lute|Ud
+itm_lute_pl|Ud
+itm_instruments_end|Instruments End
+itm_instruments_end_pl|Instruments End
+itm_court_dress|Hanım Elbisesi
+itm_court_dress_pl|Hanım Elbisesi
+itm_stones_siege|Kuşatma Taşı
+itm_stones_siege_pl|Kuşatma Taşı
+itm_trophy_a|Muharebe Ganimeti
+itm_trophy_a_pl|Muharebe Ganimeti
+itm_trophy_b|Savaş Ganimeti
+itm_trophy_b_pl|Savaş Ganimeti
+itm_trophy_c|Büyük Ganimet
+itm_trophy_c_pl|Büyük Ganimet
+itm_iniauhorn|Iniau Horn
+itm_iniauhorn_pl|Iniau Horn
+itm_tunic_with_green_cape|Yeşil Başlıklı Tunik
+itm_tunic_with_green_cape_pl|Yeşil Başlıklı Tunik
+itm_keys|Anahtar Takımı
+itm_keys_pl|Anahtar Takımı
+itm_bride_dress|Gelinlik
+itm_bride_dress_pl|Gelinlik
+itm_bride_crown|Çiçek Tacı
+itm_bride_crown_pl|Çiçek Tacı
+itm_bride_shoes|Gelin Ayakkabısı
+itm_bride_shoes_pl|Gelin Ayakkabısı
+itm_practice_bow_2|Uzun Yay
+itm_practice_bow_2_pl|Uzun Yay
+itm_practice_arrows_2|Oklar
+itm_practice_arrows_2_pl|Oklar
+itm_steel_bolts|Kuşatma Taşı
+itm_steel_bolts_pl|Kuşatma Taşı
+itm_heraldic_mail_with_tunic_b|Gömlek
+itm_heraldic_mail_with_tunic_b_pl|Gömlek
+itm_heraldic_mail_with_tabard|Gömlek
+itm_heraldic_mail_with_tabard_pl|Gömlek
+itm_thors_helmet|Thor Miğferi
+itm_thors_helmet_pl|Thor Miğferi
+itm_thors_armor|Thor Zırhı
+itm_thors_armor_pl|Thor Zırhı
+itm_thors_boots|Thor Botu
+itm_thors_boots_pl|Thor Botu
+itm_thors_hammer|Thor'un Çekici
+itm_thors_hammer_pl|Thor'un Çekici
+itm_deadly_bow|Ölümcül Yay
+itm_deadly_bow_pl|Ölümcül Yay
+itm_deadly_arrows|Ölümcül Oklar
+itm_deadly_arrows_pl|Ölümcül Oklar
+itm_honey|Bal
+itm_honey_pl|Bal
+itm_raw_leather|Deri
+itm_raw_leather_pl|Deri
+itm_furs|Kürk
+itm_furs_pl|Kürk
+itm_wool_cloth|Yün Kumaş
+itm_wool_cloth_pl|Yün Kumaş
+itm_oil|Yağ
+itm_oil_pl|Yağ
+itm_velvet|Kadife
+itm_velvet_pl|Kadife
+itm_items_end|Items End
+itm_items_end_pl|Items End
+itm_noswing_club_troll|Trol Baltası
+itm_noswing_club_troll_pl|Trol Baltası
+itm_noswing_knife|Av Bıçağı 
+itm_noswing_knife_pl|Av Bıçağı
+itm_noswing_knife2|Av Bıçağı
+itm_noswing_knife2_pl|Av Bıçağı
+itm_noswing_knife3|Av Bıçağı
+itm_noswing_knife3_pl|Av Bıçağı
+itm_noswing_knife4|Av Bıçağı
+itm_noswing_knife4_pl|Av Bıçağı
+itm_noswing_knife5|Av Bıçağı
+itm_noswing_knife5_pl|Av Bıçağı
+itm_noswing_longseax1|Uzun Seaks
+itm_noswing_longseax1_pl|Uzun Seaks
+itm_noswing_longseax2|Uzun Seaks
+itm_noswing_longseax2_pl|Uzun Seaks
+itm_noswing_longseax3|Uzun Seaks
+itm_noswing_longseax3_pl|Uzun Seaks
+itm_noswing_longseax4|Uzun Seaks
+itm_noswing_longseax4_pl|Uzun Seaks
+itm_noswing_longseax5|Uzun Seaks
+itm_noswing_longseax5_pl|Uzun Seaks
+itm_noswing_longseax6|Uzun Seaks
+itm_noswing_longseax6_pl|Uzun Seaks
+itm_noswing_longseax7|Uzun Seaks
+itm_noswing_longseax7_pl|Uzun Seaks
+itm_noswing_longseax8|Uzun Seaks
+itm_noswing_longseax8_pl|Uzun Seaks
+itm_noswing_longseax9|Uzun Seaks
+itm_noswing_longseax9_pl|Uzun Seaks
+itm_noswing_longseax10|Uzun Seaks
+itm_noswing_longseax10_pl|Uzun Seaks
+itm_noswing_seax_1|Seaks
+itm_noswing_seax_1_pl|Seaks
+itm_noswing_seax_2|Seaks
+itm_noswing_seax_2_pl|Seaks
+itm_noswing_seax_3|Seaks
+itm_noswing_seax_3_pl|Seaks
+itm_noswing_seax_4|Seaks
+itm_noswing_seax_4_pl|Seaks
+itm_noswing_seax_5|Seaks
+itm_noswing_seax_5_pl|Seaks
+itm_noswing_ragnar_seax|Ragnar'ın Seaksı
+itm_noswing_ragnar_seax_pl|Ragnar'ın Seaksı
+itm_noswing_elf_seax|Elf Seaksı
+itm_noswing_elf_seax_pl|Elf Seaksı
+itm_noswing_spatha|Kılıç
+itm_noswing_spatha_pl|Kılıç
+itm_noswing_spatha_2|Kılıç
+itm_noswing_spatha_2_pl|Kılıç
+itm_noswing_spatha_3|Kılıç
+itm_noswing_spatha_3_pl|Kılıç
+itm_noswing_spatha_4|Kılıç
+itm_noswing_spatha_4_pl|Kılıç
+itm_noswing_spatha_5|Kılıç
+itm_noswing_spatha_5_pl|Kılıç
+itm_noswing_spatha_6|Kılıç
+itm_noswing_spatha_6_pl|Kılıç
+itm_noswing_spatha_7|Kılıç
+itm_noswing_spatha_7_pl|Kılıç
+itm_noswing_spatha_8|Kılıç
+itm_noswing_spatha_8_pl|Kılıç
+itm_noswing_sword|Kılıç
+itm_noswing_sword_pl|Kılıç
+itm_noswing_sword_2|Kılıç
+itm_noswing_sword_2_pl|Kılıç
+itm_noswing_sword_3|Kılıç
+itm_noswing_sword_3_pl|Kılıç
+itm_noswing_sword_4|Kılıç
+itm_noswing_sword_4_pl|Kılıç
+itm_noswing_sword_5|Kılıç
+itm_noswing_sword_5_pl|Kılıç
+itm_noswing_sword_6|Kılıç
+itm_noswing_sword_6_pl|Kılıç
+itm_noswing_sword_7|Kılıç
+itm_noswing_sword_7_pl|Kılıç
+itm_noswing_sword_8|Kılıç
+itm_noswing_sword_8_pl|Kılıç
+itm_noswing_new_sword1|Kılıç
+itm_noswing_new_sword1_pl|Kılıç
+itm_noswing_new_sword2|Kılıç
+itm_noswing_new_sword2_pl|Kılıç
+itm_noswing_new_sword3|Kılıç
+itm_noswing_new_sword3_pl|Kılıç
+itm_noswing_new_sword4|Kılıç
+itm_noswing_new_sword4_pl|Kılıç
+itm_noswing_new_sword5|Kılıç
+itm_noswing_new_sword5_pl|Kılıç
+itm_noswing_new_sword6|Kılıç
+itm_noswing_new_sword6_pl|Kılıç
+itm_noswing_noble_sword|Pahalı Kılıç
+itm_noswing_noble_sword_pl|Pahalı Kılıç
+itm_noswing_noble_sword_2|Pahalı Kılıç
+itm_noswing_noble_sword_2_pl|Pahalı Kılıç
+itm_noswing_noble_sword_3|Pahalı Kılıç
+itm_noswing_noble_sword_3_pl|Pahalı Kılıç
+itm_noswing_noble_sword_4|Pahalı Kılıç
+itm_noswing_noble_sword_4_pl|Pahalı Kılıç
+itm_noswing_noble_sword_5|Pahalı Kılıç
+itm_noswing_noble_sword_5_pl|Pahalı Kılıç
+itm_noswing_noble_sword_6|Pahalı Kılıç
+itm_noswing_noble_sword_6_pl|Pahalı Kılıç
+itm_noswing_old_swordv|Briton Kılıcı
+itm_noswing_old_swordv_pl|Briton Kılıcı
+itm_noswing_old_swordv2|Briton Kılıcı
+itm_noswing_old_swordv2_pl|Briton Kılıcı
+itm_noswing_old_swordv3|Briton Kılıcı
+itm_noswing_old_swordv3_pl|Briton Kılıcı
+itm_noswing_old_swordv4|Briton Kılıcı
+itm_noswing_old_swordv4_pl|Briton Kılıcı
+itm_noswing_old_swordv5|Briton Kılıcı
+itm_noswing_old_swordv5_pl|Briton Kılıcı
+itm_noswing_old_swordv6|Briton Kılıcı
+itm_noswing_old_swordv6_pl|Briton Kılıcı
+itm_noswing_old_swordv7|Briton Kılıcı
+itm_noswing_old_swordv7_pl|Briton Kılıcı
+itm_noswing_noble_sword_7|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_7_pl|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_8|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_8_pl|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_9|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_9_pl|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_10|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_10_pl|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_11|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_11_pl|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_12|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_12_pl|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_13|Pahalı Briton Kılıcı
+itm_noswing_noble_sword_13_pl|Pahalı Briton Kılıcı
+itm_noswing_noble_swordv|Soylu Kılıcı
+itm_noswing_noble_swordv_pl|Soylu Kılıcı
+itm_noswing_noble_swordv3|Soylu Kılıcı
+itm_noswing_noble_swordv3_pl|Soylu Kılıcı
+itm_noswing_noble_swordv4|Soylu Kılıcı
+itm_noswing_noble_swordv4_pl|Soylu Kılıcı
+itm_noswing_noble_swordv5|Soylu Kılıcı
+itm_noswing_noble_swordv5_pl|Soylu Kılıcı
+itm_noswing_noble_swordv6|Soylu Kılıcı
+itm_noswing_noble_swordv6_pl|Soylu Kılıcı
+itm_noswing_noble_swordv7|Soylu Kılıcı
+itm_noswing_noble_swordv7_pl|Soylu Kılıcı
+itm_noswing_irish_long_sword1|Uzun Soylu Goidelic Kılıcı
+itm_noswing_irish_long_sword1_pl|Uzun Soylu Goidelic Kılıcı
+itm_noswing_irish_long_sword2|Uzun Soylu Goidelic Kılıcı
+itm_noswing_irish_long_sword2_pl|Uzun Soylu Goidelic Kılıcı
+itm_noswing_irish_long_sword3|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword3_pl|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword4|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword4_pl|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword5|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword5_pl|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword6|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword6_pl|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword7|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword7_pl|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword8|Uzun Goidelic Kılıcı
+itm_noswing_irish_long_sword8_pl|Uzun Goidelic Kılıcı
+itm_noswing_irish_short_sword1|Kısa Goidelic Kılıcı
+itm_noswing_irish_short_sword1_pl|Kısa Goidelic Kılıcı
+itm_noswing_irish_short_sword2|Kısa Goidelic Kılıcı
+itm_noswing_irish_short_sword2_pl|Kısa Goidelic Kılıcı
+itm_noswing_irish_short_sword3|Kısa Goidelic Kılıcı
+itm_noswing_irish_short_sword3_pl|Kısa Goidelic Kılıcı
+itm_noswing_championsword1|Goidelic Şampiyon Kılıcı
+itm_noswing_championsword1_pl|Goidelic Şampiyon Kılıcı
+itm_noswing_championsword2|Goidelic Şampiyon Kılıcı
+itm_noswing_championsword2_pl|Goidelic Şampiyon Kılıcı
+itm_noswing_widow_maker|Widow Maker
+itm_noswing_widow_maker_pl|Widow Maker
+itm_noswing_suttonhoosword2|Haydut Lideri Kılıcı
+itm_noswing_suttonhoosword2_pl|Haydut Lideri Kılıcı
+itm_noswing_siren_song|Siren Şarkısı
+itm_noswing_siren_song_pl|Siren Şarkısı
+itm_noswing_sword_of_war|Olvir'in Kılıcı
+itm_noswing_sword_of_war_pl|Olvir'in Kılıcı
+itm_noswing_sword_premium1|Nad
+itm_noswing_sword_premium1_pl|Nad
+itm_noswing_sword_premium2|Draguandil
+itm_noswing_sword_premium2_pl|Draguandil
+itm_noswing_sword_premium3|Blynjubitr
+itm_noswing_sword_premium3_pl|Blynjubitr
+itm_noswing_axe_3|Uzun Balta
+itm_noswing_axe_3_pl|Uzun Balta
+itm_noswing_axe_4|Uzun Balta
+itm_noswing_axe_4_pl|Uzun Balta
+itm_noswing_one_handed_war_axe_a|Büyük Balta
+itm_noswing_one_handed_war_axe_a_pl|Büyük Balta
+itm_noswing_one_handed_war_axe_b|Büyük Balta
+itm_noswing_one_handed_war_axe_b_pl|Büyük Balta
+itm_noswing_one_handed_war_axe_c|Büyük Balta
+itm_noswing_one_handed_war_axe_c_pl|Büyük Balta
+itm_noswing_one_handed_war_axe_d|Büyük Balta
+itm_noswing_one_handed_war_axe_d_pl|Büyük Balta
+itm_noswing_one_handed_war_axe_e|Büyük Uzun Balta
+itm_noswing_one_handed_war_axe_e_pl|Büyük Uzun Balta
+itm_noswing_one_handed_war_axe_f|Büyük Uzun Balta
+itm_noswing_one_handed_war_axe_f_pl|Büyük Uzun Balta
+itm_noswing_pictish_hatchet3|Godelic Uzun Balta
+itm_noswing_pictish_hatchet3_pl|Godelic Uzun Balta
+itm_noswing_pictish_hatchet4|Godelic Uzun Balta
+itm_noswing_pictish_hatchet4_pl|Godelic Uzun Balta
+itm_noswing_pictish_hatchet15|Godelic Uzun Balta
+itm_noswing_pictish_hatchet15_pl|Godelic Uzun Balta
+itm_noswing_pictish_hatchet16|Godelic Uzun Balta
+itm_noswing_pictish_hatchet16_pl|Godelic Uzun Balta
+itm_noswing_long_axe_b|Odun Baltası
+itm_noswing_long_axe_b_pl|Odun Baltası
+itm_noswing_frankish_axe|Frenk Baltası
+itm_noswing_frankish_axe_pl|Frenk Baltası
+itm_noswing_staff|Asa
+itm_noswing_staff_pl|Asa
+itm_noswing_quarter_staff|Kısa Asa
+itm_noswing_quarter_staff_pl|Kısa Asa 
+itm_noswing_pitch_fork|Kara Dirgen
+itm_noswing_pitch_fork_pl|Kara Dirgen
+itm_noswing_battle_fork|Çoban Değneği
+itm_noswing_battle_fork_pl|Çoban Değneği
+itm_noswing_light_spear1|Hafif Mızrak
+itm_noswing_light_spear1_pl|Hafif Mızrak
+itm_noswing_light_spear2|Hafif Mızrak
+itm_noswing_light_spear2_pl|Hafif Mızrak
+itm_noswing_light_spear3|Hafif Mızrak
+itm_noswing_light_spear3_pl|Hafif Mızrak
+itm_noswing_light_spear4|Hafif Mızrak
+itm_noswing_light_spear4_pl|Hafif Mızrak
+itm_noswing_war_spear1|Savaş Mızrağı
+itm_noswing_war_spear1_pl|Savaş Mızrağı
+itm_noswing_war_spear2|Savaş Mızrağı
+itm_noswing_war_spear2_pl|Savaş Mızrağı
+itm_noswing_war_spear3|Savaş Mızrağı
+itm_noswing_war_spear3_pl|Savaş Mızrağı
+itm_noswing_heavy_spear1|Ağır Mızrak
+itm_noswing_heavy_spear1_pl|Ağır Mızrak
+itm_noswing_heavy_spear2|Ağır Mızrak
+itm_noswing_heavy_spear2_pl|Ağır Mızrak
+itm_noswing_heavy_spear3|Ağır Mızrak
+itm_noswing_heavy_spear3_pl|Ağır Mızrak
+itm_noswing_long_light_spear1|Uzun Hafif Mızrak
+itm_noswing_long_light_spear1_pl|Uzun Hafif Mızrak
+itm_noswing_long_light_spear2|Uzun Hafif Mızrak
+itm_noswing_long_light_spear2_pl|Uzun Hafif Mızrak
+itm_noswing_long_war_spear1|Uzun Savaş Mızrağı
+itm_noswing_long_war_spear1_pl|Uzun Savaş Mızrağı
+itm_noswing_long_war_spear2|Uzun Savaş Mızrağı
+itm_noswing_long_war_spear2_pl|Uzun Savaş Mızrağı
+itm_noswing_long_heavy_spear1|Uzun Ağır Mızrak
+itm_noswing_long_heavy_spear1_pl|Uzun Ağır Mızrak
+itm_noswing_long_heavy_spear2|Uzun Ağır Mızrak
+itm_noswing_long_heavy_spear2_pl|Uzun Ağır Mızrak
+itm_noswing_new_mace|Ray
+itm_noswing_new_mace_pl|Ray
+itm_noswing_premium_spear1|Gungnir
+itm_noswing_premium_spear1_pl|Gungnir
+itm_noswing_standard|Flama
+itm_noswing_standard_pl|Flama
+itm_noswing_standard_dragon|Dragon Standard
+itm_noswing_standard_dragon_pl|Dragon Standard
+itm_noswing_darts_melee|Basit Cirit
+itm_noswing_darts_melee_pl|Basit Cirit
+itm_noswing_javelin_melee|Cirit
+itm_noswing_javelin_melee_pl|Cirit
+itm_noswing_javelin_skirmishes_melee|Cirit
+itm_noswing_javelin_skirmishes_melee_pl|Cirit
+itm_noswing_javelin_skirmishesel_melee|Atlı Ciriti
+itm_noswing_javelin_skirmishesel_melee_pl|Atlı Ciriti
+itm_noswing_javelin_jinetes_melee|Atlı Ciriti
+itm_noswing_javelin_jinetes_melee_pl|Atlı Ciriti
+itm_noswing_throwing_spear_melee|Fırlatma Mızrağı
+itm_noswing_throwing_spear_melee_pl|Fırlatma Mızrağı
+itm_noswing_throwing_spear2_melee|Fırlatma Mızrağı
+itm_noswing_throwing_spear2_melee_pl|Fırlatma Mızrağı
+itm_noswing_torch|Şaloma
+itm_noswing_torch_pl|Şaloma
