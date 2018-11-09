@@ -1,0 +1,404 @@
+p_burning_buildings|이 메시지가 보인다면 당신은 버그에 걸린 겁니다
+p_ship_colisions|이 메시지가 보인다면 당신은 버그에 걸린 겁니다.
+p_zendar|젠다르
+p_town_1|평양
+p_town_2|아테네
+p_town_3|룬드
+p_town_4|페르세폴리스
+p_town_5|카우나스
+p_town_6|런던
+p_town_7|그단스크
+p_town_8|델리
+p_town_9|콘스탄티노플
+p_town_10|예루살렘
+p_town_11|수사
+p_town_12|튀니스
+p_town_13|세비야
+p_town_14|뭄바이
+p_town_15|프랑크푸르트
+p_town_16|아레티움
+p_town_17|파리
+p_town_18|로마
+p_town_19|건업
+p_town_20|카이로
+p_town_21|앙코르 톰
+p_town_22|베르긴
+p_town_23|바그다드
+p_town_24|사마르칸트
+p_town_25|발렌시아
+p_town_26|리스본
+p_town_27|알렉산드리아
+p_town_28|쾰른
+p_town_29|세게드
+p_town_30|성도
+p_town_31|몽골
+p_town_32|길림
+p_town_33|쟈다란
+p_town_34|교토
+p_town_35|업
+p_town_36|장안
+p_town_37|한성
+p_town_38|더블린
+p_town_39|에도
+p_town_40|흥경
+p_town_41|페즈
+p_town_42|모스크바
+p_castle_1|파사르가데 성
+p_castle_2|안티옥 성
+p_castle_3|오란 성
+p_castle_4|아르고스 성
+p_castle_5|케레이트 성
+p_castle_6|나이만 성
+p_castle_7|앙카라 성
+p_castle_8|카라치 성
+p_castle_9|타타르 성
+p_castle_10|마케도니아 성
+p_castle_11|가베즈 성
+p_castle_12|진주 성
+p_castle_13|포조니 성
+p_castle_14|알제 성
+p_castle_15|낭트 성
+p_castle_16|루앙 성
+p_castle_17|빌니우스 성
+p_castle_18|마그데부르크 성
+p_castle_19|메시나 성
+p_castle_20|개성
+p_castle_21|낙양 성
+p_castle_22|다마스커스 성
+p_castle_23|알마티 성
+p_castle_24|투게가라오 성
+p_castle_25|톨레도 성
+p_castle_26|초나이 성
+p_castle_27|뤼벡 성
+p_castle_28|허창 성
+p_castle_29|한중 성
+p_castle_30|툴루즈 성
+p_castle_31|크로톤 성
+p_castle_32|캘거타 성
+p_castle_33|바스라 성
+p_castle_34|오슬로 성
+p_castle_35|무르시아 성
+p_castle_36|프라하 성
+p_castle_37|마라케쉬 성
+p_castle_38|자그레브 성
+p_castle_39|라벤나 성
+p_castle_40|바리나시 성
+p_castle_41|영안 성
+p_castle_42|비보르 성
+p_castle_43|요크 성
+p_castle_44|웨스트리아루스 성
+p_castle_45|서량 성
+p_castle_46|포즈난 성
+p_castle_47|양양 성
+p_castle_48|크라쿠프 성
+p_castle_49|통스벤 성
+p_castle_50|수춘 성
+p_castle_51|마잔다라니 성
+p_castle_52|모술 성
+p_castle_53|아크레 성
+p_castle_54|브리스틀 성
+p_castle_55|에든버러 성
+p_castle_56|비스튼 성
+p_castle_57|바카 성
+p_castle_58|아랄 성
+p_castle_59|자동 성
+p_castle_60|라싸 성
+p_castle_61|스카라 성
+p_castle_62|부산 성
+p_castle_63|나가사키 성
+p_castle_64|히로시마 성
+p_castle_65|아카바 성
+p_castle_66|오사카 성
+p_castle_67|황주 성
+p_castle_68|강릉 성
+p_castle_69|무릉 성
+p_castle_70|수코타이 성
+p_castle_71|센다이 성
+p_castle_72|강하 성
+p_castle_73|남만 성
+p_castle_74|타이치우드 성
+p_castle_75|토번 성
+p_village_1|나플레스
+p_village_2|스파르타
+p_village_3|코젤스크
+p_village_4|브린디쉬
+p_village_5|아라드
+p_village_6|렁 헬레드
+p_village_7|탄타
+p_village_8|부지
+p_village_9|보르도
+p_village_10|트리폴리
+p_village_11|그나에즈노
+p_village_12|토리노
+p_village_13|다만후르
+p_village_14|크레타
+p_village_15|산도미에쉬
+p_village_16|아작시오
+p_village_17|수에즈
+p_village_18|강주
+p_village_19|의주
+p_village_20|안디잔
+p_village_21|아그라
+p_village_22|알아리쉬
+p_village_23|리옹
+p_village_24|칼리아리
+p_village_25|엘빙
+p_village_26|프로방스
+p_village_27|탕헤르
+p_village_28|쉼켄트
+p_village_29|라쟌
+p_village_30|리가
+p_village_31|울산
+p_village_32|바다호스
+p_village_33|멜리아
+p_village_34|라바트
+p_village_35|마드라스
+p_village_36|아슈트
+p_village_37|건녕
+p_village_38|우디네
+p_village_39|이산
+p_village_40|앙제
+p_village_41|인도르
+p_village_42|아라르
+p_village_43|베나레스
+p_village_44|자이푸르
+p_village_45|코임브라
+p_village_46|미너프
+p_village_47|마안
+p_village_48|아부 하메드
+p_village_49|다르시티
+p_village_50|몽골 유르트
+p_village_51|카발라
+p_village_52|푸나
+p_village_53|카불
+p_village_54|박트리아
+p_village_55|야즈드
+p_village_56|콜스
+p_village_57|와디
+p_village_58|하엔
+p_village_59|키예프
+p_village_60|칼미니어
+p_village_61|마쓰야마
+p_village_62|대마도
+p_village_63|상주
+p_village_64|클러먼트
+p_village_65|올즈제이트
+p_village_66|해우무노
+p_village_67|트리폴리
+p_village_68|트루아
+p_village_69|오
+p_village_70|브레멘
+p_village_71|아키타
+p_village_72|아오모리
+p_village_73|브라드
+p_village_74|아르타
+p_village_75|페타비움
+p_village_76|포자
+p_village_77|메카
+p_village_78|샬롱
+p_village_79|테투안
+p_village_80|제주도
+p_village_81|강릉
+p_village_82|회계
+p_village_83|리펄허스
+p_village_84|도버
+p_village_85|하이데라바드
+p_village_86|벵갈루루
+p_village_87|아리미늄
+p_village_88|카푸아
+p_village_89|비첸챠
+p_village_90|자발푸르
+p_village_91|케르만
+p_village_92|마쓰에
+p_village_93|우로
+p_village_94|이코니움
+p_village_95|임프
+p_village_96|야마가타
+p_village_97|몽골 유르트 II
+p_village_98|자로프트
+p_village_99|카라간다
+p_village_100|바이코누르
+p_village_101|진류
+p_village_102|폴로츠크
+p_village_103|바쿠바
+p_village_104|스타방게르
+p_village_105|웬든
+p_village_106|시클로스
+p_village_107|헬싱이버그
+p_village_108|론다
+p_village_109|잘라이르
+p_village_110|브라이빌
+p_village_111|카이즈코스
+p_village_112|스키다
+p_village_113|미라
+p_village_114|카디즈
+p_village_115|수루크
+p_village_116|메르사
+p_village_117|메디나
+p_village_118|카세레스
+p_village_119|셀리무스
+p_village_120|브뤼셀
+p_village_121|마인츠
+p_village_122|이스파한
+p_village_123|토르토사
+p_village_124|타르수스
+p_village_125|렌할드홀름
+p_village_126|사라고사
+p_village_127|스티그버그
+p_village_128|기마랑스
+p_village_129|트라브존
+p_village_130|장춘
+p_village_131|영릉
+p_village_132|부르고스
+p_village_133|호탄
+p_village_134|올로하이
+p_village_135|뮌헨
+p_village_136|일리차
+p_village_137|계양
+p_village_138|클레어
+p_village_139|졸욤
+p_village_140|타노보
+p_village_141|코넌가엘라
+p_village_142|보그
+p_village_143|필리포 폴리스
+p_village_144|바르셀로나
+p_village_145|무도
+p_village_146|페렉
+p_village_147|천수
+p_village_148|메르키트
+p_village_149|빈
+p_village_150|브란덴부르크
+p_village_151|간자
+p_village_152|함부르크
+p_village_153|던게넌
+p_village_154|슈발리에
+p_village_155|마이센
+p_village_156|스탈라야루사
+p_village_157|키르기스
+p_village_158|벡소렌
+p_village_159|교지
+p_village_160|콜페
+p_village_161|동경
+p_village_162|방콕
+p_village_163|스톡홀름
+p_village_164|길주
+p_village_165|락자
+p_village_166|글래스고
+p_village_167|여강
+p_village_168|완
+p_village_169|나고야
+p_village_170|가고시마
+p_village_171|에노
+p_village_172|바잉골
+p_village_173|돈화
+p_village_174|부여
+p_village_175|복양
+p_village_176|타타르 유르트
+p_village_177|남피
+p_village_178|나주
+p_village_179|평원
+p_village_180|타이치우드 유르트
+p_village_181|세키가하라
+p_village_182|산월
+p_village_183|하비
+p_village_184|다낭
+p_village_185|쟈다란 유르트II
+p_village_186|여남
+p_village_187|안정
+p_village_188|남해
+p_village_189|케레이트 유르트
+p_village_190|랭카스터
+p_village_191|합비
+p_village_192|밤버
+p_village_193|고산국
+p_village_194|소패
+p_village_195|길린
+p_village_196|적벽
+p_village_197|루이스
+p_village_198|우쓰노미아
+p_village_199|나가노
+p_village_200|이춘
+p_village_201|하노이
+p_village_202|무위
+p_village_203|아삼
+p_village_204|북평
+p_village_205|팸브룩
+p_village_206|장사
+p_village_207|충주
+p_village_208|신야
+p_village_209|웩스포드
+p_village_210|케레이트 유르트II
+p_village_211|훗카이도
+p_village_212|몽골 유르트 III
+p_salt_mine|채광 캠프
+p_four_ways_inn|퍼더에스턴 (여관)
+p_test_scene|test scene
+p_battlefields|전장
+p_celidon_forest|셀리돈 숲
+p_hidden_valley|숨겨진 계곡
+p_iniau_hideout|성스로운 그로브
+p_quarry1|광산
+p_hadrian_wall1|성벽 폐허
+p_odin_cave|동굴
+p_river_delta|리버 델타
+p_quarry|광산
+p_tilting_at_windmills|Tilting at Windmills
+p_multi_indigo_cradle|Cradle
+p_multi_indigo_frontier|Frontier
+p_of_multi_caravan_ambush|Caravan ambush
+p_of_multi_crezy|Forest Pass
+p_of_multi_fjord|Fjord
+p_of_multi_hastings|Hastings
+p_of_multi_hot_gates|Hot Gates
+p_of_multi_mini_circles|Circle
+p_of_multi_rock_valley|Rock Valley
+p_of_multi_small_ruins|Ruins
+p_of_multi_stone_circles|Stone Circles
+p_of_multi_thingvellir|Thingvellir
+p_battle_stones|고인돌
+p_circle_mystic|미스틱 서클
+p_roman_fort|로마 요새
+p_hadrian_wall|헤드리안 성벽 폐허
+p_farmland|Farmland
+p_stonemonumento|돌 기념비
+p_forestbattle|Forest Battle
+p_multi_scene_dam_10|Dam
+p_dhorak_keep|도어렉 성
+p_training_ground|훈련장
+p_training_ground_1|훈련장
+p_training_ground_2|훈련장
+p_training_ground_3|훈련장
+p_training_ground_4|훈련장
+p_training_ground_5|훈련장
+p_monasterio1|수도원
+p_monasterio2|수도원
+p_monasterio3|수도원
+p_monasterio4|수도원
+p_monasterio5|수도원
+p_monasterio6|수도원
+p_monasterio7|수도원
+p_monasterio8|수도원
+p_outpost_1|전초기지
+p_outpost_2|전초기지
+p_fort|나의 은신처
+p_temp_loot_wagon|수송마차
+p_looter_spawn_point|탈영병 생성 지점
+p_looter_spawn_point3|탈영병 생성 지점
+p_steppe_bandit_spawn_point|평야
+p_taiga_bandit_spawn_point|깊은 숲
+p_forest_bandit_spawn_point|숲
+p_forest_bandit_spawn_point2|도적단 생성 지점
+p_forest_bandit_spawn_point4|도적단 생성 지점
+p_mountain_bandit_spawn_point|고원
+p_mountain_bandit_spawn_point3|산적 생성 지점
+p_new_sp|새로운 생성 지점
+p_new_sp2|새로운 생성 지점
+p_new_sp3|새로운 생성 지점
+p_new_sp4|새로운 생성 지점
+p_sea_raider_spawn_point_1|해안
+p_sea_raider_spawn_point_2|해안
+p_sea_raider_spawn_point_3|강도 생성 지점
+p_desert_bandit_spawn_point|산
+p_ship_raider_spawn_point_1|해적 생성 지점
+p_ship_raider_spawn_point_2|해적 생성 지점
+p_ship_raider_spawn_point_3|해적 생성 지점

@@ -1,0 +1,81 @@
+pt_none|none{***}
+pt_rescued_prisoners|被 救 的 俘 虜 
+pt_enemy|敵 人 
+pt_hero_party|英 雄 部 隊 
+pt_village_defenders|村 莊 衛 隊 
+pt_cattle_herd|牛 群 
+pt_looters|劫 匪 
+pt_manhunters|青 年 勇 士 
+pt_steppe_bandits|諾 曼 強 盜 
+pt_taiga_bandits|維 京 強 盜 
+pt_desert_bandits|老 練 叛 軍 
+pt_forest_bandits|強 盜 
+pt_mountain_bandits|叛 軍 
+pt_sea_raiders|無 主 斗 士 
+pt_sea_raiders2|丹 麥 精 英 維 京 強 盜 
+pt_fianna|費 奧 納 的 叛 徒 
+pt_frank_looters_1|盜 賊 
+pt_frank_looters_2|盜 賊 
+pt_deserters|散 兵 游 勇 
+pt_merchant_caravan|商 人 的 商 隊 
+pt_troublesome_bandits|難 對 付 的 強 盜 
+pt_bandits_awaiting_ransom|等 待 贖 金 的 強 盜 
+pt_kidnapped_girl|被 綁 架 的 女 孩 
+pt_village_farmers|村 民 
+pt_spy_partners|不 顯 眼 的 旅 行 者 
+pt_runaway_serfs|逃 跑 的 農 奴 
+pt_spy|普 通 的 市 民 
+pt_sacrificed_messenger|獻 祭 信 使 
+pt_scout_party|偵 察 隊 
+pt_messenger_party|信 使 
+pt_raider_party|突 襲 隊 
+pt_raider_captives|獵 俘 隊 
+pt_kingdom_caravan_party|商 隊 
+pt_prisoner_train_party|運 俘 隊 
+pt_default_prisoners|逃 走 的 俘 虜 
+pt_routed_warriors|潰 軍 
+pt_center_reinforcements|增 援 部 隊 
+pt_kingdom_hero_party|軍 隊 
+pt_steppe_bandit_lair|諾 曼 港 壘 
+pt_taiga_bandit_lair|維 京 港 壘 
+pt_desert_bandit_lair|老 練 叛 軍 營 地 
+pt_forest_bandit_lair|強 盜 老 巢 
+pt_mountain_bandit_lair|叛 軍 營 地 
+pt_sea_raider_lair|斗 士 營 地 
+pt_sea_raider_lair2|丹 麥 港 壘 
+pt_looter_lair|綁 架 者 藏 身 處 
+pt_leaded_looters|強 盜 團 
+pt_sacerdotes_party|基 督 教 牧 師 
+pt_paganos_party|多 神 教 祭 司 
+pt_sea_raiders_ships|法 蘭 克 突 襲 者 
+pt_sea_raiders_ships2|丹 麥 維 京 強 盜 
+pt_sea_raiders_ships3|維 京 強 盜 
+pt_sea_raiders_ships4|挪 威 維 京 強 盜 
+pt_sea_raiders_ships5|瑞 典 維 京 強 盜 
+pt_sea_raiders_ships6|突 襲 者 
+pt_chimney_smoke|煙 
+pt_epic_fleet|傳 奇 維 京 船 隊 
+pt_port|港 口 
+pt_ferry_port|港 口 
+pt_landet_ships|你 的 船 
+pt_fisher_ship|漁 船 
+pt_traveller_ship|旅 行 者 
+pt_slave_trader_ship|販 奴 船 
+pt_sea_king_danish|提 督 
+pt_sea_king_norweg|提 督 
+pt_walrus_hunter|海 象 獵 人 
+pt_viking_raider|維 京 突 襲 者 
+pt_ambushers|伏 擊 者 
+pt_ship|船 
+pt_sven_doccinga_ca|斯 溫 的 突 襲 隊 
+pt_sven_lair_deffense|斯 溫 的 藏 身 處 
+pt_kennemer_revenge|突 襲 者 
+pt_sigurd_farm_men|西 格 德 的 戰 士 
+pt_wessex_foragers|西 撒 克 遜 征 糧 隊 
+pt_wessex_patrol|西 撒 克 遜 巡 邏 隊 
+pt_norway_looters|盜 賊 
+pt_jetty_port|港 口 
+pt_boar_herd|野 豬 群 
+pt_adv_party|戰 團
+pt_slave_hideout|藏 身 處 
+pt_village_elder|稅 吏 

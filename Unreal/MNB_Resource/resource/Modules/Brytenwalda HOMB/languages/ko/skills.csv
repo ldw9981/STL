@@ -1,0 +1,84 @@
+skl_trade|상술
+skl_trade_desc|(MAX:9) 포인트마다 거래에 대한 패널티를 5%% 감소시켜줍니다. 무역을 할때 이득을 보기위해서 가장 필요한 기술입니다.(부대 기술)
+skl_leadership|통솔력
+skl_leadership_desc|(MAX:10) 전투전 전략, 스파이 관리, 자동전투에 관여합니다. 1포인트 당 유지비가 3%%감소합니다. (지도자 기술)
+skl_prisoner_management|포로 관리
+skl_prisoner_management_desc|스킬마다 포로숫자 10증가 탈출확률 2%% 감소. 군주들은 각 주마다 탈출 확률을 가짐: 30%% 파티, 15%% 성이나 마을, 5%% prison tower가 있는 성이나 마을. (지도자 기술)
+skl_entertain|예능
+skl_entertain_desc|(MAX:15) 매일 휴식시, 각 영웅의 이 스킬은 부대 사기를 올려줍니다. 또한 구걸하거나 음악연주를 하는것에 영향을 줍니다. 15스킬에 도달하면, 바드계의 센세이션이 발생됩니다! (개인 기술).
+skl_reserved_2|제한된 기술 2
+skl_reserved_2_desc|이것은 제한된 기술입니다.
+skl_reserved_3|제한된 기술 3
+skl_reserved_3_desc|이것은 제한된 기술입니다.
+skl_reserved_4|제한된 기술 4
+skl_reserved_4_desc|이것은 제한된 기술입니다.
+skl_persuasion|설득
+skl_persuasion_desc|(MAX:10) 다른 사람이 당신을 돕도록 설득하는 능력 . 협상과 항복권유 성공률이 늘어남. 각 랭크마다 마을에서 고용하는 병력 수가 1늘어나고 고용에 드는 비용이 감소함. 마을에서 보급품을 받는 가격이  3%% 감소. (개인 기술)
+skl_engineer|기술자
+skl_engineer_desc|(MAX:5) 건설과 공성무기 제작 속도 가속화. (부대 스킬)
+skl_first_aid|응급 치료
+skl_first_aid_desc|(MAX:10) 영웅이 임무중 잃은 체력을 5%% 회복합니다. (부대 기술)
+skl_surgery|수술
+skl_surgery_desc|(MAX:10) 1포인트마다 아군이 사망하지 않고 부상당할 확률이 4%%씩 상승합니다. (부대 기술)
+skl_wound_treatment|상처 치료
+skl_wound_treatment_desc|(MAX:10) 부대의 체력 회복 속도가 20%% 증가합니다. (부대 기술)
+skl_inventory_management|배낭 공간 증가
+skl_inventory_management_desc|(MAX:10) 1포인트마다 배낭의 공간이 6칸 증가합니다. (개인 기술)
+skl_spotting|정찰
+skl_spotting_desc|(MAX:10) 부대의 시야거리가 10%% 상승합니다. (부대 기술)
+skl_pathfinding|길찾기
+skl_pathfinding_desc|(MAX:10) 지도상에서 부대의 이동속도가 3%% 상승합니다. (부대 기술)
+skl_tactics|전략가
+skl_tactics_desc|(MAX:10) 전투를 할 때 유리함(어드밴티지)이 1 상승합니다. 참여 숫자에 관여 (부대 기술)
+skl_tracking|추적술
+skl_tracking_desc|(MAX:10) 흔적이 더욱 더 쓸모가 있어집니다. (부대 기술)
+skl_trainer|훈련교관
+skl_trainer_desc|(MAX:10) 가장 높은 한명의 수치만 적용됩니다. 해당 영웅보다 레벨이 낮은 부대원들에게 경험치를 줍니다. 기술의 레벨에 따라 {0,4,10,16,23,30,38,46,55,65,80} 순서입니다. (부대 기술)
+skl_reserved_5|제한된 기술 5
+skl_reserved_5_desc|이것은 제한된 기술입니다.
+skl_reserved_6|제한된 기술 6
+skl_reserved_6_desc|이것은 제한된 기술입니다.
+skl_reserved_7|제한된 기술 7
+skl_reserved_7_desc|이것은 제한된 기술입니다.
+skl_looting|약탈
+skl_looting_desc|(MAX:10) 기술 수준에 10%%의 얻게 되는 약탈품의 총계를 늘려줍니다. 그리고 적들의 아이템을 얻을 수 있을 확률을 높여줍니다. (부대 기술)
+skl_foraging|수렵채집술
+skl_foraging_desc|(MAX:10) 스킬포인트마다 5개 음식을 구할수 있게 한다.  (캠프, 공성, 사냥중) 수렵 범위를 넓게 한다 (부대 기술)
+skl_horse_archery|기마 궁술
+skl_horse_archery_desc|말에 타고 있을 때 활과 투척무기의 공격력과 정확도에 대한 패널티가 감소합니다. (개인 기술)
+skl_riding|승마술
+skl_riding_desc|(MAX:10) 타기 힘든 수준의 말을 타게 해 주며 말의 기동능력과 이동속도가 증가합니다. (개인 기술)
+skl_athletics|운동능력
+skl_athletics_desc|(MAX:10) 달리기의 속도와 스테미너 회복량(4초마다 회복됨)이 상승합니다. (개인 기술)
+skl_shield|방패 방어술
+skl_shield_desc|(MAX:10) 방패로 전달되는 공격력의 8%%를 감소시키고 방패의 사용속도와 방어 범위가 증가합니다. (개인 기술)
+skl_weapon_master|무기 숙련
+skl_weapon_master_desc|(MAX:10) 무기의 숙련도 한계치를 늘려줍니다. 한계치는 60부터 시작해 1포인트마다 40씩 상승합니다.  (개인 기술) Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)
+skl_reserved_9|제한된 기술 9
+skl_reserved_9_desc|이것은 제한된 기술입니다.
+skl_reserved_10|제한된 기술 10
+skl_reserved_10_desc|이것은 제한된 기술입니다.
+skl_reserved_11|제한된 기술 11
+skl_reserved_11_desc|이것은 제한된 기술입니다.
+skl_reserved_12|제한된 기술 12
+skl_reserved_12_desc|이것은 제한된 기술입니다.
+skl_reserved_13|제한된 기술 13
+skl_reserved_13_desc|이것은 제한된 기술입니다.
+skl_power_draw|궁술
+skl_power_draw_desc|(MAX:7) 캐릭터가 좀 더 강한 활을 사용할 수 있게 해줍니다. 이 기술에 1포인트를 줄 때마다 활의 공격력이 14%% 상승합니다.(개인 기술)
+skl_power_throw|투척술
+skl_power_throw_desc|(MAX:7) 이 기술에 1포인트를 줄 때마다 투척 무기의 공격력이 10%% 상승합니다. (개인 기술)
+skl_power_strike|타격
+skl_power_strike_desc|(MAX:10) 이 기술에 1포인트를 줄 때마다 근접 공격력이 8%% 상승합니다. (개인 기술)
+skl_ironflesh|인내력
+skl_ironflesh_desc|(MAX:15) 이 기술에 1포인트를 줄 때마다 체력이 2 상승합니다. (개인 기술)
+skl_reserved_14|제한된 기술 14
+skl_reserved_14_desc|이것은 제한된 기술입니다.
+skl_reserved_15|제한된 기술 15
+skl_reserved_15_desc|이것은 제한된 기술입니다.
+skl_reserved_16|제한된 기술 16
+skl_reserved_16_desc|이것은 제한된 기술입니다.
+skl_reserved_17|제한된 기술 17
+skl_reserved_17_desc|이것은 제한된 기술입니다.
+skl_reserved_18|제한된 기술 18
+skl_reserved_18_desc|이것은 제한된 기술입니다.

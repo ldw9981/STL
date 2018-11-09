@@ -1,0 +1,176 @@
+Changelog 2.036
+Changes since 2.032
+
+- properly indicate all members of player's team in minimap (not just player party)
+- redo Doccinga coastal assault so that Danish allies show on minimap as allies
+- fix short sword stats
+- position Ashdown ruins correctly
+- disallow complaining when there is no ship crew to complain
+- attempt fix of hof quest strings
+- have Drywei's and Helgi's skills match their description
+- fix kingdom/MP culture shields
+
+***
+Changelog 2.028
+Changes since 2.025
+
+- update and fix various texts
+- update Spanish localization
+- fix duplicate husband bug
+- fix documentation for siege restrictions
+- prevent player from gaining kingdom in story mode
+- fix battle presentation for dog exclusion, player team (unrecognized troops bug)
+- limit items in lords' halls (no more "sneaking" visible weapons with second outfit)
+- initialize hunt globals correctly
+- add looted hofs to recovery trigger
+- refine faction identification for dialogs
+- apply quest generation shutoff to "no tasks"
+- apply seax exclusion to all rob prisoner dialogs
+- add default to torturer dialog
+- fix farmstead cattle
+- allow Ashdown battle restart from mid-quest save
+- bind bottom of relation boost in case somehow goes negative
+- clean up post-quest locales (Sven's Hideout, Ashdown destroyed, and Boar Grove)
+- avoid operations on null item or to null inventory
+- fix scope, div-by-zero problems in script_battle_political_consequence
+- fix capture of ships problem with autoresolve
+- prohibit unusable landing points at map border
+- disable companion political complaints, which are completely wrong
+- attach Tref Meguaidd East to Caer Meguaidd
+- fix misnamed variable (MP)
+- strip practice weapons on ESC from Doccinga tutorial
+- remove stray dog dialog from Doccinga tutorial
+- remove dead code
+
+2015 BINARIES
+- 40 odd fixed scenes
+
+
+***
+Changelog 2.025
+Sep. 2016
+
+- fix tutorial message for Roman Baths ruins
+- adjust pricing formulas (attempt to prevent changes from buying/selling same article)
+- disable some monastery options when learning to read (early exit exploit)
+- disable scouts (and their loss) at sea
+- shut down random events at sea
+- exclude non-normal villages from lute search (quest was blocked when village inaccessible)
+- allow slaughter of non-quest cattle after cattle delivered
+- correct standard bearer report on Camp Menu
+- allow only one town recruiting run from whatever menu (recruit picking exploit)
+- clean up event_triggered dialogs, particularly for returning party members
+- check spiral death cam is finished before attempting to leave scene
+- attempt to eliminate sometime corruption of refuge text
+- make immersive default ship names
+- reinitialize item info (wiped out in someone's save game by unknown cause)
+- fix craftsmen names
+- test slot_faction_political_issue properly (has two default values, which rendered the system inoperative half the time)
+- fix debug message producing false commander mismatches
+- fix and improve mutiny duel trigger
+- add backstop at automenu trigger to ensure campaign death after mutiny duel loss **CANCELED**
+
+FACTION RESTORATION
+- process just one faction at a time
+- adjust rate of restorations to about 1/month at end of game
+- produce no more than one "Possible Rebellion" message (if no rebellion), and have it escalate with number of walled centers
+- remove player-based all-or-nothing phaseout
+- make lord defection dependent on current king relation
+- make sure faction leader joins resurgent faction
+- avoid giving money to undefined troop
+- fix the growth of the rebellion, include adventurers
+- bring in supporting lords if rebellion threatened (to avoid stranding them if faction is destroyed AGAIN)
+- avoid auto-war with player
+
+FAST-TRACKED DURING BETA
+- fix dog interference with army orders (order ALL bug)
+- fix hire refuge armorer
+- allow visit village leader at night from menu
+- prohibit battle panel by down player (leading to crazy camera)
+
+2015 BINARIES
+- Viking banner textures (fix some white backgrounds)
+- scn_caravanatacada.sco
+- scn_castle_37_exterior.sco
+
+
+***
+Changelog 2.024
+June 2016
+
+- have player refuge always be in player supporters' faction
+- apply player kingdom color to refuge, landed ships, quarters
+- add player kingdom color change function to camp menu
+- ensure NPC in party does not become adventurer
+- overhaul duel system, mainly to set opponent properly
+- deactivate player kingdom properly, using the script for that (NPCs on mission and prime minister now return)
+- fix mission trigger time and make mission reports the priority
+- have npc_mission_seek_recognition embassy_results include the other three logical outcomes
+- drop missions that have no dialog in case a companion somehow ends up with one
+- override prisoner escape chance properly
+- rewrite auto-defect trigger
+- add cultural considerations to new faction pick
+- prevent random event losses for raiding villages during siege when not actually doing so
+- remove lovers' system that was making all ladies adulteresses
+- use correct title strings for Scots/Irish and fix other inconsistencies and omissions
+- fix ask peace dialog
+- fix ambiguity in player/faction relations (removes ability to threaten own kingdom's caravans)
+- add Mod ID string
+- place sound controls in mission templates to make sure loop tracks are killed
+- add ambiance to lair interiors
+- fix refuge chest
+- fix logic of child count dialogs
+- fix bard improve relations with lady
+- fix behavior of rescued lords
+- fix behavior of ambiance neutrals during jailbreak
+- fix "hole" in recruit permission dialog when already have it
+- move recruit permission update from triggers to script
+- player loses permission to recruit in center that gets new owner
+- fix fiefs string for lord select for fief
+- remove player picture from refuge menu
+- fix troop training management
+- unset g_encountered_party when it is removed (invalid party bug)
+- add proper conditions to Hadrian Wall dialog and kill experience reward exploit
+
+
+***
+Changelog 2.023
+Feb. 2016
+
+Fix and document missing prisoners.
+Fix refuge dialogs.
+Fix refuge training. Limit it to produce only up to L3 troops and have it stop automatically.
+Allow refuge items to be refreshed. Have them be from the player culture.
+Include attachments when inflicting damage to party from siege event.
+Avoid problems by prohibiting companions from being captured by player.
+Fix quest dialogs, results.
+Update game notes regarding shield taunt.
+Take dead player's troops out of scripted mode (frozen skirmishers).
+Show when player is mercenary on character report.
+Track and test for last town to pay siege tribute (to avoid paying again).
+Avoid spawning recruitable dog during village quests.
+Move troops and ships from demolished camp.
+Alter price adjustment formulas to avoid player from making money just by buying/selling a single item over and over again.
+Add script_encounter_calculate_fit to "Charge Villagers" so player gets full party.
+Restructure torture dialogs.
+Except bandit lairs from icon changes.
+Routed parties get ship icons.
+
+
+***
+Viking Conquest v. 2.022
+Jan. 2016
+
+3485 fix rescue slave from village scene
+3491 fix port attack stutter
+3492 remove testing trigger
+3493 fix duplicate ship getting renamed
+3494 add more landing points for faster Norse invasions
+3497 rearrange adventurers' AI trigger to avoid unnecessary AI interruptions (bouncing around at sea)
+3502 change all ti_on_hit to FIRST test if inflicted agent is active (battle red text)
+3503 return to "update all notes" for faction relation changes
+3511 fix suspected critical constant for alliance system
+3518 add check for bad party to script_party_set_ai_state (red text)
+
+
+***

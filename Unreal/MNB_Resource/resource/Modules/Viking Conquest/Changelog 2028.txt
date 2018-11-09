@@ -1,0 +1,33 @@
+Changelog 2.028
+Changes since 2.025
+
+- update and fix various texts
+- update Spanish localization
+- fix duplicate husband bug
+- fix documentation for siege restrictions
+- prevent player from gaining kingdom in story mode
+- fix battle presentation for dog exclusion, player team (unrecognized troops bug)
+- limit items in lords' halls (no more "sneaking" visible weapons with second outfit)
+- initialize hunt globals correctly
+- add looted hofs to recovery trigger
+- refine faction identification for dialogs
+- apply quest generation shutoff to "no tasks"
+- apply seax exclusion to all rob prisoner dialogs
+- add default to torturer dialog
+- fix farmstead cattle
+- allow Ashdown battle restart from mid-quest save
+- bind bottom of relation boost in case somehow goes negative
+- clean up post-quest locales (Sven's Hideout, Ashdown destroyed, and Boar Grove)
+- avoid operations on null item or to null inventory
+- fix scope, div-by-zero problems in script_battle_political_consequence
+- fix capture of ships problem with autoresolve
+- prohibit unusable landing points at map border
+- disable companion political complaints, which are completely wrong
+- attach Tref Meguaidd East to Caer Meguaidd
+- fix misnamed variable (MP)
+- strip practice weapons on ESC from Doccinga tutorial
+- remove stray dog dialog from Doccinga tutorial
+- remove dead code
+
+2015 BINARIES
+- 40 odd fixed scenes

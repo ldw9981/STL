@@ -1,0 +1,11 @@
+Changelog 2.036
+Changes since 2.032
+
+- properly indicate all members of player's team in minimap (not just player party)
+- redo Doccinga coastal assault so that Danish allies show on minimap as allies
+- fix short sword stats
+- position Ashdown ruins correctly
+- disallow complaining when there is no ship crew to complain
+- attempt fix of hof quest strings
+- have Drywei's and Helgi's skills match their description
+- fix kingdom/MP culture shields

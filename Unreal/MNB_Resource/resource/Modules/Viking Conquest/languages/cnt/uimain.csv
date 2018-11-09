@@ -1,0 +1,93 @@
+
+ui_texture_detail|Ά-趈㺍
+ui_max_frame_rate|׮䳖ዙ㺍
+ui_enable_bumpmap|ʹӃ།錹ͼ
+ui_disable_blood|阱Ձ瑪黍
+ui_disable_music|阱Ւ䀖
+ui_disable_sound|阱Չ鑭
+ui_enable_cheats|䲿ꗷᗄ㊽
+ui_enable_edit_mode|䲿걠쭄㊽㨻ኹӎϷᤂ���
+ui_enable_pixel_shaders|ʹӃϱ˘ׅɫҽǦ
+ui_enable_sound_variation|䲿ꉹ᤻ui_enable_vertex_shaders|䖈ʽ㺍
+ui_shadow_quality|ҵӰ֊㺍
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|ϔʾ֡
+ui_start_windowed|䰿ڄ㊽ƴ母
+ui_trialmode_caption|줻ui_trialmode|ǫ먒뵣ʱ줓A㵄Pꅼ反Mount㦂lade Warbandᣄ㵄怒뎞新ı6λPꅰ캬Ԛģ儺ൄ豱ᣜn⻂۳據ʲoԭҲ㬈繻ģϖԚ⻏뼤뮓Ώ磬ģҲԔڊԍ愣ʽς쌐軫ӎϷ㬖ᵽȋί彴︼檔
+ui_launch_buy|䓔aleWorlds.com麂ⓎϷ㨓⎄㩍
+ui_launch_faq|ԚϟϺʛFAQ㨓⎄㩍
+ui_trialmode2|ϖԚ㬎ꁋ줻Ϸ᭡퍊ui_trialmode3|법ߣ섣Ҳԡ���
+ui_trialmode4|ȧ黃㶔줻㌓ЈκΒɎʣ섣ԔĶa���
+ui_serial_key_caption|Pꅍ
+ui_notification_serial_input|Ԛςaʤȫģ儐⁐ꅣ脣Կ���/ճ̹㩲２ȡ줻ť
+ui_activate|줻ui_paste|ճ̹
+ui_notification_serial_internet_connection|줻Ҫһ趻偪͸l퓣ፊui_notification_serial_offline|ȧ黕⌨姄Ԏ޷聬퓻偪͸ģҲԊ鈴㺍
+ui_manual_activation|ʖ毼反
+ui_offline_activation|+ϟ줻ui_manual_activation_caption|ʖ毼反
+ui_offline_activation_caption|+ϟ줻ui_cancel2|ȡϻ
+ui_close|阱Ս
+ui_ok2|ȷ樍
+ui_activation_successful|Mount㦂ladeґɹ漤뮣ፊui_activation_successful2|ģ᣹ܺA㵄Pꅒԗ汸ӃᣒԺㄣԚᰵĵ焰ɏಗͯunt㦂lade Warband儊Ẳ���ٴΓo���
+ui_activation_denied|줻ǳỾܾ裡
+ui_notification_serial_already_used|բ趐⁐ꅒѾ픚m͢һ̨姄ԉϊ鈴齁ˣ섣ᘐ빽츸撳ƚ⅄ܔڕ⌨姄ԉϖؐ¼反ᣍ
+ui_notification_unable_to_connect_to_activation_server|Ξ稿콓彼反美ᆷ㡍
+ui_notification_unable_to_connect_to_activation_server2|ǫȷȏģ傻胚l퓊Ǔ組⢹䗷ս㣣숻곔يԒ뱩ᣈ繻ģಗK瀻ǽ㬄㿉ĜҪԊբ趓Ώ퓲ⷃΊ͸§ᣈ繻漊簜K㬄㐨ҪʹӃʖ毼反ᣍ
+ui_incorrect_serial_number|䭎㵄Pꅣፊui_incorrect_hardware_hash|䭎㵄Ӳ쾈ASH㡍
+ui_incorrect_activation_code|䭎㵄줻㡍
+ui_cant_write_to_registry|Ξ稐䈫ע⡱���
+ui_video|ͼϱ
+ui_audio|ɹҴ
+ui_game|ӎϷ
+ui_advanced|蟼摡Ϯ
+ui_mount_and_blade_is_ready|Mount㦂lade WarbandґɒԓAˡ㍊ui_notification_trial_mode|Mount㦂lade WarbandϖԚԋԚʔӃģʽᣔڕ⸶ģʽςģԒ떱ͦ彽ǉ뼶ᰵځ鼶ᣖģҪ䓔aleWorlds.com麂Ⓕ趐���֤㬔ڏ߹ꂲֻҪ먺̵ܶĊἤᣖģɒԽ⋸ӎϷ⢽ӗō揂ȥKᣍ
+ui_there_are_no_modules_installed|uӐಗྦྷᾣ藥dule㩣ፊui_notification_new_version|碏֒븶Ђ঱Mount㦂lade WarbandӎϷᣜn屇లװ儰汾Ϊ%d.%d%d%dᣜn׮Ђ঱%d.%d%d%dᣜnģԴӷww.taleworlds.comςԘ彗঱
+ui_new_version_found|碏֐°汾㡍
+ui_notification_unable_to_retreive_new_version|Ξ稻ᵃЂ঱Ϣ㬇뉔겔يԡ㍊ui_new_version|Ђ঱
+ui_notification_latest_version|ģґ◰K׮Ђ傻ount㦂lade WarbandKᣍ
+ui_mount_and_blade_is_up_to_date|Mount㦂lade WarbandґǗ俊ˣፊui_off|阱Ս
+ui_continue_playing_the_trial_mode|쌐蔚ʔӃģʽςͦ
+ui_faq_caption|㣼뎊̢���͊ui_faq_text|Q: ʲoʇӎϷ줻\r\nA: բ趼反ϵͳʇһ趼⒗儷?���穌췢煵Ē븶怒뎞新Đ⁐ꅿɒԓo핢趓Ώ組y躉᱾ᣄ㖻ҪԚy̨ģϫͦբ趓Ώ組姄ԉϓA㵄Pꅼ反բ趓Ώ璻䎾Ϳɒԁˡ㒻䎼反Ҕ곣섣ɒԽ萐ӎϷK㬆䋻儊⃴Ҳ⻐蒪׶K㬱Ȉ粻ҪѓΏ繢庄떱煔ڹ⇽/ᣖ뒪ģ᣹ܺA㵄Pꅣ섣���ܺ܈ݒ׵ؼ反⢽萐ӎϷ㬼䊹ꜶĪҔ곡㜲\n\r\nQ:ΒԚĄ/ĜՒ彎ҵĐ⁐ꅣ\nA:բ趓Ώ組y趺ൄ豱漰캬Ӑһ趶뎞新Đ⁐ꅡ㲻ͬ齉폺ɌҲ롒Բ덬儷튽胝␲Pꅣ쵫ʇ폵䐍儊ǻᓡˢԚ碲슖⡵ķ⃦ɏᣜr\n\r\nQ:բ趼反㌐⊇ȧꎹ䗷廣\nA:ӎϷ롸秋ģ姄ԓ⼾粲ꏸЅϢ⺉꒻趹ֵ㬲⇒lͬģ儐⁐ꅒ놰岢͵���뮍艏儷Ʒ᣼反美ᆷ���⁐ꅗⲡ彄㵄姄Ԁ⢇ҍ蹽һ趼反ꅂ뀴���퓎ϷʔͦϞֆ㬒ԿꆴӎϷ傻ꕻģʽᣜr\n\r\nQ:ΒԔڶ̨姄ԉϼ反բ趓Ώ炰㿜r\nA:ʇ廣섣ԡ㵫ʇǫģ쇗ᕢ趓Ώ罶ʇʚȨ踄㸶ȋʹӃ儡㼤뮷Ʒܻᔝʱ蒻趔ڶ̊ἤĚ줻栴Ί���Pꅡ㜲\n\r\nQ:屎ҵ줻ťҔ곣쳌ֹͣϬӦKᣜr\nA:ͨ㣐蒪ƬĊἤ4ʵϖ줻㌡ㄍЄ壣쓎Ϸ׮֕롱踦줻黵ġ㜲\n\r\nQ:Β儵焰uӐj͸ᣎ҈纖⅄ܼ反բ趓Ώ磿\r\nA: բ֖ǩﶏ￡섣Ԋ鈴ʖ毼反ᣵ㻷ᰊ䈫ģ儐⁐ꅡᰴť㬔ڵ㻷ᰊֶＤ뮡ᰴťᣄ㈔ȻҪԚᰵĄ܁콓擴胚儵焰ɏ䲿ꊖ毼反ҳaᣜr\n
+ui_auto_adjust|ה毉薃
+ui_screen_size|ƁĻ皰悊㺍
+ui_antialiasing|紾ⳝ㺍
+ui_use_desktop_resolution|ʹӃ׀a皰悊
+ui_play|慠썦Mount㦂lade Warband
+ui_check_for_new_version|쬲鐂঱ui_configure|Ťփ
+ui_configure_caption|Ťփ
+ui_mountandblade_website|烎ʍount㦂lade Warband͸վ
+ui_current_setting|           屇ྦྷᾣꍊui_manual_activation_text1|1) Ԛģ儤Ʒ嘖瀸֐ʤȫբ趵ؖ磺
+ui_manual_activation_text2|2) Ԛ͸ҳɏʤȫģ儐⁐ꅡ���
+ui_manual_activation_text3|3) ᭡���բ̨뺆組Ӳ쾈ASH㺍
+ui_manual_activation_text4|4) ͸ҳɏ롸賶һ趼反«㬔ڏ漼ȫ법ߕ㌹㬲ⵣ뷈綨ᣍ
+ui_activation_code|줻㺍
+ui_force_vsync|ǿֆ乖፬⽍
+ui_module_newer_than_application|ģѡӃ儉薃ӫբ趓Ώ組঱㣲놥Ťᣇ���鄣⻒ꔋբɨփᣎꁋ���敢趎ʌ⣬ģԼ첩һςբ趓Ώ奔籓°汾ᣍ
+ui_module_older_than_application|ģѡӃ儉薃ʇբ趓Ώ羉঱ɨփ㬔ڐ°汾/ܲ넜ɺᣄ㿉Ҕ쌐軫ӎϷ㬵뺜Ӑ܄㻡Ӷ發鷳ᣎꁋ���敢趎ʌ⣬ģԼ첩һςЂ঱һɨփʇ籿ꆴᣍ
+ui_m_low|卍
+ui_m_high|蟍
+ui_m_ultra_high|쫸ߍ
+ui_force_single_threading|ǿֆ奏ߐԍ
+ui_not_enough_memory|ˆ굄㏖Ԛ兒ɓoĴŅ̿ռ亍ĢĚ䦵ėܴ㐡Ϊ%d MBᣍount&Blade WarbandҪցə700 MB兒ɓyռ䲅Ĝᣖ䔋⻻ᳶΊ̢ᣈ繻ģԚͦMount&Blade Warband儊ẲƁĻ⻶ωvćoԚ慠썦Mount&Blade Warbandǰǫ陣䒻ԋ粲᣻╟Ԛƃ氥/粲即⋵倯巴ㄣ儐鄢Ě䦡㍊ui_install|ಗͯunt&Blade Warband
+DirectXText|Mount㦂lade WarbandǳDirectX 9.0c찒ԉϲńܕ���ԋᣄ㵄姄Ԏ䴯錄⸶Ҫǳᣄ㿉Ҕ彎∭儹ٷ퍸վςԘ⢰◰׮Ђ億irectX4���敢趎ʌ⡣ģϖԚϫ烎ʔaleWorlds͸վ億irectXςԘҳa°㿍
+NoMountAndBladeText|Mount㦂lade WarbandδỗӚբ趵焰ɏᣇ뵽www.taleworlds.com͸վςԘͪȫ儰◰΄쾲ⰲװᣍ
+ui_SavegamesText|ģϫᣴ愣載ļ㿍
+ui_trialmode_online|Mount㦂lade WarbandϖԚԋԚʔӃģʽᣔڕ⸶ģʽςģԒ떱ͦ彽ǉ뼶ᰵچ߼檔֮계㐨Ҫ䓔aleWorlds.com麂Ⓕ趐���֤㬔ڏ߹ꂲֻҪ먺̵ܶĊἤᣖģɒԽ⋸ӎϷ⢽ӗō揂ȥKᣍ
+ui_launch_activate|ʤȫģ儐⁐ꅍ
+ui_trialmode2_online|麂Ⓕ趐���֤֮곣섣���ᵃģ儐⁐ꅡ㜮Ҫ���蓎Ϸ᭡퍊ui_trialmode3_online|법ߣ숧黃㏖Ԛ빲돫麂ⓎϷ㬄㒲ԡ���
+ui_trialmode4_online|ΒC儔ڏߏꊛw㌊Ǘ㹻ಈ뵄㬶臒ΒC照㗰֘ΒC鋿͵Ĉ恥㬱Ȉ磺ಈ됔㬒㬿���ӎϷ儸᱾ꍉ���˻C儵焰Ӳ쾡八黃㏫Ҫ攎҃ǵďꊛ⟂ԓ춠俊˽⣬ǫﴒ돂㺍
+ui_ondemand_textures|ԚҪʱԙԘȫΆ-
+ui_language|ӯє㺍
+ui_steam_not_running|Ξ稕툷㵊컯Steamᣱؐ놴毓team4���Ώ硣
+ui_switch_to_turkish_explanation|Oyunun dilini Turkce'ye cevirmek ister misiniz?
+ui_switch_to_turkish_yes|Evet
+ui_switch_to_turkish_no|Hayir
+ui_new_version_message|ґӐ輐μēΏ簦᾿ɓaㄣʇ籀ꏖԚ烎ʏؒ㿍
+ui_enable_version_check|Ԋ쬲鐂঱ui_disable|⻔ʐ퍊ui_yes2|ʇ
+ui_no2|籍
+ui_new_version_message2|ґӐ輐μēΏ簦᾿ɓa㇫烎ʄ㹺2胓Ώ組͸վַҳ4ςԘ輐μİ汾ᣍ
+ui_napoleonic_key_does_not_exist|բ趍ODҪăƆսչDLC⅄܍棡
+ui_delete_module_workshop|ģȷ樄㏫ȡϻ橔ĕ⸶MOD㿍
+ui_delete_module|ģȷ樄㏫ɾ㽕⸶MOD㿍
+ui_delete_native_module|ģ⻄܉Nativeբ趍ODᣍ
+ui_incompatible_module|美ᆷӫģ屇ൄMOD⻼賊ᣄ㿉ҔӃŤփ餾߀丄ᤍOD
