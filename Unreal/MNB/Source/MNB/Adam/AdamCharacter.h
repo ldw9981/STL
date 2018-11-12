@@ -45,6 +45,10 @@ public:
 
 	void DoJump();
 
+	void StartFire();
+
+	void StopFire();
+
 	void SetRun();
 
 };

@@ -105,3 +105,13 @@ void AAdamCharacter::DoJump()
 {
 	Jump();
 }
+
+void AAdamCharacter::StartFire()
+{
+
+}
+
+void AAdamCharacter::StopFire()
+{
+
+}
