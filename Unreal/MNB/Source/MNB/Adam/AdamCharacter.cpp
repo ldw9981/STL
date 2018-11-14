@@ -125,3 +125,8 @@ void AAdamCharacter::StopFire()
 {
 
 }
+
+bool AAdamCharacter::IsDead()
+{
+	return false;
+}
