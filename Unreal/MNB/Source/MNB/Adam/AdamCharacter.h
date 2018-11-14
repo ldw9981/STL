@@ -15,15 +15,19 @@ public:
 	// Sets default values for this character's properties
 	AAdamCharacter();
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-		class USpringArmComponent* SpringArm;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-		class UCameraComponent* Camera;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class USpringArmComponent* SpringArm;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UCameraComponent* Camera;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float RunSpeed = 600;
+	float RunSpeed = 600;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-		float CapsuleCrouchHalfHeight = 44.0f;
+	float CapsuleCrouchHalfHeight = 44.0f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TSubclassOf<AActor> ArrowActor;
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

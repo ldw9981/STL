@@ -14,7 +14,8 @@
 #include "Kismet/KismetSystemLibrary.h"
 #include "Materials/MaterialInstance.h"
 #include "Components/DecalComponent.h"
-//#include "Basic/WeaponComponent.h"
+#include "Components/ArrowComponent.h"
+	//#include "Basic/WeaponComponent.h"
 //#include "Basic/BasicPlayerCameraManager.h"
 //#include "MyCameraShake.h"
 //#include "BulletDamageType.h"
@@ -27,7 +28,7 @@ AAdamCharacter::AAdamCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 
 	GetMesh()->SetRelativeLocation(FVector(0, 0, -GetCapsuleComponent()->GetUnscaledCapsuleHalfHeight()));
-	GetMesh()->SetRelativeRotation(FRotator(0, -90, 0));
+	GetMesh()->SetRelativeRotation(FRotator(0, -88, 0));
 
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetupAttachment(RootComponent);
@@ -37,6 +38,8 @@ AAdamCharacter::AAdamCharacter()
 
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(SpringArm);
+
+	
 	Tags.Add(TEXT("Player"));
 }
 
@@ -108,7 +111,14 @@ void AAdamCharacter::DoJump()
 
 void AAdamCharacter::StartFire()
 {
+	// 블루프린트에서 설정한 화살 액터로 생성한다.
+	if (ArrowActor != nullptr)
+	{
+		FVector Location = SpringArm->GetComponentLocation() + SpringArm->GetForwardVector() * 200;
+		FRotator Rotation = SpringArm->GetComponentRotation();
 
+		GetWorld()->SpawnActor<AActor>(ArrowActor, Location, Rotation); // C++ class
+	}	
 }
 
 void AAdamCharacter::StopFire()
