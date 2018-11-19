@@ -21,8 +21,17 @@ public:
 	class USphereComponent* Collision;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
 	class UProjectileMovementComponent* Movement;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-	bool DoStuck = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HitEffect")
+	bool DoStuckOnCharacter = false;
+	/*
+	// 리소스는 보유 여부에 따라 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HitEffect")
+	class UParticleSystem* HitParticle;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HitEffect")
+	class USoundBase* HitSound;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HitEffect")
+	class UMaterialInstance* HitDecal;
+	*/
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -33,6 +42,4 @@ public:
 
 	UFUNCTION()
 	void OnComponentHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
-	UFUNCTION()
-	void OnActorHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit);
 };

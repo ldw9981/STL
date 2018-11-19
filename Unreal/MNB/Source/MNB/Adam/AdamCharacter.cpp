@@ -16,6 +16,7 @@
 #include "Components/DecalComponent.h"
 #include "Components/ArrowComponent.h"
 #include "Projectile/Projectile.h"
+#include "CharacterState/CharacterStateComponent.h"
 	//#include "Basic/WeaponComponent.h"
 //#include "Basic/BasicPlayerCameraManager.h"
 //#include "MyCameraShake.h"
@@ -40,7 +41,8 @@ AAdamCharacter::AAdamCharacter()
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(SpringArm);
 
-	
+	CharacterState = CreateDefaultSubobject<UCharacterStateComponent>(TEXT("CharacterState"));
+
 	Tags.Add(TEXT("Player"));
 }
 
@@ -129,4 +131,13 @@ void AAdamCharacter::StopFire()
 bool AAdamCharacter::IsDead()
 {
 	return false;
+}
+
+float AAdamCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
+{
+	float Result =  CharacterState->TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+
+
+
+	return Result;
 }

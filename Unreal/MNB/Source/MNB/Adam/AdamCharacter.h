@@ -19,6 +19,8 @@ public:
 	class USpringArmComponent* SpringArm;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	class UCameraComponent* Camera;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UCharacterStateComponent* CharacterState;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float RunSpeed = 600;
@@ -55,4 +57,7 @@ public:
 	//void SetRun();
 
 	bool IsDead();
+
+
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 };
