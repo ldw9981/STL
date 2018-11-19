@@ -26,8 +26,7 @@ public:
 	float CapsuleCrouchHalfHeight = 44.0f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		TSubclassOf<AActor> ArrowActor;
-	
+	TSubclassOf<class AProjectile> Projectile;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

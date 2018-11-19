@@ -15,6 +15,7 @@
 #include "Materials/MaterialInstance.h"
 #include "Components/DecalComponent.h"
 #include "Components/ArrowComponent.h"
+#include "Projectile/Projectile.h"
 	//#include "Basic/WeaponComponent.h"
 //#include "Basic/BasicPlayerCameraManager.h"
 //#include "MyCameraShake.h"
@@ -112,12 +113,11 @@ void AAdamCharacter::DoJump()
 void AAdamCharacter::StartFire()
 {
 	// 블루프린트에서 설정한 화살 액터로 생성한다.
-	if (ArrowActor != nullptr)
+	if (Projectile != nullptr)
 	{
 		FVector Location = SpringArm->GetComponentLocation() + SpringArm->GetForwardVector() * 200;
 		FRotator Rotation = SpringArm->GetComponentRotation();
-
-		GetWorld()->SpawnActor<AActor>(ArrowActor, Location, Rotation); // C++ class
+		AActor* Actor = GetWorld()->SpawnActor<AProjectile>(Projectile, Location, Rotation); // C++ class		
 	}	
 }
 
