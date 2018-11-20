@@ -6,11 +6,11 @@
 
 void UZombieAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 {
-	AZombieCharacter* Pawn = Cast<AZombieCharacter>(TryGetPawnOwner());
-	if (Pawn && Pawn->IsValidLowLevel())
+	AZombieCharacter* ZombieCharacter = Cast<AZombieCharacter>(TryGetPawnOwner());
+	if (ZombieCharacter && ZombieCharacter->IsValidLowLevel())
 	{
-		CurrentState = Pawn->CurrentState;
-		Speed = Pawn->GetCharacterMovement()->Velocity.Size();
+		CurrentState = ZombieCharacter->CharacterState->GetState();
+		Speed = ZombieCharacter->GetCharacterMovement()->Velocity.Size();
 
 	}
 }

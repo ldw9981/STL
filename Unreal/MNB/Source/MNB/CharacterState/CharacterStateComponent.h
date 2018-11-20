@@ -42,7 +42,7 @@ public:
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser);
 
 	virtual void OnStateChanged(ECharacterState NewState);
-	virtual void SetState(ECharacterState NewState);
-
+	void SetState(ECharacterState NewState);
+	ECharacterState GetState();
 	bool IsDead();
 };

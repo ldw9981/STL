@@ -6,6 +6,7 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Perception/PawnSensingComponent.h"
 #include "BrainComponent.h"
+#include "CharacterState/CharacterStateComponent.h"
 
 void UBTService_AttackCheck::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory, float DeltaSeconds)
 {
@@ -24,12 +25,16 @@ void UBTService_AttackCheck::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 
 
 			if (Distance > ZombieCharacter->PawnSensing->SightRadius)
 			{
-				ZombieCharacter->SetState(EZombieState::Normal);
+				ECharacterState NewState = ECharacterState::Normal;
+				ZombieCharacter->CharacterState->SetState(NewState);
+				OwnerComp.GetBlackboardComponent()->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)NewState);
 				return;
 			}
 			else if (Distance <= ZombieCharacter->AttackRange)
 			{
-				ZombieCharacter->SetState(EZombieState::Battle);
+				ECharacterState NewState = ECharacterState::Battle;
+				ZombieCharacter->CharacterState->SetState(NewState);
+				OwnerComp.GetBlackboardComponent()->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)NewState);
 				return;
 			}
 		}

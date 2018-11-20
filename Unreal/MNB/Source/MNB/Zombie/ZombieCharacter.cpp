@@ -43,6 +43,9 @@ AZombieCharacter::AZombieCharacter()
 	PawnSensing->SetPeripheralVisionAngle(60);
 	PawnSensing->HearingThreshold = 1000.0f;
 	PawnSensing->SensingInterval = 0.1f;
+
+	CharacterState = CreateDefaultSubobject<UCharacterStateComponent>(TEXT("CharacterState"));
+	Tags.Add(TEXT("Zombie"));
 }
 
 // Called when the game starts or when spawned
@@ -70,44 +73,8 @@ void AZombieCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 float AZombieCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
-	if (CurrentHP <= 0)
-		return 0;
-
-	if (DamageEvent.IsOfType(FRadialDamageEvent::ClassID))	//범위 데미지
-	{
-		UE_LOG(LogClass, Warning, TEXT("TakeDamage FRadialDamageEvent: %f"), DamageAmount);
-	}
-	else if (DamageEvent.IsOfType(FPointDamageEvent::ClassID))	//점 데미지
-	{
-		FPointDamageEvent* PointDamageEvent = (FPointDamageEvent*)(&DamageEvent);
-		UE_LOG(LogClass, Warning, TEXT("TakeDamage FPointDamageEvent: %f %s"), DamageAmount, *(PointDamageEvent->HitInfo.BoneName.ToString()));
-
-
-		if (PointDamageEvent->HitInfo.BoneName.Compare(TEXT("head")) == 0)
-		{
-			CurrentHP = 0;
-		}
-		else
-		{
-			CurrentHP -= DamageAmount;
-
-		}
-	}
-	else if (DamageEvent.IsOfType(FDamageEvent::ClassID))			// 일반데미지
-	{
-		UE_LOG(LogClass, Warning, TEXT("TakeDamage FDamageEvent: %f"), DamageAmount);
-		CurrentHP -= DamageAmount;
-	}
-
-	if (CurrentHP <= 0)
-	{
-		CurrentHP = 0;
-		SetState(EZombieState::Dead);		
-		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		SetLifeSpan(10.0f);
-	}
-
-	return DamageAmount;
+	float Result = CharacterState->TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	return Result;
 }
 
 void AZombieCharacter::OnSeePawn(APawn * Pawn)
@@ -143,9 +110,10 @@ void AZombieCharacter::OnSeePawn(APawn * Pawn)
 	}
 
 	AZombieAIController* AIC = Cast<AZombieAIController>(GetController());
-	if (AIC && AIC->BBComponent  && CurrentState == EZombieState::Normal )
+	if (AIC && AIC->BBComponent  && CharacterState->GetState() == ECharacterState::Normal )
 	{
-		SetState(EZombieState::Chase);
+		CharacterState->SetState(ECharacterState::Chase);
+		AIC->BBComponent->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)CharacterState->GetState());
 		AIC->BBComponent->SetValueAsObject(FName(TEXT("ChaseTargetActor")),Pawn);
 	}
 }
@@ -155,16 +123,16 @@ void AZombieCharacter::OnHearNoise(APawn * Pawn, const FVector & Location, float
 	UE_LOG(LogClass, Warning, TEXT("OnHearNoise"));
 }
 
-bool AZombieCharacter::SetSpeed(EZombieState NewState)
-{
-	switch (CurrentState)
+bool AZombieCharacter::SetSpeed()
+{	
+	switch (CharacterState->GetState())
 	{
-		case EZombieState::Normal:
+		case ECharacterState::Normal:
 		{
 			GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 			return true;
 		}
-		case  EZombieState::Chase:
+		case  ECharacterState::Chase:
 		{
 			GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
 			return true;
@@ -178,13 +146,25 @@ bool AZombieCharacter::SetSpeed(EZombieState NewState)
 	return false;
 }
 
-void AZombieCharacter::SetState(EZombieState NewState)
+void AZombieCharacter::UpdateSpeed()
 {
-	AZombieAIController* AIC = Cast<AZombieAIController>(GetController());
-	if (AIC && AIC->BBComponent)
+	switch (CharacterState->GetState())
 	{
-		CurrentState = NewState;
-		AIC->BBComponent->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)CurrentState);
+		case ECharacterState::Normal:
+		{
+			GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+			break;
+		}
+		case  ECharacterState::Chase:
+		{
+			GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+			break;
+		}
+		default:
+		{
+			GetCharacterMovement()->MaxWalkSpeed = 0;
+			break;
+		}
 	}
 }
 

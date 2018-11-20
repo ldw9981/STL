@@ -56,8 +56,5 @@ public:
 
 	//void SetRun();
 
-	bool IsDead();
-
-
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 };

@@ -23,6 +23,8 @@ public:
 	class UProjectileMovementComponent* Movement;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HitEffect")
 	bool DoStuckOnCharacter = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hit")
+	float BaseDamage = 30.0f;
 	/*
 	// 리소스는 보유 여부에 따라 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HitEffect")
@@ -32,6 +34,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HitEffect")
 	class UMaterialInstance* HitDecal;
 	*/
+	TWeakObjectPtr<AActor> DamageCauser=nullptr;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -42,4 +45,7 @@ public:
 
 	UFUNCTION()
 	void OnComponentHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+
+	void SetDamageCauser(AActor* NewDamageCauser);
+	AActor* GetDamageCauser();
 };

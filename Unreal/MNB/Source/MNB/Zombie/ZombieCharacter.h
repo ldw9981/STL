@@ -6,15 +6,6 @@
 #include "GameFramework/Character.h"
 #include "ZombieCharacter.generated.h"
 
-UENUM(BlueprintType)
-enum class EZombieState : uint8
-{
-	Normal	= 0		UMETA(Display, "Normal"),
-	Battle	= 1		UMETA(Display, "Battle"),
-	Chase	= 2		UMETA(Display, "Chase"),
-	Dead	= 3		UMETA(Display, "Dead")
-};
-
 UCLASS()
 class MNB_API AZombieCharacter : public ACharacter
 {
@@ -23,7 +14,8 @@ class MNB_API AZombieCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AZombieCharacter();
-
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UCharacterStateComponent* CharacterState;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float CurrentHP;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
@@ -36,14 +28,13 @@ public:
 	float Attack = 30;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float AttackRange = 100;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-	EZombieState CurrentState = EZombieState::Normal;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
 	class UBehaviorTree* BehaviorTree;	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	class UPawnSensingComponent* PawnSensing;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	TArray<FName> EnemyTags;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -61,6 +52,7 @@ public:
 	UFUNCTION()
 	void OnHearNoise(APawn* Pawn,const FVector& Location,float Volume);
 
-	bool SetSpeed(EZombieState NewState);
-	void SetState(EZombieState NewState);
+	bool SetSpeed();
+
+	void UpdateSpeed();
 };

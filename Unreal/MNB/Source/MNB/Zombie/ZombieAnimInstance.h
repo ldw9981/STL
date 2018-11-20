@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 
 #include "Animation/AnimInstance.h"
-#include "Zombie/ZombieCharacter.h"
+#include "CharacterState/CharacterStateComponent.h"
 #include "ZombieAnimInstance.generated.h"
 
 /**
@@ -21,7 +21,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float Speed;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-	EZombieState CurrentState = EZombieState::Normal;
+	ECharacterState CurrentState = ECharacterState::Normal;
 
 	UFUNCTION()
 	void AnimNotify_NotifyTest(UAnimNotify* Notify);

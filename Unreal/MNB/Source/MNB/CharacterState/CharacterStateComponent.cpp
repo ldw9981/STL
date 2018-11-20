@@ -3,7 +3,7 @@
 #include "CharacterStateComponent.h"
 #include "GameFramework/Actor.h"
 #include "Components/ShapeComponent.h"
-
+#include "Components/SkinnedMeshComponent.h"
 // Sets default values for this component's properties
 UCharacterStateComponent::UCharacterStateComponent()
 {
@@ -83,6 +83,17 @@ void UCharacterStateComponent::OnStateChanged(ECharacterState NewState)
 		{
 			RootCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		}
+
+		TArray <USkinnedMeshComponent *> Container;
+		GetOwner()->GetComponents(Container);
+		if (Container.Num() > 0)
+		{
+			for (auto SkinnedMesh : Container)
+			{				
+				SkinnedMesh->SetSimulatePhysics(true);				
+			}
+		}
+
 	}
 }
 
@@ -93,6 +104,11 @@ inline void UCharacterStateComponent::SetState(ECharacterState NewState)
 		CurrentState = NewState;
 		OnStateChanged(CurrentState);	// 추가 작업은 이곳에 맡긴다.
 	}
+}
+
+ECharacterState UCharacterStateComponent::GetState()
+{
+	return CurrentState;
 }
 
 inline bool UCharacterStateComponent::IsDead()

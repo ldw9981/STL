@@ -5,6 +5,7 @@
 #include "Zombie/ZombieCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "CharacterState/CharacterStateComponent.h"
 
 EBTNodeResult::Type UBTTask_ChangeSpeed::ExecuteTask(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory)
 {
@@ -14,8 +15,15 @@ EBTNodeResult::Type UBTTask_ChangeSpeed::ExecuteTask(UBehaviorTreeComponent & Ow
 		AZombieCharacter* Pawn = Cast<AZombieCharacter>(AIC->GetPawn());
 		if (Pawn)
 		{
+			Pawn->UpdateSpeed();
+			/*
 			EZombieState CurrentState = (EZombieState)OwnerComp.GetBlackboardComponent()->GetValueAsEnum(GetSelectedBlackboardKey());
 			Pawn->SetSpeed(CurrentState);
+
+			ECharacterState NewState = ECharacterState::Normal;
+			ZombieCharacter->CharacterState->SetState(NewState);
+			OwnerComp.GetBlackboardComponent()->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)NewState);
+			*/
 			return EBTNodeResult::Succeeded;
 		}
 	}

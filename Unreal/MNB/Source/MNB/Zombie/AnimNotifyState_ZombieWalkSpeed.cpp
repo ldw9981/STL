@@ -4,6 +4,7 @@
 #include "Zombie/ZombieCharacter.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "CharacterState/CharacterStateComponent.h"
 
 void UAnimNotifyState_ZombieWalkSpeed::NotifyBegin(USkeletalMeshComponent * MeshComp, UAnimSequenceBase * Animation, float TotalDuration)
 {
@@ -14,7 +15,7 @@ void UAnimNotifyState_ZombieWalkSpeed::NotifyBegin(USkeletalMeshComponent * Mesh
 	}
 
 	ZombieCharacter->GetCharacterMovement()->MaxWalkSpeed = SlowSpeed;
-	if (ZombieCharacter->CurrentState == EZombieState::Chase)
+	if (ZombieCharacter->CharacterState->GetState() == ECharacterState::Chase)
 	{
 		ZombieCharacter->GetCharacterMovement()->MaxWalkSpeed = ZombieCharacter->RunSpeed;
 	}

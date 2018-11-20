@@ -10,6 +10,7 @@
 
 void UAnimNotify_PlayerAttack::Notify(USkeletalMeshComponent * MeshComp, UAnimSequenceBase * Animation)
 {
+	// 이 노티는 테스트용으로 좀비가 때리는 순간 벗어나 있어도 데미지가 들어온다.
 	UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));
 
 	AZombieCharacter* ZombieCharacter = Cast<AZombieCharacter>(MeshComp->GetOwner());

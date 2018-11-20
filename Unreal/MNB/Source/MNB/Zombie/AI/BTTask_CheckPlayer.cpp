@@ -5,7 +5,7 @@
 #include "Zombie/ZombieAIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Perception/PawnSensingComponent.h"
-
+#include "CharacterState/CharacterStateComponent.h"
 EBTNodeResult::Type UBTTask_CheckPlayer::ExecuteTask(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory)
 {
 	AZombieCharacter* ZombieCharacter = Cast<AZombieCharacter>(OwnerComp.GetAIOwner()->GetPawn());
@@ -19,12 +19,18 @@ EBTNodeResult::Type UBTTask_CheckPlayer::ExecuteTask(UBehaviorTreeComponent & Ow
 
 			if (Distance > ZombieCharacter->PawnSensing->SightRadius)
 			{
-				ZombieCharacter->SetState(EZombieState::Normal);
+//				ZombieCharacter->SetState(EZombieState::Normal);
+				ECharacterState NewState = ECharacterState::Normal;
+				ZombieCharacter->CharacterState->SetState(NewState);
+				OwnerComp.GetBlackboardComponent()->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)NewState);
 				return EBTNodeResult::Failed;
 			}
 			else if (Distance <= ZombieCharacter->AttackRange)
 			{
-				ZombieCharacter->SetState(EZombieState::Battle);
+//				ZombieCharacter->SetState(EZombieState::Battle);
+				ECharacterState NewState = ECharacterState::Battle;
+				ZombieCharacter->CharacterState->SetState(NewState);
+				OwnerComp.GetBlackboardComponent()->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)NewState);
 				return EBTNodeResult::Failed;
 			}
 		}

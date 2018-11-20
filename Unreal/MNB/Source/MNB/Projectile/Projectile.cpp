@@ -6,6 +6,8 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "GameFramework/Character.h"
 #include "Engine/EngineTypes.h"
+#include "UObject/WeakObjectPtrTemplates.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AProjectile::AProjectile()
@@ -54,8 +56,10 @@ void AProjectile::OnComponentHit(UPrimitiveComponent* HitComponent, AActor* Othe
 		return;
 	}
 	//데미지 처리
-
-	
+	if (DamageCauser.Get() != nullptr)
+	{
+		UGameplayStatics::ApplyDamage(OtherActor, BaseDamage, nullptr,this, nullptr);
+	}
 	// 체크면 자신의 루트를 히트 대상에 붙인다.
 	if (!DoStuckOnCharacter)
 	{
@@ -63,4 +67,14 @@ void AProjectile::OnComponentHit(UPrimitiveComponent* HitComponent, AActor* Othe
 	}
 	AttachToComponent(Hit.GetComponent(), FAttachmentTransformRules::KeepWorldTransform, Hit.BoneName);
 	UE_LOG(LogClass, Warning, TEXT("%s"), *(Hit.Actor->GetName()));
+}
+
+void AProjectile::SetDamageCauser(AActor * NewDamageCauser)
+{
+	DamageCauser = NewDamageCauser;
+}
+
+AActor * AProjectile::GetDamageCauser()
+{
+	return DamageCauser.Get();
 }

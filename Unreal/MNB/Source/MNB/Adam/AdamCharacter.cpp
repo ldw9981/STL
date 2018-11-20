@@ -119,7 +119,8 @@ void AAdamCharacter::StartFire()
 	{
 		FVector Location = SpringArm->GetComponentLocation() + SpringArm->GetForwardVector() * 200;
 		FRotator Rotation = SpringArm->GetComponentRotation();
-		AActor* Actor = GetWorld()->SpawnActor<AProjectile>(Projectile, Location, Rotation); // C++ class		
+		AProjectile* Actor = GetWorld()->SpawnActor<AProjectile>(Projectile, Location, Rotation); // C++ class		
+		Actor->SetDamageCauser(this);
 	}	
 }
 
@@ -128,10 +129,6 @@ void AAdamCharacter::StopFire()
 
 }
 
-bool AAdamCharacter::IsDead()
-{
-	return false;
-}
 
 float AAdamCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
