@@ -43,4 +43,6 @@ public:
 
 	virtual void OnStateChanged(ECharacterState NewState);
 	virtual void SetState(ECharacterState NewState);
+
+	bool IsDead();
 };

@@ -42,6 +42,8 @@ public:
 	class UBehaviorTree* BehaviorTree;	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	class UPawnSensingComponent* PawnSensing;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	TArray<FName> EnemyTags;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

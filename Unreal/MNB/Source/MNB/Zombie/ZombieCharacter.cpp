@@ -22,7 +22,7 @@
 #include "Zombie/ZombieAIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Adam/AdamCharacter.h"
-
+#include "CharacterState/CharacterStateComponent.h"
 // Sets default values
 AZombieCharacter::AZombieCharacter()
 {
@@ -112,10 +112,34 @@ float AZombieCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Dama
 
 void AZombieCharacter::OnSeePawn(APawn * Pawn)
 {	
-	AAdamCharacter* Player = Cast<AAdamCharacter>(Pawn);
-	if ( (Player && !Player->IsDead()) == false )
+	// 폰센싱컴포넌트의 Tag목록과 탐지된 폰이 가진 tag목록 교집합이 있을때만 탐지한다.
+	bool IsEnemy=false;
+	for (auto Tag : EnemyTags)
+	{
+		if (Pawn->ActorHasTag(Tag))
+		{
+			IsEnemy = true;
+			break;
+		}
+	}
+	if (!IsEnemy)
 	{
 		return;
+	}
+
+	// 상태 컴포넌트가 있고 살아있는 폰만 대상으로 한다.
+	TArray <UCharacterStateComponent *> Container;
+	Pawn->GetComponents(Container);
+	if (Container.Num() <= 0)
+	{
+		return;
+	}
+	for (auto CharacterStateComponent : Container)
+	{
+		if (CharacterStateComponent->IsDead())
+		{
+			return;
+		}
 	}
 
 	AZombieAIController* AIC = Cast<AZombieAIController>(GetController());

@@ -21,7 +21,7 @@ void UCharacterStateComponent::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	
+	CurrentHP = MaxHP;
 }
 
 
@@ -93,5 +93,13 @@ inline void UCharacterStateComponent::SetState(ECharacterState NewState)
 		CurrentState = NewState;
 		OnStateChanged(CurrentState);	// 추가 작업은 이곳에 맡긴다.
 	}
+}
+
+inline bool UCharacterStateComponent::IsDead()
+{
+	if (CurrentHP <= 0)
+		return true;
+
+	return false;
 }
 
