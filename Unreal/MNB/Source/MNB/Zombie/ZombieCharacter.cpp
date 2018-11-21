@@ -22,7 +22,7 @@
 #include "Zombie/ZombieAIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Adam/AdamCharacter.h"
-#include "CharacterState/CharacterStateComponent.h"
+#include "CustomComponents/CharacterStateComponent.h"
 // Sets default values
 AZombieCharacter::AZombieCharacter()
 {
@@ -70,12 +70,13 @@ void AZombieCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
-
+/*
 float AZombieCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
 	float Result = CharacterState->TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	return Result;
 }
+*/
 
 void AZombieCharacter::OnSeePawn(APawn * Pawn)
 {	

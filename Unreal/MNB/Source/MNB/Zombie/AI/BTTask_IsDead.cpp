@@ -7,7 +7,7 @@
 #include "Zombie/ZombieCharacter.h"
 #include "BrainComponent.h"
 #include "Zombie/ZombieAIController.h"
-#include "CharacterState/CharacterStateComponent.h"
+#include "CustomComponents/CharacterStateComponent.h"
 
 EBTNodeResult::Type UBTTask_IsDead::ExecuteTask(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory)
 {

@@ -16,7 +16,7 @@
 #include "Components/DecalComponent.h"
 #include "Components/ArrowComponent.h"
 #include "Projectile/Projectile.h"
-#include "CharacterState/CharacterStateComponent.h"
+#include "CustomComponents/CharacterStateComponent.h"
 	//#include "Basic/WeaponComponent.h"
 //#include "Basic/BasicPlayerCameraManager.h"
 //#include "MyCameraShake.h"
@@ -129,7 +129,7 @@ void AAdamCharacter::StopFire()
 
 }
 
-
+/*
 float AAdamCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
 	float Result =  CharacterState->TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
@@ -138,3 +138,4 @@ float AAdamCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damage
 
 	return Result;
 }
+*/

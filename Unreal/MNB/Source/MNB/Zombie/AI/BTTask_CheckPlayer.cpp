@@ -5,7 +5,7 @@
 #include "Zombie/ZombieAIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Perception/PawnSensingComponent.h"
-#include "CharacterState/CharacterStateComponent.h"
+#include "CustomComponents/CharacterStateComponent.h"
 EBTNodeResult::Type UBTTask_CheckPlayer::ExecuteTask(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory)
 {
 	AZombieCharacter* ZombieCharacter = Cast<AZombieCharacter>(OwnerComp.GetAIOwner()->GetPawn());

@@ -6,7 +6,7 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Perception/PawnSensingComponent.h"
 #include "BrainComponent.h"
-#include "CharacterState/CharacterStateComponent.h"
+#include "CustomComponents/CharacterStateComponent.h"
 
 void UBTService_AttackCheck::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory, float DeltaSeconds)
 {

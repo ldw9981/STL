@@ -22,6 +22,9 @@ void UCharacterStateComponent::BeginPlay()
 
 	// ...
 	CurrentHP = MaxHP;
+	GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UCharacterStateComponent::OnTakeAnyDamage);
+	GetOwner()->OnTakePointDamage.AddDynamic(this, &UCharacterStateComponent::OnTakePointDamage);
+	GetOwner()->OnTakeRadialDamage.AddDynamic(this, &UCharacterStateComponent::OnTakeRadialDamage);
 }
 
 
@@ -33,6 +36,7 @@ void UCharacterStateComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
 	// ...
 }
 
+/*
 float UCharacterStateComponent::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
 {
 	if (CurrentHP <= 0)
@@ -72,9 +76,18 @@ float UCharacterStateComponent::TakeDamage(float DamageAmount, FDamageEvent cons
 
 	return DamageAmount;
 }
+*/
 
-void UCharacterStateComponent::OnStateChanged(ECharacterState NewState)
+
+float UCharacterStateComponent::CalculateHP_Implementation()
 {
+	UE_LOG(LogClass, Warning, TEXT("C++ CalculateHP_Implementation"));
+	return 1.0f;
+}
+
+void UCharacterStateComponent::OnChangeState(ECharacterState NewState)
+{
+	
 	if (NewState == ECharacterState::Dead)
 	{
 		// 지나가는데 방해되지않게 컬리전 비활성
@@ -102,7 +115,9 @@ inline void UCharacterStateComponent::SetState(ECharacterState NewState)
 	if (NewState != CurrentState)
 	{
 		CurrentState = NewState;
-		OnStateChanged(CurrentState);	// 추가 작업은 이곳에 맡긴다.
+		EventChangeState.Broadcast(NewState);
+		OnChangeState(CurrentState);	// 추가 작업은 이곳에 맡긴다.
+		CalculateHP();
 	}
 }
 
@@ -119,3 +134,51 @@ inline bool UCharacterStateComponent::IsDead()
 	return false;
 }
 
+void UCharacterStateComponent::OnTakeAnyDamage(AActor * DamagedActor, float Damage, const UDamageType * DamageType, AController * InstigatedBy, AActor * DamageCauser)
+{
+	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakeAnyDamage: %f"), Damage);
+	CurrentHP -= Damage;
+	if (CurrentHP <= 0)
+	{
+		CurrentHP = 0;
+		SetState(ECharacterState::Dead);
+	}
+}
+
+void UCharacterStateComponent::OnTakePointDamage(AActor * DamagedActor, float Damage, AController * InstigatedBy, FVector HitLocation, UPrimitiveComponent * FHitComponent, FName BoneName, FVector ShotFromDirection, const UDamageType * DamageType, AActor * DamageCauser)
+{
+	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakePointDamage: %f"), Damage);
+	CurrentHP -= Damage;
+	if (CurrentHP <= 0)
+	{
+		CurrentHP = 0;
+		SetState(ECharacterState::Dead);
+	}
+}
+
+void UCharacterStateComponent::OnTakeRadialDamage(AActor * DamagedActor, float Damage, const UDamageType * DamageType, FVector Origin, FHitResult HitInfo, AController * InstigatedBy, AActor * DamageCauser)
+{
+	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakeRadialDamage: %f"), Damage);
+	CurrentHP -= Damage;
+	if (CurrentHP <= 0)
+	{
+		CurrentHP = 0;
+		SetState(ECharacterState::Dead);
+	}
+}
+/*
+void UCharacterStateComponent::AddCurrentHP(float AddHP)
+{
+	CurrentHP += AddHP;
+	if (CurrentHP <= 0)
+	{
+		CurrentHP = 0;
+		SetState(ECharacterState::Dead);
+	}
+
+}
+
+void UCharacterStateComponent::OnChangeCurrentHP()
+{
+}
+*/

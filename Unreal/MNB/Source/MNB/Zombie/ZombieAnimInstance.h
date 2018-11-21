@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 
 #include "Animation/AnimInstance.h"
-#include "CharacterState/CharacterStateComponent.h"
+#include "CustomComponents/CharacterStateComponent.h"
 #include "ZombieAnimInstance.generated.h"
 
 /**
