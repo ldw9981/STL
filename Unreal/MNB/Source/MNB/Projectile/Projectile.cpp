@@ -45,7 +45,7 @@ void AProjectile::Tick(float DeltaTime)
 
 void AProjectile::OnComponentHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
-	UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));	
+	//UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));	
 
 	// 부딫히면 컬리전 끔   , 화살이 뒤이어 붙으면 StaticMesh의 컬리전 정보를 삭제한다.
 	Collision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
@@ -66,7 +66,7 @@ void AProjectile::OnComponentHit(UPrimitiveComponent* HitComponent, AActor* Othe
 		return;
 	}
 	AttachToComponent(Hit.GetComponent(), FAttachmentTransformRules::KeepWorldTransform, Hit.BoneName);
-	UE_LOG(LogClass, Warning, TEXT("%s"), *(Hit.Actor->GetName()));
+	//UE_LOG(LogClass, Warning, TEXT("%s"), *(Hit.Actor->GetName()));
 }
 
 void AProjectile::SetDamageCauser(AActor * NewDamageCauser)
