@@ -111,10 +111,10 @@ void AZombieCharacter::OnSeePawn(APawn * Pawn)
 	}
 
 	AZombieAIController* AIC = Cast<AZombieAIController>(GetController());
-	if (AIC && AIC->BBComponent  && CharacterState->GetState() == ECharacterState::Normal )
+	if (AIC && AIC->BBComponent  && CharacterState->GetCurrentState() == ECharacterState::Normal )
 	{
-		CharacterState->SetState(ECharacterState::Chase);
-		AIC->BBComponent->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)CharacterState->GetState());
+		CharacterState->SetCurrentState(ECharacterState::Chase);
+		AIC->BBComponent->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)CharacterState->GetCurrentState());
 		AIC->BBComponent->SetValueAsObject(FName(TEXT("ChaseTargetActor")),Pawn);
 	}
 }
@@ -126,7 +126,7 @@ void AZombieCharacter::OnHearNoise(APawn * Pawn, const FVector & Location, float
 
 bool AZombieCharacter::SetSpeed()
 {	
-	switch (CharacterState->GetState())
+	switch (CharacterState->GetCurrentState())
 	{
 		case ECharacterState::Normal:
 		{
@@ -149,7 +149,7 @@ bool AZombieCharacter::SetSpeed()
 
 void AZombieCharacter::UpdateSpeed()
 {
-	switch (CharacterState->GetState())
+	switch (CharacterState->GetCurrentState())
 	{
 		case ECharacterState::Normal:
 		{

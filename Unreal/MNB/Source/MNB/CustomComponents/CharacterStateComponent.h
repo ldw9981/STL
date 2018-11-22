@@ -22,25 +22,30 @@ UCLASS(Blueprintable,ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class MNB_API UCharacterStateComponent : public UActorComponent
 {
 	GENERATED_BODY()
-
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FChangeStateDelegate, ECharacterState, NewState );
+public:
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FChangeStateDelegate);
 public:	
 	// Sets default values for this component's properties
 	UCharacterStateComponent();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
-	float CurrentHP;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, BlueprintSetter = SetCurrentHP, Category = "StateInfo")
+	float CurrentHP=0;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, BlueprintSetter = SetMaxHP, Category = "StateInfo")
 	float MaxHP = 100;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, BlueprintSetter = SetCurrentState, Category = "StateInfo")
 	ECharacterState CurrentState = ECharacterState::Normal;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DeadState")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DeadInfo")
 	bool ChangeRootShapeNoCollision = true;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DeadState")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DeadInfo")
 	bool ChangeSkinnedMeshSimulatePhysics = true;
+
+	/** Delegate to execute when we change State. */
+	UPROPERTY(BlueprintAssignable)
+	FChangeStateDelegate OnChangeCharacterState;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
 
 public:	
 	// Called every frame
@@ -48,18 +53,22 @@ public:
 	void CalculateCurrentHP(float AddHP);
 	bool IsDead();
 
-//	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser);
+	UFUNCTION(BlueprintSetter)
+	void SetCurrentHP(float NewCurrentHP);
+	float GetCurrentHP();
+
+	UFUNCTION(BlueprintSetter)
+	void SetMaxHP(float NewMaxHP);
+	float GetMaxHP();
+
+	UFUNCTION(BlueprintSetter)
+	void SetCurrentState(ECharacterState NewCurrentState);
+	ECharacterState GetCurrentState();
 
 	// C++에서 멤버함수를 구현하고 블루프린트에서 사용하거나 재 정의한다.
 	UFUNCTION(BlueprintNativeEvent)
 	void ProcessDead();
 	virtual void ProcessDead_Implementation();
-
-	UFUNCTION(BlueprintCallable)
-	void SetState(ECharacterState NewState);
-
-	UFUNCTION(BlueprintCallable)
-	ECharacterState GetState();
 
 	UFUNCTION()
 	void OnTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
@@ -80,13 +89,9 @@ public:
 	
 	UFUNCTION(BlueprintNativeEvent)
 	float CalculateRadialDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, FVector Origin, FHitResult HitInfo, class AController* InstigatedBy, AActor* DamageCauser);
-	virtual float CalculateRadialDamage_Implementation(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, FVector Origin, FHitResult HitInfo, class AController* InstigatedBy, AActor* DamageCauser);
+	virtual float CalculateRadialDamage_Implementation(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, FVector Origin, FHitResult HitInfo, class AController* InstigatedBy, AActor* DamageCauser);	
 
-	/** Delegate to execute when we change State. */
-	UPROPERTY(BlueprintAssignable)
-	FChangeStateDelegate EventChangeState;
-
-	// C++에서 멤버함수를 구현하지 않고 블루프인트에서 정의한다. (정의하지않하도 런타임 에러는 발생하지 않는다.)
+	// TestCode. C++에서 멤버함수를 구현하지 않고 블루프인트에서 구현한다. (BP,C++ 양쪽 구현않지않아도 런타임 에러는 발생하지 않는다.)
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void SpawnFireParticle();
 };

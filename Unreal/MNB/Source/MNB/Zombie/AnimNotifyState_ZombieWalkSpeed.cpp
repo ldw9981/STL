@@ -15,7 +15,7 @@ void UAnimNotifyState_ZombieWalkSpeed::NotifyBegin(USkeletalMeshComponent * Mesh
 	}
 
 	ZombieCharacter->GetCharacterMovement()->MaxWalkSpeed = SlowSpeed;
-	if (ZombieCharacter->CharacterState->GetState() == ECharacterState::Chase)
+	if (ZombieCharacter->CharacterState->GetCurrentState() == ECharacterState::Chase)
 	{
 		ZombieCharacter->GetCharacterMovement()->MaxWalkSpeed = ZombieCharacter->RunSpeed;
 	}

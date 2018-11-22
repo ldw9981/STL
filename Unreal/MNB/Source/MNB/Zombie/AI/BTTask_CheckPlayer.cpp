@@ -21,7 +21,7 @@ EBTNodeResult::Type UBTTask_CheckPlayer::ExecuteTask(UBehaviorTreeComponent & Ow
 			{
 //				ZombieCharacter->SetState(EZombieState::Normal);
 				ECharacterState NewState = ECharacterState::Normal;
-				ZombieCharacter->CharacterState->SetState(NewState);
+				ZombieCharacter->CharacterState->SetCurrentState(NewState);
 				OwnerComp.GetBlackboardComponent()->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)NewState);
 				return EBTNodeResult::Failed;
 			}
@@ -29,7 +29,7 @@ EBTNodeResult::Type UBTTask_CheckPlayer::ExecuteTask(UBehaviorTreeComponent & Ow
 			{
 //				ZombieCharacter->SetState(EZombieState::Battle);
 				ECharacterState NewState = ECharacterState::Battle;
-				ZombieCharacter->CharacterState->SetState(NewState);
+				ZombieCharacter->CharacterState->SetCurrentState(NewState);
 				OwnerComp.GetBlackboardComponent()->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)NewState);
 				return EBTNodeResult::Failed;
 			}

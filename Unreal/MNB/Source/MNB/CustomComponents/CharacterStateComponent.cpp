@@ -21,10 +21,38 @@ void UCharacterStateComponent::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	CurrentHP = MaxHP;
+	SetCurrentHP(MaxHP);
 	GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UCharacterStateComponent::OnTakeAnyDamage);
 	GetOwner()->OnTakePointDamage.AddDynamic(this, &UCharacterStateComponent::OnTakePointDamage);
 	GetOwner()->OnTakeRadialDamage.AddDynamic(this, &UCharacterStateComponent::OnTakeRadialDamage);
+}
+
+void UCharacterStateComponent::SetCurrentHP(float NewCurrentHP)
+{
+	if (CurrentHP != NewCurrentHP)
+	{
+		CurrentHP = NewCurrentHP;		
+		OnChangeCharacterState.Broadcast();
+	}
+}
+
+float UCharacterStateComponent::GetCurrentHP()
+{
+	return CurrentHP;
+}
+
+void UCharacterStateComponent::SetMaxHP(float NewMaxHP)
+{
+	if (MaxHP != NewMaxHP)
+	{
+		MaxHP = NewMaxHP;
+		OnChangeCharacterState.Broadcast();
+	}
+}
+
+float UCharacterStateComponent::GetMaxHP()
+{
+	return MaxHP;
 }
 
 
@@ -105,27 +133,27 @@ void UCharacterStateComponent::ProcessDead_Implementation()
 	}
 }
 
-inline void UCharacterStateComponent::SetState(ECharacterState NewState)
+inline void UCharacterStateComponent::SetCurrentState(ECharacterState NewCurrentState)
 {
-	if (NewState != CurrentState)
+	if (NewCurrentState != CurrentState)
 	{
-		CurrentState = NewState;
-		EventChangeState.Broadcast(NewState);
-		if (NewState == ECharacterState::Dead)
+		CurrentState = NewCurrentState;
+		OnChangeCharacterState.Broadcast();
+		if (NewCurrentState == ECharacterState::Dead)
 		{
 			ProcessDead();
 		}
 	}
 }
 
-ECharacterState UCharacterStateComponent::GetState()
+ECharacterState UCharacterStateComponent::GetCurrentState()
 {
 	return CurrentState;
 }
 
 inline bool UCharacterStateComponent::IsDead()
 {
-	if (CurrentHP <= 0)
+	if (CurrentHP <= 0 || CurrentState == ECharacterState::Dead)
 		return true;
 
 	return false;
@@ -134,7 +162,10 @@ inline bool UCharacterStateComponent::IsDead()
 void UCharacterStateComponent::OnTakeAnyDamage(AActor * DamagedActor, float Damage, const UDamageType * DamageType, AController * InstigatedBy, AActor * DamageCauser)
 {	
 	if (IsDead())
+	{
 		return;
+	}
+		
 
 	float Result = CalculateAnyDamage(DamagedActor, Damage, DamageType,InstigatedBy, DamageCauser);
 	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakeAnyDamage: %f -> %f" ), Damage,Result);
@@ -144,7 +175,9 @@ void UCharacterStateComponent::OnTakeAnyDamage(AActor * DamagedActor, float Dama
 void UCharacterStateComponent::OnTakePointDamage(AActor * DamagedActor, float Damage, AController * InstigatedBy, FVector HitLocation, UPrimitiveComponent * FHitComponent, FName BoneName, FVector ShotFromDirection, const UDamageType * DamageType, AActor * DamageCauser)
 {
 	if (IsDead())
+	{
 		return;
+	}
 
 	float Result = CalculatePointDamage(DamagedActor, Damage, InstigatedBy, HitLocation, FHitComponent, BoneName, ShotFromDirection, DamageType, DamageCauser);
 	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakePointDamage: %f -> %f"), Damage, Result);
@@ -154,7 +187,9 @@ void UCharacterStateComponent::OnTakePointDamage(AActor * DamagedActor, float Da
 void UCharacterStateComponent::OnTakeRadialDamage(AActor * DamagedActor, float Damage, const UDamageType * DamageType, FVector Origin, FHitResult HitInfo, AController * InstigatedBy, AActor * DamageCauser)
 {
 	if (IsDead())
+	{
 		return;
+	}
 
 	float Result = CalculateRadialDamage(DamagedActor, Damage, DamageType, Origin, HitInfo, InstigatedBy, DamageCauser);
 	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakeRadialDamage: %f -> %f"), Damage, Result);
@@ -163,13 +198,21 @@ void UCharacterStateComponent::OnTakeRadialDamage(AActor * DamagedActor, float D
 
 void UCharacterStateComponent::CalculateCurrentHP(float AddHP)
 {
-	CurrentHP += AddHP;
-	if (CurrentHP <= 0)
+	if (IsDead())
 	{
-		CurrentHP = 0;
-		SetState(ECharacterState::Dead);
+		return;
 	}
 
+	float NewCurrentHP = CurrentHP + AddHP;
+	if (NewCurrentHP <= 0)
+	{
+		NewCurrentHP = 0;
+	}
+	SetCurrentHP(NewCurrentHP);
+	if (NewCurrentHP == 0)
+	{
+		SetCurrentState(ECharacterState::Dead);
+	}
 }
 
 float UCharacterStateComponent::CalculateAnyDamage_Implementation(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)

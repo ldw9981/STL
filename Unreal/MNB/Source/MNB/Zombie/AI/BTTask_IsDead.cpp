@@ -19,7 +19,7 @@ EBTNodeResult::Type UBTTask_IsDead::ExecuteTask(UBehaviorTreeComponent & OwnerCo
 		{
 			//ZombieCharacter->SetState(EZombieState::Normal);
 			ECharacterState NewState = ECharacterState::Normal;
-			ZombieCharacter->CharacterState->SetState(NewState);
+			ZombieCharacter->CharacterState->SetCurrentState(NewState);
 			OwnerComp.GetBlackboardComponent()->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)NewState);
 			return EBTNodeResult::Failed;
 		}
