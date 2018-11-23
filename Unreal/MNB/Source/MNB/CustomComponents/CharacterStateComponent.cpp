@@ -32,7 +32,7 @@ void UCharacterStateComponent::SetCurrentHP(float NewCurrentHP)
 	if (CurrentHP != NewCurrentHP)
 	{
 		CurrentHP = NewCurrentHP;		
-		OnChangeCharacterState.Broadcast();
+		OnChangeCharacterState.Broadcast(TEXT("CurrentHP"));
 	}
 }
 
@@ -46,8 +46,10 @@ void UCharacterStateComponent::SetMaxHP(float NewMaxHP)
 	if (MaxHP != NewMaxHP)
 	{
 		MaxHP = NewMaxHP;
-		OnChangeCharacterState.Broadcast();
+		OnChangeCharacterState.Broadcast(TEXT("MaxHP"));
 	}
+
+	UPropertyHelpers.
 }
 
 float UCharacterStateComponent::GetMaxHP()
@@ -60,7 +62,6 @@ float UCharacterStateComponent::GetMaxHP()
 void UCharacterStateComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
 	// ...
 }
 
@@ -138,12 +139,12 @@ inline void UCharacterStateComponent::SetCurrentState(ECharacterState NewCurrent
 	if (NewCurrentState != CurrentState)
 	{
 		CurrentState = NewCurrentState;
-		OnChangeCharacterState.Broadcast();
+		OnChangeCharacterState.Broadcast(TEXT("CurrentState"));
 		if (NewCurrentState == ECharacterState::Dead)
 		{
 			ProcessDead();
 		}
-	}
+	}	
 }
 
 ECharacterState UCharacterStateComponent::GetCurrentState()

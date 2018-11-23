@@ -23,7 +23,7 @@ class MNB_API UCharacterStateComponent : public UActorComponent
 {
 	GENERATED_BODY()
 public:
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FChangeStateDelegate);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FChangeStateDelegate,FName, VariableName);
 public:	
 	// Sets default values for this component's properties
 	UCharacterStateComponent();
