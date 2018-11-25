@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "CustomDamageType/CustomDamageType.h"
 #include "Projectile.generated.h"
 
 UCLASS()
@@ -21,10 +22,16 @@ public:
 	class USphereComponent* Collision;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
 	class UProjectileMovementComponent* Movement;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HitEffect")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hit")
 	bool DoStuckOnCharacter = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hit")
 	float BaseDamage = 30.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hit")
+	float RadialDamageRadius = 100.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hit")
+	TSubclassOf<UCustomDamageType> CustomDamageTypeClass;
+
+
 	/*
 	// 리소스는 보유 여부에 따라 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HitEffect")
@@ -34,7 +41,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HitEffect")
 	class UMaterialInstance* HitDecal;
 	*/
+	FVector	CurrLocation;
+	FVector	PrevLocation;
 	TWeakObjectPtr<AActor> DamageCauser=nullptr;
+	int Ticked = 0;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

@@ -25,6 +25,8 @@ AProjectile::AProjectile()
 	
 	Movement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Movement"));
 	Movement->InitialSpeed = 3000.0f;
+
+	//DamageType = CreateDefaultSubobject<UDamageType>(TEXT("DamageType"));
 	//UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));
 }
 
@@ -40,11 +42,13 @@ void AProjectile::BeginPlay()
 void AProjectile::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	PrevLocation = CurrLocation;
+	CurrLocation = Collision->GetComponentLocation();
 }
 
 void AProjectile::OnComponentHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
+	Ticked = 2;
 	//UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));	
 
 	// 부딫히면 컬리전 끔   , 화살이 뒤이어 붙으면 StaticMesh의 컬리전 정보를 삭제한다.
@@ -55,18 +59,34 @@ void AProjectile::OnComponentHit(UPrimitiveComponent* HitComponent, AActor* Othe
 	{
 		return;
 	}
-	//데미지 처리
+	FVector Dir = CurrLocation - PrevLocation;
+	Dir.Normalize();
+
+	TArray<AActor*> IgnoreActors;
+	// 발사체 주인이 있을때만 데미지 처리
 	if (DamageCauser.Get() != nullptr)
 	{
-		UGameplayStatics::ApplyDamage(OtherActor, BaseDamage, nullptr,this, nullptr);
+		// nullptr != 캐스팅하여 UCustomDamageType 가져오기 , nullptr이면 UCustomDamageType의 CDO 가져오기 
+		UCustomDamageType const* const DamageTypeCDO = CustomDamageTypeClass ? CustomDamageTypeClass->GetDefaultObject<UCustomDamageType>() : GetDefault<UCustomDamageType>();
+		switch (DamageTypeCDO->CustomDamageEventType)
+		{
+		case ECustomDamageEventType::Point:
+			UGameplayStatics::ApplyPointDamage(OtherActor, BaseDamage, Dir, Hit, nullptr, this, CustomDamageTypeClass);
+			break;
+		case ECustomDamageEventType::Radial:
+			UGameplayStatics::ApplyRadialDamage(GetWorld(), BaseDamage, Hit.Location, RadialDamageRadius, CustomDamageTypeClass, IgnoreActors, this);
+			break;
+		default:
+			UGameplayStatics::ApplyDamage(OtherActor, BaseDamage, nullptr, this, CustomDamageTypeClass);
+			break;
+		}
 	}
 	// 체크면 자신의 루트를 히트 대상에 붙인다.
-	if (!DoStuckOnCharacter)
+	if (DoStuckOnCharacter)
 	{
-		return;
+		AttachToComponent(Hit.GetComponent(), FAttachmentTransformRules::KeepWorldTransform, Hit.BoneName);
 	}
-	AttachToComponent(Hit.GetComponent(), FAttachmentTransformRules::KeepWorldTransform, Hit.BoneName);
-	//UE_LOG(LogClass, Warning, TEXT("%s"), *(Hit.Actor->GetName()));
+	Ticked = 1;
 }
 
 void AProjectile::SetDamageCauser(AActor * NewDamageCauser)

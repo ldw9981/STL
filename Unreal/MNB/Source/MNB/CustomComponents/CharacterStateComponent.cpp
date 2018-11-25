@@ -4,6 +4,7 @@
 #include "GameFramework/Actor.h"
 #include "Components/ShapeComponent.h"
 #include "Components/SkinnedMeshComponent.h"
+#include "CustomDamageType/CustomDamageType.h"
 // Sets default values for this component's properties
 UCharacterStateComponent::UCharacterStateComponent()
 {
@@ -161,6 +162,12 @@ inline bool UCharacterStateComponent::IsDead()
 
 void UCharacterStateComponent::OnTakeAnyDamage(AActor * DamagedActor, float Damage, const UDamageType * DamageType, AController * InstigatedBy, AActor * DamageCauser)
 {	
+	const UCustomDamageType* CustomDamageType = Cast<UCustomDamageType>(DamageType);
+	if (CustomDamageType != nullptr && CustomDamageType->CustomDamageEventType != ECustomDamageEventType::Generic)
+	{
+		return;
+	}		
+
 	if (IsDead())
 	{
 		return;
@@ -180,7 +187,7 @@ void UCharacterStateComponent::OnTakePointDamage(AActor * DamagedActor, float Da
 	}
 
 	float Result = CalculatePointDamage(DamagedActor, Damage, InstigatedBy, HitLocation, FHitComponent, BoneName, ShotFromDirection, DamageType, DamageCauser);
-	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakePointDamage: %f -> %f"), Damage, Result);
+	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakePointDamage: %s %f -> %f"), *BoneName.ToString(), Damage, Result);
 	CalculateCurrentHP(-Result);
 }
 
