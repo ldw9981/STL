@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -6,8 +6,10 @@
 #include "Components/ActorComponent.h"
 #include "SkillComponent.generated.h"
 
-
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+/*
+	스킬관련 정보를 갖는다.
+*/
+UCLASS(Blueprintable, ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class MNB_API USkillComponent : public UActorComponent
 {
 	GENERATED_BODY()
