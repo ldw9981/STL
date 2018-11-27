@@ -54,7 +54,8 @@ void AZombieCharacter::BeginPlay()
 	Super::BeginPlay();	
 	PawnSensing->OnSeePawn.AddDynamic(this, &AZombieCharacter::OnSeePawn);
 	PawnSensing->OnHearNoise.AddDynamic(this, &AZombieCharacter::OnHearNoise);
-	CurrentHP = MaxHP;
+	
+	CharacterState->OnChangeCharacterState.AddDynamic(this, &AZombieCharacter::OnChangeCharacterState);
 }
 
 // Called every frame
@@ -166,6 +167,14 @@ void AZombieCharacter::UpdateSpeed()
 			GetCharacterMovement()->MaxWalkSpeed = 0;
 			break;
 		}
+	}
+}
+
+void AZombieCharacter::OnChangeCharacterState(FName VariableName)
+{
+	if (VariableName == TEXT("CurrentState"))
+	{
+
 	}
 }
 

@@ -27,14 +27,14 @@ void UBTService_AttackCheck::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 
 			{
 				ECharacterState NewState = ECharacterState::Normal;
 				ZombieCharacter->CharacterState->SetCurrentState(NewState);
-				OwnerComp.GetBlackboardComponent()->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)NewState);
+
 				return;
 			}
 			else if (Distance <= ZombieCharacter->AttackRange)
 			{
 				ECharacterState NewState = ECharacterState::Battle;
 				ZombieCharacter->CharacterState->SetCurrentState(NewState);
-				OwnerComp.GetBlackboardComponent()->SetValueAsEnum(FName(TEXT("CurrentState")), (uint8)NewState);
+
 				return;
 			}
 		}

@@ -16,10 +16,12 @@ public:
 	AZombieCharacter();
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	class UCharacterStateComponent* CharacterState;
+	/*
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float CurrentHP;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float MaxHP = 100;
+	*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
 	float WalkSpeed = 100;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
@@ -55,4 +57,7 @@ public:
 	bool SetSpeed();
 
 	void UpdateSpeed();
+
+	UFUNCTION()
+	void OnChangeCharacterState(FName VariableName);
 };

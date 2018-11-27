@@ -23,6 +23,7 @@ void UCharacterStateComponent::BeginPlay()
 
 	// ...
 	SetCurrentHP(MaxHP);
+	SetCurrentState(ECharacterState::Normal);
 	GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UCharacterStateComponent::OnTakeAnyDamage);
 	GetOwner()->OnTakePointDamage.AddDynamic(this, &UCharacterStateComponent::OnTakePointDamage);
 	GetOwner()->OnTakeRadialDamage.AddDynamic(this, &UCharacterStateComponent::OnTakeRadialDamage);
@@ -49,8 +50,6 @@ void UCharacterStateComponent::SetMaxHP(float NewMaxHP)
 		MaxHP = NewMaxHP;
 		OnChangeCharacterState.Broadcast(TEXT("MaxHP"));
 	}
-
-	UPropertyHelpers.
 }
 
 float UCharacterStateComponent::GetMaxHP()

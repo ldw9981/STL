@@ -12,10 +12,11 @@
 UENUM(BlueprintType)
 enum class ECharacterState : uint8
 {
-	Normal = 0		UMETA(Display, "Normal"),
-	Battle = 1		UMETA(Display, "Battle"),
-	Chase = 2		UMETA(Display, "Chase"),
-	Dead = 3		UMETA(Display, "Dead")
+	NotSet = 0		UMETA(Display, "NotSet"),
+	Normal = 1		UMETA(Display, "Normal"),
+	Battle = 2		UMETA(Display, "Battle"),
+	Chase = 3		UMETA(Display, "Chase"),
+	Dead = 4		UMETA(Display, "Dead")
 };
 
 UCLASS(Blueprintable,ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -27,21 +28,23 @@ public:
 public:	
 	// Sets default values for this component's properties
 	UCharacterStateComponent();
+
+	/** Delegate to execute when we change State. */
+	UPROPERTY(BlueprintAssignable)
+	FChangeStateDelegate OnChangeCharacterState;
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, BlueprintSetter = SetCurrentHP, Category = "StateInfo")
 	float CurrentHP=0;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, BlueprintSetter = SetMaxHP, Category = "StateInfo")
 	float MaxHP = 100;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, BlueprintSetter = SetCurrentState, Category = "StateInfo")
-	ECharacterState CurrentState = ECharacterState::Normal;
+	ECharacterState CurrentState = ECharacterState::NotSet;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DeadInfo")
 	bool ChangeRootShapeNoCollision = true;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DeadInfo")
 	bool ChangeSkinnedMeshSimulatePhysics = true;
 
-	/** Delegate to execute when we change State. */
-	UPROPERTY(BlueprintAssignable)
-	FChangeStateDelegate OnChangeCharacterState;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
