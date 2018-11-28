@@ -10,20 +10,20 @@
 
 EBTNodeResult::Type UBTTask_IsDead::ExecuteTask(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory)
 {
-	AActor* ActorTarget = Cast<AActor>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(GetSelectedBlackboardKey()));
-	if (!ActorTarget)
+	AActor* Target = Cast<AActor>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(GetSelectedBlackboardKey()));
+	if (!Target)
 	{
 		return EBTNodeResult::Failed;
 	}
 
-	TArray <UCharacterStateComponent *> Container;
-	ActorTarget->GetComponents(Container);
-	if (Container.Num() != 1)
+	UCharacterStateComponent* TargetCharacterState = Cast<UCharacterStateComponent>(
+		Target->GetComponentByClass(UCharacterStateComponent::StaticClass()));
+	if (!TargetCharacterState)
 	{
 		return EBTNodeResult::Failed;
 	}
 
-	if (!Container[0]->IsDead())
+	if (!TargetCharacterState->IsDead())
 	{
 		return EBTNodeResult::Failed;
 	}
@@ -31,12 +31,12 @@ EBTNodeResult::Type UBTTask_IsDead::ExecuteTask(UBehaviorTreeComponent & OwnerCo
 	APawn* PawnAI = OwnerComp.GetAIOwner()->GetPawn();
 	if (PawnAI)
 	{
-		TArray <UCharacterStateComponent *> CharacterStateComponentsAI;
-		PawnAI->GetComponents(CharacterStateComponentsAI);
-		if (CharacterStateComponentsAI.Num() == 1)
+		UCharacterStateComponent* PawnAICharacterState = Cast<UCharacterStateComponent>(
+			PawnAI->GetComponentByClass(UCharacterStateComponent::StaticClass()));
+		if (!PawnAICharacterState)
 		{
-			CharacterStateComponentsAI[0]->SetCurrentState(ECharacterState::Normal);
-		}		
+			PawnAICharacterState->SetCurrentState(ECharacterState::Normal);
+		}	
 	}		
 	return EBTNodeResult::Succeeded;
 }

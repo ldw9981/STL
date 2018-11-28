@@ -24,36 +24,36 @@ void UBTService_AttackCheck::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 
 		return;
 	}
 
-	TArray <UPawnSensingComponent *> PawnSensingComponents;
-	Pawn->GetComponents(PawnSensingComponents);
-	if (PawnSensingComponents.Num() != 1)
+	UPawnSensingComponent* PawnSensing = Cast<UPawnSensingComponent>(
+		Pawn->GetComponentByClass(UPawnSensingComponent::StaticClass()));
+	if (!PawnSensing)
 	{
 		return;
 	}
 
-	TArray <UCharacterStateComponent *> CharacterStateComponents;
-	Pawn->GetComponents(CharacterStateComponents);
-	if (CharacterStateComponents.Num() != 1)
+	UCharacterStateComponent* CharacterState = Cast<UCharacterStateComponent>(
+		Pawn->GetComponentByClass(UCharacterStateComponent::StaticClass()));
+	if (!CharacterState)
 	{
 		return;
 	}
 
-	TArray <USkillComponent *> SkillComponents;
-	Pawn->GetComponents(SkillComponents);
-	if (SkillComponents.Num() != 1)
+	USkillComponent* Skill = Cast<USkillComponent>(
+		Pawn->GetComponentByClass(USkillComponent::StaticClass()));
+	if (!Skill)
 	{
 		return;
 	}
 
 	float Distance = FVector::Distance(Pawn->GetActorLocation(), ChaseTargetActor->GetActorLocation());
-	if (Distance > PawnSensingComponents[0]->SightRadius)
+	if (Distance > PawnSensing->SightRadius)
 	{
 		ECharacterState NewState = ECharacterState::Normal;
-		CharacterStateComponents[0]->SetCurrentState(NewState);		
+		CharacterState->SetCurrentState(NewState);
 	}
-	else if (Distance <= SkillComponents[0]->SkillRange)
+	else if (Distance <= Skill->SkillRange)
 	{
 		ECharacterState NewState = ECharacterState::Battle;
-		CharacterStateComponents[0]->SetCurrentState(NewState);		
+		CharacterState->SetCurrentState(NewState);
 	}
 }
