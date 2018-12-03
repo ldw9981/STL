@@ -16,4 +16,11 @@ class PROJECTP_API ABasicPC : public APlayerController
 public:
 	ABasicPC();
 
+	virtual void BeginPlay() override;
+
+	void ShowItemToolTip(bool Show);
+
+	void SetItemToolTipName(FString ItemName);
+
+	class UItemToolTip* ItemToolTip;
 };

@@ -130,4 +130,9 @@ public:
 	void StartRightLean();
 	UFUNCTION()
 	void StopRightLean();
+
+	TArray<class AMasterItem*> PickupItemList;
+
+	void AddPickupItem(class AMasterItem* NewItem);
+	void DelPickupItem(class AMasterItem* NewItem);
 };

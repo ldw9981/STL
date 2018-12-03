@@ -18,6 +18,8 @@
 #include "Components/DecalComponent.h"
 #include "MyCameraShake.h"
 #include "BulletDamageType.h"
+#include "Items/MasterItem.h"
+#include "Basic/BasicPC.h"
 
 // Sets default values
 ABasicCharacter::ABasicCharacter()
@@ -475,6 +477,28 @@ void ABasicCharacter::StartRightLean()
 void ABasicCharacter::StopRightLean()
 {
 	bRightLean = false;
+}
+
+void ABasicCharacter::AddPickupItem(AMasterItem * NewItem)
+{
+	if (NewItem && !NewItem->IsPendingKill())
+	{
+		PickupItemList.Add(NewItem);
+		ABasicPC* PC = Cast<ABasicPC>(GetController());
+		PC->SetItemToolTipName(NewItem->ItemData.ItemName);
+		PC->ShowItemToolTip(true);
+	}
+}
+
+void ABasicCharacter::DelPickupItem(AMasterItem * NewItem)
+{
+	if (NewItem && !NewItem->IsPendingKill())
+	{
+		PickupItemList.Remove(NewItem);
+		ABasicPC* PC = Cast<ABasicPC>(GetController());
+		//PC->SetItemToolTipName(NewItem->ItemData.ItemName);
+		PC->ShowItemToolTip(false);
+	}
 }
 
 
