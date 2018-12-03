@@ -24,7 +24,6 @@ AProjectile::AProjectile()
 
 	
 	Movement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Movement"));
-	Movement->InitialSpeed = 3000.0f;
 
 	//DamageType = CreateDefaultSubobject<UDamageType>(TEXT("DamageType"));
 	//UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));
@@ -35,6 +34,7 @@ void AProjectile::BeginPlay()
 {	
 	Super::BeginPlay();
 	Collision->OnComponentHit.AddDynamic(this, &AProjectile::OnComponentHit);
+	Collision->OnComponentBeginOverlap.AddDynamic(this, &AProjectile::OnComponentBeginOverlap);
 	//UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));
 }
 
@@ -47,24 +47,22 @@ void AProjectile::Tick(float DeltaTime)
 }
 
 void AProjectile::OnComponentHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
-{
-	Ticked = 2;
-	//UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));	
+{	
+	UE_LOG(LogClass, Warning, TEXT("OnComponentHit: %s %s %s"), *OtherActor->GetName(), *OtherComp->GetName(), *Hit.BoneName.ToString());
 
-	// 부딫히면 컬리전 끔   , 화살이 뒤이어 붙으면 StaticMesh의 컬리전 정보를 삭제한다.
-	Collision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-
-	ACharacter* Character = Cast<ACharacter>(OtherActor);
-	if (!Character)
+	// 부딫히면 컬리전 끔  
+	if (DoDisableCollision)
 	{
-		return;
+		Collision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	}
+	
+
 	FVector Dir = CurrLocation - PrevLocation;
 	Dir.Normalize();
 
 	TArray<AActor*> IgnoreActors;
-	// 발사체 주인이 있을때만 데미지 처리
-	if (DamageCauser.Get() != nullptr)
+	// 프로젝타일 액터의 데미지를 발생시킨 액터
+	if ( Instigator != nullptr && Instigator->IsValidLowLevel())
 	{
 		// nullptr != 캐스팅하여 UCustomDamageType 가져오기 , nullptr이면 UCustomDamageType의 CDO 가져오기 
 		UCustomDamageType const* const DamageTypeCDO = CustomDamageTypeClass ? CustomDamageTypeClass->GetDefaultObject<UCustomDamageType>() : GetDefault<UCustomDamageType>();
@@ -82,19 +80,51 @@ void AProjectile::OnComponentHit(UPrimitiveComponent* HitComponent, AActor* Othe
 		}
 	}
 	// 체크면 자신의 루트를 히트 대상에 붙인다.
+	
 	if (DoStuckOnCharacter)
 	{
 		AttachToComponent(Hit.GetComponent(), FAttachmentTransformRules::KeepWorldTransform, Hit.BoneName);
 	}
-	Ticked = 1;
 }
 
-void AProjectile::SetDamageCauser(AActor * NewDamageCauser)
+void AProjectile::OnComponentBeginOverlap(UPrimitiveComponent * OverlappedComponent, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
-	DamageCauser = NewDamageCauser;
-}
+	UE_LOG(LogClass, Warning, TEXT("OnComponentBeginOverlap: %s %s %s"),*OtherActor->GetName(),*OtherComp->GetName(), *SweepResult.BoneName.ToString());
+	
+	// 부딫히면 컬리전 끔	
+	if (DoDisableCollision)
+	{
+		Collision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	}
+	
+	FVector Dir = CurrLocation - PrevLocation;
+	Dir.Normalize();
 
-AActor * AProjectile::GetDamageCauser()
-{
-	return DamageCauser.Get();
+
+	
+
+	TArray<AActor*> IgnoreActors;
+	// 프로젝타일 액터의 데미지를 발생시킨 액터
+	if (Instigator != nullptr && Instigator->IsValidLowLevel())
+	{
+		// nullptr != 캐스팅하여 UCustomDamageType 가져오기 , nullptr이면 UCustomDamageType의 CDO 가져오기 
+		UCustomDamageType const* const DamageTypeCDO = CustomDamageTypeClass ? CustomDamageTypeClass->GetDefaultObject<UCustomDamageType>() : GetDefault<UCustomDamageType>();
+		switch (DamageTypeCDO->CustomDamageEventType)
+		{
+		case ECustomDamageEventType::Point:
+			UGameplayStatics::ApplyPointDamage(OtherActor, BaseDamage, Dir, SweepResult, nullptr, this, CustomDamageTypeClass);
+			break;
+		case ECustomDamageEventType::Radial:
+			UGameplayStatics::ApplyRadialDamage(GetWorld(), BaseDamage, SweepResult.Location, RadialDamageRadius, CustomDamageTypeClass, IgnoreActors, this);
+			break;
+		default:
+			UGameplayStatics::ApplyDamage(OtherActor, BaseDamage, nullptr, this, CustomDamageTypeClass);
+			break;
+		}
+	}
+	// 체크면 자신의 루트를 히트 대상에 붙인다.
+	if (DoStuckOnCharacter)
+	{
+		AttachToComponent(SweepResult.GetComponent(), FAttachmentTransformRules::KeepWorldTransform, SweepResult.BoneName);
+	}
 }

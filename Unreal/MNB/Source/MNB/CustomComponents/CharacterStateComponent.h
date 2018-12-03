@@ -39,11 +39,6 @@ protected:
 	float MaxHP = 100;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, BlueprintSetter = SetCurrentState, Category = "StateInfo")
 	ECharacterState CurrentState = ECharacterState::NotSet;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DeadInfo")
-	bool ChangeRootShapeNoCollision = true;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DeadInfo")
-	bool ChangeSkinnedMeshSimulatePhysics = true;
-
 
 protected:
 	// Called when the game starts
@@ -68,11 +63,6 @@ public:
 	void SetCurrentState(ECharacterState NewCurrentState);
 	ECharacterState GetCurrentState();
 
-	// C++에서 멤버함수를 구현하고 블루프린트에서 사용하거나 재 정의한다.
-	UFUNCTION(BlueprintNativeEvent)
-	void ProcessDead();
-	virtual void ProcessDead_Implementation();
-
 	UFUNCTION()
 	void OnTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 	
@@ -93,8 +83,4 @@ public:
 	UFUNCTION(BlueprintNativeEvent)
 	float CalculateRadialDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, FVector Origin, FHitResult HitInfo, class AController* InstigatedBy, AActor* DamageCauser);
 	virtual float CalculateRadialDamage_Implementation(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, FVector Origin, FHitResult HitInfo, class AController* InstigatedBy, AActor* DamageCauser);	
-
-	// TestCode. C++에서 멤버함수를 구현하지 않고 블루프인트에서 구현한다. (BP,C++ 양쪽 구현않지않아도 런타임 에러는 발생하지 않는다.)
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void SpawnFireParticle();
 };

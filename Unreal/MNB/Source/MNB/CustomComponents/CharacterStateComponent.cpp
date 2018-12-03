@@ -65,74 +65,6 @@ void UCharacterStateComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
 	// ...
 }
 
-/*
-float UCharacterStateComponent::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
-{
-	if (CurrentHP <= 0)
-		return 0;
-
-	if (DamageEvent.IsOfType(FRadialDamageEvent::ClassID))	//범위 데미지
-	{
-		UE_LOG(LogClass, Warning, TEXT("TakeDamage FRadialDamageEvent: %f"), DamageAmount);
-	}
-	else if (DamageEvent.IsOfType(FPointDamageEvent::ClassID))	//점 데미지
-	{
-		FPointDamageEvent* PointDamageEvent = (FPointDamageEvent*)(&DamageEvent);
-		UE_LOG(LogClass, Warning, TEXT("TakeDamage FPointDamageEvent: %f %s"), DamageAmount, *(PointDamageEvent->HitInfo.BoneName.ToString()));
-
-
-		if (PointDamageEvent->HitInfo.BoneName.Compare(TEXT("head")) == 0)
-		{
-			CurrentHP = 0;
-		}
-		else
-		{
-			CurrentHP -= DamageAmount;
-
-		}
-	}
-	else if (DamageEvent.IsOfType(FDamageEvent::ClassID))			// 일반데미지
-	{
-		UE_LOG(LogClass, Warning, TEXT("TakeDamage FDamageEvent: %f"), DamageAmount);
-		CurrentHP -= DamageAmount;
-	}
-
-	if (CurrentHP <= 0)
-	{
-		CurrentHP = 0;
-		SetState(ECharacterState::Dead);
-	}
-
-	return DamageAmount;
-}
-*/
-
-
-void UCharacterStateComponent::ProcessDead_Implementation()
-{
-	if (ChangeRootShapeNoCollision)
-	{
-		// 지나가는데 방해되지않게 컬리전 비활성
-		UShapeComponent* RootCollision = Cast<UShapeComponent>(GetOwner()->GetRootComponent());
-		if (RootCollision)
-		{
-			RootCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		}
-	}
-
-	if (ChangeSkinnedMeshSimulatePhysics)
-	{
-		TArray <USkinnedMeshComponent *> Container;
-		GetOwner()->GetComponents(Container);
-		if (Container.Num() > 0)
-		{
-			for (auto SkinnedMesh : Container)
-			{
-				SkinnedMesh->SetSimulatePhysics(true);
-			}
-		}
-	}
-}
 
 inline void UCharacterStateComponent::SetCurrentState(ECharacterState NewCurrentState)
 {
@@ -140,10 +72,6 @@ inline void UCharacterStateComponent::SetCurrentState(ECharacterState NewCurrent
 	{
 		CurrentState = NewCurrentState;
 		OnChangeCharacterState.Broadcast(TEXT("CurrentState"));
-		if (NewCurrentState == ECharacterState::Dead)
-		{
-			ProcessDead();
-		}
 	}	
 }
 
@@ -229,11 +157,6 @@ float UCharacterStateComponent::CalculateAnyDamage_Implementation(AActor* Damage
 
 float UCharacterStateComponent::CalculatePointDamage_Implementation(AActor* DamagedActor, float Damage, class AController* InstigatedBy, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector ShotFromDirection, const class UDamageType* DamageType, AActor* DamageCauser)
 {
-	if (BoneName.Compare(TEXT("head")))
-	{
-		Damage = Damage * 1.5f;
-	}
-
 	return Damage;
 }
 

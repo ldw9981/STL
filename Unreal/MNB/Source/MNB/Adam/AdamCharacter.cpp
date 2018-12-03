@@ -17,6 +17,7 @@
 #include "Components/ArrowComponent.h"
 #include "Projectile/Projectile.h"
 #include "CustomComponents/CharacterStateComponent.h"
+#include "GameFramework/Actor.h"
 	//#include "Basic/WeaponComponent.h"
 //#include "Basic/BasicPlayerCameraManager.h"
 //#include "MyCameraShake.h"
@@ -117,10 +118,13 @@ void AAdamCharacter::StartFire()
 	// 블루프린트에서 설정한 화살 액터로 생성한다.
 	if (Projectile != nullptr)
 	{
+		FActorSpawnParameters SpawnParams;
+		SpawnParams.Owner = this;
+		SpawnParams.Instigator = Cast<APawn>(this);
+
 		FVector Location = SpringArm->GetComponentLocation() + SpringArm->GetForwardVector() * 200;
 		FRotator Rotation = SpringArm->GetComponentRotation();
-		AProjectile* Actor = GetWorld()->SpawnActor<AProjectile>(Projectile, Location, Rotation); // C++ class		
-		Actor->SetDamageCauser(this);
+		AProjectile* Actor = GetWorld()->SpawnActor<AProjectile>(Projectile, Location, Rotation, SpawnParams); // C++ class		
 	}	
 }
 

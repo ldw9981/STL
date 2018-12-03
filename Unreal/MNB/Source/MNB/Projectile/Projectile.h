@@ -22,13 +22,15 @@ public:
 	class USphereComponent* Collision;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
 	class UProjectileMovementComponent* Movement;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hit")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
 	bool DoStuckOnCharacter = false;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hit")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
+	bool DoDisableCollision = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
 	float BaseDamage = 30.0f;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hit")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
 	float RadialDamageRadius = 100.0f;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hit")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
 	TSubclassOf<UCustomDamageType> CustomDamageTypeClass;
 
 
@@ -43,8 +45,6 @@ public:
 	*/
 	FVector	CurrLocation;
 	FVector	PrevLocation;
-	TWeakObjectPtr<AActor> DamageCauser=nullptr;
-	int Ticked = 0;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -55,7 +55,6 @@ public:
 
 	UFUNCTION()
 	void OnComponentHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
-
-	void SetDamageCauser(AActor* NewDamageCauser);
-	AActor* GetDamageCauser();
+	UFUNCTION()
+	void OnComponentBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
 };
