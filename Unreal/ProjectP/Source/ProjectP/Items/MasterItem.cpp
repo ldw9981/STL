@@ -78,7 +78,7 @@ void AMasterItem::OnEndOverlap(UPrimitiveComponent * OverlappedComponent, AActor
 	if (OtherActor->ActorHasTag(FName("Player")))
 	{
 		ABasicCharacter* Pawn = Cast<ABasicCharacter>(OtherActor);
-		Pawn->DelPickupItem(this);
+		Pawn->RemovePickupItem(this);
 	}
 }
 

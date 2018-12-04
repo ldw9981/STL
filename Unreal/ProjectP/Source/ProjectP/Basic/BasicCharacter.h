@@ -82,6 +82,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION()
+	void CheckItem();
+
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
@@ -121,6 +124,8 @@ public:
 	void OnFire();
 	UFUNCTION()
 	void Reload();
+	UFUNCTION()
+	void Use();
 
 	UFUNCTION()
 	void StartLeftLean();
@@ -133,6 +138,14 @@ public:
 
 	TArray<class AMasterItem*> PickupItemList;
 
+
 	void AddPickupItem(class AMasterItem* NewItem);
-	void DelPickupItem(class AMasterItem* NewItem);
+	void RemovePickupItem(class AMasterItem* NewItem);
+	int GetClosestItem(FVector SightLocation);
+	FVector GetSightLocation();
+
+	FTimerHandle ItemCheckHandle;
+
+
+	void ToggleInventory();
 };

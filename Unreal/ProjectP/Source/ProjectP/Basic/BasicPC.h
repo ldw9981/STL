@@ -23,4 +23,7 @@ public:
 	void SetItemToolTipName(FString ItemName);
 
 	class UItemToolTip* ItemToolTip;
+	class UInventoryBase* InventoryWidget;
+
+	void ToggleInventory();
 };

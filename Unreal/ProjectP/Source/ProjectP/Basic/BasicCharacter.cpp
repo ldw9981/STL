@@ -20,6 +20,8 @@
 #include "BulletDamageType.h"
 #include "Items/MasterItem.h"
 #include "Basic/BasicPC.h"
+#include "PGameInstance.h"
+#include "Items/InventorySystem.h"
 
 // Sets default values
 ABasicCharacter::ABasicCharacter()
@@ -62,6 +64,7 @@ void ABasicCharacter::BeginPlay()
 	GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
 	GetCharacterMovement()->MaxWalkSpeedCrouched = CrouchSpeed;
 	CurrentHP = MaxHP;
+
 }
 
 // Called every frame
@@ -72,6 +75,28 @@ void ABasicCharacter::Tick(float DeltaTime)
 	//UE_LOG(LogClass, Warning, TEXT("JumpZVelocity:%f AimYaw:%f"), GetCharacterMovement()->Velocity.Z, 0.0f);
 	
 }
+
+
+void ABasicCharacter::CheckItem()
+{
+	if (PickupItemList.Num() > 0)
+	{
+		FVector Location = GetSightLocation();
+
+		int Index = GetClosestItem(Location);
+
+		if (Index != -1)
+		{
+			ABasicPC* PC = Cast<ABasicPC>(GetController());
+			if (PC)
+			{
+				PC->SetItemToolTipName(PickupItemList[Index]->ItemData.ItemName);
+				PC->ShowItemToolTip(true);
+			}
+		}
+	}
+}
+
 
 // Called to bind functionality to input
 void ABasicCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -96,7 +121,8 @@ void ABasicCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 	PlayerInputComponent->BindAction(TEXT("RightLean"), IE_Pressed, this, &ABasicCharacter::StartRightLean);
 	PlayerInputComponent->BindAction(TEXT("RightLean"), IE_Released, this, &ABasicCharacter::StopRightLean);
-
+	PlayerInputComponent->BindAction(TEXT("Use"), IE_Released, this, &ABasicCharacter::Use);
+	PlayerInputComponent->BindAction(TEXT("ToggleInventory"), IE_Released, this, &ABasicCharacter::ToggleInventory);
 }
 
 // DamageAmount 0이면 호출되지않음
@@ -459,6 +485,32 @@ void ABasicCharacter::Reload()
 	bIsReload = true;
 }
 
+void ABasicCharacter::Use()
+{
+	if (PickupItemList.Num() > 0)
+	{
+		AMasterItem* PickupItem = PickupItemList[GetClosestItem(GetSightLocation())];
+		if (PickupItem && !PickupItem->IsPendingKill())
+		{
+			UPGameInstance* GI = Cast<UPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+			if (GI)
+			{
+				if (GI->Inventory->AddItem(PickupItem->ItemData))
+				{
+
+					RemovePickupItem(PickupItem);
+					PickupItem->Destroy();
+				}
+				else
+				{
+					// Inventory is full
+				}
+			}
+
+		}
+	}
+}
+
 void ABasicCharacter::StartLeftLean()
 {
 	bLeftLean = true;
@@ -485,20 +537,122 @@ void ABasicCharacter::AddPickupItem(AMasterItem * NewItem)
 	{
 		PickupItemList.Add(NewItem);
 		ABasicPC* PC = Cast<ABasicPC>(GetController());
-		PC->SetItemToolTipName(NewItem->ItemData.ItemName);
-		PC->ShowItemToolTip(true);
+
+		GetWorld()->GetTimerManager().ClearTimer(ItemCheckHandle);
+		GetWorld()->GetTimerManager().SetTimer(
+			ItemCheckHandle,
+			this,
+			&ABasicCharacter::CheckItem,
+			0.1f,
+			true,
+			0);
 	}
 }
 
-void ABasicCharacter::DelPickupItem(AMasterItem * NewItem)
+void ABasicCharacter::RemovePickupItem(AMasterItem * NewItem)
 {
 	if (NewItem && !NewItem->IsPendingKill())
 	{
 		PickupItemList.Remove(NewItem);
 		ABasicPC* PC = Cast<ABasicPC>(GetController());
-		//PC->SetItemToolTipName(NewItem->ItemData.ItemName);
-		PC->ShowItemToolTip(false);
+
+		if (PickupItemList.Num() > 0)
+		{
+			FVector Location = GetSightLocation();
+
+			int Index = GetClosestItem(Location);
+
+			if (Index != -1)
+			{
+				ABasicPC* PC = Cast<ABasicPC>(GetController());
+				if (PC)
+				{
+					PC->SetItemToolTipName(PickupItemList[Index]->ItemData.ItemName);
+					PC->ShowItemToolTip(true);
+				}
+			}
+		}
+		else
+		{
+			PC->ShowItemToolTip(false);
+			GetWorld()->GetTimerManager().ClearTimer(ItemCheckHandle);
+		}
 	}
 }
 
+//나랑 제일 가까운 아이템 인덱스 가져오기
+int ABasicCharacter::GetClosestItem(FVector SightLocation)
+{
+	float Min = 99999999999.9f;
+	int Index = -1;
+	for (int i = 0; i < PickupItemList.Num(); ++i)
+	{
+		float Distance = FVector::Distance(SightLocation, PickupItemList[i]->GetActorLocation());
+		if (Min > Distance)
+		{
+			Min = Distance;
+			Index = i;
+		}
+	}
 
+	return Index;
+}
+
+FVector ABasicCharacter::GetSightLocation()
+{
+	FVector CameraLocation;
+	FRotator CameraRotation;
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetPlayerViewPoint(CameraLocation, CameraRotation);
+
+	//화면 사이즈 구하기
+	int SizeX;
+	int SizeY;
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetViewportSize(SizeX, SizeY);
+
+	//화면상 2D 표적점을 3D 좌표 변환
+	FVector CrosshairWorldPosition;
+	FVector CrosshairWorldDirection;
+
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->DeprojectScreenPositionToWorld(SizeX / 2, SizeY / 2, CrosshairWorldPosition, CrosshairWorldDirection);
+
+	//광선 시작점과 끝 구하기
+	FVector TraceStart = CameraLocation;
+	FVector TraceEnd = CameraLocation + (CrosshairWorldDirection * 900000.0f);
+
+	TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
+	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldDynamic));
+	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldStatic));
+
+	TArray<AActor*> IgnoreActors;
+	IgnoreActors.Add(this);
+
+	FHitResult OutHit;
+	bool bResult = UKismetSystemLibrary::LineTraceSingleForObjects(GetWorld(),
+		TraceStart,
+		TraceEnd,
+		ObjectTypes,
+		false,
+		IgnoreActors,
+		EDrawDebugTrace::ForDuration,
+		OutHit,
+		true);
+
+	FVector Result = FVector(0, 0, 0);
+
+	if (bResult)
+	{
+		Result = OutHit.ImpactPoint;
+	}
+
+	return Result;
+
+}
+
+void ABasicCharacter::ToggleInventory()
+{
+	ABasicPC* PC = Cast<ABasicPC>(GetController());
+	if (PC)
+	{
+		PC->ToggleInventory();
+	}
+}
