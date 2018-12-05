@@ -8,6 +8,7 @@
 #include "Engine/EngineTypes.h"
 #include "UObject/WeakObjectPtrTemplates.h"
 #include "Kismet/GameplayStatics.h"
+#include "CustomDamageType/CustomDamageType.h"
 
 // Sets default values
 AProjectile::AProjectile()
@@ -48,29 +49,29 @@ void AProjectile::Tick(float DeltaTime)
 
 void AProjectile::OnComponentHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {	
-	UE_LOG(LogClass, Warning, TEXT("OnComponentHit: %s %s %s"), *OtherActor->GetName(), *OtherComp->GetName(), *Hit.BoneName.ToString());
+	//UE_LOG(LogClass, Warning, TEXT("AProjectile::OnComponentHit: %s %s %s"), *OtherActor->GetName(), *OtherComp->GetName(), *Hit.BoneName.ToString());
 
 	// 부딫히면 컬리전 끔  
 	if (DoDisableCollision)
 	{
 		Collision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	}
-	
-
-	FVector Dir = CurrLocation - PrevLocation;
-	Dir.Normalize();
 
 	TArray<AActor*> IgnoreActors;
 	// 프로젝타일 액터의 데미지를 발생시킨 액터
-	if ( Instigator != nullptr && Instigator->IsValidLowLevel())
+	if ( Instigator != nullptr && Instigator->IsValidLowLevel() && OtherActor != Instigator)
 	{
 		// nullptr != 캐스팅하여 UCustomDamageType 가져오기 , nullptr이면 UCustomDamageType의 CDO 가져오기 
 		UCustomDamageType const* const DamageTypeCDO = CustomDamageTypeClass ? CustomDamageTypeClass->GetDefaultObject<UCustomDamageType>() : GetDefault<UCustomDamageType>();
 		switch (DamageTypeCDO->CustomDamageEventType)
 		{
 		case ECustomDamageEventType::Point:
-			UGameplayStatics::ApplyPointDamage(OtherActor, BaseDamage, Dir, Hit, nullptr, this, CustomDamageTypeClass);
-			break;
+			{
+				FVector Dir = CurrLocation - PrevLocation;
+				Dir.Normalize();
+				UGameplayStatics::ApplyPointDamage(OtherActor, BaseDamage, Dir, Hit, nullptr, this, CustomDamageTypeClass);
+				break;
+			}
 		case ECustomDamageEventType::Radial:
 			UGameplayStatics::ApplyRadialDamage(GetWorld(), BaseDamage, Hit.Location, RadialDamageRadius, CustomDamageTypeClass, IgnoreActors, this);
 			break;
@@ -89,7 +90,7 @@ void AProjectile::OnComponentHit(UPrimitiveComponent* HitComponent, AActor* Othe
 
 void AProjectile::OnComponentBeginOverlap(UPrimitiveComponent * OverlappedComponent, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
-	UE_LOG(LogClass, Warning, TEXT("OnComponentBeginOverlap: %s %s %s"),*OtherActor->GetName(),*OtherComp->GetName(), *SweepResult.BoneName.ToString());
+	//UE_LOG(LogClass, Warning, TEXT("AProjectile::OnComponentBeginOverlap: %s %s %s"),*OtherActor->GetName(),*OtherComp->GetName(), *SweepResult.BoneName.ToString());
 	
 	// 부딫히면 컬리전 끔	
 	if (DoDisableCollision)
@@ -97,23 +98,22 @@ void AProjectile::OnComponentBeginOverlap(UPrimitiveComponent * OverlappedCompon
 		Collision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	}
 	
-	FVector Dir = CurrLocation - PrevLocation;
-	Dir.Normalize();
-
-
-	
 
 	TArray<AActor*> IgnoreActors;
 	// 프로젝타일 액터의 데미지를 발생시킨 액터
-	if (Instigator != nullptr && Instigator->IsValidLowLevel())
+	if (Instigator != nullptr && Instigator->IsValidLowLevel() && OtherActor != Instigator)
 	{
 		// nullptr != 캐스팅하여 UCustomDamageType 가져오기 , nullptr이면 UCustomDamageType의 CDO 가져오기 
 		UCustomDamageType const* const DamageTypeCDO = CustomDamageTypeClass ? CustomDamageTypeClass->GetDefaultObject<UCustomDamageType>() : GetDefault<UCustomDamageType>();
 		switch (DamageTypeCDO->CustomDamageEventType)
 		{
 		case ECustomDamageEventType::Point:
-			UGameplayStatics::ApplyPointDamage(OtherActor, BaseDamage, Dir, SweepResult, nullptr, this, CustomDamageTypeClass);
-			break;
+			{
+				FVector Dir = CurrLocation - PrevLocation;
+				Dir.Normalize();
+				UGameplayStatics::ApplyPointDamage(OtherActor, BaseDamage, Dir, SweepResult, nullptr, this, CustomDamageTypeClass);
+				break;
+			}
 		case ECustomDamageEventType::Radial:
 			UGameplayStatics::ApplyRadialDamage(GetWorld(), BaseDamage, SweepResult.Location, RadialDamageRadius, CustomDamageTypeClass, IgnoreActors, this);
 			break;

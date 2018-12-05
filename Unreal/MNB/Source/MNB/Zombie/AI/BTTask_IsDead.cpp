@@ -33,7 +33,7 @@ EBTNodeResult::Type UBTTask_IsDead::ExecuteTask(UBehaviorTreeComponent & OwnerCo
 	{
 		UCharacterStateComponent* PawnAICharacterState = Cast<UCharacterStateComponent>(
 			PawnAI->GetComponentByClass(UCharacterStateComponent::StaticClass()));
-		if (!PawnAICharacterState)
+		if (PawnAICharacterState)
 		{
 			PawnAICharacterState->SetCurrentState(ECharacterState::Normal);
 		}	

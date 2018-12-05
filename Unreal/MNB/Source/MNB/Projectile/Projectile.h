@@ -4,8 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "CustomDamageType/CustomDamageType.h"
 #include "Projectile.generated.h"
+
+class UCustomDamageType;
 
 UCLASS()
 class MNB_API AProjectile : public AActor

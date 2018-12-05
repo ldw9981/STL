@@ -13,6 +13,9 @@
    3. Character는 루트만 컬리전으로 활용한다.
    4. 무기타입으로서 의미를 갖는다.
 */
+
+class UCustomDamageType;
+
 UCLASS()
 class MNB_API AWeaponActor : public AActor
 {
@@ -25,19 +28,27 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USceneComponent* DefaultScene;
 
-	TWeakObjectPtr<AActor> DamageCauser = nullptr;
-	bool Equiped = false;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
+	class UStaticMeshComponent* Mesh;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
+	float BaseDamage = 30.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
+	float RadialDamageRadius = 100.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
+	TSubclassOf<UCustomDamageType> CustomDamageTypeClass;
+
+	FVector	CurrLocation;
+	FVector	PrevLocation;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	void AddCollision();
-	void RemoveCollision();
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	void SetDamageCauser(AActor* NewDamageCauser);
-	AActor* GetDamageCauser();
 
 	UFUNCTION()
 	void OnComponentHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);

@@ -103,7 +103,7 @@ void UCharacterStateComponent::OnTakeAnyDamage(AActor * DamagedActor, float Dama
 		
 
 	float Result = CalculateAnyDamage(DamagedActor, Damage, DamageType,InstigatedBy, DamageCauser);
-	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakeAnyDamage: %f -> %f" ), Damage,Result);
+	UE_LOG(LogClass, Warning, TEXT("DamagedActor %s TakeDamage OnTakeAnyDamage: %f -> %f" ), *DamagedActor->GetName(), Damage,Result);
 	CalculateCurrentHP(-Result);
 }
 
@@ -115,7 +115,7 @@ void UCharacterStateComponent::OnTakePointDamage(AActor * DamagedActor, float Da
 	}
 
 	float Result = CalculatePointDamage(DamagedActor, Damage, InstigatedBy, HitLocation, FHitComponent, BoneName, ShotFromDirection, DamageType, DamageCauser);
-	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakePointDamage: %s %f -> %f"), *BoneName.ToString(), Damage, Result);
+	UE_LOG(LogClass, Warning, TEXT("DamagedActor %s TakeDamage OnTakePointDamage: %s %f -> %f"), *DamagedActor->GetName(), *BoneName.ToString(), Damage, Result);
 	CalculateCurrentHP(-Result);
 }
 
@@ -127,7 +127,7 @@ void UCharacterStateComponent::OnTakeRadialDamage(AActor * DamagedActor, float D
 	}
 
 	float Result = CalculateRadialDamage(DamagedActor, Damage, DamageType, Origin, HitInfo, InstigatedBy, DamageCauser);
-	UE_LOG(LogClass, Warning, TEXT("TakeDamage OnTakeRadialDamage: %f -> %f"), Damage, Result);
+	UE_LOG(LogClass, Warning, TEXT("DamagedActor %s TakeDamage OnTakeRadialDamage: %f -> %f"), *DamagedActor->GetName(), Damage, Result);
 	CalculateCurrentHP(-Result);
 }
 
@@ -147,6 +147,7 @@ void UCharacterStateComponent::CalculateCurrentHP(float AddHP)
 	if (NewCurrentHP == 0)
 	{
 		SetCurrentState(ECharacterState::Dead);
+		UE_LOG(LogClass, Warning, TEXT("Dead"));
 	}
 }
 
