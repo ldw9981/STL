@@ -4,9 +4,11 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/SceneComponent.h"
-#include "CustomDamageType/CustomDamageType.h"
+#include "Components/ActorComponent.h"
 #include "Components/ShapeComponent.h"
+#include "CustomDamageType/CustomDamageType.h"
 #include "Kismet/GameplayStatics.h"
+
 
 // Sets default values
 AWeaponActor::AWeaponActor()
@@ -31,12 +33,19 @@ void AWeaponActor::BeginPlay()
 		Instigator = ParentPawn;
 	}
 
-	UShapeComponent* Collision = this->FindComponentByClass<UShapeComponent>();
-	if (Collision)
+
+	TArray <UShapeComponent *> SourceComps;
+	GetComponents(SourceComps);
+	for (UShapeComponent* ActorComp : SourceComps)
 	{
-		Collision->OnComponentHit.AddDynamic(this, &AWeaponActor::OnComponentHit);
-		Collision->OnComponentBeginOverlap.AddDynamic(this, &AWeaponActor::OnComponentBeginOverlap);
+		UShapeComponent* SourceComp = Cast<UShapeComponent>(ActorComp);
+		if (SourceComp)
+		{
+			SourceComp->OnComponentHit.AddDynamic(this, &AWeaponActor::OnComponentHit);
+			SourceComp->OnComponentBeginOverlap.AddDynamic(this, &AWeaponActor::OnComponentBeginOverlap);
+		}
 	}
+	
 	SetActorEnableCollision(false);
 }
 
