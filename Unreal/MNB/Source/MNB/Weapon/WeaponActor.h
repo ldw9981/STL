@@ -14,7 +14,7 @@
    4. 무기타입으로서 의미를 갖는다.
 */
 
-class UCustomDamageType;
+class UAnyDamageType;
 
 UCLASS()
 class MNB_API AWeaponActor : public AActor
@@ -32,12 +32,12 @@ public:
 	class UStaticMeshComponent* Mesh;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
-	float BaseDamage = 30.0f;
+	float Damage = 30.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
-	float RadialDamageRadius = 100.0f;
+	float RadialRadius = 2000.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
-	TSubclassOf<UCustomDamageType> CustomDamageTypeClass;
+	TSubclassOf<UAnyDamageType> DamageTypeClass;
 
 	FVector	CurrLocation;
 	FVector	PrevLocation;

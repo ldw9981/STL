@@ -14,7 +14,7 @@ void UBTService_AttackCheck::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 
 {
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
-	UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));
+	//UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));
 
 	APawn* Pawn = Cast<APawn>(OwnerComp.GetAIOwner()->GetPawn());
 	AAIController* AIC = Cast<AAIController>(OwnerComp.GetAIOwner());

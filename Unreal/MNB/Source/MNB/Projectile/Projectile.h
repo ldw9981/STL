@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "Projectile.generated.h"
 
-class UCustomDamageType;
+class UAnyDamageType;
 
 UCLASS()
 class MNB_API AProjectile : public AActor
@@ -28,11 +28,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
 	bool DoDisableCollision = false;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
-	float BaseDamage = 30.0f;
+	float Damage = 30.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
-	float RadialDamageRadius = 100.0f;
+	float RadialRadius = 2000.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "OnCollide")
-	TSubclassOf<UCustomDamageType> CustomDamageTypeClass;
+	TSubclassOf<UAnyDamageType> DamageTypeClass;
 
 
 	/*

@@ -4,7 +4,8 @@
 #include "GameFramework/Actor.h"
 #include "Components/ShapeComponent.h"
 #include "Components/SkinnedMeshComponent.h"
-#include "CustomDamageType/CustomDamageType.h"
+#include "CustomDamageType/AnyDamageType.h"
+#include "Kismet/KismetMathLibrary.h"
 // Sets default values for this component's properties
 UCharacterStateComponent::UCharacterStateComponent()
 {
@@ -41,6 +42,15 @@ void UCharacterStateComponent::SetCurrentHP(float NewCurrentHP)
 float UCharacterStateComponent::GetCurrentHP()
 {
 	return CurrentHP;
+}
+
+float UCharacterStateComponent::AddCurrentHP(float AddHP)
+{
+	float NewHP = CurrentHP + AddHP;
+
+	NewHP = FMath::Clamp<float>(NewHP,0,MaxHP);
+	SetCurrentHP(NewHP);
+	return NewHP;
 }
 
 void UCharacterStateComponent::SetMaxHP(float NewMaxHP)
@@ -80,7 +90,7 @@ ECharacterState UCharacterStateComponent::GetCurrentState()
 	return CurrentState;
 }
 
-inline bool UCharacterStateComponent::IsDead()
+bool UCharacterStateComponent::IsDead()
 {
 	if (CurrentHP <= 0 || CurrentState == ECharacterState::Dead)
 		return true;
@@ -90,55 +100,30 @@ inline bool UCharacterStateComponent::IsDead()
 
 void UCharacterStateComponent::OnTakeAnyDamage(AActor * DamagedActor, float Damage, const UDamageType * DamageType, AController * InstigatedBy, AActor * DamageCauser)
 {	
-	const UCustomDamageType* CustomDamageType = Cast<UCustomDamageType>(DamageType);
-	if (CustomDamageType != nullptr && CustomDamageType->CustomDamageEventType != ECustomDamageEventType::Generic)
-	{
-		return;
-	}		
-
-	if (IsDead())
-	{
-		return;
-	}
-		
-
-	float Result = CalculateAnyDamage(DamagedActor, Damage, DamageType,InstigatedBy, DamageCauser);
-	UE_LOG(LogClass, Warning, TEXT("DamagedActor %s TakeDamage OnTakeAnyDamage: %f -> %f" ), *DamagedActor->GetName(), Damage,Result);
-	CalculateCurrentHP(-Result);
+	UE_LOG(LogClass, Warning, TEXT("DamagedActor %s TakeDamage OnTakeAnyDamage: %f "), *DamagedActor->GetName(), Damage);
+	ReactAnyDamage(DamagedActor, Damage, DamageType, InstigatedBy, DamageCauser);	
 }
 
 void UCharacterStateComponent::OnTakePointDamage(AActor * DamagedActor, float Damage, AController * InstigatedBy, FVector HitLocation, UPrimitiveComponent * FHitComponent, FName BoneName, FVector ShotFromDirection, const UDamageType * DamageType, AActor * DamageCauser)
 {
-	if (IsDead())
-	{
-		return;
-	}
-
-	float Result = CalculatePointDamage(DamagedActor, Damage, InstigatedBy, HitLocation, FHitComponent, BoneName, ShotFromDirection, DamageType, DamageCauser);
-	UE_LOG(LogClass, Warning, TEXT("DamagedActor %s TakeDamage OnTakePointDamage: %s %f -> %f"), *DamagedActor->GetName(), *BoneName.ToString(), Damage, Result);
-	CalculateCurrentHP(-Result);
+	UE_LOG(LogClass, Warning, TEXT("DamagedActor %s TakeDamage OnTakePointDamage: %s %f "), *DamagedActor->GetName(), *BoneName.ToString(), Damage);	
+	ReactPointDamage(DamagedActor, Damage, InstigatedBy, HitLocation, FHitComponent, BoneName, ShotFromDirection, DamageType, DamageCauser);
 }
 
 void UCharacterStateComponent::OnTakeRadialDamage(AActor * DamagedActor, float Damage, const UDamageType * DamageType, FVector Origin, FHitResult HitInfo, AController * InstigatedBy, AActor * DamageCauser)
 {
-	if (IsDead())
-	{
-		return;
-	}
-
-	float Result = CalculateRadialDamage(DamagedActor, Damage, DamageType, Origin, HitInfo, InstigatedBy, DamageCauser);
-	UE_LOG(LogClass, Warning, TEXT("DamagedActor %s TakeDamage OnTakeRadialDamage: %f -> %f"), *DamagedActor->GetName(), Damage, Result);
-	CalculateCurrentHP(-Result);
+	UE_LOG(LogClass, Warning, TEXT("DamagedActor %s TakeDamage OnTakeRadialDamage: %f"), *DamagedActor->GetName(), Damage);
+	ReactRadialDamage(DamagedActor, Damage, DamageType, Origin, HitInfo, InstigatedBy, DamageCauser);
 }
 
-void UCharacterStateComponent::CalculateCurrentHP(float AddHP)
+void UCharacterStateComponent::ReactAnyDamage_Implementation(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
 {
 	if (IsDead())
 	{
 		return;
 	}
 
-	float NewCurrentHP = CurrentHP + AddHP;
+	float NewCurrentHP = CurrentHP - Damage;
 	if (NewCurrentHP <= 0)
 	{
 		NewCurrentHP = 0;
@@ -151,18 +136,13 @@ void UCharacterStateComponent::CalculateCurrentHP(float AddHP)
 	}
 }
 
-float UCharacterStateComponent::CalculateAnyDamage_Implementation(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
+void UCharacterStateComponent::ReactPointDamage_Implementation(AActor* DamagedActor, float Damage, class AController* InstigatedBy, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector ShotFromDirection, const class UDamageType* DamageType, AActor* DamageCauser)
 {
-	return Damage;
-}
 
-float UCharacterStateComponent::CalculatePointDamage_Implementation(AActor* DamagedActor, float Damage, class AController* InstigatedBy, FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector ShotFromDirection, const class UDamageType* DamageType, AActor* DamageCauser)
-{
-	return Damage;
 }
 
 
-float UCharacterStateComponent::CalculateRadialDamage_Implementation(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, FVector Origin, FHitResult HitInfo, class AController* InstigatedBy, AActor* DamageCauser)
+void UCharacterStateComponent::ReactRadialDamage_Implementation(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, FVector Origin, FHitResult HitInfo, class AController* InstigatedBy, AActor* DamageCauser)
 {
-	return Damage;
+
 }

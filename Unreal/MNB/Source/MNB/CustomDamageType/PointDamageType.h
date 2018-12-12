@@ -4,20 +4,20 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/DamageType.h"
-#include "CustomDamageType/CustomDamageType.h"
+#include "CustomDamageType/AnyDamageType.h"
 #include "PointDamageType.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class MNB_API UPointDamageType : public UCustomDamageType
+class MNB_API UPointDamageType : public UAnyDamageType
 {
 	GENERATED_BODY()
 public:
 	UPointDamageType()
 	{
-		CustomDamageEventType = ECustomDamageEventType::Point;
+		DamageEventType = EDamageEventType::Point;
 	}
 
 };
