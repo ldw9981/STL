@@ -213,12 +213,12 @@ void ABasicCharacter::Turn(float Value)
 
 void ABasicCharacter::Sprint()
 {
-	C2S_SetSprint(true);
+	SetSprint(true);
 }
 
 void ABasicCharacter::UnSprint()
 {
-	C2S_SetSprint(false);
+	SetSprint(false);
 }
 
 void ABasicCharacter::DoCrouch()
@@ -498,22 +498,22 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 
 void ABasicCharacter::StartLeftLean()
 {
-	bLeftLean = true;
+	SetLeftLean(true);
 }
 
 void ABasicCharacter::StopLeftLean()
 {
-	bLeftLean = false;
+	SetLeftLean(false);
 }
 
 void ABasicCharacter::StartRightLean()
 {
-	bRightLean = true;
+	SetRightLean(true);
 }
 
 void ABasicCharacter::StopRightLean()
 {
-	bRightLean = false;
+	SetRightLean(false);
 }
 
 bool ABasicCharacter::IsDead()
@@ -700,6 +700,8 @@ void ABasicCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
 	DOREPLIFETIME(ABasicCharacter, bIsIronsight);
 	DOREPLIFETIME(ABasicCharacter, bIsFire);
 	DOREPLIFETIME(ABasicCharacter, bIsSprint);
+	DOREPLIFETIME(ABasicCharacter, bLeftLean);
+	DOREPLIFETIME(ABasicCharacter, bRightLean);
 }
 
 void ABasicCharacter::DoIronsight()
@@ -715,6 +717,11 @@ bool ABasicCharacter::C2S_DoIronsight_Validate()
 void ABasicCharacter::C2S_DoIronsight_Implementation()
 {
 	bIsIronsight = bIsIronsight ? false : true;
+}
+
+void ABasicCharacter::SetSprint(bool Sprint)
+{
+	C2S_SetSprint(Sprint);
 }
 
 bool ABasicCharacter::C2S_SetSprint_Validate(bool Sprint)
@@ -733,4 +740,34 @@ void ABasicCharacter::C2S_SetSprint_Implementation(bool Sprint)
 	{
 		GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
 	}
+}
+
+void ABasicCharacter::SetLeftLean(bool NewLean)
+{
+	C2S_SetLeftLean(NewLean);
+}
+
+bool ABasicCharacter::C2S_SetLeftLean_Validate(bool NewLean)
+{
+	return true;
+}
+
+void ABasicCharacter::C2S_SetLeftLean_Implementation(bool NewLean)
+{
+	bLeftLean = NewLean;
+}
+
+void ABasicCharacter::SetRightLean(bool NewLean)
+{
+	C2S_SetRightLean(NewLean);
+}
+
+bool ABasicCharacter::C2S_SetRightLean_Validate(bool NewLean)
+{
+	return true;
+}
+
+void ABasicCharacter::C2S_SetRightLean_Implementation(bool NewLean)
+{
+	bRightLean = NewLean;
 }

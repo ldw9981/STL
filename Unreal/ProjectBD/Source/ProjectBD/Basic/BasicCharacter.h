@@ -141,10 +141,10 @@ public:
 	UFUNCTION()
 	void StopRightLean();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State", Replicated)
 	bool bLeftLean = false;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State", Replicated)
 	bool bRightLean = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
@@ -177,9 +177,21 @@ public:
 	bool C2S_DoIronsight_Validate();
 	void C2S_DoIronsight_Implementation();
 
+	void SetSprint(bool Sprint);
 	UFUNCTION(Server, Reliable, WithValidation)
 	void C2S_SetSprint(bool Sprint);
 	bool C2S_SetSprint_Validate(bool Sprint);
 	void C2S_SetSprint_Implementation(bool Sprint);
 
+	void SetLeftLean(bool NewLean);
+	UFUNCTION(Server, Reliable, WithValidation)
+	void C2S_SetLeftLean(bool NewLean);
+	bool C2S_SetLeftLean_Validate(bool NewLean);
+	void C2S_SetLeftLean_Implementation(bool NewLean);
+
+	void SetRightLean(bool NewLean);
+	UFUNCTION(Server, Reliable, WithValidation)
+	void C2S_SetRightLean(bool NewLean);
+	bool C2S_SetRightLean_Validate(bool NewLean);
+	void C2S_SetRightLean_Implementation(bool NewLean);
 };
