@@ -89,6 +89,7 @@ public:
 	UFUNCTION()
 	void StartFire();
 
+
 	UFUNCTION()
 	void StopFire();
 
@@ -114,11 +115,14 @@ protected:
 public:
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="State", Replicated)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="State", ReplicatedUsing = "HP_OnRep")
 	float CurrentHP;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State", Replicated)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State", ReplicatedUsing = "HP_OnRep")
 	float MaxHP = 100.0f;
+
+	UFUNCTION()
+	void HP_OnRep();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
 	class UAnimMontage* DeadAnimation;
@@ -177,21 +181,48 @@ public:
 	bool C2S_DoIronsight_Validate();
 	void C2S_DoIronsight_Implementation();
 
-	void SetSprint(bool Sprint);
+
 	UFUNCTION(Server, Reliable, WithValidation)
 	void C2S_SetSprint(bool Sprint);
 	bool C2S_SetSprint_Validate(bool Sprint);
 	void C2S_SetSprint_Implementation(bool Sprint);
 
-	void SetLeftLean(bool NewLean);
+
 	UFUNCTION(Server, Reliable, WithValidation)
 	void C2S_SetLeftLean(bool NewLean);
 	bool C2S_SetLeftLean_Validate(bool NewLean);
 	void C2S_SetLeftLean_Implementation(bool NewLean);
 
-	void SetRightLean(bool NewLean);
+
 	UFUNCTION(Server, Reliable, WithValidation)
 	void C2S_SetRightLean(bool NewLean);
 	bool C2S_SetRightLean_Validate(bool NewLean);
 	void C2S_SetRightLean_Implementation(bool NewLean);
+
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void C2S_SetFire(bool NewFire);
+	bool C2S_SetFire_Validate(bool NewFire);
+	void C2S_SetFire_Implementation(bool NewFire);
+
+	UFUNCTION(NetMulticast, Reliable)
+	void S2A_SetMaxWalkSpeed(float NewSpeed);
+	void S2A_SetMaxWalkSpeed_Implementation(float NewSpeed);
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void C2S_ApplyPointDamage(FVector TraceStart, FVector TraceEnd);
+	bool C2S_ApplyPointDamage_Validate(FVector TraceStart, FVector TraceEnd);
+	void C2S_ApplyPointDamage_Implementation(FVector TraceStart, FVector TraceEnd);
+
+	UFUNCTION(NetMulticast, Reliable)
+	void S2A_HitEffect(FHitResult OutHit);
+	void S2A_HitEffect_Implementation(FHitResult OutHit);
+
+	UFUNCTION(NetMulticast, Reliable)
+	void S2A_FireEffect(FName InSocketName);
+	void S2A_FireEffect_Implementation(FName InSocketName);
+
+	UFUNCTION(Client, Reliable)
+	void S2C_CameraEffect();
+	void S2C_CameraEffect_Implementation();
 };

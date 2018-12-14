@@ -82,7 +82,7 @@ void ABasicCharacter::BeginPlay()
 void ABasicCharacter::SetHPBar()
 {
 	ABasicPC* PC = Cast<ABasicPC>(GetController());
-	if (PC && PC->IsLocalPlayerController())
+	if (PC && PC->IsLocalPlayerController() && PC->BattleWidget)
 	{
 		PC->BattleWidget->HpBarData = CurrentHP / MaxHP;
 	}
@@ -213,12 +213,12 @@ void ABasicCharacter::Turn(float Value)
 
 void ABasicCharacter::Sprint()
 {
-	SetSprint(true);
+	C2S_SetSprint(true);
 }
 
 void ABasicCharacter::UnSprint()
 {
-	SetSprint(false);
+	C2S_SetSprint(false);
 }
 
 void ABasicCharacter::DoCrouch()
@@ -277,14 +277,7 @@ void ABasicCharacter::OnFire()
 
 	UE_LOG(LogClass, Warning, TEXT("Bullet %d %d"), Weapon->BulletCountinMagazine, Weapon->TotalBulletCount);
 
-	//MuzzleFlash
-	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleFlash,
-		Weapon->GetSocketTransform(TEXT("MuzzleFlash")));
-
-	//FireSound
-	UGameplayStatics::SpawnSoundAtLocation(GetWorld(), FireSound,
-		Weapon->GetSocketLocation(TEXT("MuzzleFlash")),
-		Weapon->GetSocketRotation(TEXT("MuzzleFlash")));
+	S2A_FireEffect(TEXT("MuzzleFlash"));
 
 	//총알 발사 계산
 	//UE_LOG(LogClass, Warning, TEXT("OnFire"));
@@ -312,117 +305,7 @@ void ABasicCharacter::OnFire()
 	FVector TraceStart = CameraLocation;
 	FVector TraceEnd = CameraLocation + (CrosshairWorldDirection * 900000.0f);
 
-	//enum class EObjectType
-	//vector<ObjectType> objectType;
-	TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
-	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldDynamic));
-	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldStatic));
-	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_PhysicsBody));
-	
-	TArray<AActor*> IgnoreActors;
-	IgnoreActors.Add(this);
-
-	FHitResult OutHit;
-
-	bool Result = UKismetSystemLibrary::LineTraceSingleForObjects(
-		GetWorld(),
-		TraceStart,
-		TraceEnd,
-		ObjectTypes,
-		true,
-		IgnoreActors,
-		EDrawDebugTrace::None,
-		OutHit,
-		true,
-		FLinearColor::Red,
-		FLinearColor::Green,
-		3.0f
-	);
-
-	//총알이 어디에 맞으면 총구에서 다시 검사.
-	//맞긴 맞은건데 이 위치가 맞는지 확인
-	if (Result)
-	{
-		//총구 끝에서 충돌지점까지 재 검사
-		TraceStart = Weapon->GetSocketLocation(TEXT("MuzzleFlash"));
-		FVector Dir = OutHit.ImpactPoint - TraceStart;
-		TraceEnd = TraceStart + (Dir * 1.1f);
-
-		Result = UKismetSystemLibrary::LineTraceSingleForObjects(
-			GetWorld(),
-			TraceStart,
-			TraceEnd,
-			ObjectTypes,
-			true,
-			IgnoreActors,
-			EDrawDebugTrace::None,
-			OutHit,
-			true,
-			FLinearColor::Red,
-			FLinearColor::Green,
-			3.0f
-		);
-
-		if (Result)
-		{
-			if (OutHit.GetActor()->ActorHasTag(TEXT("Player")))
-			{
-				//HitEffect
-				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), BloodEffect,
-					OutHit.ImpactPoint,
-					OutHit.ImpactNormal.Rotation()
-				);
-			}
-			else
-			{
-				UDecalComponent* BulletDecalComponent = UGameplayStatics::SpawnDecalAtLocation(GetWorld(),
-					BulletDecal,
-					FVector(5, 5, 5),
-					OutHit.ImpactPoint,
-					OutHit.ImpactNormal.Rotation(),
-					10.0f
-				);
-				BulletDecalComponent->SetFadeScreenSize(0.005f);
-
-				//HitEffect
-				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitEffect,
-					OutHit.ImpactPoint,
-					OutHit.ImpactNormal.Rotation()
-				);
-			}
-
-			//일반  데미지 전달
-			//UGameplayStatics::ApplyDamage(OutHit.GetActor(),
-			//	Weapon->GetDamage(),
-			//	GetController(),
-			//	this,
-			//	UBulletDamageType::StaticClass()
-			//);
-
-			//범위 공격
-			//UGameplayStatics::ApplyRadialDamage(GetWorld(),
-			//	Weapon->GetDamage(),
-			//	OutHit.ImpactPoint,
-			//	500.0f,
-			//	UBulletDamageType::StaticClass(),
-			//	IgnoreActors,
-			//	this,
-			//	GetController(),
-			//	true,
-			//	ECollisionChannel::ECC_Visibility
-			//);
-
-			//점 데미지
-			UGameplayStatics::ApplyPointDamage(OutHit.GetActor(),
-				Weapon->GetDamage(),
-				TraceEnd - TraceStart,
-				OutHit,
-				GetController(),
-				this,
-				UBulletDamageType::StaticClass()
-			);
-		}
-	}
+	C2S_ApplyPointDamage(TraceStart, TraceEnd);
 
 	//UE_LOG(LogClass, Warning, TEXT("%d %f %s"), int, float, *FString);
 
@@ -480,40 +363,30 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 		CurrentHP -= DamageAmount;
 	}
 
-	if (CurrentHP <= 0)
-	{
-		CurrentHP = 0;
-		GetMesh()->SetSimulatePhysics(true);
-		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		//SetLifeSpan(10.0f);
-		//관전자폰 세팅
-		//FString DeadMontage = FString::Printf(TEXT("Death_%d"), FMath::RandRange(1, 3));
-		//PlayAnimMontage(DeadAnimation , 1.0f, FName(*DeadMontage));
-	}
-
-	SetHPBar();
+	// HP는 모두에게 복제가되지만, 바로 일어나지 않으므로 각 클라이언트는 HP_OnRep에서 결과처리게하고
+	HP_OnRep(); // 서버는 바로 처리한다.
 
 	return DamageAmount;
 }
 
 void ABasicCharacter::StartLeftLean()
 {
-	SetLeftLean(true);
+	C2S_SetLeftLean(true);
 }
 
 void ABasicCharacter::StopLeftLean()
 {
-	SetLeftLean(false);
+	C2S_SetLeftLean(false);
 }
 
 void ABasicCharacter::StartRightLean()
 {
-	SetRightLean(true);
+	C2S_SetRightLean(true);
 }
 
 void ABasicCharacter::StopRightLean()
 {
-	SetRightLean(false);
+	C2S_SetRightLean(false);
 }
 
 bool ABasicCharacter::IsDead()
@@ -717,11 +590,7 @@ bool ABasicCharacter::C2S_DoIronsight_Validate()
 void ABasicCharacter::C2S_DoIronsight_Implementation()
 {
 	bIsIronsight = bIsIronsight ? false : true;
-}
-
-void ABasicCharacter::SetSprint(bool Sprint)
-{
-	C2S_SetSprint(Sprint);
+	S2A_SetMaxWalkSpeed(bIsIronsight ? CrouchSpeed : RunSpeed);
 }
 
 bool ABasicCharacter::C2S_SetSprint_Validate(bool Sprint)
@@ -732,19 +601,7 @@ bool ABasicCharacter::C2S_SetSprint_Validate(bool Sprint)
 void ABasicCharacter::C2S_SetSprint_Implementation(bool Sprint)
 {
 	bIsSprint = Sprint;
-	if (bIsSprint)
-	{
-		GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
-	}
-	else
-	{
-		GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
-	}
-}
-
-void ABasicCharacter::SetLeftLean(bool NewLean)
-{
-	C2S_SetLeftLean(NewLean);
+	S2A_SetMaxWalkSpeed(bIsSprint ? SprintSpeed : RunSpeed);
 }
 
 bool ABasicCharacter::C2S_SetLeftLean_Validate(bool NewLean)
@@ -757,11 +614,6 @@ void ABasicCharacter::C2S_SetLeftLean_Implementation(bool NewLean)
 	bLeftLean = NewLean;
 }
 
-void ABasicCharacter::SetRightLean(bool NewLean)
-{
-	C2S_SetRightLean(NewLean);
-}
-
 bool ABasicCharacter::C2S_SetRightLean_Validate(bool NewLean)
 {
 	return true;
@@ -770,4 +622,158 @@ bool ABasicCharacter::C2S_SetRightLean_Validate(bool NewLean)
 void ABasicCharacter::C2S_SetRightLean_Implementation(bool NewLean)
 {
 	bRightLean = NewLean;
+}
+
+bool ABasicCharacter::C2S_SetFire_Validate(bool NewFire)
+{
+	return true;
+}
+
+void ABasicCharacter::C2S_SetFire_Implementation(bool NewFire)
+{
+	bIsFire = NewFire;
+}
+
+void ABasicCharacter::S2A_SetMaxWalkSpeed_Implementation(float NewSpeed)
+{
+	GetCharacterMovement()->MaxWalkSpeed = NewSpeed;
+}
+
+bool ABasicCharacter::C2S_ApplyPointDamage_Validate(FVector TraceStart, FVector TraceEnd)
+{
+	return true;
+}
+
+void ABasicCharacter::C2S_ApplyPointDamage_Implementation(FVector TraceStart, FVector TraceEnd)
+{
+	//enum class EObjectType
+//vector<ObjectType> objectType;
+	TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
+	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldDynamic));
+	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_WorldStatic));
+	ObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_PhysicsBody));
+
+	TArray<AActor*> IgnoreActors;
+	IgnoreActors.Add(this);
+
+	FHitResult OutHit;
+
+	bool Result = UKismetSystemLibrary::LineTraceSingleForObjects(
+		GetWorld(),
+		TraceStart,
+		TraceEnd,
+		ObjectTypes,
+		true,
+		IgnoreActors,
+		EDrawDebugTrace::None,
+		OutHit,
+		true,
+		FLinearColor::Red,
+		FLinearColor::Green,
+		3.0f
+	);
+
+	//총알이 어디에 맞으면 총구에서 다시 검사.
+	//맞긴 맞은건데 이 위치가 맞는지 확인
+	if (Result)
+	{
+		//총구 끝에서 충돌지점까지 재 검사
+		TraceStart = Weapon->GetSocketLocation(TEXT("MuzzleFlash"));
+		FVector Dir = OutHit.ImpactPoint - TraceStart;
+		TraceEnd = TraceStart + (Dir * 1.1f);
+
+		Result = UKismetSystemLibrary::LineTraceSingleForObjects(
+			GetWorld(),
+			TraceStart,
+			TraceEnd,
+			ObjectTypes,
+			true,
+			IgnoreActors,
+			EDrawDebugTrace::None,
+			OutHit,
+			true,
+			FLinearColor::Red,
+			FLinearColor::Green,
+			3.0f
+		);
+
+		if (Result)
+		{
+			S2A_HitEffect(OutHit);
+			//점 데미지
+			UGameplayStatics::ApplyPointDamage(OutHit.GetActor(),
+				Weapon->GetDamage(),
+				TraceEnd - TraceStart,
+				OutHit,
+				GetController(),
+				this,
+				UBulletDamageType::StaticClass()
+			);
+		}
+	}
+}
+
+void ABasicCharacter::S2A_HitEffect_Implementation(FHitResult OutHit)
+{
+	if (OutHit.GetActor()->ActorHasTag(TEXT("Player")))
+	{
+		//HitEffect
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), BloodEffect,
+			OutHit.ImpactPoint,
+			OutHit.ImpactNormal.Rotation()
+		);
+	}
+	else
+	{
+		UDecalComponent* BulletDecalComponent = UGameplayStatics::SpawnDecalAtLocation(GetWorld(),
+			BulletDecal,
+			FVector(5, 5, 5),
+			OutHit.ImpactPoint,
+			OutHit.ImpactNormal.Rotation(),
+			10.0f
+		);
+		BulletDecalComponent->SetFadeScreenSize(0.005f);
+
+		//HitEffect
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitEffect,
+			OutHit.ImpactPoint,
+			OutHit.ImpactNormal.Rotation()
+		);
+	}
+}
+
+void ABasicCharacter::S2A_FireEffect_Implementation(FName InSocketName)
+{
+	//MuzzleFlash
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), MuzzleFlash,
+		Weapon->GetSocketTransform(InSocketName));
+
+	//FireSound
+	UGameplayStatics::SpawnSoundAtLocation(GetWorld(), FireSound,
+		Weapon->GetSocketLocation(InSocketName),
+		Weapon->GetSocketRotation(InSocketName));
+
+}
+
+void ABasicCharacter::S2C_CameraEffect_Implementation()
+{
+}
+
+
+
+
+void ABasicCharacter::HP_OnRep()
+{
+	if (CurrentHP <= 0)
+	{
+		CurrentHP = 0;
+		GetMesh()->SetSimulatePhysics(true);
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		//SetLifeSpan(10.0f);
+		//관전자폰 세팅
+		//FString DeadMontage = FString::Printf(TEXT("Death_%d"), FMath::RandRange(1, 3));
+		//PlayAnimMontage(DeadAnimation , 1.0f, FName(*DeadMontage));
+	}
+
+	SetHPBar();
 }
