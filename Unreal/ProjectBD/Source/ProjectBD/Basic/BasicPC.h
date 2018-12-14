@@ -39,9 +39,19 @@ public:
 	bool bAlive = true;
 
 	FString UserID;
-	UPROPERTY(Server, Reliable, WithValidation)
-	void C2S_SetUserID(const FString& NewUerID);
-	bool C2S_SetUserID_Validate(const FString& NewUerID);
-	void C2S_SetUserID_Implementation(const FString& NewUerID);
 
+	UFUNCTION(Server, Reliable, WithValidation)
+	void C2S_SetUserID(const FString& NewUserID);
+	bool C2S_SetUserID_Validate(const FString& NewUserID);
+	void C2S_SetUserID_Implementation(const FString& NewUserID);
+
+
+	void AllSendKillingMessage(const FString & Message);
+
+	UFUNCTION(Client, Reliable)
+	void S2C_SendKillingMessage(const FString & Message);
+	void S2C_SendKillingMessage_Implementation(const FString & Message);
+
+	UFUNCTION()
+	void DeleteTopKillingMessage();
 };

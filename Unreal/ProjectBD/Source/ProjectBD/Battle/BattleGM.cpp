@@ -17,6 +17,21 @@ void ABattleGM::LoginEvent(AGameModeBase* GameMode, APlayerController* NewPlayer
 	ReCountAliveCount();
 }
 
+bool ABattleGM::CheckFinish()
+{
+	int Count = ReCountAliveCount();
+
+	UE_LOG(LogClass, Warning, TEXT("----------------- %d"), Count);
+
+
+	if (Count == 1)
+	{
+		return true;
+	}
+
+	return false;
+}
+
 //Player Á×À¸¸é È£Ãâ 
 int ABattleGM::ReCountAliveCount()
 {
@@ -42,14 +57,4 @@ int ABattleGM::ReCountAliveCount()
 	}
 
 	return Count;
-}
-
-bool ABattleGM::CheckFinish()
-{
-	if (ReCountAliveCount() == 1)
-	{
-		return true;
-	}
-	return false;
-
 }

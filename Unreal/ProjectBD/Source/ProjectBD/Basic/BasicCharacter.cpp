@@ -376,12 +376,22 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 	if (CurrentHP <= 0)
 	{
 
+		ABasicPC* AttackerPC = Cast<ABasicPC>(EventInstigator);
+		ABasicPC* DamagedPC = Cast<ABasicPC>(GetController());
+		if (AttackerPC && DamagedPC)
+		{
+			FString Message = FString::Printf(TEXT("%s가 %s를 죽였습니다."), *AttackerPC->UserID, *DamagedPC->UserID);
+			DamagedPC->AllSendKillingMessage(Message);
+			UE_LOG(LogClass, Warning, TEXT("%s가 %s를 죽였습니다."), *AttackerPC->UserID, *DamagedPC->UserID);
+		}
+
 		ABattleGM* GM = Cast<ABattleGM>(UGameplayStatics::GetGameMode(GetWorld()));
 		if (GM)
 		{
 			if (GM->CheckFinish())
 			{
-
+				//결과창 처리
+				UE_LOG(LogClass, Warning, TEXT("Dinner is Chicken."));
 			}
 		}
 	}

@@ -26,7 +26,12 @@ public:
 	FString AliveCountData;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	UScrollBox* KillingMessage;
+	class UScrollBox* KillingMessage;
 
 	virtual void NativeConstruct() override;
+
+	void AddKillingMessage(const FString & Message);
+
+	void DeleteTopKillingMessage();
+
 };

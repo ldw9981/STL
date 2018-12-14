@@ -11,6 +11,8 @@
 #include "Items/ItemSlotBase.h"
 #include "Battle/BattleWidgetBase.h"
 #include "BDGameInstance.h"
+#include "TimerManager.h"
+#include "Engine/World.h"
 
 ABasicPC::ABasicPC()
 {
@@ -136,23 +138,49 @@ void ABasicPC::UpdateInventory()
 			}
 		}
 	}
-	
+
 }
 
-bool ABasicPC::C2S_SetUserID_Validate(const FString & NewUerID)
+bool ABasicPC::C2S_SetUserID_Validate(const FString& NewUserID)
 {
 	return true;
 }
 
-void ABasicPC::C2S_SetUserID_Implementation(const FString & NewUerID)
+void ABasicPC::C2S_SetUserID_Implementation(const FString& NewUserID)
 {
-	UserID = NewUerID;
+	UserID = NewUserID;
 }
+
 
 void ABasicPC::AllSendKillingMessage(const FString& Message)
 {
 	for (auto Iter = GetWorld()->GetPlayerControllerIterator(); Iter; ++Iter)
 	{
+		ABasicPC* PC = Cast<ABasicPC>(*Iter);
+		if (PC)
+		{
+			PC->S2C_SendKillingMessage(Message);
+		}
+	}
+}
 
+void ABasicPC::S2C_SendKillingMessage_Implementation(const FString& Message)
+{
+	if (BattleWidget)
+	{
+		BattleWidget->AddKillingMessage(Message);
+		FTimerHandle DeleteTimer;
+		GetWorld()->GetTimerManager().SetTimer(DeleteTimer,
+			this,
+			&ABasicPC::DeleteTopKillingMessage,
+			3.0f);
+	}
+}
+
+void ABasicPC::DeleteTopKillingMessage()
+{
+	if (BattleWidget)
+	{
+		BattleWidget->DeleteTopKillingMessage();
 	}
 }
