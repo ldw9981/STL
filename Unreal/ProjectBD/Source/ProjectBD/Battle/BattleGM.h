@@ -18,5 +18,10 @@ public:
 
 	UFUNCTION()
 	void LoginEvent(AGameModeBase * GameMode, APlayerController * NewPlayer);
+
+	// Player죽으면 호출
 	int ReCountAliveCount();
+
+	//
+	bool CheckFinish();
 };

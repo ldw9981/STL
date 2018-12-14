@@ -24,4 +24,9 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	FString AliveCountData;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UScrollBox* KillingMessage;
+
+	virtual void NativeConstruct() override;
 };

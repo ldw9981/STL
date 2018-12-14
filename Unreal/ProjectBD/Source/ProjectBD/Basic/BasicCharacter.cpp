@@ -22,6 +22,7 @@
 #include "Items/InventorySystem.h"
 #include "Battle/BattleWidgetBase.h"
 #include "UnrealNetwork.h"
+#include "Battle/BattleGM.h"
 
 // Sets default values
 ABasicCharacter::ABasicCharacter()
@@ -247,12 +248,17 @@ FRotator ABasicCharacter::GetAimOffset() const
 	return ActorToWorld().InverseTransformVectorNoScale(GetBaseAimRotation().Vector()).Rotation();
 }
 
+void ABasicCharacter::IsFire_OnRep()
+{
+	UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));
+}
+
 void ABasicCharacter::StartFire()
 {
 	if (!bIsReload)
 	{
 		bIsFire = true;
-		OnFire();
+		OnTimerFire();
 	}
 }
 
@@ -261,14 +267,14 @@ void ABasicCharacter::StopFire()
 	bIsFire = false;
 }
 
-void ABasicCharacter::OnFire()
+void ABasicCharacter::OnTimerFire()
 {
 	if (!bIsFire)
 	{
 		return;
 	}
 
-	if (!Weapon->UseBullet())
+	if (!Weapon->IsHaveBullet())
 	{
 		//빈총 소리
 		bIsFire = false;
@@ -277,7 +283,7 @@ void ABasicCharacter::OnFire()
 
 	UE_LOG(LogClass, Warning, TEXT("Bullet %d %d"), Weapon->BulletCountinMagazine, Weapon->TotalBulletCount);
 
-	S2A_FireEffect(TEXT("MuzzleFlash"));
+	
 
 	//총알 발사 계산
 	//UE_LOG(LogClass, Warning, TEXT("OnFire"));
@@ -305,7 +311,8 @@ void ABasicCharacter::OnFire()
 	FVector TraceStart = CameraLocation;
 	FVector TraceEnd = CameraLocation + (CrosshairWorldDirection * 900000.0f);
 
-	C2S_ApplyPointDamage(TraceStart, TraceEnd);
+
+	C2S_Fire(TraceStart, TraceEnd);
 
 	//UE_LOG(LogClass, Warning, TEXT("%d %f %s"), int, float, *FString);
 
@@ -326,7 +333,7 @@ void ABasicCharacter::OnFire()
 	FTimerHandle FireTimerHandle;
 	GetWorldTimerManager().SetTimer(FireTimerHandle,
 		this,
-		&ABasicCharacter::OnFire,
+		&ABasicCharacter::OnTimerFire,
 		0.12f
 	);
 }
@@ -365,6 +372,19 @@ float ABasicCharacter::TakeDamage(float DamageAmount, FDamageEvent const & Damag
 
 	// HP는 모두에게 복제가되지만, 바로 일어나지 않으므로 각 클라이언트는 HP_OnRep에서 결과처리게하고
 	HP_OnRep(); // 서버는 바로 처리한다.
+
+	if (CurrentHP <= 0)
+	{
+
+		ABattleGM* GM = Cast<ABattleGM>(UGameplayStatics::GetGameMode(GetWorld()));
+		if (GM)
+		{
+			if (GM->CheckFinish())
+			{
+
+			}
+		}
+	}
 
 	return DamageAmount;
 }
@@ -639,13 +659,21 @@ void ABasicCharacter::S2A_SetMaxWalkSpeed_Implementation(float NewSpeed)
 	GetCharacterMovement()->MaxWalkSpeed = NewSpeed;
 }
 
-bool ABasicCharacter::C2S_ApplyPointDamage_Validate(FVector TraceStart, FVector TraceEnd)
+bool ABasicCharacter::C2S_Fire_Validate(FVector TraceStart, FVector TraceEnd)
 {
 	return true;
 }
 
-void ABasicCharacter::C2S_ApplyPointDamage_Implementation(FVector TraceStart, FVector TraceEnd)
+void ABasicCharacter::C2S_Fire_Implementation(FVector TraceStart, FVector TraceEnd)
 {
+	if (!Weapon->UseBullet())
+	{
+		bIsFire = false;
+		return;
+	}
+
+	S2A_FireEffect(TEXT("MuzzleFlash"));
+
 	//enum class EObjectType
 //vector<ObjectType> objectType;
 	TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;
@@ -755,12 +783,6 @@ void ABasicCharacter::S2A_FireEffect_Implementation(FName InSocketName)
 
 }
 
-void ABasicCharacter::S2C_CameraEffect_Implementation()
-{
-}
-
-
-
 
 void ABasicCharacter::HP_OnRep()
 {
@@ -773,7 +795,13 @@ void ABasicCharacter::HP_OnRep()
 		//관전자폰 세팅
 		//FString DeadMontage = FString::Printf(TEXT("Death_%d"), FMath::RandRange(1, 3));
 		//PlayAnimMontage(DeadAnimation , 1.0f, FName(*DeadMontage));
-	}
 
+		ABasicPC* PC = Cast<ABasicPC>(GetController());
+		if (PC)
+		{
+			PC->bAlive = false;
+			PC->DisableInput(PC);
+		}
+	}
 	SetHPBar();
 }

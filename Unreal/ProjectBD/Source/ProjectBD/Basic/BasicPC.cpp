@@ -10,6 +10,7 @@
 #include "Items/InventorySystem.h"
 #include "Items/ItemSlotBase.h"
 #include "Battle/BattleWidgetBase.h"
+#include "BDGameInstance.h"
 
 ABasicPC::ABasicPC()
 {
@@ -62,6 +63,13 @@ void ABasicPC::BeginPlay()
 
 		SetInputMode(FInputModeGameOnly());
 		bShowMouseCursor = false;
+
+		UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+		if (GI)
+		{
+			UserID = GI->UserID;
+			C2S_SetUserID(UserID);
+		}
 	}
 }
 
@@ -129,4 +137,22 @@ void ABasicPC::UpdateInventory()
 		}
 	}
 	
+}
+
+bool ABasicPC::C2S_SetUserID_Validate(const FString & NewUerID)
+{
+	return true;
+}
+
+void ABasicPC::C2S_SetUserID_Implementation(const FString & NewUerID)
+{
+	UserID = NewUerID;
+}
+
+void ABasicPC::AllSendKillingMessage(const FString& Message)
+{
+	for (auto Iter = GetWorld()->GetPlayerControllerIterator(); Iter; ++Iter)
+	{
+
+	}
 }

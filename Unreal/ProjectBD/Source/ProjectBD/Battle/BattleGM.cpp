@@ -43,3 +43,13 @@ int ABattleGM::ReCountAliveCount()
 
 	return Count;
 }
+
+bool ABattleGM::CheckFinish()
+{
+	if (ReCountAliveCount() == 1)
+	{
+		return true;
+	}
+	return false;
+
+}

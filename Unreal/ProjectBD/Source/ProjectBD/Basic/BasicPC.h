@@ -37,4 +37,11 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool bAlive = true;
+
+	FString UserID;
+	UPROPERTY(Server, Reliable, WithValidation)
+	void C2S_SetUserID(const FString& NewUerID);
+	bool C2S_SetUserID_Validate(const FString& NewUerID);
+	void C2S_SetUserID_Implementation(const FString& NewUerID);
+
 };

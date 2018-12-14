@@ -83,8 +83,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
 	FVector CrouchSpringPosition;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State", Replicated)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State", ReplicatedUsing = "IsFire_OnRep")
 	bool bIsFire = false;
+	UFUNCTION()
+	void IsFire_OnRep();
+
 
 	UFUNCTION()
 	void StartFire();
@@ -94,7 +97,7 @@ public:
 	void StopFire();
 
 	UFUNCTION()
-	void OnFire();
+	void OnTimerFire();
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Effect")
 	class UParticleSystem* MuzzleFlash;
@@ -210,9 +213,9 @@ public:
 	void S2A_SetMaxWalkSpeed_Implementation(float NewSpeed);
 
 	UFUNCTION(Server, Reliable, WithValidation)
-	void C2S_ApplyPointDamage(FVector TraceStart, FVector TraceEnd);
-	bool C2S_ApplyPointDamage_Validate(FVector TraceStart, FVector TraceEnd);
-	void C2S_ApplyPointDamage_Implementation(FVector TraceStart, FVector TraceEnd);
+	void C2S_Fire(FVector TraceStart, FVector TraceEnd);
+	bool C2S_Fire_Validate(FVector TraceStart, FVector TraceEnd);
+	void C2S_Fire_Implementation(FVector TraceStart, FVector TraceEnd);
 
 	UFUNCTION(NetMulticast, Reliable)
 	void S2A_HitEffect(FHitResult OutHit);
@@ -222,7 +225,4 @@ public:
 	void S2A_FireEffect(FName InSocketName);
 	void S2A_FireEffect_Implementation(FName InSocketName);
 
-	UFUNCTION(Client, Reliable)
-	void S2C_CameraEffect();
-	void S2C_CameraEffect_Implementation();
 };
