@@ -133,7 +133,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
 	class UAnimMontage* ReloadAnimation;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "State", Replicated)
 	bool bIsReload = false;
 
 	UFUNCTION()
@@ -225,4 +225,12 @@ public:
 	void S2A_FireEffect(FName InSocketName);
 	void S2A_FireEffect_Implementation(FName InSocketName);
 
+	UFUNCTION(Server, Reliable, WithValidation)
+	void C2S_Reload();
+	bool C2S_Reload_Validate();
+	void C2S_Reload_Implementation();
+
+	UFUNCTION(NetMulticast, Reliable)
+	void S2A_ReloadComplete();
+	void S2A_ReloadComplete_Implementation();
 };

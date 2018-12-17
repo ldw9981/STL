@@ -161,9 +161,7 @@ void ABasicCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 void ABasicCharacter::Reload()
 {
-	bIsReload = true;
-	//PlayAnimMontage(ReloadAnimation);
-	//Weapon->ReloadComplete();
+	C2S_Reload();
 }
 
 
@@ -605,6 +603,7 @@ void ABasicCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
 	DOREPLIFETIME(ABasicCharacter, bIsSprint);
 	DOREPLIFETIME(ABasicCharacter, bLeftLean);
 	DOREPLIFETIME(ABasicCharacter, bRightLean);
+	DOREPLIFETIME(ABasicCharacter, bIsReload);
 }
 
 void ABasicCharacter::DoIronsight()
@@ -791,6 +790,23 @@ void ABasicCharacter::S2A_FireEffect_Implementation(FName InSocketName)
 		Weapon->GetSocketLocation(InSocketName),
 		Weapon->GetSocketRotation(InSocketName));
 
+}
+
+bool ABasicCharacter::C2S_Reload_Validate()
+{
+	return true;
+}
+
+void ABasicCharacter::C2S_Reload_Implementation()
+{
+	bIsReload = true;
+}
+
+
+void ABasicCharacter::S2A_ReloadComplete_Implementation()
+{
+	Weapon->ReloadComplete();
+	bIsReload = false;	
 }
 
 
