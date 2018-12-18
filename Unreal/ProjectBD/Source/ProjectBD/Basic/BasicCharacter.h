@@ -157,7 +157,7 @@ public:
 
 	bool IsDead();
 
-	TArray<class AMasterItem*> PickupItemList;
+	TArray<class AMasterItem*> InteractionItemList;
 
 	void AddPickupItem(class AMasterItem* NewItem);
 	void RemovePickupItem(class AMasterItem* NewItem);
@@ -166,7 +166,7 @@ public:
 
 	FTimerHandle ItemCheckHandle;
 
-	void Use();
+	void Interaction();
 
 	void ToggleInventory();
 

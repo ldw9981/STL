@@ -100,7 +100,7 @@ void ABasicCharacter::Tick(float DeltaTime)
 
 void ABasicCharacter::CheckItem()
 {
-	if (PickupItemList.Num() > 0)
+	if (InteractionItemList.Num() > 0)
 	{
 		FVector Location = GetSightLocation();
 
@@ -111,7 +111,7 @@ void ABasicCharacter::CheckItem()
 			ABasicPC* PC = Cast<ABasicPC>(GetController());
 			if (PC)
 			{
-				PC->SetItemToolTipName(PickupItemList[Index]->ItemData.ItemName);
+				PC->SetItemToolTipName(InteractionItemList[Index]->ItemData.ItemName);
 				PC->ShowItemToolTip(true);
 			}
 		}
@@ -153,7 +153,7 @@ void ABasicCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 	PlayerInputComponent->BindAction(TEXT("RightLean"), IE_Pressed, this, &ABasicCharacter::StartRightLean);
 
-	PlayerInputComponent->BindAction(TEXT("Use"), IE_Pressed, this, &ABasicCharacter::Use);
+	PlayerInputComponent->BindAction(TEXT("Use"), IE_Pressed, this, &ABasicCharacter::Interaction);
 
 	PlayerInputComponent->BindAction(TEXT("ToggleInventory"), IE_Pressed, this, &ABasicCharacter::ToggleInventory);
 
@@ -426,50 +426,57 @@ bool ABasicCharacter::IsDead()
 
 void ABasicCharacter::AddPickupItem(AMasterItem * NewItem)
 {
-	if (NewItem && !NewItem->IsPendingKill())
+	if (!NewItem || NewItem->IsPendingKill())
 	{
-		PickupItemList.Add(NewItem);
-		ABasicPC* PC = Cast<ABasicPC>(GetController());
-
-		GetWorld()->GetTimerManager().ClearTimer(ItemCheckHandle);
-		GetWorld()->GetTimerManager().SetTimer(
-			ItemCheckHandle,
-			this,
-			&ABasicCharacter::CheckItem,
-			0.1f,
-			true,
-			0);
+		return;
 	}
+
+	InteractionItemList.Add(NewItem);
+	ABasicPC* PC = Cast<ABasicPC>(GetController());
+
+	GetWorld()->GetTimerManager().ClearTimer(ItemCheckHandle);
+	GetWorld()->GetTimerManager().SetTimer(
+		ItemCheckHandle,
+		this,
+		&ABasicCharacter::CheckItem,
+		0.1f,
+		true,
+		0);
+
 }
 
 void ABasicCharacter::RemovePickupItem(AMasterItem * NewItem)
 {
-	if (NewItem && !NewItem->IsPendingKill())
+	if (!NewItem || NewItem->IsPendingKill())
 	{
-		PickupItemList.Remove(NewItem);
-		ABasicPC* PC = Cast<ABasicPC>(GetController());
+		return;
+	}
 
-		if (PickupItemList.Num() > 0)
+	InteractionItemList.Remove(NewItem);
+	ABasicPC* PC = Cast<ABasicPC>(GetController());
+
+	if (InteractionItemList.Num() > 0)
+	{
+		FVector Location = GetSightLocation();
+
+		int Index = GetClosestItem(Location);
+
+		if (Index != -1)
 		{
-			FVector Location = GetSightLocation();
-
-			int Index = GetClosestItem(Location);
-
-			if (Index != -1)
+			if (PC)
 			{
-				ABasicPC* PC = Cast<ABasicPC>(GetController());
-				if (PC)
-				{
-					PC->SetItemToolTipName(PickupItemList[Index]->ItemData.ItemName);
-					PC->ShowItemToolTip(true);
-				}
+				PC->SetItemToolTipName(InteractionItemList[Index]->ItemData.ItemName);
+				PC->ShowItemToolTip(true);
 			}
 		}
-		else
+	}
+	else
+	{
+		if (PC)
 		{
 			PC->ShowItemToolTip(false);
-			GetWorld()->GetTimerManager().ClearTimer(ItemCheckHandle);
 		}
+		GetWorld()->GetTimerManager().ClearTimer(ItemCheckHandle);
 	}
 }
 
@@ -479,9 +486,9 @@ int ABasicCharacter::GetClosestItem(FVector SightLocation)
 {
 	float Min = 99999999999.9f;
 	int Index = -1;
-	for (int i = 0; i < PickupItemList.Num(); ++i)
+	for (int i = 0; i < InteractionItemList.Num(); ++i)
 	{
-		float Distance = FVector::Distance(SightLocation, PickupItemList[i]->GetActorLocation());
+		float Distance = FVector::Distance(SightLocation, InteractionItemList[i]->GetActorLocation());
 		if (Min > Distance)
 		{
 			Min = Distance;
@@ -542,12 +549,12 @@ FVector ABasicCharacter::GetSightLocation()
 
 }
 
-void ABasicCharacter::Use()
+void ABasicCharacter::Interaction()
 {
 	//Item 추가
-	if (PickupItemList.Num() > 0)
+	if (InteractionItemList.Num() > 0)
 	{
-		AMasterItem* PickupItem = PickupItemList[GetClosestItem(GetSightLocation())];
+		AMasterItem* PickupItem = InteractionItemList[GetClosestItem(GetSightLocation())];
 		if (PickupItem && !PickupItem->IsPendingKill())
 		{
 			UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
