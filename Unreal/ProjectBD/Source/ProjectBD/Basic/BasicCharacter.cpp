@@ -248,21 +248,23 @@ FRotator ABasicCharacter::GetAimOffset() const
 
 void ABasicCharacter::IsFire_OnRep()
 {
-	UE_LOG(LogClass, Warning, TEXT(__FUNCTION__));
+	if (bIsFire)
+	{
+		OnTimerFire();
+	}
 }
 
 void ABasicCharacter::StartFire()
 {
 	if (!bIsReload)
 	{
-		bIsFire = true;
-		OnTimerFire();
+		C2S_SetFire(true);		
 	}
 }
 
 void ABasicCharacter::StopFire()
 {
-	bIsFire = false;
+	C2S_SetFire(false);
 }
 
 void ABasicCharacter::OnTimerFire()
@@ -275,7 +277,7 @@ void ABasicCharacter::OnTimerFire()
 	if (!Weapon->IsHaveBullet())
 	{
 		//빈총 소리
-		bIsFire = false;
+		C2S_SetFire(false);
 		return;
 	}
 

@@ -88,10 +88,8 @@ public:
 	UFUNCTION()
 	void IsFire_OnRep();
 
-
 	UFUNCTION()
 	void StartFire();
-
 
 	UFUNCTION()
 	void StopFire();
@@ -207,6 +205,8 @@ public:
 	void C2S_SetFire(bool NewFire);
 	bool C2S_SetFire_Validate(bool NewFire);
 	void C2S_SetFire_Implementation(bool NewFire);
+
+
 
 	UFUNCTION(NetMulticast, Reliable)
 	void S2A_SetMaxWalkSpeed(float NewSpeed);
