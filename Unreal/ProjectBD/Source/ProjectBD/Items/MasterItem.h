@@ -28,13 +28,15 @@ protected:
 
 	void CompleteAsyncLoad();
 
+
+	UFUNCTION()
+	void ItemIndex_OnRep();
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,ReplicatedUsing="ItemIndex_OnRep")
 	int ItemIndex = 10;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FItemDataTable ItemData;
 
@@ -46,4 +48,6 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	class UItemComponent* ItemComp;
+
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 };

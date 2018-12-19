@@ -6,6 +6,10 @@
 #include "Items/ItemComponent.h"
 #include "Engine/StreamableManager.h"
 #include "Basic/BasicCharacter.h"
+#include "Kismet/KismetSystemLibrary.h"
+#include "UnrealNetwork.h"
+#include "UnrealNetwork.h"
+
 
 // Sets default values
 AMasterItem::AMasterItem()
@@ -21,7 +25,7 @@ AMasterItem::AMasterItem()
 	Mesh->SetupAttachment(Sphere);
 
 	ItemComp = CreateDefaultSubobject<UItemComponent>(TEXT("Item"));
-
+	bReplicates = true;
 }
 
 // Called when the game starts or when spawned
@@ -29,20 +33,14 @@ void AMasterItem::BeginPlay()
 {
 	Super::BeginPlay();
 
-	if (ItemComp->ItemDataTable)
+	if (UKismetSystemLibrary::IsServer(GetWorld()))
 	{
-		ItemIndex = FMath::RandRange(1, 6) * 10;
-		ItemData = ItemComp->GetItemData(ItemIndex);
-
-		if (ItemData.ItemIndex != 0)
+		if (ItemComp->ItemDataTable)
 		{
-			//메시 로딩
-			FStreamableManager Loader;
-			Mesh->SetStaticMesh(Loader.LoadSynchronous<UStaticMesh>(ItemData.ItemMesh));
-			//Loader.RequestAsyncLoad(ItemData.ItemMesh.ToSoftObjectPath(), FStreamableDelegate::CreateUObject(this, &AMasterItem::CompleteAsyncLoad));
+			ItemIndex = FMath::RandRange(1, 6) * 10;
+			ItemIndex_OnRep();
 		}
 	}
-
 	Sphere->OnComponentBeginOverlap.AddDynamic(this, &AMasterItem::OnBeginOverlap);
 	Sphere->OnComponentEndOverlap.AddDynamic(this, &AMasterItem::OnEndOverlap);
 	
@@ -78,6 +76,23 @@ void AMasterItem::CompleteAsyncLoad()
 	Mesh->SetStaticMesh(ItemData.ItemMesh.Get());
 }
 
+
+void AMasterItem::ItemIndex_OnRep()
+{
+	if (!ItemComp)
+	{
+		return;
+	}
+	ItemData = ItemComp->GetItemData(ItemIndex);
+	if (ItemData.ItemIndex != 0)
+	{
+		//메시 로딩
+		FStreamableManager Loader;
+		Mesh->SetStaticMesh(Loader.LoadSynchronous<UStaticMesh>(ItemData.ItemMesh));
+		//Loader.RequestAsyncLoad(ItemData.ItemMesh.ToSoftObjectPath(), FStreamableDelegate::CreateUObject(this, &AMasterItem::CompleteAsyncLoad));
+	}
+}
+
 // Called every frame
 void AMasterItem::Tick(float DeltaTime)
 {
@@ -85,3 +100,8 @@ void AMasterItem::Tick(float DeltaTime)
 
 }
 
+void AMasterItem::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	DOREPLIFETIME_CONDITION(AMasterItem, ItemIndex, COND_InitialOnly);	//COND_InitialOnly - This property will only attempt to send on the initial bunch
+}

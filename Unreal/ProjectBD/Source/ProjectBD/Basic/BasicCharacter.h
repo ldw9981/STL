@@ -168,6 +168,8 @@ public:
 
 	void Interaction();
 
+
+
 	void ToggleInventory();
 
 	void DropItem(FItemDataTable ItemData);

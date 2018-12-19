@@ -559,30 +559,36 @@ FVector ABasicCharacter::GetSightLocation()
 void ABasicCharacter::Interaction()
 {
 	//Item 추가
-	if (InteractionItemList.Num() > 0)
+	if (InteractionItemList.Num() <= 0)
 	{
-		AMasterItem* PickupItem = InteractionItemList[GetClosestItem(GetSightLocation())];
-		if (PickupItem && !PickupItem->IsPendingKill())
+		return;
+	}
+	
+	AMasterItem* PickupItem = InteractionItemList[GetClosestItem(GetSightLocation())];
+	if (!PickupItem || PickupItem->IsPendingKill())
+	{
+		return;
+	}
+
+	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+	if (!GI)
+	{
+		return;
+	}
+
+	if (GI->Inventory->AddItem(PickupItem->ItemData))
+	{
+		RemovePickupItem(PickupItem);
+		PickupItem->Destroy();
+		ABasicPC* PC = Cast<ABasicPC>(GetController());
+		if (PC)
 		{
-			UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
-			if (GI)
-			{
-				if ( GI->Inventory->AddItem(PickupItem->ItemData) )
-				{
-					RemovePickupItem(PickupItem);
-					PickupItem->Destroy();
-					ABasicPC* PC = Cast<ABasicPC>(GetController());
-					if (PC)
-					{
-						PC->UpdateInventory();
-					}
-				}
-				else
-				{
-					//Inventory Full;
-				}
-			}
+			PC->UpdateInventory();
 		}
+	}
+	else
+	{
+		//Inventory Full;
 	}
 }
 
