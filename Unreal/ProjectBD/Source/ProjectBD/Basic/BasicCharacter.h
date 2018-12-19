@@ -95,7 +95,7 @@ public:
 	void StopFire();
 
 	UFUNCTION()
-	void OnTimerFire();
+	void Client_OnTimerFire();
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Effect")
 	class UParticleSystem* MuzzleFlash;
@@ -171,6 +171,8 @@ public:
 	void ToggleInventory();
 
 	void DropItem(FItemDataTable ItemData);
+
+	void DropItem(int InventoryIndex);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Items")
 	TSubclassOf<class AMasterItem> MasterItem;

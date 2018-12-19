@@ -25,7 +25,7 @@ public:
 	class UItemToolTipBase* ItemToolTip;
 	
 	class UInventoryBase* InventoryWidget;
-
+	bool IsShowInventory();
 	void ToggleInventory();
 	void UpdateInventory();
 

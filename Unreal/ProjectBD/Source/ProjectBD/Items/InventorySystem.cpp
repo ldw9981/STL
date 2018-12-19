@@ -80,25 +80,8 @@ bool UInventorySystem::DropItem(int Index)
 		return false;
 	}
 
-
-	if (GetWorld())
-	{
-		APlayerController* PC = UGameplayStatics::GetPlayerController(GetWorld(), 0);
-		if (PC)
-		{
-			ABasicCharacter* Pawn = Cast<ABasicCharacter>(PC->GetPawn());
-			if (Pawn)
-			{
-				Pawn->DropItem(ItemList[Index]);
-				//버릴 아이템 삭제
-				ItemList.RemoveAt(Index);
-
-				return true;
-			}
-		}
-	}
-
-	return false;
+	ItemList.RemoveAt(Index);
+	return true;	
 }
 
 int UInventorySystem::GetSameItemIndex(FItemDataTable Item)

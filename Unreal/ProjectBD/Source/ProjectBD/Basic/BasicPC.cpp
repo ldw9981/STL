@@ -100,6 +100,20 @@ void ABasicPC::SetItemToolTipName(FString ItemName)
 	}
 }
 
+bool ABasicPC::IsShowInventory()
+{
+	if (!IsLocalPlayerController())
+	{
+		return false;
+	}
+
+	if (InventoryWidget->GetVisibility() == ESlateVisibility::Visible)
+	{
+		return true;
+	}
+	return false;
+}
+
 void ABasicPC::ToggleInventory()
 {
 	if (InventoryWidget->GetVisibility() == ESlateVisibility::Visible)

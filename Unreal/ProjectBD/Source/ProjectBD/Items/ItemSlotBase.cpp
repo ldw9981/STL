@@ -9,6 +9,7 @@
 #include "Items/InventorySystem.h"
 #include "Engine/StreamableManager.h"
 #include "Basic/BasicPC.h"
+#include "Basic/BasicCharacter.h"
 
 void UItemSlotBase::NativeConstruct()
 {
@@ -45,17 +46,13 @@ FReply UItemSlotBase::NativeOnMouseButtonDown(const FGeometry & InGeometry, cons
 {
 	if (InMouseEvent.IsMouseButtonDown(EKeys::RightMouseButton))
 	{
-		UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
-		if (GI)
+		ABasicPC* PC = Cast<ABasicPC>(GetOwningPlayer());
+		if (PC)
 		{
-			if (GI->Inventory->DropItem(InventoryIndex))
+			ABasicCharacter* Pawn = Cast<ABasicCharacter>(PC->GetPawn());
+			if (Pawn)
 			{
-				ABasicPC* PC = Cast<ABasicPC>(GetOwningPlayer());
-				//ABasicPC* PC = Cast<ABasicPC>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
-				if (PC)
-				{
-					PC->UpdateInventory();
-				}
+				Pawn->DropItem(InventoryIndex);
 			}
 		}
 		return FReply::Handled();

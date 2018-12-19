@@ -248,17 +248,25 @@ FRotator ABasicCharacter::GetAimOffset() const
 
 void ABasicCharacter::IsFire_OnRep()
 {
-	if (bIsFire)
+	// * 클라만 복제된다.
+	// 클라이언트에 변수가 복제되었을때(클라만 컨트롤러가 있는 클라컴만 총쏘기 타이머가 실행된다.
+	if (bIsFire && GetController())
 	{
-		OnTimerFire();
+		Client_OnTimerFire();
 	}
 }
 
 void ABasicCharacter::StartFire()
-{
+{	
+	ABasicPC* BasicPC = Cast<ABasicPC>(GetController());
+	if (!BasicPC || BasicPC->IsShowInventory())
+	{
+		return;
+	}
 	if (!bIsReload)
 	{
 		C2S_SetFire(true);		
+		IsFire_OnRep();	// 서버를 위해 바로검사
 	}
 }
 
@@ -267,13 +275,13 @@ void ABasicCharacter::StopFire()
 	C2S_SetFire(false);
 }
 
-void ABasicCharacter::OnTimerFire()
-{
+// 총을쏜 플레이어의 컴에서만 호출
+void ABasicCharacter::Client_OnTimerFire()
+{	
 	if (!bIsFire)
 	{
 		return;
 	}
-
 	if (!Weapon->IsHaveBullet())
 	{
 		//빈총 소리
@@ -281,9 +289,7 @@ void ABasicCharacter::OnTimerFire()
 		return;
 	}
 
-	UE_LOG(LogClass, Warning, TEXT("Bullet %d %d"), Weapon->BulletCountinMagazine, Weapon->TotalBulletCount);
-
-	
+	UE_LOG(LogClass, Warning, TEXT("Bullet %d %d"), Weapon->BulletCountinMagazine, Weapon->TotalBulletCount);	
 
 	//총알 발사 계산
 	//UE_LOG(LogClass, Warning, TEXT("OnFire"));
@@ -320,8 +326,8 @@ void ABasicCharacter::OnTimerFire()
 	FRotator PlayerRotation = GetControlRotation();
 	PlayerRotation.Pitch += FMath::Abs((float)RandY / 10.0f);
 	PlayerRotation.Yaw += (float)RandX / 10.0f;
-	GetController()->SetControlRotation(PlayerRotation);
 
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->SetControlRotation(PlayerRotation);
 	//카메라 흔들기
 	UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->PlayCameraShake(UMyCameraShake::StaticClass());
 
@@ -329,11 +335,12 @@ void ABasicCharacter::OnTimerFire()
 	//UGameplayStatics::PlayWorldCameraShake(GetWorld(),
 	//	UMyCameraShake::StaticClass(), FVector(0, 0, 0), 300.0f, 900.0f);
 
+
 	//연사 구현
 	FTimerHandle FireTimerHandle;
 	GetWorldTimerManager().SetTimer(FireTimerHandle,
 		this,
-		&ABasicCharacter::OnTimerFire,
+		&ABasicCharacter::Client_OnTimerFire,
 		0.12f
 	);
 }
@@ -598,6 +605,22 @@ void ABasicCharacter::DropItem(FItemDataTable ItemData)
 		//{
 		//	Item->SetActorLocation(FVector(0, 0, 0));
 		//}
+	}
+}
+
+void ABasicCharacter::DropItem(int InventoryIndex)
+{
+	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+	if (GI)
+	{
+		if (GI->Inventory->DropItem(InventoryIndex))
+		{
+			ABasicPC* PC = Cast<ABasicPC>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+			if (PC)
+			{
+				PC->UpdateInventory();
+			}
+		}
 	}
 }
 
