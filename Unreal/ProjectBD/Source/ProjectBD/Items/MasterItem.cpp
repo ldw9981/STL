@@ -25,22 +25,12 @@ AMasterItem::AMasterItem()
 	Mesh->SetupAttachment(Sphere);
 
 	ItemComp = CreateDefaultSubobject<UItemComponent>(TEXT("Item"));
-	bReplicates = true;
 }
 
 // Called when the game starts or when spawned
 void AMasterItem::BeginPlay()
 {
 	Super::BeginPlay();
-
-	if (UKismetSystemLibrary::IsServer(GetWorld()))
-	{
-		if (ItemComp->ItemDataTable)
-		{
-			ItemIndex = FMath::RandRange(1, 6) * 10;
-			ItemIndex_OnRep();
-		}
-	}
 	Sphere->OnComponentBeginOverlap.AddDynamic(this, &AMasterItem::OnBeginOverlap);
 	Sphere->OnComponentEndOverlap.AddDynamic(this, &AMasterItem::OnEndOverlap);
 	
@@ -100,8 +90,19 @@ void AMasterItem::Tick(float DeltaTime)
 
 }
 
-void AMasterItem::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
-{
-	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-	DOREPLIFETIME_CONDITION(AMasterItem, ItemIndex, COND_InitialOnly);	//COND_InitialOnly - This property will only attempt to send on the initial bunch
+
+void AMasterItem::SetItem(int NewItemIndex)
+{	
+	if (ItemComp->ItemDataTable)
+	{		
+		ItemData = ItemComp->GetItemData(NewItemIndex);
+		if (ItemData.ItemIndex != 0)
+		{
+			ItemIndex = NewItemIndex;
+			//메시 로딩
+			FStreamableManager Loader;
+			Mesh->SetStaticMesh(Loader.LoadSynchronous<UStaticMesh>(ItemData.ItemMesh));
+			//Loader.RequestAsyncLoad(ItemData.ItemMesh.ToSoftObjectPath(), FStreamableDelegate::CreateUObject(this, &AMasterItem::CompleteAsyncLoad));
+		}
+	}
 }
