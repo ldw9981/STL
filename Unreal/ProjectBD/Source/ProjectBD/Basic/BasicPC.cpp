@@ -82,14 +82,18 @@ void ABasicPC::ShowItemToolTip(bool bShow)
 		return;
 	}
 
-	if (bShow)
+	if (ItemToolTip)
 	{
-		ItemToolTip->SetVisibility(ESlateVisibility::Visible);
+		if (bShow)
+		{
+			ItemToolTip->SetVisibility(ESlateVisibility::Visible);
+		}
+		else
+		{
+			ItemToolTip->SetVisibility(ESlateVisibility::Collapsed);
+		}
 	}
-	else
-	{
-		ItemToolTip->SetVisibility(ESlateVisibility::Collapsed);
-	}
+
 }
 
 void ABasicPC::SetItemToolTipName(FString ItemName)

@@ -222,8 +222,13 @@ public:
 	void C2S_Fire_Implementation(FVector TraceStart, FVector TraceEnd);
 
 	UFUNCTION(NetMulticast, Reliable)
-	void S2A_HitEffect(FHitResult OutHit);
-	void S2A_HitEffect_Implementation(FHitResult OutHit);
+	void S2A_HitEffectBlood(FVector Point,FRotator Rotation);
+	void S2A_HitEffectBlood_Implementation(FVector Point, FRotator Rotation);
+
+	UFUNCTION(NetMulticast, Reliable)
+	void S2A_HitEffectBlock(FVector Point, FRotator Rotation);
+	void S2A_HitEffectBlock_Implementation(FVector Point, FRotator Rotation);
+
 
 	UFUNCTION(NetMulticast, Reliable)
 	void S2A_FireEffect(FName InSocketName);

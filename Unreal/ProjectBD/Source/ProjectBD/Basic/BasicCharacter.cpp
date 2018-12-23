@@ -745,13 +745,15 @@ void ABasicCharacter::C2S_Fire_Implementation(FVector TraceStart, FVector TraceE
 		true,
 		FLinearColor::Red,
 		FLinearColor::Green,
-		3.0f
+		30.0f
 	);
+
 
 	//총알이 어디에 맞으면 총구에서 다시 검사.
 	//맞긴 맞은건데 이 위치가 맞는지 확인
 	if (Result)
 	{
+		UE_LOG(LogClass, Warning, TEXT("MuzzleFlash."));
 		//총구 끝에서 충돌지점까지 재 검사
 		TraceStart = Weapon->GetSocketLocation(TEXT("MuzzleFlash"));
 		FVector Dir = OutHit.ImpactPoint - TraceStart;
@@ -764,57 +766,59 @@ void ABasicCharacter::C2S_Fire_Implementation(FVector TraceStart, FVector TraceE
 			ObjectTypes,
 			true,
 			IgnoreActors,
-			EDrawDebugTrace::None,
+			EDrawDebugTrace::ForDuration,
 			OutHit,
 			true,
 			FLinearColor::Red,
 			FLinearColor::Green,
-			3.0f
+			30.0f
 		);
 
 		if (Result)
-		{
-			S2A_HitEffect(OutHit);
-			//점 데미지
-			UGameplayStatics::ApplyPointDamage(OutHit.GetActor(),
-				Weapon->GetDamage(),
-				TraceEnd - TraceStart,
-				OutHit,
-				GetController(),
-				this,
-				UBulletDamageType::StaticClass()
-			);
+		{			
+			if (OutHit.GetActor()->ActorHasTag(TEXT("Player")))
+			{
+				UE_LOG(LogClass, Warning, TEXT("Player."));
+				//점 데미지
+				UGameplayStatics::ApplyPointDamage(OutHit.GetActor(),
+					Weapon->GetDamage(),
+					TraceEnd - TraceStart,
+					OutHit,
+					GetController(),
+					this,
+					UBulletDamageType::StaticClass()
+				);
+
+				S2A_HitEffectBlood(OutHit.ImpactPoint,OutHit.ImpactNormal.Rotation());
+			}
+			else
+			{
+				S2A_HitEffectBlock(OutHit.ImpactPoint, OutHit.ImpactNormal.Rotation());
+			}
+		
 		}
 	}
 }
 
-void ABasicCharacter::S2A_HitEffect_Implementation(FHitResult OutHit)
+void ABasicCharacter::S2A_HitEffectBlood_Implementation(FVector Point, FRotator Rotation)
 {
-	if (OutHit.GetActor()->ActorHasTag(TEXT("Player")))
-	{
-		//HitEffect
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), BloodEffect,
-			OutHit.ImpactPoint,
-			OutHit.ImpactNormal.Rotation()
-		);
-	}
-	else
-	{
-		UDecalComponent* BulletDecalComponent = UGameplayStatics::SpawnDecalAtLocation(GetWorld(),
-			BulletDecal,
-			FVector(5, 5, 5),
-			OutHit.ImpactPoint,
-			OutHit.ImpactNormal.Rotation(),
-			10.0f
-		);
-		BulletDecalComponent->SetFadeScreenSize(0.005f);
+	//HitEffect
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), BloodEffect,Point,Rotation	);
+}
 
-		//HitEffect
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitEffect,
-			OutHit.ImpactPoint,
-			OutHit.ImpactNormal.Rotation()
-		);
-	}
+void ABasicCharacter::S2A_HitEffectBlock_Implementation(FVector Point, FRotator Rotation)
+{
+	UDecalComponent* BulletDecalComponent = UGameplayStatics::SpawnDecalAtLocation(GetWorld(),
+		BulletDecal,
+		FVector(5, 5, 5),
+		Point,
+		Rotation,
+		10.0f
+	);
+	BulletDecalComponent->SetFadeScreenSize(0.005f);
+
+	//HitEffect
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitEffect,	Point,Rotation	);
 }
 
 void ABasicCharacter::S2A_FireEffect_Implementation(FName InSocketName)
