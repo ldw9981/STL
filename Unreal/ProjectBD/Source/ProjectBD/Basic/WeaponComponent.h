@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "Components/StaticMeshComponent.h"
+#include "UObject/NoExportTypes.h"
+#include "Items/ItemDataTable.h"
 #include "WeaponComponent.generated.h"
 
 /**

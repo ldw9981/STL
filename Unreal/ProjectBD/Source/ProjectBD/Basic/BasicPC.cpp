@@ -13,6 +13,8 @@
 #include "BDGameInstance.h"
 #include "TimerManager.h"
 #include "Engine/World.h"
+#include "GameFramework/Pawn.h"
+#include "Basic/InventoryComponent.h"
 
 ABasicPC::ABasicPC()
 {
@@ -140,6 +142,31 @@ void ABasicPC::UpdateInventory()
 {
 	InventoryWidget->AllResetSlot();
 
+//	GetOwner();
+	APawn* Pawn = GetPawn();
+	if(!Pawn)
+	{
+		return;
+	}
+	UInventoryComponent* InventoryComponent = Cast<UInventoryComponent>( Pawn->GetComponentByClass(UInventoryComponent::StaticClass()));
+	if (!InventoryComponent)
+	{
+		return;
+	}
+
+	for (int i = 0; i < InventoryComponent->ItemList.Num(); ++i)
+	{
+		UItemSlotBase* Slot = InventoryWidget->GetEmptySlot();
+		if (Slot)
+		{
+			Slot->SetItemData(InventoryComponent->ItemList[i], i);
+		}
+		else
+		{
+			//인벤토리 풀
+		}
+	}
+	/*
 	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 	if (GI)
 	{
@@ -156,6 +183,7 @@ void ABasicPC::UpdateInventory()
 			}
 		}
 	}
+	*/
 
 }
 

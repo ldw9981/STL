@@ -23,6 +23,7 @@
 #include "Battle/BattleWidgetBase.h"
 #include "UnrealNetwork.h"
 #include "Battle/BattleGM.h"
+#include "InventoryComponent.h"
 
 // Sets default values
 ABasicCharacter::ABasicCharacter()
@@ -48,6 +49,8 @@ ABasicCharacter::ABasicCharacter()
 
 	Weapon = CreateDefaultSubobject<UWeaponComponent>(TEXT("Weapon"));
 	Weapon->SetupAttachment(GetMesh(), TEXT("RHandWeapon"));
+
+	Inventory = CreateDefaultSubobject<UInventoryComponent>(TEXT("Inventory"));
 
 	//앉을때 눈 높이 갑자기 이동 막기
 	CapsuleCrouchHalfHeight = GetCharacterMovement()->CrouchedHalfHeight;
@@ -431,7 +434,7 @@ bool ABasicCharacter::IsDead()
 	return CurrentHP <= 0;
 }
 
-void ABasicCharacter::AddPickupItem(AMasterItem * NewItem)
+void ABasicCharacter::AddInteraction(AMasterItem * NewItem)
 {
 	if (!NewItem || NewItem->IsPendingKill())
 	{
@@ -452,7 +455,7 @@ void ABasicCharacter::AddPickupItem(AMasterItem * NewItem)
 
 }
 
-void ABasicCharacter::RemovePickupItem(AMasterItem * NewItem)
+void ABasicCharacter::RemoveInteraction(AMasterItem * NewItem)
 {
 	if (!NewItem || NewItem->IsPendingKill())
 	{
@@ -558,37 +561,34 @@ FVector ABasicCharacter::GetSightLocation()
 
 void ABasicCharacter::Interaction()
 {
+	FVector Location = GetSightLocation();
+	
+	C2S_Interaction(Location);
+}
+
+bool ABasicCharacter::C2S_Interaction_Validate(FVector Location)
+{
+	return true;
+}
+
+void ABasicCharacter::C2S_Interaction_Implementation(FVector Location)
+{
 	//Item 추가
 	if (InteractionItemList.Num() <= 0)
 	{
 		return;
 	}
-	
-	AMasterItem* PickupItem = InteractionItemList[GetClosestItem(GetSightLocation())];
-	if (!PickupItem || PickupItem->IsPendingKill())
+
+	int IndexClosestItem = GetClosestItem(Location);
+	AMasterItem* MasterItem = InteractionItemList[IndexClosestItem];
+	if (!MasterItem || MasterItem->IsPendingKill())
 	{
 		return;
 	}
 
-	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
-	if (!GI)
+	if (PickupItem(MasterItem))
 	{
-		return;
-	}
 
-	if (GI->Inventory->AddItem(PickupItem->ItemData))
-	{
-		RemovePickupItem(PickupItem);
-		PickupItem->Destroy();
-		ABasicPC* PC = Cast<ABasicPC>(GetController());
-		if (PC)
-		{
-			PC->UpdateInventory();
-		}
-	}
-	else
-	{
-		//Inventory Full;
 	}
 }
 
@@ -601,21 +601,53 @@ void ABasicCharacter::ToggleInventory()
 	}
 }
 
-void ABasicCharacter::DropItem(FItemDataTable ItemData)
+bool ABasicCharacter::PickupItem(AMasterItem* MasterItem)
 {
-	if (MasterItem)
+	if (Inventory->AddItem(MasterItem->ItemData))
 	{
-		AMasterItem* Item = GetWorld()->SpawnActor<AMasterItem>(MasterItem, GetMesh()->GetComponentLocation() + GetActorForwardVector() * 30.0f,
-			GetMesh()->GetComponentRotation());
-		//if (Item)
-		//{
-		//	Item->SetActorLocation(FVector(0, 0, 0));
-		//}
+		RemoveInteraction(MasterItem);
+		MasterItem->Destroy();
+
+
+		ABasicPC* PC = Cast<ABasicPC>(GetController());
+		if (PC)
+		{
+			PC->UpdateInventory();
+		}
+		return true;
 	}
+	// full
+	return false;
 }
 
 void ABasicCharacter::DropItem(int InventoryIndex)
 {
+	int ItemIndex = Inventory->GetItemIndex(InventoryIndex);
+	if (ItemIndex == -1)
+	{
+		return;
+	}
+
+	if(!Inventory->DropItem(InventoryIndex))
+	{
+		return;
+	}
+		
+	AMasterItem* Item = GetWorld()->SpawnActor<AMasterItem>(AMasterItem::StaticClass(), 
+		GetMesh()->GetComponentLocation() + GetActorForwardVector() * 30.0f,
+		GetMesh()->GetComponentRotation());
+	Item->SetItem(ItemIndex);
+
+	ABasicPC* PC = Cast<ABasicPC>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+	if (PC)
+	{
+		PC->UpdateInventory();
+	}
+
+
+
+
+	/*
 	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 	if (GI)
 	{
@@ -628,6 +660,7 @@ void ABasicCharacter::DropItem(int InventoryIndex)
 			}
 		}
 	}
+	*/
 }
 
 void ABasicCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const

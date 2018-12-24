@@ -43,6 +43,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	class UWeaponComponent* Weapon;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	class UInventoryComponent* Inventory;
+
 
 	void MoveForward(float Value);
 	void MoveRight(float Value);
@@ -159,8 +162,8 @@ public:
 
 	TArray<class AMasterItem*> InteractionItemList;
 
-	void AddPickupItem(class AMasterItem* NewItem);
-	void RemovePickupItem(class AMasterItem* NewItem);
+	void AddInteraction(class AMasterItem* NewItem);
+	void RemoveInteraction(class AMasterItem* NewItem);
 	int GetClosestItem(FVector SightLocation);
 	FVector GetSightLocation();
 
@@ -168,11 +171,15 @@ public:
 
 	void Interaction();
 
+	UFUNCTION(Server, Reliable, WithValidation)
+	void C2S_Interaction(FVector Location);
+	bool C2S_Interaction_Validate(FVector Location);
+	void C2S_Interaction_Implementation(FVector Location);
 
 
 	void ToggleInventory();
 
-	void DropItem(FItemDataTable ItemData);
+	bool PickupItem(AMasterItem* MasterItem);
 
 	void DropItem(int InventoryIndex);
 
