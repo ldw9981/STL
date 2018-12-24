@@ -31,5 +31,5 @@ public:
 
 	virtual FReply NativeOnMouseButtonDown(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent) override;
 
-	void SetItemData(FItemDataTable NewItemData, int NewInventoryIndex);
+	void SetItemData(FItemDataTable NewItemData, int NewInventoryIndex, int NewCount);
 };

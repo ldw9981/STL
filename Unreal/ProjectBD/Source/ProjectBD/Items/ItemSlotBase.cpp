@@ -62,7 +62,7 @@ FReply UItemSlotBase::NativeOnMouseButtonDown(const FGeometry & InGeometry, cons
 }
 
 //Array -> UI ¿¬°á
-void UItemSlotBase::SetItemData(FItemDataTable NewItemData, int NewInventoryIndex)
+void UItemSlotBase::SetItemData(FItemDataTable NewItemData, int NewInventoryIndex,int NewCount)
 {
 	ItemData = NewItemData;
 	InventoryIndex = NewInventoryIndex;
@@ -83,7 +83,7 @@ void UItemSlotBase::SetItemData(FItemDataTable NewItemData, int NewInventoryInde
 
 	if (ItemCount)
 	{
-		ItemCount->SetText(FText::FromString(FString::FromInt(ItemData.ItemCount)));
+		ItemCount->SetText(FText::FromString(FString::Printf(TEXT("%d"), NewCount)));
 	}
 	SetVisibility(ESlateVisibility::Visible);
 }

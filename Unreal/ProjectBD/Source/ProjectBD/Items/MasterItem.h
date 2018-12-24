@@ -38,6 +38,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int ItemIndex = 10;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int ItemCount = 1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FItemDataTable ItemData;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
@@ -46,8 +49,5 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	class UStaticMeshComponent* Mesh;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	class UItemComponent* ItemComp;
-
-	void SetItem(int NewItemIndex);
+	void SetItem(int NewItemIndex, int NewItemCount);
 };

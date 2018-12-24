@@ -603,7 +603,7 @@ void ABasicCharacter::ToggleInventory()
 
 bool ABasicCharacter::PickupItem(AMasterItem* MasterItem)
 {
-	if (Inventory->AddItem(MasterItem->ItemData))
+	if (Inventory->AddItem(MasterItem->ItemIndex,MasterItem->ItemCount))
 	{
 		RemoveInteraction(MasterItem);
 		MasterItem->Destroy();
@@ -623,6 +623,7 @@ bool ABasicCharacter::PickupItem(AMasterItem* MasterItem)
 void ABasicCharacter::DropItem(int InventoryIndex)
 {
 	int ItemIndex = Inventory->GetItemIndex(InventoryIndex);
+	int ItemCount = Inventory->GetItemCount(InventoryIndex);
 	if (ItemIndex == -1)
 	{
 		return;
@@ -636,7 +637,7 @@ void ABasicCharacter::DropItem(int InventoryIndex)
 	AMasterItem* Item = GetWorld()->SpawnActor<AMasterItem>(AMasterItem::StaticClass(), 
 		GetMesh()->GetComponentLocation() + GetActorForwardVector() * 30.0f,
 		GetMesh()->GetComponentRotation());
-	Item->SetItem(ItemIndex);
+	Item->SetItem(ItemIndex, ItemCount);
 
 	ABasicPC* PC = Cast<ABasicPC>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
 	if (PC)

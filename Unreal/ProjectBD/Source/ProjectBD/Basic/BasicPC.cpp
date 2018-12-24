@@ -154,12 +154,16 @@ void ABasicPC::UpdateInventory()
 		return;
 	}
 
+
+	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 	for (int i = 0; i < InventoryComponent->ItemList.Num(); ++i)
 	{
 		UItemSlotBase* Slot = InventoryWidget->GetEmptySlot();
 		if (Slot)
 		{
-			Slot->SetItemData(InventoryComponent->ItemList[i], i);
+			int ItemIndex = InventoryComponent->GetItemIndex(i);
+			int ItemCount = InventoryComponent->GetItemCount(i);
+			Slot->SetItemData(GI->GetItemData(ItemIndex), i, ItemCount);
 		}
 		else
 		{

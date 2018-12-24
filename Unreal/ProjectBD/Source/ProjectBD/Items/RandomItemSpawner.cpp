@@ -6,6 +6,7 @@
 #include "Engine/World.h"
 #include "MasterItem.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "BDGameInstance.h"
 #include "UnrealNetwork.h"
 
 // Sets default values
@@ -60,15 +61,16 @@ void ARandomItemSpawner::Spwan_OnRep()
 		return DistanceA > DistanceB;
 	});
 
+	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 	for (int Index = 0; Index< Results.Num();Index++)
 	{
-
+		FItemDataTable& ItemData = GI->GetItemData(RandomItems[Index]);
 		
 		TSubclassOf<AMasterItem> MasterItemClassType = AMasterItem::StaticClass();
 		FActorSpawnParameters SpawnParms;
 		AMasterItem* Item = GetWorld()->SpawnActor<AMasterItem>(MasterItemClassType, SpawnParms);
 		Item->SetActorTransform(Results[Index]->GetActorTransform());
-		Item->SetItem(RandomItems[Index]);
+		Item->SetItem(RandomItems[Index], ItemData.ItemCount);
 	}
 }
 

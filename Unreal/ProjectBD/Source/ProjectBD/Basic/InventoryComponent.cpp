@@ -1,6 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "InventoryComponent.h"
+#include "BDGameInstance.h"
+#include "Kismet/GameplayStatics.h"
+#include "Engine/World.h"
 
 // Sets default values for this component's properties
 UInventoryComponent::UInventoryComponent()
@@ -31,55 +34,62 @@ void UInventoryComponent::TickComponent(float DeltaTime, ELevelTick TickType, FA
 	// ...
 }
 
-bool UInventoryComponent::AddItem(FItemDataTable Item)
+bool UInventoryComponent::AddItem(int ItemIndex, int Count)
 {
 	//인벤토리 풀 체크
+	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+	FItemDataTable& ItemData = GI->GetItemData(ItemIndex);
+	FInventoryItemInfo InventoryItemInfo;
+	InventoryItemInfo.ItemIndex = ItemIndex;
+	InventoryItemInfo.ItemCount = Count;
 
-	if (Item.ItemType == EItemType::Consume)
+	if (ItemData.ItemType == EItemType::Consume)
 	{
-		int Index = GetSameItemIndex(Item);
+		int Index = GetSameItemIndex(ItemData);
 		if (Index == -1)
 		{
 			//신규 추가
-			ItemList.Add(Item);
+			
+			ItemList.Add(InventoryItemInfo);
 		}
 		else
 		{
 			//갯수 증가
-			ItemList[Index].ItemCount += Item.ItemCount;
+			ItemList[Index].ItemCount += Count;
 		}
 	}
 	else
 	{
 		//신규 추가
-		ItemList.Add(Item);
+		ItemList.Add(InventoryItemInfo);
 	}
-
 	return true;
 }
 
-bool UInventoryComponent::UseItem(int Index)
+bool UInventoryComponent::UseItem(int InventoryIndex)
 {
-	if (Index == -1)
+	if (InventoryIndex == -1)
 	{
 		return false;
 	}
 
-	if (ItemList[Index].ItemCount == 0)
+	if (ItemList[InventoryIndex].ItemCount == 0)
 	{
 		return false;
 	}
 
 
-	if (ItemList[Index].ItemType == EItemType::Consume)
+	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+	FItemDataTable& ItemData = GI->GetItemData(ItemList[InventoryIndex].ItemIndex);
+	if (ItemData.ItemType == EItemType::Consume)
 	{
 		//사용하는거
-		ItemList[Index].ItemCount--;
+		ItemList[InventoryIndex].ItemCount--;
 		//효과 적용
-		if (ItemList[Index].ItemCount == 0)
+		if (ItemList[InventoryIndex].ItemCount == 0)
 		{
 			//사용 다한 아이템을 삭제
-			ItemList.RemoveAt(Index);
+			ItemList.RemoveAt(InventoryIndex);
 		}
 	}
 	else
@@ -127,4 +137,14 @@ int UInventoryComponent::GetItemIndex(int InventoryIndex)
 		return -1;
 	}
 	return ItemList[InventoryIndex].ItemIndex;
+}
+
+
+int UInventoryComponent::GetItemCount(int InventoryIndex)
+{
+	if (InventoryIndex >= ItemList.Num())
+	{
+		return 0;
+	}
+	return ItemList[InventoryIndex].ItemCount;
 }

@@ -7,6 +7,18 @@
 #include "Items/ItemDataTable.h"
 #include "InventoryComponent.generated.h"
 
+USTRUCT(BlueprintType)
+struct PROJECTBD_API FInventoryItemInfo
+{
+	GENERATED_USTRUCT_BODY()
+
+public:
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	int ItemIndex;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	int ItemCount;
+};
+
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class PROJECTBD_API UInventoryComponent : public UActorComponent
@@ -25,13 +37,15 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	TArray<FItemDataTable> ItemList;
 
-	bool AddItem(FItemDataTable Item);
-	bool UseItem(int Index);
+
+	TArray<FInventoryItemInfo> ItemList;
+	bool AddItem(int ItemIndex,int Count);
+	bool UseItem(int InventoryIndex);
 	bool DropItem(int Index);
 
 	int GetSameItemIndex(FItemDataTable Item);
 
 	int GetItemIndex(int InventoryIndex);
+	int GetItemCount(int InventoryIndex);
 };

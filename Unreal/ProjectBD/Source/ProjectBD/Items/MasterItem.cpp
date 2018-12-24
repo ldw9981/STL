@@ -8,8 +8,8 @@
 #include "Basic/BasicCharacter.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "UnrealNetwork.h"
-#include "UnrealNetwork.h"
-
+#include "BDGameInstance.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AMasterItem::AMasterItem()
@@ -23,8 +23,6 @@ AMasterItem::AMasterItem()
 
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
 	Mesh->SetupAttachment(Sphere);
-
-	ItemComp = CreateDefaultSubobject<UItemComponent>(TEXT("Item"));
 }
 
 // Called when the game starts or when spawned
@@ -69,11 +67,13 @@ void AMasterItem::CompleteAsyncLoad()
 
 void AMasterItem::ItemIndex_OnRep()
 {
-	if (!ItemComp)
+	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+
+	if (!GI)
 	{
 		return;
 	}
-	ItemData = ItemComp->GetItemData(ItemIndex);
+	ItemData = GI->GetItemData(ItemIndex);
 	if (ItemData.ItemIndex != 0)
 	{
 		//메시 로딩
@@ -91,18 +91,22 @@ void AMasterItem::Tick(float DeltaTime)
 }
 
 
-void AMasterItem::SetItem(int NewItemIndex)
+void AMasterItem::SetItem(int NewItemIndex,int NewItemCount)
 {	
-	if (ItemComp->ItemDataTable)
-	{		
-		ItemData = ItemComp->GetItemData(NewItemIndex);
-		if (ItemData.ItemIndex != 0)
-		{
-			ItemIndex = NewItemIndex;
-			//메시 로딩
-			FStreamableManager Loader;
-			Mesh->SetStaticMesh(Loader.LoadSynchronous<UStaticMesh>(ItemData.ItemMesh));
-			//Loader.RequestAsyncLoad(ItemData.ItemMesh.ToSoftObjectPath(), FStreamableDelegate::CreateUObject(this, &AMasterItem::CompleteAsyncLoad));
-		}
+	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+	if (!GI)
+	{
+		return;
 	}
+			
+	ItemData = GI->GetItemData(NewItemIndex);
+	if (ItemData.ItemIndex != 0)
+	{
+		ItemIndex = NewItemIndex;
+		//메시 로딩
+		FStreamableManager Loader;
+		Mesh->SetStaticMesh(Loader.LoadSynchronous<UStaticMesh>(ItemData.ItemMesh));
+		//Loader.RequestAsyncLoad(ItemData.ItemMesh.ToSoftObjectPath(), FStreamableDelegate::CreateUObject(this, &AMasterItem::CompleteAsyncLoad));
+	}
+	ItemCount = NewItemCount;
 }
