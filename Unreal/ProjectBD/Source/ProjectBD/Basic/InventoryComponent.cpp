@@ -43,7 +43,7 @@ bool UInventoryComponent::AddItem(int ItemIndex, int Count)
 	InventoryItemInfo.ItemIndex = ItemIndex;
 	InventoryItemInfo.ItemCount = Count;
 
-	if (ItemData.ItemType == EItemType::Consume)
+	if (ItemData.IsOverlapItemType())
 	{
 		int Index = GetSameItemIndex(ItemData);
 		if (Index == -1)
@@ -81,7 +81,7 @@ bool UInventoryComponent::UseItem(int InventoryIndex)
 
 	UBDGameInstance* GI = Cast<UBDGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 	FItemDataTable& ItemData = GI->GetItemData(ItemList[InventoryIndex].ItemIndex);
-	if (ItemData.ItemType == EItemType::Consume)
+	if (ItemData.IsOverlapItemType())
 	{
 		//사용하는거
 		ItemList[InventoryIndex].ItemCount--;

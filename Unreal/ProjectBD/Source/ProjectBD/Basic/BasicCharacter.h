@@ -183,9 +183,6 @@ public:
 
 	void DropItem(int InventoryIndex);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Items")
-	TSubclassOf<class AMasterItem> MasterItem;
-
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 	UFUNCTION(Server, Reliable, WithValidation)

@@ -11,7 +11,9 @@ enum class EItemType : uint8
 {
 	Unknown					= 0			UMETA(Display = "Unknown"),
 	Consume					= 1			UMETA(Display = "Consume"),
-	Equip					= 2			UMETA(Display = "Equip")
+	Equip					= 2			UMETA(Display = "Equip"),
+	Grenade					= 3			UMETA(Display = "Grenade"),
+	Ammo					= 4			UMETA(Display = "Ammo")
 };
 
 
@@ -53,4 +55,14 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	TAssetPtr<class UStaticMesh> ItemMesh;
+
+public:
+	bool IsOverlapItemType()
+	{
+		if (ItemType == EItemType::Consume || ItemType == EItemType::Grenade || ItemType == EItemType::Ammo)
+		{
+			return true;
+		}
+		return false;
+	}
 };

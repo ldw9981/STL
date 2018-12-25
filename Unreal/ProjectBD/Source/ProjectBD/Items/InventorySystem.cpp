@@ -12,7 +12,7 @@ bool UInventorySystem::AddItem(FItemDataTable Item)
 {
 	//인벤토리 풀 체크
 
-	if (Item.ItemType == EItemType::Consume)
+	if (Item.IsOverlapItemType())
 	{
 		int Index = GetSameItemIndex(Item);
 		if (Index == -1)
@@ -48,7 +48,7 @@ bool UInventorySystem::UseItem(int Index)
 	}
 
 
-	if (ItemList[Index].ItemType == EItemType::Consume)
+	if (ItemList[Index].IsOverlapItemType())
 	{
 		//사용하는거
 		ItemList[Index].ItemCount--;
