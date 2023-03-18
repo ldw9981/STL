@@ -2,70 +2,75 @@
 #include <string>
 #include <conio.h>
 #include <stack>
+#include <windows.h>
+#include <synchapi.h>
 
 using namespace std;
-#define MAX 5
+#define MAX 10
 
-enum EDIRECTION { LEFT,RIGHT,UP,DOWN};
-enum EMAZETYPE { PATH,WALL,VISITED,BACK,EXIT};
+enum EMAZETYPE { PATH,WALL,VISITED,BACK};
 
 int Maze[MAX][MAX] = {
-	{0, 1, 1, 1, 0},
-	{0, 0, 0, 0, 0},
-	{1, 0, 1, 1, 1},
-	{1, 0, 1, 1, 1},
-	{1, 0, 0, 0, 0}
+	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+	{1, 0, 0, 0, 1, 0, 1, 1, 0, 1},
+	{1, 0, 1, 1, 1, 0, 1, 1, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 1, 0, 1},
+	{1, 0, 1, 1, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 1, 1, 1, 1, 1},
+	{1, 0, 1, 1, 1, 0, 0, 0, 0, 1},
+	{1, 0, 1, 1, 1, 1, 0, 1, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 };
-void pause()
-{
-	while (_getch() != 0);
-}
 
-
-class Position
+struct Position
 {
-public:
-	Position(int InitX=0, int InitY=0)
+	Position(int InitX = 0, int InitY = 0)
 	{
 		x = InitX;
 		y = InitY;
-	}	
+	}
 
 	int x;
 	int y;
-};
-Position g_Start(0, 0);
-Position g_Goal(MAX-1,MAX-1);
-Position g_Result;
+}; 
+
+Position g_Start(1, 1);
+Position g_Goal(8,8);
 
 
 
-void PrintMaze(const Position& OutPosition)
+void PrintMaze()
 {
-	system("cls");
 	for (int y = 0; y < MAX; y++)
 	{
 		for (int x = 0; x < MAX; x++)
 		{
-			cout << Maze[y][x] ;
+			if (Maze[y][x]== WALL)
+			{
+				cout << "#";
+			}
+			else if (Maze[y][x] == PATH)
+			{
+				cout << " ";
+			}
+			else if (Maze[y][x] == VISITED)
+			{
+				cout << "V";
+			}
+			else if (Maze[y][x] == BACK)
+			{
+				cout << "B";
+			}
+			
 		}
 		cout << endl;
 	}
-	cout << OutPosition.x << ',' << OutPosition.y << endl;
-
-	pause();
 }
 
 
-bool IsValidPosition(const Position& Target)
-{
-	if(Target.x < 0 || Target.x >= MAX || Target.y < 0 || Target.y >= MAX)
-		return false;
 
-	return true;
-}
-
-bool IsGoal(Position& Target)
+bool IsGoal(const Position& Target)
 {
 	if (Target.x == g_Goal.x && Target.y == g_Goal.y)
 		return true;
@@ -75,35 +80,39 @@ bool IsGoal(Position& Target)
 
 bool CheckMazeType(const Position& Target,int type)
 {
-	if (Maze[Target.y][Target.x] == type)
-		return true;
-
-	return false;
+	return Maze[Target.y][Target.x] == type;
 }
 
 
-bool MoveNextPath(Position& Current)
+bool FindNextPath(Position& Current)
 {
-	Position Next = Position(Current.x, Current.y - 1);
-	if (IsValidPosition(Next) && CheckMazeType(Next, PATH))
+	Position Next = Position(Current.x, Current.y);
+	if (CheckMazeType(Next, PATH))
+	{
+		Current = Next;
+		return true;
+	}
+
+	Next = Position(Current.x, Current.y - 1);
+	if (CheckMazeType(Next, PATH))
 	{
 		Current = Next;
 		return true;
 	}
 	Next = Position(Current.x + 1, Current.y);
-	if (IsValidPosition(Next) && CheckMazeType(Next, PATH))
+	if (CheckMazeType(Next, PATH))
 	{
 		Current = Next;
 		return true;
 	}
 	Next = Position(Current.x, Current.y + 1);
-	if (IsValidPosition(Next) && CheckMazeType(Next, PATH))
+	if (CheckMazeType(Next, PATH))
 	{
 		Current = Next;
 		return true;
 	}
 	Next = Position(Current.x - 1, Current.y);
-	if (IsValidPosition(Next) && CheckMazeType(Next,PATH))
+	if (CheckMazeType(Next,PATH))
 	{
 		Current = Next;
 		return true;
@@ -117,7 +126,7 @@ bool SearchMazeStack(Position Start)
 	stack<Position> BackPositions;
 	while (true)
 	{	
-		if (IsValidPosition(Current) && CheckMazeType(Current,PATH))
+		if (CheckMazeType(Current,PATH))
 		{
 			Maze[Current.y][Current.x] = VISITED;		
 			//PrintMaze(Current);
@@ -125,23 +134,20 @@ bool SearchMazeStack(Position Start)
 			if (IsGoal(Current))
 				break;
 		}
-
-		if (MoveNextPath(Current))
+		else if (!FindNextPath(Current))
 		{
-			continue;
+			if (!BackPositions.empty())
+			{
+				Maze[Current.y][Current.x] = BACK;
+				//PrintMaze(Current);
+				Current = BackPositions.top();
+				BackPositions.pop();
+			}
+			else
+			{
+				break;
+			}
 		}
-		
-		if (!BackPositions.empty())
-		{
-			Maze[Current.y][Current.x] = BACK;
-			//PrintMaze(Current);
-			Current = BackPositions.top();
-			BackPositions.pop();
-		}
-		else
-		{
-			break;
-		}			
 	}
 
 	if (!BackPositions.empty())
@@ -159,8 +165,42 @@ bool SearchMazeStack(Position Start)
 
 int main()
 {	
-	SearchMazeStack(g_Start);
-	pause();
+	Position Current = g_Start;
+	stack<Position> BackPositions;
+	COORD cdPos={0,0};
+
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	while (!IsGoal(Current))
+	{
+		if (_kbhit())
+		{
+			_getch();
+	
+			if (FindNextPath(Current))
+			{
+				Maze[Current.y][Current.x] = VISITED;
+				BackPositions.push(Current);
+			}
+			else
+			{
+				if (!BackPositions.empty())
+				{
+					Current = BackPositions.top();
+					Maze[Current.y][Current.x] = BACK;
+					BackPositions.pop();
+				}
+				else
+				{
+					break;
+				}
+			}
+		}
+		SetConsoleCursorPosition(hConsole, cdPos);
+		PrintMaze();
+		Sleep(10);
+	} 
+
+	Sleep(3000);
 	return 0;
 }
 
