@@ -25,12 +25,11 @@ int Maze[MAX][MAX] = {
 
 struct Position
 {
-	Position(int InitX = 0, int InitY = 0)
+	Position(int InitX = -1, int InitY = -1)
 	{
 		x = InitX;
 		y = InitY;
 	}
-
 	int x;
 	int y;
 }; 
@@ -86,13 +85,7 @@ bool CheckMazeType(const Position& Target,int type)
 
 bool FindNextPath(Position& Current)
 {
-	Position Next = Position(Current.x, Current.y);
-	if (CheckMazeType(Next, PATH))
-	{
-		Current = Next;
-		return true;
-	}
-
+	Position Next;
 	Next = Position(Current.x, Current.y - 1);
 	if (CheckMazeType(Next, PATH))
 	{
@@ -120,53 +113,15 @@ bool FindNextPath(Position& Current)
 	return false;
 }
 
-bool SearchMazeStack(Position Start)
-{	
-	Position Current = Start;	
-	stack<Position> BackPositions;
-	while (true)
-	{	
-		if (CheckMazeType(Current,PATH))
-		{
-			Maze[Current.y][Current.x] = VISITED;		
-			//PrintMaze(Current);
-			BackPositions.push(Current);
-			if (IsGoal(Current))
-				break;
-		}
-		else if (!FindNextPath(Current))
-		{
-			if (!BackPositions.empty())
-			{
-				Maze[Current.y][Current.x] = BACK;
-				//PrintMaze(Current);
-				Current = BackPositions.top();
-				BackPositions.pop();
-			}
-			else
-			{
-				break;
-			}
-		}
-	}
-
-	if (!BackPositions.empty())
-	{
-		auto container = BackPositions._Get_container();
-		for (auto iter = container.begin(); iter != container.end(); ++iter)
-		{
-			cout << "(" << (*iter).x << "," << (*iter).y << ")" << endl;
-		}
-		return true;
-	}
-	return false;
-}
 
 
 int main()
 {	
-	Position Current = g_Start;
-	stack<Position> BackPositions;
+	Position Current = g_Start;	
+	stack<Position> BackPositions;	
+	Maze[Current.y][Current.x] = VISITED;
+	BackPositions.push(Current);
+
 	COORD cdPos={0,0};
 
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -174,7 +129,7 @@ int main()
 	{
 		if (_kbhit())
 		{
-			_getch();
+			int ret = _getch();
 	
 			if (FindNextPath(Current))
 			{
@@ -200,6 +155,7 @@ int main()
 		Sleep(10);
 	} 
 
+	cout << "Goal!!\n";
 	Sleep(3000);
 	return 0;
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2016
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maze", "Maze\Maze.vcxproj", "{5A1FE437-4F97-45DA-8938-7FC95DCF88F5}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maze01_Queue", "Maze01_Queue\Maze01_Queue.vcxproj", "{F3589A2A-1CB5-4DF1-AD63-D4BDFC22CF33}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maze02_PriorityQueue", "Maze02_PriorityQueue\Maze02_PriorityQueue.vcxproj", "{13603FBC-007F-47F7-A976-69F42F5B9EA7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maze04_StackArray", "Maze04_StackArray\Maze04_StackArray.vcxproj", "{745F05D8-3C77-42E8-954E-CFCE2EEC199F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,14 @@ Global
 		{13603FBC-007F-47F7-A976-69F42F5B9EA7}.Release|x64.Build.0 = Release|x64
 		{13603FBC-007F-47F7-A976-69F42F5B9EA7}.Release|x86.ActiveCfg = Release|Win32
 		{13603FBC-007F-47F7-A976-69F42F5B9EA7}.Release|x86.Build.0 = Release|Win32
+		{745F05D8-3C77-42E8-954E-CFCE2EEC199F}.Debug|x64.ActiveCfg = Debug|x64
+		{745F05D8-3C77-42E8-954E-CFCE2EEC199F}.Debug|x64.Build.0 = Debug|x64
+		{745F05D8-3C77-42E8-954E-CFCE2EEC199F}.Debug|x86.ActiveCfg = Debug|Win32
+		{745F05D8-3C77-42E8-954E-CFCE2EEC199F}.Debug|x86.Build.0 = Debug|Win32
+		{745F05D8-3C77-42E8-954E-CFCE2EEC199F}.Release|x64.ActiveCfg = Release|x64
+		{745F05D8-3C77-42E8-954E-CFCE2EEC199F}.Release|x64.Build.0 = Release|x64
+		{745F05D8-3C77-42E8-954E-CFCE2EEC199F}.Release|x86.ActiveCfg = Release|Win32
+		{745F05D8-3C77-42E8-954E-CFCE2EEC199F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
