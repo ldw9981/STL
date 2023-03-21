@@ -13,8 +13,6 @@ using namespace std;
 
 enum EMAZETYPE { PATH, WALL, VISITED, BACK };
 
-
-
 int Maze[MAX][MAX] = {
 	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	{1, 0, 0, 0, 1, 0, 1, 1, 0, 1},
@@ -210,5 +208,5 @@ int main()
 	}
 	PrintMaze();
 	cout << "Goal!!\n";
-	Sleep(3000);
+	system("pause");
 }
