@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{745f05d8-3c77-42e8-954e-cfce2eec199f}</ProjectGuid>
-    <RootNamespace>Maze04StackArray</RootNamespace>
+    <ProjectGuid>{4798ff44-852d-42b0-bdfe-44aa6c04fb7f}</ProjectGuid>
+    <RootNamespace>Maze05StackList</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="PositionArrayStack.cpp" />
+    <ClCompile Include="Maze05_StackList.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

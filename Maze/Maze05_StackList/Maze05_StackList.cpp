@@ -28,70 +28,101 @@ int Maze[MAX][MAX] = {
 	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 };
 
-struct Position
+struct MazePosition
 {
-	Position(int InitX = -1, int InitY = -1)
+
+	MazePosition(int InitX = -1, int InitY = -1)
 	{
 		x = InitX;
 		y = InitY;
+		pNext = nullptr;
 	}
+
 	int x;
-	int y;		
+	int y;
+	MazePosition* pNext;
 };
 
-Position g_Start(1, 1);
-Position g_Goal(8, 8);
+MazePosition g_Start(1, 1);
+MazePosition g_Goal(8, 8);
 
 
 
 
-struct PositionStack
+
+struct PositionListStack
 {
-	Position arrPosition[MAX_POSITION_STACK_SIZE];
+	MazePosition* m_pTopNode;
+	int m_Count=0;
 
-	int TopIndex;
-
-	PositionStack()
+	PositionListStack()
 	{
-		TopIndex=-1;
+		m_pTopNode = nullptr;
+	}
+	~PositionListStack()
+	{
+		DeleteAll();
 	}
 
-	void Push(Position data)
+	void Push(MazePosition data)
 	{
-		if (IsFull())
+		m_Count++;
+		if (IsEmpty())
 		{
-			std::cout << "Stack is full\n";
-			return;
+			m_pTopNode = new MazePosition(data);
 		}
-
-		TopIndex++;
-		arrPosition[TopIndex]= data;
+		else
+		{
+			// Top이 있으면 
+			MazePosition* pBackup = m_pTopNode;	// 기존 노드주소를 백업하고		
+			m_pTopNode = new MazePosition(data); // Top을 교체
+			m_pTopNode->pNext = pBackup;   // Top의 Next는 기존노드주소
+		}
 	}
 
-	Position Pop()
+	MazePosition Pop()
 	{
-		Position retValue;
+		
+		MazePosition retValue;
 		if (IsEmpty())
 		{
 			std::cout << "Stack is empty\n";
 			return retValue;
 		}
-		
-		retValue = arrPosition[TopIndex];
-		TopIndex--;
+
+		m_Count--;
+		MazePosition* pNewTop = m_pTopNode->pNext;
+		retValue = *m_pTopNode;
+		delete m_pTopNode;
+		m_pTopNode = pNewTop;
 		return retValue;
 	}
 
 	bool IsEmpty()
 	{
-		return TopIndex == -1;
+		return m_pTopNode == nullptr;
 	}
 
-	bool IsFull()
+	void DeleteAll()
 	{
-		return TopIndex + 1 >= MAX_POSITION_STACK_SIZE;
+		int count=0;
+		MazePosition* pNode = m_pTopNode;
+		MazePosition* pNext = nullptr;
+		while (pNode != nullptr)
+		{
+			pNext = pNode->pNext;
+			
+			delete pNode;
+			pNode = pNext;
+
+			count++;
+		}
+		cout << "Delete " << count << "\n";
 	}
 };
+
+
+
 
 
 void PrintMaze()
@@ -124,7 +155,7 @@ void PrintMaze()
 
 
 
-bool IsGoal(const Position& Target)
+bool IsGoal(const MazePosition& Target)
 {
 	if (Target.x == g_Goal.x && Target.y == g_Goal.y)
 		return true;
@@ -132,34 +163,34 @@ bool IsGoal(const Position& Target)
 	return false;
 }
 
-bool CheckMazeType(const Position& Target, int type)
+bool CheckMazeType(const MazePosition& Target, int type)
 {
 	return Maze[Target.y][Target.x] == type;
 }
 
 
-bool FindNextPath(Position& Current)
+bool FindNextPath(MazePosition& Current)
 {
-	Position Next;
-	Next = Position(Current.x, Current.y - 1);
+	MazePosition Next;
+	Next = MazePosition(Current.x, Current.y - 1);
 	if (CheckMazeType(Next, PATH))
 	{
 		Current = Next;
 		return true;
 	}
-	Next = Position(Current.x + 1, Current.y);
+	Next = MazePosition(Current.x + 1, Current.y);
 	if (CheckMazeType(Next, PATH))
 	{
 		Current = Next;
 		return true;
 	}
-	Next = Position(Current.x, Current.y + 1);
+	Next = MazePosition(Current.x, Current.y + 1);
 	if (CheckMazeType(Next, PATH))
 	{
 		Current = Next;
 		return true;
 	}
-	Next = Position(Current.x - 1, Current.y);
+	Next = MazePosition(Current.x - 1, Current.y);
 	if (CheckMazeType(Next, PATH))
 	{
 		Current = Next;
@@ -173,11 +204,11 @@ bool FindNextPath(Position& Current)
 int main()
 {
 
-	PositionStack BackPositions;
-	Position Current = g_Start;
+	PositionListStack BackPositions;
+	MazePosition Current = g_Start;
 	Maze[Current.y][Current.x] = VISITED;
 	BackPositions.Push(Current);
-	
+
 
 	while (!IsGoal(Current))
 	{

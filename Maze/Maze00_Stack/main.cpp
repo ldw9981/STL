@@ -23,9 +23,9 @@ int Maze[MAX][MAX] = {
 	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 };
 
-struct Position
+struct MazePosition
 {
-	Position(int InitX = -1, int InitY = -1)
+	MazePosition(int InitX = -1, int InitY = -1)
 	{
 		x = InitX;
 		y = InitY;
@@ -34,8 +34,8 @@ struct Position
 	int y;
 }; 
 
-Position g_Start(1, 1);
-Position g_Goal(8,8);
+MazePosition g_Start(1, 1);
+MazePosition g_Goal(8,8);
 
 
 
@@ -69,7 +69,7 @@ void PrintMaze()
 
 
 
-bool IsGoal(const Position& Target)
+bool IsGoal(const MazePosition& Target)
 {
 	if (Target.x == g_Goal.x && Target.y == g_Goal.y)
 		return true;
@@ -77,34 +77,34 @@ bool IsGoal(const Position& Target)
 	return false;
 }
 
-bool CheckMazeType(const Position& Target,int type)
+bool CheckMazeType(const MazePosition& Target,int type)
 {
 	return Maze[Target.y][Target.x] == type;
 }
 
 
-bool FindNextPath(Position& Current)
+bool FindNextPath(MazePosition& Current)
 {
-	Position Next;
-	Next = Position(Current.x, Current.y - 1);
+	MazePosition Next;
+	Next = MazePosition(Current.x, Current.y - 1);
 	if (CheckMazeType(Next, PATH))
 	{
 		Current = Next;
 		return true;
 	}
-	Next = Position(Current.x + 1, Current.y);
+	Next = MazePosition(Current.x + 1, Current.y);
 	if (CheckMazeType(Next, PATH))
 	{
 		Current = Next;
 		return true;
 	}
-	Next = Position(Current.x, Current.y + 1);
+	Next = MazePosition(Current.x, Current.y + 1);
 	if (CheckMazeType(Next, PATH))
 	{
 		Current = Next;
 		return true;
 	}
-	Next = Position(Current.x - 1, Current.y);
+	Next = MazePosition(Current.x - 1, Current.y);
 	if (CheckMazeType(Next,PATH))
 	{
 		Current = Next;
@@ -117,8 +117,8 @@ bool FindNextPath(Position& Current)
 
 int main()
 {	
-	Position Current = g_Start;	
-	stack<Position> BackPositions;	
+	MazePosition Current = g_Start;	
+	stack<MazePosition> BackPositions;	
 	Maze[Current.y][Current.x] = VISITED;
 	BackPositions.push(Current);
 
