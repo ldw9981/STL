@@ -41,8 +41,7 @@ struct MazePosition
 
 MazePosition g_Start(1, 1);
 MazePosition g_Goal(8, 8);
-
-
+MazePosition g_CurrPosition;
 
 
 struct PositionArrayStack
@@ -68,18 +67,17 @@ struct PositionArrayStack
 		arrPosition[TopIndex]= data;
 	}
 
-	MazePosition Pop()
-	{
-		MazePosition retValue;
+	bool Pop(MazePosition* pOut)
+	{	
 		if (IsEmpty())
 		{
 			std::cout << "Stack is empty\n";
-			return retValue;
+			return false;
 		}
 		
-		retValue = arrPosition[TopIndex];
+		*pOut = arrPosition[TopIndex];
 		TopIndex--;
-		return retValue;
+		return true;
 	}
 
 	bool IsEmpty()
@@ -93,6 +91,7 @@ struct PositionArrayStack
 	}
 };
 
+PositionArrayStack g_BackPositions;
 
 
 void PrintMaze()
@@ -125,9 +124,9 @@ void PrintMaze()
 
 
 
-bool IsGoal(const MazePosition& Target)
+bool IsGoal()
 {
-	if (Target.x == g_Goal.x && Target.y == g_Goal.y)
+	if (g_CurrPosition.x == g_Goal.x && g_CurrPosition.y == g_Goal.y)
 		return true;
 
 	return false;
@@ -138,83 +137,78 @@ bool CheckMazeType(const MazePosition& Target, int type)
 	return Maze[Target.y][Target.x] == type;
 }
 
-
-bool FindNextPath(MazePosition& Current)
+bool FindNextPosition(MazePosition input,MazePosition* pOutput)
 {
 	MazePosition Next;
-	Next = MazePosition(Current.x, Current.y - 1);
+	Next = MazePosition(input.x, input.y - 1);
 	if (CheckMazeType(Next, PATH))
 	{
-		Current = Next;
+		*pOutput = Next;
 		return true;
 	}
-	Next = MazePosition(Current.x + 1, Current.y);
+	Next = MazePosition(input.x + 1, input.y);
 	if (CheckMazeType(Next, PATH))
 	{
-		Current = Next;
+		*pOutput = Next;
 		return true;
 	}
-	Next = MazePosition(Current.x, Current.y + 1);
+	Next = MazePosition(input.x, input.y + 1);
 	if (CheckMazeType(Next, PATH))
 	{
-		Current = Next;
+		*pOutput = Next;
 		return true;
 	}
-	Next = MazePosition(Current.x - 1, Current.y);
+	Next = MazePosition(input.x - 1, input.y);
 	if (CheckMazeType(Next, PATH))
 	{
-		Current = Next;
+		*pOutput = Next;
 		return true;
 	}
 	return false;
 }
 
+void MoveInMaze(MazePosition NewPosition)
+{
+	g_CurrPosition = NewPosition;
+	Maze[g_CurrPosition.y][g_CurrPosition.x] = VISITED;
+	g_BackPositions.Push(g_CurrPosition);
+}
+
+bool BackInMaze()
+{
+	MazePosition OutPosition;
+	if(!g_BackPositions.Pop(&OutPosition))
+	{
+		cout << "No back position.\n";
+		return false;
+	}
+	g_CurrPosition = OutPosition;
+	Maze[g_CurrPosition.y][g_CurrPosition.x] = BACK;
+	return true;
+}
 
 
 int main()
 {
+	MazePosition NextPosition;
+	MoveInMaze(g_Start);
 
-	PositionArrayStack BackPositions;
-	MazePosition Current = g_Start;
-	Maze[Current.y][Current.x] = VISITED;
-	BackPositions.Push(Current);
-	
-
-	while (!IsGoal(Current))
+	bool resultFind;
+	while (!IsGoal())
 	{
+		resultFind = FindNextPosition(g_CurrPosition,&NextPosition);	
 
-		if (FindNextPath(Current))
+		if (resultFind)
 		{
-			Maze[Current.y][Current.x] = VISITED;
-			BackPositions.Push(Current);
+			MoveInMaze(NextPosition);
 		}
 		else
-		{
-			if (!BackPositions.IsEmpty())
-			{
-				Current = BackPositions.Pop();
-				Maze[Current.y][Current.x] = BACK;
-
-			}
-			else
-			{
-				cout << "No way more.\n";
+		{				
+			if (!BackInMaze())
 				break;
-			}
 		}
 	}
 	PrintMaze();
 	cout << "Goal!!\n";
 	Sleep(3000);
 }
-
-// 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
-// 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
-
-// 시작을 위한 팁: 
-//   1. [솔루션 탐색기] 창을 사용하여 파일을 추가/관리합니다.
-//   2. [팀 탐색기] 창을 사용하여 소스 제어에 연결합니다.
-//   3. [출력] 창을 사용하여 빌드 출력 및 기타 메시지를 확인합니다.
-//   4. [오류 목록] 창을 사용하여 오류를 봅니다.
-//   5. [프로젝트] > [새 항목 추가]로 이동하여 새 코드 파일을 만들거나, [프로젝트] > [기존 항목 추가]로 이동하여 기존 코드 파일을 프로젝트에 추가합니다.
-//   6. 나중에 이 프로젝트를 다시 열려면 [파일] > [열기] > [프로젝트]로 이동하고 .sln 파일을 선택합니다.
