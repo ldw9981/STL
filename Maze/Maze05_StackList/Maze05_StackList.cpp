@@ -80,22 +80,22 @@ struct PositionListStack
 		}
 	}
 
-	MazePosition Pop()
+	bool Pop(MazePosition* pOut)
 	{
 		
 		MazePosition retValue;
 		if (IsEmpty())
 		{
 			std::cout << "Stack is empty\n";
-			return retValue;
+			return false;
 		}
 
 		m_Count--;
 		MazePosition* pNewTop = m_pTopNode->pNext;
-		retValue = *m_pTopNode;
+		*pOut = *m_pTopNode;
 		delete m_pTopNode;
 		m_pTopNode = pNewTop;
-		return retValue;
+		return true;
 	}
 
 	bool IsEmpty()
@@ -220,11 +220,9 @@ int main()
 		}
 		else
 		{
-			if (!BackPositions.IsEmpty())
+			if (BackPositions.Pop(&Current))
 			{
-				Current = BackPositions.Pop();
 				Maze[Current.y][Current.x] = BACK;
-
 			}
 			else
 			{
