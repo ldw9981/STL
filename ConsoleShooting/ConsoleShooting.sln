@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "Cons
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DoubleLinkedListCPlusPlus", "DoubleLinkedListCPlusPlus\DoubleLinkedListCPlusPlus.vcxproj", "{97356AE8-978F-4179-8ECD-B965CC11F790}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyDoubleLinkedList", "MyDoubleLinkedList\MyDoubleLinkedList.vcxproj", "{E732BBBC-8BAA-41D4-913B-B20D617194AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{97356AE8-978F-4179-8ECD-B965CC11F790}.Release|x64.Build.0 = Release|x64
 		{97356AE8-978F-4179-8ECD-B965CC11F790}.Release|x86.ActiveCfg = Release|Win32
 		{97356AE8-978F-4179-8ECD-B965CC11F790}.Release|x86.Build.0 = Release|Win32
+		{E732BBBC-8BAA-41D4-913B-B20D617194AB}.Debug|x64.ActiveCfg = Debug|x64
+		{E732BBBC-8BAA-41D4-913B-B20D617194AB}.Debug|x64.Build.0 = Debug|x64
+		{E732BBBC-8BAA-41D4-913B-B20D617194AB}.Debug|x86.ActiveCfg = Debug|Win32
+		{E732BBBC-8BAA-41D4-913B-B20D617194AB}.Debug|x86.Build.0 = Debug|Win32
+		{E732BBBC-8BAA-41D4-913B-B20D617194AB}.Release|x64.ActiveCfg = Release|x64
+		{E732BBBC-8BAA-41D4-913B-B20D617194AB}.Release|x64.Build.0 = Release|x64
+		{E732BBBC-8BAA-41D4-913B-B20D617194AB}.Release|x86.ActiveCfg = Release|Win32
+		{E732BBBC-8BAA-41D4-913B-B20D617194AB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
